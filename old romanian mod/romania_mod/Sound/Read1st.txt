@@ -1,0 +1,27 @@
+Alternate Sounds 1.0 for Cossacks demo 1.x   
+
+Back up your cossacks/sound folder first! 
+Unzip into cossacks/sound folder. You should know how to do all this anyways, if you don't then
+you need professional help..;-)
+
+New explosions, muskets, and "smerts";
+plus a raven sound for the woods.
+
+This the sound mod I play with, just a rough test, I am still refining the sounds as I "playtest"
+and working on improving the sound quality; it is hard since the game sounds are 8 bit/22000hz/mono 
+(reducing hiss and improving ambience)
+
+The mortar/howitzer "whizz" doesn't always sync, but better than silent hits and falling debris
+, adds atmosphere.
+
+What a great game! I just got the demo off the Maximum PC mag CD and am enjoying very much!
+Feel free to distribute amongst various players/websites..just keep this text in the zip file and mention me!
+11/21/00
+
+Wolfcat7
+Columbia,SC,USA
+
+send comments;   wolfcat7@juno.com
+
+Enjoy!
+
