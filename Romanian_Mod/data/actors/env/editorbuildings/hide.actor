@@ -1,0 +1,98 @@
+section.begin
+   AutoCentering : struct.begin
+      macCenterX = False
+      macCenterY = False
+      macCenterZ = False
+      macUseBarycenter = False
+   struct.end
+   Direction : struct.begin
+      X = 0
+      Y = 1
+      Z = 0
+   struct.end
+   Up : struct.begin
+      X = 1
+      Y = 0
+      Z = 0
+   struct.end
+   Position : struct.begin
+      X = 0
+      Y = 0
+      Z = 0
+   struct.end
+   Scale : struct.begin
+      X = 1
+      Y = 1
+      Z = 1
+   struct.end
+   HorizonRadiusFactor = 1
+   MeshPooled = True
+   MeshChildPooled = poNone
+   MeshPoolMinDist = 12
+   MeshPoolMaxDist = 1000
+   MeshChildPoolMaxDist = 0
+   MatPooled = True
+   MatChildPooled = poNone
+   MatPoolMinDist = 0
+   MatPoolMaxDist = 12
+   MatChildPoolMaxDist = 0
+   DistanceMax = 60
+   RollAngle = 0
+   PitchAngle = 0
+   TurnAngle = 0
+   ShowAxes = False
+   tag=300
+   tagfloat=100
+   VisibilityCulling = vcInherited
+   Visible = True
+   NormalsOrientation = mnoDefault
+   ObjectsSorting = osInherited
+   Options : struct.begin
+      aoNone = False
+      aoRenderOptimize = True
+   struct.end
+   RenderOptimizeOptions.baroCompileFrameOnRequest = True
+   ObjectStyle : struct.begin
+      osDirectDraw = True
+      osDoesTemperWithColorsOrFaceWinding = True
+      osIgnoreDepthBuffer = False
+      osNoVisibilityCulling = False
+   struct.end
+   AnimationMode = aamNone
+   CurrentFrame = 0
+   CurrentFrameDelta = 0
+   StartFrame = 0
+   EndFrame = 0
+   FrameInterpolation = afpNone
+   Interval = 100
+   SkinnedFrameMultiply = 1
+   Reference = aarNone
+   Animations.LoadFromFile = 
+   TransformationFrameList.LoadFromFile = 
+   UseMeshMaterials = False
+   IgnoreMissingTextures = False
+   LODIndex = 0
+   ActorIndex = 0
+   AutoLODEnabled = False
+   AutoCalcDistanceEnabled = False
+   AutoLODFrameInterpolationEnabled = True
+   ActorList.Items : struct.begin
+      [0] : struct.begin
+         Name = hide.mesh
+         LODList.Items : struct.begin
+            [0] : struct.begin
+               ScaleFrames = 1
+               DistanceMin = 0
+               DistanceMax = 50
+               MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\hide.osm
+               FrameInterpolation = afpNone
+            struct.end
+         struct.end
+         ImposterBuilder : struct.begin
+            Impostored = False
+            ImposterFrame = 0
+         struct.end
+      struct.end
+   struct.end
+section.end
+

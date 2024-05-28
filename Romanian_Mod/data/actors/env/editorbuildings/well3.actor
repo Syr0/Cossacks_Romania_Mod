@@ -1,0 +1,28 @@
+section.begin {refurl=.\data\actors\ref\reftree.actor}
+   ActorList.Items[0].Name = well3.mesh
+   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\well3.osm
+   ActorList.Items[*] : struct.begin {refurl=.\data\actors\ref\refbuilding.actor; refkey=.ActorList.Items[0]}
+      Name = well31.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\well3.osm
+   struct.end
+   ActorList.Items[*] : struct.begin {refurl=.\data\actors\ref\refbuilding.actor; refkey=.ActorList.Items[0]}
+      Name = wel3l2.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\well3.osm
+   struct.end
+   ActorList.Items[*] : struct.begin {refurl=.\data\actors\ref\refbuilding.actor; refkey=.ActorList.Items[0]}
+      Name = well33.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\well3.osm
+   struct.end
+   ActorList.Items[*] : struct.begin {refurl=.\data\actors\ref\refbuilding.actor; refkey=.ActorList.Items[0]}
+      Name = well34.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\well3.osm
+   struct.end
+   ActorList.Items[*] : struct.begin {refurl=.\data\actors\ref\refbuilding.actor; refkey=.ActorList.Items[0]}
+      Name = well3_death1.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\well3.osm
+   struct.end
+   ActorList.Items[*] : struct.begin {refurl=.\data\actors\ref\refbuilding.actor; refkey=.ActorList.Items[0]}
+      Name = well3_death2.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\well3.osm
+   struct.end
+section.end

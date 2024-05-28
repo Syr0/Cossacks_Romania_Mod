@@ -1,0 +1,1403 @@
+	@NATIONS
+********************************Nations*********************************
+	@aus
+Rakousko
+	@fra
+Francie
+	@eng
+Anglie
+	@spa
+Španìlsko
+	@rus
+Rusko
+	@ukr
+Ukrajina
+	@pol
+Polsko
+	@swe
+Švédsko
+	@pru
+Prusko
+	@ven
+Benátky
+	@tur
+Turecko
+	@alg
+Alírsko
+	@por
+Portugalsko
+	@pie
+Piemont
+	@net
+Nizozemí
+	@den
+Dánsko
+	@sax
+Sasko
+	@bav
+Bavorsko
+	@sco
+Skotsko
+	@mis
+Pùvodní
+	@hun
+Maïarsko
+	@swi
+Švıcarsko
+	@*************Symbols************************
+	@def
+#151
+	@pos
+#151
+	@neg
+#151
+	@*************INCLUDES TEMPLATES*************
+
+	@descr.inf.sword
+%def%Pìšák vyzbrojenı meèem.
+	@descr.inf.saber
+%def%Pìšák vyzbrojenı šavlí.
+	@descr.inf.longpike
+%def%Pìšák vyzbrojenı dlouhou píkou.
+	@descr.inf.musket
+%def%Pìšák vyzbrojenı mušketou.
+	@descr.inf.musketbayonet
+%def%Pìšák vyzbrojenı mušketou a bajonetem.
+	@descr.inf.bow
+%def%Pìšák vyzbrojenı lukem a šípy.
+	@descr.any.musketbayonet
+%def%Pìšák vyzbrojenı mušketou, bajonetem a granáty.
+	@descr.any.musketonly
+%def%Vyzbrojenı mušketou bez bajonetu.
+	@descr.any.musket
+%def%Vyzbrojenı mušketou.
+	@descr.any.bow
+%def%Vyzbrojenı lukem a šípy.
+	@descr.cav.light.saber
+%def%Lehkı jezdec vyzbrojenı šavlí.
+	@descr.cav.light.spear
+%def%Lehkı jezdec vyzbrojenı jezdeckım kopím.
+	@descr.cav.light.pike
+%def%Lehkı jezdec vyzbrojenı kopím.
+	@descr.cav.light.longpike
+%def%Lehkı jezdec vyzbrojenı dlouhım kopím.
+	@descr.cav.heavy.sword
+%def%Tìkı jezdec vyzbrojenı meèem.
+	@descr.cav.heavy.broadsword
+%def%Tìkı jezdec vyzbrojenı širokım meèem.
+	@descr.cav.heavy.mace
+%def%Tìkı jezdec vyzbrojenı palcátem.
+	@descr.cav.heavy.longpike
+%def%Tìkı jezdec vyzbrojenı dlouhım kopím.
+	@descr.cav.any.saber
+%def%Jezdec vyzbrojenı šavlí.
+	@descr.cav.any.longpike
+%def%Jezdec vyzbrojenı dlouhım kopím.
+	@descr.cav.any.musket
+%def%Jezdec vyzbrojenı mušketou.
+	@descr.cav.any.bow
+%def%Jezdec vyzbrojenı lukem.
+	@***********************
+
+	@descr.armored
+%pos%Zbroj chránící pøed støelami a šrapnely.
+	@***********************
+
+	@descr.effective.form
+%pos%Efektivní v bojovıch formacích.
+	@descr.effective.formvscav
+%pos%Efektivní v protijízdních bojovıch formacích.
+	@descr.effective.infcav
+%pos%Efektivní proti pìchotì i jízdì.
+	@descr.effective.formonly
+%pos%Efektivní pouze v bojovıch formacích.
+	@descr.effective.melee
+%pos%Efektivní v kontaktním boji.
+	@descr.effective.squareform
+%pos%Efektivní ve ètvercové bojové formaci.
+	@descr.effective.onlywithinf
+%pos%Efektivní pouze v kombinaci s pìchotou.
+	@descr.effective.sabotage
+%pos%Efektivní pøi narušitelskıch nájezdech.
+	@descr.effective.notforminfheavycav
+%neg%Neefektivní vùèi pìchotì v bojovıch formacích èi vùèi tìké jízdì.
+	@descr.effective.notcuirassier
+%neg%Neefektivní vùèi kyrysníkùm.
+	@descr.effective.infcavsabotage
+%pos%Efektivní proti pìchotì i jízdì a pøi narušitelskıch nájezdech.
+	@descr.effective.inflightcav
+%pos%Efektivní proti pìchotì i lehké jízdì.
+	@descr.effective.infcav2
+%pos%Efektivní proti pìchotì i jízdì.
+	@descr.effective.inf
+%pos%Efektivní proti pìchotì.
+	@descr.effective.mercgrenadier
+%pos%Efektivní proti oldáckım granátníkùm.
+	@descr.effective.ships
+%pos%Efektivní pøi zapalování lodí.
+	@descr.effective.merc
+%pos%Efektivní proti všem druhùm oldákù.
+	@***********************
+
+	@descr.mosteffective.pikeman17
+%pos%Nejefektivnìjší pikenır 18. století.
+	@descr.mosteffective.shooter
+%pos%Patøí mezi ty nejefektivnìjší støelecké jednotky.
+	@descr.mosteffective.shooter2
+%pos%Patøí mezi ty nejlepší støelecké jednotky ve høe.
+	@descr.mosteffective.speedcav
+%pos%Patøí mezi ty nejrychlejší jezdce.
+	@***********************
+
+	@descr.combination.highbuildmovespeed
+%pos%Rychlı vıcvik, vysoká rychlost pohybu.
+	@descr.combination.highcostlowbuildtime
+%neg%Vysoká cena, pomalı vıcvik.
+	@descr.combination.longbuildtimehighcost
+%neg%Vysoká cena, velmi pomalı vıcvik.
+	@descr.combination.highbuildspeedhighcost
+%pos%Nízká cena, rychlı vıcvik.
+	@descr.combination.lowrateoffirehighbuildtime
+%neg%Nízká rychlost støelby, velmi pomalı vıcvik.
+	@***********************
+
+	@descr.params.lowattack
+%neg%Nízké útoèné parametry.
+	@descr.params.midattack
+%def%Prùmìrné útoèné parametry.
+	@descr.params.highattack
+%pos%Vysoké útoèné parametry.
+	@descr.params.veryhighattack
+%pos%Velmi vysoké útoèné parametry.
+	@descr.params.lowattackprotection
+%neg%Nízké útoèné a obranné parametry.
+	@descr.params.highattackprotection
+%pos%Vysoké útoèné a obranné parametry.
+	@descr.params.veryhighattackprotection
+%pos%Velmi vysoké útoèné a obranné parametry.
+	@descr.params.lowshootdamage
+%neg%Nízká palebná síla.
+	@***********************
+
+	@descr.cost.low
+%pos%Nízké stavební náklady.
+	@descr.cost.low2
+%pos%Nízké náklady.
+	@descr.cost.lowafterupgrade
+%pos%Nízké náklady po vylepšení v akademii.
+	@descr.cost.nothigh
+%neg%Prùmìrné stavební náklady.
+	@descr.cost.nothigh2
+%pos%Prùmìrné náklady.
+	@descr.cost.high
+%neg%Vysoké náklady.
+	@descr.cost.high2
+%neg%Vysoké stavební náklady.
+	@***********************
+
+	@descr.build.veryhighspeed
+%pos%Velmi rychlı vıcvik.
+	@descr.build.veryhighspeed2
+%pos%Velmi rychlı vıcvik.
+	@descr.build.highspeed
+%pos%Rychlı vıcvik.
+	@descr.build.highspeed2
+%pos%Rychlı vıcvik.
+	@descr.build.lowspeed
+%neg%Pomalı vıcvik.
+	@descr.build.lowspeed2
+%neg%Pomalı vıcvik.
+	@descr.build.lowspeed3
+%neg%Velmi pomalı vıcvik.
+	@descr.build.lowspeed4
+%neg%Velmi pomalı vıcvik.
+	@***********************
+
+	@descr.canshoot
+%pos%Útoèí na vzdálené cíle.
+	@descr.canmeleeandshoot
+%pos%Útoèí na vzdálené i blízké cíle.
+	@descr.cantshotclose
+%neg%Nestøílí, pokud je nepøítel blízko.
+	@***********************
+
+	@descr.eliteinf
+%pos%Elitní pìchota.
+	@descr.elitecav
+%pos%Elite jízda.
+	@***********************
+
+	@descr.ability.highshootingrange
+%pos%Velkı dostøel.
+	@descr.ability.highspeed
+%pos%Vysoká rychlost pohybu.
+	@descr.ability.highrateoffire
+%pos%Vysoká rychlost støelby.
+	@descr.highvisionradius
+%pos%Dalekı dohled.
+	@***********************
+
+	@descr.ability.grenades
+%pos%Dokáe nièit nepøátelské budovy a opevnìní pomocí granátù.
+	@descr.ability.firearrows
+%pos%Støílí hoøící šípy na budovy, opevnìní a lodì.
+	@descr.ability.canfightwhenguarded
+%neg%Dokáe bojovat bok po boku vojenskıch jednotek.
+	@descr.ability.canbecaptured
+%neg%Nehlídaného vesnièana mùe zajmout nepøítel.
+	@descr.ability.cannotbecaptured
+%pos%Nelze zajmout nepøítelem.
+	@descr.ability.consumegold
+%neg%Vyaduje zlato na údrbu.
+	@descr.ability.cannottfight
+%neg%Neumí bojovat.
+	@descr.ability.canextractresources
+%def%Tìí suroviny.
+	@descr.canbuildandrepair
+%def%Staví a opravuje budovy a opevnìní.
+	@descr.canheal
+%pos%Léèí zranìné vojáky.
+	@***********************
+
+	@descr.ability.highshootcost
+%neg%Pøi støelbì má vysokou spotøebu uhlí a eleza.
+	@***********************
+
+	@descr.ability.createformation
+%pos%Velí pìchotním bojovım formacím.
+	@descr.ability.createformation17
+%pos%Velí pìchotním bojovım formacím ze 17. století.
+	@descr.ability.createformation18
+%pos%Velí pìchotním bojovım formacím z 18. století.
+	@descr.ability.neededforformation
+%pos%Je tøeba k formování pìchotních bojovıch formací.
+	@descr.ability.neededforformation17
+%pos%Je tøeba k formování pìchotních bojovıch formací ze 17. století.
+	@descr.ability.neededforformation18
+%pos%Je tøeba k formování pìchotních bojovıch formací z 18. století.
+	@***********************
+
+	@descr.ability.mercenary
+ (oldák)
+	@UNITS.INF.MELEE
+********************************Melee********************************
+	@pikeman
+Pikenır, 17. století
+	@pikeman.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.armored)%
+%include(units;descr.effective.form)%
+	@pikemanpol
+Pikenır, 17. století
+	@pikemanpol.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.effective.form)%
+	@pikemantur
+Osmanskı pikenır
+	@pikemantur.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.effective.form)%
+%include(units;descr.build.highspeed2)%
+	@pikemanrus
+Kopiník
+	@pikemanrus.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.armored)%
+%include(units;descr.mosteffective.pikeman17)%
+	@pikeman18
+Pikenır, 18. století
+	@pikeman18.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.effective.infcav)%
+%include(units;descr.params.midattack)%
+%include(units;descr.build.veryhighspeed2)%
+	@pikeman18swe
+Pikenır, 18. století
+	@pikeman18swe.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.effective.infcav)%
+%include(units;descr.params.midattack)%
+%include(units;descr.build.veryhighspeed2)%
+	@lightinfantry
+Lehká pìchota
+	@lightinfantry.ext
+%include(units;descr.inf.saber)%
+%include(units;descr.params.lowattack)%
+%include(units;descr.build.veryhighspeed)%
+%include(units;descr.effective.formonly)%
+	@roundshier
+Rondašír
+	@roundshier.ext
+%include(units;descr.inf.sword)%
+%include(units;descr.armored)%
+%include(units;descr.build.highspeed)%
+%include(units;descr.params.lowattack)%
+	@UNITS.INF.SHOOTER
+********************************Ranged*********************************
+	@musketeer
+Mušketır, 17. století
+	@musketeer.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.build.lowspeed3)%
+	@musketeeraus
+Mušketır, 17. století
+	@musketeeraus.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.build.lowspeed3)%
+	@musketeernet
+Mušketır, 17. století
+	@musketeernet.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.build.lowspeed3)%
+	@musketeerpol
+Mušketır, 17. století
+	@musketeerpol.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.build.lowspeed3)%
+	@musketeerspa
+Mušketır, 17. století
+	@musketeerspa.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.armored)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.midattack)%
+%include(units;descr.build.lowspeed3)%
+	@musketeer18
+Mušketır, 18. století
+	@musketeer18.ext
+%include(units;descr.inf.musketbayonet)%
+%include(units;descr.canmeleeandshoot)%
+%include(units;descr.cost.lowafterupgrade)%
+%include(units;descr.effective.melee)%
+	@musketeer18pru
+Mušketır, 18. století
+	@musketeer18pru.ext
+%include(units;descr.inf.musketbayonet)%
+%include(units;descr.canmeleeandshoot)%
+%include(units;descr.cost.lowafterupgrade)%
+%include(units;descr.effective.melee)%
+	@musketeer18sax
+Mušketır, 18. století
+	@musketeer18sax.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.mosteffective.shooter)%
+	@grenadier
+Granátník
+	@grenadier.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+	@grenadiersax
+Granátník
+	@grenadiersax.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+%include(units;descr.params.highattackprotection)%
+%include(units;descr.cost.high2)%
+	@chasseur
+Lovec
+	@chasseur.ext
+%include(units;descr.any.musketonly)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.cost.low)%
+	@highlander
+Horal
+	@highlander.ext
+%include(units;descr.any.musketonly)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.cost.low)%
+	@strelet
+Ruskı støelec
+	@strelet.ext
+%include(units;descr.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.onlywithinf)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.build.lowspeed3)%
+	@pandur
+Pandur
+	@pandur.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.mosteffective.shooter)%
+	@serdiuk
+Serdiuk
+	@serdiuk.ext
+%include(units;descr.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.onlywithinf)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.mosteffective.shooter2)%
+%include(units;descr.ability.highshootingrange)%
+	@jannisary
+Janièáø
+	@jannisary.ext
+%include(units;descr.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.onlywithinf)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.build.lowspeed)%
+	@archer
+Luèištník
+	@archer.ext
+%include(units;descr.any.bow)%
+%include(units;descr.effective.onlywithinf)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+	@UNITS.INF.SUPPORT
+********************************support*********************************
+	@peaaus
+Vesnièan
+	@peaaus.ext
+%include(units;descr.ability.canextractresources)%
+%include(units;descr.canbuildandrepair)%
+%include(units;descr.ability.canfightwhenguarded)%
+%include(units;descr.ability.canbecaptured)%
+	@peaukr
+Vesnièan
+	@peaukr.ext
+%include(units;descr.ability.canextractresources)%
+%include(units;descr.canbuildandrepair)%
+%include(units;descr.ability.cannotbecaptured)%
+	@peatur
+Vesnièan
+	@peatur.ext
+%include(units;peaaus.ext)%
+	@pearus
+Nevolník
+	@pearus.ext
+%include(units;peaaus.ext)%
+	@peapol
+Vesnièan
+	@peapol.ext
+%include(units;peaaus.ext)%
+	@peaspa
+Vesnièan
+	@peaspa.ext
+%include(units;peaaus.ext)%
+	@peaeng
+Vesnièan
+	@peaeng.ext
+%include(units;peaaus.ext)%
+	@officer
+Dùstojník, 17. století
+	@officer.ext
+%include(units;descr.ability.createformation17)%
+%include(units;descr.params.veryhighattackprotection)%
+%include(units;descr.ability.consumegold)%
+	@officertur
+Dùstojník
+	@officertur.ext
+%include(units;descr.ability.createformation)%
+%include(units;descr.params.veryhighattackprotection)%
+%include(units;descr.ability.consumegold)%
+	@officerrus
+Velitel
+	@officerrus.ext
+%include(units;descr.ability.createformation17)%
+%include(units;descr.params.veryhighattackprotection)%
+%include(units;descr.ability.consumegold)%
+	@officer18
+Dùstojník, 18. století
+	@officer18.ext
+%include(units;descr.ability.createformation18)%
+%include(units;descr.params.veryhighattackprotection)%
+%include(units;descr.ability.consumegold)%
+	@drummer
+Bubeník, 17. století
+	@drummer.ext
+%include(units;descr.ability.neededforformation17)%
+%include(units;descr.ability.cannottfight)%
+%include(units;descr.highvisionradius)%
+	@drummerrus
+Bubeník, 17. století
+	@drummerrus.ext
+%include(units;descr.ability.neededforformation17)%
+%include(units;descr.ability.cannottfight)%
+%include(units;descr.highvisionradius)%
+	@drummertur
+Bubeník, 17. století
+	@drummertur.ext
+%include(units;descr.ability.neededforformation)%
+%include(units;descr.ability.cannottfight)%
+%include(units;descr.highvisionradius)%
+	@drummer18
+Bubeník, 18. století
+	@drummer18.ext
+%include(units;descr.ability.neededforformation18)%
+%include(units;descr.ability.cannottfight)%
+%include(units;descr.highvisionradius)%
+	@bagpiper
+Dudák
+	@bagpiper.ext
+%include(units;descr.ability.neededforformation18)%
+%include(units;descr.ability.cannottfight)%
+%include(units;descr.highvisionradius)%
+	@priest
+Knìz
+	@priest.ext
+%include(units;descr.canheal)%
+	@padre
+Padre
+	@padre.ext
+%include(units;descr.canheal)%
+	@pope
+Pop
+	@pope.ext
+%include(units;descr.canheal)%
+	@mullah
+Mullah
+	@mullah.ext
+%include(units;descr.canheal)%
+	@UNITS.CAV.FAST
+********************************Fast cavalry*********************************
+	@croat
+Krabat
+	@croat.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.combination.highbuildmovespeed)%
+%include(units;descr.effective.notforminfheavycav)%
+	@hussar
+Husar
+	@hussar.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.combination.highbuildmovespeed)%
+%include(units;descr.effective.notcuirassier)%
+	@hussarpru
+Husar
+	@hussarpru.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.combination.highbuildmovespeed)%
+%include(units;descr.effective.notcuirassier)%
+	@wingedhussar
+Okøídlenı husar
+	@wingedhussar.ext
+%include(units;descr.cav.heavy.longpike)%
+%include(units;descr.effective.infcavsabotage)%
+%include(units;descr.armored)%
+%include(units;descr.ability.highspeed)%
+%include(units;descr.params.highattackprotection)%
+%include(units;descr.build.lowspeed3)%
+	@cossacksich
+Sièskı kozák
+	@cossacksich.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.mosteffective.speedcav)%
+	@UNITS.CAV.SLOW
+********************************Slow cavalry*********************************
+	@reiter
+Jezdec
+	@reiter.ext
+%include(units;descr.cav.heavy.sword)%
+%include(units;descr.armored)%
+%include(units;descr.effective.inflightcav)%
+	@cuirassier
+Kyrysník
+	@cuirassier.ext
+%include(units;descr.cav.heavy.broadsword)%
+%include(units;descr.armored)%
+%include(units;descr.effective.infcav2)%
+%include(units;descr.params.highattackprotection)%
+%include(units;descr.build.lowspeed2)%
+%include(units;descr.cost.high)%
+	@cavalryguard
+Jízdní strá
+	@cavalryguard.ext
+%include(units;descr.cav.heavy.sword)%
+%include(units;descr.armored)%
+%include(units;descr.effective.inflightcav)%
+	@reiterswe
+Švédskı jezdec
+	@reiterswe.ext
+%include(units;descr.cav.heavy.sword)%
+%include(units;descr.armored)%
+%include(units;descr.effective.inflightcav)%
+	@reiterpol
+Lehkı jezdec
+	@reiterpol.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.inf)%
+%include(units;descr.build.highspeed)%
+%include(units;descr.params.lowattack)%
+	@hetman
+Hejtman
+	@hetman.ext
+%include(units;descr.cav.any.saber)%
+%include(units;descr.effective.infcav)%
+%include(units;descr.params.veryhighattackprotection)%
+%include(units;descr.combination.highcostlowbuildtime)%
+	@cossackdon
+Donskı kozák
+	@cossackdon.ext
+%include(units;descr.cav.light.spear)%
+%include(units;descr.effective.inf)%
+%include(units;descr.combination.highbuildspeedhighcost)%
+	@vityaz
+Bohatır
+	@vityaz.ext
+%include(units;descr.cav.heavy.mace)%
+%include(units;descr.armored)%
+%include(units;descr.effective.inflightcav)%
+%include(units;descr.params.highattackprotection)%
+%include(units;descr.combination.longbuildtimehighcost)%
+	@cossackregister
+Registrovı kozák
+	@cossackregister.ext
+%include(units;descr.cav.light.pike)%
+%include(units;descr.effective.inf)%
+%include(units;descr.build.highspeed)%
+%include(units;descr.cost.low2)%
+	@spakh
+Snadná Sipah
+	@spakh.ext
+%include(units;descr.cav.light.longpike)%
+%include(units;descr.effective.inf)%
+%include(units;descr.build.highspeed)%
+%include(units;descr.params.lowattackprotection)%
+	@mameluke
+Mameluk
+	@mameluke.ext
+%include(units;descr.cav.any.longpike)%
+%include(units;descr.effective.inf)%
+%include(units;descr.combination.highbuildspeedhighcost)%
+	@UNITS.CAV.SHOOTERS
+********************************Mounted shooters*********************************
+	@dragoon
+Dragoun, 17. století
+	@dragoon.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.highshootingrange)%
+%include(units;descr.combination.lowrateoffirehighbuildtime)%
+	@dragoon18fra
+Dragoun, 18. století
+	@dragoon18fra.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.build.highspeed2)%
+	@dragoon18
+Dragoun, 18. století
+	@dragoon18.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.combination.lowrateoffirehighbuildtime)%
+	@kingmusketeer
+Královskı mušketır
+	@kingmusketeer.ext
+%include(units;descr.elitecav)%
+%include(units;descr.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.veryhighattack)%
+%include(units;descr.build.lowspeed4)%
+	@tatar
+Tatar
+	@tatar.ext
+%include(units;descr.cav.any.bow)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+	@UNITS.DIP.MERCENARIES
+********************************Mercenaries*********************************
+	@roundshierdip
+%include(units;roundshier)%%include(units;descr.ability.mercenary)%
+	@roundshierdip.ext
+%include(units;descr.cost.nothigh)%
+%include(units;descr.params.lowattackprotection)%
+%include(units;descr.effective.mercgrenadier)%
+	@grenadierdip
+%include(units;grenadier)%%include(units;descr.ability.mercenary)%
+	@grenadierdip.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.cost.low)%
+%include(units;descr.params.lowshootdamage)%
+%include(units;descr.ability.grenades)%
+	@lightinfantrydip
+%include(units;lightinfantry)%%include(units;descr.ability.mercenary)%
+	@lightinfantrydip.ext
+%include(units;descr.cost.nothigh2)%
+%include(units;descr.params.lowattackprotection)%
+	@archerdip
+%include(units;archer)%%include(units;descr.ability.mercenary)%
+	@archerdip.ext
+%include(units;descr.inf.bow)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+%include(units;descr.effective.ships)%
+	@dragoon18dip
+%include(units;dragoon18)%%include(units;descr.ability.mercenary)%
+	@dragoon18dip.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.highrateoffire)%
+%include(units;descr.ability.consumegold)%
+%include(units;descr.ability.highshootcost)%
+%include(units;descr.effective.merc)%
+	@cossacksichdip
+%include(units;cossacksich)%%include(units;descr.ability.mercenary)%
+	@cossacksichdip.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.mosteffective.speedcav)%
+	@SHIPS
+********************************Navy*********************************
+	@fishboat
+Bárka
+	@fishboat.ext
+%def%Slouí pouze k rybaøení. Nemùe se úèastnit bitev.
+	@yacht
+Jachta
+	@yacht.ext
+%def%Váleèná loï nízké tøídy.
+%pos%Snadná øiditelnost.
+%pos%Vysoká rychlost pohybu.
+%neg%Pomalá støelba.
+%neg%Pøi støelbì má vysokou spotøebu uhlí a eleza.
+	@yachttur
+Jachta
+	@yachttur.ext
+%def%Turecké flotily zaèlenily mnoho druhù exotickıch jedno- i dvoustìòovıch støedozemních plavidel.
+%def%V námoønictvu slouily jako hlídkové a zpravodajské lodì. Pouívali je i piráti pøi pøepadávání køesanskıch námoøních cest.
+	@galley
+Galéra
+	@galley.ext
+%def%Váleèná loï støední tøídy.
+%pos%Veze dva druhy dìlostøelectva: dìla a modíøe.
+%pos%Dìla jsou efektivní na malou vzdálenost, zatímco modíøe slouí na hodnì velké vzdálenosti.
+%pos%Modíøe jsou efektivní pøi útoku na pobøení budovy a opevnìní.
+%neg%Vyaduje zlato na údrbu.
+%neg%Kdy zlato dojde, galéra pøestane støílet.
+%neg%Pøi støelbì má vysokou spotøebu uhlí a eleza.
+	@frigate
+Fregata
+	@frigate.ext
+%def%Váleèná loï støední tøídy.
+%neg%Vyaduje finanèní zdroje.
+%neg%Pøi støelbì má vysokou spotøebu uhlí a eleza.
+	@battleship
+Øadová loï
+	@battleship.ext
+%def%Váleèná loï vysoké tøídy.
+%pos%Rychlá støelba a vysoká palebná síla.
+%neg%Vyaduje hodnì zlata na údrbu.
+%neg%Nízká spotøeba uhlí a eleza.
+%neg%Nízká rychlost pohybu.
+	@ferry
+Dopravní loï
+	@ferry.ext
+%def%Pøeváí jednotky pøes øeky a moøe.
+%def%Najednou uveze a 120 jednotek.
+	@xebec
+Šebeka
+	@xebec.ext
+%def%Váleèná loï støední tøídy.
+%neg%Nevyaduje zlato na údrbu.
+%neg%Pøi støelbì má vysokou spotøebu uhlí a eleza.
+	@ARTILLERY
+********************************Artillery*********************************
+	@cannon
+Dìlo
+	@cannon.ext
+%def%Polní dìlo.
+%pos%Efektivní proti nepøátelskım budovám, opevnìním a lodím.
+%pos%Støílí dìlové koule na støední a velkou vzdálenost.
+%pos%Støílí šrapnely na pìchotu a jízdu na menší vzdálenost.
+%neg%Vyaduje zlato na údrbu.
+%neg%Kdy zlato dojde, dìla pøestanou støílet.
+%neg%Nehlídaná dìla mùe zajmout nepøítel.
+%neg%Pøi støelbì má vysokou spotøebu uhlí a eleza.
+	@howitzer
+Houfnice
+	@howitzer.ext
+%def%Obléhací dìlo.
+%pos%Støílí obloukem.
+%pos%Efektivní proti opevnìním a shlukùm pìchoty.
+%neg%Pomalá støelba a nízká pøesnost.
+%neg%Vyaduje zlato na údrbu.
+%neg%Kdy zlato dojde, houfnice pøestanou støílet.
+%neg%Nehlídané houfnice mùe zajmout nepøítel.
+%neg%Pøi støelbì má vysokou spotøebu uhlí a eleza.
+	@mortar
+Modíø
+	@mortar.ext
+%def%Dalekonosné dìlo.
+%pos%Støílí obloukem na velmi velkou vzdálenost.
+%pos%Efektivní proti budovám a vìím.
+%neg%Mùe støílet jen na lodì a budovy.
+%pos%Rychlá støelba a vysoká pøesnost.
+%neg%Vyaduje zlato pro údrbu.
+%neg%Kdy zlato dojde, modíøe pøestanou støílet.
+%neg%Nehlídané modíøe mùe zajmout nepøítel.
+%neg%Pøi støelbì má vysokou spotøebu uhlí a eleza.
+	@multicannon
+Vícehlavòové dìlo
+	@multicannon.ext
+%def%Støílí šrapnely na menší vzdálenost.
+%pos%Efektivní proti neobrnìné pìchotì.
+%pos%Rychlá støelba.
+%neg%Vyaduje zlato na údrbu.
+%neg%Kdy zlato dojde, vícehlavòová dìla pøestanou støílet.
+%neg%Nehlídaná vícehlavòová dìla mùe zajmout nepøítel.
+%neg%Pøi støelbì má vysokou spotøebu uhlí a eleza.
+	@BUILDINGS.NATIONAL
+********************************National structures*********************************
+	@%nat%aca
+Akademie
+	@%nat%aca.ext
+%def%Vızkumné støedisko mìsta.
+%def%Pøidává monost vızkumu technologií a spoustu vylepšení.
+%neg%Mùe ji zabrat nepøítel.
+	@%nat%art
+Dìlostøeleckı sklad
+	@%nat%art.ext
+%def%Vyrábí dìlostøelecké jednotky.
+%neg%Mùe ho zabrat nepøítel.
+	@%nat%bar
+Kasárna, 17. století
+	@%nat%bar.ext
+%def%Cvièí pìchotní jednotky, dùstojníky a bubeníky 17. století.
+%pos%Poskytuje dodateèné ubytování pro %farm% osob.
+	@%nat%ba2
+Kasárna, 18. století
+	@%nat%ba2.ext
+%def%Cvièí pìchotní jednotky, dùstojníky a bubeníky 18. století.
+%pos%Poskytuje dodateèné ubytování pro %farm% osob.
+%neg%Dostupné pouze v 18. století.
+	@%nat%bla
+Kovárna
+	@%nat%bla.ext
+%def%Pøidává monost vylepšení vırobkù ze eleza.
+%neg%Mùe ji zabrat nepøítel.
+	@%nat%cen
+Radnice
+	@%nat%cen.ext
+%def%Cvièí vesnièany.
+%def%Vesnièané do radnice nosí kámen, døevo a jídlo.
+%pos%Poskytuje ubytování pro %farm% osob.
+%neg%Mùe ji zabrat nepøítel.
+%def%Po postavení všech potøebnıch budov mùeš na radnici postoupit do dalšího technologického období.
+	@%nat%dip
+Diplomatickı úøad
+	@%nat%dip.ext
+%def%Umoòuje najímat cizí oldáky.
+%neg%Lze postavit jen jeden diplomatickı úøad.
+	@%nat%hou
+Obydlí
+	@%nat%hou.ext
+%pos%Poskytuje ubytování pro %farm% osob.
+%neg%Mùe ho zabrat nepøítel.
+	@%nat%sta
+Stáje
+	@%nat%sta.ext
+%def%Cvièí jízdu 17. století.
+%pos%Po postupu do 18. století je ve stájích k dispozici jízda 18. století.
+	@%nat%tem
+Katedrála
+	@%nat%tem.ext
+%def%Slouí k vıcviku knìzù.
+	@BUILDINGS.COMMON
+********************************Common structures*********************************
+	@%com%coa
+Uhelnı dùl
+	@%com%coa.ext
+%def%Produkuje uhlí.
+%neg%Mùe ho zabrat nepøítel.
+%def%Poèet vesnièanù pracujících v dole lze zvıšit pomocí vylepšení.
+%def%Kadı dùl je nutné vylepšit zvláš.
+%def%Maximální poèet vesnièanù pracujících v jednom dole se všemi vylepšeními je 95.
+	@%com%gol
+Dùl
+	@%com%gol.ext
+%def%Produkuje zlato.
+%neg%Mùe ho zabrat nepøítel.
+%def%Poèet vesnièanù pracujících v dole lze zvıšit pomocí vylepšení.
+%def%Kadı dùl je nutné vylepšit zvláš.
+%def%Maximální poèet vesnièanù pracujících v jednom dole se všemi vylepšeními je 95.
+	@%com%iro
+eleznı dùl
+	@%com%iro.ext
+%def%Produkuje elezo.
+%neg%Mùe ho zabrat nepøítel.
+%def%Poèet vesnièanù pracujících v dole lze zvıšit pomocí vylepšení.
+%def%Kadı dùl je nutné vylepšit zvláš.
+%def%Maximální poèet vesnièanù pracujících v jednom dole se všemi vylepšeními je 95.
+	@%com%mar
+Trištì
+	@%com%mar.ext
+%def%Umoòuje nákup, prodej a vımìnu surovin.
+%neg%Mùe ho zabrat nepøítel.
+	@%com%mil
+Mlın
+	@%com%mil.ext
+%def%Slouí k vırobì a zpracovávání obilnin.
+%def%Vesnièané mohou do mlına nosit sklizené jídlo.
+%neg%Mùe ho zabrat nepøítel.
+%def%Mlın také pøidává monost vylepšení vıroby jídla.
+	@%com%sto
+Skladištì
+	@%com%sto.ext
+%def%Skladuje døevo a kámen, které sem donesou vesnièané.
+%neg%Mùe ho zabrat nepøítel.
+	@%com%por
+Lodìnice
+	@%com%por.ext
+%def%Slouí k vırobì lodí.
+%def%Lodì do pøístavu vozí ryby.
+	@%com%sga
+Brána
+	@%com%sga.ext
+%def%Silné obranné opevnìní.
+%pos%Znièit ji mohou pouze dìla, lodì, granátníci èi luèištníci.
+%def%Støelecké jednotky nemohou støílet skrz kamenné hradby.
+%def%Brány lze stavìt v kamennıch hradbách.
+%neg%Údrba vyaduje kámen.
+	@%com%swa
+Hradba
+	@%com%swa.ext
+%def%Silné obranné opevnìní.
+%pos%Znièit ji mohou pouze dìla, lodì, granátníci èi luèištníci.
+%def%Støelecké jednotky nemohou støílet skrz kamenné hradby.
+%def%V kamennıch hradbách lze stavìt brány.
+%neg%Údrba vyaduje kámen.
+	@%com%tow
+Vì
+	@%com%tow.ext
+%def%Útoèné opevnìní.
+%pos%Znièit ji mohou pouze dìla, lodì, granátníci èi luèištníci.
+%def%Rychlost støelby vìe lze zvıšit pomocí vylepšení, které pøidávají dìla.
+%def%Kadou vì je nutné vylepšit zvláš.
+%neg%Vìní dìla mají pøi støelbì vysokou spotøebu uhlí a eleza.
+	@%com%wga
+Brána
+	@%com%wga.ext
+%def%Nejlevnìjší obranné opevnìní, nejsnadnìjší stavba.
+%def%Støelecké jednotky mohou støílet skrz palisádu.
+%def%Brány lze stavìt v palisádì.
+	@%com%wwa
+Palisáda
+	@%com%wwa.ext
+%def%Nejlevnìjší obranné opevnìní, nejsnadnìjší stavba.
+%def%Støelecké jednotky mohou støílet skrz palisádu.
+%def%V palisádì lze stavìt brány.
+	@field
+Obilniny
+	@_del_polaca
+%include(units;ausaca)%
+	@_del_polaca.ext
+%include(units;ausaca.ext)%
+	@_del_polart
+%include(units;ausart)%
+	@_del_polart.ext
+%include(units;ausart.ext)%
+	@_del_polbar
+%include(units;ausbar)%
+	@_del_polbar.ext
+%include(units;ausbar.ext)%
+	@_del_polba2
+%include(units;ausba2)%
+	@_del_polba2.ext
+%include(units;ausba2.ext)%
+	@_del_polbla
+%include(units;ausbla)%
+	@_del_polbla.ext
+%include(units;ausbla.ext)%
+	@_del_polcen
+%include(units;auscen)%
+	@_del_polcen.ext
+%include(units;auscen.ext)%
+	@_del_poldip
+%include(units;ausdip)%
+	@_del_poldip.ext
+%include(units;ausdip.ext)%
+	@_del_polhou
+%include(units;aushou)%
+	@_del_polhou.ext
+%include(units;aushou.ext)%
+	@_del_polsta
+%include(units;aussta)%
+	@_del_polsta.ext
+%include(units;aussta.ext)%
+	@_del_poltem
+%include(units;austem)%
+	@_del_poltem.ext
+%include(units;austem.ext)%
+	@UNIQUE
+*********************Unique structures and hints********************
+	@turbar
+Kasárna
+	@turbar.ext
+%def%Cvièí pìchotní jednotky, dùstojníky a bubeníky.
+%pos%Poskytuje dodateèné ubytování pro %farm% osob.
+	@turtem
+Mešita
+	@algtem
+Mešita
+	@rustem
+Pravoslavná katedrála
+	@ukrtem
+Pravoslavná katedrála
+	@algbar
+%include(units;turbar)%
+	@algbar.ext
+%include(units;turbar.ext)%
+	@turcen.ext
+%def%Cvièí vesnièany.
+%def%Vesnièané do radnice nosí kámen, døevo a jídlo.
+%pos%Poskytuje ubytování pro %farm% osob.
+%neg%Mùe ji zabrat nepøítel.
+	@algcen.ext
+%include(units;turcen.ext)%
+	@ruscen.ext
+%include(units;turcen.ext)%
+	@ukrbar.ext
+%def%Cvièí støelecké jednotky.
+%pos%Poskytuje ubytování pro %farm% osob.
+	@tursta.ext
+%def%Cvièí jízdu.
+	@algsta.ext
+%include(units;tursta.ext)%
+	@ukrsta.ext
+%include(units;tursta.ext)%
+	@rushou
+Jizba
+	@ukrhou
+Chatrè
+	@rusbar
+Kasárna ruskıch støelcù
+	@ukrbar
+Kozáckı dùm
+	@turmar
+Bazar
+	@algmar
+Bazar
+	@turaca
+Minaret
+	@algaca
+Minaret
+	@misdonkey
+Nákladní kùò
+	@misflagman
+Vlajkonoš
+	@misgeneral
+Generál
+	@mistrader
+Kupec
+	@misbridge
+Most
+	@misblg
+Døevìná chatka
+	@misblg2
+Døevìná chatka
+	@miscommandcenter
+Velitelské støedisko
+	@mistent
+Stan
+	@misyurt
+Jurta
+	@chaika
+Èajka
+	@chaika.ext
+%def%Váleèná loï niší tøídy.
+%pos%Dobrá ovladatelnost.
+%pos%Vysoká rychlost pohybu.
+%pos%Dokáe støílet z luku a ze zádi.
+%neg%Slabá støelba.
+	@archertur
+Turkish lukostøelec
+	@archertur.ext
+%include(units;descr.any.bow)%
+%include(units;descr.effective.onlywithinf)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+	@archerturdip
+%include(units;archertur)%%include(units;descr.ability.mercenary)%
+	@archerturdip.ext
+%include(units;descr.inf.bow)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+%include(units;descr.effective.ships)%
+	@lightcavalry
+Lehká jízda
+	@lightcavalry.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.combination.lowrateoffirehighbuildtime)%
+	@lightcavalrydip
+%include(units;lightcavalry)%%include(units;descr.ability.mercenary)%
+	@lightcavalrydip.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.highrateoffire)%
+%include(units;descr.ability.consumegold)%
+%include(units;descr.ability.highshootcost)%
+%include(units;descr.effective.merc)%
+	@dragoonpol
+Lidové masy
+	@dragoonpol.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.highshootingrange)%
+	@dragoon18net
+%include(units;dragoon18)%
+	@dragoon18net.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.combination.lowrateoffirehighbuildtime)%
+	@musketeer18den
+%include(units;musketeer18)%
+	@musketeer18den.ext
+%include(units;descr.inf.musketbayonet)%
+%include(units;descr.canmeleeandshoot)%
+%include(units;descr.cost.lowafterupgrade)%
+%include(units;descr.effective.melee)%
+	@grenadierden
+%include(units;grenadier)%
+	@grenadierden.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+	@hackapell
+Hakkapeliitta
+	@hackapell.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.combination.highbuildmovespeed)%
+%include(units;descr.effective.notforminfheavycav)%
+	@grenadierpru
+%include(units;grenadier)%
+	@grenadierpru.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+	@musketeer18bav
+%include(units;musketeer18)%
+	@musketeer18bav.ext
+%include(units;descr.inf.musketbayonet)%
+%include(units;descr.canmeleeandshoot)%
+%include(units;descr.cost.lowafterupgrade)%
+%include(units;descr.effective.melee)%
+	@grenadierbav
+%include(units;grenadier)%
+	@grenadierbav.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+%include(units;descr.params.highattackprotection)%
+%include(units;descr.cost.high2)%
+	@guardcavalrysax
+%include(units;cavalryguard)%
+	@guardcavalrysax.ext
+%include(units;descr.cav.heavy.sword)%
+%include(units;descr.armored)%
+%include(units;descr.effective.inflightcav)%
+	@peasco
+Vesnièan
+	@peasco.ext
+%include(units;descr.ability.canextractresources)%
+%include(units;descr.canbuildandrepair)%
+%include(units;descr.ability.cannotbecaptured)%
+	@pikemansco
+Pikenır Covenant
+	@pikemansco.ext
+%include(units;descr.inf.longpike)%
+	@musketeersco
+Mušketır Covenant
+	@musketeersco.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.build.lowspeed3)%
+	@swordsmansco
+Šermíø klan
+	@swordsmansco.ext
+%include(units;descr.inf.sword)%
+%include(units;descr.params.highattack)%
+	@archersco
+Lukostøelec klan
+	@archersco.ext
+%include(units;descr.any.bow)%
+%include(units;descr.effective.onlywithinf)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+	@officersco
+Dùstojník
+	@officersco.ext
+%include(units;descr.ability.createformation)%
+%include(units;descr.ability.consumegold)%
+	@lancersco
+Kopiník
+	@lancersco.ext
+%include(units;descr.cav.light.pike)%
+%include(units;descr.effective.inf)%
+%include(units;descr.build.highspeed)%
+%include(units;descr.cost.low2)%
+	@raidersco
+Nájezdník
+	@raidersco.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.combination.highbuildmovespeed)%
+%include(units;descr.effective.notforminfheavycav)%
+	@framegun
+Ribaudequin
+	@framegun.ext
+%pos%Efektivní proti neobrnìné pìchotì.
+%neg%Vyaduje zlato na údrbu.
+%neg%Nehlídaná dìla mùe zajmout nepøítel.
+%neg%Pøi støelbì má vysokou spotøebu uhlí a eleza.
+	@scoba2
+Zámek
+	@scoba2.ext
+%def%Cvièí horalé. 
+%pos%Poskytuje dodateèné ubytování pro %farm% osob.
+	@ukrcen.ext
+%def%Cvièí vesnièany.
+%def%Vesnièané do radnice nosí kámen, døevo a jídlo.
+%pos%Poskytuje ubytování pro %farm% osob.
+%neg%Mùe ji zabrat nepøítel.
+	@turcen.ext
+%def%Cvièí vesnièany.
+%def%Vesnièané do radnice nosí kámen, døevo a jídlo.
+%pos%Poskytuje ubytování pro %farm% osob.
+%neg%Mùe ji zabrat nepøítel.
+	@algcen.ext
+%def%Cvièí vesnièany.
+%def%Vesnièané do radnice nosí kámen, døevo a jídlo.
+%pos%Poskytuje ubytování pro %farm% osob.
+%neg%Mùe ji zabrat nepøítel.
+	@scocen.ext
+%def%Cvièí vesnièany.
+%def%Vesnièané do radnice nosí kámen, døevo a jídlo.
+%pos%Poskytuje ubytování pro %farm% osob.
+%neg%Mùe ji zabrat nepøítel.
+	@sipahi
+Tìkı Sipah
+	@sipahi.ext
+%include(units;descr.cav.heavy.broadsword)%
+%include(units;descr.armored)%
+%include(units;descr.effective.infcav2)%
+%include(units;descr.params.highattackprotection)%
+%include(units;descr.build.lowspeed2)%
+%include(units;descr.cost.high)%
+	@gauduk
+Haiduk
+	@gauduk.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+	@pikemanspa
+Koselet
+	@pikemanspa.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.armored)%
+%include(units;descr.effective.form)%
+	@hussarhun
+%include(units;hussar)%
+	@hussarhun.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.build.lowspeed2)%
+%include(units;descr.effective.notcuirassier)%
+	@jagerpor
+Dobrovolník
+	@jagerpor.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+	@grenadierhun
+%include(units;grenadier)%
+	@grenadierhun.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+	@pandurhun
+Sikulové
+	@pandurhun.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.mosteffective.shooter)%
+	@pikemanpor
+%include(units;pikeman)%
+	@pikemanpor.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.armored)%
+%include(units;descr.effective.form)%
+	@pikemanswi
+%include(units;pikeman)%
+	@pikemanswi.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.armored)%
+%include(units;descr.effective.form)%
+	@jagerswi
+Lovec
+	@jagerswi.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+	@hussarswi
+Konny lovec
+	@hussarswi.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.build.lowspeed2)%
+%include(units;descr.effective.notcuirassier)%
+	@padre
+Padre
+	@padre.ext
+%include(units;descr.canheal)%
+	@dragoon18pie
+%include(units;dragoon18)%
+	@dragoon18pie.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.combination.lowrateoffirehighbuildtime)%

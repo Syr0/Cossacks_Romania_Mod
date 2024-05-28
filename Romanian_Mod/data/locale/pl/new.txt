@@ -1,0 +1,525 @@
+	@server.outoforder
+Serwer niebawem bêdzie dostêpny. Obecnie trwaj¹ prace naprawcze.
+	@announcement.support.header
+Wa¿ne og³oszenia.
+	@announcement.support.depplaystv
+Odkryto niektóre ustawienia systemowe oraz inne aplikacje które mog¹ wp³ywaæ na destabilizacjê gry na Twoim komputerze. W przypadku problemów z wydajnoœci¹ lub losowych zacieñæ, postêpuj zgodnie z poradami:
+	@announcement.dep
+Ustawienia systemowe DEP(Data Execution Prevention) mog¹ wchodziæ w konflikt z gr¹.
+¯eby to naprawiæ wystarczy dodaæ "cossacks.exe" w wyj¹tkach DEP. Wiêcej informacji jak tego dokonaæ mo¿na znale¿æ w "Community Hub" na Steam.
+	@announcement.playstv
+Wykryliœmy aplikacje próbuj¹ce zak³ócaæ procesy gry. W wiêkszoœci przypadków jest to "Plays.TV", "Raptr", "RazerIngameEngine" albo "XSplit" albo inne palikacje s³u¿¹ce do nagrywania gier. Zalecamy zamkniêcie tych aplikacji(menad¿er zadañ), poniewa¿ mog¹ podowaæ one "crash" podczas grania.
+	@dontshowagain
+Nie pokazuj tego powiadomienia
+	@host.leave
+Gospodarz %name% wyszed³, gra nie mo¿e byæ kontynuowana
+	@host.disconnected
+Gospodarz %name% utraci³ po³¹czenie z serwerem, gra nie mo¿e byæ kontynuowana
+	@player.leave
+Gracz %name% opuœci³ grê
+	@player.disconnected
+Gracz %name% utraci³ po³¹czenie z serwerem
+	@text.engame.win.mp
+ZWYCIÊSTWO! Wciœnij ESC, aby zamkn¹æ ten komunikat,
+lub BACKSPACE, aby wyjœæ z gry.
+	@text.engame.lose.mp
+PORA¯KA! Wciœnij ESC, aby zamkn¹æ ten komunikat,
+lub BACKSPACE, aby wyjœæ z gry.
+	@host.leave.continue
+Host %name% ma zakonczyc, gra bedzie kontynuowana, jednostki i budynki moga stracilo rozkazy.
+	@host.disconnected.continue
+Host %name% traci polaczenie z serwerem, gra bedzie kontynuowana, jednostki i budynki moga stracilo rozkazy.
+	@menu.btn.surrender
+Poddac
+	@menu.btn.surrender.approve
+Idziesz do poddania sie! Jestes pewny?
+	@menu.btn.statistics
+Statystyka
+	@map.size
+Wielkoœæ mapy
+	@map.size.normal
+Normalna
+	@map.size.large
+Du¿y 2x
+	@map.size.huge
+Olbrzymia 4x
+	@mods.mods
+Mody
+	@mods.hintroomneedsync
+Ten u¿ytkownik ma zainstalowane mody innej wersji ni¿ Twoja
+	@mods.hintroomreadytoplay
+Ten u¿ytkownik ma zainstalowane te same mody co Ty, mo¿esz do³¹czyæ bez synchornizacji
+	@mods.modslist
+Lista modów
+	@mods.playersmods
+Mody gracza
+	@mods.synchronizedmods
+Zsynchronizowane mody
+	@mods.roomchecksumdif
+Twoje mody ró¿ni¹ siê od modów tego pokoju. Chcesz ¿eby gra automatycznie zsynchronizowa³a wresje? Mo¿e to zaj¹æ kilka minut.
+	@mods.playersmodslist
+Lista modów gracza:
+	@mods.ok
+Ok
+	@mods.cancel
+Anuluj
+	@mods.pleasewait
+Proszczê poczekaæ
+	@mods.syncinprogress
+Gra rozpoczê³a pobieranie i instalowanie wymaganych modów. Ten proces mo¿e chwilê potrwaæ. 
+	@mods.cancel.2
+Anuluj
+	@mods.syncerror
+B³¹d synchronizacji
+	@mods.syncfailed
+Wersja gry jest inna, nawet po synchronizacji. Mo¿e to byæ spowodowane albo przez obecnoœæ nieaktualnych wersji modów gracz / host albo przez modyfikacji jednego z modów.
+	@mods.syncfailed2
+Mo¿esz sprawdziæ swoje pamiêæ podrêczna, albo poprosiæ hosta, aby sprawdziæ integralnoœæ gry i aktywowanych modów.
+	@mods.wrongmodexists
+Gra znalaz³a mod, który nie zosta³ zainstalowany w warsztacie lub b³êdu. Ten mod nie pozwoli prawid³owo zsynchronizowaæ inne modyfikacje w grze sieciowej. Inni gracze musz¹ rêcznie zainstalowaæ ten mod.
+	@mods.downloadlink
+Mo¿na ustawiæ ten mod, klikaj¹c link
+	@mods.pagelink
+Link do Moda
+	@mods.unknown
+Nie wiadomo
+	@announcement.videodriver
+Gra wykry³?, ¿e sterownik karty graficznej nie jest zainstalowany lub nie dzia³a prawid³owo.Proszê zainstalowaæ najnowsze sterowniki karty graficznej 
+	@announcement.intelvideoonly
+W grze wystêpuje tylko kart? video Intel.Jeœli komputer ma inn¹ kartê, nale¿y zainstalowaæ najnowszy sterownik ze strony producenta karty graficznej. 
+	@mods.pleaserestart
+Proszê ponownie uruchomiæ grê
+	@internetshell.btn.ranking
+?cena
+	@internetshell.btn.profile
+?rofil
+	@internetshell.btn.torooms
+Lista sesji
+	@internetshell.btn.switchtosimple
+?roste wyszukiwanie
+	@internetshell.btn.switchtoadvanced
+Lista pokoi
+	@internetshell.btn.autosearch
+Szybka gra
+	@internetshell.btn.stopautosearch
+?rzerwaæ wyszukiwanie
+	@internetshell.btn.autosearchsettings
+Ustawienia Szybkiej rozgrywki
+	@internetshell.btn.autosearchfoundroom
+Pokój znaleziony, gotów?
+	@internetshell.btn.autosearchapprove
+?kceptuj
+	@internetshell.btn.autosearchcancel
+Odrzuæ
+	@internetshell.text.autosearchroom
+Szybka rozgrywka
+	@internetshell.btn.joinautosearch
+Rozpocznij szybk¹ rozgrywkê
+	@internetshell.text.approxtime
+Szacowany czas oczekiwania:
+	@internetshell.text.approxtimecalc
+Obliczanie
+	@internetshell.text.approxtimeunknown
+Brak danych
+	@internetshell.roomsettings.res1
+1000 œrodków pocz¹tkowych
+	@internetshell.roomsettings.res2
+5000 œrodków pocz¹tkowych
+	@internetshell.roomsettings.res3
+1 000 000 œrodków pocz¹tkowych
+	@internetshell.roomsettings.res1short
+1000
+	@internetshell.roomsettings.res2short
+5000
+	@internetshell.roomsettings.res3short
+1000000
+	@internetshell.roomsettings.0pt
+Brak czasu pokoju (no pt)
+	@internetshell.roomsettings.10pt
+10 minut pokoju
+	@internetshell.roomsettings.20pt
+20 minut pokoju
+	@internetshell.roomsettings.30pt
+30 minut pokoju
+	@internetshell.roomsettings.0ptshort
+0pt
+	@internetshell.roomsettings.10ptshort
+10pt
+	@internetshell.roomsettings.20ptshort
+20pt
+	@internetshell.roomsettings.30ptshort
+30pt
+	@internetshell.roomsettings.1vs1
+1vs1
+	@internetshell.roomsettings.2vs2
+2vs2
+	@internetshell.roomsettings.3vs3
+3vs3
+	@internetshell.roomsettings.4vs4
+4vs4
+	@internetshell.roomsettings.2vs2vs2vs2
+2vs2vs2vs2
+	@internetshell.roomsettings.2vs2vs2
+2vs2vs2
+	@internetshell.roomsettings.ffa4
+4pl FFA
+	@internetshell.roomsettings.ffa6
+6pl FFA
+	@internetshell.roomsettings.ffa8
+8pl FFA
+	@internetshell.roomsettings.ffa
+FFA
+	@internetshell.roomsettings.nation.random
+Losowy kraj
+	@internetshell.roomsettings.nation.select
+Jakikolwiek kraj
+	@internetshell.roomsettings.nation.eur
+Europejski
+	@internetshell.roomsettings.nation.rus
+Rosja
+	@internetshell.roomsettings.nation.ukr
+Ukraina
+	@internetshell.roomsettings.nation.arab
+Bliski wschód
+	@internetshell.roomsettings.nodip
+Bez centrum dyplomatycznego
+	@internetshell.roomsettings.nomarket
+Bez marketu
+	@internetshell.roomsettings.nodipmarket
+Bez marketu i centrum dyplomatycznego
+	@internetshell.roomsettings.level0
+Pocz¹tkuj¹cy
+	@internetshell.roomsettings.level1
+Doœwiadczony
+	@internetshell.roomsettings.level2
+Weteran
+	@mods.workshop
+Warsztat modów 
+	@internetshell.txt.nonrankedggame
+Gra nie rankingowana
+	@internetshell.txt.rankedgame
+Gra rankingowa
+	@internetshell.txt.exitrankedgame
+Masz zamiar zrezygnowaæ. To gra rankingowa, a jej opuszczenie doprowadzi do obni¿enia Twojej rangi. Czy jesteœ pewien swojej decyzji?
+	@mods.workshop.approve
+Spowoduje to otwarcie modów Warsztaty w przegl¹darce, czy kontynuowaæ?
+	@mods.workshop.help1
+Mo¿esz subskrybowaæ nowe mody, gdy jesteœ zalogowany. Mo¿esz równie¿ otworzyæ Warsztat przez steama.
+	@mods.workshop.help2
+Mody zostan¹ automatycznie zainstalowane po naciœniêciu odnoœnika "Zasubskrybuj" i zostanie automatycznie odinstalowane po naciœniêciu "Zrezygnuj z subskrybcji". Mo¿na równie¿ aktywowaæ i dezaktywowaæ ju¿ ustalone mody przy u¿yciu Mod Manager.
+	@mods.workshop.help3
+Mod Manager mo¿na uruchomiæ za pomoc¹ swojego profilu w serwisie Steam
+	@mods.workshop.help4
+Gra bêdzie zrestartowana, aby upewniæ siê, ¿e wszystkie zainstalowane mody dzia³aj¹ poprawnie. Jesteœ pewien?
+	@customgame.text.season
+Sezon
+	@randommap.season.0
+Lato
+	@randommap.season.1
+Jesien
+	@minimap.info.teamnumber
+Zespó³
+	@minimap.info.teamffa
+Bez zespo³u
+	@adviser.switchonoff
+Asystent
+	@adviser.economy
+Upowa¿niæ uprawnieniami Burmistrza
+	@adviser.construct
+Przys³uchiwaæ siê do Doradcy w sprawach budownictwa
+	@adviser.upgrades
+Przys³uchiwaæ siê do Uczonego doradcy
+	@adviser.upgrades.showunaffordable
+Pokazywaæ niedostêpne poprawy
+	@adviser.quartermeister
+Skorystaæ siê us³ugami kwatermistrza
+	@adviser.quartermeister.advanced
+Zarz¹dzaæ
+	@adviser.quartermeister.setupguards
+Rozstawiaæ ochronê u budowl
+	@adviser.quartermeister.produceofficers
+Najmowaæ oficerów i perkusistów
+	@adviser.quartermeister.proposesquads
+Proponowaæ kszta³towanie dru¿yn
+	@adviser.economy.advanced
+Rozszerzone
+	@adviser.apply
+Zastosowaæ
+	@adviser.close
+Zamkn¹æ
+	@adviser.ok
+Ok, dobrze
+	@adviser.economy.controlpeasants
+Odprawiaæ ch³opów za zasobami
+	@adviser.economy.producepeasants
+Najmowaæ ch³opów
+	@adviser.economy.repairbuildings
+Remontowaæ budowli
+	@adviser.economy.fillmines
+Odprawiaæ ch³opów do kopalni
+	@adviser.economy.manualresourcedistribution
+Handlowaæ zasobami
+	@adviser.economy.marketadvises
+Pokazywaæ rady handlowe
+	@adviser.switchonoff.hint
+Pozwalaæ pomagierom przychodziæ do was na pomoc z mêcz¹cymi zadaniami : 
+- rozdzielaæ ch³opów po zasobach 
+- zabezpieczaæ dru¿yny dostateczn¹ iloœci¹ perkusistów i oficerów 
+- remontowaæ uszkodzone budowli 
+- rozstawiaæ ochronê ko³o przechwyconych budowl i tak dalej.
+	@adviser.economy.hint
+Burmistrz pozwala wam skupiæ siê na wojnie, kontroluj¹c gospodarkê waszego kraju.Ten doradca bêdzie surowym kierownikiem dla leniwych ch³opów, zabezpieczaj¹c ich rêce sierpami, siekierami i kilofami. Burmistrz zdolny nadawaæ wam si³ê robocz¹, poniewa¿ on du¿y orator, który zna, jak przyci¹gn¹æ tanich i oddanych ch³opów. Bêd¹c du¿ym kupcem on bêdzie doradza³ wam dochodowe ugody na rynku.
+	@adviser.construct.hint
+Doradca w sprawach budownictwa pomo¿e wam zrozumieæ, które budowle s¹ potrzebne dla waszego miasta. 
+Wam wystarczy daæ polecenie, ¿eby zbudowaæ ich.
+	@adviser.upgrades.hint
+Wasz Uczony doradca z du¿ym zadowoleniem mo¿e pokazaæ wam które ekonomiczne i wojskowe poprawy s¹ po¿¹dane i dostêpne.
+	@adviser.upgrades.showunaffordable.hint
+Niektóre poprawy s¹ po¿¹dane, lecz s¹ potrzebne wiêcej zasobów dla ich studiowania. 
+Bêdziecie widzia³y do czego nale¿y pragn¹æ!
+	@adviser.quartermeister.hint
+Kwatermistrz bêdzie dobrze zachowywa³ siê z waszymi ¿o³nierzami. 
+On nie da ¿o³nierzom nudziæ siê odprawiaj¹c ich na wartê. 
+Zabezpieczy dru¿yny dostateczn¹ iloœci¹ perkusistów i oficerów. 
+Kwatermistrz mo¿e dawaæ wam porady po kszta³towaniu nowych dru¿yn z istniej¹cych bojowców.
+	@adviser.quartermeister.advanced.hint
+Zarz¹dzaæ wojskowym doradc¹
+	@adviser.quartermeister.setupguards.hint
+Rozstawiaæ ochronê u budowl
+	@adviser.quartermeister.produceofficers.hint
+Najmowaæ oficerów i perkusistów
+	@adviser.quartermeister.proposesquads.hint
+Kwatermistrz mo¿e doradzaæ wam kszta³towania dru¿yn, wychodz¹c z iloœci waszych ¿o³nierzy.
+	@adviser.economy.advanced.hint
+Rozszerzone nastrajania
+	@adviser.economy.controlpeasants.hint
+Burmistrz rozprowadzi waszych ch³opów po zasobach.
+	@adviser.economy.producepeasants.hint
+Pozwalaæ najmowaæ ch³opów dla potrzeb miasta stale i bez waszego uczestnictwa
+	@adviser.economy.repairbuildings.hint
+W³adca nie ma czasu na kontrolê zachowania wszystkich budowl! 
+Burmistrz zatroszczy siê o tym, a¿ bêdziecie rozmyœlaæ o globalnych i strategicznych pytaniach!
+	@adviser.economy.fillmines.hint
+Burmistrz nie zostawi wasze kopalnie w braku roboczych r¹k.
+	@adviser.economy.manualresourcedistribution.hint
+Rozdzielaæ ch³opów na zdobycz produkcji ¿ywnoœci, drewna i rudy.
+	@adviser.economy.marketadvises.hint
+Pozwalaæ Burmistrzowi dawaæ porady po handlu.
+	@adviser.dlc
+Warta wysokich gór.
+	@map.size.tiny
+Ma³y
+	@internetshell.btn.quickplay.hint
+Quick play allows you to search for 1x1 game with matchmaking on 5000 resources, 0 pt, random nation, without peasants capture.
+	@internetshell.btn.createroom.hint
+Create custom game room. Attention: these games won't affect your rating.
+	@internetshell.btn.joinroom.hint
+Join to custom game room. Attention: these games won't affect your rating.
+	@internetshell.btn.ranking.hint
+Top 100 ladder players. Best players of this season would receive special signs, and right to participate in official season tournament with prizes. To participate in rating you need to play quick play games with enabled "Rating games" checkbox.
+        @internet.random.animal.0
+Aligator
+        @internet.random.animal.1
+Hymn
+        @internet.random.animal.2
+Pancernik
+        @internet.random.animal.3
+¯ubr
+        @internet.random.animal.4
+Axolotl
+        @internet.random.animal.5
+Borsuk
+        @internet.random.animal.6
+Nietoperze
+        @internet.random.animal.7
+NiedŸwiedŸ
+        @internet.random.animal.8
+Beaver
+        @internet.random.animal.9
+Buffalo
+        @internet.random.animal.10
+Wielb³¹d
+        @internet.random.animal.11
+Ptactwo wodne
+        @internet.random.animal.12
+Chameleon
+        @internet.random.animal.13
+Gepard
+        @internet.random.animal.14
+Szynszyla
+        @internet.random.animal.15
+Chipmunk
+        @internet.random.animal.16
+Chupacabra
+        @internet.random.animal.17
+Kormoran
+        @internet.random.animal.18
+Kojot
+        @internet.random.animal.19
+Raven
+        @internet.random.animal.20
+Dingo
+        @internet.random.animal.21
+Dinozaur
+        @internet.random.animal.22
+Pies
+        @internet.random.animal.23
+Dolphin
+        @internet.random.animal.24
+Kaczka
+        @internet.random.animal.25
+S³oñ
+        @internet.random.animal.26
+Thir
+        @internet.random.animal.27
+Fox
+        @internet.random.animal.28
+¯aba
+        @internet.random.animal.29
+¯yrafa
+        @internet.random.animal.30
+Nougat
+        @internet.random.animal.31
+Grisley
+        @internet.random.animal.32
+Je¿
+        @internet.random.animal.33
+Hipopotam
+        @internet.random.animal.34
+Guyena
+        @internet.random.animal.35
+Kozioro¿ec
+        @internet.random.animal.36
+Iguana
+        @internet.random.animal.37
+Szakal
+        @internet.random.animal.38
+Kangur
+        @internet.random.animal.39
+Koala
+        @internet.random.animal.40
+Kraken
+        @internet.random.animal.41
+Lemur
+        @internet.random.animal.42
+Lampart
+        @internet.random.animal.43
+Liger
+        @internet.random.animal.44
+Lion
+        @internet.random.animal.45
+Lama
+        @internet.random.animal.46
+Loris
+        @internet.random.animal.47
+Lamantyna
+        @internet.random.animal.48
+Mink
+        @internet.random.animal.49
+Ma³pa
+        @internet.random.animal.50
+Lotion
+        @internet.random.animal.51
+Narval
+        @internet.random.animal.52
+Orangutan
+        @internet.random.animal.53
+Sowa
+        @internet.random.animal.54
+Panda
+        @internet.random.animal.55
+Pingwin
+        @internet.random.animal.56
+Kachkonis
+        @internet.random.animal.57
+Python
+        @internet.random.animal.58
+Kvagga
+        @internet.random.animal.59
+Królik
+        @internet.random.animal.60
+Rhino
+        @internet.random.animal.61
+Rhino
+        @internet.random.animal.62
+Owce
+        @internet.random.animal.63
+Earthworm
+        @internet.random.animal.64
+Skunk
+        @internet.random.animal.65
+Wiewiórka
+        @internet.random.animal.66
+Tygrys
+        @internet.random.animal.67
+¯ó³w
+        @internet.random.animal.68
+Morge
+        @internet.random.animal.69
+Wolf
+        @internet.random.animal.70
+Wolverine
+        @internet.random.animal.71
+Wombat
+        @internet.random.color.0
+Czerwony
+        @internet.random.color.1
+Niebieski
+        @internet.random.color.2
+Turkusowy
+        @internet.random.color.3
+Fioletowy
+        @internet.random.color.4
+Pomarañczowy
+        @internet.random.color.5
+Szary
+        @internet.random.color.6
+Azure
+        @internet.random.color.7
+Brown
+        @internet.random.color.8
+Bia³y
+        @internet.random.color.9
+Zielony
+        @internet.random.color.10
+Ró¿owy
+        @internet.random.color.11
+¯ó³ty
+        @internet.random.color.12
+Niebieski
+        @internet.random.color.13
+Salsate
+        @internet.random.color.14
+Czarny
+        @internet.random.color.15
+Jsny br¹z
+	@btn.tutorial
+Tutorial
+	@settings.hotkeys
+Hotkeys
+	@menu.encyclopedia
+Encyclopedia
+	@randommap.season.2
+Zima
+	@randommap.season.3
+Wiosna
+	@map.size.big
+sredni 1.5x
+	@map.size.verylarge
+Bardzo duzy 3x
+	@randommap.terraintype.6
+Jeziora
+	@randommap.terraintype.7
+Wybrze¿e
+	@randommap.terraintype.8
+Rzeki
+	@randommap.settings.startingunits.barrack17
+XVII-wieczne koszary
+	@randommap.settings.startingunits.village
+Wioska
+	@randommap.settings.startingunits.logcabins
+Chatynka
+	@randommap.settings.startingunits.union
+Unia
+	@randommap.settings.marketdip.expensivemercs
+Drodzy najemnicy

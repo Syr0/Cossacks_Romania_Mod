@@ -1,0 +1,55 @@
+section.begin
+   Name = Initial
+   IgnoreScenarioRecord = False
+   Code : struct.begin
+      [*] = ;SetGameObjectMyVirtualDirection(0,1,0);
+      [*] = ;SetGameObjectMyTrackPointMoveStep(0.2);
+      [*] = ;SetGameObjectMyEpsilonDistance(0.5);
+      [*] = ;SetGameObjectMyEpsilonAngle(0.98);
+      [*] = ;SetGameObjectMyTrackPointTurnStep(3);
+      [*] = ;SetGameObjectMyAnimationControlerEnabled(true);
+      [*] = ;SetGameObjectMyTrackPointUseAnimationCycles(false);
+      [*] = ;SetGameObjectMyTrackPointAnimationNames('fly', 'fly_slow');
+      [*] = ;SetGameObjectMyAnimationMode('aamLoop');
+      [*] = ;SetGameObjectMyTrackPointMovementMode('mmDoTrackListLoop');
+      [*] = ;SetGameObjectMyOnStatePointChanged('');
+      [*] = ;
+      [*] = ;SetGameObjectMyStateTargetPosition(GetGameObjectMyPositionX,GetGameObjectMyPositionY,GetGameObjectMyPositionZ);
+      [*] = ;var
+      [*] = ;r,x,y : float;
+      [*] = ;var
+      [*] = ;i,n : integer;
+      [*] = ;
+      [*] = ;SetGameObjectMyOffsetY(Random*2 + 3);
+      [*] = ;GameObjectMyTrackPointClear;
+      [*] = ;n := 4 + Round(random*3);
+      [*] = ;for i := 1 to n do
+      [*] = ;begin
+      [*] = ;   x := Random * 30 - 15;
+      [*] = ;   y := Random * 30 - 15;
+      [*] = ;   GameObjectMyTrackPointAdd(GetGameObjectMyStateTargetPositionX+x, GetGameObjectMyStateTargetPositionY, GetGameObjectMyStateTargetPositionZ+y);
+      [*] = ;end;
+      [*] = ;
+      [*] = ;SwitchTo('Nothing');
+   struct.end
+section.end
+
+section.begin
+   Name = OnBeforeSave
+   Code[*] = ;SwitchTo('Nothing');
+section.end
+
+section.begin
+   Name = OnAfterLoad
+   Code : struct.begin
+      [*] = ;SwitchTo('Nothing');
+   struct.end
+section.end
+
+section.begin
+   Name = Nothing
+   IgnoreScenarioRecord = False
+section.end
+
+
+

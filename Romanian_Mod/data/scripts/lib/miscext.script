@@ -1,0 +1,1716 @@
+//
+// miscext.script
+//
+
+// _misc_ForceSearchEnemyUseParams
+//
+function _misc_ForceSearchEnemyUseParams(hnd : Integer; pobj, pobjprop : Pointer; plind : Integer; bai, borderattack : Boolean) : Integer;
+begin
+   if hnd<>0 then
+   begin
+      if TObj(pobj).squad>=0 then
+      begin
+         if not bai then
+         begin
+            var pSquad : Pointer = gPlayer[plind].squads.Get(TObj(pobj).squad);
+            if not borderattack then
+            begin
+               if not TSquad(pSquad).fAgressive then
+               begin
+                  if TSquad(pSquad).fMoveCount = 0 then
+                  TSquad(pSquad).fAgressive := _unit_DoSearchVictim(hnd, false)<>0
+                  else
+                  begin
+                     var rmax : Float;
+                     var i : Integer;
+                     for i:=0 to gc_obj_MaxWeapon-1 do
+                     begin
+                        if TObjProp(pobjprop).weapon[i].enabled and (rmax=0) or (gPlayer[plind].objbase[TObj(pobj).cid][TObj(pobj).id].weapon[i].radiusmax>rmax) then
+                        rmax := gPlayer[plind].objbase[TObj(pobj).cid][TObj(pobj).id].weapon[i].radiusmax;
+                     end;
+                     if rmax>0 then
+                     TSquad(pSquad).fAgressive := (Result := _unit_SearchVictim(hnd, 0, rmax, False, 0, 0))<>0;
+                  end;
+               end
+               else
+               if (Result := _unit_DoSearchVictim(hnd, false))=0 then
+               Result := _unit_GetSquadTarget(hnd)
+               else
+               gPlayer[plInd].searchenemycur := gPlayer[plInd].searchenemycur+gc_progress_searchenemyweight;
+            end
+            else
+            if TSquad(pSquad).fAgressive or gProfile.bsearchenemyinfront then
+            if (Result := _unit_DoSearchVictim(hnd, false))<>0 then
+            gPlayer[plind].searchenemycur := gPlayer[plind].searchenemycur+gc_progress_searchenemyweight;
+         end
+         else
+         Result := _unit_DoSearchVictim(hnd, false);
+      end
+      else
+      if (Result := _unit_DoSearchVictim(hnd, false))<>0 then
+      gPlayer[plind].searchenemycur := gPlayer[plind].searchenemycur+gc_progress_searchenemyweight;
+
+      //TObj(pobj).lastsearchenemy := GetGameTime+TObj(pobj).uniqrnd*0.15+0.3;
+   end
+   else
+   begin
+      ErrorLog('_misc_ForceSearchEnemyUseParams hnd=0');
+      Result := 0;
+      exit;
+   end;
+end;
+
+// _misc_UnitProgressOrderPerformUpgrade
+//
+procedure _misc_UnitProgressOrderPerformUpgrade(const goHnd : Integer);
+begin
+   // прогресс производства апгрейда
+   // вынесен в common (функция исключение), так как апгрейд может делаться и в постройке, и в юните. И нам нужно вызывать _player_ApplyUpgrade, а библиотека плеера загржается позже.
+   var bProcess : Boolean = not (_net_IsClient or _net_IsReplay);
+
+   var pobj : Pointer = _unit_GetTObj(goHnd);
+   var cid : Integer = TObj(pobj).cid;
+   var upgind : Integer = TObj(pobj).orders[0].info.upgradeid;
+   if (upgind>0) then
+   begin
+      var plHnd : Integer = GetGameObjectPlayerHandleByHandle(goHnd);
+      var plInd : Integer = GetPlayerIndexByHandle(plHnd);
+      // если, апгрейд только поступил в производство (его progress=0), взымаем с игрока плату.
+      var porderinfo : Pointer = TObj(pobj).orders[0].info; if (gProfile.bDbgLogPointerNil) then _init_DebugPointerNil(porderinfo);
+      var bStart : Boolean = (TOrderInfo(porderinfo).progress=0);
+
+      var bDone : Boolean;
+      var lastprogresstime : Float = TObj(pobj).lastprogresstime;
+      var deltatime : Float = GetGameTime-lastprogresstime;
+      if (lastprogresstime>0) and (deltatime>0) then
+      begin
+         var progress : Float = (GetGameObjectStateMachineIntervalByHandle(goHnd))/1000;
+         var delta : Float = (deltatime/gCountry[cid].upgrade[upgind].time);
+
+         // выставление апгрейду флага - в производстве
+         if (bProcess) and (not gPlayer[plInd].upgstate[cid][upgind].inprogress) and (not gCountry[cid].upgrade[upgind].bindividual) then
+         ErrorLog('not gPlayer[plInd].upgstate[cid][upgind].inprogress : goUID='+IntToStr(GetGameObjectUniqueIdByHandle(goHnd)));
+
+         // изменяем прогресс апгрейда
+         TOrderInfo(porderinfo).progress := TOrderInfo(porderinfo).progress+delta;
+         if (TOrderInfo(porderinfo).progress>=1) then
+         bDone := True;
+         if (bDone) then
+         begin
+            // применение эффекта апгрейда к игроку. Если это игрок InterfaceIO, то выдача сообщения "улучшение завершено"
+            if (bProcess) then
+            _player_ApplyUpgrade(plHnd, goHnd, cid, upgind, True);
+         end;
+      end;
+   end;
+end;
+
+// _misc_DoProgressOrders
+//
+procedure _misc_DoProgressOrders(hnd : Integer; b31passed : Boolean);
+begin
+   var pobj : Pointer = _unit_GetTObj(hnd);
+   if pobj=nil then
+   begin
+      ErrorLog('_misc_DoProgressOrders pobj=nil');
+      exit;
+   end;
+
+   function GetSpiralStepsByRadius(const radius : Integer) : Integer;
+   begin
+      Result := (radius*2+1)*(radius*2+1)+3+(radius-1)*4;
+   end;
+
+   function ProcessSpiralIdleGridSearch(const rx, ry : Float; const maxcount, minind, maxind, radius : Integer; var x, y : Integer) : Boolean;
+   begin
+      var hmapx : Integer = (GetMapWidth div 2);
+      var hmapy : Integer = (GetMapHeight div 2);
+      Result := False;
+      var px, py : Integer;
+      _misc_PosToIdleGridIndices(rx, ry, px, py);
+      x := px;
+      y := py;
+      var tmpind : Integer = 1;
+      var i, rad : Integer;
+      for [MAIN]rad:=1 to radius do
+      begin
+         for i:=-rad to rad do
+         begin
+            if (tmpind>=minind) and (tmpind<maxind) then
+            begin
+               x := px-rad;
+               y := py+i;
+               if (x>=0) and (x<gc_idlegrid_countx) and (y>=0) and (y<gc_idlegrid_county) and (gIdleGrid[x, y]<maxcount) and (GetMapCollisionTag(x*gc_idlegrid_size-hmapx, y*gc_idlegrid_size-hmapy, True)=0) then
+               begin
+                  Result := True;
+                  break(MAIN);
+               end;
+            end;
+            tmpind := tmpind+1;
+            if (tmpind>=minind) and (tmpind<maxind) then
+            begin
+               x := px+rad;
+               y := py+i;
+               if (x>=0) and (x<gc_idlegrid_countx) and (y>=0) and (y<gc_idlegrid_county) and (gIdleGrid[x, y]<maxcount) and (GetMapCollisionTag(x*gc_idlegrid_size-hmapx, y*gc_idlegrid_size-hmapy, True)=0) then
+               begin
+                  Result := True;
+                  break(MAIN);
+               end;
+            end;
+            tmpind := tmpind+1;
+         end;
+         for i:=-rad to rad do
+         begin
+            if (tmpind>=minind) and (tmpind<maxind) then
+            begin
+               x := px+i;
+               y := py-rad;
+               if (x>=0) and (x<gc_idlegrid_countx) and (y>=0) and (y<gc_idlegrid_county) and (gIdleGrid[x, y]<maxcount) and (GetMapCollisionTag(x*gc_idlegrid_size-hmapx, y*gc_idlegrid_size-hmapy, True)=0) then
+               begin
+                  Result := True;
+                  break(MAIN);
+               end;
+            end;
+            tmpind := tmpind+1;
+            if (tmpind>=minind) and (tmpind<maxind) then
+            begin
+               x := px+i;
+               y := py+rad;
+               if (x>=0) and (x<gc_idlegrid_countx) and (y>=0) and (y<gc_idlegrid_county) and (gIdleGrid[x, y]<maxcount) and (GetMapCollisionTag(x*gc_idlegrid_size-hmapx, y*gc_idlegrid_size-hmapy, True)=0) then
+               begin
+                  Result := True;
+                  break(MAIN);
+               end;
+            end;
+            tmpind := tmpind+1;
+         end;
+      end;
+   end;
+
+   function FindBestPosition(goHnd : Integer; var px, pz : Float) : Boolean;
+   begin
+      var pobj : Pointer = _unit_GetTObj(goHnd);
+      if (pobj<>nil) then
+      begin
+         const maxdensity = 3;
+         var goX : Float = GetGameObjectPositionXByHandle(goHnd);
+         var goZ : Float = GetGameObjectPositionZByHandle(goHnd);
+         var count : Integer = GetGameObjectCountCollidedObjectsByHandle(goHnd);
+         var trgHnd : Integer;
+         var ptrgobj : Pointer;
+         if (count>maxdensity) then
+         begin
+            var standcount : Integer;
+            var i : Integer;
+            for i:=0 to count-1 do
+            begin
+               trgHnd := GetGameObjectCollidedGOHandleByHandle(goHnd, i);
+               if (GetPlayerIndexByHandle(GetGameObjectPlayerHandleByHandle(trgHnd))<gc_MaxPlayerCount) and (_misc_GetBaseObjID(trgHnd)=gc_baseid_obj) then
+               begin
+                  ptrgobj := _unit_GetTObj(trgHnd);
+                  if (ptrgobj<>nil) and (TObj(ptrgobj).standtime>=3) then
+                  standcount := standcount+1;
+               end;
+            end;
+            if (standcount>maxdensity) then
+            begin
+               var minx, maxx, miny, maxy, x, y : Integer;
+               var radius : Integer = 6;
+               var minind : Integer = 8+floor(random*16);
+               var maxind : Integer = GetSpiralStepsByRadius(radius)-1;
+               var vecx, vecy, vecz : Float;
+               if (ProcessSpiralIdleGridSearch(goX, goZ, 1, minind, maxind, radius, x, y)) then
+               begin
+                  goX := (x*gc_idlegrid_size)-(GetMapWidth div 2)+random*gc_idlegrid_size;
+                  goZ := (y*gc_idlegrid_size)-(GetMapHeight div 2)+random*gc_idlegrid_size;
+                  if (GetMapCollisionTag(goX, goZ, True)=0) then
+                  begin
+                     vecx := 1;
+                     vecz := 0;
+                     VectorRotateY(vecx, vecy, vecz, random*360);
+                     _unit_OrderMove(goHnd, goX, goZ, vecx, vecz, gc_obj_order_move_mode_default, False);
+                  end;
+               end
+               else
+               begin
+                  vecx := radius;
+                  vecz := 0;
+                  VectorRotateY(vecx, vecy, vecz, random*360);
+                  px := goX+vecx;
+                  pz := goZ+vecz;
+                  if (GetMapCollisionTag(px, pz, True)=0) then
+                  begin
+                     vecx := 1;
+                     vecz := 0;
+                     VectorRotateY(vecx, vecy, vecz, random*360);
+                     _unit_OrderMove(goHnd, px, pz, vecx, vecz, gc_obj_order_move_mode_default, False);
+                  end;
+               end;
+            end;
+         end;
+      end;
+   end;
+   var plInd : Integer = TObj(pobj).pl;
+   var plHnd : Integer = GetPlayerHandleByIndex(plInd);
+   var ordInd : Integer; // inline function _unit_GetCurrentOrder(hnd) for better performance
+   if (gPlayer[plInd].bAI) and (gPlayer[plInd].aidata.bprogressWar) then
+   begin
+      if (gObjProp[TObj(pobj).cid][TObj(pobj).id].bArtillery) and (TObj(pobj).attackDelay<>0) and
+      (TObj(pobj).orders[1].iType<>gc_obj_order_type_none) and ((TObj(pobj).orders[0].iType=gc_obj_order_type_attackobj) or (TObj(pobj).orders[0].iType=gc_obj_order_type_attackpoint)) then
+      ordInd := 1;
+   end;
+
+   if (gPlayer[plInd].bAI) and (gPlayer[plInd].aidata.bprogressWar) and (TObj(pobj).inBattle)
+   and (TObj(pobj).orders[ordInd].itype = gc_obj_order_type_move) and ((gObjProp[TObj(pobj).cid][TObj(pobj).id].bArtillery){first check cuts 99% unnessesary usage checks trough IsArtillery function}
+   and (_unit_IsArtillery(hnd))) then
+   begin
+      var minR : Float = gObjProp[TObj(pobj).cid][TObj(pobj).id].minattackradius;
+      var maxR : Float = gPlayer[TObj(pobj).pl].objbase[TObj(pobj).cid][TObj(pobj).id].weapon[0].radiusMax; //_unit_GetMaxAttackRadius(hnd); function is less fast and for our porposes, zero weapon works great
+      var rad : Float = minR + (maxR - minR) * TObj(pobj).artDistFactor;
+      var dist : Float = VectorDistance(GetGameObjectPositionXByHandle(hnd), 0, GetGameObjectPositionZByHandle(hnd), TObj(pobj).artX, 0, TObj(pobj).artY);
+      if (dist > minR) and (dist < rad) then
+      _unit_Stop(hnd);
+   end;
+
+   var ordertype : Integer = TObj(pobj).orders[ordInd].itype;
+   if (ordertype<>gc_obj_order_type_none) then
+   begin
+      // hard fix for units that stay with order to move but dont actually move START
+      // this fix lead to bug that in multiplayer on client side some units move in other point that on host player
+      // if (ordertype=gc_obj_order_type_move) and ((GetGameObjectStatesTagByHandle(hnd) and gc_statetag_execute_move)=0) and (not TObj(pobj).bpathrequested) and GetGameObjectTrackPointMovementModeIntByHandle(hnd)=0{and (TObj(pobj).standtime>10)} then
+      // TObj(pobj).orders[ordInd].bexecute := False;
+      // hard fix for units that stay with order to move but dont actually move FINISH
+
+      var bExecute : Boolean = TObj(pobj).orders[ordInd].bexecute;
+      if (not bExecute) or (ordertype<>gc_obj_order_type_move) then
+      begin
+         var bResetAction, bDoPosition : Boolean;
+         var porderinfo : Pointer = TObj(pobj).orders[ordInd].info;
+         case ordertype of
+            gc_obj_order_type_gainres : begin
+               var trgHnd : Integer = TOrderInfo(porderinfo).trg;
+               if (trgHnd=0) then
+               begin
+                  var resHnd : Integer = _unit_SearchResourceInRadius(hnd, TOrderInfo(porderinfo).x, TOrderInfo(porderinfo).y, gc_obj_res_searchradius, 1, TOrderInfo(porderinfo).restype, False);
+                  if (resHnd=0) then
+                  resHnd := _unit_SearchResourceInRadius(hnd, TOrderInfo(porderinfo).x, TOrderInfo(porderinfo).y, gc_obj_res_searchradius*2.25, 1, TOrderInfo(porderinfo).restype, True);
+                  if (resHnd<>0) and (resHnd<>trgHnd) then
+                  begin
+                     trgHnd := resHnd;
+                     _unit_SetOrderTrg(hnd, ordInd, resHnd, True);
+                  end;
+               end;
+               _unit_TryExtractResource(hnd, trgHnd);
+               TObj(pobj).orders[ordInd].bexecute := True;
+            end;
+            gc_obj_order_type_attackobj : begin
+               var trgHnd : Integer = TOrderInfo(porderinfo).trg;
+               if (trgHnd<>0) and (GetGameObjectPlayableObjectByHandle(trgHnd)) then
+               _unit_TryAttack(hnd, trgHnd, False)
+               else
+               begin
+                  _unit_RemoveOrder(hnd, ordInd);
+                  _unit_SetSTO(hnd, 0);
+                  _unit_SetTagStates(hnd, gc_statetag_execute_none or gc_statetag_move_idle or gc_statetag_action_none);
+               end;
+            end;
+            gc_obj_order_type_move : begin
+               if ((GetGameObjectStatesTagByHandle(hnd) and gc_statetag_action_attack)=0) or ((GetGameObjectAnimationModeIntByHandle(hnd)=0) or (gObjProp[TObj(pobj).cid][TObj(pobj).id].media=gc_obj_media_water)) then // commented to prevent pikemans with machine gun
+               begin
+                  if (not bExecute) then
+                  begin
+                     bDoPosition := True;
+                     bResetAction := True;
+                     _unit_SetSTP(hnd, TOrderInfo(porderinfo).x, TOrderInfo(porderinfo).y);
+                     if (gObjProp[TObj(pobj).cid][TObj(pobj).id].usage=gc_obj_usage_transport) then
+                     GameObjectCancelDelayExecuteStateByHandle(hnd); // to reset transport open trap
+                  end;
+                  if (GetGameObjectVisibleByHandle(hnd)) then
+                  _unit_SetSTO(hnd, 0);
+               end;
+
+               if (gObjProp[TObj(pobj).cid][TObj(pobj).id].usage = gc_obj_usage_transport) and TObj(pobj).bRally then
+               begin
+                  _unit_SetRallyPoint(hnd, 0, 0, false, false);
+                  if plHnd = GetPlayerHandleInterfaceIO then
+                  gbool_gui_update_rallypoints := true;
+               end;
+            end;
+            gc_obj_order_type_build, gc_obj_order_type_repair : begin
+               var trgHnd : Integer = TOrderInfo(porderinfo).trg;
+               var res : Integer = _unit_TryBuild(hnd, trgHnd, ordertype=gc_obj_order_type_repair);
+               bDoPosition := (res<>gc_result_trybuild_targetnotvalid);
+               if res=gc_result_trybuild_buildwall then
+               begin
+                  gIntegerList.Clear;
+                  gIntegerList.Add(hnd);
+                  var nextTarget : Integer = _unit_GetNextWallForWork(gIntegerList, trgHnd);
+                  if (nextTarget<>0) then
+                  _player_OrderUnitsToBuild(gIntegerList, nextTarget, true, ordertype=gc_obj_order_type_repair, true);
+               end;
+            end;
+            gc_obj_order_type_attackpoint : begin
+               if not bExecute then
+               _unit_SetSTO(hnd, 0);
+
+               _unit_TryAttackPoint(hnd, TOrderInfo(porderinfo).dx, TOrderInfo(porderinfo).dy, False);
+            end;
+            gc_obj_order_type_performupgrade : begin
+               _misc_UnitProgressOrderPerformUpgrade(hnd);
+            end;
+            gc_obj_order_type_gotomine, gc_obj_order_type_gototransport : begin
+               var trgHnd : Integer = TOrderInfo(porderinfo).trg;
+               var pTrgObj : Pointer = _unit_GetTObj(trgHnd);
+
+               if ((orderType = gc_obj_order_type_gotomine) and GetGameObjectPlayableObjectByHandle(trgHnd))
+               or ((orderType = gc_obj_order_type_gototransport) and TObj(pTrgObj).bRally) then
+               begin
+                  if not bExecute then
+                  begin
+                     var x, y, z : Float;
+                     _unit_GetAbsLastExitPoint(trgHnd, true, x, y, z);
+
+                     _unit_SetSTO(hnd, trgHnd);
+                     _unit_SetSTP(hnd, x, z);
+                     bDoPosition := True;
+                     bResetAction := True;
+                  end
+                  else
+                  begin
+                     if ((GetGameObjectStatesTagByHandle(hnd) and gc_statetag_move_idle)<>0) then
+                     begin
+                        // endpoint reached
+                        _unit_SetTagStates(hnd, gc_statetag_sync_endpoint);
+
+                        _unit_DoHideInside(hnd, trgHnd);
+                        if (GetGameObjectPlayerHandleByHandle(hnd)<>GetGameObjectPlayerHandleByHandle(trgHnd)) then
+                        begin
+                           gIntegerList.Clear;
+                           gIntegerList.Add(hnd);
+                           _unit_DoUnitsGoOutside(gIntegerList, false, true);
+                        end;
+                     end
+                     else
+                     if (not TObj(pobj).bPathRequested) and ((GetGameObjectStatesTagByHandle(hnd) and gc_statetag_essential_none)<>0) then
+                     begin
+                        var trgHnd : Integer = TOrderInfo(pOrderInfo).trg;
+                        var pTrgObj : Pointer = _unit_GetTObj(trgHnd);
+                        if (pTrgObj<>nil) then
+                        begin
+                           var cid : Integer = TObj(pTrgObj).cid;
+                           var id : Integer = TObj(pTrgObj).id;
+                           var curInd : Integer = GetGameObjectTrackPointCurrentPointIndexByHandle(hnd);
+                           var eCount : Integer = gCustomObjPoints[cid, id].exitCount;
+                           var tpCount : Integer = GetGameObjectTrackPointCountByHandle(hnd);
+
+                           if curInd > tpCount-eCount then
+                           _unit_SetTagStates(hnd, gc_statetag_essential_birth);
+                        end
+                        else
+                        ErrorLog('DoProgressOrders pTrgObj=nil');
+                     end;
+                  end;
+               end
+               else
+               begin
+                  if GetGameObjectStatesTagByHandle(hnd) and gc_statetag_essential = gc_statetag_essential_birth then
+                  begin
+                     var myX : Float = GetGameObjectPositionXByHandle(hnd);
+                     var myZ : Float = GetGameObjectPositionZByHandle(hnd);
+                     var tag : Integer = GetMapCollisionTag(myX, myZ, false);
+
+                     if (tag = gc_collisiontag_water) or (tag = gc_collisiontag_landborder) or (tag = gc_collisiontag_waterborder) then
+                     _unit_SetTagStates(hnd, gc_statetag_essential_death)
+                     else
+                     _unit_SetTagStates(hnd, gc_statetag_essential_none);
+                  end;
+
+                  _unit_RemoveOrder(hnd, 0);
+               end;
+            end;
+            gc_obj_order_type_leavebuilding, gc_obj_order_type_leavetransport : begin
+               var bexit : Boolean;
+               var trgHnd : Integer = TOrderInfo(porderinfo).trg;
+               var pTrgObj : Pointer;
+               var cid, id : Integer;
+               if (trgHnd<>0) then
+               begin
+                  pTrgObj := _unit_GetTObj(trgHnd);
+                  if (pTrgObj<>nil) and GetGameObjectPlayableObjectByHandle(trgHnd) then
+                  begin
+                     cid := TObj(pTrgObj).cid;
+                     id := TObj(pTrgObj).id;
+                     bexit := True;
+                  end;
+               end;
+               if not bExecute then
+               begin
+                  var ordX : Float = TOrderInfo(porderinfo).x;
+                  var ordZ : Float = TOrderInfo(porderinfo).y;
+                  if bexit and (GetGameObjectStatesTagByHandle(hnd) and gc_statetag_essential_birth<>0) then
+                  _unit_SetSTO(hnd, trgHnd);
+                  _unit_SetSTP(hnd, ordX, ordZ);
+                  bDoPosition := True;
+               end
+               else
+               begin
+                  if GetGameObjectVisibleByHandle(hnd) then
+                  begin
+                     if (GetGameObjectStatesTagByHandle(hnd) and gc_statetag_move_walk)=0 then
+                     begin
+                        _unit_SetTagStates(hnd, gc_statetag_essential_none);
+                        _unit_RemoveOrder(hnd, ordInd);
+                     end
+                     else
+                     if bexit and GetGameObjectSTOHandleByHandle(hnd)=trgHnd then
+                     begin
+                        var curInd : Integer = GetGameObjectTrackPointCurrentPointIndexByHandle(hnd);
+                        if curInd >= gCustomObjPoints[cid, id].exitCount then
+                        begin
+                           _unit_SetOrderTrg(hnd, ordInd, 0, True);
+                           _unit_SetTagStates(hnd, gc_statetag_essential_none);
+                        end;
+                     end;
+
+                     if bexit then
+                     begin
+                        var pTrgObjProp : Pointer = _unit_GetObjProp(trgHnd);
+                        if TObjProp(pTrgObjProp).usage = gc_obj_usage_transport then
+                        begin
+                           var myX, myY, myZ : Float;
+                           GetGameObjectAbsolutePositionByHandle(hnd, myX, myY, myZ);
+
+                           if (not TObj(pTrgObj).bRally) and (_unit_GetTagStateByType(hnd, gc_statetag_essential) = gc_statetag_essential_birth)
+                           and (GetMapCollisionTag(myX, myZ, true) > 0) then
+                           _unit_SetTagStates(hnd, gc_statetag_essential_death);
+                        end;
+                     end;
+                  end;
+               end;
+            end;
+            gc_obj_order_type_guard : begin
+               var trgHnd : Integer = TOrderInfo(porderinfo).trg;
+               if (GetGameObjectPlayableObjectByHandle(trgHnd)) then
+               begin
+                  if (trgHnd<>0) then
+                  begin
+                     var px : Float = GetGameObjectPositionXByHandle(hnd);
+                     var py : Float = GetGameObjectPositionZByHandle(hnd);
+                     var dx : Float = GetGameObjectPositionXByHandle(trgHnd);
+                     var dy : Float = GetGameObjectPositionZByHandle(trgHnd);
+                     var bbuilding : Boolean = (_unit_IsBuilding(trgHnd));
+                     if (bbuilding) then
+                     begin
+                        var mindst, maxdst, dst, rfx, rfy : Float;
+                        var bCollision : Boolean = (GetMapCollisionTag(dx, dy, True)<>0);
+                        if (bCollision) then
+                        begin
+                           mindst := 1;
+                           maxdst := 1.5;
+                           var rnx, rny : Float;
+                           var prior : Integer = TopologyGetPathPriority;
+                           var quadtree : Integer = TopologyGetPathQuadTree;
+                           TraceLineQuadTreeExt(dx, dy, px, py, prior, quadtree, rnx, rny, rfx, rfy);
+                           dst := VectorDistance(px, 0, py, rfx, 0, rfy);
+                        end
+                        else
+                        begin
+                           mindst := 2;
+                           maxdst := 3;
+                           dst := VectorDistance(px, 0, py, dx, 0, dy);
+                           rfx := dx;
+                           rfy := dy;
+                        end;
+                        if (dst>maxdst) then
+                        begin
+                           var bChangeSTP : Boolean;
+                           if ((GetGameObjectStatesTagByHandle(hnd) and gc_statetag_move_idle)<>0) then
+                           bChangeSTP := True
+                           else
+                           begin
+                              var trgmovedst : Float;
+                              //if (bbuilding) then
+                              trgmovedst := VectorDistance(GetGameObjectStateTargetPositionXByHandle(hnd), 0, GetGameObjectStateTargetPositionZByHandle(hnd), rfx, 0, rfy);
+                              //else
+                              //trgmovedst := dst;
+                              if (trgmovedst>(gc_objectEpsilonDist*2)) then
+                              bChangeSTP := True;
+                           end;
+                           if (bChangeSTP) then
+                           begin
+                              _unit_SetSTP(hnd, rfx, rfy);
+                              bDoPosition := True;
+                              bExecute := False;
+                           end;
+                        end
+                        else
+                        if (dst<mindst) then
+                        _unit_SetTagStates(hnd, gc_statetag_move_idle);
+                     end
+                     else
+                     begin
+                        if (VectorDistance(px, 0, py, dx, 0, dy)>=1.5) then
+                        begin
+                           var dist : Float = 0.5;
+                           var newx, newy : Float;
+                           _misc_VectorLerpDist(dx, dy, px, py, dist, newx, newy);
+                           var bChangeSTP : Boolean;
+                           if ((GetGameObjectStatesTagByHandle(hnd) and gc_statetag_move_idle)<>0) then
+                           bChangeSTP := True
+                           else
+                           begin
+                              var trgmovedst : Float = VectorDistance(GetGameObjectStateTargetPositionXByHandle(hnd), 0, GetGameObjectStateTargetPositionZByHandle(hnd), newx, 0, newy);
+                              if (trgmovedst>(gc_objectEpsilonDist*2)) then
+                              bChangeSTP := True;
+                           end;
+                           if (bChangeSTP) then
+                           begin
+                              _unit_SetSTP(hnd, newx, newy);
+                              bDoPosition := True;
+                              bExecute := False;
+                           end;
+                        end;
+                     end;
+                     _unit_SetSTO(hnd, trgHnd);
+                  end;
+               end
+               else
+               _unit_ClearOrders(hnd);
+            end;
+            gc_obj_order_type_patrol : begin
+               if (_unit_IsIdle(hnd)) or (not bExecute) then
+               begin
+                  bDoPosition := True;
+                  if (not bExecute) then
+                  _unit_SetTagStates(hnd, gc_statetag_weapon_0);
+                  var pX : Float = TOrderInfo(porderinfo).x;
+                  var pZ : Float = TOrderInfo(porderinfo).y;
+                  var dX : Float = TOrderInfo(porderinfo).dx;
+                  var dZ : Float = TOrderInfo(porderinfo).dy;
+                  var dir : Float = round(TOrderInfo(porderinfo).dir);
+                  if (VectorDistance(GetGameObjectPositionXByHandle(hnd), 0, GetGameObjectPositionZByHandle(hnd), dX, 0, dZ)<gc_objectEpsilonDist) then
+                  dir := 1
+                  else
+                  dir := 0;
+                  TOrderInfo(porderinfo).dir := dir;
+                  _unit_SetSTO(hnd, 0);
+
+                  if (dir=0) then
+                  _unit_SetSTP(hnd, dX, dZ)
+                  else
+                  _unit_SetSTP(hnd, pX, pZ);
+                  bExecute := False;
+               end;
+            end;
+            gc_obj_order_type_exitunits : begin
+               _unit_TryExitUnits(hnd);
+            end;
+            gc_obj_order_type_fishing : begin
+               _unit_TryFishing(hnd, 0);
+            end;
+         end;
+
+         if (bDoPosition) and (not bExecute) then
+         begin
+            TObj(pobj).orders[ordInd].bexecute := True;
+            SetGameObjectSTArrowAngleByHandle(hnd, TOrderInfo(porderinfo).dir);
+            if orderType = gc_obj_order_type_move then
+            SetGameObjectSTArrowAngleLastByteByHandle(hnd, TOrderInfo(porderinfo).amount);
+
+            if (bResetAction) then
+            begin
+               if (TObj(pobj).orders[ordInd].info.progress=gc_obj_order_move_mode_default) then
+               _unit_SetTagStates(hnd, gc_statetag_execute_move or gc_statetag_action_none or gc_statetag_weapon_none)
+               else
+               if (TObj(pobj).orders[ordInd].info.progress=gc_obj_order_move_mode_attack) then
+               _unit_SetTagStates(hnd, gc_statetag_execute_move or gc_statetag_action_none or gc_statetag_weapon_0)
+               else
+               //if (TObj(pobj).orders[ordInd].info.progress=gc_obj_order_move_mode_runaway) then
+               _unit_SetTagStates(hnd, gc_statetag_execute_move or gc_statetag_action_none);
+            end
+            else
+            _unit_SetTagStates(hnd, gc_statetag_execute_move);
+         end;
+      end;
+   end
+   else
+   begin
+      if (gObjProp[TObj(pobj).cid][TObj(pobj).id].usage<>gc_obj_usage_fisher) then
+      begin
+         // stop unit if no orders
+         var oldstate : Integer = GetGameObjectStatesTagByHandle(hnd);
+         var bOldNone : Boolean = (oldstate and gc_statetag_action_none)=0;
+         var bOldIdle : Boolean = (oldstate and gc_statetag_move_walk)<>0;
+         if ((bOldNone) or (bOldIdle)) and (not _unit_IsAttack(hnd)) then
+         begin
+            var newstate : Integer;
+            if (bOldNone) then
+            newstate := newstate or gc_statetag_action_none;
+            if (bOldIdle) then
+            newstate := newstate or gc_statetag_move_idle;
+            if (newstate<>0) then
+            _unit_SetTagStates(hnd, newstate);
+         end;
+         if (b31passed) and (TObj(pobj).standtime>1) and (TObj(pobj).squad=-1) then
+         begin
+            var px, pz : Float;
+            FindBestPosition(hnd, px, pz);
+         end;
+      end
+      else
+      _unit_OrderDoFishing(hnd);
+   end;
+end;
+
+// _misc_ForceSearchEnemy
+//
+function _misc_ForceSearchEnemy(hnd : Integer; bProgressOrders : Boolean) : Integer;
+begin
+   if hnd<>0 then
+   begin
+      var pobj : Pointer = _unit_GetTObj(hnd);
+      if pobj=nil then
+      begin
+         ErrorLog('_misc_ForceSearchEnemyUseParams : pobj=nil, exit');
+         Result := 0;
+         exit;
+      end;
+      var pobjprop : Pointer = gObjProp[TObj(pobj).cid][TObj(pobj).id];
+      var plind : Integer = TObj(pobj).pl;
+      var bai : Boolean = gPlayer[plInd].bai and (not gPlayer[plInd].aidata.bhumanai);
+      var borderattack : Boolean = (TObj(pobj).orders[0].itype=gc_obj_order_type_attackobj) or (TObj(pobj).orders[0].itype=gc_obj_order_type_patrol);
+      Result := _misc_ForceSearchEnemyUseParams(hnd, pobj, pobjprop, plind, bai, borderattack);
+   end
+   else
+   begin
+      ErrorLog('_misc_ForceSearchEnemyUseParams hnd=0');
+      Result := 0;
+      exit;
+   end;
+   // !!! CHECK AND UNCOMMENT IF WORKS FINE !!!
+   //if (bProgressOrders) then
+   //_misc_DoProgressOrders(hnd, False);
+end;
+
+// _misc_CanForceSearchEnemy
+//
+function _misc_CanForceSearchEnemy(hnd : Integer; bmovesearch, bcheckdeltatime : Boolean) : Boolean;
+begin
+   Result := False;
+   var pobj : Pointer = _unit_GetTObj(hnd);
+   if pobj<>nil then
+   begin
+      const cDeltaTimeForce = 2*gc_statemachine_interval_units/1000;
+      if (not bcheckdeltatime) or (GetGameTime-TObj(pobj).lastprogresstime)>cDeltaTimeForce then
+      begin
+         var plind : Integer = TObj(pobj).pl;
+         var bai : Boolean = gPlayer[plind].bai and (not gPlayer[plind].aidata.bhumanai);
+         var pobjprop : Pointer = gObjProp[TObj(pobj).cid][TObj(pobj).id];
+         var usage : Integer = TObjProp(pobjprop).usage;
+         var bart : Boolean = (TObjProp(pobjprop).bartillery) and (((usage=gc_obj_usage_mortar) or (usage=gc_obj_usage_supermortar) or (usage=gc_obj_usage_cannon)));
+         var bplayable : Boolean = GetGameObjectPlayableObjectByHandle(hnd);
+         if (not gbool_editor_peacemode) and (bplayable) {and (TObj(pobj).bsearchenemy)}
+         and _misc_IsCorrectScanCellOwner(plInd, TObj(pobj).scanGridX, TObj(pobj).scanGridY) then
+         begin
+            const cOrderInd = 1;
+            var ordertype : Integer = TObj(pobj).orders[cOrderInd].itype;
+            var orderinfoprogress : Float = TObj(pobj).orders[cOrderInd].info.progress;
+            var bOrderNone, bOrderMove, bOrderAttack, bOrderGuard, bOrderLeave : Boolean;
+            case ordertype of
+               gc_obj_order_type_none : bOrderNone := True;
+               gc_obj_order_type_move : bOrderMove := True;
+               gc_obj_order_type_attackobj : bOrderAttack := True;
+               gc_obj_order_type_guard : bOrderGuard := True;
+               gc_obj_order_type_leavebuilding : bOrderLeave := True;
+            end;
+            var bOrderAllowSearch : Boolean;
+            if not bai then
+            begin
+               if bOrderNone then
+               bOrderAllowSearch := True
+               else
+               if bOrderAttack and ((orderinfoprogress=gc_obj_order_attack_mode_default) or (gProfile.bsearchenemyinfront and (TObj(pobj).squad>=0))) then
+               bOrderAllowSearch := True
+               else
+               if bOrderMove and ((orderinfoprogress=gc_obj_order_move_mode_attack) or (not bmovesearch)) then
+               bOrderAllowSearch := True
+               else
+               if bOrderLeave or bOrderGuard then
+               bOrderAllowSearch := True;
+            end
+            else
+            begin
+               if bOrderNone then
+               bOrderAllowSearch := True
+               else
+               if bOrderAttack and (orderinfoprogress=gc_obj_order_attack_mode_default) then
+               bOrderAllowSearch := True
+               else
+               if bOrderMove and ((orderinfoprogress=gc_obj_order_move_mode_attack) or (not bmovesearch)) then
+               bOrderAllowSearch := True
+               else
+               if (TObj(pobj).squad<0) or bart then
+               bOrderAllowSearch := True
+               else
+               if TSquad(gPlayer[plInd].squads.Get(TObj(pobj).squad)).fArmy<0 then
+               bOrderAllowSearch := True;
+            end;
+            var bScenarioSmartArt : Boolean;
+            if (gScenario.bactive) then
+            begin
+               bScenarioSmartArt := (plInd<>0) and (TObjProp(pobjprop).media<>gc_obj_media_water);
+               if bart and bScenarioSmartArt and (bOrderNone or bOrderAttack or (ordertype=gc_obj_order_type_attackpoint)) then
+               bOrderAllowSearch := True;
+            end;
+            if bOrderAllowSearch and (TObjProp(pobjprop).media<>gc_obj_media_water) and (not (bart and (bai or bScenarioSmartArt))) then
+            Result := True;
+         end;
+      end;
+   end;
+end;
+
+// _misc_FixArgLists
+//
+procedure _misc_FixArgLists(goHnd : Integer);
+begin
+   var pstolist : Pointer = _misc_GetObjectArgData(goHnd, gc_argunit_stolist);
+   var pattlist : Pointer = _misc_GetObjectArgData(goHnd, gc_argunit_attlist);
+   var pordlist : Pointer = _misc_GetObjectArgData(goHnd, gc_argunit_ordlist);
+   if (pstolist<>nil) then
+   begin
+      var i : Integer;
+      for i:=TIntegerList(pstolist).GetCount-1 downto 0 do
+      begin
+         var trgHnd : Integer = TIntegerList(pstolist).Get(i);
+         if (trgHnd<>0) then
+         begin
+            if (_misc_IsProcessAI) then
+            _unit_SetSTO(trgHnd, 0)
+            else
+            _unit_SetClientSTO(trgHnd, 0);
+            var pTrgObj : Pointer = _unit_GetTObj(trgHnd);
+            if (pTrgObj<>nil) then
+            begin
+               if TObj(pTrgObj).artHnd = goHnd then
+               _unit_ResetArtParams(trgHnd);
+            end
+            else
+            ErrorLog('_unit_FixArgLists stolist pointer=nil');
+         end;
+      end;
+   end;
+   if (pordlist<>nil) then
+   begin
+      var goX : Float = GetGameObjectPositionXByHandle(goHnd);
+      var goZ : Float = GetGameObjectPositionZByHandle(goHnd);
+      var ordlistcount : Integer = TIntegerList(pordlist).GetCount;
+      var i, j : Integer;
+      for i:=ordlistcount-1 downto 0 do
+      begin
+         var bOrderTryAttack : Boolean;
+         var fOrderTryAttackRad : Float;
+         var trgHnd : Integer = TIntegerList(pordlist).Get(i);
+         if (trgHnd<>0) then
+         begin
+            var pobj2 : Pointer = _unit_GetTObj(trgHnd);
+            if (pobj2<>nil) then
+            begin
+               for j:=gc_obj_MaxOrderCount-1 downto 0 do
+               if (TObj(pobj2).orders[j].info.trg=goHnd) then
+               begin
+                  if (j=0) then
+                  begin
+                     var tag : Integer = GetGameObjectStatesTagByHandle(trgHnd);
+                     var ordType : Integer = TObj(pobj2).orders[j].iType;
+
+                     if ((ordType = gc_obj_order_type_gotomine) or (ordType = gc_obj_order_type_gototransport) or
+                     (ordType = gc_obj_order_type_leavetransport) or (ordType = gc_obj_order_type_leavebuilding)) then
+                     begin
+                        if tag and gc_statetag_visual = gc_statetag_visual_hide then
+                        _unit_SetTagStates(trgHnd, gc_statetag_essential_death)
+                        else
+                        if tag and gc_statetag_essential_birth <> 0 then
+                        begin
+                           var x : Float = GetGameObjectPositionXByHandle(trgHnd);
+                           var z : Float = GetGameObjectPositionZByHandle(trgHnd);
+                           if GetMapCollisionTag(x, z, true) > 0 then
+                           _unit_SetTagStates(trgHnd, gc_statetag_essential_death)
+                           else
+                           _unit_SetTagStates(trgHnd, gc_statetag_essential_none);
+                        end;
+                     end;
+
+                     if ((not gMap.bbattle) or (ordlistcount<16) or (TObj(pobj2).orders[j].info.progress=gc_obj_order_attack_mode_locktarget)) {optimize for huge battles} and (ordType=gc_obj_order_type_attackobj) and (not gObjProp[TObj(pobj2).cid][TObj(pobj2).id].bartillery) and (not gbool_editor_peacemode) and (not gbool_peacemode) and (GetGameObjectPlayableObjectByHandle(trgHnd)) then
+                     begin
+                        TObj(pobj2).lastsearchenemy := GetGameTime+TObj(pobj2).uniqrnd*0.15+0.3;
+                        gint_searchenemy_count := gint_searchenemy_count+1;
+                        bOrderTryAttack := True;
+                        if (TObj(pobj2).orders[j].info.progress=gc_obj_order_attack_mode_locktarget) then
+                        fOrderTryAttackRad := gc_unit_searchvictimattargetdist
+                        else
+                        fOrderTryAttackRad := gc_scangrid_size-gc_objectEpsilonDist; // -epsilon to get lesser scangrids to scan
+                     end;
+
+                     //if (ordType=gc_obj_order_type_attackobj) and (TObj(pobj2).orders[j].info.progress=gc_obj_order_attack_mode_locktarget) and (not gObjProp[TObj(pobj2).cid][TObj(pobj2).id].bartillery) and (not gbool_editor_peacemode) and (not gbool_peacemode) then
+                     //bOrderTryAttack := True;
+                  end;
+                  _unit_RemoveOrder(trgHnd, j);
+               end;
+            end
+            else
+            begin
+               ErrorLog('_unit_FixArgLists ordlist pointer=nil');
+               TIntegerList(pordlist).Remove(trgHnd);
+            end;
+            if (bOrderTryAttack) then
+            begin
+               if (gObjProp[TObj(pobj2).cid][TObj(pobj2).id].material=gc_obj_material_body) then
+               begin
+                  if (TObj(pobj2).orders[0].itype=gc_obj_order_type_move) then
+                  TObj(pobj2).orders[0].bexecute := False;
+                  var newHnd : Integer = _unit_SearchVictim(trgHnd, 0, fOrderTryAttackRad, True, goX, goZ);
+                  if (newHnd<>0) then
+                  _unit_OrderAttack(trgHnd, newHnd, True, False, False{True}); // to let units search enemy freely after target death
+                  // !!! CHECK AND UNCOMMENT IF WORKS FINE !!!
+                  //else
+                  //if _misc_CanForceSearchEnemy(goHnd, True, True) then
+                  //newHnd := _misc_ForceSearchEnemy(trgHnd, False);
+                  //if (newHnd<>0) then
+                  //_misc_DoProgressOrders(trgHnd, False);
+               end;
+            end;
+         end;
+      end;
+   end;
+
+   if (pattlist<>nil) then
+   TIntegerList(pattlist).Clear
+   else
+   ErrorLog('_unit_FixArgLists : pattlist=nil');
+end;
+
+// _misc_ChangePlayer
+//
+procedure _misc_ChangePlayer(const goHnd, newPlHnd : Integer; const bCapture, bCustom, blan : Boolean);
+begin
+   var newPlInd : Integer = GetPlayerIndexByHandle(newPlHnd);
+   var pobj : Pointer = _unit_GetTObj(goHnd);
+   if (pobj<>nil) then
+   begin
+      var prevPlInd : Integer = TObj(pobj).pl;
+      if (_unit_GetTagStateByType(goHnd, gc_statetag_visual_hide)=0) then
+      begin
+         _unit_SetSTO(goHnd, 0);
+         _unit_PathListRemove(goHnd);
+         _misc_FixArgLists(goHnd);
+
+         var i : Integer;
+         for i:=gc_obj_MaxOrderCount-1 downto 0 do
+         if (not ((TObj(pobj).orders[i].iType=gc_obj_order_type_none) or (TObj(pobj).orders[i].iType=gc_obj_order_type_move))) then
+         _unit_RemoveOrder(goHnd, i);
+      end;
+
+      var bbuilt : Boolean = TObj(pobj).bbuilt;
+      _unit_RemoveObjFromPlayerCounters(goHnd, bbuilt, bCapture);
+      SetGameObjectPlayerHandleByHandle(goHnd, newPlHnd);
+
+      TObj(pobj).pl := newPlInd;
+
+      _unit_AddObjToPlayerCounters(goHnd, bbuilt, bCapture, bCustom);
+      gGuiUpdateHighlights.Add(goHnd);
+
+      // if mine, also capture all insiders
+      var pObjInside : Pointer = _misc_GetObjectArgData(goHnd, gc_argunit_inside);
+      if (pObjInside<>nil) then
+      begin
+         var insideCount : Integer = TIntegerList(pObjInside).GetCount;
+         if (insideCount>0) then
+         begin
+            var i : Integer;
+            for i:=insideCount-1 downto 0 do
+            begin
+               var trgHnd : Integer = TIntegerList(pObjInside).Get(i);
+               _misc_ChangePlayer(trgHnd, newPlHnd, bCapture, bCustom, blan);
+               _unit_ScanGridRemoveUnit(trgHnd);
+               _unit_SetSTO(trgHnd, goHnd);
+            end;
+            if (gObjProp[TObj(pobj).cid][TObj(pobj).id].usage=gc_obj_usage_mine) then
+            for i:=0 to gc_ResCount-1 do
+            begin
+               if (gObjProp[TObj(pobj).cid][TObj(pobj).id].produce[i]>0) then
+               begin
+                  gPlayer[prevPlInd].counter.resincome[i] := gPlayer[prevPlInd].counter.resincome[i]-gObjProp[TObj(pobj).cid][TObj(pobj).id].produce[i]*insideCount;
+                  gPlayer[newPlInd].counter.resincome[i] := gPlayer[newPlInd].counter.resincome[i]+gObjProp[TObj(pobj).cid][TObj(pobj).id].produce[i]*insideCount;
+               end;
+            end;
+         end;
+      end;
+
+      // network
+      if blan and (_net_IsOnline or _net_IsRecord) then begin
+         var parg: Pointer = StateMachineGetArgDataByInd(GetPlayerStateMachineHandle(newPlHnd), gc_argplayer_plr); if (gProfile.bDbgLogPointerNil) then _init_DebugPointerNil(parg);
+         if parg<>nil then begin
+            TPlayerArgs(parg).fhandle:=goHnd;
+            TPlayerArgs(parg).fcapture:=bCapture;
+            PlayerExecuteStateByHandle(newPlHnd, 'WritePlayer');
+         end else _misc_ErrorLog('_misc_ChangePlayer: parg = nil');
+      end;
+   end;
+end;
+
+// _misc_CheckCapture
+//
+procedure _misc_CheckCapture(const goHnd : Integer);
+begin
+   var pobj : Pointer = _unit_GetTObj(goHnd);
+   var scangridx : Integer = TObj(pobj).scangridx;
+   var scangridy : Integer = TObj(pobj).scangridy;
+
+   //if (not gbool_peacemode) or ((gScanGrid[scanGridX, scanGridY].owner >= 0) and (gScanGrid[scanGridX, scanGridY].owner <> TObj(pObj).pl)) then
+   var bneutral : Boolean = (not gbool_peacemode) or (gScanGrid[scanGridX, scanGridY].owner<>TObj(pObj).pl);
+   if (bneutral) {or ((gScanGrid[scanGridX, scanGridY].owner >= 0) and (gScanGrid[scanGridX, scanGridY].owner <> TObj(pObj).pl))} then
+   begin
+      var pobjbase : Pointer = gPlayer[TObj(pobj).pl].objbase[TObj(pobj).cid][TObj(pobj).id];
+      var pobjprop : Pointer = gObjProp[TObj(pobj).cid][TObj(pobj).id];
+      var bwall : Boolean = TObjProp(pobjprop).bwall;
+      var enemyplmask : Integer = gPlayer[TObj(pobj).pl].enemyplmask;
+      var rx1 : Integer = floor(gc_gameplay_captureradius/gc_scangrid_size)+1;
+      var bcapture : Boolean;
+      var bblockshot : Boolean;
+      var capturerCount : Integer;
+      var capturerHnd : Integer;
+      var protectorsCount : Integer;
+
+      var capturePlMask : Integer;
+      if not bneutral then
+      capturePlMask := gPlayer[gScanGrid[scanGridX, scanGridY].owner].myPlMask
+      else
+      capturePlMask := enemyPlMask;
+
+      var plIOHnd : Integer = GetPlayerHandleInterfaceIO;
+      //if (not ((TObjProp(pobjprop).bwall) and (TObj(pobj).hp<TObjBase(pobjbase).maxhp/3))) then // it is not needed
+      begin
+         var cellx, celly, cellxmax, cellymax : Integer;
+         _misc_CalcScanCellsMinMax(scangridx, scangridy, rx1, cellx, celly, cellxmax, cellymax);
+         var trgHnd : Integer;
+         var px, py, tx, ty : Float;
+         var distSqr : Float;
+         var i, j : Integer;
+         for [MAIN]i:=cellx to (cellxmax) do
+         for j:=celly to (cellymax) do
+         if ((enemyplmask and gScanGrid[i,j].fPlMask)<>0) then
+         begin
+            if (not bwall) then
+            trgHnd := _unit_SearchCapturers(i, j, capturePlMask)
+            else
+            trgHnd := _unit_SearchCapturersForWall(i, j, capturePlMask);
+
+            if (trgHnd<>0) then
+            begin
+               var pobjprop2 : Pointer = _unit_GetObjProp(trgHnd);
+               if bwall or (not ((TObjProp(pobjprop2).bcapture) or (TObjProp(pobjprop2).media=gc_obj_media_water))) then
+               begin
+                  px := GetGameObjectPositionXByHandle(goHnd);
+                  py := GetGameObjectPositionZByHandle(goHnd);
+                  tx := GetGameObjectPositionXByHandle(trgHnd);
+                  ty := GetGameObjectPositionZByHandle(trgHnd);
+                  distSqr := Sqr(px-tx)+Sqr(py-ty);
+                  if distSqr<gc_gameplay_captureradiusSqr then
+                  begin
+                     bcapture := True;
+                     capturerCount := capturerCount+1;
+                     capturerHnd := trgHnd;
+                     if distSqr<gc_gameplay_captureblockshotradiusSqr then
+                     bblockshot := True;
+                  end;
+               end;
+            end;
+         end;
+      end;
+      // check peactime, if peacetime, then kill capturer
+      var bEasy : Boolean = (gMap.players[TObj(pobj).pl].aidifficulty<gc_player_difficulty_veryhard);
+      if (bcapture) then
+      begin
+         if (not ((bwall) and (TObj(pobj).hp<TObjBase(pobjbase).maxhp/3))) then
+         begin
+            if (TObjProp(pobjprop).usage<>gc_obj_usage_peasant) and bblockshot then
+            begin
+               TObj(pobj).attackmaxdelay := MaxFloat(TObj(pobj).attackmaxdelay, 100*gc_frames_to_time);
+               TObj(pobj).attackdelay := MaxFloat(TObj(pobj).attackdelay, 100*gc_frames_to_time);
+            end;
+            rx1 := floor(gc_gameplay_protectionradius/gc_scangrid_size)+1;
+            var cellx, celly, cellxmax, cellymax : Integer;
+            _misc_CalcScanCellsMinMax(scangridx, scangridy, rx1, cellx, celly, cellxmax, cellymax);
+            var px, py, tx, ty : Float;
+            var distSqr : Float;
+            var trgHnd : Integer;
+            var i, j : Integer;
+            for i:=cellx to cellxmax do
+            for j:=celly to cellymax do
+            begin
+               if ((gPlayer[TObj(pobj).pl].myplmask and gScanGrid[i,j].fPlMask)<>0) then
+               begin
+                  trgHnd := _unit_SearchProtectors(i, j, enemyplmask);
+                  if (trgHnd<>0) then
+                  begin
+                     var pobjprop2 : Pointer = _unit_GetObjProp(trgHnd);
+                     if (not TObjProp(pobjprop2).bcapture) then
+                     begin
+                        px := GetGameObjectPositionXByHandle(goHnd);
+                        py := GetGameObjectPositionZByHandle(goHnd);
+                        tx := GetGameObjectPositionXByHandle(trgHnd);
+                        ty := GetGameObjectPositionZByHandle(trgHnd);
+                        distSqr := Sqr(px-tx)+Sqr(py-ty);
+                        if (distSqr<gc_gameplay_protectionradiusSqr) then
+                        begin
+                           bcapture := False;
+                           protectorsCount := protectorsCount+1;
+                        end;
+                     end;
+                  end;
+               end;
+            end;
+            if (gPlayer[TObj(pobj).pl].bai) and (TObjProp(pobjprop).bartillery) then
+            begin
+               //if (protectorsCount=0)then
+               if (protectorsCount>0) and (
+               ((capturerCount>=protectorsCount) and (protectorsCount=1)) or
+               ((capturerCount>3) and (protectorsCount=2)) or
+               ((capturerCount>7) and (protectorsCount=3)) or
+               ((capturerCount>10) and (protectorsCount=4))) then
+               begin
+                  if (not bEasy) or (random>0.5) then
+                  begin
+                     _unit_SetTagStates(goHnd, gc_statetag_essential_death);
+                     exit;
+                  end;
+               end;
+            end;
+         end;
+      end;
+      if (bcapture) then
+      begin
+         var statetag : Integer = GetGameObjectStatesTagByHandle(goHnd);
+         if (not TObjProp(pobjprop).bbuilding) and ((statetag and gc_statetag_essential_birth)<>0) and ((statetag and gc_statetag_visual_hide)=0) then
+         begin
+            // should be change player, capture, bbuild=false, and death only if this is ai?
+            _unit_SetTagStates(goHnd, gc_statetag_essential_death);
+            exit;
+         end;
+         if ((statetag and gc_statetag_visual_hide)=0) then
+         begin
+            if (TObjProp(pobjprop).bbuilding) or ((statetag and gc_statetag_essential_none)<>0) then
+            begin
+               var bDie : Boolean;
+               var bAutoKill : Boolean;
+               if (bAutoKill) or (TObjProp(pobjprop).bwall) then
+               begin
+                  bDie := True;
+               end;
+
+               if (not TObjProp(pobjprop).bbuilding) then
+               _unit_Stop(goHnd)
+               else
+               begin
+                  var i : Integer;
+                  for i:=0 to gc_obj_MaxOrderCount-1 do
+                  begin
+                     if TObj(pobj).orders[i].iType=gc_obj_order_type_produce then
+                     begin
+                        if (TObj(pobj).orders[i].info.amount<>0) then
+                        begin
+                           gIntegerList.Clear;
+                           gIntegerList.Add(goHnd);
+                           _unit_ProduceUnit(GetGameObjectPlayerHandleByHandle(goHnd), gIntegerList, TObj(pobj).cid, TObj(pobj).orders[i].info.produceid, TObj(pobj).orders[i].info.amount, False, False, True);
+                           TObj(pobj).orders[i].info.amount := 0;
+                        end;
+                     end
+                     else
+                     if TObj(pobj).orders[i].iType=gc_obj_order_type_performupgrade then
+                     _unit_CancelUpgradePerform(goHnd, gCountry[TObj(pobj).cid].upgrade[TObj(pobj).orders[i].info.upgradeid].id);
+                  end;
+                  _unit_ClearOrders(goHnd);
+                  _unit_SetSTO(goHnd, 0);
+               end;
+
+               var newPlHnd : Integer = GetGameObjectPlayerHandleByHandle(capturerHnd);
+               var newPlInd : Integer = GetPlayerIndexByHandle(newPlHnd);
+
+               if (TObj(pobj).pl=GetPlayerIndexByHandle(GetPlayerHandleInterfaceIO)) then
+               _misc_DoAlarm(capturerHnd, goHnd, gc_gui_alarmevent_capture);
+
+               var usage : Integer = _unit_GetUsage(goHnd);
+               if (gPlayer[TObj(pobj).pl].bai) then
+               begin
+                  if (TObjProp(pobjprop).bbuilding) then
+                  begin
+                     if (random>0.25) then
+                     begin
+                        if (TObj(pobj).bbuilt) and (TObjProp(pobjprop).bslowdeath) then
+                        begin
+                           if (TObj(pobj).hp>gc_BuildingSlowDeathHP) then
+                           TObj(pobj).hp := gc_BuildingSlowDeathHP-floor(RandomExt*gc_BuildingSlowDeathRandom);
+                        end
+                        else
+                        bDie := True;
+                     end;
+                  end
+                  else
+                  begin
+                     if (usage=gc_obj_usage_peasant) and (not bEasy) then
+                     bDie := True
+                     else
+                     case usage of
+                        gc_obj_usage_supermortar : if (random>0.46875*1.25) then bDie := True;
+                        gc_obj_usage_cannon : if (random>0.3125*1.25) then bDie := True;
+                        gc_obj_usage_mortar : if (random>0.125*1.125) then bDie := True;
+                        gc_obj_usage_peasant : if (random>0.546875) then bDie := True;
+                     end;
+                  end;
+               end
+               else
+               if (gPlayer[newPlInd].bai) and (usage=gc_obj_usage_peasant) and (not bEasy) then
+               bDie := True;
+
+               if (bDie) then
+               _unit_SetTagStates(goHnd, gc_statetag_essential_death)
+               else
+               _misc_ChangePlayer(goHnd, newPlHnd, True, False, True);
+            end
+            else
+            ErrorLog('_misc_CheckCapture : capture unit that goes inside mine, that would lead earlier to sto clear and bad behavior');
+         end;
+      end;
+   end;
+end;
+
+// _misc_SquadChangePlayer
+//
+function _misc_SquadChangePlayer(pSquad : Pointer; newPlInd : Integer) : Pointer;
+begin
+   Result := nil;
+   if (pSquad <> nil) and (newPlInd >= 0) and (TSquad(pSquad).fPlIndex <> newPlInd) then
+   begin
+      var newPlHnd : Integer = GetPlayerHandleByIndex(newPlInd);
+      var plInd : Integer = TSquad(pSquad).fPlIndex;
+      var pNewSquad : Pointer = gPlayer[newPlInd].squads.Add;
+      var newInd : Integer = TSquad(pNewSquad).fIndex;
+      TSquad(pNewSquad).Assign(TSquad(pSquad));
+
+      var i : Integer;
+      for i := TSquad(pSquad).GetCount-1 downto 0 do
+      begin
+         var goHnd : Integer = TSquad(pSquad).Get(i);
+         _misc_ChangePlayer(goHnd, newPlHnd, false, true, true);
+         var pObj : Pointer = _unit_GetTObj(goHnd);
+         TObj(pObj).squad := newInd;
+      end;
+
+      TSquad(pNewSquad).fPlIndex := newPlInd;
+      _squad_SetupGroup(pNewSquad);
+      _squad_SetGroupCollisionOptions(pNewSquad);
+      Result := pNewSquad;
+   end;
+end;
+
+// _misc_DoOnCollide
+//
+{procedure _misc_DoOnCollide(const hnd, trg: Integer);
+begin
+   var res : Integer = _unit_TryAttack(hnd, trg, false);
+   if (res<=gc_result_tryattack_outofrange) then
+   begin
+      var pobj : Pointer = _unit_GetTObj(hnd);
+      var pobj2 : Pointer = _unit_GetTObj(trg);
+      if not ((TObj(pobj).orders[0].itype=gc_obj_order_type_move) and (TObj(pobj).orders[0].info.progress=gc_obj_order_move_mode_runaway)) then // isrunaway check inlined for optimization
+      begin
+         if (TObj(pobj).orders[0].itype=gc_obj_order_type_attackobj) and (TObj(pobj).orders[0].info.trg<>trg) then
+         _unit_SetOrderTrg(hnd, 0, trg, True)
+         else
+         _unit_OrderAttack(hnd, trg, True, False, False);
+      end;
+   end;
+end;}
+
+// _misc_Collided
+//
+procedure _misc_Collided(const hnd: Integer);
+begin
+   if (_net_IsOffline or _net_IsServer) and not _net_IsReplay and (GetGameObjectPlayableObjectByHandle(hnd)) then begin
+      var trg: integer=GetGameObjectStateCollisionObjectByHandle(hnd);
+      if (GetGameObjectPlayableObjectByHandle(trg)) then // dead buildings can collide but are not playable
+      begin
+         var pobj2 : Pointer;
+         var smhnd : Integer = GetGameObjectStateMachineHandle(trg);
+         if smhnd<>0 then
+         pobj2 := StateMachineGetArgDataByInd(smhnd, gc_argunit_obj);
+         if (pobj2=nil) or (TBaseObj(pobj2).baseid<>gc_baseid_obj) then // it is nil on unit creation, collide event happens in coord 0,0 with enemy unit. and at this point unit is not yet initialized
+         exit;
+         var pobj : Pointer = _misc_GetObjectArgData(hnd, gc_argunit_obj);
+         if (pobj<>nil) and (gObjProp[TObj(pobj).cid][TObj(pobj).id].material=gc_obj_material_body) and (gObjProp[TObj(pobj2).cid][TObj(pobj2).id].material=gc_obj_material_body) then
+         begin
+            if (GetGameObjectTrackPointMovementModeIntByHandle(hnd)<>0) then
+            begin
+               // _misc_DoOnCollide(hnd, trg); include start
+               var res : Integer = _unit_TryAttack(hnd, trg, false);
+               if (res<=gc_result_tryattack_outofrange) then
+               begin
+                  if not ((TObj(pobj).orders[0].itype=gc_obj_order_type_move) and (TObj(pobj).orders[0].info.progress=gc_obj_order_move_mode_runaway)) then // isrunaway check inlined for optimization
+                  begin
+                     if (TObj(pobj).orders[0].itype=gc_obj_order_type_attackobj) and (TObj(pobj).orders[0].info.trg<>trg) then
+                     _unit_SetOrderTrg(hnd, 0, trg, True)
+                     else
+                     _unit_OrderAttack(hnd, trg, True, False, False);
+                  end;
+               end;
+               // include finish
+            end;
+            if (GetGameObjectTrackPointMovementModeIntByHandle(trg)<>0) then
+            begin
+               // _misc_DoOnCollide(trg, hnd); include start
+               var res : Integer = _unit_TryAttack(trg, hnd, false);
+               if (res<=gc_result_tryattack_outofrange) then
+               begin
+                  if not ((TObj(pobj2).orders[0].itype=gc_obj_order_type_move) and (TObj(pobj2).orders[0].info.progress=gc_obj_order_move_mode_runaway)) then // isrunaway check inlined for optimization
+                  begin
+                     if (TObj(pobj2).orders[0].itype=gc_obj_order_type_attackobj) and (TObj(pobj2).orders[0].info.trg<>trg) then
+                     _unit_SetOrderTrg(trg, 0, hnd, True)
+                     else
+                     _unit_OrderAttack(trg, hnd, True, False, False);
+                  end;
+               end;
+               // include finish
+            end;
+         end;
+      end;
+      //else
+      //Log('_misc_Collided non playable obj trg basename = '+GetGameObjectBaseNameByHandle(trg));
+   end;
+end;
+
+// _misc_Uncollided
+//
+procedure _misc_Uncollided(const hnd: Integer);
+begin
+end;
+
+//_misc_KillPlayerUnits
+//
+procedure _misc_KillPlayerUnits(plHnd : Integer);
+begin
+   var peasecind : Integer = GetPlayerProgressSectionIndexByInterval(plHnd, gc_statemachine_interval_peasants);
+   var peaseccount : Integer;
+   if (peasecind>=0) then
+   peaseccount := GetPlayerProgressSectionCountGOByIndex(plHnd, peasecind);
+   var bnopea : Boolean = (peaseccount=0);
+
+   var warsecind : Integer = GetPlayerProgressSectionIndexByInterval(plHnd, gc_statemachine_interval_units);
+   var warseccount : Integer;
+   if (warsecind>=0) then
+   warseccount := GetPlayerProgressSectionCountGOByIndex(plHnd, warsecind);
+   var bnowar : Boolean = (warseccount=0);
+
+   var artsecind : Integer = GetPlayerProgressSectionIndexByInterval(plHnd, gc_statemachine_interval_artillery);
+   var artseccount : Integer;
+   if (artsecind>=0) then
+   artseccount := GetPlayerProgressSectionCountGOByIndex(plHnd, artsecind);
+   var bnoart : Boolean = (artseccount=0);
+
+   var bldsecind : Integer = GetPlayerProgressSectionIndexByInterval(plHnd, gc_statemachine_interval_buildings);
+   var bldseccount : Integer;
+   if (bldsecind>=0) then
+   bldseccount := GetPlayerProgressSectionCountGOByIndex(plHnd, bldsecind);
+   var bnobld : Boolean = (bldseccount=0);
+
+   var minsecind : Integer = GetPlayerProgressSectionIndexByInterval(plHnd, gc_statemachine_interval_mines);
+   var minseccount : Integer;
+   if (minsecind>=0) then
+   minseccount := GetPlayerProgressSectionCountGOByIndex(plHnd, minsecind);
+   var bnomin : Boolean = (minseccount=0);
+
+   var processed : Integer;
+   var i : Integer;
+   for i:=peaseccount-1 downto 0 do
+   begin
+      var goHnd : Integer = GetPlayerProgressSectionGOHandleByIndex(plHnd, peasecind, i);
+      var pobj : Pointer = _unit_GetTObj(goHnd);
+      if (pobj<>nil) and GetGameObjectPlayableObjectByHandle(goHnd) then
+      begin
+         _unit_SetTagStates(goHnd, gc_statetag_essential_death);
+         processed := processed+1;
+      end
+      else
+      if ((GetGameObjectStatesTagByHandle(goHnd) and gc_statetag_essential_birth)<>0) then
+      begin
+         _unit_SetTagStates(goHnd, gc_statetag_essential_death);
+         processed := processed+1;
+      end;
+      if processed>(Max(100, peaseccount div 6)) then
+      break;
+   end;
+   processed := 0;
+   for i:=warseccount-1 downto 0 do
+   begin
+      var goHnd : Integer = GetPlayerProgressSectionGOHandleByIndex(plHnd, warsecind, i);
+      var pobj : Pointer = _unit_GetTObj(goHnd);
+      if (pobj<>nil) and GetGameObjectPlayableObjectByHandle(goHnd) then
+      begin
+         _unit_SetTagStates(goHnd, gc_statetag_essential_death);
+         processed := processed+1;
+      end
+      else
+      if ((GetGameObjectStatesTagByHandle(goHnd) and gc_statetag_essential_birth)<>0) then
+      begin
+         _unit_SetTagStates(goHnd, gc_statetag_essential_death);
+         processed := processed+1;
+      end;
+      if processed>(Max(100, warseccount div 6)) then
+      break;
+   end;
+   processed := 0;
+   for i:=artseccount-1 downto 0 do
+   begin
+      var goHnd : Integer = GetPlayerProgressSectionGOHandleByIndex(plHnd, artsecind, i);
+      var pobj : Pointer = _unit_GetTObj(goHnd);
+      if (pobj<>nil) and GetGameObjectPlayableObjectByHandle(goHnd) then
+      begin
+         _unit_SetTagStates(goHnd, gc_statetag_essential_death);
+         processed := processed+1;
+      end
+      else
+      if ((GetGameObjectStatesTagByHandle(goHnd) and gc_statetag_essential_birth)<>0) then
+      begin
+         _unit_SetTagStates(goHnd, gc_statetag_essential_death);
+         processed := processed+1;
+      end;
+      if processed>(Max(100, artseccount div 6)) then
+      break;
+   end;
+   processed := 0;
+   for i:=minseccount-1 downto 0 do
+   begin
+      var goHnd : Integer = GetPlayerProgressSectionGOHandleByIndex(plHnd, minsecind, i);
+      var pobj : Pointer = _unit_GetTObj(goHnd);
+      if (pobj<>nil) and GetGameObjectPlayableObjectByHandle(goHnd) then
+      begin
+         _unit_SetTagStates(goHnd, gc_statetag_essential_death);
+         processed := processed+1;
+      end;
+      if processed>=(Max(3, minseccount div 4)) then
+      break;
+   end;
+   processed := 0;
+   for i:=bldseccount-1 downto 0 do
+   begin
+      var goHnd : Integer = GetPlayerProgressSectionGOHandleByIndex(plHnd, bldsecind, i);
+      var pobj : Pointer = _unit_GetTObj(goHnd);
+      if (pobj<>nil) and GetGameObjectPlayableObjectByHandle(goHnd) then
+      begin
+         var pobjprop : Pointer = _unit_GetObjProp(goHnd);
+         if (TObjProp(pobjprop).bslowdeath) and (TObj(pobj).bbuilt) then
+         begin
+            if (TObj(pobj).hp>gc_BuildingSlowDeathHP) then
+            TObj(pobj).hp := gc_BuildingSlowDeathHP-floor(RandomExt*gc_BuildingSlowDeathRandom);
+            processed := processed+1;
+         end
+         else
+         begin
+            _unit_SetTagStates(goHnd, gc_statetag_essential_death);
+            processed := processed+1;
+         end;
+      end;
+      if processed>(Max(7, bldseccount div 5)) then
+      break;
+   end;
+end;
+
+// _misc_SetDesert
+//
+procedure _misc_SetDesert(bRemoveEnv, bModifyHeight : Boolean);
+begin
+   var mapwidth : Integer = GetMapWidth;
+   var mapheight : Integer = GetMapHeight;
+
+   var count : Integer;
+   var x, y : Integer;
+   var lx, ty : Float;
+   _misc_GetMapLeftTopPos(lx, ty);
+   for y:=0 to mapheight do
+   for x:=0 to mapwidth do
+   begin
+      var realx : Integer = floor(lx+x);
+      var realy : Integer = floor(ty+y);
+      var oldind : Integer = GetTileIndex(x, y);
+      var oldnam : String = GetTileName(x, y);
+      var newnam : String;
+      //
+      case oldnam of
+         'grass1' : newnam := 'sandsea5';
+         'grass1_autumn' : newnam := 'sandsea5_autumn'; // had to add all these here, because 'desert' is no longer under 'seasons' but terraintype
+         'grass1_winter' : newnam := 'sandsea5_winter';
+         'grass1_spring' : newnam := 'sandsea5_spring';
+         'grass3' : newnam := 'test22';
+         'grass3_autumn' : newnam := 'test22_autumn';
+         'grass3_winter' : newnam := 'test22_winter';
+         'grass3_spring' : newnam := 'test22_spring';
+         'grass5' : newnam := 'test22';
+         'grass5_autumn' : newnam := 'test22_autumn';
+         'grass5_winter' : newnam := 'test22_winter';
+         'grass5_spring' : newnam := 'test22_spring';
+         'grass7' : newnam := 'desert6';
+         'grass7_autumn' : newnam := 'desert6_autumn';
+         'grass7_winter' : newnam := 'desert6_winter';
+         'grass7_spring' : newnam := 'desert6_spring';
+         'grass8' : newnam := 'desert6';
+         'grass8_autumn' : newnam := 'desert6_autumn';
+         'grass8_winter' : newnam := 'desert6_winter';
+         'grass8_spring' : newnam := 'desert6_spring';
+         // main road part
+         'ground1' : newnam := 'test16';
+         'ground1_autumn' : newnam := 'test16_autumn';
+         'ground1_winter' : newnam := 'test16_winter';
+         'ground1_spring' : newnam := 'test16_spring';
+         'test2' : newnam := 'ground1';
+         'test2_autumn' : newnam := 'ground1_autumn';
+         'test2_winter' : newnam := 'ground1_winter';
+         'test2_spring' : newnam := 'ground1_spring';
+         'test1' : newnam := 'ground1';
+         'test1_autumn' : newnam := 'ground1_autumn';
+         'test1_winter' : newnam := 'ground1_winter';
+         'test1_spring' : newnam := 'ground1_spring';
+         'test3' : newnam := 'ground1';
+         'test3_autumn' : newnam := 'ground1_autumn';
+         'test3_winter' : newnam := 'ground1_winter';
+         'test3_spring' : newnam := 'ground1_spring';
+         'grass2' : newnam := 'desert11';
+         'grass2_autumn' : newnam := 'desert11_autumn';
+         'grass2_winter' : newnam := 'desert11_winter';
+         'grass2_spring' : newnam := 'desert11_spring';
+         'test7' : newnam := 'desert11';
+         'test7_autumn' : newnam := 'desert11_autumn';
+         'test7_winter' : newnam := 'desert11_winter';
+         'test7_spring' : newnam := 'desert11_spring';
+         'test8' : newnam := 'desert11';
+         'test8_autumn' : newnam := 'desert11_autumn';
+         'test8_winter' : newnam := 'desert11_winter';
+         'test8_spring' : newnam := 'desert11_spring';
+         //desert1
+         'grass_ground1' : newnam := 'desert11';
+         'grass_ground1_autumn' : newnam := 'desert11_autumn';
+         'grass_ground1_winter' : newnam := 'desert11_winter';
+         'grass_ground1_spring' : newnam := 'desert11_spring';
+         'grass_ground2' : newnam := 'sandsea5';
+         'grass_ground2_autumn' : newnam := 'sandsea5_autumn';
+         'grass_ground2_winter' : newnam := 'sandsea5_winter';
+         'grass_ground2_spring' : newnam := 'sandsea5_spring';
+         'grass_ground3' : newnam := 'desert11';
+         'grass_ground3_autumn' : newnam := 'desert11_autumn';
+         'grass_ground3_winter' : newnam := 'desert11_winter';
+         'grass_ground3_spring' : newnam := 'desert11_spring';
+         'rock1' : newnam := 'desert2';
+         'rock1_autumn' : newnam := 'desert2_autumn';
+         'rock1_winter' : newnam := 'desert2_winter';
+         'rock1_spring' : newnam := 'desert2_spring';
+         'rock3' : newnam := 'sandrock6';
+         'rock3_autumn' : newnam := 'sandrock6_autumn';
+         'rock3_winter' : newnam := 'sandrock6_winter';
+         'rock3_spring' : newnam := 'sandrock6_spring';
+         'rock4' : newnam := 'sandrock6';
+         'rock4_autumn' : newnam := 'sandrock6_autumn';
+         'rock4_winter' : newnam := 'sandrock6_winter';
+         'rock4_spring' : newnam := 'sandrock6_spring';
+         'rock5' : newnam := 'test22';
+         'rock5_autumn' : newnam := 'test22_autumn';
+         'rock5_winter' : newnam := 'test22_winter';
+         'rock5_spring' : newnam := 'test22_spring';
+         'rock7' : newnam := 'desert4';
+         'rock7_autumn' : newnam := 'desert4_autumn';
+         'rock7_winter' : newnam := 'desert4_winter';
+         'rock7_spring' : newnam := 'desert4_spring';
+         'rock8' : newnam := 'test22';
+         'rock8_autumn' : newnam := 'test22_autumn';
+         'rock8_winter' : newnam := 'test22_winter';
+         'rock8_spring' : newnam := 'test22_spring';
+         'rock9' : newnam := 'test23';
+         'rock9_autumn' : newnam := 'test23_autumn';
+         'rock9_winter' : newnam := 'test23_winter';
+         'rock9_spring' : newnam := 'test23_spring';
+         'test0' : newnam := 'sandsea5';
+         'test0_autumn' : newnam := 'sandsea5_autumn';
+         'test0_winter' : newnam := 'sandsea5_winter';
+         'test0_spring' : newnam := 'sandsea5_spring';
+         'test4' : newnam := 'sandsea5';
+         'test4_autumn' : newnam := 'sandsea5_autumn';
+         'test4_winter' : newnam := 'sandsea5_winter';
+         'test4_spring' : newnam := 'sandsea5_spring';
+         'test6' : newnam := 'sandsea6';
+         'test6_autumn' : newnam := 'sandsea6_autumn';
+         'test6_winter' : newnam := 'sandsea6_winter';
+         'test6_spring' : newnam := 'sandsea6_spring';
+         'test9' : newnam := 'desert6';
+         'test9_autumn' : newnam := 'desert6_autumn';
+         'test9_winter' : newnam := 'desert6_winter';
+         'test9_spring' : newnam := 'desert6_spring';
+         'test12' : newnam := 'sandsea5';
+         'test12_autumn' : newnam := 'sandsea5_autumn';
+         'test12_winter' : newnam := 'sandsea5_winter';
+         'test12_spring' : newnam := 'sandsea5_spring';
+         'test13' : newnam := 'sandsea6';
+         'test13_autumn' : newnam := 'sandsea6_autumn';
+         'test13_winter' : newnam := 'sandsea6_winter';
+         'test13_spring' : newnam := 'sandsea6_spring';
+         'test14' : newnam := 'desert11';
+         'test14_autumn' : newnam := 'desert11_autumn';
+         'test14_winter' : newnam := 'desert11_winter';
+         'test14_spring' : newnam := 'desert11_spring';
+         // seashore
+         'sandrock2' : newnam := 'sandsea6';
+         'sandrock2_autumn' : newnam := 'sandsea6_autumn';
+         'sandrock2_winter' : newnam := 'sandsea6_winter';
+         'sandrock2_spring' : newnam := 'sandsea6_spring';
+         'sandrock3' : newnam := 'sandsea5';
+         'sandrock3_autumn' : newnam := 'sandsea5_autumn';
+         'sandrock3_winter' : newnam := 'sandsea5_winter';
+         'sandrock3_spring' : newnam := 'sandsea5_spring';
+         'sandrock4' : newnam := 'sandsea5';
+         'sandrock4_autumn' : newnam := 'sandsea5_autumn';
+         'sandrock4_winter' : newnam := 'sandsea5_winter';
+         'sandrock4_spring' : newnam := 'sandsea5_spring';
+         // empty
+         'grass10' : newnam := 'sandsea1';
+         'test11' : newnam := 'sandsea1';
+         'test11_autumn' : newnam := 'sandsea1_autumn';
+         'test11_winter' : newnam := 'sandsea1_winter';
+         'grass6' : newnam := 'sandsea1';
+         'grass9' : newnam := 'sandsea1';
+         'grass9_winter' : newnam := 'sandsea1_winter';
+         'test5' : newnam := 'sandsea1';
+
+         'alpha0a' : newnam := 'alpha0c';
+      end;
+      var h : Float = GetHeightData(realx, realy);
+      if oldnam='rock8' and (h<2.9) and (h>0.1) and ((h>1.8) or (h<1)) then
+      newnam := 'desert2';
+
+      var newind : Integer = MapGetTileIndexByTileBlock(newnam);
+      if newind>=0 then
+      begin
+         count := count+1;
+         SetTileIndex(x, y, newind);
+      end;
+      const koef = 0.8;
+
+      var waterheight : Float;
+      var bwater : Boolean = RayCastWater(realx, realy, waterheight);
+      if (h>(waterheight+0.0025)) then
+      bwater := False;
+      if (bModifyHeight) and (not bwater) then
+      SetHeightData(realx, realy, h*koef);
+   end;
+
+   if (bRemoveEnv) and (GetCountOfPlayers>gc_playerind_env) then
+   begin
+      var plhnd : Integer = GetPlayerHandleByIndex(gc_playerind_env);
+      var i : Integer;
+      for i:=GetPlayerGameObjectsCountByHandle(plhnd)-1 downto 0 do
+      begin
+         var goHnd : Integer = GetGameObjectHandleByIndex(i, plhnd);
+         var basename : String = GetGameObjectBaseNameByHandle(goHnd);
+         if (basename='minegold') or (basename='mineiron') or (basename='minecoal') then
+         begin
+            ReloadGameObjectBaseName(goHnd, gc_racename_env, basename+'s');
+         end
+         else
+         if not (StrExists(basename, 'stones') or (basename=gc_basename_field)) then
+         GameObjectRequestToDestroyByHandle(goHnd);
+      end;
+   end;
+
+   GUIMiniMapUpdate;
+   Log('_misc_SetDesert : Count of changed tiles = '+IntToStr(count));
+end;
+
+// _misc_SetSeason
+//
+procedure _misc_SetSeason(season : Integer);
+begin
+   SetSeasonType(season);
+   var pl, i, j : Integer;
+   for pl:=GetCountOfPlayers-1 downto 0 do
+   begin
+      var plhnd : Integer = GetPlayerHandleByIndex(pl);
+      for i:=GetPlayerGameObjectsCountByHandle(plhnd)-1 downto 0 do
+      begin
+         var goHnd : Integer = GetGameObjectHandleByIndex(i, plhnd);
+         var baseid : Integer = _misc_GetBaseObjID(goHnd);
+         if (baseid=gc_baseid_obj) then
+         begin
+            var pobj : Pointer = _unit_GetTObj(goHnd);
+            if (pobj<>nil) then
+            begin
+               var basename : String = GetGameObjectBaseNameByHandle(goHnd);
+
+               var statestag : Integer = GetGameObjectStatesTagByHandle(goHnd);
+               var essential : Integer = statestag and gc_statetag_essential;
+
+               if (GetSeasonType=2) then // winter
+               begin
+                  if StrExists(basename, 'leaftree') then
+                  begin
+                     Log('winter : '+basename+' requested to destroy');
+                     GameObjectRequestToDestroyByHandle(goHnd);
+                     continue;
+                  end;
+               end;
+
+               if _unit_IsBuilding(goHnd) and (essential=gc_statetag_essential_none) then
+               begin
+                  if (GetGameObjectCountChildByHandle(goHnd)>0) and (not gObjProp[TObj(pobj).cid][TObj(pobj).id].bgate) then
+                  begin
+                     //var child : Integer = GetGameObjectGOHandleChildByHandle(myHnd, 0);
+                     //SetGameObjectVisibleByHandle(child, False);
+                     //new do not hide child set new mesh and material
+                     var child : Integer = GetGameObjectGOHandleChildByHandle(goHnd, 0);
+                     var actor : String = GameObjectGetActorNameByHandle(goHnd);
+                     SetGameObjectActorNameByHandle(child, actor+'a.mesh');
+                     var material : String = GetGameObjectMaterialNameByHandle(child);
+                     if ((GetSeasonType=2) and (material<>'detailw')) or ((GetSeasonType<>2) and (material<>'detail')) then
+                     begin
+                        material := 'detail';
+                        if GetSeasonType=2 then
+                        material := material+'w';
+                        Log('winter : '+basename+' child material set to '+material);
+                        SetGameObjectMaterialNameByHandle(child, material);
+                        SetGameObjectVisibleByHandle(child, True);
+                     end;
+                  end;
+               end;
+            end;
+         end
+         else
+         if (baseid=gc_baseid_res) then
+         begin
+         end;
+      end;
+   end;
+
+   var alpha1 : Integer = MapGetTileIndexByTileBlock('alpha0a');
+   var alpha2 : Integer = MapGetTileIndexByTileBlock('alpha0b');
+   var x, y : Integer;
+   for y:=0 to GetMapHeight do
+   for x:=0 to GetMapWidth do
+   begin
+      //var name : String = GetTileName(x, y);
+      var tile : Integer = GetTileIndex(x, y);
+      if (GetSeasonType=2) then
+      begin
+         if (tile=alpha1) then
+         SetTileIndex(x, y, alpha2);
+      end
+      else
+      begin
+         if (tile=alpha2) then
+         SetTileIndex(x, y, alpha1);
+      end;
+   end;
+end;

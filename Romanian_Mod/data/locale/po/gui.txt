@@ -1,0 +1,949 @@
+	@ver
+PEGI v%ver%%dataver%
+	@name.def
+Cossaco
+	@restype.1
+Comida
+	@restype.2
+Madeira
+	@restype.3
+Pedra
+	@restype.4
+Ouro
+	@restype.5
+Ferro
+	@restype.6
+Carvão
+	@text.win
+VITÓRIA! Prime ESC para saíres.
+	@text.lose
+DERROTA! Prime ESC para saíres.
+	@player.id
+Jogador %playername%
+	@info.kills
+Mortes: %amount%
+	@info.fish
+Peixe: %amount%/%maxamount%
+	@info.population
+População: %amount%
+	@info.maxpopulation
+População máx.: %amount%
+	@btn.army
+Exército
+	@chat.all
+%from%: %text%
+	@chat.private
+%from%-->%to%: %text%
+	@chat.ally
+[ALIADOS] %from%: %text%
+	@chat.say
+Dizer:
+	@chat.saytoally
+Dizer aos aliados:
+	@log.none
+%s1%%s2%
+	@log.famine
+AVISO! A fome abateu-se sobre o teu reino!
+	@log.terrainpreventsshot
+%s1%: O perfil do terreno impede que ataques.
+	@log.obstaclepreventshot
+%s1%: %s2% impede que ataques.
+	@log.notenoughres
+Recursos insuficientes: %s1%
+	@log.notenoughfarms
+Não tens habitações suficientes!
+	@log.populationlimitreached
+Limite de unidades atingido!
+	@log.cantshootnogold
+Não tens ouro. %s1% não pode atacar.
+	@log.cantshootnocoaloriron
+Não tens carvão nem ferro. %s1% não pode atacar.
+	@log.nogold
+AVISO! NÃO TENS OURO! O MOTIM É INEVITÁVEL!
+	@log.upgradedone
+Melhoria concluída: %s1%
+	@log.captured
+O teu %s1% foi capturado.
+	@log.buildingdestroyed
+Perdeste %s1%.
+	@log.buildingbuilt
+%s1% foi construído(a) com sucesso.
+	@log.shipbuilt
+%s1% terminou de produzir unidades.
+	@log.lowfood
+Tens muito pouca comida! A produção de algumas unidades foi suspensa.
+	@log.lowgold
+Tens muito pouco ouro! Há probabilidade dos teus mercenários se rebelarem!
+	@log.lowshoot
+Tens muito pouco ferro e carvão! As tuas unidades de combate à distância vão ficar sem munição em breve.
+	@infowindow.commoninfo
+Informações comuns
+	@infowindow.listofdead
+Lista das baixas
+	@infowindow.marketprices
+Preços de mercado
+	@infowindow.marketpricestip
+As linhas apresentam os bens em oferta. Os preços superiores a 1000 estão listados a branco. Os preços base estão listados a amarelo. As ofertas rentáveis estão listadas a verde.
+	@infowindow.incomeandcosts
+Receitas e despesas
+	@infowindow.controlledterrain
+Território ocupado
+	@infowindow.scores
+Pontuação
+	@infowindow.upkeepcosts
+Custos de manutenção
+	@infowindow.workersinmines
+Trabalhadores em minas:
+	@infowindow.resourcegain
+Produção de recursos:
+	@infowindow.workersingoldmines
+Trabalhadores em minas de ouro: %s1%
+	@infowindow.amount
+Quantidade
+	@infowindow.costs
+Custos
+	@infowindow.upkeepcoststip
+Os custos de manutenção representam a quantidade de trabalhadores nas tuas minas de ouro (pode ser fracionado) necessária para produzir ouro suficiente para manter determinados tipos de tropas e edifícios.
+	@infowindow.total
+Total:
+	@infowindow.woodgain
+Produção de madeira: %s1%
+	@infowindow.stonegain
+Produção de pedra: %s1%
+	@infowindow.foodgain
+Produção de comida: %s1%
+	@endgamestats.scorescurve
+Estatísticas: gráfico de pontuação
+	@endgamestats.populationcurve
+Estatísticas: gráfico de melhorias e população
+	@endgamestats.backtogame
+Voltar ao jogo
+	@endgamestats.backtomenu
+Voltar ao menu
+	@endgamestats.totalgainres
+Quantidade total de recursos produzidos:
+	@endgamestats.upgradecosts
+Recursos gastos nas melhorias:
+	@endgamestats.mineupgradecosts
+Recursos gastos na melhoria das minas:
+	@endgamestats.unitcosts
+Recursos gastos nas unidades:
+	@endgamestats.buildingcosts
+Recursos gastos nos edifícios:
+	@endgamestats.unitupkeepcosts
+Recursos gastos na manutenção das unidades:
+	@endgamestats.marketbuyres
+Recursos comprados no mercado:
+	@endgamestats.marketsellres
+Recursos vendidos no mercado:
+	@endgamestats.unitscreated
+Produzidas
+	@endgamestats.unitsloses
+Perdidas
+	@endgamestats.statistics
+Estatísticas
+	@difficulty.0
+Nenhuma
+	@difficulty.1
+Normal
+	@difficulty.2
+Difícil
+	@difficulty.3
+Muito difícil
+	@difficulty.4
+Impossível
+	@minimap.info.peacemode
+Modo de Paz
+	@minimap.info.scores
+Pontuações:
+	@minimap.info.time
+Tempo de jogo
+	@minimap.info.peacetime
+T.p. restante
+	@minimap.info.fps
+FPS=
+	@minimap.info.debug.name
+Nome:
+	@minimap.info.debug.order
+Ordem:
+	@minimap.info.debug.orderx
+OrdemX:
+	@minimap.info.debug.ordery
+OrdemY:
+	@minimap.info.debug.orderlist
+ListaOrdem:
+	@minimap.info.debug.ordertrg
+TrgOrdem:
+	@minimap.info.debug.hnd
+Hnd=
+	@minimap.info.debug.sto
+STO=
+	@minimap.info.debug.stp
+STP=
+	@minimap.info.debug.stolist
+STOlist=
+	@minimap.info.debug.ordlist
+ORDlist=
+	@minimap.info.debug.bpathrequested
+bPathReq=
+	@minimap.info.debug.standtime
+StandTime=
+	@minimap.info.debug.none
+nenhum
+	@minimap.info.debug.scenariogroup
+scenariogroup=
+	@placeunits.category.infantry
+Infantaria
+	@placeunits.category.cavalry
+Cavalaria
+	@placeunits.category.diplomacy
+Mercenários
+	@placeunits.category.artillery
+Artilharia
+	@placeunits.category.ships
+Marinha
+	@placeunits.category.buildings
+Edifícios
+	@placeunits.category.misc
+Diversos
+	@text.pause
+Pausa
+	@text.saving
+A guardar...
+	@hud.gold
+%color(default)%É um depósito de %color(FFAA00)%ouro%color(default)%. Constrói uma mina neste local.
+	@hud.iron
+%color(default)%É um depósito de %color(FFAA00)%ferro%color(default)%. Constrói uma mina neste local.
+	@hud.coal
+%color(default)%É um depósito de %color(FFAA00)%carvão%color(default)%. Constrói uma mina neste local.
+	@resourcepanel.food.hint
+A comida é produzida por camponeses nos campos e barcos de pesca no porto.
+	@resourcepanel.wood.hint
+A madeira é cortada nas florestas e armazenada nos armazéns ou câmaras municipais.
+	@resourcepanel.wood.hint.add
+A madeira é usada principalmente na construção de edifícios.
+	@resourcepanel.stone.hint
+Os camponeses recolhem pedras nas pedreiras e armazenam-na nos armazéns ou câmaras municipais.
+	@resourcepanel.stone.hint.add
+A pedra é usada principalmente na construção de edifícios, assim como na manutenção de muralhas de pedra e torres.
+	@resourcepanel.gold.hint
+O ouro é produzido nas minas de ouro que podem ser colocadas sobre depósitos de ouro.
+	@resourcepanel.gold.hint.add
+O ouro é usado principalmente para recrutar e manter mercenários e para efetuar melhorias. Se ficares sem ouro, as tuas unidades de mercenários irão rebelar-se e lutar contra ti. Algumas unidades param de trabalhar quando não tens ouro.
+	@resourcepanel.iron.hint
+O ferro é produzido nas minas de ferro que podem ser colocadas sobre depósitos de ferro.
+	@resourcepanel.iron.hint.add
+O ferro é usado principalmente para recrutar unidades militares e para efetuar melhorias de unidade. Também é usado para produzir munição para unidades de combate à distância, artilharia e navios. Se ficares sem ferro, não poderão atacar.
+	@resourcepanel.coal.hint
+O carvão é produzido nas minas de carvão que podem ser colocadas sobre depósitos de carvão.
+	@resourcepanel.coal.hint.add
+O carvão é usado para produzir munição para unidades de combate à distância, artilharia e navios. Se ficares sem carvão, não poderão atacar.
+	@resourcepanel.populationlimit
+Não podes treinar mais unidades depois de atingires o limite populacional. O limite pode ser aumentado ao construíres Habitações, Câmaras Municipais e Casernas.
+	@resourcepanel.lotofresources
+9999999+
+	@resourcepanel.lowfood
+Tens muito pouca comida! É possível haver fome.
+	@control.btn.idlepeasants
+Selecionar todos os camponeses inativos
+	@control.btn.idlemines
+Selecionar todas as minas desocupadas
+	@control.btn.disembarkall
+Desembarcar todos
+	@unitpanel.hint.damage
+Dano
+	@unitpanel.hint.shield
+Defesa
+	@unitpanel.hint.protection
+Proteção
+	@weaponkind.pike
+pique
+	@weaponkind.sword
+espada
+	@weaponkind.bullet
+bala
+	@weaponkind.cannister
+caixa de lata com metralha
+	@weaponkind.arrow
+flecha
+	@weaponkind.firearrow
+flecha de fogo
+	@weaponkind.cannonball
+bala de canhão
+	@weaponkind.mortarball
+bala de morteiro
+	@control.btn.rallypoint
+Ponto de reunião
+	@control.btn.market.plusres
++%amount% unidades de recurso
+	@control.btn.market.minusres
+%amount% unidades de recurso
+	@control.btn.market.accept
+Trocar Recursos
+	@control.btn.market.clear
+Cancelar o Negócio
+	@control.market.offer
+Oferta
+	@control.market.demand
+Procura
+	@control.btn.createsquad.requiredrummer
+Um oficial precisa de um tocador de tambor por perto para criar um esquadrão
+	@control.btn.createsquad.requiremoreunits
+precisas de ter mais unidades por perto para criares um esquadrão
+	@unitpanel.info.inside
+No interior
+	@unitpanel.info.maxinside
+Máx. no interior
+	@unitpanel.info.kills
+Mortes
+	@unitpanel.info.artlimit.cannon
+Canhões
+	@unitpanel.info.artlimit.howitzers
+Morteiros
+	@unitpanel.info.artlimit.mortars
+Morteiros
+	@unitpanel.info.artlimit.multicannon
+Vários canos
+	@unitpanel.hint.time
+Tempo
+	@control.btn.holdposition
+Manter Posição
+	@control.btn.cancelholdposition
+À Vontade (cancelar Manter Posição)
+	@control.btn.gowithattack
+Mover e Atacar
+	@control.btn.enableattack
+Ativar Ataque
+	@control.btn.disableattack
+Desativar Ataque
+	@control.btn.patrol
+Patrulha
+	@control.btn.guard
+Usar Unidade como Sentinela
+	@control.btn.cancelguard
+Cancelar Modo de Sentinela
+	@control.btn.squadfill
+Assumir Formação
+	@control.btn.squaddisband
+Dispensar Esquadrão
+	@control.btn.officerdecreasesize
+Reduzir Esquadrão
+	@control.btn.officerincreasesize
+Expandir Formação
+	@control.btn.artillerypreparation
+Bombardear uma Área
+	@control.btn.squadformline
+Assumir Formação em Fileira
+	@control.btn.squadformcolumn
+Assumir Formação em Coluna
+	@control.btn.squadformsquare
+Assumir Formação em Quadrado
+	@control.btn.cavsquadformline
+Assumir Formação em Linha
+	@control.btn.cavsquadformwedge
+Assumir Formação em Cunha
+	@control.btn.cavsquadformcolumn
+Assumir Formação em Coluna
+	@control.btn.opengates
+Abrir os Portões
+	@control.btn.closegates
+Fechar os Portões
+	@control.btn.groupformations
+Agrupar Formações
+	@control.btn.ungroupformations
+Desagrupar Formações
+	@menu.btn.changeuser
+Alterar Utilizador
+	@menu.btn.connectserver
+Ligar ao Servidor
+	@menu.btn.createroom
+Criar Sala
+	@menu.btn.joinroom
+Entrar na Sala
+	@menu.btn.startgame
+Iniciar Jogo
+	@menu.btn.exittomainmenu
+Menu Principal
+	@menu.btn.profile
+Perfil
+	@menu.btn.campaign
+Campanha
+	@menu.btn.singleplayer
+Único Jogador
+	@menu.btn.multiplayer
+Multijogador
+	@menu.btn.internetshell
+Internet Shell
+	@menu.btn.loadgame
+Carregar Jogo
+	@menu.btn.savegame
+Guardar Jogo
+	@menu.btn.settings
+Definições
+	@menu.btn.options
+Opções
+	@menu.btn.editor
+Editor
+	@menu.btn.exit
+Sair
+	@menu.btn.continue
+Continuar
+	@menu.btn.randommap
+Mapa Aleatório
+	@menu.btn.backtomainmenu
+Voltar ao Menu Principal
+	@customgame.btn.startgame
+Iniciar Jogo
+	@customgame.text.player
+Jogador
+	@customgame.text.nation
+Nação
+	@customgame.text.team
+Equi.
+	@customgame.text.color
+Cor
+	@customgame.text.terraintype
+Forma do Mapa
+	@customgame.text.relieftype
+Tipo de Terreno
+	@customgame.text.initialresources
+Recursos Iniciais
+	@customgame.text.minerals
+Minerais
+	@customgame.text.additional
+Opções Adicionais
+	@randommap.terraintype.0
+Terra
+	@randommap.terraintype.1
+Mediterrâneo
+	@randommap.terraintype.2
+Penínsulas
+	@randommap.terraintype.3
+Ilhas
+	@randommap.terraintype.4
+Vários Continentes
+	@randommap.terraintype.5
+Um Continente
+	@randommap.minerals.0
+Pobre
+	@randommap.minerals.1
+Médio
+	@randommap.minerals.2
+Rico
+	@randommap.initialresources.0
+1000
+	@randommap.initialresources.1
+5000
+	@randommap.initialresources.2
+10000
+	@randommap.initialresources.3
+50000
+	@randommap.relieftype.0
+Planície
+	@randommap.relieftype.1
+Montanhas Baixas
+	@randommap.relieftype.2
+Montanhas Altas
+	@randommap.relieftype.3
+Serras
+	@randommap.relieftype.4
+Planaltos
+	@randommap.relieftype.5
+Deserto
+	@text.random
+Aleatório
+	@text.kickplayer
+Expulsar jogador
+	@unitpanel.hint.damage.weaponkind.0
+Ataque com Espada
+	@unitpanel.hint.damage.weaponkind.1
+Ataque com Pique
+	@unitpanel.hint.damage.weaponkind.2
+Poder de Fogo
+	@unitpanel.hint.damage.weaponkind.3
+Ataque com Flechas
+	@unitpanel.hint.damage.weaponkind.4
+Dano da Bala de Canhão
+	@unitpanel.hint.damage.weaponkind.5
+Dano da Metralha
+	@unitpanel.hint.damage.weaponkind.6
+Ataque com Flechas de Fogo
+	@unitpanel.hint.damage.weaponkind.7
+Projétil com Morteiro
+	@unitpanel.hint.protection.weaponkind.0
+Proteção contra espadas
+	@unitpanel.hint.protection.weaponkind.1
+Proteção contra piques
+	@unitpanel.hint.protection.weaponkind.2
+Proteção contra balas
+	@unitpanel.hint.protection.weaponkind.3
+Proteção contra setas
+	@unitpanel.hint.protection.weaponkind.4
+Proteção contra balas de canhão
+	@unitpanel.hint.protection.weaponkind.5
+Proteção contra metralha
+	@unitpanel.hint.lockcountbuilding
+Só podes ter um número limitado de edifícios deste tipo
+	@unitpanel.hint.lockcountunit
+Só podes comandar um número limitado de unidades deste tipo
+	@unitpanel.hint.artlimit
+Limite de peças de artilharia atingido. Precisas de mais depósitos de artilharia.
+	@unitpanel.hint.prerequisitbuildings
+Precisa de edifícios
+	@unitpanel.hint.prerequisitupgrades
+Precisa de melhorias
+	@text.engame.win
+VITÓRIA! Prime ESC para saíres. ou BACKSPACE para fechares esta mensagem.
+	@text.endgame.lose
+DERROTA! Prime ESC para saíres. ou BACKSPACE para fechares esta mensagem.
+	@text.minimap.gametime
+Tempo de jogo
+	@text.minimap.gametime.peacetime
+T.p
+	@randommap.settings.startingunits
+Opções de Início
+	@randommap.settings.startingunits.default
+Predefinição
+	@randommap.settings.startingunits.armysmall
+Exército
+	@randommap.settings.startingunits.armymedium
+Exército Grande
+	@randommap.settings.startingunits.armylarge
+Exército Enorme
+	@randommap.settings.startingunits.peasantslot
+Exército de Camponeses
+	@randommap.settings.startingunits.differentnations
+Diferentes Nações
+	@randommap.settings.startingunits.towers
+Torres
+	@randommap.settings.startingunits.cannons
+Canhões
+	@randommap.settings.startingunits.cannonsandhowitzers
+Canhões e Morteiros
+	@randommap.settings.startingunits.barrack18
+Casernas do Século XVIII
+	@randommap.settings.balloon
+Opções de Balão
+	@randommap.settings.balloon.default
+Predefinição
+	@randommap.settings.balloon.no
+Sem Balões
+	@randommap.settings.balloon.with
+Balões
+	@randommap.settings.cannons
+Canhões
+	@randommap.settings.cannons.default
+Predefinição
+	@randommap.settings.cannons.nocannonstowerswalls
+Sem Canhões, Torres e Muralhas
+	@randommap.settings.cannons.expensivecannons
+Canhões Caros
+	@randommap.settings.peacetime
+Tempo de Paz
+	@randommap.settings.peacetime.default
+Sem Tempo de Paz
+	@randommap.settings.peacetime.10
+10 min
+	@randommap.settings.peacetime.15
+15 min
+	@randommap.settings.peacetime.20
+20 min
+	@randommap.settings.peacetime.30
+30 min
+	@randommap.settings.peacetime.45
+45 min
+	@randommap.settings.peacetime.60
+60 min
+	@randommap.settings.peacetime.90
+1,5 horas
+	@randommap.settings.peacetime.120
+2 horas
+	@randommap.settings.peacetime.180
+3 horas
+	@randommap.settings.peacetime.240
+4 horas
+	@randommap.settings.century18
+Opções do Século XVIII
+	@randommap.settings.century18.default
+Predefinição
+	@randommap.settings.century18.no
+Nunca
+	@randommap.settings.century18.with
+Imediatamente
+	@randommap.settings.capture
+Captura
+	@randommap.settings.capture.default
+Predefinição
+	@randommap.settings.capture.nopeasants
+Sem Capturar Camponeses
+	@randommap.settings.capture.nocenterspeasants
+Sem Capturar Camponeses ou Centro
+	@randommap.settings.capture.onlyartillery
+Apenas Artilharia
+	@internet.missing.mail
+E-mail em falta
+	@internet.invalid.mail
+E-mail inválido
+	@internet.fillallfields
+Tens de preencher todos os campos
+	@internet.invalid.nicklength
+A tua alcunha tem de ter entre 4 e 16 carateres
+	@internet.invalid.nickchar
+A tua alcunha contém carateres restritos
+	@internet.invalid.passlength
+A tua palavra-passe tem de ter entre 5 e 16 carateres
+	@internet.invalid.passchar
+A tua palavra-passe contém carateres restritos
+	@internet.passdoesntmatch
+A palavra-passe confirmada não corresponde à original
+	@internet.invalid.gamekey
+Chave do jogo na Internet inválida
+	@internet.missing.pass
+Palavra-passe em falta
+	@internet.invalid.pass
+Palavra-passe inválida
+	@internet.login
+Iniciar sessão
+	@internet.mailregistered
+O teu e-mail está registado. Introduz a tua palavra-passe para iniciares sessão.
+	@internet.mail
+E-mail
+	@internet.pass
+Palavra-passe
+	@internet.entermail
+Introduz o teu e-mail
+	@internet.welcome.0
+Bem-vindo ao jogo na Internet! O jogo usa o teu e-mail para iniciar sessão na tua conta. Se for a primeira vez que jogas o jogo na Internet, tens de registar uma nova conta.
+	@internet.welcome.1
+O teu e-mail nunca é apresentado a outros jogadores. Só é usado para iniciar sessão no jogo e para repor uma palavra-passe perdida.
+	@internet.registration
+Registo
+	@internet.enterkey
+Introduz a chave de ativação do produto.
+	@internet.enternick
+Escolhe a tua palavra-passe
+	@internet.newuser
+Novo Utilizador
+	@internet.createpass
+Cria uma palavra-passe
+	@internet.confirmpass
+Confirma a tua palavra-passe
+	@internet.key
+Chave do jogo na Internet
+	@internet.forgotpass
+Esqueceu a senha
+	@internet.passwassentto
+A palavra-passe foi enviada para
+	@leShellCoreVersionFailed
+A tua versão está desatualizada. Queres atualizá-la automaticamente?
+	@leShellDataVersionFailed
+%include(menu;leShellCoreVersionFailed)%
+	@leError
+Não é possível estabelecer ligação com o servidor...
+	@leShellAuthBannedFailed
+Esta conta está bloqueada
+	@leShellRegClientFailed
+Este e-mail já está a ser utilizado
+	@leShellRegDataFailed
+Dados de registo incorretos
+	@leShellRegCDKeyFailed
+Chave do jogo na Internet incorreta
+	@leDisconnect
+A tua ligação foi perdida
+	@leDisconnectEnemy
+A ligação do inimigo foi perdida
+	@leTerminated
+Sessão de jogo fechada
+	@leShellDataVersionFailedNoUpdater
+A tua versão do jogo está desatualizada. Fecha o programa para permitires que o serviço de atualização automática da tua plataforma de distribuição atualize o jogo.
+	@internet.error
+Erro
+	@internet.info
+Informações
+	@internet.kicked
+Foste expulso da sala
+	@internet.authorizing
+A autorizar...
+	@internet.connecting
+A ligar...
+	@internet.incorrectgamename
+Nome de jogo incorreto
+	@internet.waitplayers
+Espera que todos os jogadores acabem de carregar o jogo...
+	@internet.waitplayerslist
+A esperar que os jogadores carreguem:
+	@internet.pleasewaitserverresponse
+Aguarda pela resposta do servidor...
+	@internet.createroom
+Criar Sala
+	@internet.createroom.hint
+Cria uma sala privada protegida por palavra-passe.
+	@intenet.joinroom
+Entrar na Sala
+	@intenet.joinroom.hint
+Entra na sala criada pelo jogador selecionado. Podes precisar de introduzir uma palavra-passe para entrares.
+	@intenet.chooseplayer
+Escolhe um jogador na lista acima.
+	@intenet.passroom
+Palavra-passe
+	@intenet.passroom.hint
+Introduz a palavra-passe da sala. Os outros jogadores têm de introduzir esta palavra-passe para entrarem na tua sala.
+	@intenet.roomispass
+Esta sala está protegida por palavra-passe. Introduz a palavra-passe para entrares no jogo.
+	@intenet.roomunpassed
+Se quiseres criar uma sala sem proteção, deixa o campo em branco.
+	@intenet.playercreatedroom
+O jogador %playernick% criou uma sala privada%points%.
+	@intenet.playerlooksforenemy.0
+O jogador está a procura de um oponente
+	@intenet.playerlooksforenemy.1
+O jogador %playernick% procura um oponente%points%.
+	@internet.privateroom
+Sala privada
+	@internet.nonprivateroom
+Sala não privada
+	@internet.loading
+A carregar
+	@btn.cancel
+Cancelar
+	@btn.close
+Fechar
+	@btn.ok
+OK
+	@btn.connect
+Ligar
+	@btn.disconnect
+Desligar
+	@btn.approve
+Aprovar
+	@btn.revert
+Reverter alterações
+	@menu.resolution.header
+Alterações de resolução
+	@menu.resolution.text
+Se conseguires ver esta mensagem, aprova ou reverte as alterações. Caso contrário, reverter-se-ão dentro de 10 segundos.
+	@menu.gamemenu
+Menu do Jogo
+	@customgame.btn.switchtoroom
+Mudar para Sala
+	@customgame.btn.switchtoshell
+Mudar para Shell
+	@customgame.btn.closeroom
+Fechar Sala
+	@customgame.btn.leaveroom
+Abandonar Sala
+	@customgame.btn.alreadyready
+Preparado!
+	@customgame.btn.ready
+Pronto
+	@customgame.kick
+Expulsar
+	@customgame.closed
+Fechado
+	@customgame.text.ready
+Pronto
+	@internet.preset
+Predefinição
+	@internet.input.gamename
+Nome do jogo
+	@internet.checkbox.makeprivate
+Tornar Privada
+	@internet.checkbox.private
+Privada
+	@internet.checkbox.privatehint
+Tornar a sala privada e protegida por palavra-passe
+	@internet.createroom.btn.create
+Criar
+	@internet.createroom.btn.join
+Entrar
+	@internet.createroom.btn.cancel
+Cancelar
+	@internet.maxplayers
+Jogadores máx.
+	@internet.players
+Jogadores
+	@internet.ping
+Ping
+	@internet.rank
+Classificação
+	@internet.games
+Jogos
+	@internet.total
+Total:
+	@profile.btn.select
+Selecionar
+	@profile.btn.delete
+Eliminar
+	@profile.btn.create
+Criar
+	@settings.text.header
+Definições
+	@settings.tab.video
+Vídeo
+	@settings.tab.sound
+Som
+	@settings.tab.control
+Controlo
+	@settings.tab.keybinding
+Vinculação de chaves
+	@settings.text.screen
+Ecrã
+	@settings.text.quality
+Qualidade
+	@settings.text.soundsettings
+Definições de Som
+	@settings.text.control
+Controlo
+	@settings.text.gameplay
+Jogo
+	@settings.text.keybinding
+Teclas de atalho
+	@settings.text.graphicsquality
+Qualidade dos Gráficos
+	@settings.text.presetcustom
+Personalizar
+	@settings.text.resolution
+Resolução
+	@settings.text.lightpreset
+Predefinição de Luminosidade
+	@settings.text.texturequality
+Qualidade de Textura
+	@settings.text.mute
+Sem som
+	@settings.text.clampingmouse
+Bloquear cursor na janela
+	@settings.text.resoultionchange
+Alteração de resolução
+	@settings.text.cannotchangeresolutionineditor
+Não podes alterar a resolução no Editor
+	@settings.text.cannotchangeresolutionnofullscreen
+Só podes alterar a resolução no modo de visualização em ecrã inteiro. Não a podes alterar nos modos Em Janela ou Ecrã Inteiro em Janela.
+	@internet.msg.nowhisperuser
+A alcunha %color%%nick%%colordefault% não está online ou não existe
+	@progress.pleasewait
+A carregar... Aguarda.
+	@randommap.settings.marketdip	
+Centro Dipl. e Mercado
+	@randommap.settings.marketdip.default	
+Padrão
+	@randommap.settings.marketdip.nodip	
+Sem Centro Dipl.
+	@randommap.settings.marketdip.nomarket	
+Sem Mercado
+	@randommap.settings.marketdip.noboth	
+Sem ambos
+	@randommap.settings.teams	
+Aliados
+	@randommap.settings.teams.default	
+Padrão
+	@randommap.settings.teams.nearby	
+Próximo
+	@randommap.terraintype.6	
+Lagos
+	@randommap.terraintype.7	
+Costa
+	@randommap.terraintype.8	
+Rios
+	@randommap.terraintype.9	
+Sem água
+	@randommap.settings.adviserassistant
+Assessores
+	@randommap.settings.adviserassistant.default
+Por padrão
+	@randommap.settings.adviserassistant.with
+Permitir
+	@randommap.settings.adviserassistant.without
+Proibir
+	@randommap.settings.limit
+Limite de população
+	@randommap.settings.limit.default
+Sem limitação
+	@randommap.settings.limit.custom
+%value% unidades
+	@mainmenu.newspanel.nokey.header
+Multiplayer game access
+	@mainmenu.newspanel.nokey
+You see this message, because game hasn't recognized internet-key. 
+You can get it via clicking the button below.
+
+Internet-key gives an opportunity not only to play multiplayer games, but to get the latest updates, that include error-fixes and better gaming experience, because of ballance & game rules changes.
+	@internet.key.hintsteam
+Você pode encontrar sua chave pressionando Shift + Tab (ou sua tecla de atalho de vapor personalizada) e selecionando "Cd-key" no canto superior direito da tela.
+	@internet.key.hintgog
+Para encontrar sua chave de internet, abra a biblioteca da sua conta GOG no navegador, selecione Cossacks 3, clique em mais e selecione "Serial keys".
+	@internet.forgotpass.hint
+In case you're getting problems with restoring your password, please contact our support at support@cossacks3.com. To recover the password faster, please send us your e-mail, used at registration and internet game key.
+	@internet.mail.hint
+No caso de você ter problemas para efetuar o login, entre em contato com nosso suporte em support@cossacks3.com. Para receber uma resposta mais rápida, escreva seu e-mail e sua chave de multijogador.
+	@internet.mailunregistered
+Este e-mail não está registado. Preenche o formulário abaixo para criares uma nova conta. Por favor, use um e-mail existente válido. Uma única chave pode estar vinculada a apenas um e-mail. Você pode alterar seu apelido e senha usando o botão "Alterar perfil", que está disponível no shell da internet.
+	@settings.text.freezoom
+Enable free camera
+	@settings.text.performance
+*Enabling free camera would affect performance
+	@pause.limit
+Mo¿esz znów zapauzowaæ za %value% sekund
+	@pos.col.historicalbattle
+Posição
+	@menu.btn.historicalbattle
+Batalha histórica
+	@historicalbattle.warning.notallready
+Nem todos os jogadores estão prontos
+	@historicalbattle.warning.notallchooseteam
+Nem todos os jogadores escolheram a equipe
+	@historicalbattle.warning.playersinoneteam
+Um dos jogadores deve escolher a equipe oposta
+	@historicalbattle.warning.chooseteam
+Escolha um time
+	@menu.btn.historicalbattle.tostage
+Selecione itens de linha
+	@menu.btn.historicalbattle.startgame
+Comece o jogo
+	@menu.btn.historicalbattle.readytostage
+Proceda à seleção de cargos
+	@historicalbattle.warning.playersonepos
+Um dos jogadores escolheu a mesma posição que o outro
+	@internet.changeprofile
+Mudar perfil
+	@internet.changeprofile.btn
+Aplicar
+	@internet.changeprofile.hint
+Este botão permite que você altere seu apelido e senha.
+	@internet.changeprofile.text
+Importante! Alterações freqüentes do apelido podem causar a proibição da conta.
+	@internet.chat.clearinput
+Para limpar
+	@internet.chat.chatfilter
+Mensagens privadas
+	@internet.chat.chatfilterfriends
+Amigos e mensagens privadas
+	@menu.btn.changeart
+Mudança de arte
+	@menu.btn.credits
+Créditos
+	@randommap.initialresources.4
+100000
+	@randommap.initialresources.5
+500000
+	@randommap.initialresources.6
+1000000
+	@randommap.settings.peacetime.5
+5 min
+	@randommap.settings.limitwarship
+Navios de guerra
+	@randommap.settings.limitwarship.default
+Predefinição
+	@randommap.settings.limitwarship.nowarship
+Sem navios de guerra
+	@customgame.text.foreststype
+Floresta
+	@randommap.foreststype.0
+Predefinição
+	@randommap.foreststype.1
+Taiga
+	@randommap.foreststype.2
+Floresta Negra
+	@randommap.foreststype.3
+Campo
+	@randommap.settings.limitwarship.transportonly
+Transporte apenas

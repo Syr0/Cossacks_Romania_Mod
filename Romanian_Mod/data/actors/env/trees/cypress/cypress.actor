@@ -1,0 +1,31 @@
+//************************************* Cypress Hill ~ Insane in the brain *******
+section.begin {refurl=.\data\actors\ref\reftree.actor}
+   AnimationMode = aamLoop
+   FrameInterpolation = afpNone
+   Reference = aarTransform
+   Animations.LoadFromFile = .\data\animations\aaf\trees\cypress\cypress.aaf
+   TransformationFrameList.LoadFromFile = .\data\tlf\trees\cypress\cypress.tlf
+   ActorList.Items[0].Name = cypress.large.mesh
+   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress\cypress.large\cypress.large.1.osm
+   ActorList.Items[0].LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress\cypress.large\cypress.large.1.1.osm
+   ActorList.Items[0].LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress\cypress.large\cypress.large.1.2.osm
+   ActorList.Items[1] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = cypress.medium.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress\cypress.medium\cypress.medium.1.osm
+      LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress\cypress.medium\cypress.medium.1.1.osm
+      LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress\cypress.medium\cypress.medium.1.2.osm
+   struct.end
+   ActorList.Items[2] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = cypress.small.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress\cypress.small\cypress.small.1.osm
+      LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress\cypress.small\cypress.small.1.1.osm
+      LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress\cypress.small\cypress.small.1.2.osm
+   struct.end
+   ActorList.Items[3] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = cypress.dead.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress\cypress.dead\cypress.dead.1.osm
+      LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress\cypress.dead\cypress.dead.1.1.osm
+      LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress\cypress.dead\cypress.dead.1.2.osm
+   struct.end
+section.end
+

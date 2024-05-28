@@ -1,0 +1,136 @@
+{refurl=.\data\objects\ref\refenv.prop}
+
+mainproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=mainproperty}
+   CustomName = fir
+   BaseName = fir
+section.end
+
+actorproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=actorproperty}
+   LODActorName = fir
+   DefaultMeshName = fir1.mesh
+   RandomMeshName = True
+   UseableMeshes : struct.begin
+      [0] = True
+      [1] = True
+      [2] = True
+      [3] = True
+   struct.end
+section.end
+
+materialproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=materialproperty}
+   Mesh : struct.begin      
+      [0] : struct.begin
+         Enabled = False
+         Static = False
+         ClassName = MeshMaterialProperty
+         DefaultMaterialName = fir1
+         RandomMaterialName = True
+         UseableMaterials : struct.begin
+            [0] = fir1
+            [1] = fir2
+            [2] = fir3
+         struct.end
+         UseSeasonMaterial = True
+         UseableSummerMaterials : struct.begin
+            [*] = fir1
+            [*] = fir2
+            [*] = fir3
+         struct.end
+         UseableWinterMaterials : struct.begin
+            [*] = fir1w
+            [*] = fir2w
+            [*] = fir3w
+         struct.end
+      struct.end
+      [1] : struct.begin {refkey=materialproperty.Mesh[0]}
+         DefaultMaterialName = fir1
+         RandomMaterialName = True
+         UseableMaterials[0] = fir1
+         UseableMaterials[1] = fir2
+         UseableMaterials[2] = fir3
+         UseSeasonMaterial = True
+         UseableSummerMaterials[0] = fir1
+         UseableSummerMaterials[1] = fir2
+         UseableSummerMaterials[2] = fir3
+         UseableWinterMaterials[0] = fir1w
+         UseableWinterMaterials[1] = fir2w
+         UseableWinterMaterials[2] = fir3w
+      struct.end
+      [2] : struct.begin {refkey=materialproperty.Mesh[0]}
+         DefaultMaterialName = fir1
+         RandomMaterialName = True
+         UseableMaterials[0] = fir1
+         UseableMaterials[1] = fir2
+         UseableMaterials[2] = fir3
+         UseSeasonMaterial = True
+         UseableSummerMaterials[0] = fir1
+         UseableSummerMaterials[1] = fir2
+         UseableSummerMaterials[2] = fir3
+         UseableWinterMaterials[0] = fir1w
+         UseableWinterMaterials[1] = fir2w
+         UseableWinterMaterials[2] = fir3w
+      struct.end
+      [3] : struct.begin {refkey=materialproperty.Mesh[0]}
+         DefaultMaterialName = fir1
+         RandomMaterialName = True
+         UseableMaterials[0] = fir1
+         UseableMaterials[1] = fir2
+         UseableMaterials[2] = fir3
+         UseSeasonMaterial = True
+         UseableSummerMaterials[0] = fir1
+         UseableSummerMaterials[1] = fir2
+         UseableSummerMaterials[2] = fir3
+         UseableWinterMaterials[0] = fir1w
+         UseableWinterMaterials[1] = fir2w
+         UseableWinterMaterials[2] = fir3w
+      struct.end
+   struct.end
+section.end
+
+stringproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=stringproperty}
+   CategorieName = resources
+section.end
+
+scaleproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=scaleproperty}
+   DefaultScale : struct.begin
+      X = 0.5
+      Y = 0.5
+      Z = 0.5
+   struct.end
+   RandomScale = True
+   MinScaleFactor = 0.85
+   MaxScaleFactor = 1.15
+section.end
+
+directionupproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=directionupproperty}
+   RandomRollAngle = True
+   DeltaRollAngle = 1
+section.end
+
+section.begin
+   Enabled = True
+   Static = True
+   ClassName = FrameAnimationProperty
+   DefaultFrameAnimationName = wind
+   DefaultFrameAnimationMode = aamLoop
+   FrameAnimationSynchronizeOption = fasoNone
+   FrameAnimationSwitchChildren = False
+   DefaultFrameAnimationCycles = 
+   FrameAnimationCyclesLibName = forest
+   RandomOffsetFrameAnimationCycles = acsaDefault
+   RandomOffsetFrameAnimation = acsaDefault
+section.end
+
+section.begin
+   Enabled = True
+   Static = True
+   ClassName = FrameAnimationProperty
+   DefaultFrameAnimationName = wind
+   DefaultFrameAnimationMode = aamLoop
+   FrameAnimationSynchronizeOption = fasoNone
+   FrameAnimationSwitchChildren = False
+   DefaultFrameAnimationCycles = 
+   FrameAnimationCyclesLibName = forest
+   RandomOffsetFrameAnimationCycles = acsaDefault
+   RandomOffsetFrameAnimation = acsaDefault
+section.end

@@ -1,0 +1,11 @@
+AAF
+9
+"idle1",0,20,morph
+"idle2",21,47,morph
+"idle3",48,75,morph
+"idle4",75,90,morph
+"walk",153,169,morph
+"head_down",105,121,morph
+"walk_head_down",121,137,morph
+"walk head up",137,153,morph
+"run",91,103,morph

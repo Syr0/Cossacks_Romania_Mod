@@ -1,0 +1,523 @@
+	@server.outoforder
+Our internet server will be available shortly.
+We working on this problem now.
+	@map.size
+Velikost mapy
+	@map.size.normal
+Normální
+	@map.size.large
+Velký 2x
+	@map.size.huge
+Obrovské 4x
+	@mods.mods
+Módy
+	@mods.hintroomneedsync
+Uživatel nainstaloval jinou verzi módu než máte vy
+	@mods.hintroomreadytoplay
+Uživatel má stejnou verzi módu jako vy, mùžete se pøipojit do místnosti bez synchronizace
+	@mods.modslist
+Seznam módù
+	@mods.playersmods
+Módy hráèe
+	@mods.synchronizedmods
+Synchronizované módy
+	@mods.roomchecksumdif
+Vaše módy jsou odlišné od módù v této místnosti. Pøejete si automaticky synchronizovat verze módù? Mùže to trvat nìkolik minut.
+	@mods.playersmodslist
+Seznam módù hráèe:
+	@mods.ok
+Ok
+	@mods.cancel
+Zrušit
+	@mods.pleasewait
+Prosím èekejte...
+	@mods.syncinprogress
+Hra zaèala stahovat a instalovat potøebné módy. Tato operace mùže trvat nìkolik minut.
+	@mods.cancel.2
+Zrušit
+	@mods.syncerror
+Chyba synchronizace
+	@mods.syncfailed
+Zdá se, že verze hry je odlišná, i když jsou všechny módy synchronizované. Toto se mùže stát v pøípadì, že každý z vás nebo host máte zastaralé verze módu nebo nìkteré módy byly zmìnìny.
+	@mods.syncfailed2
+Mùžete ovìøit integritu mezipamìti hry nebo požádat hostitele, aby zkontroloval své verze módù a konzistenci dat.
+	@mods.wrongmodexists
+Hra zjistila mód, který nebyl nainstalován pøes Workshop nebo byl nainstalován s chybou. Tento mód nedovolí, aby se hra synchronizovala s módy v øežimu pro více hráèù. Ostatní hráèi by mìli nainstalovat mód ruènì.
+	@mods.downloadlink
+Zde mùžete stáhnout mód kliknutím na tento odkaz.
+	@mods.pagelink
+Odkaz na stránku módù
+	@mods.unknown
+Neznámý
+	@announcement.videodriver
+Hra zjistila, že ovladaè grafické karty není nainstalován nebo nepracuje správnì. Prosím nainstalujte nejnovìjší ovladaèe grafické karty ze stránek výrobce. 
+	@announcement.intelvideoonly
+Hra zjistila grafickou kartu Intel. Pokud má váš poèítaè nainstalovanou další grafickou kartu, prosím, povolte ji a aktualizujte ovladaèe grafické karty na nejnovìjší verzi ze stránek výrobce.
+	@mods.pleaserestart
+Prosím, restartujte hru.
+	@internetshell.btn.ranking
+Žebøíèek
+	@internetshell.btn.profile
+Profil
+	@internetshell.btn.torooms
+Seznam sezení
+	@internetshell.btn.switchtosimple
+Jednoduché vyhledávání
+	@internetshell.btn.switchtoadvanced
+Seznam místností
+	@internetshell.btn.autosearch
+Rychlá hra
+	@internetshell.btn.stopautosearch
+Ukonèit vyhledávání
+	@internetshell.btn.autosearchsettings
+Nastavení rychlé hry
+	@internetshell.btn.autosearchfoundroom
+Místnost nalezena, jste pøipraven?
+	@internetshell.btn.autosearchapprove
+Pøijmout
+	@internetshell.btn.autosearchcancel
+Odmítnout
+	@internetshell.text.autosearchroom
+Rychlá hra
+	@internetshell.btn.joinautosearch
+Pøipojit se k rychlé høe
+	@internetshell.text.approxtime
+Pøibližná doba èekání:
+	@internetshell.text.approxtimecalc
+Poèítám...
+	@internetshell.text.approxtimeunknown
+Neznámý
+	@internetshell.roomsettings.res1
+Poèáteèní suroviny: 1 000
+	@internetshell.roomsettings.res2
+Poèáteèní suroviny: 5 000
+	@internetshell.roomsettings.res3
+Poèáteèní suroviny: 1 000 000
+	@internetshell.roomsettings.res1short
+1000
+	@internetshell.roomsettings.res2short
+5000
+	@internetshell.roomsettings.res3short
+1000000
+	@internetshell.roomsettings.0pt
+Žádný mír
+	@internetshell.roomsettings.10pt
+10 min míru
+	@internetshell.roomsettings.20pt
+20 min míru
+	@internetshell.roomsettings.30pt
+30 min míru
+	@internetshell.roomsettings.0ptshort
+0pt
+	@internetshell.roomsettings.10ptshort
+10pt
+	@internetshell.roomsettings.20ptshort
+20pt
+	@internetshell.roomsettings.30ptshort
+30pt
+	@internetshell.roomsettings.1vs1
+1vs1
+	@internetshell.roomsettings.2vs2
+2vs2
+	@internetshell.roomsettings.3vs3
+3vs3
+	@internetshell.roomsettings.4vs4
+4vs4
+	@internetshell.roomsettings.2vs2vs2vs2
+2vs2vs2vs2
+	@internetshell.roomsettings.2vs2vs2
+2vs2vs2
+	@internetshell.roomsettings.ffa4
+4pl FFA
+	@internetshell.roomsettings.ffa6
+6pl FFA
+	@internetshell.roomsettings.ffa8
+8pl FFA
+	@internetshell.roomsettings.ffa
+FFA
+	@internetshell.roomsettings.nation.random
+Náhodný národ
+	@internetshell.roomsettings.nation.select
+Jakýkoliv národ
+	@internetshell.roomsettings.nation.eur
+Evropské
+	@internetshell.roomsettings.nation.rus
+Rusko
+	@internetshell.roomsettings.nation.ukr
+Ukrajina
+	@internetshell.roomsettings.nation.arab
+Arabové
+	@internetshell.roomsettings.nodip
+Bez diplomatického úøadu
+	@internetshell.roomsettings.nomarket
+Bez tržištì
+	@internetshell.roomsettings.nodipmarket
+Bez tržištì a diplomatického úøadu
+	@internetshell.roomsettings.level0
+Zaèáteèníci
+	@internetshell.roomsettings.level1
+Pokroèilí
+	@internetshell.roomsettings.level2
+Experti
+	@mods.workshop
+Workshop Módù
+	@internetshell.txt.nonrankedggame
+Nehodnocená hra
+	@internetshell.txt.rankedgame
+Hodnocená hra
+	@internetshell.txt.exitrankedgame
+Chystáte se vzdát. Toto je hodnocená hra a rozhodnutí vzdát se povede ke snížení hodnosti. Jste si jisti, že se chcete vzdát?
+	@mods.workshop.approve
+Toto otevøe stránku Workshopu ve vašem prohlížeèi. Jste si jistý?
+	@mods.workshop.help1
+Mùžete odebírat nové módy, když jste pøihlášeni. Také mùžete otevøít workshop ve svém Steam klientovi.
+	@mods.workshop.help2
+Módy se automaticky nainstalují když kliknete na tlaèítko "Odbìr" a zruší se, když kliknete na "Zrušit odbìr". Mùžete také povolit nebo zakázat již stažené módy v Manažeru módù.
+	@mods.workshop.help3
+Manažer módù mùže být spuštìn pomocí Steam klienta.
+	@mods.workshop.help4
+Hra se bude restartovat, kvùli správné funkci všech módù. Restartovat nyní?
+	@customgame.text.season
+Sezóna
+	@randommap.season.0
+Letní
+	@randommap.season.1
+Podzim
+	@minimap.info.teamnumber
+Tým
+	@minimap.info.teamffa
+Žádný tým
+	@internet.button.makeratingroom
+Rating game
+	@internet.button.makeratingroomhint
+If the Rating game checkbox is enabled, your games would affect your rating. Leaving the rating games before victory or defeat would render you a technical defeat. If this checkbox is disabled - you may train, using AI assistant, without any risk to your rating points.
+	@internet.button.disabledwhenmods
+This feature is not yet supported with mods installed
+	@customgame.ratinggame.open
+Open
+	@customgame.ratinggame.reserved
+Reserved
+	@internetshell.text.wins
+Wins
+	@internetshell.text.nickname
+Nickname
+	@internetshell.text.rank
+Rank
+	@internetshell.text.score
+Score
+	@internetshell.text.games
+Games
+	@adviser.switchonoff
+Pomocník
+	@adviser.economy
+Dat pravomoci starosty
+	@adviser.construct
+Poslechnìte si poradce pro stavebnictví
+	@adviser.upgrades
+Poslouchat akademického poradce
+	@adviser.upgrades.showunaffordable
+Ukázat nedostupné zlepšit
+	@adviser.quartermeister
+Použití Quartermaster Service
+	@adviser.quartermeister.advanced
+spravovat
+	@adviser.quartermeister.setupguards
+Zaøídit ochranu na budovách
+	@adviser.quartermeister.produceofficers
+Najímání dùstojníky a bubeníky
+	@adviser.quartermeister.proposesquads
+Navrhnout tvoøících jednotek
+	@adviser.economy.advanced
+prodloužený
+	@adviser.apply
+platit
+	@adviser.close
+zavøít
+	@adviser.ok
+ca.
+	@adviser.economy.controlpeasants
+Poslat zemìdìlce nad zdroji
+	@adviser.economy.producepeasants
+najmout rolníky
+	@adviser.economy.repairbuildings
+opravy domù
+	@adviser.economy.fillmines
+Odeslat rolníky k tìžbì
+	@adviser.economy.manualresourcedistribution
+obchodní zdroje
+	@adviser.economy.marketadvises
+Ukázat nákupní tipy
+	@adviser.switchonoff.hint
+Dovolit pomocníci pøijít k vám za pomoc s zdlouhavý úkol:
+%color% - pøidìlit prostøedky pro zemìdìlce
+%color% - zajistit dostateèný poèet vojákù a dùstojníkù bubeníkù
+%color% - na opravu poškozených budov
+%color% - umístit ochranu budov blízko zachycený
+%color% - atd.
+	@adviser.economy.hint
+Burgermeister vám umožní zamìøit se na válku, ovládání ekonomiku své zemì.
+%pos% Poradce bude tìžká hlava pro líné zemìdìlcùm, že jim s ruèními srpy, os a výbìry.
+%pos% Burgomister schopni poskytnout vám pracovní síly, protože je to skvìlý øeèník, který ví, jak pøilákat levné a vìrné rolníky.
+%pos% Být velký obchodníka, bude mu poradí lukrativní nabídku na trhu.
+	@adviser.construct.hint
+Poradce pro stavebnictví vám pomùže pochopit, co je potøeba pro stavbu vashgo mìsto.
+%pos% staèí dát povel k jejich výstavbì.
+	@adviser.upgrades.hint
+Váš Akademický poradce s velkým potìšením, že mùže ukázat, jaký druh ekonomických a vojenských zlepšení jsou žádoucí a pøístupné.
+	@adviser.upgrades.showunaffordable.hint
+Nìkterá zlepšení jsou žádoucí, ale to by mìlo být více prostøedkù pro jejich studium.
+%pos% uvidíte, co je tøeba usilovat o to!
+	@adviser.quartermeister.hint
+Quartermaster bude dobré k léèbì své vojáky.
+%pos% neudìlí znudìné vojáky, jejich odesláním do krytu.
+%pos% Zajistìte dostateèný poèet vojákù a dùstojníkù bubeníkù.
+%pos% Quartermaster mùže vám poradit na tvorbu nových skupin bojovníkù k dispozici.
+	@adviser.quartermeister.advanced.hint
+Správa vojenského poradce
+	@adviser.quartermeister.setupguards.hint
+Zaøídit ochranu na budovách
+	@adviser.quartermeister.produceofficers.hint
+Najímání dùstojníky a bubeníky
+	@adviser.quartermeister.proposesquads.hint
+Quartermaster vám mùže poradit, tvoøit skupiny na základì poètu svých vojákù.
+	@adviser.economy.advanced.hint
+Pokroèilá nastavení
+	@adviser.economy.controlpeasants.hint
+Burgermeister distribuovat své rolníky na zdrojích.
+	@adviser.economy.producepeasants.hint
+Zemìdìlcùm umožní najmout pro potøeby mìstské neustále a bez vaší úèasti.
+	@adviser.economy.repairbuildings.hint
+V žádném èasovém pravítku udržet kontrolu všech objektù!
+%pos% Bürgermeister postarat se o to, když jste pøemýšlet o globálním a strategických otázek!
+	@adviser.economy.fillmines.hint
+Burgermeister neopustí svùj dùl v nedostatku pracovníkù.
+	@adviser.economy.manualresourcedistribution.hint
+Distribuovat zemìdìlce v oblasti výroby potravin, døeva a rudy.
+	@adviser.economy.marketadvises.hint
+Nechte starosta poradit na živnostenský list.
+	@adviser.dlc
+Strážci na Vysoèinì.
+	@adviser.customgame.advisers
+pomocníci
+	@adviser.customgame.advisers.default
+Ve výchozím nastavení
+	@adviser.customgame.advisers.allow
+vyøešit
+	@adviser.customgame.advisers.disallow
+zakázat
+	@map.size.tiny
+Malý
+	@internetshell.btn.quickplay.hint
+Quick play allows you to search for 1x1 game with matchmaking on 5000 resources, 0 pt, random nation, without peasants capture.
+	@internetshell.btn.createroom.hint
+Create custom game room. Attention: these games won't affect your rating.
+	@internetshell.btn.joinroom.hint
+Join to custom game room. Attention: these games won't affect your rating.
+	@internetshell.btn.ranking.hint
+Top 100 ladder players. Best players of this season would receive special signs, and right to participate in official season tournament with prizes. To participate in rating you need to play quick play games with enabled "Rating games" checkbox.
+	@internet.random.animal.0
+Aligátor
+	@internet.random.animal.1
+Mraveneèník
+	@internet.random.animal.2
+Pásovec
+	@internet.random.animal.3
+Auroch
+	@internet.random.animal.4
+Axolotl
+	@internet.random.animal.5
+Jezevec
+	@internet.random.animal.6
+Netopýr
+	@internet.random.animal.7
+Medvìd
+	@internet.random.animal.8
+Bobr
+	@internet.random.animal.9
+Buvol
+	@internet.random.animal.10
+Velbloud
+	@internet.random.animal.11
+Capybara
+	@internet.random.animal.12
+Chameleón
+	@internet.random.animal.13
+Gepard
+	@internet.random.animal.14
+Èinèila
+	@internet.random.animal.15
+Chipmunk
+	@internet.random.animal.16
+Chupacabra
+	@internet.random.animal.17
+Kormorán
+	@internet.random.animal.18
+Kojot
+	@internet.random.animal.19
+Vrána
+	@internet.random.animal.20
+Dingo
+	@internet.random.animal.21
+Dinosaurus
+	@internet.random.animal.22
+Pes
+	@internet.random.animal.23
+Delfín
+	@internet.random.animal.24
+Kachna
+	@internet.random.animal.25
+Slon
+	@internet.random.animal.26
+Fretka
+	@internet.random.animal.27
+Liška
+	@internet.random.animal.28
+Žába
+	@internet.random.animal.29
+Žirafa
+	@internet.random.animal.30
+Gopher
+	@internet.random.animal.31
+Grizzly
+	@internet.random.animal.32
+Ježek
+	@internet.random.animal.33
+Hroch
+	@internet.random.animal.34
+Hyena
+	@internet.random.animal.35
+Kozorožec
+	@internet.random.animal.36
+Iguana
+	@internet.random.animal.37
+Šakal
+	@internet.random.animal.38
+Klokan
+	@internet.random.animal.39
+Koala
+	@internet.random.animal.40
+Kraken
+	@internet.random.animal.41
+Lemur
+	@internet.random.animal.42
+Leopard
+	@internet.random.animal.43
+Liger
+	@internet.random.animal.44
+Lev
+	@internet.random.animal.45
+Lama
+	@internet.random.animal.46
+Loris
+	@internet.random.animal.47
+Manatee
+	@internet.random.animal.48
+Norek
+	@internet.random.animal.49
+Opice
+	@internet.random.animal.50
+Los
+	@internet.random.animal.51
+Narwhal
+	@internet.random.animal.52
+Orangutan
+	@internet.random.animal.53
+Vydra
+	@internet.random.animal.54
+Panda
+	@internet.random.animal.55
+Tuèòák
+	@internet.random.animal.56
+Ptakopysk
+	@internet.random.animal.57
+Krajta
+	@internet.random.animal.58
+Quagga
+	@internet.random.animal.59
+Králièí
+	@internet.random.animal.60
+Mýval
+	@internet.random.animal.61
+Nosorožec
+	@internet.random.animal.62
+Ovce
+	@internet.random.animal.63
+Shrew
+	@internet.random.animal.64
+Skunk
+	@internet.random.animal.65
+Veverka
+	@internet.random.animal.66
+Tygr
+	@internet.random.animal.67
+Želva
+	@internet.random.animal.68
+Mrož
+	@internet.random.animal.69
+Vlk
+	@internet.random.animal.70
+Rosomák
+	@internet.random.animal.71
+Wombat
+	@internet.random.color.0
+Èervené
+	@internet.random.color.1
+Modrý
+	@internet.random.color.2
+Tyrkysový
+	@internet.random.color.3
+Nachový
+	@internet.random.color.4
+oranžový
+	@internet.random.color.5
+Šedá
+	@internet.random.color.6
+Blankyt
+	@internet.random.color.7
+Hnìdý
+	@internet.random.color.8
+Bílý
+	@internet.random.color.9
+Zelená
+	@internet.random.color.10
+Rùžový
+	@internet.random.color.11
+Žlutá
+	@internet.random.color.12
+Modrý
+	@internet.random.color.13
+Svìtle zelená
+	@internet.random.color.14
+Èerná
+	@internet.random.color.15
+Svìtle hnìdá
+	@btn.tutorial
+Tutorial
+	@settings.hotkeys
+Hotkeys
+	@menu.encyclopedia
+Encyclopedia
+	@randommap.season.2
+Zimní
+	@randommap.season.3
+Jaro
+	@map.size.big
+Strední 1.5x
+	@map.size.verylarge
+Velmi velký 3x
+	@randommap.terraintype.6
+Jezera
+	@randommap.terraintype.7
+Pobøeží
+	@randommap.terraintype.8
+Øeky
+	@randommap.settings.startingunits.barrack17
+Kasárna 17. století
+	@randommap.settings.startingunits.village
+Vesnice
+	@randommap.settings.startingunits.logcabins
+Drevené chatky
+	@randommap.settings.startingunits.union
+Svaz
+	@randommap.settings.marketdip.expensivemercs
+Zdražení žoldáku

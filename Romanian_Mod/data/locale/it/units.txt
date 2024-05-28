@@ -1,0 +1,1371 @@
+	@NATIONS
+********************************Nazioni*********************************
+	@aus
+Austria
+	@fra
+Francia
+	@eng
+Inghilterra
+	@spa
+Spagna
+	@rus
+Russia
+	@ukr
+Ucraina
+	@pol
+Polonia
+	@swe
+Svezia
+	@pru
+Prussia
+	@ven
+Venezia
+	@tur
+Turchia
+	@alg
+Algeria
+	@por
+Portogallo
+	@pie
+Piemonte
+	@net
+Paesi Bassi
+	@den
+Danimarca
+	@sax
+Sassonia
+	@bav
+Bavaria
+	@sco
+Scozia
+	@mis
+Originali
+	@hun
+Ungheria
+	@swi
+Svizzera
+	@*************Symbols************************
+
+	@def
+#151
+	@pos
+#151
+	@neg
+#151
+	@*************INCLUDES TEMPLATES*************
+
+	@descr.inf.sword
+%def%Fante armato di spada.
+	@descr.inf.saber
+%def%Fante armato di sciabola.
+	@descr.inf.longpike
+%def%Fante armato di picca lunga.
+	@descr.inf.musket
+%def%Fante armato di moschetto.
+	@descr.inf.musketbayonet
+%def%Fante armato di moschetto e baionetta.
+	@descr.inf.bow
+%def%Fante armato di arco e frecce.
+	@descr.any.musketbayonet
+%def%Fante armato di moschetto, baionetta e granate.
+	@descr.any.musketonly
+%def%Armato di moschetto senza baionetta.
+	@descr.any.musket
+%def%Armato di moschetto.
+	@descr.any.bow
+%def%Armato di arco e frecce.
+	@descr.cav.light.saber
+%def%Cavaliere leggero armato di sciabola.
+	@descr.cav.light.spear
+%def%Cavaliere leggero armato di lancia.
+	@descr.cav.light.pike
+%def%Cavaliere leggero armato di lancia da giostra.
+	@descr.cav.light.longpike
+%def%Cavaliere leggero armato di lancia lunga.
+	@descr.cav.heavy.sword
+%def%Cavaliere pesante armato di spada.
+	@descr.cav.heavy.broadsword
+%def%Cavaliere pesante armato di spadone.
+	@descr.cav.heavy.mace
+%def%Cavaliere pesante armato di mazza.
+	@descr.cav.heavy.longpike
+%def%Cavaliere pesante armato di lancia lunga.
+	@descr.cav.any.saber
+%def%Cavaliere armato di sciabola.
+	@descr.cav.any.longpike
+%def%Cavaliere armato di lancia lunga.
+	@descr.cav.any.musket
+%def%Cavaliere armato di moschetto.
+	@descr.cav.any.bow
+%def%Cavaliere armato di arco.
+	@***********************
+
+	@descr.armored
+%pos%Indossano un'armatura che li protegge da proiettili e shrapnel.
+	@descr.effective.form
+%pos%Efficace in formazioni da combattimento.
+	@descr.effective.formvscav
+%pos%Efficace nelle formazioni anti-cavalleria.
+	@descr.effective.infcav
+%pos%Efficace contro la fanteria e la cavalleria.
+	@descr.effective.formonly
+%pos%Efficace solo in formazioni da combattimento.
+	@descr.effective.melee
+%pos%Efficace in mischia.
+	@descr.effective.squareform
+%pos%Efficace in formazione da combattimento a quadrato.
+	@descr.effective.onlywithinf
+%pos%Efficace solo in combinazione alla fanteria.
+	@descr.effective.sabotage
+%pos%Efficace per incursioni diversive.
+	@descr.effective.notforminfheavycav
+%neg%Inefficace contro la fanteria in formazioni di combattimento o cavalleria pesante.
+	@descr.effective.notcuirassier
+%neg%Inefficace contro i corazzieri.
+	@descr.effective.infcavsabotage
+%pos%Efficace contro la fanteria e la cavalleria e per le incursioni diversive.
+	@descr.effective.inflightcav
+%pos%Efficace contro la fanteria e la cavalleria leggera.
+	@descr.effective.infcav2
+%pos%Efficace contro la fanteria e la cavalleria.
+	@descr.effective.inf
+%pos%Efficace contro la fanteria.
+	@descr.effective.mercgrenadier
+%pos%Efficace contro i granatieri mercenari.
+	@descr.effective.ships
+%pos%Efficace per dare le navi alle fiamme.
+	@descr.effective.merc
+%pos%Efficace contro qualsiasi altro tipo di mercenari.
+	@descr.mosteffective.pikeman17
+%pos%Il più efficace picchiere del XVII secolo.
+	@descr.mosteffective.shooter
+%pos%Fra le truppe a distanza più efficaci.
+	@descr.mosteffective.shooter2
+%pos%Fra le migliori truppe a distanza del gioco.
+	@descr.mosteffective.speedcav
+%pos%Fra i cavalieri più veloci.
+	@descr.combination.highbuildmovespeed
+%pos%Tempo di costruzione rapido, alta velocità di movimento.
+	@descr.combination.highcostlowbuildtime
+%neg%Costo alto, tempo di costruzione lento.
+	@descr.combination.longbuildtimehighcost
+%neg%Costo alto, tempo di costruzione molto lento.
+	@descr.combination.highbuildspeedhighcost
+%pos%Costo basso, tempo di costruzione veloce.
+	@descr.combination.lowrateoffirehighbuildtime
+%neg%Frequenza di fuoco bassa, tempo di produzione molto lento.
+	@descr.params.lowattack
+%neg%Valori di attacco bassi.
+	@descr.params.midattack
+%def%Valori di attacco medi.
+	@descr.params.highattack
+%pos%Valori di attacco alti.
+	@descr.params.veryhighattack
+%pos%Valori di attacco molto alti.
+	@descr.params.lowattackprotection
+%neg%Valori di attacco e difesa bassi.
+	@descr.params.highattackprotection
+%pos%Valori di attacco e difesa alti.
+	@descr.params.veryhighattackprotection
+%pos%Valori di attacco e difesa molto alti.
+	@descr.params.lowshootdamage
+%neg%Potenza di fuoco bassa.
+	@descr.cost.low
+%pos%Costi di costruzione bassi.
+	@descr.cost.low2
+%pos%Costi di produzione bassi.
+	@descr.cost.lowafterupgrade
+%pos%Costi bassi dopo un aggiornamento nell'accademia.
+	@descr.cost.nothigh
+%neg%Costi di costruzione medi.
+	@descr.cost.nothigh2
+%pos%Costi di produzione medi.
+	@descr.cost.high
+%neg%Costi di produzione alti.
+	@descr.cost.high2
+%neg%Costi di costruzione alti.
+	@descr.build.veryhighspeed
+%pos%Velocità di costruzione molto alta.
+	@descr.build.veryhighspeed2
+%pos%Velocità di produzione molto alta.
+	@descr.build.highspeed
+%pos%Velocità di costruzione alta.
+	@descr.build.highspeed2
+%pos%Veloce da produrre.
+	@descr.build.lowspeed
+%neg%Velocità di produzione lenta.
+	@descr.build.lowspeed2
+%neg%Velocità di costruzione lenta.
+	@descr.build.lowspeed3
+%neg%Velocità di produzione molto lenta.
+	@descr.build.lowspeed4
+%neg%Velocità di costruzione molto lenta.
+	@descr.canshoot
+%pos%Colpisce i bersagli a distanza.
+	@descr.canmeleeandshoot
+%pos%Colpisce i bersagli a distanza e in mischia.
+	@descr.cantshotclose
+%neg%Non fa fuoco contro i nemici ravvicinati.
+	@descr.eliteinf
+%pos%Fante d'élite.
+	@descr.elitecav
+%pos%Cavaliere d'élite.
+	@descr.ability.highshootingrange
+%pos%Fuoco a lunga gittata.
+	@descr.ability.highspeed
+%pos%Velocità di movimento alta.
+	@descr.ability.highrateoffire
+%pos%Frequenza di fuoco alta.
+	@descr.highvisionradius
+%pos%Visione a lunga distanza.
+	@descr.ability.grenades
+%pos%Può distruggere gli edifici e le fortificazioni nemiche con le granate.
+	@descr.ability.firearrows
+%pos%Scaglia frecce infuocate a edifici, fortificazioni e navi.
+	@descr.ability.canfightwhenguarded
+%neg%Può combattere a fianco di unità militari.
+	@descr.ability.canbecaptured
+%neg%I contadini indifesi possono essere catturati dai nemici.
+	@descr.ability.cannotbecaptured
+%pos%Non può essere catturato dai nemici.
+	@descr.ability.consumegold
+%neg%Richiede oro per il mantenimento.
+	@descr.ability.cannottfight
+%neg%Non può combattere.
+	@descr.ability.canextractresources
+%def%Raccoglie risorse.
+	@descr.canbuildandrepair
+%def%Costruisce e ripara edifici e fortificazioni.
+	@descr.canheal
+%pos%Cura i soldati feriti.
+	@descr.ability.highshootcost
+%neg%Usa molto carbone e ferro per sparare.
+	@descr.ability.createformation
+%pos%Comanda le formazioni di combattimento della fanteria.
+	@descr.ability.createformation17
+%pos%Comanda le formazioni di combattimento della fanteria del XVII secolo.
+	@descr.ability.createformation18
+%pos%Comanda le formazioni di combattimento della fanteria del XVIII secolo.
+	@descr.ability.neededforformation
+%pos%Necessario per formare le formazioni di battaglia della fanteria.
+	@descr.ability.neededforformation17
+%pos%Necessario per formare le formazioni di battaglia della fanteria del XVII secolo.
+	@descr.ability.neededforformation18
+%pos%Necessario per formare le formazioni di battaglia della fanteria del XVIII secolo.
+	@descr.ability.mercenary
+ (mercenario)
+	@UNITS.INF.MELEE
+********************************Mischia********************************
+	@pikeman
+Picchiere, 17° secolo
+	@pikeman.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.armored)%
+%include(units;descr.effective.form)%
+	@pikemanpol
+Picchiere, 17° secolo
+	@pikemanpol.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.effective.form)%
+	@pikemantur
+Picchiere ottomano
+	@pikemantur.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.effective.form)%
+%include(units;descr.build.highspeed2)%
+	@pikemanrus
+Lanciere
+	@pikemanrus.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.armored)%
+%include(units;descr.mosteffective.pikeman17)%
+	@pikeman18
+Picchiere, 18° secolo
+	@pikeman18.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.effective.infcav)%
+%include(units;descr.params.midattack)%
+%include(units;descr.build.veryhighspeed2)%
+	@pikeman18swe
+Picchiere, 18° secolo
+	@pikeman18swe.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.effective.infcav)%
+%include(units;descr.params.midattack)%
+%include(units;descr.build.veryhighspeed2)%
+	@lightinfantry
+Fante leggero
+	@lightinfantry.ext
+%include(units;descr.inf.saber)%
+%include(units;descr.params.lowattack)%
+%include(units;descr.build.veryhighspeed)%
+%include(units;descr.effective.formonly)%
+	@roundshier
+Roundshier
+	@roundshier.ext
+%include(units;descr.inf.sword)%
+%include(units;descr.armored)%
+%include(units;descr.build.highspeed)%
+%include(units;descr.params.lowattack)%
+	@UNITS.INF.SHOOTER
+********************************A distanza*********************************
+	@musketeer
+Moschettiere, 17° secolo
+	@musketeer.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.build.lowspeed3)%
+	@musketeeraus
+Moschettiere, 17° secolo
+	@musketeeraus.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.build.lowspeed3)%
+	@musketeernet
+Moschettiere, 17° secolo
+	@musketeernet.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.build.lowspeed3)%
+	@musketeerpol
+Moschettiere, 17° secolo
+	@musketeerpol.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.build.lowspeed3)%
+	@musketeerspa
+Moschettiere, 17° secolo
+	@musketeerspa.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.armored)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.midattack)%
+%include(units;descr.build.lowspeed3)%
+	@musketeer18
+Moschettiere, 18° secolo
+	@musketeer18.ext
+%include(units;descr.inf.musketbayonet)%
+%include(units;descr.canmeleeandshoot)%
+%include(units;descr.cost.lowafterupgrade)%
+%include(units;descr.effective.melee)%
+	@musketeer18pru
+Moschettiere, 18° secolo
+	@musketeer18pru.ext
+%include(units;descr.inf.musketbayonet)%
+%include(units;descr.canmeleeandshoot)%
+%include(units;descr.cost.lowafterupgrade)%
+%include(units;descr.effective.melee)%
+	@musketeer18sax
+Moschettiere, 18° secolo
+	@musketeer18sax.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.mosteffective.shooter)%
+	@grenadier
+Granatiere
+	@grenadier.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+	@grenadiersax
+Granatiere
+	@grenadiersax.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+%include(units;descr.params.highattackprotection)%
+%include(units;descr.cost.high2)%
+	@chasseur
+Chasseur
+	@chasseur.ext
+%include(units;descr.any.musketonly)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.cost.low)%
+	@highlander
+Highlander
+	@highlander.ext
+%include(units;descr.any.musketonly)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.cost.low)%
+	@strelet
+Strelizio
+	@strelet.ext
+%include(units;descr.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.onlywithinf)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.build.lowspeed3)%
+	@pandur
+Pandur
+	@pandur.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.mosteffective.shooter)%
+	@serdiuk
+Serdiuk
+	@serdiuk.ext
+%include(units;descr.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.onlywithinf)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.mosteffective.shooter2)%
+%include(units;descr.ability.highshootingrange)%
+	@jannisary
+Giannizzero
+	@jannisary.ext
+%include(units;descr.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.onlywithinf)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.build.lowspeed)%
+	@archer
+Arciere
+	@archer.ext
+%include(units;descr.any.bow)%
+%include(units;descr.effective.onlywithinf)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+	@UNITS.INF.SUPPORT
+********************************supporto*********************************
+	@peaaus
+Contadino
+	@peaaus.ext
+%include(units;descr.ability.canextractresources)%
+%include(units;descr.canbuildandrepair)%
+%include(units;descr.ability.canfightwhenguarded)%
+%include(units;descr.ability.canbecaptured)%
+	@peaukr
+Contadino
+	@peaukr.ext
+%include(units;descr.ability.canextractresources)%
+%include(units;descr.canbuildandrepair)%
+%include(units;descr.ability.cannotbecaptured)%
+	@peatur
+Contadino
+	@peatur.ext
+%include(units;peaaus.ext)%
+	@pearus
+Servo
+	@pearus.ext
+%include(units;peaaus.ext)%
+	@peapol
+Contadino
+	@peapol.ext
+%include(units;peaaus.ext)%
+	@peaspa
+Contadino
+	@peaspa.ext
+%include(units;peaaus.ext)%
+	@peaeng
+Contadino
+	@peaeng.ext
+%include(units;peaaus.ext)%
+	@officer
+Ufficiale, 17° secolo
+	@officer.ext
+%include(units;descr.ability.createformation17)%
+%include(units;descr.params.veryhighattackprotection)%
+%include(units;descr.ability.consumegold)%
+	@officertur
+Ufficiale
+	@officertur.ext
+%include(units;descr.ability.createformation)%
+%include(units;descr.params.veryhighattackprotection)%
+%include(units;descr.ability.consumegold)%
+	@officerrus
+Comandante
+	@officerrus.ext
+%include(units;descr.ability.createformation17)%
+%include(units;descr.params.veryhighattackprotection)%
+%include(units;descr.ability.consumegold)%
+	@officer18
+Ufficiale, 18° secolo
+	@officer18.ext
+%include(units;descr.ability.createformation18)%
+%include(units;descr.params.veryhighattackprotection)%
+%include(units;descr.ability.consumegold)%
+	@drummer
+Tamburino, 17° secolo
+	@drummer.ext
+%include(units;descr.ability.neededforformation17)%
+%include(units;descr.ability.cannottfight)%
+%include(units;descr.highvisionradius)%
+	@drummerrus
+Tamburino, 17° secolo
+	@drummerrus.ext
+%include(units;descr.ability.neededforformation17)%
+%include(units;descr.ability.cannottfight)%
+%include(units;descr.highvisionradius)%
+	@drummertur
+Tamburino, 17° secolo
+	@drummertur.ext
+%include(units;descr.ability.neededforformation)%
+%include(units;descr.ability.cannottfight)%
+%include(units;descr.highvisionradius)%
+	@drummer18
+Tamburino, 18° secolo
+	@drummer18.ext
+%include(units;descr.ability.neededforformation18)%
+%include(units;descr.ability.cannottfight)%
+%include(units;descr.highvisionradius)%
+	@bagpiper
+Zampognaro
+	@bagpiper.ext
+%include(units;descr.ability.neededforformation18)%
+%include(units;descr.ability.cannottfight)%
+%include(units;descr.highvisionradius)%
+	@priest
+Sacerdote
+	@priest.ext
+%include(units;descr.canheal)%
+	@padre
+Padre
+	@padre.ext
+%include(units;descr.canheal)%
+	@pope
+Papa
+	@pope.ext
+%include(units;descr.canheal)%
+	@mullah
+Mullah
+	@mullah.ext
+%include(units;descr.canheal)%
+	@UNITS.CAV.FAST
+********************************Cavalleria veloce*********************************
+	@croat
+Croato
+	@croat.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.combination.highbuildmovespeed)%
+%include(units;descr.effective.notforminfheavycav)%
+	@hussar
+Ussaro
+	@hussar.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.combination.highbuildmovespeed)%
+%include(units;descr.effective.notcuirassier)%
+	@hussarpru
+Ussaro
+	@hussarpru.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.combination.highbuildmovespeed)%
+%include(units;descr.effective.notcuirassier)%
+	@wingedhussar
+Ussaro alato
+	@wingedhussar.ext
+%include(units;descr.cav.heavy.longpike)%
+%include(units;descr.effective.infcavsabotage)%
+%include(units;descr.armored)%
+%include(units;descr.ability.highspeed)%
+%include(units;descr.params.highattackprotection)%
+%include(units;descr.build.lowspeed3)%
+	@cossacksich
+Cosacco Sich
+	@cossacksich.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.mosteffective.speedcav)%
+	@UNITS.CAV.SLOW
+********************************Cavalleria lenta*********************************
+	@reiter
+Reiter
+	@reiter.ext
+%include(units;descr.cav.heavy.sword)%
+%include(units;descr.armored)%
+%include(units;descr.effective.inflightcav)%
+	@cuirassier
+Corazziere
+	@cuirassier.ext
+%include(units;descr.cav.heavy.broadsword)%
+%include(units;descr.armored)%
+%include(units;descr.effective.infcav2)%
+%include(units;descr.params.highattackprotection)%
+%include(units;descr.build.lowspeed2)%
+%include(units;descr.cost.high)%
+	@cavalryguard
+Guardia a cavallo
+	@cavalryguard.ext
+%include(units;descr.cav.heavy.sword)%
+%include(units;descr.armored)%
+%include(units;descr.effective.inflightcav)%
+	@reiterswe
+Reiter svedese
+	@reiterswe.ext
+%include(units;descr.cav.heavy.sword)%
+%include(units;descr.armored)%
+%include(units;descr.effective.inflightcav)%
+	@reiterpol
+Reiter leggero
+	@reiterpol.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.inf)%
+%include(units;descr.build.highspeed)%
+%include(units;descr.params.lowattack)%
+	@hetman
+Etmano
+	@hetman.ext
+%include(units;descr.cav.any.saber)%
+%include(units;descr.effective.infcav)%
+%include(units;descr.params.veryhighattackprotection)%
+%include(units;descr.combination.highcostlowbuildtime)%
+	@cossackdon
+Cosacco del Don
+	@cossackdon.ext
+%include(units;descr.cav.light.spear)%
+%include(units;descr.effective.inf)%
+%include(units;descr.combination.highbuildspeedhighcost)%
+	@vityaz
+Vityaz
+	@vityaz.ext
+%include(units;descr.cav.heavy.mace)%
+%include(units;descr.armored)%
+%include(units;descr.effective.inflightcav)%
+%include(units;descr.params.highattackprotection)%
+%include(units;descr.combination.longbuildtimehighcost)%
+	@cossackregister
+Cosacco del registro
+	@cossackregister.ext
+%include(units;descr.cav.light.pike)%
+%include(units;descr.effective.inf)%
+%include(units;descr.build.highspeed)%
+%include(units;descr.cost.low2)%
+	@spakh
+Facile Sipahi
+	@spakh.ext
+%include(units;descr.cav.light.longpike)%
+%include(units;descr.effective.inf)%
+%include(units;descr.build.highspeed)%
+%include(units;descr.params.lowattackprotection)%
+	@mameluke
+Mamelucco
+	@mameluke.ext
+%include(units;descr.cav.any.longpike)%
+%include(units;descr.effective.inf)%
+%include(units;descr.combination.highbuildspeedhighcost)%
+	@UNITS.CAV.SHOOTERS
+********************************Tiratori a cavallo*********************************
+	@dragoon
+Dragone, 17° secolo
+	@dragoon.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.highshootingrange)%
+%include(units;descr.combination.lowrateoffirehighbuildtime)%
+	@dragoon18fra
+Dragone, 18° secolo
+	@dragoon18fra.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.build.highspeed2)%
+	@dragoon18
+Dragone, 18° secolo
+	@dragoon18.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.combination.lowrateoffirehighbuildtime)%
+	@kingmusketeer
+Moschettiere reale
+	@kingmusketeer.ext
+%include(units;descr.elitecav)%
+%include(units;descr.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.veryhighattack)%
+%include(units;descr.build.lowspeed4)%
+	@tatar
+Tartaro
+	@tatar.ext
+%include(units;descr.cav.any.bow)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+	@UNITS.DIP.MERCENARIES
+********************************Mercenari*********************************
+	@roundshierdip
+%include(units;roundshier)%%include(units;descr.ability.mercenary)%
+	@roundshierdip.ext
+%include(units;descr.cost.nothigh)%
+%include(units;descr.params.lowattackprotection)%
+%include(units;descr.effective.mercgrenadier)%
+	@grenadierdip
+%include(units;grenadier)%%include(units;descr.ability.mercenary)%
+	@grenadierdip.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.cost.low)%
+%include(units;descr.params.lowshootdamage)%
+%include(units;descr.ability.grenades)%
+	@lightinfantrydip
+%include(units;lightinfantry)%%include(units;descr.ability.mercenary)%
+	@lightinfantrydip.ext
+%include(units;descr.cost.nothigh2)%
+%include(units;descr.params.lowattackprotection)%
+	@archerdip
+%include(units;archer)%%include(units;descr.ability.mercenary)%
+	@archerdip.ext
+%include(units;descr.inf.bow)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+%include(units;descr.effective.ships)%
+	@dragoon18dip
+%include(units;dragoon18)%%include(units;descr.ability.mercenary)%
+	@dragoon18dip.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.highrateoffire)%
+%include(units;descr.ability.consumegold)%
+%include(units;descr.ability.highshootcost)%
+%include(units;descr.effective.merc)%
+	@cossacksichdip
+%include(units;cossacksich)%%include(units;descr.ability.mercenary)%
+	@cossacksichdip.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.mosteffective.speedcav)%
+	@SHIPS
+********************************Marina*********************************
+	@fishboat
+Barca
+	@fishboat.ext
+%def%Utilizzata solo per la pesca. Non può prendere parte ai combattimenti.
+	@yacht
+Yacht
+	@yacht.ext
+%def%Nave da guerra di basso livello.
+%pos%Alta manovrabilità.
+%pos%Alta velocità di movimento.
+%neg%Bassa potenza di fuoco.
+%neg%Usa molto carbone e ferro per fare fuoco.
+	@yachttur
+Yacht
+	@yachttur.ext
+%def%Le flotte turche includono molti tipi di vascelli a uno o due alberi.
+%def%Venivano usati dalla marina come unità di pattuglia e messaggeri, e dai pirati che assalivano le comunicazioni navali cristiane.
+	@galley
+Galea
+	@galley.ext
+%def%Nave da guerra di medio livello.
+%pos%Equipaggiata con due tipi di artiglieria, cannoni e bombarde.
+%pos%I cannoni sono efficaci a distanza ravvicinata, mentre le bombarde vengono utilizzate per le lunghe distanze.
+%pos%Le bombarde sono efficaci per colpire edifici e fortificazioni sulla costa.
+%neg%Richiede oro per il mantenimento.
+%neg%In mancanza di oro, la galea smette di far fuoco.
+%neg%Usa molto carbone e ferro per fare fuoco.
+	@frigate
+Fregata
+	@frigate.ext
+%def%Nave da guerra di medio livello.
+%neg%Richiede fondi.
+%neg%Usa molto carbone e ferro per fare fuoco.
+	@battleship
+Nave di linea
+	@battleship.ext
+%def%Nave da guerra di alto livello.
+%pos%Alta potenza e frequenza di fuoco.
+%neg%Richiede molto oro per il mantenimento.
+%neg%Basso consumo di carbone e ferro.
+%neg%Bassa velocità di movimento.
+	@ferry
+Traghetto
+	@ferry.ext
+%def%I traghetti trasportano le truppe attraverso fiumi e mari.
+%def%Può trasportare 120 unità per volta.
+	@xebec
+Sciabecco
+	@xebec.ext
+%def%Nave da guerra di medio livello.
+%neg%Non richiede oro per il mantenimento.
+%neg%Usa molto carbone e ferro per fare fuoco.
+	@ARTILLERY
+********************************Artiglieria*********************************
+	@cannon
+Cannone
+	@cannon.ext
+%def%Cannone da campo.
+%pos%Efficace contro gli edifici, le fortificazioni e le navi nemiche.
+%pos%Spara palle di cannone a media e lunga distanza.
+%pos%Spara shrapnel alla fanteria e alla cavalleria a breve distanza.
+%neg%Richiede oro per il mantenimento.
+%neg%Quando termina l'oro, i cannoni smettono di sparare.
+%neg%Un cannone non sorvegliato può essere catturato dal nemico.
+%neg%Usa molto carbone e ferro per sparare.
+	@howitzer
+Obice
+	@howitzer.ext
+%def%Cannone da assedio.
+%pos%Spara con traiettoria ad arco.
+%pos%Efficace contro le fortificazioni e la fanteria ammassata.
+%neg%Frequenza di fuoco e precisione basse.
+%neg%Richiede oro per il mantenimento.
+%neg%Quando termina l'oro, gli obici smettono di sparare.
+%neg%Un obice non sorvegliato può essere catturato dal nemico.
+%neg%Usa molto carbone e ferro per sparare.
+	@mortar
+Bombarda
+	@mortar.ext
+%def%Cannone a lunga gittata.
+%pos%Spara con traiettoria ad arco a lunghissima distanza.
+%pos%Efficace contro edifici e torri.
+%neg%Può sparare solo a navi ed edifici.
+%pos%Frequenza di fuoco e precisione alte.
+%neg%Richiede oro per il mantenimento.
+%neg%Quando termina l'oro, le bombarde smettono di sparare.
+%neg%Una bombarda non sorvegliata può essere catturata dal nemico.
+%neg%Usa molto carbone e ferro per sparare.
+	@multicannon
+Cannone multiplo
+	@multicannon.ext
+%def%Spara shrapnel a distanza ravvicinata.
+%pos%Efficace contro la fanteria non corazzata.
+%pos%Cadenza di fuoco alta.
+%neg%Richiede oro per il mantenimento.
+%neg%Quando termina l'oro, i cannoni multipli smettono di sparare.
+%neg%Un cannone multiplo non sorvegliato può essere catturato dal nemico.
+%neg%Usa molto carbone e ferro per sparare.
+	@BUILDINGS.NATIONAL
+********************************Strutture nazionali*********************************
+	@%nat%aca
+Accademia
+	@%nat%aca.ext
+%def%Il centro di ricerca di una città.
+%def%Può ricercare importanti tecnologie e permette di effettuare una grande varietà aggiornamenti.
+%neg%Può essere catturata dal nemico.
+	@%nat%art
+Deposito di artiglieria
+	@%nat%art.ext
+%def%Produce pezzi di artiglieria.
+%neg%Può essere catturato dal nemico.
+	@%nat%bar
+Caserma, 17° secolo
+	@%nat%bar.ext
+%def%Produce unità di fanteria, ufficiali e tamburini del XVII secolo.
+%pos%Fornisce %farm% abitazioni aggiuntive.
+	@%nat%ba2
+Caserma, 18° secolo
+	@%nat%ba2.ext
+%def%Produce unità di fanteria, ufficiali e tamburini del XVIII secolo.
+%pos%Fornisce %farm% abitazioni aggiuntive.
+%neg%Disponibile solo nel XVIII secolo.
+	@%nat%bla
+Fabbro
+	@%nat%bla.ext
+%def%Permette di eseguire aggiornamenti legati al metallo.
+%neg%Può essere catturato dai nemici.
+	@%nat%cen
+Municipio
+	@%nat%cen.ext
+%def%Produce contadini.
+%def%I contadini portano pietra, legno e cibo al municipio.
+%pos%Fornisce %farm% abitazioni.
+%neg%Può essere catturato dal nemico.
+%def%Dopo che tutti gli edifici sono stati costruiti, grazie al municipio puoi passare all'età tecnologica successiva.
+	@%nat%dip
+Centro diplomatico
+	@%nat%dip.ext
+%def%Permette di assoldare mercenari stranieri.
+%neg%Puoi avere solo un centro diplomatico.
+	@%nat%hou
+Casa
+	@%nat%hou.ext
+%pos%Fornisce %farm% abitazioni.
+%neg%Può essere catturata dai nemici.
+	@%nat%sta
+Stalla
+	@%nat%sta.ext
+%def%Produce cavalleria del XVII secolo.
+%pos%Entrando nel XVIII secolo, la cavalleria del XVIII secolo diventa disponibile nella stalla.
+	@%nat%tem
+Cattedrale
+	@%nat%tem.ext
+%def%Produce sacerdoti.
+	@BUILDINGS.COMMON
+********************************Strutture comuni*********************************
+	@%com%coa
+Miniera
+	@%com%coa.ext
+%def%Produce carbone.
+%neg%Può essere catturata dal nemico.
+%def%Il numero di contadini che lavorano nella miniera può essere aumentato con gli aggiornamenti.
+%def%Gli aggiornamenti devono essere effettuati separatamente per ogni miniera.
+%def%Il numero massimo di contadini che lavorano in una singola miniera con tutti gli aggiornamenti è 95.
+	@%com%gol
+Miniera
+	@%com%gol.ext
+%def%Produce oro.
+%neg%Può essere catturata dal nemico.
+%def%Il numero di contadini che lavorano nella miniera può essere aumentato con gli aggiornamenti.
+%def%Gli aggiornamenti devono essere effettuati separatamente per ogni miniera.
+%def%Il numero massimo di contadini che lavorano in una singola miniera con tutti gli aggiornamenti è 95.
+	@%com%iro
+Miniera
+	@%com%iro.ext
+%def%Produce oro.
+%neg%Può essere catturata dal nemico.
+%def%Il numero di contadini che lavorano nella miniera può essere aumentato con gli aggiornamenti.
+%def%Gli aggiornamenti devono essere effettuati separatamente per ogni miniera.
+%def%Il numero massimo di contadini che lavorano in una singola miniera con tutti gli aggiornamenti è 95.
+	@%com%mar
+Mercato
+	@%com%mar.ext
+%def%Permette di comprare, vendere e scambiare risorse.
+%neg%Può essere catturato dal nemico.
+	@%com%mil
+Mulino
+	@%com%mil.ext
+%def%Serve a produrre e processare le colture di grano.
+%def%I contadini possono portare al mulino il cibo raccolto.
+%neg%Può essere catturato dal nemico.
+%def%Gli aggiornamenti del mulino rendono più efficiente la produzione di cibo.
+	@%com%sto
+Magazzino
+	@%com%sto.ext
+%def%Conserva legno e pietra portati dai contadini.
+%neg%Può essere catturato dal nemico.
+	@%com%por
+Cantiere navale
+	@%com%por.ext
+%def%Produce navi.
+%def%Le navi portano il pesce in porto.
+	@%com%sga
+Porta
+	@%com%sga.ext
+%def%Potente fortificazione difensiva.
+%pos%Può essere distrutta solo da cannoni, navi, granatieri o arcieri.
+%def%Le unità a distanza non possono far fuoco attraverso le mura di pietra.
+%def%Le porte possono essere costruite nelle mura di pietra.
+%neg%Consuma pietra dopo la costruzione.
+	@%com%swa
+Muro
+	@%com%swa.ext
+%def%Potente fortificazione difensiva.
+%pos%Può essere distrutto solo da cannoni, navi, granatieri o arcieri.
+%def%Le unità a distanza non possono far fuoco attraverso le mura di pietra.
+%def%Nelle mura di pietra possono essere costruite porte.
+%neg%Consuma pietra dopo la costruzione.
+	@%com%tow
+Torre
+	@%com%tow.ext
+%def%Fortificazione.
+%pos%Può essere distrutta solo da cannoni, navi, granatieri o arcieri.
+%def%La frequenza di fuoco della torre può essere aumentata con gli aggiornamenti, che aggiungono altri cannoni.
+%def%Gli aggiornamenti devono essere effettuati separatamente per ogni torre.
+%neg%I cannoni delle torri usano molto carbone e ferro per fare fuoco.
+	@%com%wga
+Porta
+	@%com%wga.ext
+%def%La fortificazione difensiva più economica da costruire.
+%def%Le unità a distanza possono sparare attraverso la palizzata.
+%def%Nella palizzata possono essere costruite delle porte.
+	@%com%wwa
+Palizzata
+	@%com%wwa.ext
+%def%La fortificazione difensiva più economica da costruire.
+%def%Le unità a distanza possono sparare attraverso la palizzata.
+
+%def%Nella palizzata possono essere costruite delle porte.
+	@field
+Campo di grano
+	@_del_polaca
+%include(units;ausaca)%
+	@_del_polaca.ext
+%include(units;ausaca.ext)%
+	@_del_polart
+%include(units;ausart)%
+	@_del_polart.ext
+%include(units;ausart.ext)%
+	@_del_polbar
+%include(units;ausbar)%
+	@_del_polbar.ext
+%include(units;ausbar.ext)%
+	@_del_polba2
+%include(units;ausba2)%
+	@_del_polba2.ext
+%include(units;ausba2.ext)%
+	@_del_polbla
+%include(units;ausbla)%
+	@_del_polbla.ext
+%include(units;ausbla.ext)%
+	@_del_polcen
+%include(units;auscen)%
+	@_del_polcen.ext
+%include(units;auscen.ext)%
+	@_del_poldip
+%include(units;ausdip)%
+	@_del_poldip.ext
+%include(units;ausdip.ext)%
+	@_del_polhou
+%include(units;aushou)%
+	@_del_polhou.ext
+%include(units;aushou.ext)%
+	@_del_polsta
+%include(units;aussta)%
+	@_del_polsta.ext
+%include(units;aussta.ext)%
+	@_del_poltem
+%include(units;austem)%
+	@_del_poltem.ext
+%include(units;austem.ext)%
+	@UNIQUE
+*********************Strutture uniche e suggerimenti********************
+	@turbar
+Caserma
+	@turbar.ext
+%def%Produce unità di fanteria, ufficiali e tamburini.
+%pos%Fornisce %farm% abitazioni aggiuntive.
+	@turtem
+Moschea
+	@algtem
+Moschea
+	@rustem
+Cattedrale ortodossa
+	@ukrtem
+Cattedrale ortodossa
+	@algbar
+%include(units;turbar)%
+	@algbar.ext
+%include(units;turbar.ext)%
+	@turcen.ext
+%def%Produce contadini.
+%def%I contadini portano pietra, legno e cibo al municipio.
+%pos%Fornisce %farm% abitazioni.
+%neg%Può essere catturato dal nemico.
+	@algcen.ext
+%include(units;turcen.ext)%
+	@ruscen.ext
+%include(units;turcen.ext)%
+	@ukrbar.ext
+%def%Produce unità a distanza.
+%pos%Fornisce %farm% abitazioni.
+	@tursta.ext
+%def%Produce cavalleria.
+	@algsta.ext
+%include(units;tursta.ext)%
+	@ukrsta.ext
+%include(units;tursta.ext)%
+	@rushou
+Isba
+	@ukrhou
+Capanna
+	@rusbar
+Caserma degli Strelizi
+	@ukrbar
+Casa cosacca
+	@turmar
+Bazaar
+	@algmar
+Bazaar
+	@turaca
+Minareto
+	@algaca
+Minareto
+	@misdonkey
+Cavallo da soma
+	@misflagman
+Portabandiera
+	@misgeneral
+Generale
+	@mistrader
+Mercante
+	@misbridge
+Ponte
+	@misblg
+Capanna di tronchi
+	@misblg2
+Capanna di tronchi
+	@miscommandcenter
+Centro di comando
+	@mistent
+Tenda
+	@misyurt
+Yurta
+	@archertur
+Archer turco
+	@archertur.ext
+%include(units;descr.any.bow)%
+%include(units;descr.effective.onlywithinf)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+	@archerturdip
+%include(units;archertur)%%include(units;descr.ability.mercenary)%
+	@archerturdip.ext
+%include(units;descr.inf.bow)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+%include(units;descr.effective.ships)%
+	@lightcavalry
+Cavalleria leggera
+	@lightcavalry.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.combination.lowrateoffirehighbuildtime)%
+	@lightcavalrydip
+%include(units;lightcavalry)%%include(units;descr.ability.mercenary)%
+	@lightcavalrydip.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.highrateoffire)%
+%include(units;descr.ability.consumegold)%
+%include(units;descr.ability.highshootcost)%
+%include(units;descr.effective.merc)%
+	@dragoonpol
+Pospolite ruszenie
+	@dragoonpol.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.highshootingrange)%
+	@dragoon18net
+%include(units;dragoon18)%
+	@dragoon18net.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.combination.lowrateoffirehighbuildtime)%
+	@musketeer18den
+%include(units;musketeer18)%
+	@musketeer18den.ext
+%include(units;descr.inf.musketbayonet)%
+%include(units;descr.canmeleeandshoot)%
+%include(units;descr.cost.lowafterupgrade)%
+%include(units;descr.effective.melee)%
+	@grenadierden
+%include(units;grenadier)%
+	@grenadierden.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+	@hackapell
+Hakkapeliitta
+	@hackapell.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.combination.highbuildmovespeed)%
+%include(units;descr.effective.notforminfheavycav)%
+	@grenadierpru
+%include(units;grenadier)%
+	@grenadierpru.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+	@musketeer18bav
+%include(units;musketeer18)%
+	@musketeer18bav.ext
+%include(units;descr.inf.musketbayonet)%
+%include(units;descr.canmeleeandshoot)%
+%include(units;descr.cost.lowafterupgrade)%
+%include(units;descr.effective.melee)%
+	@grenadierbav
+%include(units;grenadier)%
+	@grenadierbav.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+%include(units;descr.params.highattackprotection)%
+%include(units;descr.cost.high2)%
+	@guardcavalrysax
+%include(units;cavalryguard)%
+	@guardcavalrysax.ext
+%include(units;descr.cav.heavy.sword)%
+%include(units;descr.armored)%
+%include(units;descr.effective.inflightcav)%
+	@peasco
+Contadino
+	@peasco.ext
+%include(units;descr.ability.canextractresources)%
+%include(units;descr.canbuildandrepair)%
+%include(units;descr.ability.cannotbecaptured)%
+	@pikemansco
+Picchiere Patto
+	@pikemansco.ext
+%include(units;descr.inf.longpike)%
+	@musketeersco
+Moschettiere Patto
+	@musketeersco.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.build.lowspeed3)%
+	@swordsmansco
+Spadaccino clan
+	@swordsmansco.ext
+%include(units;descr.inf.sword)%
+%include(units;descr.params.highattack)%
+	@archersco
+Archer clan
+	@archersco.ext
+%include(units;descr.any.bow)%
+%include(units;descr.effective.onlywithinf)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+	@officersco
+Ufficiale
+	@officersco.ext
+%include(units;descr.ability.createformation)%
+%include(units;descr.ability.consumegold)%
+	@lancersco
+Lanciere
+	@lancersco.ext
+%include(units;descr.cav.light.pike)%
+%include(units;descr.effective.inf)%
+%include(units;descr.build.highspeed)%
+%include(units;descr.cost.low2)%
+	@raidersco
+Bandito
+	@raidersco.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.combination.highbuildmovespeed)%
+%include(units;descr.effective.notforminfheavycav)%
+	@framegun
+Ribaudequin
+	@framegun.ext
+%pos%Efficace contro la fanteria non corazzata.
+%neg%Richiede oro per il mantenimento.
+%neg%Un cannone non sorvegliato può essere catturato dal nemico.
+%neg%Usa molto carbone e ferro per sparare.
+	@scoba2
+Castello
+	@scoba2.ext
+%def%Produce highlanders.
+%pos%Fornisce %farm% abitazioni aggiuntive.
+	@ukrcen.ext
+%def%Produce contadini.
+%def%I contadini portano pietra, legno e cibo al municipio.
+%pos%Fornisce %farm% abitazioni.
+%neg%Può essere catturato dal nemico.
+	@turcen.ext
+%def%Produce contadini.
+%def%I contadini portano pietra, legno e cibo al municipio.
+%pos%Fornisce %farm% abitazioni.
+%neg%Può essere catturato dal nemico.
+	@algcen.ext
+%def%Produce contadini.
+%def%I contadini portano pietra, legno e cibo al municipio.
+%pos%Fornisce %farm% abitazioni.
+%neg%Può essere catturato dal nemico.
+	@scocen.ext
+%def%Produce contadini.
+%def%I contadini portano pietra, legno e cibo al municipio.
+%pos%Fornisce %farm% abitazioni.
+%neg%Può essere catturato dal nemico.
+	@sipahi
+Pesante Sipahi
+	@sipahi.ext
+%include(units;descr.cav.heavy.broadsword)%
+%include(units;descr.armored)%
+%include(units;descr.effective.infcav2)%
+%include(units;descr.params.highattackprotection)%
+%include(units;descr.build.lowspeed2)%
+%include(units;descr.cost.high)%
+	@gauduk
+Hajduk
+	@gauduk.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+	@pikemanspa
+Coselete
+	@pikemanspa.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.armored)%
+%include(units;descr.effective.form)%
+	@hussarhun
+%include(units;hussar)%
+	@hussarhun.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.build.lowspeed2)%
+%include(units;descr.effective.notcuirassier)%
+	@jagerpor
+Volontario
+	@jagerpor.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+	@grenadierhun
+%include(units;grenadier)%
+	@grenadierhun.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+	@pandurhun
+Siculi
+	@pandurhun.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.mosteffective.shooter)%
+	@pikemanpor
+%include(units;pikeman)%
+	@pikemanpor.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.armored)%
+%include(units;descr.effective.form)%
+	@pikemanswi
+%include(units;pikeman)%
+	@pikemanswi.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.armored)%
+%include(units;descr.effective.form)%
+	@jagerswi
+Chasseur
+	@jagerswi.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+	@hussarswi
+Chasseur cavallo
+	@hussarswi.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.build.lowspeed2)%
+%include(units;descr.effective.notcuirassier)%
+	@padre
+Padre
+	@padre.ext
+%include(units;descr.canheal)%
+	@dragoon18pie
+%include(units;dragoon18)%
+	@dragoon18pie.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.combination.lowrateoffirehighbuildtime)%

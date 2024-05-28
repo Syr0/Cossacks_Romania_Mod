@@ -1,0 +1,533 @@
+	@server.outoforder
+Il server sarà disponibile a breve.
+Stiamo lavorando al problema.
+	@announcement.support.header
+Premessa importante
+	@announcement.support.depplaystv
+Abbiamo rilevato impostazioni o applicazioni di terze parti che possono influenzare la stabilità e le prestazioni del tuo computer.
+Se si verificano crash o noti prestazioni troppo basse, prova con i suggerimenti di seguito:
+	@announcement.dep
+Il DEP (Data Execution Prevention) del tuo sistema potrebbe andare in conflitto con il gioco.
+Per risolvere il problema, aggiungi "cossacks.exe" alla lista delle eccezioni. Per informazioni su come farlo, visita l'Hub della Comunità di Steam.
+	@announcement.playstv
+Abbiamo rilevato applicazioni di terze parti che tentano di interferire con il processo di gioco. Nella maggior parte dei casi si tratta di "Plays.TV", "Raptr", "RazerIngameEngine" o "XSplit", oppure altre applicazioni di registrazione.
+Chiudi tali applicazioni (barra delle applicazioni / gestione attività / processi) o si potrebbero verificare crash durante il gioco.
+	@dontshowagain
+Non mostrare questo avviso.
+	@shell.chooseserver
+Server
+	@host.leave
+L'host %name% è uscito, il gioco non può continuare
+	@host.disconnected
+L'host %name% ha perso la connessione al server, il gioco non può continuare 
+	@player.leave
+Il giocatore %name% è uscito
+	@player.disconnected
+Il giocatore %name% ha perso la connessione al server
+	@text.engame.win.mp
+VITTORIA! Premi ESC per chiudere questo messaggio.
+o BACKSPACE per uscire.
+	@text.engame.lose.mp
+SCONFITTA! Premi ESC per chiudere questo messaggio.
+o BACKSPACE per uscire.
+	@host.leave.continue
+Host %name% è dimesso, il gioco continuerà, le unità e gli edifici potrebbero aver perso i loro ordini.
+	@host.disconnected.continue
+Host %name% ha perso la connessione con il server, il gioco continuerà, le unità e gli edifici può aver perso i loro ordini.
+	@menu.btn.surrender
+Resa
+	@menu.btn.surrender.approve
+Si sta per cedere! Sei sicuro?
+	@menu.btn.statistics
+Statistica
+	@map.size
+Mappa Size
+	@map.size.normal
+Normale
+	@map.size.large
+Grande 2x
+	@map.size.huge
+Enorme 4x
+	@mods.mods
+mods
+	@mods.hintroomneedsync
+le mod dell'utente sono di versioni diverse
+	@mods.hintroomreadytoplay
+L'utente ha le tue stesse mod, puoi quindi unirti alla stanza senza doverti sincronizzare
+	@mods.modslist
+lista delle mod
+	@mods.playersmods
+mod del giocatore
+	@mods.synchronizedmods
+mod sincronizzate
+	@mods.roomchecksumdif
+Le tue mod sono differenti da quelle di questa stanza. Vuoi che il gioco sincronizzi in automatico le versioni? Il procedimento può richiedere alcuni minuti
+	@mods.playersmodslist
+lista delle mod del giocatore:
+	@mods.ok
+ok
+	@mods.cancel
+annulla
+	@mods.pleasewait
+attendere prego
+	@mods.syncinprogress
+Il gioco ha iniziato a scaricare le mod necessarie. Questo procedimento può richiedere diversi minuti.
+	@mods.cancel.2
+annula
+	@mods.syncerror
+Errore di sincronizzazione
+	@mods.syncfailed
+La versione del gioco sembra essere diversa anche con tutte le mod sincronizzate. Questo può succedere se tu o l'host della partita hanno versioni non aggiornate, o alcune mod sono state modificate
+	@mods.syncfailed2
+Puoi verificare la cache di gioco o chiedere all'host di verificare le versioni delle mod
+	@mods.wrongmodexists
+Il gioco ha rilevato una mod che non è stata installata tramite il workshop, o ha rilevato un errore durante l'installazione. Questa mod non permetterà al giodo di sincronizzarsi in multiplayer. Gli altri giocatori devono installare questa mod manualmente.
+	@mods.downloadlink
+puoi scaricare la mod al seguente link
+	@mods.pagelink
+Link pagina mod
+	@mods.unknown
+Sconosciuto
+	@announcement.videodriver
+Il gioco ha rilevato che i driver della scheda video non sono installati o non funzionano correttamente. Prego installare l'ultima versione dei driver della scheda video.
+	@announcement.intelvideoonly
+Il gioco ha rilevato una scheda grafica Intel. Se nel computer è installata un'altra scheda video, si prega di accertarsi che sia attiva e di aggiornare i driver alla versione più recente dal sito web del produttore.
+	@mods.pleaserestart
+Per favore, riavvia il gioco.
+	@internetshell.btn.ranking
+Classifica
+	@internetshell.btn.profile
+Profilo
+	@internetshell.btn.torooms
+Lista delle sessioni
+	@internetshell.btn.switchtosimple
+Ricerca semplice
+	@internetshell.btn.switchtoadvanced
+Lista delle lobby
+	@internetshell.btn.autosearch
+Partita rapida
+	@internetshell.btn.stopautosearch
+Fine della ricerca
+	@internetshell.btn.autosearchsettings
+Impostazioni rapide di gioco
+	@internetshell.btn.autosearchfoundroom
+Stanza trovata, pronto?
+	@internetshell.btn.autosearchapprove
+Accetta
+	@internetshell.btn.autosearchcancel
+Rifiuta
+	@internetshell.text.autosearchroom
+Gioco Rapido
+	@internetshell.btn.joinautosearch
+Unisciti al Gioco Rapido
+	@internetshell.text.approxtime
+Tempo stimato di attesa
+	@internetshell.text.approxtimecalc
+Calcolatore
+	@internetshell.text.approxtimeunknown
+Sconosciuto
+	@internetshell.roomsettings.res1
+1000 risorse iniziali
+	@internetshell.roomsettings.res2
+5000 risorse iniziali
+	@internetshell.roomsettings.res3
+1.000.000 risorse iniziali
+	@internetshell.roomsettings.res1short
+1000
+	@internetshell.roomsettings.res2short
+5000
+	@internetshell.roomsettings.res3short
+1000000
+	@internetshell.roomsettings.0pt
+Senza tempo di pace
+	@internetshell.roomsettings.10pt
+10 minuti di tregua
+	@internetshell.roomsettings.20pt
+20 minuti di tregua
+	@internetshell.roomsettings.30pt
+30 minuti di tregua
+	@internetshell.roomsettings.0ptshort
+0pt
+	@internetshell.roomsettings.10ptshort
+10pt
+	@internetshell.roomsettings.20ptshort
+20pt
+	@internetshell.roomsettings.30ptshort
+30pt
+	@internetshell.roomsettings.1vs1
+1vs1
+	@internetshell.roomsettings.2vs2
+2vs2
+	@internetshell.roomsettings.3vs3
+3vs3
+	@internetshell.roomsettings.4vs4
+4vs4
+	@internetshell.roomsettings.2vs2vs2vs2
+2vs2vs2vs2
+	@internetshell.roomsettings.2vs2vs2
+2vs2vs2
+	@internetshell.roomsettings.ffa4
+4pl FFA
+	@internetshell.roomsettings.ffa6
+6pl FFA
+	@internetshell.roomsettings.ffa8
+8pl FFA
+	@internetshell.roomsettings.ffa
+FFA
+	@internetshell.roomsettings.nation.random
+Nazione casuale
+	@internetshell.roomsettings.nation.select
+Qualsiasi nazione
+	@internetshell.roomsettings.nation.eur
+Europa
+	@internetshell.roomsettings.nation.rus
+Russia
+	@internetshell.roomsettings.nation.ukr
+Ucraina
+	@internetshell.roomsettings.nation.arab
+Araba
+	@internetshell.roomsettings.nodip
+senza centro diplomatico
+	@internetshell.roomsettings.nomarket
+senza mercato
+	@internetshell.roomsettings.nodipmarket
+senza centro diplomatico e mercato
+	@internetshell.roomsettings.level0
+Principiante
+	@internetshell.roomsettings.level1
+Intermedio
+	@internetshell.roomsettings.level2
+Avanzato
+	@mods.workshop
+Workshop dei Mods
+	@internetshell.txt.nonrankedggame
+Partita senza punti
+	@internetshell.txt.rankedgame
+Parita a punti
+	@internetshell.txt.exitrankedgame
+Hai scelto di arrenderti. Questa è una partita a puntii, ciò farà scendere la tua posizione in classifica. Sei sicuro?
+	@mods.workshop.approve
+Questo aprirà un URL workshop nel tuo browser, sei sicuro?
+	@mods.workshop.help1
+Puoi unirti a delle nuove mods se sei loggato. Puoi anche aprire il Workshop attraverso la Steam Client
+	@mods.workshop.help2
+I mods verranno automaticamente installati quando premerai il pulsante "Iscriviti" e cancellati quando premerai su "Cancellati". Puoi anche abilitare o disabilitare i mods già scaricati nella sezione Mod Manager
+	@mods.workshop.help3
+Mod Manager può essere avviato attraverso la Steam Client
+	@mods.workshop.help4
+Il gioco verrà ravviato per assicurarsi che tutti i mods funzionino corretamente. Sei sicuro?
+	@customgame.text.season
+Stagione
+	@randommap.season.0
+Estate
+	@randommap.season.1
+Autunno
+	@minimap.info.teamnumber
+Squadra
+	@minimap.info.teamffa
+Senza squadra
+	@adviser.switchonoff
+Sottocapo
+	@adviser.economy
+conferire il potere
+	@adviser.construct
+Ascoltare Il Consigliere in ambito delle costruzioni
+	@adviser.upgrades
+Ascoltare Il Consigliere Scienziato
+	@adviser.upgrades.showunaffordable
+Dimostrare il miglioramento imprendibile
+	@adviser.quartermeister
+Prevalersi di Quartiermastro 
+	@adviser.quartermeister.advanced
+Gestire
+	@adviser.quartermeister.setupguards
+Mettere la sicurezza intorno ai edifici
+	@adviser.quartermeister.produceofficers
+Impiegare gli ufficiali e tamburini
+	@adviser.quartermeister.proposesquads
+Ofrire la formazione delle squadre
+	@adviser.economy.advanced
+Allargati
+	@adviser.apply
+Usare
+	@adviser.close
+Chiudere
+	@adviser.ok
+Ok
+	@adviser.economy.controlpeasants
+Mandare i contadini per prendere le risorse
+	@adviser.economy.producepeasants
+Impiegare i contadini
+	@adviser.economy.repairbuildings
+Ristrutturare gli edifici
+	@adviser.economy.fillmines
+Mandare i contadini dentro le miniere
+	@adviser.economy.manualresourcedistribution
+Vendere le risorse
+	@adviser.economy.marketadvises
+Dimostrare i consigli di vendita
+	@adviser.switchonoff.hint
+Permettere gli aiutatori venire da Lei per aiutarLa con le metà più faticose: %color%- dividere i contadini per le risorse
+%color%- garantire alle squadre i numeri suffiecenti dei ufficiali e tamburini
+%color%- ristrutturare gli edifici colpite
+%color%- mettere la sicurezza intorno ai edifici colpite
+%color%- eccetera.
+	@adviser.economy.hint
+Borgomastro vi lascia concentrasi sulla guerra, controllando l"economia sel Suo paese.
+%pos%Questo Consigliere sarà unn governatore duro per i contadini pigri, mettendo i trapani e delle mazze nelle loro mani.
+%pos%Borgomastro è capace di offrirvi i lavoratori, perche lui è un grande oratore, che sappia come attrarre i contadini fedeli a buon mercato.
+%pos%Essendo il grande mercante, lui vi consiglierà i contratti prosperosi sul mercato.
+	@adviser.construct.hint
+Il Consigliere per le Costuzioni Le aiuterà a capire, quali edifici sono necessari per la Sua città.
+%pos% Basta che Lei darà l"ordine per costruirle.
+	@adviser.upgrades.hint
+Il Suo Consigliere Scientifico con grande piaccere puòfarvi vedere, quali miglioramenti economici e militari sono desiderati e disponibili.
+	@adviser.upgrades.showunaffordable.hint
+Alcuni miglioramenti sono sono desiderati, ma sono necessari le risorse maggiori, per la loro esplorazione. 
+%pos% Lei vedrà cosa bisogna provare ad ottenere ! 
+	@adviser.quartermeister.hint
+Quartiermastro tratterà bene i Suoi soldati
+%pos%Lui non gli farà annoiare, mandando loro per la fazione.
+%pos%Distribuirà le squadre con il numero necessario dei tamburini e ufficiali.
+%pos%Quartiermastro può darLe i consigli per la formazione delle squadre nuove dei soldati presenti.
+	@adviser.quartermeister.advanced.hint
+Comandare Il Consigliere Militare
+	@adviser.quartermeister.setupguards.hint
+Mettere la sicurezza intorno ai edifici
+	@adviser.quartermeister.produceofficers.hint
+Impiegare gli ufficiali e tamburini
+	@adviser.quartermeister.proposesquads.hint
+Quartiermastro può consigliarLe la formazione delle squadre, a base della quantita dei vostri soldati.
+	@adviser.economy.advanced.hint
+L"impostazioni allargate
+	@adviser.economy.controlpeasants.hint
+Il Borgomastro dividerà i vostri contadini rispetto le risorse
+	@adviser.economy.producepeasants.hint
+Lasciare d"impiegare i contadini per le necissità della città costantemente senza la Sua partecipazione.
+	@adviser.economy.repairbuildings.hint
+Il Governatore non ha il tempo per controllare la integrità di tutti gli edifici!
+%pos%Il Borgomastro ci penserà di questo, metre Lei penserà delle questioni piu globali e strategiche!
+	@adviser.economy.fillmines.hint
+Il Borgomastro non lascierà le vostre miniere senza i lavoratori.
+	@adviser.economy.manualresourcedistribution.hint
+Dividere i contadini per preda del cibo, del legno e del minirale. 
+	@adviser.economy.marketadvises.hint
+lasciare il borgomastro dare i consigli rispetto la vendità
+	@adviser.dlc
+La guardia delle Montagne Alte
+	@map.size.tiny
+Piccolo
+	@internetshell.btn.quickplay.hint
+Quick play allows you to search for 1x1 game with matchmaking on 5000 resources, 0 pt, random nation, without peasants capture.
+	@internetshell.btn.createroom.hint
+Create custom game room. Attention: these games won't affect your rating.
+	@internetshell.btn.joinroom.hint
+Join to custom game room. Attention: these games won't affect your rating.
+	@internetshell.btn.ranking.hint
+Top 100 ladder players. Best players of this season would receive special signs, and right to participate in official season tournament with prizes. To participate in rating you need to play quick play games with enabled "Rating games" checkbox.
+	@internet.random.animal.0
+Alligatore
+	@internet.random.animal.1
+Formichiere
+	@internet.random.animal.2
+Armadillo
+	@internet.random.animal.3
+Auroch
+	@internet.random.animal.4
+Axolotl
+	@internet.random.animal.5
+Tasso
+	@internet.random.animal.6
+Pipistrello
+	@internet.random.animal.7
+Orso
+	@internet.random.animal.8
+Castoro
+	@internet.random.animal.9
+Bufalo
+	@internet.random.animal.10
+Cammello
+	@internet.random.animal.11
+Capybara
+	@internet.random.animal.12
+Camaleonte
+	@internet.random.animal.13
+Ghepardo
+	@internet.random.animal.14
+Cincilla
+	@internet.random.animal.15
+Chipmunk
+	@internet.random.animal.16
+Chupacabra
+	@internet.random.animal.17
+Cormorano
+	@internet.random.animal.18
+Coyote
+	@internet.random.animal.19
+Corvo
+	@internet.random.animal.20
+Dingo
+	@internet.random.animal.21
+Dinosauro
+	@internet.random.animal.22
+Cane
+	@internet.random.animal.23
+Delfino
+	@internet.random.animal.24
+Anatra
+	@internet.random.animal.25
+Elefante
+	@internet.random.animal.26
+Furetto
+	@internet.random.animal.27
+Volpe
+	@internet.random.animal.28
+Rana
+	@internet.random.animal.29
+Giraffa
+	@internet.random.animal.30
+Citello
+	@internet.random.animal.31
+Grizzly
+	@internet.random.animal.32
+Riccio
+	@internet.random.animal.33
+Ippopotamo
+	@internet.random.animal.34
+Iena
+	@internet.random.animal.35
+Stambecco
+	@internet.random.animal.36
+Iguana
+	@internet.random.animal.37
+Sciacallo
+	@internet.random.animal.38
+Canguro
+	@internet.random.animal.39
+Koala
+	@internet.random.animal.40
+Kraken
+	@internet.random.animal.41
+Lemure
+	@internet.random.animal.42
+Leopardo
+	@internet.random.animal.43
+Liger
+	@internet.random.animal.44
+Leone
+	@internet.random.animal.45
+Lama
+	@internet.random.animal.46
+Loris
+	@internet.random.animal.47
+Lamantino
+	@internet.random.animal.48
+Visone
+	@internet.random.animal.49
+Scimmia
+	@internet.random.animal.50
+Alce americano
+	@internet.random.animal.51
+Narvalo
+	@internet.random.animal.52
+Orangutan
+	@internet.random.animal.53
+Lontra
+	@internet.random.animal.54
+Panda
+	@internet.random.animal.55
+Pinguino
+	@internet.random.animal.56
+Ornitorinco
+	@internet.random.animal.57
+Pitone
+	@internet.random.animal.58
+Quagga
+	@internet.random.animal.59
+Coniglio
+	@internet.random.animal.60
+Procione
+	@internet.random.animal.61
+Rinoceronte
+	@internet.random.animal.62
+Pecora
+	@internet.random.animal.63
+Toporagno
+	@internet.random.animal.64
+Puzzola
+	@internet.random.animal.65
+Scoiattolo
+	@internet.random.animal.66
+Tigre
+	@internet.random.animal.67
+Tartaruga
+	@internet.random.animal.68
+Tricheco
+	@internet.random.animal.69
+Lupo
+	@internet.random.animal.70
+Ghiottone
+	@internet.random.animal.71
+Wombat
+	@internet.random.color.0
+Rosso
+	@internet.random.color.1
+Blu
+	@internet.random.color.2
+Turchese
+	@internet.random.color.3
+Viola
+	@internet.random.color.4
+Arancia
+	@internet.random.color.5
+Grigio
+	@internet.random.color.6
+Azzurro
+	@internet.random.color.7
+Marrone
+	@internet.random.color.8
+Bianca
+	@internet.random.color.9
+Verde
+	@internet.random.color.10
+Rosa
+	@internet.random.color.11
+Giallo
+	@internet.random.color.12
+Blu
+	@internet.random.color.13
+Verde chiaro
+	@internet.random.color.14
+Nero
+	@internet.random.color.15
+Marrone chiaro
+	@btn.tutorial
+Tutorial
+	@settings.hotkeys
+Hotkeys
+	@menu.encyclopedia
+Encyclopedia
+	@randommap.season.2
+Inverno
+	@randommap.season.3
+Primavera
+	@map.size.big
+Medio 1.5x
+	@map.size.verylarge
+Molto grande 3x
+	@randommap.terraintype.6
+Laghi
+	@randommap.terraintype.7
+Costa
+	@randommap.terraintype.8
+Fiumi
+	@randommap.settings.startingunits.barrack17
+Caserma del 17° secolo
+	@randommap.settings.startingunits.village
+Villaggio
+	@randommap.settings.startingunits.logcabins
+Capanne di tronchi
+	@randommap.settings.startingunits.union
+Unione
+	@randommap.settings.marketdip.expensivemercs
+Mercenario costosi

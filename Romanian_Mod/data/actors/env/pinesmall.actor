@@ -1,0 +1,21 @@
+section.begin {refurl=.\data\actors\ref\reftree.actor}
+   AnimationMode = aamLoop
+   FrameInterpolation = afpNone
+   Reference = aarTransform
+   Animations.LoadFromFile = .\data\animations\aaf\trees\pine\pine.aaf
+   TransformationFrameList.LoadFromFile = .\data\tlf\trees\pine\pine.tlf
+   ActorList.Items[0].Name = pinesmall1.mesh
+   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\pinesmall1.osm
+   ActorList.Items[1] : struct.begin {refurl=.\data\actors\ref\reftree.actor; refkey=.ActorList.Items[0]}
+      Name = pinesmall2.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\pinesmall2.osm
+   struct.end
+   ActorList.Items[2] : struct.begin {refurl=.\data\actors\ref\reftree.actor; refkey=.ActorList.Items[0]}
+      Name = pinesmall3.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\pinesmall3.osm
+   struct.end
+   ActorList.Items[3] : struct.begin {refurl=.\data\actors\ref\reftree.actor; refkey=.ActorList.Items[0]}
+      Name = pinesmall4.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\pinesmall4.osm
+   struct.end
+section.end

@@ -1,0 +1,129 @@
+section.begin
+   colortable : struct.begin
+      [0] = .\data\env\colors\0.palette
+      [1] = .\data\env\colors\1.palette
+      [2] = .\data\env\colors\2.palette
+      [3] = .\data\env\colors\3.palette
+      [4] = .\data\env\colors\4.palette
+      [5] = .\data\env\colors\5.palette
+      [6] = .\data\env\colors\6.palette
+      [7] = .\data\env\colors\7.palette
+      [8] = .\data\env\colors\8.palette
+      [9] = .\data\env\colors\9.palette
+      [10] = .\data\env\colors\10.palette
+      [11] = .\data\env\colors\11.palette
+   struct.end
+   statictables : struct.begin
+      [0] : struct.begin
+         Name = default
+         //SkyDomeHorizon = 0,35,205,255
+         SkyDomeHorizon = 0,0,0,255
+         //SkyDomeTop = 150,200,250,255
+         SkyDomeTop = 0,0,0,255
+         Fog = 60,100,150,1
+         Ambient = 255,255,255,255
+         CloudFogColor = 48,48,48,255
+         CloudColor = 48,48,48,255
+         LSAmbient = 140,140,140,255
+         LSDiffuse = 240,240,240,255
+         LSSpecular = 128,128,128,255
+         MoonAmbient = 128,128,128,255
+         MoonDiffuse = 128,128,128,255
+         MoonSpecular = 128,128,128,255
+         ShadowBlendingDiffuse = 140,140,140,128
+         FogStart = 390
+         FogEnd = 490
+         FogMode = 0
+         HFogStart = 200
+         HFogMode = 2
+         FogDepthFactor = 0.8
+         FogBack = 60,100,150,2
+         CloudFogBackColor = 48,48,48,255
+         SpaceHeightScale = 1
+         FogExpDepthFactor = 0
+      struct.end
+      [1] : struct.begin {refkey=.statictables[0]}
+         Name = yellow
+         Ambient = 255,200,128,255
+         LSAmbient = 240,180,140,255
+         LSDiffuse = 255,255,240,255
+         ShadowBlendingDiffuse = 140,140,220,128
+      struct.end
+      [2] : struct.begin {refkey=.statictables[0]}
+         Name = red
+         Ambient = 255,200,200,255
+         LSAmbient = 255,128,128,255
+         LSDiffuse = 255,240,240,255
+      struct.end
+      [3] : struct.begin {refkey=.statictables[0]}
+         Name = blue
+         Ambient = 200,200,255,255
+         LSAmbient = 200,200,255,255
+         LSDiffuse = 200,200,255,255
+         ShadowBlendingDiffuse = 140,140,180,128
+      struct.end
+      [4] : struct.begin {refkey=.statictables[0]}
+         Name = gray
+      struct.end
+      [5] : struct.begin
+         Name = dark
+         SkyDomeHorizon = 0,0,0,255
+         SkyDomeTop = 0,0,0,255
+         Fog = 64,128,255,1
+         Ambient = 200,200,255,255
+         CloudFogColor = 48,48,48,255
+         CloudColor = 48,48,48,255
+         LSAmbient = 200,200,255,255
+         LSDiffuse = 200,200,255,255
+         LSSpecular = 128,128,128,255
+         MoonAmbient = 128,128,128,255
+         MoonDiffuse = 128,128,128,255
+         MoonSpecular = 128,128,128,255
+         ShadowBlendingDiffuse = 150,150,255,128
+         FogStart = 90
+         FogEnd = 490
+         FogMode = 2
+         HFogStart = 200
+         HFogMode = 2
+         FogDepthFactor = 0.8
+         FogBack = 64,128,255,1
+         CloudFogBackColor = 48,48,48,255
+         SpaceHeightScale = 1
+         FogExpDepthFactor = 0.7
+      struct.end
+      [6] : struct.begin {refkey=.statictables[0]}
+         Name = winter
+         ShadowBlendingDiffuse = 180,180,200,128
+      struct.end
+      [7] : struct.begin {refkey=.statictables[1]}
+         Name = desert
+         ShadowBlendingDiffuse = 140,140,180,128
+      struct.end
+      [8] : struct.begin
+         Name = autumn
+         SkyDomeHorizon = 0,0,0,255
+         SkyDomeTop = 0,0,0,255
+         Fog = 60,100,150,1
+         Ambient = 200,200,255,255
+         CloudFogColor = 48,48,48,255
+         CloudColor = 48,48,48,255
+         LSAmbient = 255,180,180,255
+         LSDiffuse = 240,240,240,255
+         LSSpecular = 128,128,128,255
+         MoonAmbient = 128,128,128,255
+         MoonDiffuse = 128,128,128,255
+         MoonSpecular = 128,128,128,255
+         ShadowBlendingDiffuse = 140,140,140,128
+         FogStart = 390
+         FogEnd = 490
+         FogMode = 0
+         HFogStart = 200
+         HFogMode = 2
+         FogDepthFactor = 0.8
+         FogBack = 60,100,150,2
+         CloudFogBackColor = 48,48,48,255
+         SpaceHeightScale = 1
+         FogExpDepthFactor = 0
+      struct.end
+   struct.end
+section.end

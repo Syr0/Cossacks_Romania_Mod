@@ -1,0 +1,4407 @@
+// buildings
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = algcen
+   LODActorFileName = .\data\actors\buildings\alg\algcen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = alghou
+   LODActorFileName = .\data\actors\buildings\alg\alghou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ausaca
+   LODActorFileName = .\data\actors\buildings\aus\ausaca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ausart
+   LODActorFileName = .\data\actors\buildings\aus\ausart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ausba2
+   LODActorFileName = .\data\actors\buildings\aus\ausba2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ausbar
+   LODActorFileName = .\data\actors\buildings\aus\ausbar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ausbla
+   LODActorFileName = .\data\actors\buildings\aus\ausbla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = auscen
+   LODActorFileName = .\data\actors\buildings\aus\auscen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ausdip
+   LODActorFileName = .\data\actors\buildings\aus\ausdip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = aushou
+   LODActorFileName = .\data\actors\buildings\aus\aushou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = aussta
+   LODActorFileName = .\data\actors\buildings\aus\aussta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = austem
+   LODActorFileName = .\data\actors\buildings\aus\austem.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurcoa
+   LODActorFileName = .\data\actors\buildings\commoneur\eurcoa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurgol
+   LODActorFileName = .\data\actors\buildings\commoneur\eurgol.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = euriro
+   LODActorFileName = .\data\actors\buildings\commoneur\euriro.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurmar
+   LODActorFileName = .\data\actors\buildings\commoneur\eurmar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurmil
+   LODActorFileName = .\data\actors\buildings\commoneur\eurmil.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurpor
+   LODActorFileName = .\data\actors\buildings\commoneur\eurpor.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eursga
+   LODActorFileName = .\data\actors\buildings\commoneur\eursga.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eursto
+   LODActorFileName = .\data\actors\buildings\commoneur\eursto.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurswa
+   LODActorFileName = .\data\actors\buildings\commoneur\eurswa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurtow
+   LODActorFileName = .\data\actors\buildings\commoneur\eurtow.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurwga
+   LODActorFileName = .\data\actors\buildings\commoneur\eurwga.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurwwa
+   LODActorFileName = .\data\actors\buildings\commoneur\eurwwa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusmar
+   LODActorFileName = .\data\actors\buildings\commonrus\rusmar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusmil
+   LODActorFileName = .\data\actors\buildings\commonrus\rusmil.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ruspor
+   LODActorFileName = .\data\actors\buildings\commonrus\ruspor.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = russto
+   LODActorFileName = .\data\actors\buildings\commonrus\russto.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rustow
+   LODActorFileName = .\data\actors\buildings\commonrus\rustow.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turmar
+   LODActorFileName = .\data\actors\buildings\commontur\turmar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turmil
+   LODActorFileName = .\data\actors\buildings\commontur\turmil.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turpor
+   LODActorFileName = .\data\actors\buildings\commontur\turpor.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = tursto
+   LODActorFileName = .\data\actors\buildings\commontur\tursto.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turtow
+   LODActorFileName = .\data\actors\buildings\commontur\turtow.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = engaca
+   LODActorFileName = .\data\actors\buildings\eng\engaca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = engart
+   LODActorFileName = .\data\actors\buildings\eng\engart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = engba2
+   LODActorFileName = .\data\actors\buildings\eng\engba2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = engbar
+   LODActorFileName = .\data\actors\buildings\eng\engbar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = engbla
+   LODActorFileName = .\data\actors\buildings\eng\engbla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = engcen
+   LODActorFileName = .\data\actors\buildings\eng\engcen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = engdip
+   LODActorFileName = .\data\actors\buildings\eng\engdip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = enghou
+   LODActorFileName = .\data\actors\buildings\eng\enghou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = engsta
+   LODActorFileName = .\data\actors\buildings\eng\engsta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = engtem
+   LODActorFileName = .\data\actors\buildings\eng\engtem.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = fraaca
+   LODActorFileName = .\data\actors\buildings\fra\fraaca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = fraart
+   LODActorFileName = .\data\actors\buildings\fra\fraart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = fraba2
+   LODActorFileName = .\data\actors\buildings\fra\fraba2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = frabar
+   LODActorFileName = .\data\actors\buildings\fra\frabar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = frabla
+   LODActorFileName = .\data\actors\buildings\fra\frabla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = fracen
+   LODActorFileName = .\data\actors\buildings\fra\fracen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = fradip
+   LODActorFileName = .\data\actors\buildings\fra\fradip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = frahou
+   LODActorFileName = .\data\actors\buildings\fra\frahou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = frasta
+   LODActorFileName = .\data\actors\buildings\fra\frasta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = fratem
+   LODActorFileName = .\data\actors\buildings\fra\fratem.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = polaca
+   LODActorFileName = .\data\actors\buildings\pol\polaca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = polart
+   LODActorFileName = .\data\actors\buildings\pol\polart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = polba2
+   LODActorFileName = .\data\actors\buildings\pol\polba2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = polbar
+   LODActorFileName = .\data\actors\buildings\pol\polbar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = polbla
+   LODActorFileName = .\data\actors\buildings\pol\polbla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = polcen
+   LODActorFileName = .\data\actors\buildings\pol\polcen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = poldip
+   LODActorFileName = .\data\actors\buildings\pol\poldip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = polhou
+   LODActorFileName = .\data\actors\buildings\pol\polhou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = polsta
+   LODActorFileName = .\data\actors\buildings\pol\polsta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = poltem
+   LODActorFileName = .\data\actors\buildings\pol\poltem.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = pruaca
+   LODActorFileName = .\data\actors\buildings\pru\pruaca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = pruart
+   LODActorFileName = .\data\actors\buildings\pru\pruart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = pruba2
+   LODActorFileName = .\data\actors\buildings\pru\pruba2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = prubar
+   LODActorFileName = .\data\actors\buildings\pru\prubar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = prubla
+   LODActorFileName = .\data\actors\buildings\pru\prubla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = prucen
+   LODActorFileName = .\data\actors\buildings\pru\prucen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = prudip
+   LODActorFileName = .\data\actors\buildings\pru\prudip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = pruhou
+   LODActorFileName = .\data\actors\buildings\pru\pruhou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = prusta
+   LODActorFileName = .\data\actors\buildings\pru\prusta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = prutem
+   LODActorFileName = .\data\actors\buildings\pru\prutem.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusaca
+   LODActorFileName = .\data\actors\buildings\rus\rusaca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusart
+   LODActorFileName = .\data\actors\buildings\rus\rusart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusba2
+   LODActorFileName = .\data\actors\buildings\rus\rusba2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusbar
+   LODActorFileName = .\data\actors\buildings\rus\rusbar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusbla
+   LODActorFileName = .\data\actors\buildings\rus\rusbla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ruscen
+   LODActorFileName = .\data\actors\buildings\rus\ruscen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusdip
+   LODActorFileName = .\data\actors\buildings\rus\rusdip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rushou
+   LODActorFileName = .\data\actors\buildings\rus\rushou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = russta
+   LODActorFileName = .\data\actors\buildings\rus\russta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rustem
+   LODActorFileName = .\data\actors\buildings\rus\rustem.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spaaca
+   LODActorFileName = .\data\actors\buildings\spa\spaaca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spaart
+   LODActorFileName = .\data\actors\buildings\spa\spaart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spaba2
+   LODActorFileName = .\data\actors\buildings\spa\spaba2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spabar
+   LODActorFileName = .\data\actors\buildings\spa\spabar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spabla
+   LODActorFileName = .\data\actors\buildings\spa\spabla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spacen
+   LODActorFileName = .\data\actors\buildings\spa\spacen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spadip
+   LODActorFileName = .\data\actors\buildings\spa\spadip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spahou
+   LODActorFileName = .\data\actors\buildings\spa\spahou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spasta
+   LODActorFileName = .\data\actors\buildings\spa\spasta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spatem
+   LODActorFileName = .\data\actors\buildings\spa\spatem.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = sweaca
+   LODActorFileName = .\data\actors\buildings\swe\sweaca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = sweart
+   LODActorFileName = .\data\actors\buildings\swe\sweart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = sweba2
+   LODActorFileName = .\data\actors\buildings\swe\sweba2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swebar
+   LODActorFileName = .\data\actors\buildings\swe\swebar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swebla
+   LODActorFileName = .\data\actors\buildings\swe\swebla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swecen
+   LODActorFileName = .\data\actors\buildings\swe\swecen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swedip
+   LODActorFileName = .\data\actors\buildings\swe\swedip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swehou
+   LODActorFileName = .\data\actors\buildings\swe\swehou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swesta
+   LODActorFileName = .\data\actors\buildings\swe\swesta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swetem
+   LODActorFileName = .\data\actors\buildings\swe\swetem.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turaca
+   LODActorFileName = .\data\actors\buildings\tur\turaca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turart
+   LODActorFileName = .\data\actors\buildings\tur\turart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turbar
+   LODActorFileName = .\data\actors\buildings\tur\turbar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turbla
+   LODActorFileName = .\data\actors\buildings\tur\turbla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turcen
+   LODActorFileName = .\data\actors\buildings\tur\turcen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turdip
+   LODActorFileName = .\data\actors\buildings\tur\turdip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turhou
+   LODActorFileName = .\data\actors\buildings\tur\turhou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = tursta
+   LODActorFileName = .\data\actors\buildings\tur\tursta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turtem
+   LODActorFileName = .\data\actors\buildings\tur\turtem.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukraca
+   LODActorFileName = .\data\actors\buildings\ukr\ukraca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrart
+   LODActorFileName = .\data\actors\buildings\ukr\ukrart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrbar
+   LODActorFileName = .\data\actors\buildings\ukr\ukrbar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrbla
+   LODActorFileName = .\data\actors\buildings\ukr\ukrbla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrcen
+   LODActorFileName = .\data\actors\buildings\ukr\ukrcen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrdip
+   LODActorFileName = .\data\actors\buildings\ukr\ukrdip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrhou
+   LODActorFileName = .\data\actors\buildings\ukr\ukrhou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrsta
+   LODActorFileName = .\data\actors\buildings\ukr\ukrsta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrtem
+   LODActorFileName = .\data\actors\buildings\ukr\ukrtem.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = venaca
+   LODActorFileName = .\data\actors\buildings\ven\venaca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = venart
+   LODActorFileName = .\data\actors\buildings\ven\venart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = venba2
+   LODActorFileName = .\data\actors\buildings\ven\venba2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = venbar
+   LODActorFileName = .\data\actors\buildings\ven\venbar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = venbla
+   LODActorFileName = .\data\actors\buildings\ven\venbla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = vencen
+   LODActorFileName = .\data\actors\buildings\ven\vencen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = vendip
+   LODActorFileName = .\data\actors\buildings\ven\vendip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = venhou
+   LODActorFileName = .\data\actors\buildings\ven\venhou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = vensta
+   LODActorFileName = .\data\actors\buildings\ven\vensta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ventem
+   LODActorFileName = .\data\actors\buildings\ven\ventem.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrpor
+   LODActorFileName = .\data\actors\buildings\ukr\ukrpor.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spasto
+   LODActorFileName = .\data\actors\buildings\spa\spasto.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spamar
+   LODActorFileName = .\data\actors\buildings\spa\spamar.actor
+section.end
+
+// walls
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = russwa_tower
+   LODActorFileName = .\data\actors\buildings\commonrus\russwa_tower.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = russwa_turnmirror
+   LODActorFileName = .\data\actors\buildings\commonrus\russwa_turnmirror.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = russwa_turn
+   LODActorFileName = .\data\actors\buildings\commonrus\russwa_turn.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = russwa_45v2
+   LODActorFileName = .\data\actors\buildings\commonrus\russwa_45v2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = russwa_45v1
+   LODActorFileName = .\data\actors\buildings\commonrus\russwa_45v1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = russwa_v2
+   LODActorFileName = .\data\actors\buildings\commonrus\russwa_v2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = russwa_v1
+   LODActorFileName = .\data\actors\buildings\commonrus\russwa_v1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = russwa_gate
+   LODActorFileName = .\data\actors\buildings\commonrus\russwa_gate.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = russwa_45gate
+   LODActorFileName = .\data\actors\buildings\commonrus\russwa_45gate.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = g_45right
+   LODActorFileName = .\data\actors\buildings\commonrus\g_45right.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = g_45left
+   LODActorFileName = .\data\actors\buildings\commonrus\g_45left.actor
+section.end
+
+//turwals:
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turswa_tower
+   LODActorFileName = .\data\actors\buildings\commonrus\turswa_tower.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turswa_turnmirror
+   LODActorFileName = .\data\actors\buildings\commonrus\turswa_turnmirror.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turswa_turn
+   LODActorFileName = .\data\actors\buildings\commonrus\turswa_turn.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turswa_45v2
+   LODActorFileName = .\data\actors\buildings\commonrus\turswa_45v2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turswa_45v1
+   LODActorFileName = .\data\actors\buildings\commonrus\turswa_45v1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turswa_v2
+   LODActorFileName = .\data\actors\buildings\commonrus\turswa_v2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turswa_v1
+   LODActorFileName = .\data\actors\buildings\commonrus\turswa_v1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turswa_gate
+   LODActorFileName = .\data\actors\buildings\commonrus\turswa_gate.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turswa_45gate
+   LODActorFileName = .\data\actors\buildings\commonrus\turswa_45gate.actor
+section.end
+
+//eurwals:
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurswa_tower
+   LODActorFileName = .\data\actors\buildings\commonrus\eurswa_tower.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurswa_turnmirror
+   LODActorFileName = .\data\actors\buildings\commonrus\eurswa_turnmirror.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurswa_turn
+   LODActorFileName = .\data\actors\buildings\commonrus\eurswa_turn.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurswa_45v2
+   LODActorFileName = .\data\actors\buildings\commonrus\eurswa_45v2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurswa_45v1
+   LODActorFileName = .\data\actors\buildings\commonrus\eurswa_45v1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurswa_v2
+   LODActorFileName = .\data\actors\buildings\commonrus\eurswa_v2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurswa_v1
+   LODActorFileName = .\data\actors\buildings\commonrus\eurswa_v1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurswa_gate
+   LODActorFileName = .\data\actors\buildings\commonrus\eurswa_gate.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurswa_45gate
+   LODActorFileName = .\data\actors\buildings\commonrus\eurswa_45gate.actor
+section.end
+
+//ukrwals:
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrwwa_tower
+   LODActorFileName = .\data\actors\buildings\commonrus\ukrwwa_tower.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrwwa_turnmirror
+   LODActorFileName = .\data\actors\buildings\commonrus\ukrwwa_turnmirror.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrwwa_turn
+   LODActorFileName = .\data\actors\buildings\commonrus\ukrwwa_turn.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrwwa_45v2
+   LODActorFileName = .\data\actors\buildings\commonrus\ukrwwa_45v2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrwwa_45v1
+   LODActorFileName = .\data\actors\buildings\commonrus\ukrwwa_45v1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrwwa_v2
+   LODActorFileName = .\data\actors\buildings\commonrus\ukrwwa_v2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrwwa_v1
+   LODActorFileName = .\data\actors\buildings\commonrus\ukrwwa_v1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrwwa_gate
+   LODActorFileName = .\data\actors\buildings\commonrus\ukrwwa_gate.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrwwa_45gate
+   LODActorFileName = .\data\actors\buildings\commonrus\ukrwwa_45gate.actor
+section.end
+
+//wall attaches:
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eur_gates
+   LODActorFileName = .\data\actors\buildings\commonrus\attach\eur_gates.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eur_gates45
+   LODActorFileName = .\data\actors\buildings\commonrus\attach\eur_gates45.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eur_gates_2
+   LODActorFileName = .\data\actors\buildings\commonrus\attach\eur_gates_2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eur_gates45_2
+   LODActorFileName = .\data\actors\buildings\commonrus\attach\eur_gates45_2.actor
+section.end
+
+// units
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = archer
+   LODActorFileName = .\data\actors\units\archer.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = bagpiper
+   LODActorFileName = .\data\actors\units\bagpiper.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = cannon
+   LODActorFileName = .\data\actors\units\cannon.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = cannon_death
+   LODActorFileName = .\data\actors\units\cannon_death.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = chasseur
+   LODActorFileName = .\data\actors\units\chasseur.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = cossackdon
+   LODActorFileName = .\data\actors\units\cossackdon.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = cossackregister
+   LODActorFileName = .\data\actors\units\cossackregister.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = cossacksich
+   LODActorFileName = .\data\actors\units\cossacksich.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = croat
+   LODActorFileName = .\data\actors\units\croat.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = cuirassier
+   LODActorFileName = .\data\actors\units\cuirassier.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = dragoon
+   LODActorFileName = .\data\actors\units\dragoon.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = dragoon18
+   LODActorFileName = .\data\actors\units\dragoon18.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = dragoon18fra
+   LODActorFileName = .\data\actors\units\dragoon18fra.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = drummer
+   LODActorFileName = .\data\actors\units\drummer.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = drummer18
+   LODActorFileName = .\data\actors\units\drummer18.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = drummerrus
+   LODActorFileName = .\data\actors\units\drummerrus.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = drummertur
+   LODActorFileName = .\data\actors\units\drummertur.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = grenadier
+   LODActorFileName = .\data\actors\units\grenadier.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = hetman
+   LODActorFileName = .\data\actors\units\hetman.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = highlander
+   LODActorFileName = .\data\actors\units\highlander.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = howitzer
+   LODActorFileName = .\data\actors\units\howitzer.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = howitzer_death
+   LODActorFileName = .\data\actors\units\howitzer_death.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = hussar
+   LODActorFileName = .\data\actors\units\hussar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = hussarpru
+   LODActorFileName = .\data\actors\units\hussarpru.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = jannisary
+   LODActorFileName = .\data\actors\units\jannisary.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = kingmusketeer
+   LODActorFileName = .\data\actors\units\kingmusketeer.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = lightinfantry
+   LODActorFileName = .\data\actors\units\lightinfantry.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = mameluke
+   LODActorFileName = .\data\actors\units\mameluke.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = mortar
+   LODActorFileName = .\data\actors\units\mortar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = mortar_death
+   LODActorFileName = .\data\actors\units\mortar_death.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = mullah
+   LODActorFileName = .\data\actors\units\mullah.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = multicannon
+   LODActorFileName = .\data\actors\units\multicannon.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = multicannon_death
+   LODActorFileName = .\data\actors\units\multicannon_death.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = musketeer
+   LODActorFileName = .\data\actors\units\musketeer.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = musketeer18
+   LODActorFileName = .\data\actors\units\musketeer18.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = musketeer18pru
+   LODActorFileName = .\data\actors\units\musketeer18pru.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = musketeeraus
+   LODActorFileName = .\data\actors\units\musketeeraus.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = musketeerpol
+   LODActorFileName = .\data\actors\units\musketeerpol.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = musketeerspa
+   LODActorFileName = .\data\actors\units\musketeerspa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = officer
+   LODActorFileName = .\data\actors\units\officer.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = officer18
+   LODActorFileName = .\data\actors\units\officer18.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = officerrus
+   LODActorFileName = .\data\actors\units\officerrus.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = officertur
+   LODActorFileName = .\data\actors\units\officertur.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = pandur
+   LODActorFileName = .\data\actors\units\pandur.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = peaaus
+   LODActorFileName = .\data\actors\units\peaaus.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = peaeng
+   LODActorFileName = .\data\actors\units\peaeng.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = peapol
+   LODActorFileName = .\data\actors\units\peapol.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = pearus
+   LODActorFileName = .\data\actors\units\pearus.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = peaspa
+   LODActorFileName = .\data\actors\units\peaspa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = peatur
+   LODActorFileName = .\data\actors\units\peatur.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = peaukr
+   LODActorFileName = .\data\actors\units\peaukr.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = pikeman
+   LODActorFileName = .\data\actors\units\pikeman.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = pikeman18
+   LODActorFileName = .\data\actors\units\pikeman18.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = pikeman18swe
+   LODActorFileName = .\data\actors\units\pikeman18swe.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = pikemanpol
+   LODActorFileName = .\data\actors\units\pikemanpol.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = pikemanrus
+   LODActorFileName = .\data\actors\units\pikemanrus.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = pikemantur
+   LODActorFileName = .\data\actors\units\pikemantur.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = pope
+   LODActorFileName = .\data\actors\units\pope.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = priest
+   LODActorFileName = .\data\actors\units\priest.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = reiter
+   LODActorFileName = .\data\actors\units\reiter.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = reiterpol
+   LODActorFileName = .\data\actors\units\reiterpol.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = reiterswe
+   LODActorFileName = .\data\actors\units\reiterswe.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = roundshier
+   LODActorFileName = .\data\actors\units\roundshier.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = serdiuk
+   LODActorFileName = .\data\actors\units\serdiuk.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = spakh
+   LODActorFileName = .\data\actors\units\spakh.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = strelet
+   LODActorFileName = .\data\actors\units\strelet.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = tatar
+   LODActorFileName = .\data\actors\units\tatar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = vityaz
+   LODActorFileName = .\data\actors\units\vityaz.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = wingedhussar
+   LODActorFileName = .\data\actors\units\wingedhussar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = lightcavalry
+   LODActorFileName = .\data\actors\units\lightcavalry.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = archertur
+   LODActorFileName = .\data\actors\units\archertur.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = dragoonpol
+   LODActorFileName = .\data\actors\units\dragoonpol.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = unitbox
+   LODActorFileName = .\data\actors\units\unitbox.actor
+section.end
+
+// ships
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = battleship
+   LODActorFileName = .\data\actors\units\battleship.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = ferry
+   LODActorFileName = .\data\actors\units\ferry.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = fishboat
+   LODActorFileName = .\data\actors\units\fishboat.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = frigate
+   LODActorFileName = .\data\actors\units\frigate.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = galley
+   LODActorFileName = .\data\actors\units\galley.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = xebec
+   LODActorFileName = .\data\actors\units\xebec.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = yacht
+   LODActorFileName = .\data\actors\units\yacht.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = yachttur
+   LODActorFileName = .\data\actors\units\yachttur.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = battleshipa
+   LODActorFileName = .\data\actors\units\attach\battleshipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = ferrya
+   LODActorFileName = .\data\actors\units\attach\ferrya.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = fishboata
+   LODActorFileName = .\data\actors\units\attach\fishboata.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = frigatea
+   LODActorFileName = .\data\actors\units\attach\frigatea.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = galleya
+   LODActorFileName = .\data\actors\units\attach\galleya.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = xebeca
+   LODActorFileName = .\data\actors\units\attach\xebeca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = yachta
+   LODActorFileName = .\data\actors\units\attach\yachta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = yachttura
+   LODActorFileName = .\data\actors\units\attach\yachttura.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = chaika
+   LODActorFileName = .\data\actors\units\chaika.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = chaikaa
+   LODActorFileName = .\data\actors\units\attach\chaikaa.actor
+section.end
+
+
+// mission units
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = mistrader
+   LODActorFileName = .\data\actors\units\mistrader.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = misdonkey
+   LODActorFileName = .\data\actors\units\misdonkey.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = misgeneral
+   LODActorFileName = .\data\actors\units\misgeneral.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = misflagman
+   LODActorFileName = .\data\actors\units\misflagman.actor
+section.end
+
+// misc
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = box
+   LODActorFileName = .\data\actors\misc\box.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = point
+   LODActorFileName = .\data\actors\misc\point.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = box_calign
+   LODActorFileName = .\data\actors\misc\box_calign.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = sphere
+   LODActorFileName = .\data\actors\misc\sphere.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = testroof
+   LODActorFileName = .\data\actors\misc\testroof.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = rallypoint
+   LODActorFileName = .\data\actors\misc\rallypoint.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = movearrow
+   LODActorFileName = .\data\actors\misc\movearrow.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = ptborder
+   LODActorFileName = .\data\actors\misc\ptborder.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = ptborderwater
+   LODActorFileName = .\data\actors\misc\ptborderwater.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = balloon
+   LODActorFileName = .\data\actors\misc\balloon.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = balloona
+   LODActorFileName = .\data\actors\misc\balloona.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = bui
+   LODActorFileName = .\data\actors\misc\bui.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = misarrowdown
+   LODActorFileName = .\data\actors\misc\misarrowdown.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = misattention
+   LODActorFileName = .\data\actors\misc\misattention.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = misflag
+   LODActorFileName = .\data\actors\misc\misflag.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = miscircle
+   LODActorFileName = .\data\actors\misc\miscircle.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = misround
+   LODActorFileName = .\data\actors\misc\misround.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = miscrown
+   LODActorFileName = .\data\actors\misc\miscrown.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = misshield
+   LODActorFileName = .\data\actors\misc\misshield.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = miscrown2
+   LODActorFileName = .\data\actors\misc\miscrown2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=misc}
+   LODActorName = misshield2
+   LODActorFileName = .\data\actors\misc\misshield2.actor
+section.end
+// env
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = terrainmesh1
+   LODActorFileName = .\data\actors\env\terrainmesh1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = terrainmesh2
+   LODActorFileName = .\data\actors\env\terrainmesh2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = terrainmesh3
+   LODActorFileName = .\data\actors\env\terrainmesh3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = terrainmesh4
+   LODActorFileName = .\data\actors\env\terrainmesh4.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = terrainplateau1
+   LODActorFileName = .\data\actors\env\terrainplateau1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = terrainplateau2
+   LODActorFileName = .\data\actors\env\terrainplateau2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = terrainplateau3
+   LODActorFileName = .\data\actors\env\terrainplateau3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = terrainplateau4
+   LODActorFileName = .\data\actors\env\terrainplateau4.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = stones
+   LODActorFileName = .\data\actors\env\stones.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = smallstones
+   LODActorFileName = .\data\actors\env\smallstones.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = rocks
+   LODActorFileName = .\data\actors\env\rocks.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = field
+   LODActorFileName = .\data\actors\env\field.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = minegold
+   LODActorFileName = .\data\actors\env\minegold.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = mineiron
+   LODActorFileName = .\data\actors\env\mineiron.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = minecoal
+   LODActorFileName = .\data\actors\env\minecoal.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = landstone
+   LODActorFileName = .\data\actors\env\landstone.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = rocksea
+   LODActorFileName = .\data\actors\env\rocksea.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = stonessea
+   LODActorFileName = .\data\actors\env\stonessea.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = smallstonessea
+   LODActorFileName = .\data\actors\env\smallstonessea.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = reed
+   LODActorFileName = .\data\actors\env\reed.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = lily
+   LODActorFileName = .\data\actors\env\lily.actor
+section.end
+
+// decor
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = ivy
+   LODActorFileName = .\data\actors\env\ivy.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = burdock
+   LODActorFileName = .\data\actors\env\burdock.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = horseradish
+   LODActorFileName = .\data\actors\env\horseradish.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = grass
+   LODActorFileName = .\data\actors\env\grass.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = plant
+   LODActorFileName = .\data\actors\env\plant.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = chamomile
+   LODActorFileName = .\data\actors\env\chamomile.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = grasschamomile
+   LODActorFileName = .\data\actors\env\grasschamomile.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = plantain
+   LODActorFileName = .\data\actors\env\plantain.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = flowers
+   LODActorFileName = .\data\actors\env\flowers.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = decortree1
+   LODActorFileName = .\data\actors\env\decortree1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = decortree2
+   LODActorFileName = .\data\actors\env\decortree2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = decortree3
+   LODActorFileName = .\data\actors\env\decortree3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = trolley2
+   LODActorFileName = .\data\actors\env\trolley2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = trolley1
+   LODActorFileName = .\data\actors\env\trolley1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = stall2
+   LODActorFileName = .\data\actors\env\stall2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = stall1
+   LODActorFileName = .\data\actors\env\stall1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = smallcart4
+   LODActorFileName = .\data\actors\env\smallcart4.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = smallcart3
+   LODActorFileName = .\data\actors\env\smallcart3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = smallcart2
+   LODActorFileName = .\data\actors\env\smallcart2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = smallcart1
+   LODActorFileName = .\data\actors\env\smallcart1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = pitchers2
+   LODActorFileName = .\data\actors\env\pitchers2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = pitchers1
+   LODActorFileName = .\data\actors\env\pitchers1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = ladder2
+   LODActorFileName = .\data\actors\env\ladder2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = ladder1
+   LODActorFileName = .\data\actors\env\ladder1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = hay
+   LODActorFileName = .\data\actors\env\hay.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = fence2
+   LODActorFileName = .\data\actors\env\fence2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = fence1
+   LODActorFileName = .\data\actors\env\fence1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = coal
+   LODActorFileName = .\data\actors\env\coal.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = cart5
+   LODActorFileName = .\data\actors\env\cart5.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = cart4
+   LODActorFileName = .\data\actors\env\cart4.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = cart3
+   LODActorFileName = .\data\actors\env\cart3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = cart2
+   LODActorFileName = .\data\actors\env\cart2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = cart1
+   LODActorFileName = .\data\actors\env\cart1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = barrel5
+   LODActorFileName = .\data\actors\env\barrel5.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = barrel4
+   LODActorFileName = .\data\actors\env\barrel4.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = barrel3
+   LODActorFileName = .\data\actors\env\barrel3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = barrel2
+   LODActorFileName = .\data\actors\env\barrel2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = barrel1
+   LODActorFileName = .\data\actors\env\barrel1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = bags4
+   LODActorFileName = .\data\actors\env\bags4.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = bags3
+   LODActorFileName = .\data\actors\env\bags3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = bags2
+   LODActorFileName = .\data\actors\env\bags2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = bags1
+   LODActorFileName = .\data\actors\env\bags1.actor
+section.end
+
+// decor with units material library
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = boat1
+   LODActorFileName = .\data\actors\env\boat1.actor
+   MaterialLibraryInterfaceName = units
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = boat2
+   LODActorFileName = .\data\actors\env\boat2.actor
+   MaterialLibraryInterfaceName = units
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = boat3
+   LODActorFileName = .\data\actors\env\boat3.actor
+   MaterialLibraryInterfaceName = units
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = boat4
+   LODActorFileName = .\data\actors\env\boat4.actor
+   MaterialLibraryInterfaceName = units
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = boat5
+   LODActorFileName = .\data\actors\env\boat5.actor
+   MaterialLibraryInterfaceName = units
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = shipwreck1
+   LODActorFileName = .\data\actors\env\shipwreck1.actor
+   MaterialLibraryInterfaceName = units
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = shipwreck2
+   LODActorFileName = .\data\actors\env\shipwreck2.actor
+   MaterialLibraryInterfaceName = units
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = shipwreck3
+   LODActorFileName = .\data\actors\env\shipwreck3.actor
+   MaterialLibraryInterfaceName = units
+section.end
+
+// tree
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = fir
+   LODActorFileName = .\data\actors\env\fir.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = palm
+   LODActorFileName = .\data\actors\env\palm.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = palmsmall
+   LODActorFileName = .\data\actors\env\palmsmall.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = firsmall
+   LODActorFileName = .\data\actors\env\firsmall.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = pine
+   LODActorFileName = .\data\actors\env\pine.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = pinesmall
+   LODActorFileName = .\data\actors\env\pinesmall.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = pinebroken
+   LODActorFileName = .\data\actors\env\pinebroken.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = pinebrokenmoss
+   LODActorFileName = .\data\actors\env\pinebrokenmoss.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = spruce
+   LODActorFileName = .\data\actors\env\spruce.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = pinedry
+   LODActorFileName = .\data\actors\env\pinedry.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = drytree
+   LODActorFileName = .\data\actors\env\drytree.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = fern
+   LODActorFileName = .\data\actors\env\fern.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = bushes
+   LODActorFileName = .\data\actors\env\bushes.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = drybushes
+   LODActorFileName = .\data\actors\env\drybushes.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = pinestump
+   LODActorFileName = .\data\actors\env\pinestump.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = burch
+   LODActorFileName = .\data\actors\env\burch.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = burchbroken
+   LODActorFileName = .\data\actors\env\burchbroken.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = burchsmall
+   LODActorFileName = .\data\actors\env\burchsmall.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = burchstump
+   LODActorFileName = .\data\actors\env\burchstump.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = leaftree
+   LODActorFileName = .\data\actors\env\leaftree.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = grassforest
+   LODActorFileName = .\data\actors\env\grassforest.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = grassleafforest
+   LODActorFileName = .\data\actors\env\grassleafforest.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = oak
+   LODActorFileName = .\data\actors\env\oak.actor
+section.end
+
+// attaches
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = cossackdon_horse
+   LODActorFileName = .\data\actors\units\attach\cossackdon_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = cossackregister_horse
+   LODActorFileName = .\data\actors\units\attach\cossackregister_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = cossacksich_horse
+   LODActorFileName = .\data\actors\units\attach\cossacksich_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = croat_horse
+   LODActorFileName = .\data\actors\units\attach\croat_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = cuirassier_horse
+   LODActorFileName = .\data\actors\units\attach\cuirassier_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = dragoon_horse
+   LODActorFileName = .\data\actors\units\attach\dragoon_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = dragoon18_horse
+   LODActorFileName = .\data\actors\units\attach\dragoon18_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = dragoon18fra_horse
+   LODActorFileName = .\data\actors\units\attach\dragoon18fra_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = hetman_horse
+   LODActorFileName = .\data\actors\units\attach\hetman_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = hussar_horse
+   LODActorFileName = .\data\actors\units\attach\hussar_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = hussarpru_horse
+   LODActorFileName = .\data\actors\units\attach\hussarpru_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = kingmusketeer_horse
+   LODActorFileName = .\data\actors\units\attach\kingmusketeer_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = mameluke_horse
+   LODActorFileName = .\data\actors\units\attach\mameluke_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = peaaus_tools
+   LODActorFileName = .\data\actors\units\attach\peaaus_tools.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = peaeng_tools
+   LODActorFileName = .\data\actors\units\attach\peaeng_tools.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = peapol_tools
+   LODActorFileName = .\data\actors\units\attach\peapol_tools.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = pearus_tools
+   LODActorFileName = .\data\actors\units\attach\pearus_tools.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = peaspa_tools
+   LODActorFileName = .\data\actors\units\attach\peaspa_tools.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = peatur_tools
+   LODActorFileName = .\data\actors\units\attach\peatur_tools.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = peaukr_tools
+   LODActorFileName = .\data\actors\units\attach\peaukr_tools.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = reiter_horse
+   LODActorFileName = .\data\actors\units\attach\reiter_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = reiterpol_horse
+   LODActorFileName = .\data\actors\units\attach\reiterpol_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = reiterswe_horse
+   LODActorFileName = .\data\actors\units\attach\reiterswe_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = spakh_horse
+   LODActorFileName = .\data\actors\units\attach\spakh_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = tatar_horse
+   LODActorFileName = .\data\actors\units\attach\tatar_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = vityaz_horse
+   LODActorFileName = .\data\actors\units\attach\vityaz_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = wingedhussar_horse
+   LODActorFileName = .\data\actors\units\attach\wingedhussar_horse.actor 
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = lightcavalry_horse
+   LODActorFileName = .\data\actors\units\attach\lightcavalry_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = dragoonpol_horse
+   LODActorFileName = .\data\actors\units\attach\dragoonpol_horse.actor
+section.end
+
+// building attaches
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = algcena
+   LODActorFileName = .\data\actors\buildings\alg\attach\algcena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = alghoua
+   LODActorFileName = .\data\actors\buildings\alg\attach\alghoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ausacaa
+   LODActorFileName = .\data\actors\buildings\aus\attach\ausacaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ausarta
+   LODActorFileName = .\data\actors\buildings\aus\attach\ausarta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ausba2a
+   LODActorFileName = .\data\actors\buildings\aus\attach\ausba2a.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ausbara
+   LODActorFileName = .\data\actors\buildings\aus\attach\ausbara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ausblaa
+   LODActorFileName = .\data\actors\buildings\aus\attach\ausblaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = auscena
+   LODActorFileName = .\data\actors\buildings\aus\attach\auscena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ausdipa
+   LODActorFileName = .\data\actors\buildings\aus\attach\ausdipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = aushoua
+   LODActorFileName = .\data\actors\buildings\aus\attach\aushoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ausstaa
+   LODActorFileName = .\data\actors\buildings\aus\attach\ausstaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = austema
+   LODActorFileName = .\data\actors\buildings\aus\attach\austema.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurcoaa
+   LODActorFileName = .\data\actors\buildings\commoneur\attach\eurcoaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurgola
+   LODActorFileName = .\data\actors\buildings\commoneur\attach\eurgola.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = euriroa
+   LODActorFileName = .\data\actors\buildings\commoneur\attach\euriroa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurmara
+   LODActorFileName = .\data\actors\buildings\commoneur\attach\eurmara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurmila
+   LODActorFileName = .\data\actors\buildings\commoneur\attach\eurmila.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurpora
+   LODActorFileName = .\data\actors\buildings\commoneur\attach\eurpora.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eursgaa
+   LODActorFileName = .\data\actors\buildings\commoneur\attach\eursgaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurstoa
+   LODActorFileName = .\data\actors\buildings\commoneur\attach\eurstoa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurswaa
+   LODActorFileName = .\data\actors\buildings\commoneur\attach\eurswaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurtowa
+   LODActorFileName = .\data\actors\buildings\commoneur\attach\eurtowa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurwgaa
+   LODActorFileName = .\data\actors\buildings\commoneur\attach\eurwgaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurwwaa
+   LODActorFileName = .\data\actors\buildings\commoneur\attach\eurwwaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusmara
+   LODActorFileName = .\data\actors\buildings\commonrus\attach\rusmara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusmila
+   LODActorFileName = .\data\actors\buildings\commonrus\attach\rusmila.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ruspora
+   LODActorFileName = .\data\actors\buildings\commonrus\attach\ruspora.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = russtoa
+   LODActorFileName = .\data\actors\buildings\commonrus\attach\russtoa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rustowa
+   LODActorFileName = .\data\actors\buildings\commonrus\attach\rustowa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turmara
+   LODActorFileName = .\data\actors\buildings\commontur\attach\turmara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turmila
+   LODActorFileName = .\data\actors\buildings\commontur\attach\turmila.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turpora
+   LODActorFileName = .\data\actors\buildings\commontur\attach\turpora.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turstoa
+   LODActorFileName = .\data\actors\buildings\commontur\attach\turstoa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turtowa
+   LODActorFileName = .\data\actors\buildings\commontur\attach\turtowa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = engacaa
+   LODActorFileName = .\data\actors\buildings\eng\attach\engacaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = engarta
+   LODActorFileName = .\data\actors\buildings\eng\attach\engarta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = engba2a
+   LODActorFileName = .\data\actors\buildings\eng\attach\engba2a.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = engbara
+   LODActorFileName = .\data\actors\buildings\eng\attach\engbara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = engblaa
+   LODActorFileName = .\data\actors\buildings\eng\attach\engblaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = engcena
+   LODActorFileName = .\data\actors\buildings\eng\attach\engcena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = engdipa
+   LODActorFileName = .\data\actors\buildings\eng\attach\engdipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = enghoua
+   LODActorFileName = .\data\actors\buildings\eng\attach\enghoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = engstaa
+   LODActorFileName = .\data\actors\buildings\eng\attach\engstaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = engtema
+   LODActorFileName = .\data\actors\buildings\eng\attach\engtema.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = fraacaa
+   LODActorFileName = .\data\actors\buildings\fra\attach\fraacaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = fraarta
+   LODActorFileName = .\data\actors\buildings\fra\attach\fraarta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = fraba2a
+   LODActorFileName = .\data\actors\buildings\fra\attach\fraba2a.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = frabara
+   LODActorFileName = .\data\actors\buildings\fra\attach\frabara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = frablaa
+   LODActorFileName = .\data\actors\buildings\fra\attach\frablaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = fracena
+   LODActorFileName = .\data\actors\buildings\fra\attach\fracena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = fradipa
+   LODActorFileName = .\data\actors\buildings\fra\attach\fradipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = frahoua
+   LODActorFileName = .\data\actors\buildings\fra\attach\frahoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = frastaa
+   LODActorFileName = .\data\actors\buildings\fra\attach\frastaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = fratema
+   LODActorFileName = .\data\actors\buildings\fra\attach\fratema.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = polacaa
+   LODActorFileName = .\data\actors\buildings\pol\attach\polacaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = polarta
+   LODActorFileName = .\data\actors\buildings\pol\attach\polarta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = polba2a
+   LODActorFileName = .\data\actors\buildings\pol\attach\polba2a.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = polbara
+   LODActorFileName = .\data\actors\buildings\pol\attach\polbara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = polblaa
+   LODActorFileName = .\data\actors\buildings\pol\attach\polblaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = polcena
+   LODActorFileName = .\data\actors\buildings\pol\attach\polcena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = poldipa
+   LODActorFileName = .\data\actors\buildings\pol\attach\poldipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = polhoua
+   LODActorFileName = .\data\actors\buildings\pol\attach\polhoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = polstaa
+   LODActorFileName = .\data\actors\buildings\pol\attach\polstaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = poltema
+   LODActorFileName = .\data\actors\buildings\pol\attach\poltema.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = pruacaa
+   LODActorFileName = .\data\actors\buildings\pru\attach\pruacaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = pruarta
+   LODActorFileName = .\data\actors\buildings\pru\attach\pruarta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = pruba2a
+   LODActorFileName = .\data\actors\buildings\pru\attach\pruba2a.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = prubara
+   LODActorFileName = .\data\actors\buildings\pru\attach\prubara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = prublaa
+   LODActorFileName = .\data\actors\buildings\pru\attach\prublaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = prucena
+   LODActorFileName = .\data\actors\buildings\pru\attach\prucena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = prudipa
+   LODActorFileName = .\data\actors\buildings\pru\attach\prudipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = pruhoua
+   LODActorFileName = .\data\actors\buildings\pru\attach\pruhoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = prustaa
+   LODActorFileName = .\data\actors\buildings\pru\attach\prustaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = prutema
+   LODActorFileName = .\data\actors\buildings\pru\attach\prutema.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusacaa
+   LODActorFileName = .\data\actors\buildings\rus\attach\rusacaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusarta
+   LODActorFileName = .\data\actors\buildings\rus\attach\rusarta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusba2a
+   LODActorFileName = .\data\actors\buildings\rus\attach\rusba2a.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusbara
+   LODActorFileName = .\data\actors\buildings\rus\attach\rusbara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusblaa
+   LODActorFileName = .\data\actors\buildings\rus\attach\rusblaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ruscena
+   LODActorFileName = .\data\actors\buildings\rus\attach\ruscena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusdipa
+   LODActorFileName = .\data\actors\buildings\rus\attach\rusdipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rushoua
+   LODActorFileName = .\data\actors\buildings\rus\attach\rushoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = russtaa
+   LODActorFileName = .\data\actors\buildings\rus\attach\russtaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rustema
+   LODActorFileName = .\data\actors\buildings\rus\attach\rustema.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spaacaa
+   LODActorFileName = .\data\actors\buildings\spa\attach\spaacaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spaarta
+   LODActorFileName = .\data\actors\buildings\spa\attach\spaarta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spaba2a
+   LODActorFileName = .\data\actors\buildings\spa\attach\spaba2a.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spabara
+   LODActorFileName = .\data\actors\buildings\spa\attach\spabara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spablaa
+   LODActorFileName = .\data\actors\buildings\spa\attach\spablaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spacena
+   LODActorFileName = .\data\actors\buildings\spa\attach\spacena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spadipa
+   LODActorFileName = .\data\actors\buildings\spa\attach\spadipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spahoua
+   LODActorFileName = .\data\actors\buildings\spa\attach\spahoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spastaa
+   LODActorFileName = .\data\actors\buildings\spa\attach\spastaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spatema
+   LODActorFileName = .\data\actors\buildings\spa\attach\spatema.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = sweacaa
+   LODActorFileName = .\data\actors\buildings\swe\attach\sweacaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swearta
+   LODActorFileName = .\data\actors\buildings\swe\attach\swearta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = sweba2a
+   LODActorFileName = .\data\actors\buildings\swe\attach\sweba2a.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swebara
+   LODActorFileName = .\data\actors\buildings\swe\attach\swebara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = sweblaa
+   LODActorFileName = .\data\actors\buildings\swe\attach\sweblaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swecena
+   LODActorFileName = .\data\actors\buildings\swe\attach\swecena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swedipa
+   LODActorFileName = .\data\actors\buildings\swe\attach\swedipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swehoua
+   LODActorFileName = .\data\actors\buildings\swe\attach\swehoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swestaa
+   LODActorFileName = .\data\actors\buildings\swe\attach\swestaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swetema
+   LODActorFileName = .\data\actors\buildings\swe\attach\swetema.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turacaa
+   LODActorFileName = .\data\actors\buildings\tur\attach\turacaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turarta
+   LODActorFileName = .\data\actors\buildings\tur\attach\turarta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turbara
+   LODActorFileName = .\data\actors\buildings\tur\attach\turbara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turblaa
+   LODActorFileName = .\data\actors\buildings\tur\attach\turblaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turcena
+   LODActorFileName = .\data\actors\buildings\tur\attach\turcena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turdipa
+   LODActorFileName = .\data\actors\buildings\tur\attach\turdipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turhoua
+   LODActorFileName = .\data\actors\buildings\tur\attach\turhoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turstaa
+   LODActorFileName = .\data\actors\buildings\tur\attach\turstaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turtema
+   LODActorFileName = .\data\actors\buildings\tur\attach\turtema.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukracaa
+   LODActorFileName = .\data\actors\buildings\ukr\attach\ukracaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrarta
+   LODActorFileName = .\data\actors\buildings\ukr\attach\ukrarta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrbara
+   LODActorFileName = .\data\actors\buildings\ukr\attach\ukrbara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrblaa
+   LODActorFileName = .\data\actors\buildings\ukr\attach\ukrblaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrcena
+   LODActorFileName = .\data\actors\buildings\ukr\attach\ukrcena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrdipa
+   LODActorFileName = .\data\actors\buildings\ukr\attach\ukrdipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrhoua
+   LODActorFileName = .\data\actors\buildings\ukr\attach\ukrhoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrstaa
+   LODActorFileName = .\data\actors\buildings\ukr\attach\ukrstaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrtema
+   LODActorFileName = .\data\actors\buildings\ukr\attach\ukrtema.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = venacaa
+   LODActorFileName = .\data\actors\buildings\ven\attach\venacaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = venarta
+   LODActorFileName = .\data\actors\buildings\ven\attach\venarta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = venba2a
+   LODActorFileName = .\data\actors\buildings\ven\attach\venba2a.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = venbara
+   LODActorFileName = .\data\actors\buildings\ven\attach\venbara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = venblaa
+   LODActorFileName = .\data\actors\buildings\ven\attach\venblaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = vencena
+   LODActorFileName = .\data\actors\buildings\ven\attach\vencena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = vendipa
+   LODActorFileName = .\data\actors\buildings\ven\attach\vendipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = venhoua
+   LODActorFileName = .\data\actors\buildings\ven\attach\venhoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = venstaa
+   LODActorFileName = .\data\actors\buildings\ven\attach\venstaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ventema
+   LODActorFileName = .\data\actors\buildings\ven\attach\ventema.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrpora
+   LODActorFileName = .\data\actors\buildings\ukr\attach\ukrpora.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spastoa
+   LODActorFileName = .\data\actors\buildings\spa\attach\spastoa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spamara
+   LODActorFileName = .\data\actors\buildings\spa\attach\spamara.actor
+section.end
+
+// animated building attaches
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusmilanim
+   LODActorFileName = .\data\actors\buildings\commonrus\attach\rusmilanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ausblaanim
+   LODActorFileName = .\data\actors\buildings\aus\attach\ausblaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ausdipanim
+   LODActorFileName = .\data\actors\buildings\aus\attach\ausdipanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ausbaranim
+   LODActorFileName = .\data\actors\buildings\aus\attach\ausbaranim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = engblaanim
+   LODActorFileName = .\data\actors\buildings\eng\attach\engblaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurcoaanim
+   LODActorFileName = .\data\actors\buildings\commoneur\attach\eurcoaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurgolanim
+   LODActorFileName = .\data\actors\buildings\commoneur\attach\eurgolanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurmilanim
+   LODActorFileName = .\data\actors\buildings\commoneur\attach\eurmilanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurtowanim
+   LODActorFileName = .\data\actors\buildings\commoneur\attach\eurtowanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = polbaranim
+   LODActorFileName = .\data\actors\buildings\pol\attach\polbaranim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = polblaanim
+   LODActorFileName = .\data\actors\buildings\pol\attach\polblaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = poldipanim
+   LODActorFileName = .\data\actors\buildings\pol\attach\poldipanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = prublaanim
+   LODActorFileName = .\data\actors\buildings\pru\attach\prublaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = prustaanim
+   LODActorFileName = .\data\actors\buildings\pru\attach\prustaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = prudipanim
+   LODActorFileName = .\data\actors\buildings\pru\attach\prudipanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = prubaranim
+   LODActorFileName = .\data\actors\buildings\pru\attach\prubaranim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusblaanim
+   LODActorFileName = .\data\actors\buildings\rus\attach\rusblaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusdipanim
+   LODActorFileName = .\data\actors\buildings\rus\attach\rusdipanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rustowanim
+   LODActorFileName = .\data\actors\buildings\commonrus\attach\rustowanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spablaanim
+   LODActorFileName = .\data\actors\buildings\spa\attach\spablaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = sweblaanim
+   LODActorFileName = .\data\actors\buildings\swe\attach\sweblaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swedipanim
+   LODActorFileName = .\data\actors\buildings\swe\attach\swedipanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrblaanim
+   LODActorFileName = .\data\actors\buildings\ukr\attach\ukrblaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = venblaanim
+   LODActorFileName = .\data\actors\buildings\ven\attach\venblaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = vendipanim
+   LODActorFileName = .\data\actors\buildings\ven\attach\vendipanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = spadipanim
+   LODActorFileName = .\data\actors\buildings\spa\attach\spadipanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = fradipanim
+   LODActorFileName = .\data\actors\buildings\fra\attach\fradipanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = engdipanim
+   LODActorFileName = .\data\actors\buildings\eng\attach\engdipanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrdipanim
+   LODActorFileName = .\data\actors\buildings\ukr\attach\ukrdipanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = misblganim
+   LODActorFileName = .\data\actors\buildings\mis\attach\misblganim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = miscommandcenteranim
+   LODActorFileName = .\data\actors\buildings\mis\attach\miscommandcenteranim.actor
+section.end
+
+// specific attaches
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = fishnet
+   LODActorFileName = .\data\actors\buildings\commoneur\attach\fishnet.actor
+section.end
+
+// pfx
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = debris_stone
+   LODActorFileName = .\data\actors\pfx\debris\debris_stone.actor
+   MaterialLibraryInterfaceName = buildings
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = debris_wood
+   LODActorFileName = .\data\actors\pfx\debris\debris_wood.actor
+   MaterialLibraryInterfaceName = buildings
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = explbuilding1
+   LODActorFileName = .\data\actors\pfx\explosion\explbuilding1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = explbuilding2
+   LODActorFileName = .\data\actors\pfx\explosion\explbuilding2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = explbuilding3
+   LODActorFileName = .\data\actors\pfx\explosion\explbuilding3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = explbuilding4
+   LODActorFileName = .\data\actors\pfx\explosion\explbuilding4.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = explcannon1
+   LODActorFileName = .\data\actors\pfx\explosion\explcannon1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = explcannon2
+   LODActorFileName = .\data\actors\pfx\explosion\explcannon2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = explcannon3
+   LODActorFileName = .\data\actors\pfx\explosion\explcannon3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = explcannon4
+   LODActorFileName = .\data\actors\pfx\explosion\explcannon4.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = explcannon5
+   LODActorFileName = .\data\actors\pfx\explosion\explcannon5.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = explcannon6
+   LODActorFileName = .\data\actors\pfx\explosion\explcannon6.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = explcannon7
+   LODActorFileName = .\data\actors\pfx\explosion\explcannon7.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = explcannon8
+   LODActorFileName = .\data\actors\pfx\explosion\explcannon8.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = explgrenade1
+   LODActorFileName = .\data\actors\pfx\explosion\explgrenade1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = explgrenade2
+   LODActorFileName = .\data\actors\pfx\explosion\explgrenade2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = explgrenade3
+   LODActorFileName = .\data\actors\pfx\explosion\explgrenade3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = explgrenade4
+   LODActorFileName = .\data\actors\pfx\explosion\explgrenade4.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = buildfire1
+   LODActorFileName = .\data\actors\pfx\fire\buildfire1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = buildfire1_birth
+   LODActorFileName = .\data\actors\pfx\fire\buildfire1_birth.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = buildfire2
+   LODActorFileName = .\data\actors\pfx\fire\buildfire2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = buildfire2_birth
+   LODActorFileName = .\data\actors\pfx\fire\buildfire2_birth.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = buildfire3
+   LODActorFileName = .\data\actors\pfx\fire\buildfire3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = buildfire3_birth
+   LODActorFileName = .\data\actors\pfx\fire\buildfire3_birth.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = buildsmoke1
+   LODActorFileName = .\data\actors\pfx\fire\buildsmoke1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = buildsmoke1_birth
+   LODActorFileName = .\data\actors\pfx\fire\buildsmoke1_birth.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = buildsmoke2
+   LODActorFileName = .\data\actors\pfx\fire\buildsmoke2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = buildsmoke2_birth
+   LODActorFileName = .\data\actors\pfx\fire\buildsmoke2_birth.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = buildsmoke3
+   LODActorFileName = .\data\actors\pfx\fire\buildsmoke3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = buildsmoke3_birth
+   LODActorFileName = .\data\actors\pfx\fire\buildsmoke3_birth.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = impdust1
+   LODActorFileName = .\data\actors\pfx\impact\impdust1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = impdust2
+   LODActorFileName = .\data\actors\pfx\impact\impdust2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = impdust3
+   LODActorFileName = .\data\actors\pfx\impact\impdust3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = impwaterlarge1
+   LODActorFileName = .\data\actors\pfx\impact\impwaterlarge1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = impwaterlarge2
+   LODActorFileName = .\data\actors\pfx\impact\impwaterlarge2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = impwaterlarge3
+   LODActorFileName = .\data\actors\pfx\impact\impwaterlarge3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = impwatersmall1
+   LODActorFileName = .\data\actors\pfx\impact\impwatersmall1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = impwatersmall2
+   LODActorFileName = .\data\actors\pfx\impact\impwatersmall2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = impwatersmall3
+   LODActorFileName = .\data\actors\pfx\impact\impwatersmall3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = projarrow
+   LODActorFileName = .\data\actors\pfx\projectile\projarrow.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = projcannonball
+   LODActorFileName = .\data\actors\pfx\projectile\projcannonball.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = projgrenade
+   LODActorFileName = .\data\actors\pfx\projectile\projgrenade.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = projhowitzerball
+   LODActorFileName = .\data\actors\pfx\projectile\projhowitzerball.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = projhowitzerballfragment
+   LODActorFileName = .\data\actors\pfx\projectile\projhowitzerballfragment.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = projmortarball
+   LODActorFileName = .\data\actors\pfx\projectile\projmortarball.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = shotcannon1
+   LODActorFileName = .\data\actors\pfx\shot\shotcannon1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = shotcannon2
+   LODActorFileName = .\data\actors\pfx\shot\shotcannon2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = shotcannon3
+   LODActorFileName = .\data\actors\pfx\shot\shotcannon3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = shotmortar1
+   LODActorFileName = .\data\actors\pfx\shot\shotmortar1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = shotmortar2
+   LODActorFileName = .\data\actors\pfx\shot\shotmortar2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = shotmortar3
+   LODActorFileName = .\data\actors\pfx\shot\shotmortar3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = shotmusket1
+   LODActorFileName = .\data\actors\pfx\shot\shotmusket1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = shotmusket2
+   LODActorFileName = .\data\actors\pfx\shot\shotmusket2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = shotmusket3
+   LODActorFileName = .\data\actors\pfx\shot\shotmusket3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = trailcannonball1
+   LODActorFileName = .\data\actors\pfx\trail\trailcannonball1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = trailcannonball2
+   LODActorFileName = .\data\actors\pfx\trail\trailcannonball2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = trailcannonball3
+   LODActorFileName = .\data\actors\pfx\trail\trailcannonball3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = trailfire1
+   LODActorFileName = .\data\actors\pfx\trail\trailfire1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = trailfire2
+   LODActorFileName = .\data\actors\pfx\trail\trailfire2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=pfx}
+   LODActorName = trailfire3
+   LODActorFileName = .\data\actors\pfx\trail\trailfire3.actor
+section.end
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = misblg
+   LODActorFileName = .\data\actors\buildings\mis\misblg.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = misbridge1
+   LODActorFileName = .\data\actors\buildings\mis\misbridge1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = misbridge2
+   LODActorFileName = .\data\actors\buildings\mis\misbridge2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = misbridge3
+   LODActorFileName = .\data\actors\buildings\mis\misbridge3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = misbridge4
+   LODActorFileName = .\data\actors\buildings\mis\misbridge4.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = miscauldron
+   LODActorFileName = .\data\actors\buildings\mis\miscauldron.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = mischest1
+   LODActorFileName = .\data\actors\buildings\mis\mischest1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = mischest2
+   LODActorFileName = .\data\actors\buildings\mis\mischest2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = miscommandcenter
+   LODActorFileName = .\data\actors\buildings\mis\miscommandcenter.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = mistent
+   LODActorFileName = .\data\actors\buildings\mis\mistent.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = miswel1
+   LODActorFileName = .\data\actors\buildings\mis\miswel1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = miswel2
+   LODActorFileName = .\data\actors\buildings\mis\miswel2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = miswel3
+   LODActorFileName = .\data\actors\buildings\mis\miswel3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = misyurt
+   LODActorFileName = .\data\actors\buildings\mis\misyurt.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = misdecor1
+   LODActorFileName = .\data\actors\buildings\mis\misdecor1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = misdecor2
+   LODActorFileName = .\data\actors\buildings\mis\misdecor2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = misdecor3
+   LODActorFileName = .\data\actors\buildings\mis\misdecor3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = misdecor4
+   LODActorFileName = .\data\actors\buildings\mis\misdecor4.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = misdecor5
+   LODActorFileName = .\data\actors\buildings\mis\misdecor5.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = misdecor6
+   LODActorFileName = .\data\actors\buildings\mis\misdecor6.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = misdecor7
+   LODActorFileName = .\data\actors\buildings\mis\misdecor7.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = misdecor8
+   LODActorFileName = .\data\actors\buildings\mis\misdecor8.actor
+section.end
+
+//ship attaches-2
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = battleship_flag1
+   LODActorFileName = .\data\actors\units\attach\battleship_flag1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = battleship_flag2
+   LODActorFileName = .\data\actors\units\attach\battleship_flag2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = battleship_flag3
+   LODActorFileName = .\data\actors\units\attach\battleship_flag3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = battleship_flag4
+   LODActorFileName = .\data\actors\units\attach\battleship_flag4.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = battleship_sail
+   LODActorFileName = .\data\actors\units\attach\battleship_sail.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = chaika_sail
+   LODActorFileName = .\data\actors\units\attach\chaika_sail.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = chaika_paddle_l
+   LODActorFileName = .\data\actors\units\attach\chaika_paddle_l.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = chaika_paddle_r
+   LODActorFileName = .\data\actors\units\attach\chaika_paddle_r.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = chaika_flag1
+   LODActorFileName = .\data\actors\units\attach\chaika_flag1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = chaika_flag2
+   LODActorFileName = .\data\actors\units\attach\chaika_flag2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = ferry_paddle_l
+   LODActorFileName = .\data\actors\units\attach\ferry_paddle_l.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = ferry_ladder
+   LODActorFileName = .\data\actors\units\attach\ferry_ladder.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = ferry_paddle_r
+   LODActorFileName = .\data\actors\units\attach\ferry_paddle_r.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = ferry_sail
+   LODActorFileName = .\data\actors\units\attach\ferry_sail.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = fishboat_paddle_l
+   LODActorFileName = .\data\actors\units\attach\fishboat_paddle_l.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = fishboat_paddle_r
+   LODActorFileName = .\data\actors\units\attach\fishboat_paddle_r.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = fishboat_sail
+   LODActorFileName = .\data\actors\units\attach\fishboat_sail.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = frigate_flag1
+   LODActorFileName = .\data\actors\units\attach\frigate_flag1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = frigate_flag2
+   LODActorFileName = .\data\actors\units\attach\frigate_flag2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = frigate_flag3
+   LODActorFileName = .\data\actors\units\attach\frigate_flag3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = frigate_flag4
+   LODActorFileName = .\data\actors\units\attach\frigate_flag4.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = frigate_sail
+   LODActorFileName = .\data\actors\units\attach\frigate_sail.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = galley_flag1
+   LODActorFileName = .\data\actors\units\attach\galley_flag1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = galley_flag2
+   LODActorFileName = .\data\actors\units\attach\galley_flag2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = galley_flag3
+   LODActorFileName = .\data\actors\units\attach\galley_flag3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = galley_flag4
+   LODActorFileName = .\data\actors\units\attach\galley_flag4.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = galley_sail
+   LODActorFileName = .\data\actors\units\attach\galley_sail.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = galley_paddle_l
+   LODActorFileName = .\data\actors\units\attach\galley_paddle_l.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = galley_paddle_r
+   LODActorFileName = .\data\actors\units\attach\galley_paddle_r.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = xebec_flag1
+   LODActorFileName = .\data\actors\units\attach\xebec_flag1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = xebec_flag2
+   LODActorFileName = .\data\actors\units\attach\xebec_flag2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = xebec_flag3
+   LODActorFileName = .\data\actors\units\attach\xebec_flag3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = xebec_sail
+   LODActorFileName = .\data\actors\units\attach\xebec_sail.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = yacht_flag1
+   LODActorFileName = .\data\actors\units\attach\yacht_flag1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = yacht_flag2
+   LODActorFileName = .\data\actors\units\attach\yacht_flag2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = yacht_sail
+   LODActorFileName = .\data\actors\units\attach\yacht_sail.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = yachttur_sail
+   LODActorFileName = .\data\actors\units\attach\yachttur_sail.actor
+section.end
+//wall gates doors:
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurdoor45
+   LODActorFileName = .\data\actors\buildings\commonrus\attach\eurdoor45.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = eurdoor
+   LODActorFileName = .\data\actors\buildings\commonrus\attach\eurdoor.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusdoor
+   LODActorFileName = .\data\actors\buildings\commonrus\attach\rusdoor.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rusdoor45
+   LODActorFileName = .\data\actors\buildings\commonrus\attach\rusdoor45.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turdoor
+   LODActorFileName = .\data\actors\buildings\commonrus\attach\turdoor.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = turdoor45
+   LODActorFileName = .\data\actors\buildings\commonrus\attach\turdoor45.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrdoor
+   LODActorFileName = .\data\actors\buildings\commonrus\attach\ukrdoor.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = ukrdoor45
+   LODActorFileName = .\data\actors\buildings\commonrus\attach\ukrdoor45.actor
+section.end
+
+// special
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = pump
+   LODActorFileName = .\data\actors\env\pump.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = gift
+   LODActorFileName = .\data\actors\env\gift.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = christmastree
+   LODActorFileName = .\data\actors\env\christmastree.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = christmastreea
+   LODActorFileName = .\data\actors\env\christmastreea.actor
+section.end
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = desert1
+   LODActorFileName = .\data\actors\env\desert1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = desert2
+   LODActorFileName = .\data\actors\env\desert2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = desert3
+   LODActorFileName = .\data\actors\env\desert3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = desert4
+   LODActorFileName = .\data\actors\env\desert4.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = desert5
+   LODActorFileName = .\data\actors\env\desert5.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = desertstump
+   LODActorFileName = .\data\actors\env\desertstump.actor
+section.end
+
+// ******************************** ADDON START **********************************
+//dlc1 buildings
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = denaca
+   LODActorFileName = .\data\actors\buildings\den\denaca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = denart
+   LODActorFileName = .\data\actors\buildings\den\denart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = denba2
+   LODActorFileName = .\data\actors\buildings\den\denba2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = denbar
+   LODActorFileName = .\data\actors\buildings\den\denbar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = denbla
+   LODActorFileName = .\data\actors\buildings\den\denbla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = dencen
+   LODActorFileName = .\data\actors\buildings\den\dencen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = dendip
+   LODActorFileName = .\data\actors\buildings\den\dendip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = denhou
+   LODActorFileName = .\data\actors\buildings\den\denhou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = densta
+   LODActorFileName = .\data\actors\buildings\den\densta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = dentem
+   LODActorFileName = .\data\actors\buildings\den\dentem.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = netaca
+   LODActorFileName = .\data\actors\buildings\net\netaca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = netart
+   LODActorFileName = .\data\actors\buildings\net\netart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = netba2
+   LODActorFileName = .\data\actors\buildings\net\netba2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = netbar
+   LODActorFileName = .\data\actors\buildings\net\netbar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = netbla
+   LODActorFileName = .\data\actors\buildings\net\netbla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = netcen
+   LODActorFileName = .\data\actors\buildings\net\netcen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = netdip
+   LODActorFileName = .\data\actors\buildings\net\netdip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = nethou
+   LODActorFileName = .\data\actors\buildings\net\nethou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = netsta
+   LODActorFileName = .\data\actors\buildings\net\netsta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = nettem
+   LODActorFileName = .\data\actors\buildings\net\nettem.actor
+section.end
+
+// attaches
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = denacaa
+   LODActorFileName = .\data\actors\buildings\den\attach\denacaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = denarta
+   LODActorFileName = .\data\actors\buildings\den\attach\denarta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = denba2a
+   LODActorFileName = .\data\actors\buildings\den\attach\denba2a.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = denbara
+   LODActorFileName = .\data\actors\buildings\den\attach\denbara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = denblaa
+   LODActorFileName = .\data\actors\buildings\den\attach\denblaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = dencena
+   LODActorFileName = .\data\actors\buildings\den\attach\dencena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = dendipa
+   LODActorFileName = .\data\actors\buildings\den\attach\dendipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = denhoua
+   LODActorFileName = .\data\actors\buildings\den\attach\denhoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = denstaa
+   LODActorFileName = .\data\actors\buildings\den\attach\denstaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = dentema
+   LODActorFileName = .\data\actors\buildings\den\attach\dentema.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = netacaa
+   LODActorFileName = .\data\actors\buildings\net\attach\netacaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = netarta
+   LODActorFileName = .\data\actors\buildings\net\attach\netarta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = netba2a
+   LODActorFileName = .\data\actors\buildings\net\attach\netba2a.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = netbara
+   LODActorFileName = .\data\actors\buildings\net\attach\netbara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = netblaa
+   LODActorFileName = .\data\actors\buildings\net\attach\netblaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = netcena
+   LODActorFileName = .\data\actors\buildings\net\attach\netcena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = netdipa
+   LODActorFileName = .\data\actors\buildings\net\attach\netdipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = nethoua
+   LODActorFileName = .\data\actors\buildings\net\attach\nethoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = netstaa
+   LODActorFileName = .\data\actors\buildings\net\attach\netstaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = nettema
+   LODActorFileName = .\data\actors\buildings\net\attach\nettema.actor
+section.end
+
+// anim
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = denblaanim
+   LODActorFileName = .\data\actors\buildings\den\attach\denblaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = dendipanim
+   LODActorFileName = .\data\actors\buildings\den\attach\dendipanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = netblaanim
+   LODActorFileName = .\data\actors\buildings\net\attach\netblaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = netdipanim
+   LODActorFileName = .\data\actors\buildings\net\attach\netdipanim.actor
+section.end
+
+//dlc 2 buildings
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxaca
+   LODActorFileName = .\data\actors\buildings\sax\saxaca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxart
+   LODActorFileName = .\data\actors\buildings\sax\saxart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxba2
+   LODActorFileName = .\data\actors\buildings\sax\saxba2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxbar
+   LODActorFileName = .\data\actors\buildings\sax\saxbar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxbla
+   LODActorFileName = .\data\actors\buildings\sax\saxbla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxcen
+   LODActorFileName = .\data\actors\buildings\sax\saxcen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxdip
+   LODActorFileName = .\data\actors\buildings\sax\saxdip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxhou
+   LODActorFileName = .\data\actors\buildings\sax\saxhou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxsta
+   LODActorFileName = .\data\actors\buildings\sax\saxsta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxtem
+   LODActorFileName = .\data\actors\buildings\sax\saxtem.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavaca
+   LODActorFileName = .\data\actors\buildings\bav\bavaca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavart
+   LODActorFileName = .\data\actors\buildings\bav\bavart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavba2
+   LODActorFileName = .\data\actors\buildings\bav\bavba2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavbar
+   LODActorFileName = .\data\actors\buildings\bav\bavbar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavbla
+   LODActorFileName = .\data\actors\buildings\bav\bavbla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavcen
+   LODActorFileName = .\data\actors\buildings\bav\bavcen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavdip
+   LODActorFileName = .\data\actors\buildings\bav\bavdip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavhou
+   LODActorFileName = .\data\actors\buildings\bav\bavhou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavsta
+   LODActorFileName = .\data\actors\buildings\bav\bavsta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavtem
+   LODActorFileName = .\data\actors\buildings\bav\bavtem.actor
+section.end
+
+// attaches
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxacaa
+   LODActorFileName = .\data\actors\buildings\sax\attach\saxacaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxarta
+   LODActorFileName = .\data\actors\buildings\sax\attach\saxarta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxba2a
+   LODActorFileName = .\data\actors\buildings\sax\attach\saxba2a.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxbara
+   LODActorFileName = .\data\actors\buildings\sax\attach\saxbara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxblaa
+   LODActorFileName = .\data\actors\buildings\sax\attach\saxblaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxcena
+   LODActorFileName = .\data\actors\buildings\sax\attach\saxcena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxdipa
+   LODActorFileName = .\data\actors\buildings\sax\attach\saxdipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxhoua
+   LODActorFileName = .\data\actors\buildings\sax\attach\saxhoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxstaa
+   LODActorFileName = .\data\actors\buildings\sax\attach\saxstaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxtema
+   LODActorFileName = .\data\actors\buildings\sax\attach\saxtema.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavacaa
+   LODActorFileName = .\data\actors\buildings\bav\attach\bavacaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavarta
+   LODActorFileName = .\data\actors\buildings\bav\attach\bavarta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavba2a
+   LODActorFileName = .\data\actors\buildings\bav\attach\bavba2a.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavbara
+   LODActorFileName = .\data\actors\buildings\bav\attach\bavbara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavblaa
+   LODActorFileName = .\data\actors\buildings\bav\attach\bavblaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavcena
+   LODActorFileName = .\data\actors\buildings\bav\attach\bavcena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavdipa
+   LODActorFileName = .\data\actors\buildings\bav\attach\bavdipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavhoua
+   LODActorFileName = .\data\actors\buildings\bav\attach\bavhoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavstaa
+   LODActorFileName = .\data\actors\buildings\bav\attach\bavstaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavtema
+   LODActorFileName = .\data\actors\buildings\bav\attach\bavtema.actor
+section.end
+
+// anim
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxblaanim
+   LODActorFileName = .\data\actors\buildings\sax\attach\saxblaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = saxdipanim
+   LODActorFileName = .\data\actors\buildings\sax\attach\saxdipanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavblaanim
+   LODActorFileName = .\data\actors\buildings\bav\attach\bavblaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = bavdipanim
+   LODActorFileName = .\data\actors\buildings\bav\attach\bavdipanim.actor
+section.end
+
+//exp 1 buildings
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scoaca
+   LODActorFileName = .\data\actors\buildings\sco\scoaca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scoart
+   LODActorFileName = .\data\actors\buildings\sco\scoart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scoba2
+   LODActorFileName = .\data\actors\buildings\sco\scoba2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scobar
+   LODActorFileName = .\data\actors\buildings\sco\scobar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scobla
+   LODActorFileName = .\data\actors\buildings\sco\scobla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scocen
+   LODActorFileName = .\data\actors\buildings\sco\scocen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scodip
+   LODActorFileName = .\data\actors\buildings\sco\scodip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scohou
+   LODActorFileName = .\data\actors\buildings\sco\scohou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scosta
+   LODActorFileName = .\data\actors\buildings\sco\scosta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scotem
+   LODActorFileName = .\data\actors\buildings\sco\scotem.actor
+section.end
+
+// attaches
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scoacaa
+   LODActorFileName = .\data\actors\buildings\sco\attach\scoacaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scoarta
+   LODActorFileName = .\data\actors\buildings\sco\attach\scoarta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scoba2a
+   LODActorFileName = .\data\actors\buildings\sco\attach\scoba2a.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scobara
+   LODActorFileName = .\data\actors\buildings\sco\attach\scobara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scoblaa
+   LODActorFileName = .\data\actors\buildings\sco\attach\scoblaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scocena
+   LODActorFileName = .\data\actors\buildings\sco\attach\scocena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scodipa
+   LODActorFileName = .\data\actors\buildings\sco\attach\scodipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scohoua
+   LODActorFileName = .\data\actors\buildings\sco\attach\scohoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scostaa
+   LODActorFileName = .\data\actors\buildings\sco\attach\scostaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scotema
+   LODActorFileName = .\data\actors\buildings\sco\attach\scotema.actor
+section.end
+
+// anim
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scoblaanim
+   LODActorFileName = .\data\actors\buildings\sco\attach\scoblaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = scodipanim
+   LODActorFileName = .\data\actors\buildings\sco\attach\scodipanim.actor
+section.end
+
+//dlc 3 buildings
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = hunaca
+   LODActorFileName = .\data\actors\buildings\hun\hunaca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = hunart
+   LODActorFileName = .\data\actors\buildings\hun\hunart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = hunba2
+   LODActorFileName = .\data\actors\buildings\hun\hunba2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = hunbar
+   LODActorFileName = .\data\actors\buildings\hun\hunbar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = hunbla
+   LODActorFileName = .\data\actors\buildings\hun\hunbla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = huncen
+   LODActorFileName = .\data\actors\buildings\hun\huncen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = hundip
+   LODActorFileName = .\data\actors\buildings\hun\hundip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = hunhou
+   LODActorFileName = .\data\actors\buildings\hun\hunhou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = hunsta
+   LODActorFileName = .\data\actors\buildings\hun\hunsta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = huntem
+   LODActorFileName = .\data\actors\buildings\hun\huntem.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = poraca
+   LODActorFileName = .\data\actors\buildings\por\poraca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = porart
+   LODActorFileName = .\data\actors\buildings\por\porart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = porba2
+   LODActorFileName = .\data\actors\buildings\por\porba2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = porbar
+   LODActorFileName = .\data\actors\buildings\por\porbar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = porbla
+   LODActorFileName = .\data\actors\buildings\por\porbla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = porcen
+   LODActorFileName = .\data\actors\buildings\por\porcen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = pordip
+   LODActorFileName = .\data\actors\buildings\por\pordip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = porhou
+   LODActorFileName = .\data\actors\buildings\por\porhou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = porsta
+   LODActorFileName = .\data\actors\buildings\por\porsta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = portem
+   LODActorFileName = .\data\actors\buildings\por\portem.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = porpor
+   LODActorFileName = .\data\actors\buildings\por\porpor.actor
+section.end
+
+// attaches
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = hunacaa
+   LODActorFileName = .\data\actors\buildings\hun\attach\hunacaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = hunarta
+   LODActorFileName = .\data\actors\buildings\hun\attach\hunarta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = hunba2a
+   LODActorFileName = .\data\actors\buildings\hun\attach\hunba2a.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = hunbara
+   LODActorFileName = .\data\actors\buildings\hun\attach\hunbara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = hunblaa
+   LODActorFileName = .\data\actors\buildings\hun\attach\hunblaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = huncena
+   LODActorFileName = .\data\actors\buildings\hun\attach\huncena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = hundipa
+   LODActorFileName = .\data\actors\buildings\hun\attach\hundipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = hunhoua
+   LODActorFileName = .\data\actors\buildings\hun\attach\hunhoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = hunstaa
+   LODActorFileName = .\data\actors\buildings\hun\attach\hunstaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = huntema
+   LODActorFileName = .\data\actors\buildings\hun\attach\huntema.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = poracaa
+   LODActorFileName = .\data\actors\buildings\por\attach\poracaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = porarta
+   LODActorFileName = .\data\actors\buildings\por\attach\porarta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = porba2a
+   LODActorFileName = .\data\actors\buildings\por\attach\porba2a.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = porbara
+   LODActorFileName = .\data\actors\buildings\por\attach\porbara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = porblaa
+   LODActorFileName = .\data\actors\buildings\por\attach\porblaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = porcena
+   LODActorFileName = .\data\actors\buildings\por\attach\porcena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = pordipa
+   LODActorFileName = .\data\actors\buildings\por\attach\pordipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = porhoua
+   LODActorFileName = .\data\actors\buildings\por\attach\porhoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = porstaa
+   LODActorFileName = .\data\actors\buildings\por\attach\porstaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = portema
+   LODActorFileName = .\data\actors\buildings\por\attach\portema.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = porpora
+   LODActorFileName = .\data\actors\buildings\por\attach\porpora.actor
+section.end
+
+// anim
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = hunblaanim
+   LODActorFileName = .\data\actors\buildings\hun\attach\hunblaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = hundipanim
+   LODActorFileName = .\data\actors\buildings\hun\attach\hundipanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = porblaanim
+   LODActorFileName = .\data\actors\buildings\por\attach\porblaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = pordipanim
+   LODActorFileName = .\data\actors\buildings\por\attach\pordipanim.actor
+section.end
+
+//dlc4 buildings
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swiaca
+   LODActorFileName = .\data\actors\buildings\swi\swiaca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swiart
+   LODActorFileName = .\data\actors\buildings\swi\swiart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swiba2
+   LODActorFileName = .\data\actors\buildings\swi\swiba2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swibar
+   LODActorFileName = .\data\actors\buildings\swi\swibar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swibla
+   LODActorFileName = .\data\actors\buildings\swi\swibla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swicen
+   LODActorFileName = .\data\actors\buildings\swi\swicen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swidip
+   LODActorFileName = .\data\actors\buildings\swi\swidip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swihou
+   LODActorFileName = .\data\actors\buildings\swi\swihou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swista
+   LODActorFileName = .\data\actors\buildings\swi\swista.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = switem
+   LODActorFileName = .\data\actors\buildings\swi\switem.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = pieaca
+   LODActorFileName = .\data\actors\buildings\pie\pieaca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = pieart
+   LODActorFileName = .\data\actors\buildings\pie\pieart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = pieba2
+   LODActorFileName = .\data\actors\buildings\pie\pieba2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = piebar
+   LODActorFileName = .\data\actors\buildings\pie\piebar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = piebla
+   LODActorFileName = .\data\actors\buildings\pie\piebla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = piecen
+   LODActorFileName = .\data\actors\buildings\pie\piecen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = piedip
+   LODActorFileName = .\data\actors\buildings\pie\piedip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = piehou
+   LODActorFileName = .\data\actors\buildings\pie\piehou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = piesta
+   LODActorFileName = .\data\actors\buildings\pie\piesta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = pietem
+   LODActorFileName = .\data\actors\buildings\pie\pietem.actor
+section.end
+
+// attaches
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swiacaa
+   LODActorFileName = .\data\actors\buildings\swi\attach\swiacaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swiarta
+   LODActorFileName = .\data\actors\buildings\swi\attach\swiarta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swiba2a
+   LODActorFileName = .\data\actors\buildings\swi\attach\swiba2a.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swibara
+   LODActorFileName = .\data\actors\buildings\swi\attach\swibara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swiblaa
+   LODActorFileName = .\data\actors\buildings\swi\attach\swiblaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swicena
+   LODActorFileName = .\data\actors\buildings\swi\attach\swicena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swidipa
+   LODActorFileName = .\data\actors\buildings\swi\attach\swidipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swihoua
+   LODActorFileName = .\data\actors\buildings\swi\attach\swihoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swistaa
+   LODActorFileName = .\data\actors\buildings\swi\attach\swistaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = switema
+   LODActorFileName = .\data\actors\buildings\swi\attach\switema.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = pieacaa
+   LODActorFileName = .\data\actors\buildings\pie\attach\pieacaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = piearta
+   LODActorFileName = .\data\actors\buildings\pie\attach\piearta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = pieba2a
+   LODActorFileName = .\data\actors\buildings\pie\attach\pieba2a.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = piebara
+   LODActorFileName = .\data\actors\buildings\pie\attach\piebara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = pieblaa
+   LODActorFileName = .\data\actors\buildings\pie\attach\pieblaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = piecena
+   LODActorFileName = .\data\actors\buildings\pie\attach\piecena.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = piedipa
+   LODActorFileName = .\data\actors\buildings\pie\attach\piedipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = piehoua
+   LODActorFileName = .\data\actors\buildings\pie\attach\piehoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = piestaa
+   LODActorFileName = .\data\actors\buildings\pie\attach\piestaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = pietema
+   LODActorFileName = .\data\actors\buildings\pie\attach\pietema.actor
+section.end
+
+// anim
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swiblaanim
+   LODActorFileName = .\data\actors\buildings\swi\attach\swiblaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = swidipanim
+   LODActorFileName = .\data\actors\buildings\swi\attach\swidipanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = pieblaanim
+   LODActorFileName = .\data\actors\buildings\pie\attach\pieblaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = piedipanim
+   LODActorFileName = .\data\actors\buildings\pie\attach\piedipanim.actor
+section.end
+
+//dlc 1 units
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = dragoon18net
+   LODActorFileName = .\data\actors\units\dragoon18net.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = grenadierden
+   LODActorFileName = .\data\actors\units\grenadierden.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = musketeer18den
+   LODActorFileName = .\data\actors\units\musketeer18den.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = musketeernet
+   LODActorFileName = .\data\actors\units\musketeernet.actor
+section.end
+
+// attaches
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = dragoon18net_horse
+   LODActorFileName = .\data\actors\units\attach\dragoon18net_horse.actor
+section.end
+
+//dlc 2 units
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = hackapell
+   LODActorFileName = .\data\actors\units\hackapell.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = grenadierpru
+   LODActorFileName = .\data\actors\units\grenadierpru.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = musketeer18sax
+   LODActorFileName = .\data\actors\units\musketeer18sax.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = grenadiersax
+   LODActorFileName = .\data\actors\units\grenadiersax.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = guardcavalrysax
+   LODActorFileName = .\data\actors\units\guardcavalrysax.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = musketeer18bav
+   LODActorFileName = .\data\actors\units\musketeer18bav.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = grenadierbav
+   LODActorFileName = .\data\actors\units\grenadierbav.actor
+section.end
+
+// attaches
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = hackapell_horse
+   LODActorFileName = .\data\actors\units\attach\hackapell_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = guardcavalrysax_horse
+   LODActorFileName = .\data\actors\units\attach\guardcavalrysax_horse.actor
+section.end
+
+//exp 1 units
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = archersco
+   LODActorFileName = .\data\actors\units\archersco.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = lancersco
+   LODActorFileName = .\data\actors\units\lancersco.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = musketeersco
+   LODActorFileName = .\data\actors\units\musketeersco.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = officersco
+   LODActorFileName = .\data\actors\units\officersco.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = peasco
+   LODActorFileName = .\data\actors\units\peasco.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = pikemansco
+   LODActorFileName = .\data\actors\units\pikemansco.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = raidersco
+   LODActorFileName = .\data\actors\units\raidersco.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = swordsmansco
+   LODActorFileName = .\data\actors\units\swordsmansco.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = framegun
+   LODActorFileName = .\data\actors\units\framegun.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = framegun_death
+   LODActorFileName = .\data\actors\units\framegun_death.actor
+section.end
+
+// attaches
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = peasco_tools
+   LODActorFileName = .\data\actors\units\attach\peasco_tools.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = lancersco_horse
+   LODActorFileName = .\data\actors\units\attach\lancersco_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = raidersco_horse
+   LODActorFileName = .\data\actors\units\attach\raidersco_horse.actor
+section.end
+
+//dlc 3 units
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = pikemanspa
+   LODActorFileName = .\data\actors\units\pikemanspa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = pikemanpor
+   LODActorFileName = .\data\actors\units\pikemanpor.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = jagerpor
+   LODActorFileName = .\data\actors\units\jagerpor.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = gauduk
+   LODActorFileName = .\data\actors\units\gauduk.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = pandurhun
+   LODActorFileName = .\data\actors\units\pandurhun.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = grenadierhun
+   LODActorFileName = .\data\actors\units\grenadierhun.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = hussarhun
+   LODActorFileName = .\data\actors\units\hussarhun.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = sipahi
+   LODActorFileName = .\data\actors\units\sipahi.actor
+section.end
+
+// attaches
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = hussarhun_horse
+   LODActorFileName = .\data\actors\units\attach\hussarhun_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = sipahi_horse
+   LODActorFileName = .\data\actors\units\attach\sipahi_horse.actor
+section.end
+
+//dlc 4 units
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = pikemanswi
+   LODActorFileName = .\data\actors\units\pikemanswi.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = jagerswi
+   LODActorFileName = .\data\actors\units\jagerswi.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = hussarswi
+   LODActorFileName = .\data\actors\units\hussarswi.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = dragoon18pie
+   LODActorFileName = .\data\actors\units\dragoon18pie.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = padre
+   LODActorFileName = .\data\actors\units\padre.actor
+section.end
+
+// attaches
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = dragoon18pie_horse
+   LODActorFileName = .\data\actors\units\attach\dragoon18pie_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = hussarswi_horse
+   LODActorFileName = .\data\actors\units\attach\hussarswi_horse.actor
+section.end 
+
+// ******************************** ADDON FINISH *********************************
+
+// ******************************** MOD START ************************************
+// ******************************** MOD TREES ************************************
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = cypress
+   LODActorFileName = .\data\actors\env\trees\cypress\cypress.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = cypress.alt
+   LODActorFileName = .\data\actors\env\trees\cypress_alt\cypress.alt.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = chamae.cypress
+   LODActorFileName = .\data\actors\env\trees\cypress_false\chamae.cypress.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = beech
+   LODActorFileName = .\data\actors\env\trees\beech\beech.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = birch
+   LODActorFileName = .\data\actors\env\trees\birch\birch.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = dry.tree
+   LODActorFileName = .\data\actors\env\trees\dry_tree\dry.tree.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = maple
+   LODActorFileName = .\data\actors\env\trees\maple\maple.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = oak.new
+   LODActorFileName = .\data\actors\env\trees\oak_new\oak.new.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = oak.bushes1
+   LODActorFileName = .\data\actors\env\trees\oak_bushes\oak.bushes.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = olive
+   LODActorFileName = .\data\actors\env\trees\olive\olive.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = poplar
+   LODActorFileName = .\data\actors\env\trees\poplar\poplar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = willow
+   LODActorFileName = .\data\actors\env\trees\willow\willow.actor
+section.end
+// ******************************** MOD DECO ************************************
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = cabbage
+   LODActorFileName = .\data\actors\env\deco\cabbage\cabbage.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = calluna
+   LODActorFileName = .\data\actors\env\deco\calluna\calluna.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = cornflower
+   LODActorFileName = .\data\actors\env\deco\cornflower\cornflower.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = poppy
+   LODActorFileName = .\data\actors\env\deco\poppy\poppy.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = vineyard
+   LODActorFileName = .\data\actors\env\deco\vineyard\vineyard.actor
+section.end
+// ******************************** MOD EDITORBUILDINGS***************************
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = mill
+   LODActorFileName = .\data\actors\env\editorbuildings\mill.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = farmhouse1
+   LODActorFileName = .\data\actors\env\editorbuildings\farmhouse1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = farmhouse2
+   LODActorFileName = .\data\actors\env\editorbuildings\farmhouse2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = farmhouse3
+   LODActorFileName = .\data\actors\env\editorbuildings\farmhouse3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = farmhouse4
+   LODActorFileName = .\data\actors\env\editorbuildings\farmhouse4.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = farmhouse5
+   LODActorFileName = .\data\actors\env\editorbuildings\farmhouse5.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = farmhouse6
+   LODActorFileName = .\data\actors\env\editorbuildings\farmhouse6.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = rubbledhouse1
+   LODActorFileName = .\data\actors\env\editorbuildings\rubbledhouse1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = rubbledhouse2
+   LODActorFileName = .\data\actors\env\editorbuildings\rubbledhouse2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = rubbledhouse3
+   LODActorFileName = .\data\actors\env\editorbuildings\rubbledhouse3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = rubbledhouse4
+   LODActorFileName = .\data\actors\env\editorbuildings\rubbledhouse4.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = rubbledhouse5
+   LODActorFileName = .\data\actors\env\editorbuildings\rubbledhouse5.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = rubbledhouse6
+   LODActorFileName = .\data\actors\env\editorbuildings\rubbledhouse6.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = fire
+   LODActorFileName = .\data\actors\env\editorbuildings\fire.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = grave1
+   LODActorFileName = .\data\actors\env\editorbuildings\grave1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = grave2
+   LODActorFileName = .\data\actors\env\editorbuildings\grave2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = grave3
+   LODActorFileName = .\data\actors\env\editorbuildings\grave3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = grave4
+   LODActorFileName = .\data\actors\env\editorbuildings\grave4.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = grave5
+   LODActorFileName = .\data\actors\env\editorbuildings\grave5.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = grave6
+   LODActorFileName = .\data\actors\env\editorbuildings\grave6.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = grave7
+   LODActorFileName = .\data\actors\env\editorbuildings\grave7.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = hide
+   LODActorFileName = .\data\actors\env\editorbuildings\hide.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = barrels
+   LODActorFileName = .\data\actors\env\editorbuildings\barrels.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = cauldron
+   LODActorFileName = .\data\actors\env\editorbuildings\cauldron.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = chest1
+   LODActorFileName = .\data\actors\env\editorbuildings\chest1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = chest2
+   LODActorFileName = .\data\actors\env\editorbuildings\chest2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = crates1
+   LODActorFileName = .\data\actors\env\editorbuildings\crates1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = crates2
+   LODActorFileName = .\data\actors\env\editorbuildings\crates2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = crates3
+   LODActorFileName = .\data\actors\env\editorbuildings\crates3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = cattle.fence
+   LODActorFileName = .\data\actors\env\editorbuildings\cattle.fence.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = shed
+   LODActorFileName = .\data\actors\env\editorbuildings\shed.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = tent1
+   LODActorFileName = .\data\actors\env\editorbuildings\tent1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = tent2
+   LODActorFileName = .\data\actors\env\editorbuildings\tent2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = well1
+   LODActorFileName = .\data\actors\env\editorbuildings\well1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = well2
+   LODActorFileName = .\data\actors\env\editorbuildings\well2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = well3
+   LODActorFileName = .\data\actors\env\editorbuildings\well3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = woodfence
+   LODActorFileName = .\data\actors\env\editorbuildings\woodfence.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = fence3
+   LODActorFileName = .\data\actors\env\editorbuildings\fence3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = castle.aus
+   LODActorFileName = .\data\actors\env\editorbuildings\castle.aus.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = castle.aus.rubble
+   LODActorFileName = .\data\actors\env\editorbuildings\castle.aus.rubble.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = castle.bav
+   LODActorFileName = .\data\actors\env\editorbuildings\castle.bav.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = castle.bav.rubble
+   LODActorFileName = .\data\actors\env\editorbuildings\castle.bav.rubble.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = castle.eng
+   LODActorFileName = .\data\actors\env\editorbuildings\castle.eng.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = castle.eng.rubble
+   LODActorFileName = .\data\actors\env\editorbuildings\castle.eng.rubble.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = castle.net
+   LODActorFileName = .\data\actors\env\editorbuildings\castle.net.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = castle.net.rubble
+   LODActorFileName = .\data\actors\env\editorbuildings\castle.net.rubble.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = castle.swi
+   LODActorFileName = .\data\actors\env\editorbuildings\castle.swi.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = castle.swi.rubble
+   LODActorFileName = .\data\actors\env\editorbuildings\castle.swi.rubble.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = church.bav
+   LODActorFileName = .\data\actors\env\editorbuildings.urban\church.bav.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = church.bav.rubble
+   LODActorFileName = .\data\actors\env\editorbuildings.urban\church.bav.rubble.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = church.net
+   LODActorFileName = .\data\actors\env\editorbuildings.urban\church.net.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = church.net.rubble
+   LODActorFileName = .\data\actors\env\editorbuildings.urban\church.net.rubble.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = church.pru
+   LODActorFileName = .\data\actors\env\editorbuildings.urban\church.pru.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = church.pru.rubble
+   LODActorFileName = .\data\actors\env\editorbuildings.urban\church.pru.rubble.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = church.sco.1
+   LODActorFileName = .\data\actors\env\editorbuildings.urban\church.sco.1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = church.sco.1.rubble
+   LODActorFileName = .\data\actors\env\editorbuildings.urban\church.sco.1.rubble.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = church.sco.1.con
+   LODActorFileName = .\data\actors\env\editorbuildings.urban\church.sco.1.con.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = church.sco.2
+   LODActorFileName = .\data\actors\env\editorbuildings.urban\church.sco.2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = church.sco.2.rubble
+   LODActorFileName = .\data\actors\env\editorbuildings.urban\church.sco.2.rubble.actor
+section.end
+
+
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = rubble.1
+   LODActorFileName = .\data\actors\env\editorbuildings\rubble.1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = rubble.2
+   LODActorFileName = .\data\actors\env\editorbuildings\rubble.2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = rubble.3
+   LODActorFileName = .\data\actors\env\editorbuildings\rubble.3.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = scaffold.1
+   LODActorFileName = .\data\actors\env\editorbuildings\scaffold.1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = scaffold.2
+   LODActorFileName = .\data\actors\env\editorbuildings\scaffold.2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = scaffold.3
+   LODActorFileName = .\data\actors\env\editorbuildings\scaffold.3.actor
+section.end
+
+
+// ******************************** MOD ANIMALS *********************************
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = bear
+   LODActorFileName = .\data\actors\env\animals\bear\bear.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = bird
+   LODActorFileName = .\data\actors\env\animals\bird\bird.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = boar
+   LODActorFileName = .\data\actors\env\animals\boar\boar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = cow
+   LODActorFileName = .\data\actors\env\animals\cow\cow.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = crow.ground
+   LODActorFileName = .\data\actors\env\animals\crow\crow.ground.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = crow.flying
+   LODActorFileName = .\data\actors\env\animals\crow\crow.flying.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = deer
+   LODActorFileName = .\data\actors\env\animals\deer\deer.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = donkey
+   LODActorFileName = .\data\actors\env\animals\donkey\donkey.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = falcon
+   LODActorFileName = .\data\actors\env\animals\falcon\falcon.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = fox
+   LODActorFileName = .\data\actors\env\animals\fox\fox.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = goose
+   LODActorFileName = .\data\actors\env\animals\goose\goose.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = hen
+   LODActorFileName = .\data\actors\env\animals\hen\hen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = horse.1
+   LODActorFileName = .\data\actors\env\animals\horse\horse.1.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = horse.2
+   LODActorFileName = .\data\actors\env\animals\horse\horse.2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = pig
+   LODActorFileName = .\data\actors\env\animals\pig\pig.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = wild_pig
+   LODActorFileName = .\data\actors\env\animals\wild_pig\wild_pig.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = sheep
+   LODActorFileName = .\data\actors\env\animals\sheep\sheep.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = stork
+   LODActorFileName = .\data\actors\env\animals\stork\stork.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = wild_deer
+   LODActorFileName = .\data\actors\env\animals\wild_deer\wild_deer.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=env}
+   LODActorName = wolf
+   LODActorFileName = .\data\actors\env\animals\wolf\wolf.actor
+section.end

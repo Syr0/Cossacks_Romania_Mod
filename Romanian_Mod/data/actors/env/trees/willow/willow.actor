@@ -1,0 +1,30 @@
+//************************************* Willow Tree *******
+section.begin {refurl=.\data\actors\ref\reftree.actor}
+   AnimationMode = aamLoop
+   FrameInterpolation = afpNone
+   Reference = aarTransform
+   Animations.LoadFromFile = .\data\animations\aaf\trees\willow\willow.aaf
+   TransformationFrameList.LoadFromFile = .\data\tlf\trees\willow\willow.tlf
+   ActorList.Items[0].Name = willow.large.mesh
+   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\willow\willow.large\willow.large.1.osm
+   ActorList.Items[0].LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\willow\willow.large\willow.large.1.1.osm
+   ActorList.Items[0].LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\willow\willow.large\willow.large.1.2.osm
+   ActorList.Items[1] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = willow.medium.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\willow\willow.medium\willow.medium.1.osm
+      LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\willow\willow.medium\willow.medium.1.1.osm
+      LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\willow\willow.medium\willow.medium.1.2.osm
+   struct.end
+   ActorList.Items[2] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = willow.small.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\willow\willow.small\willow.small.1.osm
+      LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\willow\willow.small\willow.small.1.1.osm
+      LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\willow\willow.small\willow.small.1.2.osm
+   struct.end
+   ActorList.Items[3] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = willow.dead.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\willow\willow.dead\willow.dead.1.osm
+      LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\willow\willow.dead\willow.dead.1.1.osm
+      LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\willow\willow.dead\willow.dead.1.2.osm
+   struct.end
+section.end

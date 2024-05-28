@@ -1,0 +1,28 @@
+section.begin {refurl=.\data\actors\ref\reftree.actor}
+   ActorList.Items[0].Name = tent2.mesh
+   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\tent2.osm
+   ActorList.Items[*] : struct.begin {refurl=.\data\actors\ref\refbuilding.actor; refkey=.ActorList.Items[0]}
+      Name = tent2_1.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\tent2.osm
+   struct.end
+   ActorList.Items[*] : struct.begin {refurl=.\data\actors\ref\refbuilding.actor; refkey=.ActorList.Items[0]}
+      Name = tent2_2.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\tent2.osm
+   struct.end
+   ActorList.Items[*] : struct.begin {refurl=.\data\actors\ref\refbuilding.actor; refkey=.ActorList.Items[0]}
+      Name = tent2_3.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\tent2.osm
+   struct.end
+   ActorList.Items[*] : struct.begin {refurl=.\data\actors\ref\refbuilding.actor; refkey=.ActorList.Items[0]}
+      Name = tent2_4.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\tent2.osm
+   struct.end
+   ActorList.Items[*] : struct.begin {refurl=.\data\actors\ref\refbuilding.actor; refkey=.ActorList.Items[0]}
+      Name = tent2_death1.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\tent2.osm
+   struct.end
+   ActorList.Items[*] : struct.begin {refurl=.\data\actors\ref\refbuilding.actor; refkey=.ActorList.Items[0]}
+      Name = tent2_death2.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\tent2.osm
+   struct.end
+section.end

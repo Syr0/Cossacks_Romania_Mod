@@ -1,0 +1,12 @@
+section.begin {refurl=.\data\actors\ref\reftree.actor}
+   ActorList.Items[0].Name = woodfence.mesh
+   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\woodfence.osm
+   ActorList.Items[*] : struct.begin {refurl=.\data\actors\ref\refbuilding.actor; refkey=.ActorList.Items[0]}
+      Name = woodfence11.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\woodfence.osm
+   struct.end
+   ActorList.Items[*] : struct.begin {refurl=.\data\actors\ref\refbuilding.actor; refkey=.ActorList.Items[0]}
+      Name = woodfence12.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\woodfence.osm
+   struct.end
+section.end

@@ -1,0 +1,6 @@
+AAF
+4
+"idle1",0,20,morph
+"idle2",20,80,morph
+"walk",85,100,morph
+"run",101,110,morph

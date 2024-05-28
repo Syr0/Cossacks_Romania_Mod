@@ -1,0 +1,30 @@
+//************************************* Maple Tree *******
+section.begin {refurl=.\data\actors\ref\reftree.actor}
+   AnimationMode = aamLoop
+   FrameInterpolation = afpNone
+   Reference = aarTransform
+   Animations.LoadFromFile = .\data\animations\aaf\trees\maple\maple.aaf
+   TransformationFrameList.LoadFromFile = .\data\tlf\trees\maple\maple.tlf
+   ActorList.Items[0].Name = maple.large.mesh
+   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\maple\maple.large\maple.large.1.osm
+   ActorList.Items[0].LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\maple\maple.large\maple.large.1.1.osm
+   ActorList.Items[0].LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\maple\maple.large\maple.large.1.2.osm
+   ActorList.Items[1] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = maple.medium.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\maple\maple.medium\maple.medium.1.osm
+      LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\maple\maple.medium\maple.medium.1.1.osm
+      LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\maple\maple.medium\maple.medium.1.2.osm
+   struct.end
+   ActorList.Items[2] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = maple.small.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\maple\maple.small\maple.small.1.osm
+      LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\maple\maple.small\maple.small.1.1.osm
+      LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\maple\maple.small\maple.small.1.2.osm
+   struct.end
+   ActorList.Items[3] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = maple.dead.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\maple\maple.dead\maple.dead.1.osm
+      LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\maple\maple.dead\maple.dead.1.1.osm
+      LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\maple\maple.dead\maple.dead.1.2.osm
+   struct.end
+section.end

@@ -1,0 +1,5 @@
+//************************************* CastleBav  *******
+section.begin {refurl=.\data\actors\ref\reftree.actor}
+   ActorList.Items[0].Name = castle.bav.mesh
+   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\castle.bav.osm
+section.end

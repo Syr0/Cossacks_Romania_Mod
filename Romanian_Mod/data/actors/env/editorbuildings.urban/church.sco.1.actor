@@ -1,0 +1,5 @@
+//************************************* ChurchSco 1 (Aca) *******
+section.begin {refurl=.\data\actors\ref\reftree.actor}
+   ActorList.Items[0].Name = church.sco.1.mesh
+   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings.urban\church.sco.1.osm
+section.end

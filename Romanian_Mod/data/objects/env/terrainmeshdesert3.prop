@@ -1,0 +1,19 @@
+{refurl=.\data\objects\ref\refmountain.prop}
+
+mainproperty : section.begin {refurl=.\data\objects\ref\refmountain.prop; refkey=mainproperty}
+   CustomName = terrainmeshdesert3
+   BaseName = terrainmeshdesert3
+section.end
+
+actorproperty : section.begin {refurl=.\data\objects\ref\refmountain.prop; refkey=actorproperty}
+   LODActorName = terrainmesh3
+   DefaultMeshName = terrainmesh3.mesh
+section.end
+
+materialproperty : section.begin {refurl=.\data\objects\ref\refmountain.prop; refkey=materialproperty}
+   Mesh[0].DefaultMaterialName = terrainmeshdesert3
+   Mesh[0].UseableMaterials[0] = terrainmeshdesert3
+   Mesh[0].UseSeasonMaterial = True
+   Mesh[0].UseableSummerMaterials[0] = terrainmeshdesert3
+   Mesh[0].UseableWinterMaterials[0] = terrainmeshdesert3
+section.end
