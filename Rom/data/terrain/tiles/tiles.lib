@@ -1,0 +1,2046 @@
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass1
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass3
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass4
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass5
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass6
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass7
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass8
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass9
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass10
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = ground1
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_ground1
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_ground2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_ground3
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_rock1
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_sand1
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_sand2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand1
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand2
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand3
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand4
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand5
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand6
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand7
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand8
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand9
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock1
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock3
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock4
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock5
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock6
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock7
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock8
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock9
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock1vf
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock1vs
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock2vf
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock2vs
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock3vf
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock3vs
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock4vf
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock4vs
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock5vf
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock5vs
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock6vf
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock6vs
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock7vf
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock7vs
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock8vf
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock8vs
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock9vf
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock9vs
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand1f
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand1s
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand2f
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand2s
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand3f
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand3s
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand4f
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand4s
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand5f
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand5s
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand6f
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand6s
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand7f
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand7s
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand8f
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand8s
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand9f
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand9s
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test1
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test3
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test4
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test5
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test6
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test7
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test8
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test9
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test10
+   TileSize = 128
+   Rows = 16
+   Cols = 16
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test11
+   TileSize = 128
+   Rows = 32
+   Cols = 32
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test12
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test13
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test14
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = alpha0a
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock1
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock3
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock4
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock5
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock6
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea1
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea3
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea4
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea5
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea6
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test15
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test16
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test17
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test18
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test19
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test20
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test21
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test22
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test23
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test24
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = alpha0b
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert1
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert3
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert4
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert5
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert6
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert7
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert8
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert9
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert10
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert11
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert12
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = alpha0c
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = mud_rock_summer
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = mud_soil_summer
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = mud_summer
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road1_summer
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road2_summer
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road3_summer
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road4_summer
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road5_summer
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road6_summer
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = tillage1_summer
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = tillage2_summer
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = tillage2_v_summer
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = tillage2_d_summer
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = undergrowth_summer
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = undergrowth2_summer
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass1_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass2_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass3_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass4_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass5_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass6_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass7_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass8_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass9_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass10_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = ground1_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_ground1_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_ground2_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_ground3_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_rock1_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_sand1_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_sand2_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand1_winter
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand2_winter
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand3_winter
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand4_winter
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand5_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand6_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand7_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand8_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand9_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock1_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock2_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock3_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock4_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock5_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock6_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock7_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock8_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock9_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock1vf_winter
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock1vs_winter
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock2vf_winter
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock2vs_winter
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock3vf_winter
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock3vs_winter
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock4vf_winter
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock4vs_winter
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock5vf_winter
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock5vs_winter
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock6vf_winter
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock6vs_winter
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock7vf_winter
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock7vs_winter
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock8vf_winter
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock8vs_winter
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock9vf_winter
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock9vs_winter
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand1f_winter
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand1s_winter
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand2f_winter
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand2s_winter
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand3f_winter
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand3s_winter
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand4f_winter
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand4s_winter
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand5f_winter
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand5s_winter
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand6f_winter
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand6s_winter
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand7f_winter
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand7s_winter
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand8f_winter
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand8s_winter
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand9f_winter
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand9s_winter
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test0_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test1_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test2_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test3_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test4_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test5_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test6_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test7_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test8_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test9_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test10_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test11_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test12_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test13_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test14_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock1_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock2_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock3_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock4_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock5_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock6_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea1_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea2_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea3_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea4_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea5_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea6_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test15_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test16_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test17_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test18_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test19_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test20_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test21_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test22_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test23_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test24_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test25_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert1_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert2_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert3_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert4_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert5_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert6_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert7_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert8_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert9_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert10_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert11_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert12_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = mud_rock_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = mud_soil_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = mud_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road1_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road2_winter
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road3_winter
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road4_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road5_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road6_winter
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = tillage1_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = tillage2_winter
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = tillage2_v_winter
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = tillage2_d_winter
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = undergrowth_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = undergrowth2_winter
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass1_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass2_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass3_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass4_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass5_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass6_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass7_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass8_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass9_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass10_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = ground1_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_ground1_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_ground2_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_ground3_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_rock1_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_sand1_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_sand2_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand1_autumn
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand2_autumn
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand3_autumn
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand4_autumn
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand5_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand6_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand7_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand8_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand9_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock1_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock2_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock3_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock4_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock5_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock6_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock7_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock8_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock9_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock1vf_autumn
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock1vs_autumn
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock2vf_autumn
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock2vs_autumn
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock3vf_autumn
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock3vs_autumn
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock4vf_autumn
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock4vs_autumn
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock5vf_autumn
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock5vs_autumn
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock6vf_autumn
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock6vs_autumn
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock7vf_autumn
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock7vs_autumn
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock8vf_autumn
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock8vs_autumn
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock9vf_autumn
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock9vs_autumn
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand1f_autumn
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand1s_autumn
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand2f_autumn
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand2s_autumn
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand3f_autumn
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand3s_autumn
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand4f_autumn
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand4s_autumn
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand5f_autumn
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand5s_autumn
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand6f_autumn
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand6s_autumn
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand7f_autumn
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand7s_autumn
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand8f_autumn
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand8s_autumn
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand9f_autumn
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand9s_autumn
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test0_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test1_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test2_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test3_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test4_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test5_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test6_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test7_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test8_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test9_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test10_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test11_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test12_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test13_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test14_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock1_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock2_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock3_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock4_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock5_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock6_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea1_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea2_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea3_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea4_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea5_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea6_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test15_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test16_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test17_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test18_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test19_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test20_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test21_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test22_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test23_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test24_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test25_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert1_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert2_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert3_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert4_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert5_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert6_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert7_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert8_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert9_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert10_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert11_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert12_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = mud_rock_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = mud_soil_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = mud_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road1_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road2_autumn
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road3_autumn
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road4_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road5_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road6_autumn
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = tillage1_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = tillage2_autumn
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = tillage2_v_autumn
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = tillage2_d_autumn
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = undergrowth_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = undergrowth2_autumn
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass1_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass2_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass3_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass4_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass5_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass6_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass7_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass8_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass9_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass10_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = ground1_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_ground1_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_ground2_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_ground3_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_rock1_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_sand1_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = grass_sand2_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand1_spring
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand2_spring
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand3_spring
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand4_spring
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand5_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand6_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand7_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand8_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand9_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock1_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock2_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock3_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock4_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock5_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock6_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock7_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock8_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock9_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock1vf_spring
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock1vs_spring
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock2vf_spring
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock2vs_spring
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock3vf_spring
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock3vs_spring
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock4vf_spring
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock4vs_spring
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock5vf_spring
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock5vs_spring
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock6vf_spring
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock6vs_spring
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock7vf_spring
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock7vs_spring
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock8vf_spring
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock8vs_spring
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock9vf_spring
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = rock9vs_spring
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand1f_spring
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand1s_spring
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand2f_spring
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand2s_spring
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand3f_spring
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand3s_spring
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand4f_spring
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand4s_spring
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand5f_spring
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand5s_spring
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand6f_spring
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand6s_spring
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand7f_spring
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand7s_spring
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand8f_spring
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand8s_spring
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand9f_spring
+   AngleX = 0
+   AngleZ = 25
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sand9s_spring
+   AngleX = 25
+   AngleZ = 0
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test0_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test1_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test2_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test3_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test4_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test5_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test6_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test7_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test8_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test9_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test10_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test11_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test12_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test13_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test14_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock1_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock2_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock3_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock4_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock5_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandrock6_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea1_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea2_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea3_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea4_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea5_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = sandsea6_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test15_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test16_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test17_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test18_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test19_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test20_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test21_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test22_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test23_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test24_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = test25_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert1_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert2_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert3_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert4_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert5_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert6_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert7_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert8_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert9_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert10_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert11_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = desert12_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = mud_rock_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = mud_soil_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = mud_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road1_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road2_spring
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road3_spring
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road4_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road5_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = road6_spring
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = tillage1_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = tillage2_spring
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = tillage2_v_spring
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = tillage2_d_spring
+   TileSize = 64
+   Rows = 2
+   Cols = 2
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = undergrowth_spring
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.lib}
+   TileBlockName = undergrowth2_spring
+section.end

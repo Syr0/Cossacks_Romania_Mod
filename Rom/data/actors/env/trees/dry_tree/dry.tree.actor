@@ -1,0 +1,5 @@
+//************************************* Dry Tree  *******
+section.begin {refurl=.\data\actors\ref\refstone.actor}
+   ActorList.Items[0].Name = dry.tree
+   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\dry_tree\dry.tree.osm
+section.end

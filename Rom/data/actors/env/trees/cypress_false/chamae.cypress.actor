@@ -1,0 +1,30 @@
+//************************************* False Cypress (Cypress Chamae) *******
+section.begin {refurl=.\data\actors\ref\reftree.actor}
+   AnimationMode = aamLoop
+   FrameInterpolation = afpNone
+   Reference = aarTransform
+   Animations.LoadFromFile = .\data\animations\aaf\trees\cypress_false\chamae.cypress.aaf
+   TransformationFrameList.LoadFromFile = .\data\tlf\trees\cypress_false\chamae.cypress.tlf
+   ActorList.Items[0].Name = chamae.cypress.large.mesh
+   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress_false\chamae.cypress.large\chamae.cypress.large.1.osm
+   ActorList.Items[0].LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress_false\chamae.cypress.large\chamae.cypress.large.1.1.osm
+   ActorList.Items[0].LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress_false\chamae.cypress.large\chamae.cypress.large.1.2.osm
+   ActorList.Items[1] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = chamae.cypress.medium.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress_false\chamae.cypress.medium\chamae.cypress.medium.1.osm
+      LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress_false\chamae.cypress.medium\chamae.cypress.medium.1.1.osm
+      LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress_false\chamae.cypress.medium\chamae.cypress.medium.1.2.osm
+   struct.end
+   ActorList.Items[2] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = chamae.cypress.small.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress_false\chamae.cypress.small\chamae.cypress.small.1.osm
+      LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress_false\chamae.cypress.small\chamae.cypress.small.1.1.osm
+      LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress_false\chamae.cypress.small\chamae.cypress.small.1.2.osm
+   struct.end
+   ActorList.Items[3] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = chamae.cypress.dead.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress_false\chamae.cypress.dead\chamae.cypress.dead.1.osm
+      LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress_false\chamae.cypress.dead\chamae.cypress.dead.1.1.osm
+      LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\cypress_false\chamae.cypress.dead\chamae.cypress.dead.1.2.osm
+   struct.end
+section.end

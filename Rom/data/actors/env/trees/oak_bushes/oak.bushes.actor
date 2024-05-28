@@ -1,0 +1,48 @@
+//************************************* Oak Bushies *******
+section.begin {refurl=.\data\actors\ref\reftree.actor}
+   AnimationMode = aamLoop
+   FrameInterpolation = afpNone
+   Reference = aarTransform
+   Animations.LoadFromFile = .\data\animations\aaf\trees\oak.bushes\oak.bushes.aaf
+   TransformationFrameList.LoadFromFile = .\data\tlf\trees\oak.bushes\oak.bushes.tlf
+   ActorList.Items[0].Name = oak.bushes1.mesh
+   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes1\oak.bushes1.osm
+   ActorList.Items[0].LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes1\oak.bushes1.1.osm
+   ActorList.Items[0].LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes1\oak.bushes1.2.osm
+   ActorList.Items[1] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = oak.bushes2.medium.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes2\oak.bushes2.osm
+      LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes2\oak.bushes2.1.osm
+      LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes2\oak.bushes2.2.osm
+   struct.end
+   ActorList.Items[2] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = oak.bushes3.small.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes3\oak.bushes3.osm
+      LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes3\oak.bushes3.1.osm
+      LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes3\oak.bushes3.2.osm
+   struct.end
+   ActorList.Items[3] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = oak.bushes4.dead.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes4\oak.bushes4.osm
+      LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes4\oak.bushes4.1.osm
+      LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes4\oak.bushes4.2.osm
+   struct.end
+   ActorList.Items[4] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = oak.bushes5.dead.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes5\oak.bushes5.osm
+      LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes5\oak.bushes5.1.osm
+      LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes5\oak.bushes5.2.osm
+   struct.end
+   ActorList.Items[5] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = oak.bushes6.dead.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes6\oak.bushes6.osm
+      LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes6\oak.bushes6.1.osm
+      LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes6\oak.bushes6.2.osm
+   struct.end
+   ActorList.Items[6] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = oak.bushes7.dead.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes7\oak.bushes7.osm
+      LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes7\oak.bushes7.1.osm
+      LODList.Items[2].MeshObjects.LoadFromFile = .\data\actors\env\trees\oak_bushes\oak.bushes7\oak.bushes7.2.osm
+   struct.end
+section.end

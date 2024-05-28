@@ -1,0 +1,43 @@
+section.begin
+   Name = Initial
+   IgnoreScenarioRecord = False
+   Code : struct.begin
+      [*] = ;SetGameObjectMyStateTargetPosition(GetGameObjectMyPositionX,GetGameObjectMyPositionY,GetGameObjectMyPositionZ);
+      [*] = ;SetGameObjectMyVirtualDirection(0,-1,0);
+      [*] = ;SetGameObjectMyTrackPointMoveStep(0.11);
+      [*] = ;SetGameObjectMyEpsilonDistance(0.4);
+      [*] = ;SetGameObjectMyEpsilonAngle(0.98);
+      [*] = ;SetGameObjectMyTrackPointMovementMode('mmNone');
+      [*] = ;SetGameObjectMyTargetRotatingMode('trmNone');
+      [*] = ;SetGameObjectMyAnimationControlerEnabled(true);
+      [*] = ;SetGameObjectMyAnimationCyclesMode('acmLoop');
+      [*] = ;SetGameObjectMyAnimationMode('aamLoop');
+      [*] = ;SetGameObjectMyOnStateDistanceToPoint('', 0);
+      [*] = ;SetGameObjectMyTrackPointUseAnimationCycles(true);
+      [*] = ;
+      [*] = ;
+      [*] = ;SwitchTo('Nothing');
+   struct.end
+section.end
+
+section.begin
+   Name = Nothing
+section.end
+
+section.begin
+   Name = OnBeforeSave
+   Code[*] = ;SwitchTo('Nothing');
+section.end
+
+section.begin
+   Name = OnAfterLoad
+   Code : struct.begin
+      [*] = ;SwitchTo('Nothing');
+   struct.end
+section.end
+
+
+
+
+
+

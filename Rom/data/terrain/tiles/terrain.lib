@@ -1,0 +1,19 @@
+section.begin
+   Name = Default
+   Default = Summer
+  
+   TextureScale : struct.begin
+      X = 1
+      Y = 1
+      Z = 1
+      W = 1
+   struct.end
+  
+   seasons.Summer = Summer
+   seasons.Autumn = Autumn
+   seasons.Winter = Winter
+   seasons.Spring = Spring
+  
+   CoverDisabled=true
+section.end
+

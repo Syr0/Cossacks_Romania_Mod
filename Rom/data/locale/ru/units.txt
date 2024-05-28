@@ -1,0 +1,1396 @@
+	@NATIONS
+********************************Нации*********************************
+	@aus
+Австрия
+	@fra
+Франция
+	@eng
+Англия
+	@spa
+Испания
+	@rus
+Россия
+	@ukr
+Украина
+	@pol
+Польша
+	@swe
+Швеция
+	@pru
+Пруссия
+	@ven
+Венеция
+	@tur
+Турция
+	@alg
+Алжир
+	@por
+Португалия
+	@pie
+Пьемонт
+	@net
+Нидерланды
+	@den
+Дания
+	@sax
+Саксония
+	@bav
+Бавария
+	@sco
+Шотландия
+	@mis
+Уникальный
+	@hun
+Венгрия
+	@swi
+Швейцария
+	@*************Symbols************************
+	@def
+#151
+	@pos
+#151
+	@neg
+#151
+	@*************INCLUDES TEMPLATES*************
+
+	@descr.inf.sword
+%def%Пехотинец, вооруженный мечом.
+	@descr.inf.saber
+%def%Пехотинец, вооруженный саблей.
+	@descr.inf.longpike
+%def%Пехотинец, вооруженный длинной пикой.
+	@descr.inf.musket
+%def%Пехотинец, вооруженный мушкетом.
+	@descr.inf.musketbayonet
+%def%Пехотинец, вооруженный мушкетом и штыком.
+	@descr.inf.bow
+%def%Пехотинец, вооруженный луком и стрелами.
+	@descr.any.musketbayonet
+%def%Вооружен мушкетом, штыком и гранатами.
+	@descr.any.musketonly
+%def%Вооружен мушкетом без штыка.
+	@descr.any.musket
+%def%Вооружен мушкетом.
+	@descr.any.bow
+%def%Вооружен луком и стрелами.
+	@descr.cav.light.saber
+%def%Легкий кавалерист, вооруженный саблей.
+	@descr.cav.light.spear
+%def%Легкий кавалерист, вооруженный копьем.
+	@descr.cav.light.pike
+%def%Легкий кавалерист, вооруженный пикой.
+	@descr.cav.light.longpike
+%def%Легкий кавалерист, вооруженный длинной пикой.
+	@descr.cav.heavy.sword
+%def%Тяжелый кавалерист, вооруженный мечом.
+	@descr.cav.heavy.broadsword
+%def%Тяжелый кавалерист, вооруженный палашом.
+	@descr.cav.heavy.mace
+%def%Тяжелый кавалерист, вооруженный булавой.
+	@descr.cav.heavy.longpike
+%def%Тяжелый кавалерист, вооруженный длинной пикой.
+	@descr.cav.any.saber
+%def%Кавалерист, вооруженный саблей.
+	@descr.cav.any.longpike
+%def%Кавалерист, вооруженный длинным копьем.
+	@descr.cav.any.musket
+%def%Кавалерист, вооруженный мушкетом.
+	@descr.cav.any.bow
+%def%Кавалерист, вооруженный луком.
+	@***********************
+
+	@descr.armored
+%pos%Одет в доспехи, которые хорошо защищают от пуль и картечи.
+	@***********************
+
+	@descr.effective.form
+%pos%Эффективен в боевых построениях.
+	@descr.effective.formvscav
+%pos%Эффективен в боевых построениях против кавалерии.
+	@descr.effective.infcav
+%pos%Эффективен как против пехоты, так и против кавалерии.
+	@descr.effective.formonly
+%pos%Эффективен только в боевых построениях.
+	@descr.effective.melee
+%pos%Эффективен в рукопашном бою.
+	@descr.effective.squareform
+%pos%Эффективен в построении каре.
+	@descr.effective.onlywithinf
+%pos%Эффективен только в сочетании с пехотой.
+	@descr.effective.sabotage
+%pos%Эффективен для диверсионных вылазок.
+	@descr.effective.notforminfheavycav
+%neg%Не эффективен против пехоты в боевых построениях и тяжелой конницы.
+	@descr.effective.notcuirassier
+%neg%Не эффективен против кирасиров.
+	@descr.effective.infcavsabotage
+%pos%Эффективен против пехоты, кавалерии и для диверсионных рейдов.
+	@descr.effective.inflightcav
+%pos%Эффективен против пехоты и легкой кавалерии.
+	@descr.effective.infcav2
+%pos%Эффективен против пехоты и кавалерии.
+	@descr.effective.inf
+%pos%Эффективен против пехоты.
+	@descr.effective.mercgrenadier
+%pos%Эффективен против наемных гренадеров.
+	@descr.effective.ships
+%pos%Эффективно поджигает корабли.
+	@descr.effective.merc
+%pos%Эффективен против любых других видов наемников.
+	@***********************
+
+	@descr.mosteffective.pikeman17
+%pos%Наиболее эффективный пикинер 17 века.
+	@descr.mosteffective.shooter
+%pos%Один из самых эффективных стрелков.
+	@descr.mosteffective.shooter2
+%pos%Один из лучший стрелков в игре.
+	@descr.mosteffective.speedcav
+%pos%Один из самых быстрых кавалеристов.
+	@***********************
+
+	@descr.combination.highbuildmovespeed
+%pos%Высокая скорость постройки и передвижения.
+	@descr.combination.highcostlowbuildtime
+%neg%Высокая стоимость и низкая скорость постройки.
+	@descr.combination.longbuildtimehighcost
+%neg%Длительное время создания и высокая стоимость.
+	@descr.combination.highbuildspeedhighcost
+%pos%Высокая скорость постройки и низкая стоимость.
+	@descr.combination.lowrateoffirehighbuildtime
+%neg%Низкая скорострельность и длительное время создания.
+	@***********************
+
+	@descr.params.lowattack
+%neg%Низкий параметр атаки.
+	@descr.params.midattack
+%def%Средний параметр атаки.
+	@descr.params.highattack
+%pos%Высокий параметр атаки.
+	@descr.params.veryhighattack
+%pos%Очень высокий параметр атаки.
+	@descr.params.lowattackprotection
+%neg%Низкие параметры атаки и защиты.
+	@descr.params.highattackprotection
+%pos%Высокие параметры атаки и защиты.
+	@descr.params.veryhighattackprotection
+%pos%Очень высокие параметры атаки и защиты.
+	@descr.params.lowshootdamage
+%neg%Низкая сила выстрела.
+	@***********************
+
+	@descr.cost.low
+%pos%Низкая стоимость постройки.
+	@descr.cost.low2
+%pos%Низкая стоимость производства.
+	@descr.cost.lowafterupgrade
+%pos%Низкая стоимость после соответствующего усовершенствования в академии.
+	@descr.cost.nothigh
+%neg%Невысокая стоимость постройки.
+	@descr.cost.nothigh2
+%pos%Небольшая стоимость производства.
+	@descr.cost.high
+%neg%Высокая стоимость производства.
+	@descr.cost.high2
+%neg%Высокая стоимость постройки.
+	@***********************
+
+	@descr.build.veryhighspeed
+%pos%Очень высокая скорость постройки.
+	@descr.build.veryhighspeed2
+%pos%Очень быстро производятся.
+	@descr.build.highspeed
+%pos%Высокая скорость постройки.
+	@descr.build.highspeed2
+%pos%Быстро производятся.
+	@descr.build.lowspeed
+%neg%Долго производятся.
+	@descr.build.lowspeed2
+%neg%Низкое время постройки.
+	@descr.build.lowspeed3
+%neg%Очень долго производятся.
+	@descr.build.lowspeed4
+%neg%Длительное время постройки.
+	@***********************
+
+	@descr.canshoot
+%pos%Поражает цели на расстоянии.
+	@descr.canmeleeandshoot
+%pos%Поражает цели как на расстоянии, так и в рукопашном бою.
+	@descr.cantshotclose
+%neg%Не стреляет, если противник находится вплотную.
+	@***********************
+
+	@descr.eliteinf
+%pos%Элитный пехотинец.
+	@descr.elitecav
+%pos%Элитный кавалерист.
+	@***********************
+
+	@descr.ability.highshootingrange
+%pos%Высокая дальность стрельбы.
+	@descr.ability.highspeed
+%pos%Высокая скорость передвижения.
+	@descr.ability.highrateoffire
+%pos%Высокая скорострельность.
+	@descr.highvisionradius
+%pos%Наибольший радиус обзора.
+	@***********************
+
+	@descr.ability.grenades
+%pos%Способен разрушать гранатами здания и оборонительные сооружения противника.
+	@descr.ability.firearrows
+%pos%По зданиям, оборонительным сооружениям и кораблям стреляет зажигательными стрелами.
+	@descr.ability.canfightwhenguarded
+%neg%Вместе с военными юнитами может сражаться.
+	@descr.ability.canbecaptured
+%neg%Неохраняемого крестьянина может захватить противник.
+	@descr.ability.cannotbecaptured
+%pos%Не захватывается противником.
+	@descr.ability.consumegold
+%neg%На содержание требуется золото.
+	@descr.ability.cannottfight
+%neg%Не может сражаться.
+	@descr.ability.canextractresources
+%def%Занимается добычей ресурсов.
+	@descr.canbuildandrepair
+%def%Строит и ремонтирует здания, оборонительные сооружения.
+	@descr.canheal
+%pos%Лечит раненых в бою солдат.
+	@***********************
+
+	@descr.ability.highshootcost
+%neg%Большой расход угля и железа при стрельбе.
+	@***********************
+
+	@descr.ability.createformation
+%pos%Предназначен для командования боевыми построениями пехотинцев.
+	@descr.ability.createformation17
+%pos%Предназначен для командования боевыми построениями пехотинцев 17в.
+	@descr.ability.createformation18
+%pos%Предназначен для командования боевыми построениями пехотинцев 18в.
+	@descr.ability.neededforformation
+%pos%Необходим для формирования боевых построений пехотинцев.
+	@descr.ability.neededforformation17
+%pos%Необходим для формирования боевых построений пехотинцев 17в.
+	@descr.ability.neededforformation18
+%pos%Необходим для формирования боевых построений пехотинцев 18в.
+	@***********************
+
+	@descr.ability.mercenary
+ (наемник)
+	@UNITS.INF.MELEE
+********************************Рукопашные********************************
+	@pikeman
+Пикинер 17в.
+	@pikeman.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.armored)%
+%include(units;descr.effective.form)%
+	@pikemanpol
+Пикинер 17в.
+	@pikemanpol.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.effective.form)%
+	@pikemantur
+Турецкий пикинер
+	@pikemantur.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.effective.form)%
+%include(units;descr.build.highspeed2)%
+	@pikemanrus
+Копейщик
+	@pikemanrus.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.armored)%
+%include(units;descr.mosteffective.pikeman17)%
+	@pikeman18
+Пикинер 18в.
+	@pikeman18.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.effective.infcav)%
+%include(units;descr.params.midattack)%
+%include(units;descr.build.veryhighspeed2)%
+	@pikeman18swe
+Пикинер 18в.
+	@pikeman18swe.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.effective.infcav)%
+%include(units;descr.params.midattack)%
+%include(units;descr.build.veryhighspeed2)%
+	@lightinfantry
+Легкий пехотинец
+	@lightinfantry.ext
+%include(units;descr.inf.saber)%
+%include(units;descr.params.lowattack)%
+%include(units;descr.build.veryhighspeed)%
+%include(units;descr.effective.formonly)%
+	@roundshier
+Рундашир
+	@roundshier.ext
+%include(units;descr.inf.sword)%
+%include(units;descr.armored)%
+%include(units;descr.build.highspeed)%
+%include(units;descr.params.lowattack)%
+	@UNITS.INF.SHOOTER
+********************************Стрелки*********************************
+	@musketeer
+Мушкетер 17в.
+	@musketeer.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.build.lowspeed3)%
+	@musketeeraus
+Мушкетер 17в.
+	@musketeeraus.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.build.lowspeed3)%
+	@musketeernet
+Мушкетер 17в.
+	@musketeernet.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.build.lowspeed3)%
+	@musketeerpol
+Мушкетер 17в.
+	@musketeerpol.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.build.lowspeed3)%
+	@musketeerspa
+Мушкетер 17в.
+	@musketeerspa.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.armored)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.midattack)%
+%include(units;descr.build.lowspeed3)%
+	@musketeer18
+Мушкетер 18в.
+	@musketeer18.ext
+%include(units;descr.inf.musketbayonet)%
+%include(units;descr.canmeleeandshoot)%
+%include(units;descr.cost.lowafterupgrade)%
+%include(units;descr.effective.melee)%
+	@musketeer18pru
+Мушкетер 18в.
+	@musketeer18pru.ext
+%include(units;descr.inf.musketbayonet)%
+%include(units;descr.canmeleeandshoot)%
+%include(units;descr.cost.lowafterupgrade)%
+%include(units;descr.effective.melee)%
+	@musketeer18sax
+Мушкетер 18в.
+	@musketeer18sax.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.mosteffective.shooter)%
+	@grenadier
+Гренадер
+	@grenadier.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+	@grenadiersax
+Гренадер
+	@grenadiersax.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+%include(units;descr.params.highattackprotection)%
+%include(units;descr.cost.high2)%
+	@chasseur
+Егерь
+	@chasseur.ext
+%include(units;descr.any.musketonly)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.cost.low)%
+	@highlander
+Шотландский стрелок
+	@highlander.ext
+%include(units;descr.any.musketonly)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.cost.low)%
+	@strelet
+Стрелец
+	@strelet.ext
+%include(units;descr.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.onlywithinf)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.build.lowspeed3)%
+	@pandur
+Пандур
+	@pandur.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.mosteffective.shooter)%
+	@serdiuk
+Сердюк
+	@serdiuk.ext
+%include(units;descr.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.onlywithinf)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.mosteffective.shooter2)%
+%include(units;descr.ability.highshootingrange)%
+	@jannisary
+Янычар
+	@jannisary.ext
+%include(units;descr.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.onlywithinf)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.build.lowspeed)%
+	@archer
+Лучник
+	@archer.ext
+%include(units;descr.any.bow)%
+%include(units;descr.effective.onlywithinf)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+	@UNITS.INF.SUPPORT
+********************************Поддержка*********************************
+	@peaaus
+Крестьянин
+	@peaaus.ext
+%include(units;descr.ability.canextractresources)%
+%include(units;descr.canbuildandrepair)%
+%include(units;descr.ability.canfightwhenguarded)%
+%include(units;descr.ability.canbecaptured)%
+	@peaukr
+Крестьянин
+	@peaukr.ext
+%include(units;descr.ability.canextractresources)%
+%include(units;descr.canbuildandrepair)%
+%include(units;descr.ability.cannotbecaptured)%
+	@peatur
+Крестьянин
+	@peatur.ext
+%include(units;peaaus.ext)%
+	@pearus
+Крепостной
+	@pearus.ext
+%include(units;peaaus.ext)%
+	@peapol
+Крестьянин
+	@peapol.ext
+%include(units;peaaus.ext)%
+	@peaspa
+Крестьянин
+	@peaspa.ext
+%include(units;peaaus.ext)%
+	@peaeng
+Крестьянин
+	@peaeng.ext
+%include(units;peaaus.ext)%
+	@officer
+Офицер 17в.
+	@officer.ext
+%include(units;descr.ability.createformation17)%
+%include(units;descr.params.veryhighattackprotection)%
+%include(units;descr.ability.consumegold)%
+	@officertur
+Офицер
+	@officertur.ext
+%include(units;descr.ability.createformation)%
+%include(units;descr.params.veryhighattackprotection)%
+%include(units;descr.ability.consumegold)%
+	@officerrus
+Командир
+	@officerrus.ext
+%include(units;descr.ability.createformation17)%
+%include(units;descr.params.veryhighattackprotection)%
+%include(units;descr.ability.consumegold)%
+	@officer18
+Офицер 18в.
+	@officer18.ext
+%include(units;descr.ability.createformation18)%
+%include(units;descr.params.veryhighattackprotection)%
+%include(units;descr.ability.consumegold)%
+	@drummer
+Барабанщик 17в.
+	@drummer.ext
+%include(units;descr.ability.neededforformation17)%
+%include(units;descr.ability.cannottfight)%
+%include(units;descr.highvisionradius)%
+	@drummerrus
+Барабанщик 17в.
+	@drummerrus.ext
+%include(units;descr.ability.neededforformation17)%
+%include(units;descr.ability.cannottfight)%
+%include(units;descr.highvisionradius)%
+	@drummertur
+Барабанщик
+	@drummertur.ext
+%include(units;descr.ability.neededforformation)%
+%include(units;descr.ability.cannottfight)%
+%include(units;descr.highvisionradius)%
+	@drummer18
+Барабанщик 18в.
+	@drummer18.ext
+%include(units;descr.ability.neededforformation18)%
+%include(units;descr.ability.cannottfight)%
+%include(units;descr.highvisionradius)%
+	@bagpiper
+Волынщик
+	@bagpiper.ext
+%include(units;descr.ability.neededforformation18)%
+%include(units;descr.ability.cannottfight)%
+%include(units;descr.highvisionradius)%
+	@priest
+Капеллан
+	@priest.ext
+%include(units;descr.canheal)%
+	@padre
+Падре
+	@padre.ext
+%include(units;descr.canheal)%
+	@pope
+Поп
+	@pope.ext
+%include(units;descr.canheal)%
+	@mullah
+Мулла
+	@mullah.ext
+%include(units;descr.canheal)%
+	@UNITS.CAV.FAST
+********************************Быстрая кавалерия*********************************
+	@croat
+Кроат
+	@croat.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.combination.highbuildmovespeed)%
+%include(units;descr.effective.notforminfheavycav)%
+	@hussar
+Гусар
+	@hussar.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.combination.highbuildmovespeed)%
+%include(units;descr.effective.notcuirassier)%
+	@hussarpru
+Гусар
+	@hussarpru.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.combination.highbuildmovespeed)%
+%include(units;descr.effective.notcuirassier)%
+	@wingedhussar
+Крылатый гусар
+	@wingedhussar.ext
+%include(units;descr.cav.heavy.longpike)%
+%include(units;descr.effective.infcavsabotage)%
+%include(units;descr.armored)%
+%include(units;descr.ability.highspeed)%
+%include(units;descr.params.highattackprotection)%
+%include(units;descr.build.lowspeed3)%
+	@cossacksich
+Сечевой козак
+	@cossacksich.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.mosteffective.speedcav)%
+	@UNITS.CAV.SLOW
+********************************Медленная кавалерия*********************************
+	@reiter
+Рейтар
+	@reiter.ext
+%include(units;descr.cav.heavy.sword)%
+%include(units;descr.armored)%
+%include(units;descr.effective.inflightcav)%
+	@cuirassier
+Кирасир
+	@cuirassier.ext
+%include(units;descr.cav.heavy.broadsword)%
+%include(units;descr.armored)%
+%include(units;descr.effective.infcav2)%
+%include(units;descr.params.highattackprotection)%
+%include(units;descr.build.lowspeed2)%
+%include(units;descr.cost.high)%
+	@cavalryguard
+Гвардейский кавалерист
+	@cavalryguard.ext
+%include(units;descr.cav.heavy.sword)%
+%include(units;descr.armored)%
+%include(units;descr.effective.inflightcav)%
+	@reiterswe
+Шведский рейтар
+	@reiterswe.ext
+%include(units;descr.cav.heavy.sword)%
+%include(units;descr.armored)%
+%include(units;descr.effective.inflightcav)%
+	@reiterpol
+Легкий рейтар
+	@reiterpol.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.inf)%
+%include(units;descr.build.highspeed)%
+%include(units;descr.params.lowattack)%
+	@hetman
+Гетьман
+	@hetman.ext
+%include(units;descr.cav.any.saber)%
+%include(units;descr.effective.infcav)%
+%include(units;descr.params.veryhighattackprotection)%
+%include(units;descr.combination.highcostlowbuildtime)%
+	@cossackdon
+Донской козак
+	@cossackdon.ext
+%include(units;descr.cav.light.spear)%
+%include(units;descr.effective.inf)%
+%include(units;descr.combination.highbuildspeedhighcost)%
+	@vityaz
+Витязь
+	@vityaz.ext
+%include(units;descr.cav.heavy.mace)%
+%include(units;descr.armored)%
+%include(units;descr.effective.inflightcav)%
+%include(units;descr.params.highattackprotection)%
+%include(units;descr.combination.longbuildtimehighcost)%
+	@cossackregister
+Реестровый козак
+	@cossackregister.ext
+%include(units;descr.cav.light.pike)%
+%include(units;descr.effective.inf)%
+%include(units;descr.build.highspeed)%
+%include(units;descr.cost.low2)%
+	@spakh
+Легкий сипах
+	@spakh.ext
+%include(units;descr.cav.light.longpike)%
+%include(units;descr.effective.inf)%
+%include(units;descr.build.highspeed)%
+%include(units;descr.params.lowattackprotection)%
+	@mameluke
+Мамлюк
+	@mameluke.ext
+%include(units;descr.cav.any.longpike)%
+%include(units;descr.effective.inf)%
+%include(units;descr.combination.highbuildspeedhighcost)%
+	@UNITS.CAV.SHOOTERS
+********************************Конные стрелки*********************************
+	@dragoon
+Драгун 17в.
+	@dragoon.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.highshootingrange)%
+%include(units;descr.combination.lowrateoffirehighbuildtime)%
+	@dragoon18fra
+Драгун 18в.
+	@dragoon18fra.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.build.highspeed2)%
+	@dragoon18
+Драгун 18в.
+	@dragoon18.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.combination.lowrateoffirehighbuildtime)%
+	@kingmusketeer
+Королевский мушкетер
+	@kingmusketeer.ext
+%include(units;descr.elitecav)%
+%include(units;descr.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.veryhighattack)%
+%include(units;descr.build.lowspeed4)%
+	@tatar
+Татарин
+	@tatar.ext
+%include(units;descr.cav.any.bow)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+	@UNITS.DIP.MERCENARIES
+********************************Наемники*********************************
+	@roundshierdip
+%include(units;roundshier)% %include(units;descr.ability.mercenary)%
+	@roundshierdip.ext
+%include(units;descr.cost.nothigh)%
+%include(units;descr.params.lowattackprotection)%
+%include(units;descr.effective.mercgrenadier)%
+	@grenadierdip
+%include(units;grenadier)% %include(units;descr.ability.mercenary)%
+	@grenadierdip.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.cost.low)%
+%include(units;descr.params.lowshootdamage)%
+%include(units;descr.ability.grenades)%
+	@lightinfantrydip
+%include(units;lightinfantry)% %include(units;descr.ability.mercenary)%
+	@lightinfantrydip.ext
+%include(units;descr.cost.nothigh2)%
+%include(units;descr.params.lowattackprotection)%
+	@archerdip
+%include(units;archer)% %include(units;descr.ability.mercenary)%
+	@archerdip.ext
+%include(units;descr.inf.bow)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+%include(units;descr.effective.ships)%
+	@dragoon18dip
+%include(units;dragoon18)% %include(units;descr.ability.mercenary)%
+	@dragoon18dip.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.highrateoffire)%
+%include(units;descr.ability.consumegold)%
+%include(units;descr.ability.highshootcost)%
+%include(units;descr.effective.merc)%
+	@cossacksichdip
+%include(units;cossacksich)% %include(units;descr.ability.mercenary)%
+	@cossacksichdip.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.mosteffective.speedcav)%
+	@SHIPS
+********************************Корабли*********************************
+	@fishboat
+Рыбацкая лодка
+	@fishboat.ext
+%def%Предназначена для ловли рыбы и не может принимать участие в боевых действиях.
+	@yacht
+Яхта
+	@yacht.ext
+%def%Боевое судно низкого ранга.
+%pos%Высокая маневренность.
+%pos%Высокая скорость передвижения.
+%neg%Низкая огневая мощь.
+%neg%На выстрелы расходуется значительное количество угля и железа.
+	@yachttur
+Турецкая яхта
+	@yachttur.ext
+%def%В состав турецких флотилий входило большое число различных экзотических одно-двух мачтовых средиземноморских судов.
+%def%Они использовались как военным флотом в качестве патрульных и посыльных судов, так и пиратами для своих лихих налетов на морские коммуникации христиан.
+	@galley
+Галера
+	@galley.ext
+%def%Боевое судно среднего ранга.
+%pos%На борту имеет два типа артиллерии: пушки и мортиры.
+%pos%Пушки эффективны для стрельбы на ближние дистанции, а мортиры на сверхдальние.
+%pos%Мортиры эффективны для обстрела прибрежных зданий и оборонительных сооружений противника.
+%neg%На содержание расходуется золото.
+%neg%Если золото заканчивается, галера перестает стрелять.
+%neg%На выстрелы расходуется значительное количество угля и железа.
+	@frigate
+Фрегат
+	@frigate.ext
+%def%Боевое судно среднего ранга.
+%neg%Требует финансирования.
+%neg%Большой расход угля и железа при стрельбе.
+	@battleship
+Линейный корабль
+	@battleship.ext
+%def%Боевой корабль высокого ранга.
+%pos%Высокая скорострельность и огневая мощь.
+%neg%На содержание требует много золота.
+%neg%Низкий расход угля и железа.
+%neg%Медленная скорость передвижения.
+	@ferry
+Транспорт
+	@ferry.ext
+%def%Предназначен для перевозки юнитов через реки и моря.
+%def%За один раз может перевезти 120 юнитов.
+	@xebec
+Шебека
+	@xebec.ext
+%def%Боевое судно среднего ранга.
+%pos%Не требует золота на содержание.
+%neg%Большой расход угля и железа при стрельбе.
+	@ARTILLERY
+********************************Артиллерия*********************************
+	@cannon
+Пушка
+	@cannon.ext
+%def%Полевое орудие.
+%pos%Эффективно против зданий, оборонительных сооружений и кораблей противника.
+%pos%На большие и средние расстояния стреляет ядрами.
+%pos%В ближнем бою эффективно поражает пехоту и кавалерию картечью.
+%neg%На содержание расходуется золото.
+%neg%Если золото заканчивается, пушки перестают стрелять.
+%neg%Неохраняемая пушка может быть захвачена противником.
+%neg%На выстрелы расходуется значительное количество угля и железа.
+	@howitzer
+Гаубица
+	@howitzer.ext
+%def%Осадное орудие.
+%pos%Стреляет навесом.
+%pos%Эффективна против оборонительных сооружений и больших отрядов пехоты.
+%neg%Низкая скорострельность и точность.
+%neg%На содержание расходуется золото.
+%neg%Если золото заканчивается, гаубицы перестают стрелять.
+%neg%Неохраняемые гаубицы могут быть захвачены противником.
+%neg%На выстрелы расходуется значительное количество угля и железа.
+	@mortar
+Мортира
+	@mortar.ext
+%def%Дальнобойное орудие.
+%pos%Стреляет навесом на сверхдальние дистанции.
+%pos%Эффективно против башен и зданий.
+%neg%Стреляет только по зданиям и кораблям.
+%pos%Высокая скорострельность и точность стрельбы.
+%neg%На содержание расходуется золото.
+%neg%Если золото заканчивается, мортиры перестают стрелять.
+%neg%Неохраняемые мортиры могут быть захвачены противником.
+%neg%На выстрелы расходуется значительное количество угля и железа.
+	@multicannon
+Многоствольное орудие
+	@multicannon.ext
+%def%Стреляет картечью на близких расстояниях.
+%pos%Эффективно против пехоты без доспехов.
+%pos%Высокая скорострельность.
+%neg%На содержание расходуется золото.
+%neg%Если золото заканчивается, многоствольное орудие перестает стрелять.
+%neg%Неохраняемое многоствольное орудие может быть захвачено противником.
+%neg%На выстрелы расходуется значительное количество угля и железа.
+	@BUILDINGS.NATIONAL
+********************************Национальные постройки*********************************
+	@%nat%aca
+Академия
+	@%nat%aca.ext
+%def%Научный центр города.
+%def%Здесь можно изучить важные технологии и сделать различные усовершенствования.
+%neg%Может быть захвачена противником.
+	@%nat%art
+Артиллерийское депо
+	@%nat%art.alternative
+Артиллерийский цейхгауз
+	@%nat%art.ext
+%def%Предназначен для производства артиллерии.
+%neg%Может быть захвачен противником.
+	@%nat%bar
+Казарма 17в.
+	@%nat%bar.ext
+%def%Предназначена для производства пехоты, офицеров и барабанщиков 17 века.
+%pos%Предоставляет дополнительных %farm% жилых мест.
+	@%nat%ba2
+Казарма 18в.
+	@%nat%ba2.ext
+%def%Предназначена для производства пехоты, офицеров и барабанщиков 18 века.
+%pos%Предоставляет дополнительных %farm% жилых мест.
+%neg%Доступна только в 18 веке.
+	@%nat%bla
+Кузница
+	@%nat%bla.ext
+%def%Предназначена для выполнения усовершенствований, связанных с металлами.
+%neg%Может быть захвачена противником.
+	@%nat%cen
+Городской центр
+	@%nat%cen.ext
+%def%Предназначен для производства крестьян.
+%def%Крестьяне могут приносить в него добытые камень, дерево и еду.
+%pos%Городской центр обеспечивает %farm% жилых мест.
+%neg%Может быть захвачен противником.
+%def%После постройки всех зданий в городском центре можно осуществить переход в следующую технологическую эпоху.
+	@%nat%dip
+Дипломатический центр
+	@%nat%dip.ext
+%def%Предназначен для вербовки иностранных наемников.
+%neg%Может быть построен только один дипломатический центр.
+	@%nat%hou
+Дом
+	@%nat%hou.ext
+%pos%Обеспечивает %farm% жилых мест.
+%neg%Может быть захвачен противником.
+	@%nat%sta
+Конюшня
+	@%nat%sta.ext
+%def%Предназначена для производства кавалерии 17 века.
+%pos%После перехода в 18 век в конюшне становится доступна кавалерия 18 века.
+	@%nat%tem
+Собор
+	@%nat%tem.ext
+%def%Предназначен для производства священников.
+	@BUILDINGS.COMMON
+********************************Общие постройки*********************************
+	@%com%coa
+Шахта
+	@%com%coa.ext
+%def%Предназначена для добычи угля.
+%neg%Может быть захвачена противником.
+%def%Количество крестьян, работающих в шахте, может быть увеличено при выполнении соответствующих усовершенствований.
+%def%Усовершенствования необходимо производить в каждой шахте.
+%def%Максимальное количество крестьян, которые могут работать в шахте после выполнения всех усовершенствований - 95.
+	@%com%gol
+Шахта
+	@%com%gol.ext
+%def%Предназначена для добычи золота.
+%neg%Может быть захвачена противником.
+%def%Количество крестьян, работающих в шахте, может быть увеличено при выполнении соответствующих усовершенствований.
+%def%Усовершенствования необходимо производить в каждой шахте.
+%def%Максимальное количество крестьян, которые могут работать в шахте после выполнения всех усовершенствований - 95.
+	@%com%iro
+Шахта
+	@%com%iro.ext
+%def%Предназначена для добычи железа.
+%neg%Может быть захвачена противником.
+%def%Количество крестьян, работающих в шахте, может быть увеличено при выполнении соответствующих усовершенствований.
+%def%Усовершенствования необходимо производить в каждой шахте.
+%def%Максимальное количество крестьян, которые могут работать в шахте после выполнения всех усовершенствований - 95.
+	@%com%mar
+Рынок
+	@%com%mar.ext
+%def%Позволяет продавать, покупать и обменивать ресурсы.
+%neg%Может быть захвачен противником.
+	@%com%mil
+Мельница
+	@%com%mil.ext
+%def%Предназначена для выращивания и обработки зерновых культур.
+%def%Крестьяне могут приносить собранную еду в мельницу.
+%neg%Может быть захвачена противником.
+%def%В мельнице делаются основные усовершенствования, позволяющие сделать добычу еды более эффективной.
+	@%com%sto
+Склад
+	@%com%sto.ext
+%def%Предназначен для хранения дерева и камня, доставленных крестьянами.
+%neg%Может быть захвачен противником.
+	@%com%por
+Порт
+	@%com%por.ext
+%def%Предназначен для постройки флота.
+%def%Добытую рыбу лодки привозят в порт.
+	@%com%sga
+Каменные ворота
+	@%com%sga.ext
+%def%Мощные оборонительные заграждения.
+%pos%Могут быть разрушены только артиллерией, кораблями, гренадерами или лучниками.
+%def%Через каменные стены нельзя вести огонь.
+%def%В каменной стене могут быть построены ворота.
+%neg%После постройки каменные стены потребляют камень.
+	@%com%swa
+Стена
+	@%com%swa.ext
+%def%Мощные оборонительные заграждения.
+%pos%Могут быть разрушены только артиллерией, кораблями, гренадерами или лучниками.
+%def%Через каменные стены нельзя вести огонь.
+%def%В каменной стене могут быть построены ворота.
+%neg%После постройки каменные стены потребляют камень.
+	@%com%tow
+Башня
+	@%com%tow.ext
+%def%Оборонительное сооружение.
+%pos%Может быть разрушена только артиллерией, кораблями, гренадерами или лучниками.
+%def%Выполнив ряд усовершенствований по увеличению количества пушек в башне, можно повысить ее скорострельность.
+%def%Усовершенствования необходимо проводить в каждой башне.
+%neg%На выстрелы башенных орудий расходуется значительное количество железа и угля.
+	@%com%wga
+Деревянные ворота
+	@%com%wga.ext
+%def%Наиболее дешевое и быстро строящееся оборонительное заграждение.
+%def%Стрелковые юниты могут вести огонь из-за частокола.
+%def%В частоколе могут быть построены ворота.
+	@%com%wwa
+Частокол
+	@%com%wwa.ext
+%def%Наиболее дешевое и быстро строящееся оборонительное заграждение.
+%def%Стрелковые юниты могут вести огонь из-за частокола.
+%def%В частоколе могут быть построены ворота.
+	@field
+Зерно
+	@_del_polaca
+%include(units;ausaca)%
+	@_del_polaca.ext
+%include(units;ausaca.ext)%
+	@_del_polart
+%include(units;ausart)%
+	@_del_polart.ext
+%include(units;ausart.ext)%
+	@_del_polbar
+%include(units;ausbar)%
+	@_del_polbar.ext
+%include(units;ausbar.ext)%
+	@_del_polba2
+%include(units;ausba2)%
+	@_del_polba2.ext
+%include(units;ausba2.ext)%
+	@_del_polbla
+%include(units;ausbla)%
+	@_del_polbla.ext
+%include(units;ausbla.ext)%
+	@_del_polcen
+%include(units;auscen)%
+	@_del_polcen.ext
+%include(units;auscen.ext)%
+	@_del_poldip
+%include(units;ausdip)%
+	@_del_poldip.ext
+%include(units;ausdip.ext)%
+	@_del_polhou
+%include(units;aushou)%
+	@_del_polhou.ext
+%include(units;aushou.ext)%
+	@_del_polsta
+%include(units;aussta)%
+	@_del_polsta.ext
+%include(units;aussta.ext)%
+	@_del_poltem
+%include(units;austem)%
+	@_del_poltem.ext
+%include(units;austem.ext)%
+	@UNIQUE
+*********************Уникальные юниты и нестандартные по описанию постройки********************
+	@turbar
+Казарма
+	@turbar.ext
+%def%Предназначена для производства пехоты, офицеров и барабанщиков.
+%pos%Предоставляет дополнительных %farm% жилых мест.
+	@turtem
+Мечеть
+	@algtem
+Мечеть
+	@rustem
+Православная церковь
+	@ukrtem
+Православная церковь
+	@algbar
+%include(units;turbar)%
+	@algbar.ext
+%include(units;turbar.ext)%
+	@turcen.ext
+%def%Предназначен для производства крестьян.
+%def%Крестьяне могут приносить в него добытые камень, дерево и еду.
+%pos%Городской центр обеспечивает %farm% жилых мест.
+%neg%Может быть захвачен противником.
+	@algcen.ext
+%include(units;turcen.ext)%
+	@ruscen.ext
+%include(units;turcen.ext)%
+	@ukrbar.ext
+%def%Предназначен для производства стрелков.
+%pos%Предоставляет дополнительных %farm% жилых мест.
+	@tursta.ext
+%def%Предназначена для производства кавалерии.
+	@algsta.ext
+%include(units;tursta.ext)%
+	@ukrsta.ext
+%include(units;tursta.ext)%
+	@rushou
+Изба
+	@ukrhou
+Хижина
+	@rusbar
+Стрелецкая казарма
+	@ukrbar
+Козацкий дом
+	@turmar
+Базар
+	@algmar
+Базар
+	@turaca
+Минарет
+	@algaca
+Минарет
+	@misdonkey
+Вьючный ослик
+	@misflagman
+Знаменосец
+	@misgeneral
+Генерал
+	@mistrader
+Купец
+	@misbridge
+Мост
+	@misblg
+Блокгауз
+	@misblg2
+Блокгауз
+	@miscommandcenter
+Командный центр
+	@mistent
+Шатер
+	@misyurt
+Юрта
+	@archertur
+Турецкий лучник
+	@archertur.ext
+%include(units;descr.any.bow)%
+%include(units;descr.effective.onlywithinf)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+	@archerturdip
+%include(units;archertur)%%include(units;descr.ability.mercenary)%
+	@archerturdip.ext
+%include(units;descr.inf.bow)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+%include(units;descr.effective.ships)%
+	@lightcavalry
+Легкий кавалерист
+	@lightcavalry.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.combination.lowrateoffirehighbuildtime)%
+	@lightcavalrydip
+%include(units;lightcavalry)%%include(units;descr.ability.mercenary)%
+	@lightcavalrydip.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.highrateoffire)%
+%include(units;descr.ability.consumegold)%
+%include(units;descr.ability.highshootcost)%
+%include(units;descr.effective.merc)%
+	@dragoonpol
+Посполитое рушение
+	@dragoonpol.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.highshootingrange)%
+	@dragoon18net
+%include(units;dragoon18)%
+	@dragoon18net.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.combination.lowrateoffirehighbuildtime)%
+	@musketeer18den
+%include(units;musketeer18)%
+	@musketeer18den.ext
+%include(units;descr.inf.musketbayonet)%
+%include(units;descr.canmeleeandshoot)%
+%include(units;descr.cost.lowafterupgrade)%
+%include(units;descr.effective.melee)%
+	@grenadierden
+%include(units;grenadier)%
+	@grenadierden.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+	@hackapell
+Гаккапелит
+	@hackapell.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.combination.highbuildmovespeed)%
+%include(units;descr.effective.notforminfheavycav)%
+	@grenadierpru
+%include(units;grenadier)%
+	@grenadierpru.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+	@musketeer18bav
+%include(units;musketeer18)%
+	@musketeer18bav.ext
+%include(units;descr.inf.musketbayonet)%
+%include(units;descr.canmeleeandshoot)%
+%include(units;descr.cost.lowafterupgrade)%
+%include(units;descr.effective.melee)%
+	@grenadierbav
+%include(units;grenadier)%
+	@grenadierbav.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+%include(units;descr.params.highattackprotection)%
+%include(units;descr.cost.high2)%
+	@guardcavalrysax
+%include(units;cavalryguard)%
+	@guardcavalrysax.ext
+%include(units;descr.cav.heavy.sword)%
+%include(units;descr.armored)%
+%include(units;descr.effective.inflightcav)%
+	@peasco
+Крестьянин
+	@peasco.ext
+%include(units;descr.ability.canextractresources)%
+%include(units;descr.canbuildandrepair)%
+%include(units;descr.ability.cannotbecaptured)%
+	@pikemansco
+Пикинер Ковенанта
+	@pikemansco.ext
+%include(units;descr.inf.longpike)%
+	@musketeersco
+Мушкетер Ковенанта
+	@musketeersco.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+	@swordsmansco
+Мечник кланов
+	@swordsmansco.ext
+%include(units;descr.inf.sword)%
+%include(units;descr.params.highattack)%
+	@archersco
+Лучник кланов
+	@archersco.ext
+%include(units;descr.any.bow)%
+%include(units;descr.effective.onlywithinf)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+	@officersco
+Офицер
+	@officersco.ext
+%include(units;descr.ability.createformation)%
+%include(units;descr.ability.consumegold)%
+	@lancersco
+Лансер
+	@lancersco.ext
+%include(units;descr.cav.light.pike)%
+%include(units;descr.effective.inf)%
+%include(units;descr.build.highspeed)%
+%include(units;descr.cost.low2)%
+	@raidersco
+Рейдер
+	@raidersco.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.combination.highbuildmovespeed)%
+%include(units;descr.effective.notforminfheavycav)%
+	@framegun
+Рибадекин
+	@framegun.ext
+%pos%Эффективно против пехоты без доспехов.
+%neg%На содержание расходуется золото.
+%neg%Неохраняемая пушка может быть захвачена противником.
+%neg%На выстрелы расходуется значительное количество угля и железа.
+	@scoba2
+Замок
+	@scoba2.ext
+%def%Предназначен для производства горцев.
+%pos%Предоставляет дополнительных %farm% жилых мест.
+	@ukrcen.ext
+%def%Предназначен для производства крестьян.
+%def%Крестьяне могут приносить в него добытые камень, дерево и еду.
+%pos%Городской центр обеспечивает %farm% жилых мест.
+%neg%Может быть захвачен противником.
+	@turcen.ext
+%def%Предназначен для производства крестьян.
+%def%Крестьяне могут приносить в него добытые камень, дерево и еду.
+%pos%Городской центр обеспечивает %farm% жилых мест.
+%neg%Может быть захвачен противником.
+	@algcen.ext
+%def%Предназначен для производства крестьян.
+%def%Крестьяне могут приносить в него добытые камень, дерево и еду.
+%pos%Городской центр обеспечивает %farm% жилых мест.
+%neg%Может быть захвачен противником.
+	@scocen.ext
+%def%Предназначен для производства крестьян.
+%def%Крестьяне могут приносить в него добытые камень, дерево и еду.
+%pos%Городской центр обеспечивает %farm% жилых мест.
+%neg%Может быть захвачен противником.
+	@sipahi
+Тяжелый сипах
+	@sipahi.ext
+%include(units;descr.cav.heavy.broadsword)%
+%include(units;descr.armored)%
+%include(units;descr.effective.infcav2)%
+%include(units;descr.params.highattackprotection)%
+%include(units;descr.build.lowspeed2)%
+%include(units;descr.cost.high)%
+	@gauduk
+Гайдук
+	@gauduk.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+	@pikemanspa
+Коселет
+	@pikemanspa.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.armored)%
+%include(units;descr.effective.form)%
+	@hussarhun
+%include(units;hussar)%
+	@hussarhun.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.build.lowspeed2)%
+%include(units;descr.effective.notcuirassier)%
+	@jagerpor
+Доброволец
+	@jagerpor.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+	@grenadierhun
+%include(units;grenadier)%
+	@grenadierhun.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+	@pandurhun
+Секей
+	@pandurhun.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.mosteffective.shooter)%
+	@pikemanpor
+%include(units;pikeman)%
+	@pikemanpor.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.armored)%
+%include(units;descr.effective.form)%
+	@pikemanswi
+%include(units;pikeman)%
+	@pikemanswi.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.armored)%
+%include(units;descr.effective.form)%
+	@jagerswi
+Егерь
+	@jagerswi.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+	@hussarswi
+Конный егерь
+	@hussarswi.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.build.lowspeed2)%
+%include(units;descr.effective.notcuirassier)%
+	@padre
+Падре
+	@padre.ext
+%include(units;descr.canheal)%
+	@dragoon18pie
+%include(units;dragoon18)%
+	@dragoon18pie.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.combination.lowrateoffirehighbuildtime)%

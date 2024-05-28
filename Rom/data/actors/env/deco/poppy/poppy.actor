@@ -1,0 +1,9 @@
+//************************************* Poppy Flower *******
+section.begin {refurl=.\data\actors\ref\refstone.actor}
+   ActorList.Items[0].Name = poppy
+   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\deco\poppy\poppy1.osm
+   ActorList.Items[1] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = poppy2.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\deco\poppy\poppy2.osm
+   struct.end
+section.end

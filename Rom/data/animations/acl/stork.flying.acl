@@ -1,0 +1,33 @@
+section.begin
+[*] : struct.begin
+      Name = idle
+      From = idle
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = True
+         acoRandomCycle = True
+         acoSkipActions = True
+      struct.end
+      global : struct.begin
+         Action = actTrackPoint
+         TrackPointMoveStep = 0
+         TrackPointTurnStep = 11.125
+         TrackPointIdleName = 
+         TrackPointMode = mmNone
+         TrackPointPreset = 
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = flying2
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = flying3
+            NumberCycle = 6
+         struct.end
+      struct.end
+   struct.end
+section.end

@@ -1,0 +1,41 @@
+{refurl=.\data\objects\ref\refenv.prop}
+
+mainproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=mainproperty}
+   CustomName = minegolds
+   BaseName = minegolds
+   PlayableObject = False
+section.end
+
+stringproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=stringproperty}
+   CategorieName = resources
+   StringTag = 101
+section.end
+
+collisionmeshproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=collisionmeshproperty}
+   Enabled = False
+section.end
+
+actorproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=actorproperty}
+   LODActorName = minegold
+   DefaultMeshName = minegold.mesh
+section.end
+
+materialproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=materialproperty}
+   Mesh[0].DefaultMaterialName = minegolds
+   Mesh[0].UseableMaterials[0] = minegolds
+   Mesh[0].UseSeasonMaterial = True
+   Mesh[0].UseableSummerMaterials[0] = minegolds
+   Mesh[0].UseableWinterMaterials[0] = minegolds
+section.end
+
+statemachineproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=statemachineproperty}
+   StateMachineInterval = 120
+section.end
+
+scaleproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=scaleproperty}
+   DefaultScale : struct.begin
+      X = 0.3152
+      Y = 0.3152
+      Z = 0.3152
+   struct.end
+section.end

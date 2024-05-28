@@ -1,0 +1,140 @@
+{refurl=.\data\objects\ref\refenv.prop}
+
+mainproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=mainproperty}
+   CustomName = pinestump.1
+   BaseName = pinestump.1
+section.end
+
+actorproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=actorproperty}
+   LODActorName = pinestump
+   DefaultMeshName = pinestump1.mesh
+   RandomMeshName = False
+   UseableMeshes : struct.begin
+      [0] = True
+      [1] = True
+      [2] = True
+      [3] = True
+   struct.end
+section.end
+
+materialproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=materialproperty}
+   Mesh : struct.begin      
+      [0] : struct.begin
+         Enabled = False
+         Static = False
+         ClassName = MeshMaterialProperty
+         DefaultMaterialName = pinestump
+         RandomMaterialName = True
+         UseableMaterials : struct.begin
+            [0] = pinestump
+            [1] = pinestump
+            [2] = pinestump
+         struct.end
+         UseSeasonMaterial = True
+         UseableSummerMaterials : struct.begin
+            [0] = pinestump
+            [1] = pinestump
+            [2] = pinestump
+         struct.end
+         UseableAutumnMaterials : struct.begin
+            [0] = pinestump
+            [1] = pinestump
+            [2] = pinestump
+         struct.end
+         UseableWinterMaterials : struct.begin
+            [0] = pinestumpw
+            [1] = pinestumpw
+            [2] = pinestumpw
+         struct.end
+      struct.end
+      [1] : struct.begin {refkey=materialproperty.Mesh[0]}
+         DefaultMaterialName = pinestump
+         RandomMaterialName = True
+         UseableMaterials[0] = pinestump
+         UseableMaterials[1] = pinestump
+         UseableMaterials[2] = pinestump
+         UseSeasonMaterial = True
+         UseableSummerMaterials : struct.begin
+            [0] = pinestump
+            [1] = pinestump
+            [2] = pinestump
+         struct.end
+         UseableAutumnMaterials : struct.begin
+            [0] = pinestump
+            [1] = pinestump
+            [2] = pinestump
+         struct.end
+         UseableWinterMaterials : struct.begin
+            [0] = pinestumpw
+            [1] = pinestumpw
+            [2] = pinestumpw
+         struct.end
+      struct.end
+      [2] : struct.begin {refkey=materialproperty.Mesh[0]}
+         DefaultMaterialName = pinestump
+         RandomMaterialName = True
+         UseableMaterials[0] = pinestump
+         UseableMaterials[1] = pinestump
+         UseableMaterials[2] = pinestump
+         UseSeasonMaterial = True
+         UseableSummerMaterials : struct.begin
+            [0] = pinestump
+            [1] = pinestump
+            [2] = pinestump
+         struct.end
+         UseableAutumnMaterials : struct.begin
+            [0] = pinestump
+            [1] = pinestump
+            [2] = pinestump
+         struct.end
+         UseableWinterMaterials : struct.begin
+            [0] = pinestumpw
+            [1] = pinestumpw
+            [2] = pinestumpw
+         struct.end
+      struct.end
+      [3] : struct.begin {refkey=materialproperty.Mesh[0]}
+         DefaultMaterialName = pinestump
+         RandomMaterialName = True
+         UseableMaterials[0] = pinestump
+         UseableMaterials[1] = pinestump
+         UseableMaterials[2] = pinestump
+         UseSeasonMaterial = True
+         UseableSummerMaterials : struct.begin
+            [0] = pinestump
+            [1] = pinestump
+            [2] = pinestump
+         struct.end
+         UseableAutumnMaterials : struct.begin
+            [0] = pinestump
+            [1] = pinestump
+            [2] = pinestump
+         struct.end
+         UseableWinterMaterials : struct.begin
+            [0] = pinestumpw
+            [1] = pinestumpw
+            [2] = pinestumpw
+         struct.end
+      struct.end
+   struct.end
+section.end
+
+stringproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=stringproperty}
+   CategorieName = resources
+section.end
+
+scaleproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=scaleproperty}
+   DefaultScale : struct.begin
+      X = 1
+      Y = 1
+      Z = 1
+   struct.end
+   RandomScale = True
+   MinScaleFactor = 0.85
+   MaxScaleFactor = 1.15
+section.end
+
+directionupproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=directionupproperty}
+   RandomRollAngle = True
+   DeltaRollAngle = 1
+section.end

@@ -1,0 +1,2257 @@
+{refurl=.\data\terrain\ref\reftilealpha.mat}
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass1
+   Material.Texture.image = .\data\terrain\tiles\textures\grass1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass2
+   Material.Texture.image = .\data\terrain\tiles\textures\grass2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass3
+   Material.Texture.image = .\data\terrain\tiles\textures\grass3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass4
+   Material.Texture.image = .\data\terrain\tiles\textures\grass4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass5
+   Material.Texture.image = .\data\terrain\tiles\textures\grass5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass6
+   Material.Texture.image = .\data\terrain\tiles\textures\grass6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass7
+   Material.Texture.image = .\data\terrain\tiles\textures\grass7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass8
+   Material.Texture.image = .\data\terrain\tiles\textures\grass8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass9
+   Material.Texture.image = .\data\terrain\tiles\textures\grass9.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass10
+   Material.Texture.image = .\data\terrain\tiles\textures\grass10.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_ground1
+   Material.Texture.image = .\data\terrain\tiles\textures\grass_ground1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_ground2
+   Material.Texture.image = .\data\terrain\tiles\textures\grass_ground2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_ground3
+   Material.Texture.image = .\data\terrain\tiles\textures\grass_ground3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_rock1
+   Material.Texture.image = .\data\terrain\tiles\textures\grass_rock1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_sand1
+   Material.Texture.image = .\data\terrain\tiles\textures\grass_sand1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_sand2
+   Material.Texture.image = .\data\terrain\tiles\textures\grass_sand2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = ground1
+   Material.Texture.image = .\data\terrain\tiles\textures\ground1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock1
+   Material.Texture.image = .\data\terrain\tiles\textures\rock1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock2
+   Material.Texture.image = .\data\terrain\tiles\textures\rock2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock3
+   Material.Texture.image = .\data\terrain\tiles\textures\rock3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock4
+   Material.Texture.image = .\data\terrain\tiles\textures\rock4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock5
+   Material.Texture.image = .\data\terrain\tiles\textures\rock5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock6
+   Material.Texture.image = .\data\terrain\tiles\textures\rock6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock7
+   Material.Texture.image = .\data\terrain\tiles\textures\rock7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock8
+   Material.Texture.image = .\data\terrain\tiles\textures\rock8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock9
+   Material.Texture.image = .\data\terrain\tiles\textures\rock9.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand1
+   Material.Texture.image = .\data\terrain\tiles\textures\sand1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand2
+   Material.Texture.image = .\data\terrain\tiles\textures\sand2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand3
+   Material.Texture.image = .\data\terrain\tiles\textures\sand3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand4
+   Material.Texture.image = .\data\terrain\tiles\textures\sand4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand5
+   Material.Texture.image = .\data\terrain\tiles\textures\sand5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand6
+   Material.Texture.image = .\data\terrain\tiles\textures\sand6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand7
+   Material.Texture.image = .\data\terrain\tiles\textures\sand7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand8
+   Material.Texture.image = .\data\terrain\tiles\textures\sand8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand9
+   Material.Texture.image = .\data\terrain\tiles\textures\sand9.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock1vf
+   Material.Texture.image = .\data\terrain\tiles\textures\rock1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock1vs
+   Material.Texture.image = .\data\terrain\tiles\textures\rock1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock2vf
+   Material.Texture.image = .\data\terrain\tiles\textures\rock2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock2vs
+   Material.Texture.image = .\data\terrain\tiles\textures\rock2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock3vf
+   Material.Texture.image = .\data\terrain\tiles\textures\rock3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock3vs
+   Material.Texture.image = .\data\terrain\tiles\textures\rock3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock4vf
+   Material.Texture.image = .\data\terrain\tiles\textures\rock4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock4vs
+   Material.Texture.image = .\data\terrain\tiles\textures\rock4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock5vf
+   Material.Texture.image = .\data\terrain\tiles\textures\rock5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock5vs
+   Material.Texture.image = .\data\terrain\tiles\textures\rock5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock6vf
+   Material.Texture.image = .\data\terrain\tiles\textures\rock6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock6vs
+   Material.Texture.image = .\data\terrain\tiles\textures\rock6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock7vf
+   Material.Texture.image = .\data\terrain\tiles\textures\rock7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock7vs
+   Material.Texture.image = .\data\terrain\tiles\textures\rock7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock8vf
+   Material.Texture.image = .\data\terrain\tiles\textures\rock8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock8vs
+   Material.Texture.image = .\data\terrain\tiles\textures\rock8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock9vf
+   Material.Texture.image = .\data\terrain\tiles\textures\rock9.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock9vs
+   Material.Texture.image = .\data\terrain\tiles\textures\rock9.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand1f
+   Material.Texture.image = .\data\terrain\tiles\textures\sand1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand1s
+   Material.Texture.image = .\data\terrain\tiles\textures\sand1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand2f
+   Material.Texture.image = .\data\terrain\tiles\textures\sand2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand2s
+   Material.Texture.image = .\data\terrain\tiles\textures\sand2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand3f
+   Material.Texture.image = .\data\terrain\tiles\textures\sand3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand3s
+   Material.Texture.image = .\data\terrain\tiles\textures\sand3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand4f
+   Material.Texture.image = .\data\terrain\tiles\textures\sand4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand4s
+   Material.Texture.image = .\data\terrain\tiles\textures\sand4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand5f
+   Material.Texture.image = .\data\terrain\tiles\textures\sand5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand5s
+   Material.Texture.image = .\data\terrain\tiles\textures\sand5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand6f
+   Material.Texture.image = .\data\terrain\tiles\textures\sand6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand6s
+   Material.Texture.image = .\data\terrain\tiles\textures\sand6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand7f
+   Material.Texture.image = .\data\terrain\tiles\textures\sand7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand7s
+   Material.Texture.image = .\data\terrain\tiles\textures\sand7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand8f
+   Material.Texture.image = .\data\terrain\tiles\textures\sand8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand8s
+   Material.Texture.image = .\data\terrain\tiles\textures\sand8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand9f
+   Material.Texture.image = .\data\terrain\tiles\textures\sand9.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand9s
+   Material.Texture.image = .\data\terrain\tiles\textures\sand9.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test0
+   Material.Texture.image = .\data\terrain\tiles\textures\test0.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test1
+   Material.Texture.image = .\data\terrain\tiles\textures\test1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test2
+   Material.Texture.image = .\data\terrain\tiles\textures\test2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test3
+   Material.Texture.image = .\data\terrain\tiles\textures\test3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test4
+   Material.Texture.image = .\data\terrain\tiles\textures\test4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test5
+   Material.Texture.image = .\data\terrain\tiles\textures\test5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test6
+   Material.Texture.image = .\data\terrain\tiles\textures\test6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test7
+   Material.Texture.image = .\data\terrain\tiles\textures\test7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test8
+   Material.Texture.image = .\data\terrain\tiles\textures\test8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test9
+   Material.Texture.image = .\data\terrain\tiles\textures\test9.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test10
+   Material.Texture.image = .\data\terrain\tiles\textures\test10.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test11
+   Material.Texture.image = .\data\terrain\tiles\textures\test11.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test12
+   Material.Texture.image = .\data\terrain\tiles\textures\test12.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test13
+   Material.Texture.image = .\data\terrain\tiles\textures\test13.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test14
+   Material.Texture.image = .\data\terrain\tiles\textures\test14.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = alpha0a
+   Material.Texture.image = .\data\terrain\tiles\textures\grass1.dds
+   Material.Texture2Name = alphanull
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = alpha0b
+   Material.Texture.image = .\data\terrain\tiles\textures\grass1.dds
+   Material.Texture2Name = alphanull
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = alpha0c
+   Material.Texture.image = .\data\terrain\tiles\textures\grass1.dds
+   Material.Texture2Name = alphanull
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock1
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock2
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock3
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock4
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock5
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock6
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea1
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea2
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea3
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea4
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea5
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea6
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test15
+   Material.Texture.image = .\data\terrain\tiles\textures\test15.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test16
+   Material.Texture.image = .\data\terrain\tiles\textures\test16.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test17
+   Material.Texture.image = .\data\terrain\tiles\textures\test17.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test18
+   Material.Texture.image = .\data\terrain\tiles\textures\test18.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test19
+   Material.Texture.image = .\data\terrain\tiles\textures\test19.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test20
+   Material.Texture.image = .\data\terrain\tiles\textures\test20.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test21
+   Material.Texture.image = .\data\terrain\tiles\textures\test21.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test22
+   Material.Texture.image = .\data\terrain\tiles\textures\test22.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test23
+   Material.Texture.image = .\data\terrain\tiles\textures\test23.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test24
+   Material.Texture.image = .\data\terrain\tiles\textures\test24.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test25
+   Material.Texture.image = .\data\terrain\tiles\textures\test25.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert1
+   Material.Texture.image = .\data\terrain\tiles\textures\desert1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert2
+   Material.Texture.image = .\data\terrain\tiles\textures\desert2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert3
+   Material.Texture.image = .\data\terrain\tiles\textures\desert3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert4
+   Material.Texture.image = .\data\terrain\tiles\textures\desert4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert5
+   Material.Texture.image = .\data\terrain\tiles\textures\desert5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert6
+   Material.Texture.image = .\data\terrain\tiles\textures\desert6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert7
+   Material.Texture.image = .\data\terrain\tiles\textures\desert7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert8
+   Material.Texture.image = .\data\terrain\tiles\textures\desert8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert9
+   Material.Texture.image = .\data\terrain\tiles\textures\desert9.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert10
+   Material.Texture.image = .\data\terrain\tiles\textures\desert10.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert11
+   Material.Texture.image = .\data\terrain\tiles\textures\desert11.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert12
+   Material.Texture.image = .\data\terrain\tiles\textures\desert12.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = mud_rock_summer
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\mud_rock_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = mud_soil_summer
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\mud_soil_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = mud_summer
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\mud_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = road1_summer
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road1_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = road2_summer
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road2_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = road3_summer
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road3_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = road4_summer
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road4_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name =road5_summer
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road5_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = road6_summer
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road6_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = tillage1_summer
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\tillage1_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = tillage2_summer
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\tillage2_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = tillage2_v_summer
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\tillage2_v_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = tillage2_d_summer
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\tillage2_d_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = undergrowth_summer
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\undergrowth_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = undergrowth2_summer
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\undergrowth2_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass1_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass9_bald3_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass2_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass1_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass3_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass2_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass4_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass3_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass5_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass6_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter16.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass7_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass8_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter21.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass9_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass1_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass10_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass1_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_ground1_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_ground2_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_ground3_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_rock1_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass12_bald6_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_sand1_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter21.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_sand2_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = ground1_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\ground1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock1_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter12.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock2_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter13.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock3_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter13.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock4_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter17.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock5_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter22.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock6_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter15.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock7_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter14.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock8_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter16.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock9_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter20.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand1_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass13_bald7_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand2_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass13_bald7_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand3_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter20.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand4_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass1_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand5_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass1_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand6_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass1_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand7_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass1_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand8_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass1_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand9_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass1_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock1vf_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter12.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock1vs_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter12.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock2vf_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter13.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock2vs_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter13.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock3vf_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter13.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock3vs_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter13.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock4vf_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter17.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock4vs_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter17.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock5vf_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter22.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock5vs_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter22.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock6vf_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter15.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock6vs_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter15.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock7vf_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter14.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock7vs_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter14.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock8vf_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter16.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock8vs_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter16.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock9vf_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter20.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock9vs_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter20.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand1f_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass1_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand1s_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter25.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand2f_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass1_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand2s_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass1_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand3f_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass3_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand3s_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass1_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand4f_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass13_bald7_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand4s_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass13_bald7_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand5f_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass1_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand5s_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass2_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand6f_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass2_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand6s_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass2_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand7f_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass2_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand7s_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass2_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand8f_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass1_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand8s_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass3_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand9f_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass2_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand9s_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass3_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test0_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test1_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test2_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test3_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test4_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass1_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test5_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass13_bald7_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test6_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test7_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass8_bald2_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test8_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass5_soil1_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test9_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass13_bald7_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test10_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass1_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test11_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass2_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test12_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test13_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test14_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = alpha0a_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass1_winter.dds
+   Material.Texture2Name = alphanull
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = alpha0b_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass2_winter.dds
+   Material.Texture2Name = alphanull
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = alpha0c_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass2_winter.dds
+   Material.Texture2Name = alphanull
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock1_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock2_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass13_bald7_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock3_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass12_bald6_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock4_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass12_bald6_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock5_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock6_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea1_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea2_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea3_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea4_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea5_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea6_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test15_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass13_bald7_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test16_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\test16.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test17_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass13_bald7_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test18_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test19_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test20_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass1_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test21_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test22_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\test22.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test23_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\test23.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test24_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\grass13_bald7_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test25_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter25.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert1_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\desert1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert2_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\desert2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert3_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\desert3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert4_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\desert4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert5_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\desert5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert6_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\desert6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert7_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\desert7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert8_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\desert8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert9_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\desert9.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert10_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\desert10.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert11_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\desert11.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert12_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\desert12.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = empty
+   Material.Texture.image = .\data\terrain\tiles\textures\winter1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = empty1
+   Material.Texture.image = .\data\terrain\tiles\textures\winter0.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = empty2
+   Material.Texture.image = .\data\terrain\tiles\textures\winter0.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = empty3
+   Material.Texture.image = .\data\terrain\tiles\textures\winter25.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = empty4
+   Material.Texture.image = .\data\terrain\tiles\textures\winter0.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = mud_rock_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\mud_rock_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = mud_soil_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\mud_soil_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = mud_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\mud_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = road1_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road1_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = road2_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road2_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = road3_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road3_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = road4_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road4_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name =road5_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road5_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = road6_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road6_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = tillage1_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\tillage1_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = tillage2_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\tillage2_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = tillage2_v_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\tillage2_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = tillage2_d_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\tillage2_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = undergrowth_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\undergrowth_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = undergrowth2_winter
+   Material.Texture.image = .\data\terrain\tiles\textures\winter\undergrowth2_winter.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass1_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass1_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass2_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass2_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass3_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass3_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass4_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass4_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass5_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass5_soil1_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass6_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass6_soil2_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass7_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass12_bald6_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass8_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass3_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass9_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass9_bald3_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass10_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass10_bald4_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_ground1_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\grass_ground1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_ground2_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass12_bald6_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_ground3_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass13_bald7_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_rock1_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass3_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_sand1_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass3_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_sand2_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass10_bald4_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = ground1_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\ground1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock1_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock2_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock3_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock4_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock5_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock6_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock7_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock8_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock9_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\undergrowth2_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand1_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_dirty_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand2_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_dirty2_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand3_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_mud_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand4_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_mud_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand5_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass11_bald5_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand6_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_stone_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand7_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\undergrowth2_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand8_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_rock_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand9_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_dirty_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock1vf_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock1vs_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock2vf_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock2vs_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock3vf_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock3vs_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock4vf_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock4vs_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock5vf_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\mud_rock_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock5vs_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\mud_rock_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock6vf_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock6vs_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock7vf_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock7vs_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock8vf_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock8vs_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock9vf_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock9vs_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\rock4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand1f_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_dirty_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand1s_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_dirty_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand2f_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_dirty2_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand2s_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_dirty2_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand3f_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_mud_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand3s_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_mud_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand4f_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_mud_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand4s_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_mud_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand5f_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass11_bald5_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand5s_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass11_bald5_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand6f_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_stone_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand6s_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_stone_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand7f_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_rock_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand7s_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_rock_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand8f_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_rock_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand8s_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_rock_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand9f_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_dirty_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand9s_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_dirty_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test0_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\soil1_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test1_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass3_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test2_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass14_mud_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test3_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\soil1_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test4_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass3_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test5_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass1_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test6_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass2_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test7_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass3_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test8_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass13_bald7_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test9_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass13_bald7_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test10_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass1_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test11_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass1_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test12_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass2_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test13_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass3_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test14_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass3_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = alpha0a_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\grass1.dds
+   Material.Texture2Name = alphanull
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = alpha0b_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\grass1.dds
+   Material.Texture2Name = alphanull
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = alpha0c_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\grass1.dds
+   Material.Texture2Name = alphanull
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock1_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock2_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock3_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock4_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock5_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock6_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea1_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea2_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea3_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea4_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea5_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea6_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test15_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\soil1_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test16_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\test16.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test17_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\soil_slope_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test18_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\undergrowth_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test19_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\undergrowth_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test20_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\tillage2_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test21_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\tillage2_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test22_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\test22.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test23_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\test23.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test24_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\grass14_mud_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test25_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\sand_mud_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert1_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\desert1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert2_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\desert2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert3_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\desert3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert4_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\desert4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert5_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\desert5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert6_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\desert6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert7_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\desert7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert8_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\desert8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert9_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\desert9.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert10_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\desert10.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert11_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\desert11.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert12_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\desert12.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = mud_rock_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\mud_rock_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = mud_soil_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\mud_soil_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = mud_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\mud_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = road1_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road1_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = road2_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road2_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = road3_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road3_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = road4_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road4_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name =road5_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road5_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = road6_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road6_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = tillage1_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\tillage1_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = tillage2_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\tillage2_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = tillage2_v_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\tillage2_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = tillage2_d_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\tillage2_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = undergrowth_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\undergrowth_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = undergrowth2_autumn
+   Material.Texture.image = .\data\terrain\tiles\textures\autumn\undergrowth2_autumn.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass1_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass7_bald1_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass2_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass8_bald2_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass3_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass9_bald3_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass4_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass10_bald4_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass5_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass14_mud_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass6_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\mud_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass7_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass11_bald5_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass8_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass2_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass9_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass3_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass10_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass4_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_ground1_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass14_mud_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_ground2_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass14_mud_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_ground3_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass14_mud_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_rock1_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass15_rock_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_sand1_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass12_bald6_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = grass_sand2_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass12_bald6_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = ground1_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\ground1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock1_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock2_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock3_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock4_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock5_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock6_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock7_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock8_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = rock9_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass14_mud_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand1_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand2_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand3_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand4_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand5_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand6_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand7_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand8_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand9_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand9.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock1vf_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock1vs_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock2vf_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock2vs_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock3vf_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock3vs_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock4vf_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock4vs_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock5vf_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock5vs_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock6vf_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock6vs_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock7vf_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock7vs_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock8vf_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock8vs_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\rock8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalfront}
+   Material.Name = rock9vf_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass14_mud_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=verticalside}
+   Material.Name = rock9vs_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass14_mud_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand1f_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand1s_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand2f_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand2s_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand3f_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand3s_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand4f_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand4s_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand5f_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand5s_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand6f_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand6s_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand7f_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand7s_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand8f_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand8s_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sand9f_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand9.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normalside}
+   Material.Name = sand9s_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sand9.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test0_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass1_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test1_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass2_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test2_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass3_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test3_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass4_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test4_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass5_soil1_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test5_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass6_soil2_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test6_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass7_bald1_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test7_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass8_bald2_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test8_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass9_bald3_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test9_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass10_bald4_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test10_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass11_bald5_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test11_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass12_bald6_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test12_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass13_bald7_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test13_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass14_mud_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test14_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass14_mud_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = alpha0a_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\grass1.dds
+   Material.Texture2Name = alphanull
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = alpha0b_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\grass1.dds
+   Material.Texture2Name = alphanull
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = alpha0c_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\grass1.dds
+   Material.Texture2Name = alphanull
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock1_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock2_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock3_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock4_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock5_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandrock6_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sandrock6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea1_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea2_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea3_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea4_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea5_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = sandsea6_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\sandsea6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test15_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\grass14_mud_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test16_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\test16.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test17_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\test17.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test18_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\test18.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test19_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\test19.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test20_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\test20.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test21_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\test21.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test22_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\test22.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test23_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\test23.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test24_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\test24.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = test25_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\test25.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert1_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\desert1.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert2_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\desert2.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert3_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\desert3.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert4_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\desert4.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert5_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\desert5.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert6_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\desert6.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert7_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\desert7.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert8_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\desert8.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert9_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\desert9.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert10_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\desert10.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert11_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\desert11.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = desert12_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\desert12.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = mud_rock_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\mud_rock_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = mud_soil_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\mud_soil_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = mud_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\mud_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = road1_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road1_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = road2_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road2_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = road3_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road3_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = road4_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road4_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name =road5_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road5_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = road6_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\summer\road6_summer.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = tillage1_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\tillage1_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = tillage2_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\tillage2_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = tillage2_v_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\tillage2_v_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = tillage2_d_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\tillage2_d_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = undergrowth_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\undergrowth_spring.dds
+section.end
+section.begin {refurl=.\data\terrain\ref\reftile.mat; refkey=normal}
+   Material.Name = undergrowth2_spring
+   Material.Texture.image = .\data\terrain\tiles\textures\spring\undergrowth2_spring.dds
+section.end

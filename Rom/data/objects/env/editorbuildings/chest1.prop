@@ -1,0 +1,73 @@
+{refurl=.\data\objects\ref\refenv.prop}
+
+mainproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=mainproperty}
+   CustomName = chest1
+   BaseName = chest1
+   RaceName = env
+section.end
+
+actorproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=actorproperty}
+   LODActorName = chest1
+   DefaultMeshName = chest1.mesh
+section.end
+
+stringproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=stringproperty}
+   CategorieName = editorbuildings
+section.end
+
+materialproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=materialproperty}
+   Mesh[0].DefaultMaterialName = well
+   Mesh[0].UseableMaterials[0] = well
+   Mesh[0].UseSeasonMaterial = True
+   Mesh[0].UseableSummerMaterials[0] = well
+   Mesh[0].UseableWinterMaterials[0] = wellw
+   Mesh[1] : struct.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=materialproperty.Mesh[0]}
+      DefaultMaterialName = well
+      UseableMaterials[0] = well
+   struct.end
+   Mesh[2] : struct.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=materialproperty.Mesh[0]}
+      DefaultMaterialName = well
+      UseableMaterials[0] = well
+   struct.end
+   Mesh[3] : struct.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=materialproperty.Mesh[0]}
+      DefaultMaterialName = well
+      UseableMaterials[0] = well
+   struct.end
+   Mesh[4] : struct.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=materialproperty.Mesh[0]}
+      DefaultMaterialName = well
+      UseableMaterials[0] = well
+   struct.end
+   Mesh[5] : struct.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=materialproperty.Mesh[0]}
+      DefaultMaterialName = well
+      UseableMaterials[0] = well
+   struct.end
+section.end
+
+collisionmaskproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=collisionmaskproperty}
+   Priority = 101
+   Mask : struct.begin
+      [*] = 0010
+      [*] = 0010
+      [*] = 0110
+      [*] = 0000
+   struct.end
+section.end
+
+collisionmeshproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=collisionmeshproperty}
+   CustomBoundingAABBMin.X = -0.05
+   CustomBoundingAABBMin.Y = -0.25
+   CustomBoundingAABBMin.Z = -0.05
+   CustomBoundingAABBMax.X = 0.65
+   CustomBoundingAABBMax.Y = 0.15
+   CustomBoundingAABBMax.Z = 0.45
+section.end
+
+scaleproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=scaleproperty}
+   DefaultScale.X = 0.3828
+   DefaultScale.Y = 0.3828
+   DefaultScale.Z = 0.3828
+section.end
+
+directionupproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=directionupproperty}
+   DefaultRollAngle = 135
+section.end

@@ -1,0 +1,16 @@
+//************************************* Cornflower*******
+section.begin {refurl=.\data\actors\ref\reftree.actor}
+   ActorList.Items[0].Name = cornflower
+   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\deco\cornflower\cornflower1.osm
+   ActorList.Items[0].LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\deco\cornflower\cornflower1.1.osm
+   ActorList.Items[1] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = cornflower.mesh2
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\deco\cornflower\cornflower2.osm
+      LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\deco\cornflower\cornflower2.1.osm
+   struct.end
+   ActorList.Items[2] : struct.begin {refurl=.\data\actors\ref\refstone.actor; refkey=.ActorList.Items[0]}
+      Name = cornflower.mesh3
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\deco\cornflower\cornflower3.osm
+      LODList.Items[1].MeshObjects.LoadFromFile = .\data\actors\env\deco\cornflower\cornflower3.1.osm
+   struct.end
+section.end

@@ -1,0 +1,124 @@
+section.begin
+   AutoCentering : struct.begin
+      macCenterX = False
+      macCenterY = False
+      macCenterZ = False
+      macUseBarycenter = False
+   struct.end
+   Direction : struct.begin
+      X = 0
+      Y = 1
+      Z = 0
+   struct.end
+   Up : struct.begin
+      X = 1
+      Y = 0
+      Z = 0
+   struct.end
+   Position : struct.begin
+      X = 0
+      Y = 0
+      Z = 0
+   struct.end
+   Scale : struct.begin
+      X = 1
+      Y = 1
+      Z = 1
+   struct.end
+   HorizonRadiusFactor = 1
+   CustomExtents = True
+   CustomExtentsMin : struct.begin
+      X = 35
+      Y = 35
+      Z = 35
+   struct.end
+   CustomExtentsMax : struct.begin
+      X = 35
+      Y = 35
+      Z = 35
+   struct.end
+   MeshPooled = False
+   MeshChildPooled = poNone
+   MeshPoolMinDist = 0
+   MeshPoolMaxDist = 0
+   MeshChildPoolMaxDist = 0
+   ShaderLODList : struct.begin
+      Enabled = True
+      ChildPooled = poNone
+      ChildPoolMax = 0
+      List : struct.begin
+         [*] : struct.begin
+            ShaderID = -1
+            ShaderIDNoBones = -1
+            ShaderIDIM = -2
+            MatDisableInIMMode = False
+            NoRenderInIMMode = False
+            MinDist = 0
+            MaxDist = 500
+            MinDistIM = 0
+            MaxDistIM = 500
+         struct.end
+      struct.end
+   struct.end
+   DistanceMax = 200
+   RollAngle = 0
+   PitchAngle = 0
+   TurnAngle = 0
+   ShowAxes = False
+   Tag = 300
+   TagFloat = 100
+   VisibilityCulling = vcInherited
+   Visible = True
+   NormalsOrientation = mnoDefault
+   ObjectsSorting = osNone
+   Options : struct.begin
+      aoNone = False
+      aoRenderOptimize = True
+   struct.end
+   RenderOptimizeOptions.baroCompileFrameOnRequest = True
+   ObjectStyle : struct.begin
+      osDirectDraw = True
+      osDoesTemperWithColorsOrFaceWinding = True
+      osIgnoreDepthBuffer = False
+      osNoVisibilityCulling = False
+   struct.end
+   AnimationMode = aamLoop
+   CurrentFrame = 0
+   CurrentFrameDelta = 0
+   StartFrame = 0
+   EndFrame = 0
+   FrameInterpolation = afpNone
+   Interval = 30
+   Reference = aarMorph
+   MaterialName = 
+   MaterialIndex = -1
+   Animations.LoadFromFile = .\data\animations\aaf\animals\crow.flying.aaf
+   TransformationFrameList.LoadFromFile = 
+   UseMeshMaterials = False
+   IgnoreMissingTextures = False
+   LODIndex = 0
+   ActorIndex = 0
+   ActorList.Items[0] : struct.begin
+      Name = crow.flying.mesh
+      LODList.Items : struct.begin
+         [0] : struct.begin
+            ScaleFrames = 1
+            DistanceMin = 0
+            DistanceMax = 500
+            FrameInterpolation = afpLSkin
+            TangentSpace = False
+            BinormalsTexCoordIndex = 1
+            TangentsTexCoordIndex = 2
+            WeightsTexCoordIndex = 4
+            MatIndicesTexCoordIndex = 5
+            NumBonesTexCoordIndex = 6
+            MeshObjects.LoadFromFile = .\data\actors\env\animals\crow\crow.flying.oss
+         struct.end
+      struct.end
+      ImposterBuilder : struct.begin
+         Impostored = False
+         ImposterFrame = 0
+      struct.end
+   struct.end
+section.end
+

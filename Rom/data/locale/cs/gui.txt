@@ -1,0 +1,961 @@
+	@ver
+PEGI v%ver%%dataver%
+	@name.def
+Kozák
+	@restype.1
+Jídlo
+	@restype.2
+Døevo
+	@restype.3
+Kámen
+	@restype.4
+Zlato
+	@restype.5
+elezo
+	@restype.6
+Uhlí
+	@text.win
+VÍTÌZSTVÍ! Stiskni ESC.
+	@text.lose
+PORÁKA! Stiskni ESC.
+	@player.id
+Hráè %playername%
+	@info.kills
+Záøezy: %amount%
+	@info.fish
+Ryby: %amount%/%maxamount%
+	@info.population
+Populace: %amount%
+	@info.maxpopulation
+Max. populace: %amount%
+	@btn.army
+Vojsko
+	@chat.all
+%from%: %text%
+	@chat.private
+%from%-->%to%: %text%
+	@chat.ally
+[SPOJENCI] %from%: %text%
+	@chat.say
+Zpráva:
+	@chat.saytoally
+Zpráva spojencùm:
+	@log.none
+%s1%%s2%
+	@log.famine
+POZOR! Tvùj stát zachvátil hladomor!
+	@log.terrainpreventsshot
+%s1%: Profil terénu brání ve støelbì.
+	@log.obstaclepreventshot
+%s1%: %s2% brání ve støelbì.
+	@log.notenoughres
+Nedostateèné prostøedky: %s1%
+	@log.notenoughfarms
+Nemáš dost obydlí!
+	@log.populationlimitreached
+Víc jednotek mít nemùeš!
+	@log.cantshootnogold
+Nemáš ádné zlato. %s1% nemùe støílet.
+	@log.cantshootnocoaloriron
+Nemáš uhlí ani elezo. %s1% nemùe støílet.
+	@log.nogold
+POZOR! NEMÁŠ ÁDNÉ ZLATO! VZPOURA JE NEVYHNUTELNÁ!
+	@log.upgradedone
+Dokonèené vylepšení: %s1%
+	@log.captured
+%s1% padá do zajetí.
+	@log.buildingdestroyed
+Ztracená budova: %s1%.
+	@log.buildingbuilt
+Dokonèená stavba: %s1%.
+	@log.shipbuilt
+%s1% konèí vırobu jednotek.
+	@log.lowfood
+Dochází ti jídlo! Vıroba nìkterıch jednotek byla pozastavena.
+	@log.lowgold
+Dochází ti zlato! Hrozí vzpoura oldákù.
+	@log.lowshoot
+Dochází ti elezo a uhlí! Tvım støeleckım jednotkám brzy dojde munice.
+	@infowindow.commoninfo
+Obecné informace
+	@infowindow.listofdead
+Seznam padlıch
+	@infowindow.marketprices
+Trní ceny
+	@infowindow.marketpricestip
+V øádcích se zobrazuje nabídka zboí.
+Ceny nad 1000 se zobrazují bíle.
+Základní ceny se zobrazují lutì.
+Vıhodné nabídky se zobrazují zelenì.
+	@infowindow.incomeandcosts
+Pøíjem a vıdaje
+	@infowindow.controlledterrain
+Okupované území
+	@infowindow.scores
+Skóre
+	@infowindow.upkeepcosts
+Náklady na údrbu
+	@infowindow.workersinmines
+Dìlníci v dolech:
+	@infowindow.resourcegain
+Vıroba zdrojù:
+	@infowindow.workersingoldmines
+Dìlníci v dolech na zlato: %s1%
+	@infowindow.amount
+Mnoství
+	@infowindow.costs
+Náklady
+	@infowindow.upkeepcoststip
+Náklady na údrbu pøedstavují
+poèet dìlníkù v dolech na zlato
+(mùe bıt zlomkovı) potøebnıch
+pro dostateènı pøíjem ve zlatì
+pro údrbu jistıch druhù
+jednotek a budov.
+	@infowindow.total
+Celkem:
+	@infowindow.woodgain
+Produkce døeva: %s1%
+	@infowindow.stonegain
+Produkce kamene: %s1%
+	@infowindow.foodgain
+Produkce jídla: %s1%
+	@endgamestats.scorescurve
+Statistika: graf skóre
+	@endgamestats.populationcurve
+Statistika: graf populace a vylepšení
+	@endgamestats.backtogame
+Zpìt do hry
+	@endgamestats.backtomenu
+Hlavní nabídka
+	@endgamestats.totalgainres
+Celkové mnoství vyrobenıch zdrojù:
+	@endgamestats.upgradecosts
+Zdroje vynaloené za vylepšení:
+	@endgamestats.mineupgradecosts
+Zdroje vynaloené na vylepšení dolù:
+	@endgamestats.unitcosts
+Zdroje vynaloené na jednotky:
+	@endgamestats.buildingcosts
+Zdroje vynaloené na budovy:
+	@endgamestats.unitupkeepcosts
+Zdroje vynaloené na údrbu jednotek:
+	@endgamestats.marketbuyres
+Zdroje zakoupené na trhu:
+	@endgamestats.marketsellres
+Zdroje prodané na trhu:
+	@endgamestats.unitscreated
+Vyrobeno
+	@endgamestats.unitsloses
+Ztraceno
+	@endgamestats.statistics
+Statistika
+	@difficulty.0
+Prázdné
+	@difficulty.1
+Normální
+	@difficulty.2
+Tìší
+	@difficulty.3
+Nejtìší
+	@difficulty.4
+Nemoná
+	@minimap.info.peacemode
+Mírovı reim
+	@minimap.info.scores
+Body:
+	@minimap.info.time
+Délka hry
+	@minimap.info.peacetime
+Zbıvající èas míru
+	@minimap.info.fps
+FPS=
+	@minimap.info.debug.name
+Jméno:
+	@minimap.info.debug.order
+Pøíkaz:
+	@minimap.info.debug.orderx
+PøíkazX:
+	@minimap.info.debug.ordery
+PøíkazY:
+	@minimap.info.debug.orderlist
+SeznamPøíkazù:
+	@minimap.info.debug.ordertrg
+OrderTrg:
+	@minimap.info.debug.hnd
+Hnd=
+	@minimap.info.debug.sto
+STO=
+	@minimap.info.debug.stp
+STP=
+	@minimap.info.debug.stolist
+STOlist=
+	@minimap.info.debug.ordlist
+ORDlist=
+	@minimap.info.debug.bpathrequested
+bPathReq=
+	@minimap.info.debug.standtime
+StandTime=
+	@minimap.info.debug.none
+none
+	@minimap.info.debug.scenariogroup
+scenariogroup=
+	@placeunits.category.infantry
+Pìchota
+	@placeunits.category.cavalry
+Jízda
+	@placeunits.category.diplomacy
+oldáci
+	@placeunits.category.artillery
+Dìlostøelectvo
+	@placeunits.category.ships
+Loïstvo
+	@placeunits.category.buildings
+Budovy
+	@placeunits.category.misc
+Rùzné
+	@text.pause
+Pozastavení
+	@text.saving
+Ukládám...
+	@hud.gold
+%color(default)%Toto je nalezištì %color(FFAA00)%zlata%color(default)%. Zde postav dùl.
+	@hud.iron
+%color(default)%Toto je nalezištì %color(FFAA00)%eleza%color(default)%. Zde postav dùl.
+	@hud.coal
+%color(default)%Toto je nalezištì %color(FFAA00)%uhlí%color(default)%. Zde postav dùl.
+	@resourcepanel.food.hint
+Jídlo produkují vesnièané na poli èi rybáøské lodì v pøístavu.
+	@resourcepanel.wood.hint
+Døevo se tìí v lese a pak se ukládá ve skladišti èi na radnici.
+	@resourcepanel.wood.hint.add
+Døevo slouí primárnì ke stavbì budov.
+	@resourcepanel.stone.hint
+Vesnièané získávají kámen v lomech a pak jej ukládají ve skladišti èi na radnici.
+	@resourcepanel.stone.hint.add
+Kámen slouí primárnì ke stavbì a také k údrbì kamennıch hradeb a vìí.
+	@resourcepanel.gold.hint
+Zlato se tìí ve zlatıch dolech, které lze postavit na nalezištích zlata.
+	@resourcepanel.gold.hint.add
+Zlato slouí primárnì k náboru a údrbì oldákù a k provádìní vylepšení. Pokud ti zlato dojde, oldácké jednotky se vzbouøí a budou bojovat proti tobì. Nìkteré jednotky pøi nedostatku zlata pøestanou pracovat.
+	@resourcepanel.iron.hint
+elezo se tìí v eleznıch dolech, které lze postavit na nalezištích eleza.
+	@resourcepanel.iron.hint.add
+elezo slouí primárnì k náboru ozbrojenıch jednotek a k vylepšování jednotek. Také slouí k vırobì munice pro støelecké jednotky, dìlostøelectvo a lodì. Pokud ti elezo dojde, nebudou zlep støílet.
+	@resourcepanel.coal.hint
+Uhlí se tìí v uhelnıch dolech, které lze postavit na nalezištích uhlí.
+	@resourcepanel.coal.hint.add
+Uhlí slouí k vırobì munice pro støelecké jednotky, dìlostøelectvo a lodì. Pokud ti uhlí dojde, nebudou moci støílet.
+	@resourcepanel.populationlimit
+Jakmile dosáhneš populaèního limitu, nebudeš moci cvièit další jednotky. Limit lze navıšit stavbou obydlí, radnic a kasáren.
+	@resourcepanel.lotofresources
+9999999+
+	@resourcepanel.lowfood
+Dochází ti jídlo! Hrozí hladomor.
+	@control.btn.idlepeasants
+Vybrat všechny neèinné vesnièany
+	@control.btn.idlemines
+Vybrat všechny plnì nevyuité doly
+	@control.btn.disembarkall
+Vylodit vše
+	@unitpanel.hint.damage
+Poškození
+	@unitpanel.hint.shield
+Obrana
+	@unitpanel.hint.protection
+Ochrana
+	@weaponkind.pike
+píka
+	@weaponkind.sword
+meè
+	@weaponkind.bullet
+støela
+	@weaponkind.cannister
+kartáèová støela
+	@weaponkind.arrow
+šíp
+	@weaponkind.firearrow
+zápalnı šíp
+	@weaponkind.cannonball
+dìlová koule
+	@weaponkind.mortarball
+modíøová koule
+	@control.btn.rallypoint
+Shromadištì
+	@control.btn.market.plusres
++%amount% jednotek
+	@control.btn.market.minusres
+%amount% jednotek
+	@control.btn.market.accept
+Smìnit
+	@control.btn.market.clear
+Zrušit obchod
+	@control.market.offer
+Nabídka
+	@control.market.demand
+Poptávka
+	@control.btn.createsquad.requiredrummer
+Aby mohl dùstojník zaloit èetu, potøebuje u sebe mít bubeníka
+	@control.btn.createsquad.requiremoreunits
+potøebuje u sebe mít víc jednotek pro zaloení èety
+	@unitpanel.info.inside
+Uvnitø
+	@unitpanel.info.maxinside
+Max. uvnitø
+	@unitpanel.info.kills
+Záøezy
+	@unitpanel.info.artlimit.cannon
+Dìla
+	@unitpanel.info.artlimit.howitzers
+Houfnice
+	@unitpanel.info.artlimit.mortars
+Modíøe
+	@unitpanel.info.artlimit.multicannon
+Vícehl. dìla
+	@unitpanel.hint.time
+Èas
+	@control.btn.holdposition
+Bránit pozici
+	@control.btn.cancelholdposition
+Pohov (Zrušit bránìní pozice)
+	@control.btn.gowithattack
+Prùzkum bojem
+	@control.btn.enableattack
+Povolit útok
+	@control.btn.disableattack
+Zakázat útok
+	@control.btn.patrol
+Hlídka
+	@control.btn.guard
+Pouít jednotku jako stráce
+	@control.btn.cancelguard
+Zrušit reim stráce
+	@control.btn.squadfill
+Zaujmout formaci
+	@control.btn.squaddisband
+Rozpustit èetu
+	@control.btn.officerdecreasesize
+Zmenšit formaci
+	@control.btn.officerincreasesize
+Roztáhnout formaci
+	@control.btn.artillerypreparation
+Bombardovat oblast
+	@control.btn.squadformline
+Zaujmout øadovou formaci
+	@control.btn.squadformcolumn
+Zaujmout sloupcovou formaci
+	@control.btn.squadformsquare
+Zaujmout ètvercovou formaci
+	@control.btn.cavsquadformline
+Zaujmout èárovou formaci
+	@control.btn.cavsquadformwedge
+Zaujmout liniovou formaci
+	@control.btn.cavsquadformcolumn
+Zaujmout sloupcovou formaci
+	@control.btn.opengates
+Otevøít brány
+	@control.btn.closegates
+Zavøít brány
+	@control.btn.groupformations
+Seskupit formace
+	@control.btn.ungroupformations
+Zrušit seskupení formací
+	@menu.btn.changeuser
+Zmìnit uivatele
+	@menu.btn.connectserver
+Pøipojit se na server
+	@menu.btn.createroom
+Zaloit místnost
+	@menu.btn.joinroom
+Pøidat se do místnosti
+	@menu.btn.startgame
+Zahájit hru
+	@menu.btn.exittomainmenu
+Hlavní nabídka
+	@menu.btn.profile
+Profil
+	@menu.btn.campaign
+Kampaò
+	@menu.btn.singleplayer
+Hra jednoho hráèe
+	@menu.btn.multiplayer
+Hra více hráèù
+	@menu.btn.internetshell
+Internetové lobby
+	@menu.btn.loadgame
+Naèíst hru
+	@menu.btn.savegame
+Uloit hru
+	@menu.btn.settings
+Nastavení
+	@menu.btn.options
+Monosti
+	@menu.btn.editor
+Editor
+	@menu.btn.exit
+Konec
+	@menu.btn.continue
+Pokraèovat
+	@menu.btn.randommap
+Náhodná mapa
+	@menu.btn.backtomainmenu
+Hlavní nabídka
+	@customgame.btn.startgame
+Spustit hru
+	@customgame.text.player
+Hráè
+	@customgame.text.nation
+Národ
+	@customgame.text.team
+Tım
+	@customgame.text.color
+Barva
+	@customgame.text.terraintype
+Tvar mapy
+	@customgame.text.relieftype
+Druh terénu
+	@customgame.text.initialresources
+Poèáteèní zdroje
+	@customgame.text.minerals
+Suroviny
+	@customgame.text.additional
+Dodateèné monosti
+	@randommap.terraintype.0
+Pustina
+	@randommap.terraintype.1
+Støedozemí
+	@randommap.terraintype.2
+Poloostrovy
+	@randommap.terraintype.3
+Ostrovy
+	@randommap.terraintype.4
+Více kontinentù
+	@randommap.terraintype.5
+Jeden kontinent
+	@randommap.minerals.0
+Málo
+	@randommap.minerals.1
+Støednì
+	@randommap.minerals.2
+Hodnì
+	@randommap.initialresources.0
+1000
+	@randommap.initialresources.1
+5000
+	@randommap.initialresources.2
+10000
+	@randommap.initialresources.3
+50000
+	@randommap.relieftype.0
+Plánì
+	@randommap.relieftype.1
+Nízké kopce
+	@randommap.relieftype.2
+Vysoké hory
+	@randommap.relieftype.3
+Vysoèina
+	@randommap.relieftype.4
+Náhorní roviny
+	@randommap.relieftype.5
+Pouš
+	@text.random
+Náhodnì
+	@text.kickplayer
+Vykopnout hráèe
+	@unitpanel.hint.damage.weaponkind.0
+Útok meèem
+	@unitpanel.hint.damage.weaponkind.1
+Útok píkou
+	@unitpanel.hint.damage.weaponkind.2
+Palebná síla
+	@unitpanel.hint.damage.weaponkind.3
+Útok šípem
+	@unitpanel.hint.damage.weaponkind.4
+Poškození dìlovou koulí
+	@unitpanel.hint.damage.weaponkind.5
+Poškození kartáèovou støelou
+	@unitpanel.hint.damage.weaponkind.6
+Poškození zápalnım šípem
+	@unitpanel.hint.damage.weaponkind.7
+Modíøová støela
+	@unitpanel.hint.protection.weaponkind.0
+Obrana vùèi meèùm
+	@unitpanel.hint.protection.weaponkind.1
+Obrana vùèi bodnım zbraním
+	@unitpanel.hint.protection.weaponkind.2
+Obrana vùèi støelám
+	@unitpanel.hint.protection.weaponkind.3
+Obrana vùèi šípùm
+	@unitpanel.hint.protection.weaponkind.4
+Obrana vùèi dìlovım koulím
+	@unitpanel.hint.protection.weaponkind.5
+Obrana vùèi kartáèovım støelám
+	@unitpanel.hint.lockcountbuilding
+Mùeš mít pouze omezenı poèet budov tohoto druhu.
+	@unitpanel.hint.lockcountunit
+Mùeš ovládat pouze omezenı poèet jednotek tohoto druhu.
+	@unitpanel.hint.artlimit
+Bylo dosaeno limitu dìlostøelectva. Potøebuješ další dìlostøelecké sklady.
+	@unitpanel.hint.prerequisitbuildings
+Vyaduje budovy
+	@unitpanel.hint.prerequisitupgrades
+Vyaduje vylepšení
+	@text.engame.win
+VÍTÌZSTVÍ! Stiskni ESC
+nebo BACKSPACE, èím tuto zprávu zavøeš.
+	@text.endgame.lose
+PORÁKA! Stiskni ESC
+nebo BACKSPACE, èím tuto zprávu zavøeš.
+	@text.minimap.gametime
+Délka hry
+	@text.minimap.gametime.peacetime
+Mír
+	@randommap.settings.startingunits
+Poèáteèní stav
+	@randommap.settings.startingunits.default
+Vıchozí
+	@randommap.settings.startingunits.armysmall
+Vojsko
+	@randommap.settings.startingunits.armymedium
+Velké vojsko
+	@randommap.settings.startingunits.armylarge
+Obrovské vojsko
+	@randommap.settings.startingunits.peasantslot
+Vojsko plné vesnièanù
+	@randommap.settings.startingunits.differentnations
+Rùzné národy
+	@randommap.settings.startingunits.towers
+Vìe
+	@randommap.settings.startingunits.cannons
+Dìla
+	@randommap.settings.startingunits.cannonsandhowitzers
+Dìla a houfnice
+	@randommap.settings.startingunits.barrack18
+Kasárna 18. století
+	@randommap.settings.balloon
+Nastavení balónù
+	@randommap.settings.balloon.default
+Vıchozí
+	@randommap.settings.balloon.no
+Bez balónù
+	@randommap.settings.balloon.with
+S balóny
+	@randommap.settings.cannons
+Dìla
+	@randommap.settings.cannons.default
+Vıchozí
+	@randommap.settings.cannons.nocannonstowerswalls
+ádná dìla, vìe ani hradby
+	@randommap.settings.cannons.expensivecannons
+Nákladná dìla
+	@randommap.settings.peacetime
+Období míru
+	@randommap.settings.peacetime.default
+ádnı mír
+	@randommap.settings.peacetime.10
+10 min
+	@randommap.settings.peacetime.15
+15 min
+	@randommap.settings.peacetime.20
+20 min
+	@randommap.settings.peacetime.30
+30 min
+	@randommap.settings.peacetime.45
+45 min
+	@randommap.settings.peacetime.60
+60 min
+	@randommap.settings.peacetime.90
+90 min
+	@randommap.settings.peacetime.120
+2 hodiny
+	@randommap.settings.peacetime.180
+3 hodiny
+	@randommap.settings.peacetime.240
+4 hodiny
+	@randommap.settings.century18
+Nastavení 18. století
+	@randommap.settings.century18.default
+Vıchozí
+	@randommap.settings.century18.no
+Nikdy
+	@randommap.settings.century18.with
+Okamitì
+	@randommap.settings.capture
+Zajímání
+	@randommap.settings.capture.default
+Vıchozí
+	@randommap.settings.capture.nopeasants
+Bez zajímání vesnièanù
+	@randommap.settings.capture.nocenterspeasants
+Bez zajímání vesnièanù èi úøadù
+	@randommap.settings.capture.onlyartillery
+Pouze dìlostøelectvo
+	@internet.missing.mail
+Chybí e-mail
+	@internet.invalid.mail
+Neplatnı e-mail
+	@internet.fillallfields
+Musíš vyplnit všechna políèka.
+	@internet.invalid.nicklength
+Tvá pøezdívka musí bıt dlouhá 4-16 znakù.
+	@internet.invalid.nickchar
+Tvá pøezdívka obsahuje nepovolené znaky.
+	@internet.invalid.passlength
+Tvé heslo musí bıt dlouhé 5-16 znakù.
+	@internet.invalid.passchar
+Tvé heslo obsahuje nepovolené znaky.
+	@internet.passdoesntmatch
+Potvrzení hesla se neshoduje s originálem.
+	@internet.invalid.gamekey
+Neplatnı klíè pro internetovou hru.
+	@internet.missing.pass
+Chybí heslo.
+	@internet.invalid.pass
+Neplatné heslo.
+	@internet.login
+Pøihlášení
+	@internet.mailregistered
+Tvùj e-mail je zaregistrovanı. Pøihlas se pomocí hesla.
+	@internet.mail
+E-mail
+	@internet.pass
+Heslo
+	@internet.entermail
+Zadej svùj e-mail
+	@internet.welcome.0
+Vítej v internetové høe!
+
+V této høe se na svùj úèet pøihlašuješ pøes e-mail. Pokud hraješ internetovou hru poprvé, musíš si zaregistrovat novı úèet.
+	@internet.welcome.1
+Tvùj e-mail se nikdy nezobrazí ostatním. Slouí pouze k pøihlášení do hry a obnovì ztraceného hesla.
+	@internet.registration
+Registrace
+	@internet.enterkey
+Zadej aktivaèní klíè produktu.
+	@internet.enternick
+Pøezdívka
+	@internet.newuser
+Registrovat
+	@internet.createpass
+Heslo
+	@internet.confirmpass
+Potvrdit heslo
+	@internet.key
+Klíè pro internetovou hru
+	@internet.forgotpass
+Zapomenuté heslo
+	@internet.passwassentto
+Heslo bylo posláno na
+	@leShellCoreVersionFailed
+Máš zastaralou verzi. Chceš ji automaticky aktualizovat?
+	@leShellDataVersionFailed
+%include(menu;leShellCoreVersionFailed)%
+	@leError
+Nelze se pøipojit na server...
+	@leShellAuthBannedFailed
+Tento úèet je zablokovanı.
+	@leShellRegClientFailed
+Tento e-mail se ji pouívá.
+	@leShellRegDataFailed
+Nesprávné registraèní údaje
+	@leShellRegCDKeyFailed
+Nesprávnı klíè internetové hry
+	@leDisconnect
+Spojení bylo pøerušeno.
+	@leDisconnectEnemy
+Spojení s nepøítelem bylo pøerušeno.
+	@leTerminated
+Herní relace byla zavøena.
+	@leShellDataVersionFailedNoUpdater
+Tvá verze hry je zastaralá. Ukonèi prosím program a povol automatické aktualizace na distribuèní platformì, aby se hra mohla aktualizovat.
+	@internet.error
+Chyba
+	@internet.info
+Informace
+	@internet.kicked
+Vyhodili tì z místnosti
+	@internet.authorizing
+Ovìøuji...
+	@internet.connecting
+Pøipojuji...
+	@internet.incorrectgamename
+Nesprávnı název hry
+	@internet.waitplayers
+Poèkej, ne se ostatním hráèùm naète hra...
+	@internet.waitplayerslist
+Èeká se na hráèe:
+	@internet.pleasewaitserverresponse
+Poèkej na odpovìï serveru...
+	@internet.createroom
+Zaloit místnost
+	@internet.createroom.hint
+Zaloit soukromou místnost chránìnou heslem.
+	@intenet.joinroom
+Pøidat se do místnosti
+	@intenet.joinroom.hint
+Pøidat se do místnosti zaloené zvolenım hráèem. Moná bude nutné zadat heslo.
+	@intenet.chooseplayer
+Vyber si hráèe ze seznamu vıše.
+	@intenet.passroom
+Heslo
+	@intenet.passroom.hint
+Zadej heslo do místnosti. Ostatní hráèi budou muset pøi vstupu do místnosti toto heslo zadat.
+	@intenet.roomispass
+Tato místnost je chránìná heslem. Pokud se chceš pøidat, zadej heslo.
+	@intenet.roomunpassed
+Pokud chceš zaloit nechránìnou místnost, nech toto pole prázdné.
+	@intenet.playercreatedroom
+Hráè %playernick% zaloil soukromou místnost %points%.
+	@intenet.playerlooksforenemy.0
+Hráè hledá protivníka
+	@intenet.playerlooksforenemy.1
+Hráè %playernick% hledá protivníka %points%.
+	@internet.privateroom
+Soukromá místnost
+	@internet.nonprivateroom
+Nesoukromá místnost
+	@internet.loading
+Naèítám
+	@btn.cancel
+Zrušit
+	@btn.close
+Zavøít
+	@btn.ok
+Ok
+	@btn.connect
+Pøipojit
+	@btn.disconnect
+Odpojit
+	@btn.approve
+Schválit
+	@btn.revert
+Zamítnout zmìny
+	@menu.resolution.header
+Zmìna rozlišení
+	@menu.resolution.text
+Pokud vidíš tuto zprávu, mùeš zmìny schválit èi zamítnout. Hra se jinak vrátí do pùvodního stavu za 10 sekund.
+	@menu.gamemenu
+Herní nabídka
+	@customgame.btn.switchtoroom
+Do místnosti
+	@customgame.btn.switchtoshell
+Pøepnout do lobby
+	@customgame.btn.closeroom
+Zavøít místnost
+	@customgame.btn.leaveroom
+Odejít z místnosti
+	@customgame.btn.alreadyready
+Jsem pøipraven!
+	@customgame.btn.ready
+OK
+	@customgame.kick
+Vyhodit
+	@customgame.closed
+Zavøít
+	@customgame.text.ready
+Pøip.
+	@internet.preset
+Pøednastavené
+	@internet.input.gamename
+Název hry
+	@internet.checkbox.makeprivate
+Soukromá hra
+	@internet.checkbox.private
+Soukromá
+	@internet.checkbox.privatehint
+Zmìnit místnost na soukromou a ochránit heslem
+	@internet.createroom.btn.create
+Zaloit
+	@internet.createroom.btn.join
+Pøidat se
+	@internet.createroom.btn.cancel
+Zrušit
+	@internet.maxplayers
+Max. hráèù
+	@internet.players
+Hráèi
+	@internet.ping
+Ping
+	@internet.rank
+Hodnost
+	@internet.games
+Hry
+	@internet.total
+Celkem:
+	@profile.btn.select
+Vybrat
+	@profile.btn.delete
+Smazat
+	@profile.btn.create
+Zaloit
+	@settings.text.header
+Nastavení
+	@settings.tab.video
+Grafika
+	@settings.tab.sound
+Zvuk
+	@settings.tab.control
+Ovládání
+	@settings.tab.keybinding
+Pøiøazení kláves
+	@settings.text.screen
+Obrazovka
+	@settings.text.quality
+Kvalita
+	@settings.text.soundsettings
+Nastavení zvuku
+	@settings.text.control
+Ovládání
+	@settings.text.gameplay
+Hratelnost
+	@settings.text.keybinding
+Klávesové zkratky
+	@settings.text.graphicsquality
+Kvalita grafiky
+	@settings.text.presetcustom
+Vlastní
+	@settings.text.resolution
+Rozlišení
+	@settings.text.lightpreset
+Pøednastavení nasvícení
+	@settings.text.texturequality
+Kvalita textur
+	@settings.text.mute
+Ztlumit
+	@settings.text.clampingmouse
+Zamknout kurzor v oknì
+	@settings.text.resoultionchange
+Zmìna rozlišení
+	@settings.text.cannotchangeresolutionineditor
+V editoru nelze provádìt zmìny rozlišení
+	@settings.text.cannotchangeresolutionnofullscreen
+Rozlišení lze mìnit pouze v reimu celé obrazovky. V reimu v oknì èi plné obrazovky v oknì zmìnit nelze.
+	@internet.msg.nowhisperuser
+pøezdívka %color%%nick%%colordefault% není online èi neexistuje
+	@progress.pleasewait
+Zpracovává se...
+	@randommap.settings.marketdip
+Dipl. úøad a trištì
+	@randommap.settings.marketdip.default
+Vıchozí
+	@randommap.settings.marketdip.nodip
+Bez dipl. úøadu
+	@randommap.settings.marketdip.nomarket
+Bez trištì
+	@randommap.settings.marketdip.noboth
+Bez obojího
+	@randommap.settings.teams
+Spojenci
+	@randommap.settings.teams.default
+Vıchozí
+	@randommap.settings.teams.nearby
+Blízko
+	@randommap.terraintype.6
+Jezera
+	@randommap.terraintype.7
+Pobøeí
+	@randommap.terraintype.8
+Øeky
+	@randommap.terraintype.9
+Bez vody
+	@randommap.settings.adviserassistant
+pomocnici
+	@randommap.settings.adviserassistant.default
+Ve vychozim nastaveni
+	@randommap.settings.adviserassistant.with
+vyoesit
+	@randommap.settings.adviserassistant.without
+zakazat
+	@randommap.settings.limit
+Limit obyvatelstva
+	@randommap.settings.limit.default
+Bez omezení
+	@randommap.settings.limit.custom
+%value% jednotek
+	@mainmenu.newspanel.nokey.header
+Multiplayer game access
+	@mainmenu.newspanel.nokey
+You see this message, because game hasn't recognized internet-key. 
+You can get it via clicking the button below.
+
+Internet-key gives an opportunity not only to play multiplayer games, but to get the latest updates, that include error-fixes and better gaming experience, because of ballance & game rules changes.
+	@internet.key.hintsteam
+Klávesu mùete najít stisknutím klávesy Shift + Tab (nebo vlastní rychlé klávesy) a vıbìrem tlaèítka "Cd-key" v pravém horním rohu obrazovky.
+	@internet.key.hintgog
+Chcete-li najít svùj internetovı klíè, otevøete knihovnu úètu GOG v prohlíeèi, vyberte Cossacks 3, kliknìte na další a vyberte "Sériové klíèe".
+	@internet.mail.hint
+V pøípadì, e se pøihlašujete s problémy, mùete kontaktovat naši podporu na adrese support@cossacks3.com. Chcete-li získat rychlejší odpovìï, napište svùj zaregistrovanı e-mail a klíè pro více hráèù.
+	@internet.forgotpass.hint
+In case you're getting problems with restoring your password, please contact our support at support@cossacks3.com. To recover the password faster, please send us your e-mail, used at registration and internet game key.
+	@internet.mailunregistered
+Tento e-mail není zaregistrovanı. Vyplò formuláø a zalo si tak úèet. Pouijte platnı existující e-mail. Jeden klíè mùe bıt vázán pouze na jeden e-mail. Svou pøezdívku a heslo mùete zmìnit pomocí tlaèítka "Zmìnit profil", kterı je k dispozici v internetovém shellu.
+	@settings.text.freezoom
+Enable free camera
+	@settings.text.performance
+*Enabling free camera would affect performance
+	@pause.limit
+You'll be able to use next pause after %value% seconds
+	@pos.col.historicalbattle
+Poloha
+	@menu.btn.historicalbattle
+Historická bitva
+	@historicalbattle.warning.notallready
+Ne všichni hráèi jsou pøipraveni
+	@historicalbattle.warning.notallchooseteam
+Ne všichni hráèi si vybrali tım
+	@historicalbattle.warning.playersinoneteam
+Jeden z hráèù musí zvolit opaènı tım
+	@historicalbattle.warning.chooseteam
+Vyberte si tım
+	@menu.btn.historicalbattle.tostage
+Vyberte øádkové poloky
+	@menu.btn.historicalbattle.startgame
+Spuste hru
+	@menu.btn.historicalbattle.readytostage
+Pøipraveno pro vıbìr pozice
+	@historicalbattle.warning.playersonepos
+Jeden z hráèù si zvolil stejnou pozici jako druhı
+	@internet.changeprofile
+Zmìnit profil
+	@internet.changeprofile.btn
+Aplikovat
+	@internet.changeprofile.hint	
+Kliknutím na toto tlaèítko mùete zmìnit svou pøezdívku nebo heslo.
+	@internet.changeprofile.text	
+Dùleité! Èasté zmìny pøezdívky mohou zpùsobit zákaz úètu.
+	@internet.chat.clearinput
+Èistı
+	@internet.chat.chatfilterfriends
+Pøátelé a soukromé zprávy
+	@internet.chat.chatfilter
+Soukromé zprávy
+	@menu.btn.credits
+Kredity
+	@menu.btn.changeart
+Zmìnit obrázek
+	@randommap.settings.peacetime.5
+5 min
+	@randommap.initialresources.4
+100000
+	@randommap.initialresources.5
+500000
+	@randommap.initialresources.6
+1000000
+	@customgame.text.foreststype
+Les
+	@randommap.foreststype.0
+Vıchozí
+	@randommap.foreststype.1
+Taiga
+	@randommap.foreststype.2
+Cernı les
+	@randommap.foreststype.3
+Venkov
+	@randommap.settings.limitwarship
+Válecné lode
+	@randommap.settings.limitwarship.default
+Vıchozí
+	@randommap.settings.limitwarship.nowarship
+Bez válecnıch lodí
+	@randommap.settings.limitwarship.transportonly
+Pouze doprava

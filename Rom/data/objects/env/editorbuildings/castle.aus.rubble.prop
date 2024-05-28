@@ -1,0 +1,327 @@
+section.begin
+   enabled = true
+   static = true
+   classname = mainproperty
+   customname = castle.aus.rubble
+   racename = env
+   basename = castle.aus.rubble
+   playerid = 0
+   playername = 
+   baseid = 1012
+   playableobject = false
+section.end
+
+section.begin
+   enabled = false
+   static = false
+   classname = debugproperty
+   debugshowaxes = false
+   debugshowboundingbox = false
+section.end
+
+section.begin
+   enabled = true
+   static = true
+   classname = designproperty
+   visibleatdesigntime = true
+   designpriority = 100
+section.end
+
+section.begin
+   enabled = true
+   static = true
+   classname = stringproperty
+   categoriename = editorbuildings
+   description[0] = castle.aus.rubble
+   classification[0] = castle.aus.rubble.deco
+section.end
+
+section.begin
+   enabled = true
+   static = false
+   classname = collisionmaskproperty
+   priority = 80
+   rotate = 0
+   scalefactor = 1
+   transformmaskoptions : struct.begin
+      tmoscale = false
+      tmorotate = false
+   struct.end
+   transformchildrenmaskoptions : struct.begin
+      tmoscale = false
+      tmorotate = false
+   struct.end
+   layeroptions : struct.begin
+      cloterrain = false
+      clowater = false
+      closky = false
+   struct.end
+   options : struct.begin
+      cotest = true
+      coWrite = true
+   struct.end
+   childrenoptions : struct.begin
+      coTest = False
+      coWrite = False
+   struct.end
+   testtypeoption = cttonone
+   testpriorityoption = ctponever
+   testclassificationunitoption = ctuoalways
+   testbasenameunitoption = ctuonever
+section.end
+
+collisionmeshproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=collisionmeshproperty}
+   CustomBoundingAABBMin.X = -1.90
+   CustomBoundingAABBMin.Y = 0.05
+   CustomBoundingAABBMin.Z = -1.90
+   CustomBoundingAABBMax.X = 1.95
+   CustomBoundingAABBMax.Y = 2.45
+   CustomBoundingAABBMax.Z = 2.05
+section.end
+
+section.begin
+   enabled = true
+   static = true
+   classname = actorproperty
+   lodactorname = castle.aus.rubble
+   randommeshname = false
+   defaultmeshname = castle.aus.rubble.mesh
+   useablemeshes[0] = true
+section.end
+
+section.begin
+   enabled = true
+   static = true
+   classname = materialproperty
+   mesh[0] : struct.begin
+      enabled = true
+      static = true
+      classname = meshmaterialproperty
+      defaultmaterialname = castle.aus
+      randommaterialname = false
+      useablematerials[0] = castle.aus
+      UseSeasonMaterial = True
+         UseableSummerMaterials : struct.begin
+            [0] = castle.aus
+         struct.end
+         UseableAutumnMaterials : struct.begin
+            [0] = castle.aus
+         struct.end
+         UseableWinterMaterials : struct.begin
+            [0] = castle.ausw
+         struct.end
+         UseableSpringMaterials : struct.begin
+            [0] = castle.aus
+         struct.end
+   struct.end
+section.end
+
+section.begin
+   enabled = false
+   static = false
+   classname = statemachineproperty
+   active = false
+   statemachine.loadfromfile = 
+   defaultinitstatename = 
+   defaultrunstatename = 
+   designtimeinitstatename = 
+   designtimerunstatename = 
+   statemachineprogressoption = smponever
+   statemachineprogresschildrenoption = smpconever
+   statemachinepriority = 0
+   statemachineinterval = 0
+section.end
+
+section.begin
+   enabled = false
+   static = false
+   classname = minimapproperty
+   minimapoption = mmvonone
+   minimapcolor : struct.begin
+      alpha = 1
+      blue = 1
+      green = 1
+      red = 1
+   struct.end
+   minimapsize = 1
+   minimapwidth = 1
+   minimapiconlibraryname = 
+section.end
+
+section.begin
+   enabled = false
+   static = false
+   classname = interfaceiconproperty
+   interfaceiconlibraryname = 
+section.end
+
+section.begin
+   enabled = false
+   static = false
+   classname = moveproperty
+   movestep = 0
+   movestepinterval = 0
+   epsilondistance = 0
+   virtualdirection : struct.begin
+      x = 0
+      y = 0
+      z = 0
+   struct.end
+section.end
+
+section.begin
+   enabled = false
+   static = false
+   classname = rotateproperty
+   turnstep = 10
+   turnstepinterval = 100
+   epsilonangle = 0
+   virtualup : struct.begin
+      x = 0
+      y = 0
+      z = 0
+   struct.end
+section.end
+
+section.begin
+   enabled = false
+   static = false
+   classname = soundproperty
+   soundlibraryname = 
+section.end
+
+section.begin
+   enabled = false
+   static = false
+   classname = frameanimationproperty
+   defaultframeanimationname = stand
+   defaultframeanimationmode = aamloop
+   defaultframeanimationinterpolation = afplinear
+   defaulframeanimationinterval = 100
+   defaultframeanimationreference = aarmorph
+   frameanimationsynchronizeoption = fasoinherited
+   frameanimationunpossiblesynchronizeoption = fausoinherited
+   frameanimationswitchchildren = false
+   defaultframeanimationcycles = 
+   randomoffsetframeanimationcycles = false
+   randomoffsetframeanimation = false
+section.end
+
+section.begin
+   enabled = false
+   static = false
+   classname = materialanimationproperty
+   defaultmaterialanimationname = 
+   defaultmaterialanimationmode = mamnone
+   defaultmaterialanimationinterval = 0
+   materialanimationsynchronizeoption = masoinherited
+   materialanimationunpossiblesynchronizeoption = mausoinherited
+   materialanimationswitchchildren = false
+section.end
+
+section.begin
+   enabled = true
+   static = true
+   classname = scaleproperty
+   defaultscale : struct.begin
+      x = 0.6
+      y = 0.6
+      z = 0.6
+   struct.end
+   randomscale = false
+   minscalefactor = 1
+   maxscalefactor = 1
+   defaultscalefactor = 1
+section.end
+
+section.begin
+   enabled = true
+   static = true
+   classname = directionupproperty
+   defaultdirection : struct.begin
+      x = 0
+      y = 1
+      z = 0
+   struct.end
+   defaultup : struct.begin
+      x = 1
+      y = 0
+      z = 0
+   struct.end
+   randompitchangle = false
+   defaultpitchangle = 0
+   deltapitchangle = 0
+   randomrollangle = false
+   defaultrollangle = 135
+   deltarollangle = 0
+   randomturnangle = false
+   defaultturnangle = 0
+   deltaturnangle = 0
+section.end
+
+section.begin
+   enabled = false
+   static = false
+   classname = dispersitionproperty
+   randomdispersition = false
+   defaultdispersition = 0
+   maxdispersition = 0
+section.end
+
+section.begin
+   enabled = true
+   static = true
+   classname = offsetproperty
+   offset : struct.begin
+      x = 0
+      y = 0
+      z = 0
+   struct.end
+   autooffset = true
+   offsetcollideoptions : struct.begin
+      ocowater = false
+      ocoterrain = true
+   struct.end
+   autoplateauterrain = false
+   autoplateauterrainradius = 0
+section.end
+
+section.begin
+   enabled = false
+   static = false
+   classname = autochildrenproperty
+section.end
+
+section.begin
+   enabled = true
+   static = true
+   classname = selectionproperty
+   selectionoption = stocircle
+   selectionsize = 3
+   selectionoffsety = 0
+   selectionautoscale = true
+   selectionterraincollide = true
+   selectionwidth = 0.100000001490116
+   selectioncolor : struct.begin
+      alpha = 1
+      blue = 1
+      green = 1
+      red = 1
+   struct.end
+section.end
+
+section.begin
+   enabled = false
+   static = false
+   classname = decalproperty
+   randomdecal = false
+   defaultdecalname = 
+   autodestroydecal = false
+section.end
+
+section.begin
+   enabled = false
+   static = false
+   classname = cmdsproperty
+   defaultcmd = 0
+section.end

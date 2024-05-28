@@ -1,0 +1,49 @@
+{refurl=.\data\objects\ref\refenv.prop}
+
+mainproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=mainproperty}
+   CustomName = crates1
+   BaseName = crates1
+   RaceName = env
+section.end
+
+stringproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=stringproperty}
+   CategorieName = editorbuildings
+section.end
+
+actorproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=actorproperty}
+   LODActorName = crates1
+   DefaultMeshName = crates1.mesh
+section.end
+
+materialproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=materialproperty}
+   Mesh[0].DefaultMaterialName = decor
+   Mesh[0].UseableMaterials[0] = decor
+   Mesh[0].UseSeasonMaterial = True
+   Mesh[0].UseableSummerMaterials[0] = decor
+   Mesh[0].UseableWinterMaterials[0] = decorw
+section.end
+
+collisionmaskproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=collisionmaskproperty}
+   Priority = 101
+   Mask : struct.begin
+   struct.end
+section.end
+
+collisionmeshproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=collisionmeshproperty}
+   CustomBoundingAABBMin.X = -0.5
+   CustomBoundingAABBMin.Y = -0.1
+   CustomBoundingAABBMin.Z = -0.5
+   CustomBoundingAABBMax.X = 0.5
+   CustomBoundingAABBMax.Y = 0.8
+   CustomBoundingAABBMax.Z = 0.5
+section.end
+
+scaleproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=scaleproperty}
+   DefaultScale.X = 0.4
+   DefaultScale.Y = 0.4
+   DefaultScale.Z = 0.4
+section.end
+
+directionupproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=directionupproperty}
+   DefaultRollAngle = 45
+section.end

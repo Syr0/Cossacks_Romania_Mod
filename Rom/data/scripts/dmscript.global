@@ -1,0 +1,2407 @@
+// Workspacev1.6.0.3MOD -Ebel
+// constants
+section.begin
+   gc_ntmodversion = '(NTM) v1.6.0.3'; 
+   gc_ResCount = 7;
+
+   gc_statetag_essential_none = 1 shl 0;
+   gc_statetag_essential_birth = 1 shl 1;
+   gc_statetag_essential_death = 1 shl 2;
+   gc_statetag_move_idle = 1 shl 3;
+   gc_statetag_move_walk = 1 shl 4;
+   gc_statetag_move_turn = 1 shl 5;
+   gc_statetag_action_none = 1 shl 6;
+   gc_statetag_action_attack = 1 shl 7;
+   gc_statetag_action_build = 1 shl 8;
+   gc_statetag_action_extract = 1 shl 9;
+   gc_statetag_execute_none = 1 shl 10;
+   gc_statetag_execute_move = 1 shl 11;
+   gc_statetag_weapon_none = 1 shl 12;
+   gc_statetag_weapon_0 = 1 shl 13;
+   gc_statetag_weapon_1 = 1 shl 14;
+   gc_statetag_weapon_2 = 1 shl 15;
+   gc_statetag_resource_none = 1 shl 16;
+   gc_statetag_resource_food = 1 shl 17;
+   gc_statetag_resource_wood = 1 shl 18;
+   gc_statetag_resource_stone = 1 shl 19;
+   gc_statetag_visual_none = 1 shl 20;
+   gc_statetag_visual_stage_0 = 1 shl 21;
+   gc_statetag_visual_stage_1 = 1 shl 22;
+   gc_statetag_visual_stage_2 = 1 shl 23;
+   gc_statetag_visual_stage_3 = 1 shl 24;
+   gc_statetag_visual_hide = 1 shl 25;
+
+   gc_statetag_sync_stp = 1 shl 29;
+   gc_statetag_sync_endpoint = 1 shl 30;
+
+   gc_statetag_essential = gc_statetag_essential_none or gc_statetag_essential_birth or gc_statetag_essential_death;
+   gc_statetag_move = gc_statetag_move_idle or gc_statetag_move_walk or gc_statetag_move_turn;
+   gc_statetag_action = gc_statetag_action_none or gc_statetag_action_attack or gc_statetag_action_build or gc_statetag_action_extract;
+   gc_statetag_execute = gc_statetag_execute_none or gc_statetag_execute_move;
+   gc_statetag_weapon = gc_statetag_weapon_none or gc_statetag_weapon_0 or gc_statetag_weapon_1 or gc_statetag_weapon_2;
+   gc_statetag_resource = gc_statetag_resource_none or gc_statetag_resource_food or gc_statetag_resource_wood or gc_statetag_resource_stone;
+   gc_statetag_visual = gc_statetag_visual_none or gc_statetag_visual_stage_0 or gc_statetag_visual_stage_1 or gc_statetag_visual_stage_2 or gc_statetag_visual_stage_3 or gc_statetag_visual_hide;
+
+   // place building restricts
+   gc_path_mincoldist = 1;
+   gc_path_minemincoldist = 3.24;
+
+   // idle grid
+   gc_idlegrid_size = 0.8;
+   gc_idlegrid_mapwidth = 640;
+   gc_idlegrid_mapheight = 640;
+   gc_idlegrid_countx = 800;//gc_idlegrid_mapwidth*1.25;
+   gc_idlegrid_county = 800;//gc_idlegrid_mapheight*1.25;
+
+   // scan grid
+   gc_scangrid_size = 4;
+   gc_scangrid_mapwidth = 640;
+   gc_scangrid_mapheight = 640;
+   gc_scangrid_countx = gc_scangrid_mapwidth div gc_scangrid_size;
+   gc_scangrid_county = gc_scangrid_mapheight div gc_scangrid_size;
+   gc_scangrid_tracestep = 1;
+
+   // res grid
+   gc_resgrid_size = 4;
+   gc_resgrid_mapwidth = 640;
+   gc_resgrid_mapheight = 640;
+   gc_resgrid_countx = gc_resgrid_mapwidth div gc_resgrid_size;
+   gc_resgrid_county = gc_resgrid_mapheight div gc_resgrid_size;
+
+   // sound grid
+   gc_soundgrid_size = 8;
+   gc_soundgrid_mapwidth = 640;
+   gc_soundgrid_mapheight = 640;
+   gc_soundgrid_countx = gc_soundgrid_mapwidth div gc_soundgrid_size;
+   gc_soundgrid_county = gc_soundgrid_mapheight div gc_soundgrid_size;
+   gc_scangrid_to_soundgrid = gc_soundgrid_size div gc_resgrid_size;
+
+   // map terrain data
+   gc_terraindata_mapwidth = 640;
+   gc_terraindata_mapheight = 640;
+   gc_terraindata_collision = 4;
+   gc_terraindata_maxplayers = 16;
+
+   // collision tag
+   gc_collisiontag_none = 0;
+   gc_collisiontag_bridge = 10;
+   gc_collisiontag_building = 80;
+   gc_collisiontag_terrain = 101;
+   gc_collisiontag_water = 87;
+   gc_collisiontag_waterborder = 110;
+   gc_collisiontag_landborder = 109;
+   gc_collisiontag_stretchland = 85;
+   gc_collisiontag_wall = 95;
+
+   gc_TestPriorityOption_Water = 'ctpoEqual';
+   gc_TestPriorityOption_Land = 'ctpoGreater';
+
+   gc_MaxPlayerCount = 12;
+   gc_MaxNonSpectatorsCount = 8;
+
+   gc_playerind_env = gc_MaxPlayerCount;
+   gc_playerind_misc = gc_MaxPlayerCount+1;
+   gc_playerind_progress = gc_MaxPlayerCount+2;
+   gc_playerind_pool = gc_MaxPlayerCount+3;
+
+   gc_playerind_env_old = 9;
+   gc_playerind_misc_old = 10;
+   gc_playerind_progress_old = 11;
+   gc_playerind_pool_old = 12;
+
+   gc_MaxObjCount = 32000;
+   gc_obj_MaxWeapon = 4;
+   gc_obj_MaxWeaponSlots = 32;
+   gc_obj_MaxOrderCount = 12;
+   gc_obj_maxinsidecount = 280;
+
+   gc_obj_maxattackradiusdisp = 3;
+   gc_obj_shipcontructrollangle = -45;
+
+   gc_MaxCountryCountRelease = 23;
+   gc_MaxCountryCount = 23;
+   gc_MaxColorCount = 13;
+   gc_MaxKeyColorCount = 24;
+   gc_MaxAfterGameStatUpgradeCount = 320;
+   gc_MaxProjSimulatePoints = 2048;
+   gc_MaxLogMessageCount = 8;
+   gc_MaxChatMessageCount = 64;
+   gc_MaxArtilleryType = 4;
+   gc_FieldMaxHP = 25000;
+   gc_BuildingSlowDeathHP = 1999;
+   gc_BuildingSlowDeathRandom = 300;
+   gc_BuildingSlowDeathSpeed = 90;
+   gc_MaxMapWidth = 640;
+   gc_MaxMapHeight = 640;
+   gc_MaxColMapWidth = 2*gc_MaxMapWidth;
+   gc_MaxColMapHeight = 2*gc_MaxMapHeight;
+   gc_MaxWallVariationCount = 24;
+   gc_MaxWallBuilderPointsCount = 16;
+   gc_MaxUnitsArr = 128;
+
+   // topology params
+   gc_top_ZoneWeight = 10;
+   gc_top_UnitDanger = 1;
+   gc_top_BuildAttract = 1;
+   gc_top_UnitTick = 50;
+   gc_top_GlobalTick = 100;
+   gc_top_DangerDecFactor = 0.5;
+   gc_top_AttractDecFactor = 0.5;
+   gc_top_EffectDist = 3;
+   gc_top_MaxUpdateAreas = 500;
+   gc_top_TopologyPriority = 90;
+   gc_top_PathPriority = 70;
+   gc_top_WallPriority = 95;
+   gc_top_WallQuadTree = 2;
+
+   gc_player_SquadMoveTick = 10;
+   gc_player_SquadDismissPercent = 0.25;
+
+   gc_MaxGuardOrderCount = 2;
+   gc_MaxBuilderCount = 30;
+   gc_BuilderDist = 1.0;
+   gc_BuilderShift = 0.5;
+   gc_MaxExitPointsCount = 4;
+   gc_MaxShotPointsCount = 40;
+   gc_MaxSmokePointsCount = 80;
+
+   gc_formation_maxcount = 160;
+   gc_formation_maskmaxwidth = 54;
+   gc_formation_maskmaxheight = 24;
+   
+   gc_pixels_to_meter = 26.6666666;
+   gc_meters_to_tile = 2;
+   gc_pixels_to_tile = 53.3333333;
+   gc_tiles_to_pixels = 0.01875;
+   gc_frames_to_time = 0.03125;
+   gc_time_to_frames = 32;
+   gc_c1rand_to_random = 32768; // 65536
+   gc_weapon_gravity_c1toc3 = 2;
+   gc_collision_size = 0.5;
+   gc_buildtime_modifier = 10;
+   gc_squad_holdmode_time = 150*8*gc_frames_to_time;
+   gc_c1toc3_constuction_framedifference = 1.15;
+   gc_buildtime_progressperhit = gc_buildtime_modifier*gc_frames_to_time*gc_c1toc3_constuction_framedifference;
+   gc_building_deathtime_0 = 30;
+   gc_building_deathtime_1 = 30;
+   gc_building_ignoretreesradius = 16;
+   gc_unit_deathtime_0 = 2;
+   gc_unit_deathtime_1 = 20;
+   gc_unit_deathtime_2 = 20;
+   gc_unit_deathtime_2art = 30;
+   gc_unit_deathtime_3 = 4;
+   gc_unit_deathtime_0ship = 10;
+   gc_unit_deathtime_1ship = 10;
+   gc_unit_deathtime_2ship = 35;
+   gc_unit_deathtime_3ship = 30;
+   gc_unit_opentraptime = 1.3;
+   gc_unit_SailToDestroyTime = 5;
+   gc_unit_meleeattackradius = 3.5;
+   gc_unit_runawaydelay = 1.3; // 0.7
+   gc_unit_runawaydist = 3.5;  // 3.5
+   gc_unit_searchvictimattargetdist = 6;
+   gc_progress_searchenemyweight = 10;
+
+   // gameplay
+   gc_gameplay_infinitehp = 99999;
+   gc_gameplay_officersearchradius = 1280/gc_pixels_to_tile;
+   gc_gameplay_findminepositionradius = 1.5;
+   gc_gameplay_captureblockshotradius = 160/gc_pixels_to_tile;
+   gc_gameplay_captureradius = 214/gc_pixels_to_tile;
+   gc_gameplay_protectionradius = 426/gc_pixels_to_tile;
+   gc_gameplay_resourceDropRadius = 3;
+   gc_gameplay_repairhp = 20;
+   gc_gameplay_maxplayersquadcount = 500;
+   gc_gameplay_expensivecannonskoef = 10;
+   gc_gameplay_expensivemercskoef = 3;
+   gc_gameplay_meleeguardmaxsearchdist = 2.5;
+
+   gc_gameplay_captureblockshotradiusSqr = gc_gameplay_captureblockshotradius*gc_gameplay_captureblockshotradius;
+   gc_gameplay_captureradiusSqr = gc_gameplay_captureradius*gc_gameplay_captureradius;
+   gc_gameplay_protectionradiusSqr = gc_gameplay_protectionradius*gc_gameplay_protectionradius;
+   gc_gameplay_resourceDropRadiusSqr = gc_gameplay_resourceDropRadius*gc_gameplay_resourceDropRadius;
+
+   gc_gameplay_resource_maxattackers_none = 4;
+   gc_gameplay_resource_maxattackers_food = 3;
+   gc_gameplay_resource_maxattackers_wood = 2;
+   gc_gameplay_resource_maxattackers_stone = 3;
+
+   gc_gui_cursorprio_my = 1;
+   gc_gui_cursorprio_wood = 2;
+   gc_gui_cursorprio_food = 3;
+   gc_gui_cursorprio_stone = 4;
+   gc_gui_cursorprio_goinside = 5;
+   gc_gui_cursorprio_build = 6;
+   gc_gui_cursorprio_enemy = 7;
+
+   gc_MaxAIDifficultyCount = 4;
+   gc_MaxTerrainTypeCount = 9;
+   gc_MaxSeasonCount = 4;
+   gc_MaxReliefTypeCount = 6;
+   gc_MaxForestsTypeCount = 4;
+   gc_MaxResourcesCount = 7;
+   gc_MaxResourceMinesCount = 3;
+   
+   gc_gamemode_mainmenu = 0;
+   gc_gamemode_game = 1;
+   gc_gamemode_editor = 2;
+   gc_gamemode_spectator = 3;
+   gc_gamemode_replay = 4;
+   gc_gamemode_endgamestatistics = 5;
+
+   gc_gui_saveload_mode_load = 0;
+   gc_gui_saveload_mode_save = 1;
+   gc_gui_saveload_mode_loadreplay = 2;
+   gc_gui_saveload_mode_savereplay = 3;
+
+   gc_map_gamestage_none = 0;
+   gc_map_gamestage_waitingloading = 1;
+   gc_map_gamestage_started = 2;
+   gc_map_gamestage_finished = 3;
+
+   gc_settings_default = 0;
+   gc_settings_video = 1;
+   gc_settings_sound = 2;
+   gc_settings_control = 3;
+   gc_settings_keybinding = 4;
+   gc_settings_hotkeys = 5;
+   gc_settings_ignore = 6;
+
+   gc_obj_material_count = 9;
+   gc_obj_material_none = 0;
+   gc_obj_material_body = 1;
+   gc_obj_material_building = 2;
+   gc_obj_material_wood = 3;
+   gc_obj_material_stone = 3;
+   gc_obj_material_ship = 4;
+   gc_obj_material_iron = 5;
+   gc_obj_material_woodwall = 6;
+   gc_obj_material_water = 7;
+
+   gc_obj_weapon_kind_count = 10;
+   gc_obj_weapon_kind_none = 0;
+   gc_obj_weapon_kind_pike = 1;
+   gc_obj_weapon_kind_sword = 2;
+   gc_obj_weapon_kind_bullet = 3;
+   gc_obj_weapon_kind_cannister = 4;
+   gc_obj_weapon_kind_arrow = 5;
+   gc_obj_weapon_kind_firearrow = 6;
+   gc_obj_weapon_kind_cannonball = 7;
+   gc_obj_weapon_kind_mortarball = 8;
+   gc_obj_weapon_kind_heal = 9;
+
+   gc_obj_media_land = 0;
+   gc_obj_media_water = 1;
+   gc_obj_media_fly = 2;
+
+   gc_obj_explmedia_count = 7;
+   gc_obj_explmedia_default = 0;
+   gc_obj_explmedia_water = 1;
+   gc_obj_explmedia_building = 2;
+   gc_obj_explmedia_ship = 3;
+   gc_obj_explmedia_grass = 4;
+   gc_obj_explmedia_wood = 5;
+   gc_obj_explmedia_rock = 6;
+
+   gc_obj_motionstyle_default = 0;
+   gc_obj_motionstyle_ship = 1;
+   gc_obj_motionstyle_slowrotate = 2;
+
+   gc_obj_usage_none = 0;
+   gc_obj_usage_mill = 1;
+   gc_obj_usage_farm = 2;
+   gc_obj_usage_center = 3;
+   gc_obj_usage_storage = 4;
+   gc_obj_usage_tower = 5;
+   gc_obj_usage_field = 6;
+   gc_obj_usage_mine = 7;
+   gc_obj_usage_fasthorse = 8;
+   gc_obj_usage_mortar = 9;
+   gc_obj_usage_cannon = 10;
+   gc_obj_usage_grenadier = 11;
+   gc_obj_usage_hardwall = 12;
+   gc_obj_usage_weakwall = 13;
+   gc_obj_usage_battleship = 14;
+   gc_obj_usage_weak = 15;
+   gc_obj_usage_fisher = 16;
+   gc_obj_usage_artdepo = 17;
+   gc_obj_usage_supermortar = 18;
+   gc_obj_usage_port = 19;
+   gc_obj_usage_lightinfantry = 20;
+   gc_obj_usage_shooter = 21;
+   gc_obj_usage_hardhorse = 22;
+   gc_obj_usage_peasant = 23;
+   gc_obj_usage_horseshooter = 24;
+   gc_obj_usage_frigate = 25;
+   gc_obj_usage_galley = 26;
+   gc_obj_usage_yacht = 27;
+   gc_obj_usage_xebec = 28;
+   gc_obj_usage_transport = 29;
+   gc_obj_usage_archer = 30;
+   gc_obj_usage_mcannon = 31;
+   gc_obj_usage_dipcenter = 32;
+
+   gc_ai_unit_none = 0;
+   gc_ai_unit_peasant = 1; 
+   gc_ai_unit_boat = 2; 
+   gc_ai_unit_center = 3; 
+   gc_ai_unit_mill = 4; 
+   gc_ai_unit_ba17 = 5;
+   gc_ai_unit_ba18 = 6; 
+   gc_ai_unit_store = 7; 
+   gc_ai_unit_academi = 8; 
+   gc_ai_unit_stable = 9; 
+   gc_ai_unit_dipcenter = 10; 
+   gc_ai_unit_artdepo = 11;
+   gc_ai_unit_market = 12;
+   gc_ai_unit_tower = 13;
+   gc_ai_unit_smith = 14;
+   gc_ai_unit_temple = 15;
+   gc_ai_unit_port = 16;   
+   gc_ai_unit_house = 17; 
+   gc_ai_unit_minegold = 18; 
+   gc_ai_unit_mineiron = 19; 
+   gc_ai_unit_minecoal = 20;
+   gc_ai_unit_officer17 = 21;
+   gc_ai_unit_drummer17 = 22; 
+   gc_ai_unit_infantry17 = 23;
+   gc_ai_unit_grendip = 24;
+   gc_ai_unit_musk17 = 25;
+   gc_ai_unit_reitar = 26;
+   gc_ai_unit_cuirassier = 27;
+   gc_ai_unit_grenadier = 28;
+   gc_ai_unit_musk18 = 29; 
+   gc_ai_unit_cannon = 30; 
+   gc_ai_unit_howitzer = 31; 
+   gc_ai_unit_mortar = 32; 
+   gc_ai_unit_cossackdip = 33; 
+   gc_ai_unit_archer = 34;
+   gc_ai_unit_dragundip = 35;
+   gc_ai_unit_priest = 36; 
+   gc_ai_unit_mbarrel = 37;
+   gc_ai_unit_dragun18 = 38;
+   gc_ai_unit_frigate = 39; 
+   gc_ai_unit_galley = 40; 
+   gc_ai_unit_yacht = 41; 
+   gc_ai_unit_lineship = 42;
+   gc_ai_unit_ferry = 43;
+   //added 07.08
+   gc_ai_unit_uniq_inf17 = 44;
+   gc_ai_unit_uniq_inf18 = 45;
+   gc_ai_unit_uniq_cav17 = 46;
+   gc_ai_unit_uniq_cav18 = 47;
+   gc_ai_unit_hussar     = 48;
+   gc_ai_unit_dragoon17  = 49;
+   gc_ai_unit_officer18  = 50;
+   gc_ai_unit_drummer18  = 51;
+   //added 06.01
+   gc_ai_unit_light_dip  = 52;
+   gc_ai_unit_round_dip  = 53;
+   //added 170410
+   gc_ai_unit_pikeman18  = 54;
+
+   gc_ai_maxarmytypes = 16;
+
+   gc_ai_armytype_none = -1;
+   gc_ai_armytype_lightinfantry = 0;
+   gc_ai_armytype_shootinfantry = 1;
+   gc_ai_armytype_fasthorse = 2;
+   gc_ai_armytype_hardhorse = 3;
+   gc_ai_armytype_horseshooter = 4;
+   gc_ai_armytype_cannon = 5;
+   gc_ai_armytype_grenadier = 6;
+   gc_ai_armytype_peasant = 7;
+   gc_ai_armytype_weakunit = 8;
+   gc_ai_armytype_supermortar = 9;
+   gc_ai_armytype_mortar = 10;
+   gc_ai_armytype_archerinfantry = 11;
+   gc_ai_armytype_galley = 12;
+   gc_ai_armytype_frigate = 13;
+   gc_ai_armytype_battleship = 14;
+   gc_ai_armytype_transport = 15;
+
+   gc_ai_armyspec_default = 0;
+   gc_ai_armyspec_grenadier = 1;
+   gc_ai_armyspec_sabotage = 2;
+   gc_ai_armyspec_agressor = 3;
+   gc_ai_armyspec_squad = 4;
+   gc_ai_armyspec_galley = 5;
+   gc_ai_armyspec_frigate = 6;
+   gc_ai_armyspec_battleship = 7;
+   gc_ai_armyspec_transport = 8;
+
+   gc_ai_armyorder_none = 0;
+   gc_ai_armyorder_makebattle = 1; // _ai_ArmyMakeBattleLink
+   gc_ai_armyorder_bitva = 2;      // _ai_ArmyBitvaLink
+   gc_ai_armyorder_buildmine = 3;  // _ai_BuildMine  
+   gc_ai_armyorder_sabotage = 4;   // _ai_ArmyDiversiaLink
+   gc_ai_armyorder_agressor = 5;   // _ai_ArmyAgressorLink
+   gc_ai_armyorder_makewaterbattle = 6; // _ai_ArmyMakeWaterBattleLink
+   gc_ai_armyorder_transport = 7; // _ai_ArmyTransportLink
+   gc_ai_armyorder_attackwall = 8; // _ai_ArmyAttackWallLink
+
+   gc_ai_armyorder_transport_findunits = 0;
+   gc_ai_armyorder_transport_moor = 1;
+   gc_ai_armyorder_transport_loadunits = 2;
+   gc_ai_armyorder_transport_landunits = 3;
+   gc_ai_armyorder_transport_unloadunits = 4;
+   gc_ai_armyorder_transport_destroy = 5;
+   gc_ai_armyorder_transport_waitloadunits = 6;
+   gc_ai_armyorder_transport_waitdestroy = 7;
+
+   gc_obj_artind_none = -1;
+   gc_obj_artind_cannon = 0;
+   gc_obj_artind_howitzer = 1;
+   gc_obj_artind_mortar = 2;
+   gc_obj_artind_multicannon = 3;
+
+   //wall destroy reason:
+   gc_wall_damage_kill = 0;
+   gc_wall_damage_del  = 1; 
+   gc_wall_damage_cdel = 2;
+
+   // misc ai consts
+   gc_ai_maxupgradelevel = 8;
+   gc_ai_unit_max_unit = 44
+   gc_ai_upgrade_max_types = 64;
+   gc_ai_max_construction_sites = 12;
+   gc_ai_UpdateEnemyInfoTick = 200;
+   gc_ai_MergeArmyDist = 3;
+   gc_ai_MergeWaterArmyDist = 5;
+   gc_ai_MaxNearestArmyDist = -1;
+   gc_ai_SafePositionDist = 3;
+   gc_ai_ArcherGridRes = 2;
+   gc_ai_MaxArcherGridSize = 20;
+   gc_ai_ArcherArrayFactor = 0.6 / gc_ai_ArcherGridRes;
+   gc_ai_MaxDiverArmies = 2;
+   gc_ai_AgressorsCount = 5;
+   gc_ai_OfficerWaitTime = 20; // in seconds on normal speed
+   gc_ai_GreArmyBattleDist = 2; // scan grid distance
+   gc_ai_ArmyBattleDist = 4; // scan grid distance
+   gc_ai_BitvaInterval = 8;
+   gc_ai_CityDangerDist = 20;
+   gc_ai_MergeArmyCityDist = 25;
+   gc_ai_MergeApproachDist = 10;
+   gc_ai_MinStoreHouseDist = 9;
+
+   gc_ai_era_food = 0; 
+   gc_ai_era_wood = 1; 
+   gc_ai_era_stone = 2;
+
+   gc_ai_max_flags = 10; 
+   gc_ai_flag_trade_coal_once = 0; 
+   //ai developing 
+   gc_ai_flag_economic_exp = 1; 
+   gc_ai_flag_uniq_inf17   = 2; 
+   gc_ai_flag_uniq_cav17   = 3;
+   gc_ai_flag_drag_cav17   = 4;
+   gc_ai_flag_uniq_inf18   = 5;
+   gc_ai_flag_hussar       = 6;
+   gc_ai_flag_cuirassiers  = 7;
+   gc_ai_flag_grenadier    = 8;
+
+   gc_ai_max_guards = 120;
+
+   //mines grades distances:
+   gc_ai_dist_mines_lvl1  = 30;
+   gc_ai_dist_mines_lvl2  = 60;
+   //gc_ai_dist_mines_expansion = 70; //too small
+   gc_ai_dist_mines_expansion = 85;
+
+   gc_ai_upg_whead1 = 1; // Культивировать новые сорта пшеницы %include(style;upgradevalue)%(сбор еды +40%)
+   gc_ai_upg_whead2 = 2; // Культивировать новые сорта ржи %include(style;upgradevalue)%(сбор еды +40%)
+   gc_ai_upg_whead3 = 3; // Увеличить жалование агрономам %include(style;upgradevalue)%(сбор еды +50%)
+   gc_ai_upg_feelds = 4; // Провести мелиорацию полей %include(style;upgradevalue)%(количество еды на полях +200%)
+   gc_ai_upg_fish = 5; // Разрабатывать новые снасти и сети для ловли рыбы %include(style;upgradevalue)%(эффективность рыбацких лодок +100%)
+   gc_ai_upg_frigate = 6; // Разрабатывать новые методы деревообработки %include(style;upgradevalue)%(условие постройки фрегатов)
+   gc_ai_upg_boats = 7; // Строить новые верфи для рыбацких лодок %include(style;upgradevalue)%(стоимость рыбацкой лодки -85%)
+   gc_ai_upg_wood = 8; // Разрабатывать новые инструменты для деревообработки %include(style;upgradevalue)%(эффективность добычи дерева +100%)
+   gc_ai_upg_bricks1 = 9; // Использовать новые строительные материалы %include(style;upgradevalue)%(прочность зданий +85)
+   gc_ai_upg_builders = 10; // Увеличить жалование строителям %include(style;upgradevalue)%(время постройки зданий -75%)
+   gc_ai_upg_fort = 11; // Разрабатывать новые виды укреплений %include(style;upgradevalue)%(прочность стен и башен +80)
+   gc_ai_upg_powder10 = 12; // Улучшать стрелковое оружие: нарезной ствол %include(style;upgradevalue)%(сила выстрела +10%)
+   gc_ai_upg_powder15 = 13; // Разрабатывать гранулированный порох %include(style;upgradevalue)%(сила выстрела +15%)
+   gc_ai_upg_powder20 = 14; // Разрабатывать новые методы очистки серы %include(style;upgradevalue)%(сила выстрела +20%)
+   gc_ai_upg_powder30 = 15; // Разрабатывать новые методы очистки селитры %include(style;upgradevalue)%(сила выстрела +30%)
+   gc_ai_upg_art5 = 16; // Разрабатывать новые добавки в порох %include(style;upgradevalue)%(дальность стрельбы артиллерии +5%)
+   gc_ai_upg_art10 = 17; // Разрабатывать новые виды стволов: единорог, карронада %include(style;upgradevalue)%(дальность стрельбы артиллерии +10%)
+   gc_ai_upg_artlife = 18; // Разработать более прочный лафет для орудий: система Грибоваля %include(style;upgradevalue)%(увеличить жизнь пушек +150%)
+   gc_ai_upg_mbarrel = 19; // %include(style;upgradevalue)%Разработать многоствольное орудие
+   gc_ai_upg_accurency1 = 20; // Разрабатывать новые прицельные системы для пушек %include(style;upgradevalue)%(меткость стрельбы артиллерии +35%)
+   gc_ai_upg_healart = 21; // Выделить деньги на ремонтные мастерские для пушек %include(style;upgradevalue)%(отремонтировать все пушки)
+   gc_ai_upg_geolog = 22; // Развивать геологию %include(style;upgradevalue)%(на карте появляются скрытые месторождения)
+   gc_ai_upg_stone100 = 23; // Развивать горное дело %include(style;upgradevalue)%(эффективность добычи камня +100%)
+   gc_ai_upg_stone200 = 24; // Увеличить жалование горным рабочим %include(style;upgradevalue)%(эффективность добычи камня +200%)
+   gc_ai_upg_balloon = 25; // Разрабатывать воздушный шар %include(style;upgradevalue)%(открывает всю карту)
+   gc_ai_upg_healunit = 26; // Развивать медицину %include(style;upgradevalue)%(вылечить всех живых юнитов)
+   gc_ai_upg_accurency2 = 27; // Развивать математику %include(style;upgradevalue)%(меткость выстрела орудий +35%)
+   gc_ai_upg_shipspeed = 28; // Разрабатывать новые парусные системы %include(style;upgradevalue)%(скорость кораблей +40%)
+   gc_ai_upg_battleship = 29; // Разрабатывать новую систему шпангоутов и корпуса корабля %include(style;upgradevalue)%(условие постройки линкора)
+   gc_ai_upg_shipbuild = 30; // Обучать плотников %include(style;upgradevalue)%(скорость постройки кораблей увеличивается в 10 раз)
+   gc_ai_upg_quickshot1 = 31; // Разрабатывать колесцовый замок к ружьям %include(style;upgradevalue)%(увеличивает скорострельность на +35%)
+   gc_ai_upg_cheapmusk = 32; // Разрабатывать кремниевый замок к ружьям %include(style;upgradevalue)%(уменьшает цену мушкета в 2 раза)
+   gc_ai_upg_quickshot2 = 33; // Разработать бумажный патрон и железный шомпол %include(style;upgradevalue)%(увеличивает скорострельность на +35%)
+   gc_ai_upg_armor1 = 34; // Разрабатывать новые сорта стали для кирас %include(style;upgradevalue)%(защита солдат в доспехах +2)
+   gc_ai_upg_baginet = 35; // Разрабатывать штык: багнет вставляемый в ствол, штык с трубкой %include(style;upgradevalue)%(сила удара холодного оружия +7)
+   gc_ai_upg_newsteel = 36; // Разрабатывать новые сорта стали %include(style;upgradevalue)%(эффективность стрельбы мушкетера 18 века и гренадера +25%)
+   gc_ai_upg_reaper = 37; // Изготавливать сельскохозяйственный инвентарь %include(style;upgradevalue)%(эффективность полей, количество еды +100%)
+   gc_ai_upg_bricks2 = 38; // Ковать металлическую арматуру и решетки %include(style;upgradevalue)%(прочность зданий +50)
+   gc_ai_upg_horse = 39; // Ковать сбрую для лошадей %include(style;upgradevalue)%(конные войска строятся в 2 раза быстрее)
+   gc_ai_upg_inf18 = 40; // Ковать штыки и тесаки для пехоты %include(style;upgradevalue)%(сила удара мушкетера 18 века и гренадера +5)
+   gc_ai_upg_horseswords = 41; // Ковать новые палаши и сабли %include(style;upgradevalue)%(сила удара кавалерии +5)
+   gc_ai_upg_armor2 = 42; // Ковать новые кирасы %include(style;upgradevalue)%(защита солдат в доспехах +2)
+   gc_ai_upg_food140 = 43; // @%com%mil.1 Совершенствовать способы переработки зерна %include(style;upgradevalue)%(сбор еды +140%)
+   gc_ai_upg_food250 = 44; // @%com%mil.2 Совершенствовать способы хранения зерна %include(style;upgradevalue)%(сбор еды +250%)
+   gc_ai_upg_century = 45; // @%com%cen.1 Перейти в 18 век
+
+   gc_ai_upg_sid_whead1 = 'aca.1'; // Культивировать новые сорта пшеницы %include(style;upgradevalue)%(сбор еды +40%)
+   gc_ai_upg_sid_whead2 = 'aca.2'; // Культивировать новые сорта ржи %include(style;upgradevalue)%(сбор еды +40%)
+   gc_ai_upg_sid_whead3 = 'aca.3'; // Увеличить жалование агрономам %include(style;upgradevalue)%(сбор еды +50%)
+   gc_ai_upg_sid_feelds = 'aca.4'; // Провести мелиорацию полей %include(style;upgradevalue)%(количество еды на полях +200%)
+   gc_ai_upg_sid_fish = 'aca.5'; // Разрабатывать новые снасти и сети для ловли рыбы %include(style;upgradevalue)%(эффективность рыбацких лодок +100%)
+   gc_ai_upg_sid_frigate = 'aca.6'; // Разрабатывать новые методы деревообработки %include(style;upgradevalue)%(условие постройки фрегатов)
+   gc_ai_upg_sid_boats = 'aca.7'; // Строить новые верфи для рыбацких лодок %include(style;upgradevalue)%(стоимость рыбацкой лодки -85%)
+   gc_ai_upg_sid_wood = 'aca.8'; // Разрабатывать новые инструменты для деревообработки %include(style;upgradevalue)%(эффективность добычи дерева +100%)
+   gc_ai_upg_sid_bricks1 = 'aca.9'; // Использовать новые строительные материалы %include(style;upgradevalue)%(прочность зданий +85)
+   gc_ai_upg_sid_builders = 'aca.10'; // Увеличить жалование строителям %include(style;upgradevalue)%(время постройки зданий -75%)
+   gc_ai_upg_sid_fort = 'aca.11'; // Разрабатывать новые виды укреплений %include(style;upgradevalue)%(прочность стен и башен +80)
+   gc_ai_upg_sid_powder10 = 'aca.12'; // Улучшать стрелковое оружие: нарезной ствол %include(style;upgradevalue)%(сила выстрела +10%)
+   gc_ai_upg_sid_powder15 = 'aca.13'; // Разрабатывать гранулированный порох %include(style;upgradevalue)%(сила выстрела +15%)
+   gc_ai_upg_sid_powder20 = 'aca.14'; // Разрабатывать новые методы очистки серы %include(style;upgradevalue)%(сила выстрела +20%)
+   gc_ai_upg_sid_powder30 = 'aca.15'; // Разрабатывать новые методы очистки селитры %include(style;upgradevalue)%(сила выстрела +30%)
+   gc_ai_upg_sid_art5 = 'aca.16'; // Разрабатывать новые добавки в порох %include(style;upgradevalue)%(дальность стрельбы артиллерии +5%)
+   gc_ai_upg_sid_art10 = 'aca.17'; // Разрабатывать новые виды стволов: единорог, карронада %include(style;upgradevalue)%(дальность стрельбы артиллерии +10%)
+   gc_ai_upg_sid_artlife = 'aca.18'; // Разработать более прочный лафет для орудий: система Грибоваля %include(style;upgradevalue)%(увеличить жизнь пушек +150%)
+   gc_ai_upg_sid_mbarrel = 'aca.19'; // %include(style;upgradevalue)%Разработать многоствольное орудие
+   gc_ai_upg_sid_accurency1 = 'aca.20'; // Разрабатывать новые прицельные системы для пушек %include(style;upgradevalue)%(меткость стрельбы артиллерии +35%)
+   gc_ai_upg_sid_healart = 'aca.21'; // Выделить деньги на ремонтные мастерские для пушек %include(style;upgradevalue)%(отремонтировать все пушки)
+   gc_ai_upg_sid_geolog = 'aca.22'; // Развивать геологию %include(style;upgradevalue)%(на карте появляются скрытые месторождения)
+   gc_ai_upg_sid_stone100 = 'aca.23'; // Развивать горное дело %include(style;upgradevalue)%(эффективность добычи камня +100%)
+   gc_ai_upg_sid_stone200 = 'aca.24'; // Увеличить жалование горным рабочим %include(style;upgradevalue)%(эффективность добычи камня +200%)
+   gc_ai_upg_sid_balloon = 'aca.25'; // Разрабатывать воздушный шар %include(style;upgradevalue)%(открывает всю карту)
+   gc_ai_upg_sid_healunit = 'aca.26'; // Развивать медицину %include(style;upgradevalue)%(вылечить всех живых юнитов)
+   gc_ai_upg_sid_accurency2 = 'aca.27'; // Развивать математику %include(style;upgradevalue)%(меткость выстрела орудий +35%)
+   gc_ai_upg_sid_shipspeed = 'aca.28'; // Разрабатывать новые парусные системы %include(style;upgradevalue)%(скорость кораблей +40%)
+   gc_ai_upg_sid_battleship = 'aca.29'; // Разрабатывать новую систему шпангоутов и корпуса корабля %include(style;upgradevalue)%(условие постройки линкора)
+   gc_ai_upg_sid_shipbuild = 'aca.30'; // Обучать плотников %include(style;upgradevalue)%(скорость постройки кораблей увеличивается в 10 раз)
+   gc_ai_upg_sid_quickshot1 = 'aca.31'; // Разрабатывать колесцовый замок к ружьям %include(style;upgradevalue)%(увеличивает скорострельность на +35%)
+   gc_ai_upg_sid_cheapmusk = 'aca.32'; // Разрабатывать кремниевый замок к ружьям %include(style;upgradevalue)%(уменьшает цену мушкета в 2 раза)
+   gc_ai_upg_sid_quickshot2 = 'aca.33'; // Разработать бумажный патрон и железный шомпол %include(style;upgradevalue)%(увеличивает скорострельность на +35%)
+   gc_ai_upg_sid_armor1 = 'aca.34'; // Разрабатывать новые сорта стали для кирас %include(style;upgradevalue)%(защита солдат в доспехах +2)
+   gc_ai_upg_sid_baginet = 'aca.35'; // Разрабатывать штык: багнет вставляемый в ствол, штык с трубкой %include(style;upgradevalue)%(сила удара холодного оружия +7)
+   gc_ai_upg_sid_newsteel = 'aca.36'; // Разрабатывать новые сорта стали %include(style;upgradevalue)%(эффективность стрельбы мушкетера 18 века и гренадера +25%)
+   gc_ai_upg_sid_reaper = 'bla.1'; // Изготавливать сельскохозяйственный инвентарь %include(style;upgradevalue)%(эффективность полей, количество еды +100%)
+   gc_ai_upg_sid_bricks2 = 'bla.2'; // Ковать металлическую арматуру и решетки %include(style;upgradevalue)%(прочность зданий +50)
+   gc_ai_upg_sid_horse = 'bla.3'; // Ковать сбрую для лошадей %include(style;upgradevalue)%(конные войска строятся в 2 раза быстрее)
+   gc_ai_upg_sid_inf18 = 'bla.4'; // Ковать штыки и тесаки для пехоты %include(style;upgradevalue)%(сила удара мушкетера 18 века и гренадера +5)
+   gc_ai_upg_sid_horseswords = 'bla.5'; // Ковать новые палаши и сабли %include(style;upgradevalue)%(сила удара кавалерии +5)
+   gc_ai_upg_sid_armor2 = 'bla.6'; // Ковать новые кирасы %include(style;upgradevalue)%(защита солдат в доспехах +2)
+   gc_ai_upg_sid_food140 = 'mil.1'; // @%com%mil.1 Совершенствовать способы переработки зерна %include(style;upgradevalue)%(сбор еды +140%)
+   gc_ai_upg_sid_food250 = 'mil.2'; // @%com%mil.2 Совершенствовать способы хранения зерна %include(style;upgradevalue)%(сбор еды +250%)
+   gc_ai_upg_sid_century = 'cen.1'; // @%com%cen.1 Перейти в 18 век
+
+   gc_ai_army_offsetcol = 6;
+   gc_ai_army_offsetrow = 6;
+
+   gc_obj_speed_default = 32;
+   gc_obj_speed_peasant = 40;
+   gc_obj_speed_hardhorse = 56;
+   gc_obj_speed_fasthorse = 96;
+   gc_obj_speed_cannon = 20;
+   gc_obj_speed_mortar = 24;
+   gc_obj_speed_howitzer = 20;
+   gc_obj_speed_multicannon = 16;
+
+   gc_obj_speed_fishboat = 16;
+   gc_obj_speed_ferry = 28; // in cossacks 1 was 16
+   gc_obj_speed_yacht = 40;
+   gc_obj_speed_yachttur = 70;
+   gc_obj_speed_chaika = 55;
+   gc_obj_speed_galley = 40;
+   gc_obj_speed_frigate = 30;
+   gc_obj_speed_xebec = 28;
+   gc_obj_speed_battleship = 16;
+
+   //gc_obj_rotatespeed_default = 16; // in cossacks 1 : default rotate speed for infantry and cavalry. For C3, try to use smaller value for smoother visualization
+   gc_obj_rotatespeed_default = 5;
+   gc_obj_rotatespeed_cannon = 1;
+   gc_obj_rotatespeed_mortar = 4;
+   gc_obj_rotatespeed_howitzer = 4;
+   gc_obj_rotatespeed_multicannon = 5;
+   gc_obj_rotatespeed_ships = 2;
+
+   gc_obj_order_type_none = 0;
+   gc_obj_order_type_move = 1;
+   gc_obj_order_type_attackobj = 2;
+   gc_obj_order_type_gainres = 3;
+   gc_obj_order_type_produce = 4;
+   gc_obj_order_type_patrol = 5;
+   gc_obj_order_type_attackpoint = 6;
+   gc_obj_order_type_continueattackpoint = 7;
+   gc_obj_order_type_performupgrade = 8;
+   gc_obj_order_type_fishing = 9;
+   gc_obj_order_type_creategates = 10;
+   gc_obj_order_type_buildwallcontinue = 11;
+   gc_obj_order_type_buildwall = 12;
+   gc_obj_order_type_gotomine = 13;
+   gc_obj_order_type_gototransport = 14;
+   gc_obj_order_type_leavetransport = 15;
+   gc_obj_order_type_leavebuilding = 16;
+   gc_obj_order_type_build = 17;
+   gc_obj_order_type_guard = 18;
+   gc_obj_order_type_repair = 19;
+   gc_obj_order_type_exitunits = 20;
+
+   gc_obj_order_attack_mode_default = 0;
+   gc_obj_order_attack_mode_locktarget = 1;
+
+   gc_obj_order_move_mode_default = 0;
+   gc_obj_order_move_mode_attack = 1;
+   gc_obj_order_move_mode_runaway = 2;
+   gc_obj_order_move_mode_landing = 3;
+
+   gc_obj_order_produce_infinite = -1;
+   gc_obj_rally_resource_searchradius = 1.5;
+   gc_obj_res_searchradius = 6;
+   gc_obj_res_searchwaitrnd = 0.65;
+
+   gc_obj_radius_default = 10;
+   gc_obj_radius_horse = 15;
+   gc_obj_radius_artillery = 15;
+   gc_obj_radius_ship_fishboat = 40;
+   gc_obj_radius_ship_ferry = 70;
+   gc_obj_radius_ship_yacht = 35;
+   gc_obj_radius_ship_yachttur = 50;
+   gc_obj_radius_ship_chaika = 45;
+   gc_obj_radius_ship_galley = 80;
+   gc_obj_radius_ship_frigate = 90;
+   gc_obj_radius_ship_xebec = 80;
+   gc_obj_radius_ship_battleship = 90;
+   gc_obj_radius_formation_default = 8;
+   gc_obj_radius_formation_horse = 12;
+
+   gc_obj_extract_food_radiusmax = 80*gc_tiles_to_pixels;
+   gc_obj_extract_wood_radiusmax = 40*gc_tiles_to_pixels;
+   gc_obj_extract_stone_radiusmax = 50*gc_tiles_to_pixels;
+   gc_obj_extract_food_radiusmaxSqr = gc_obj_extract_food_radiusmax*gc_obj_extract_food_radiusmax;
+   gc_obj_extract_wood_radiusmaxSqr = gc_obj_extract_wood_radiusmax*gc_obj_extract_wood_radiusmax;
+   gc_obj_extract_stone_radiusmaxSqr = gc_obj_extract_stone_radiusmax*gc_obj_extract_stone_radiusmax;
+
+   gc_weapon_maxmembers = 256;
+   gc_weapon_time_cInfinite = -1;
+   gc_weapon_time_cPlayOnce = 0;
+   gc_weapon_gravity_0 = 0;
+   gc_weapon_gravity_1 = 1;
+   gc_weapon_gravity_2 = 2;
+   gc_weapon_gravity_3 = 3;
+   gc_weapon_gravity_4 = 4;
+   gc_weapon_gravity_5 = 5;
+
+   gc_weapon_propagation_stand = 0;
+   gc_weapon_propagation_slightup = 1;
+   gc_weapon_propagation_random = 2;
+   gc_weapon_propagation_fly = 3;
+   gc_weapon_propagation_immediate = 4;
+   gc_weapon_propagation_angle = 5;
+   gc_weapon_propagation_random1 = 6;
+   gc_weapon_propagation_randomsimulate = 7;
+   //gc_weapon_propagation_reflect = 7;
+
+   //gc_country_maxmembers = 64;
+   gc_country_maxmembers = 80;
+   gc_country_maxupgradecount = 320;
+   gc_country_maxaccesscontrol = gc_country_maxmembers+gc_country_maxupgradecount;
+   gc_country_maxaccesscontrolreqs = 8;
+   gc_country_maxfixedproduce = 16+4;
+   gc_country_maxupgradeplace = 16+4; // null, cen, bla, sta, aca, bar, art, ba2, mil, por, wwa, swa, gol, iro, coa, ferry
+   gc_country_fixedproduce_maxcount = 24;
+   //gc_country_upgradeplace_maxcount = 80;
+   gc_country_upgradeplace_maxcount = 92;
+   gc_country_maxofficers = 25;
+   gc_country_maxformationcount = 3;
+   gc_country_maxformationunitcount = 12;
+   gc_country_maxofficersformationmask = 50;
+   gc_country_maxprivatcount = 32;
+   gc_country_maxunitlock = 8;
+   gc_country_upgradelinks_maxcount = 2;
+   
+   gc_country_editorplace_category_count = 7;
+   gc_country_editorplace_category_none = -1;
+   gc_country_editorplace_category_infantry = 0;
+   gc_country_editorplace_category_cavalry = 1;
+   gc_country_editorplace_category_diplomatic = 2;
+   gc_country_editorplace_category_artillery = 3;
+   gc_country_editorplace_category_ships = 4;
+   gc_country_editorplace_category_buildings = 5;
+   gc_country_editorplace_category_misc = 6;
+
+   gc_country_ind_mis = 12;
+
+   gc_upg_type_none = 0;
+   gc_upg_type_lifeperc = 1;
+   gc_upg_type_damage = 2;
+   gc_upg_type_damageperc = 3;
+   gc_upg_type_protection = 4;
+   gc_upg_type_shield = 5;
+   gc_upg_type_enableunit = 6;
+   gc_upg_type_effectfood = 7;
+   gc_upg_type_effectfoodperc = 8;
+   gc_upg_type_effectwood = 9;
+   gc_upg_type_effectwoodperc = 10;
+   gc_upg_type_effectstone = 11;
+   gc_upg_type_effectstoneperc = 12;
+   gc_upg_type_priceperc = 13;
+   gc_upg_type_buildtimeperc = 14;
+   gc_upg_type_attpauseperc = 15;
+   gc_upg_type_attrangeperc = 16;
+   gc_upg_type_attdispertionperc = 17;
+   gc_upg_type_healing = 18;
+   gc_upg_type_fishingperc = 19;
+   gc_upg_type_geology = 20;
+   gc_upg_type_balloon = 21;
+   gc_upg_type_speedperc = 22;
+   gc_upg_type_fieldlifeperc = 23;
+   gc_upg_type_single_inside = 24;
+   gc_upg_type_single_inside_mine = 25;
+   gc_upg_type_single_attpauseperc = 26;
+   gc_upg_type_single_buildgate = 27;
+
+   gc_upg_tooltiptype_none = 0;
+   gc_upg_tooltiptype_infdmg = 1;
+   gc_upg_tooltiptype_infdef = 2;
+   gc_upg_tooltiptype_shooterdmg = 3;
+   gc_upg_tooltiptype_grenadedmg = 4;
+   gc_upg_tooltiptype_horsedef = 5;
+   gc_upg_tooltiptype_artillerycost = 6;
+   gc_upg_tooltiptype_artillerybuild = 7;
+   gc_upg_tooltiptype_drummerdef = 8;
+   
+   gc_player_mercenaryind = gc_MaxPlayerCount-1;
+   gc_player_victorystate_none = 0;
+   gc_player_victorystate_win = 1;
+   gc_player_victorystate_lose = 2;
+
+   gc_player_difficulty_none = -1;
+   gc_player_difficulty_easy = 0;
+   gc_player_difficulty_normal = 1;
+   gc_player_difficulty_hard = 2;
+   gc_player_difficulty_veryhard = 3;
+   gc_player_difficulty_impossible = 4;
+
+   gc_upgrade_maxarrparam1count = 3;
+   gc_upgrade_maxarrparam2count = 20;
+
+   gc_resource_type_none = 0;
+   gc_resource_type_food = 1;
+   gc_resource_type_wood = 2;
+   gc_resource_type_stone = 3;
+   gc_resource_type_gold = 4;
+   gc_resource_type_iron = 5;
+   gc_resource_type_coal = 6;
+   
+   gc_resource_hitsneeded_food = 22;
+   gc_resource_hitsneeded_wood = 14;
+   gc_resource_hitsneeded_stone = 20;
+
+   //gc_obj_resource_portion_food = 30;
+   gc_obj_resource_portion_food = 45;
+   gc_obj_resource_portion_wood = 28;
+   gc_obj_resource_portion_stone = 40;
+
+   gc_obj_foodperunit = 30;
+
+   gc_economy_exp = 0.00002;
+   gc_economy_time = 0.0001*gc_time_to_frames;
+
+   // misc
+   gc_epsilon = 0.001;
+   gc_MaxInt = 2147483647;
+   gc_MaxFloat = 2147483647;
+   gc_objectEpsilonDist = 0.25;
+   gc_objectEpsilonDistSqr = gc_objectEpsilonDist*gc_objectEpsilonDist;
+   gc_WaterBorderSize = 3;
+
+   gc_group_selected = 'sel';
+   gc_group_tmp = 'tmp';
+   gc_group_squad = 'squad';
+
+   // arguments indexes in statemachines
+   gc_argunit_obj = 0;
+   gc_argunit_stolist = 1;
+   gc_argunit_attlist = 2;
+   gc_argunit_ordlist = 3;
+   gc_argunit_inside = 4;
+   gc_argenv_res = 0;
+   gc_argenv_stolist = 1;
+   gc_argenv_attlist = 2;
+   gc_argenv_ordlist = 3;
+   gc_argplayer_plr = 0;
+   gc_argproj_proj = 0;
+
+   gc_logmessagesid_none = 0;
+   gc_logmessagesid_famine = 1;
+   gc_logmessagesid_terrainpreventsshot = 2;
+   gc_logmessagesid_obstaclepreventshot = 3;
+   gc_logmessagesid_notenoughres = 4;
+   gc_logmessagesid_notenoughfarms = 5;
+   gc_logmessagesid_populationlimitreached = 6;
+   gc_logmessagesid_cantshootnogold = 7;
+   gc_logmessagesid_cantshootnocoaloriron = 8;
+   gc_logmessagesid_nogold = 9;
+   gc_logmessagesid_upgradedone = 10;
+   gc_logmessagesid_captured = 11;
+   gc_logmessagesid_buildingdestroyed = 12;
+   gc_logmessagesid_buildingbuilt = 13;
+   gc_logmessagesid_shipbuilt = 14;
+   gc_logmessagesid_custom = 15;
+   gc_logmessagesid_lowfood = 16;
+   gc_logmessagesid_lowgold = 17;
+   gc_logmessagesid_lowshoot = 18;
+   gc_logmessagesid_unitinfo = 19;
+   gc_logmessagesid_alarmattack = 20;
+   gc_logmessagesid_alarmcapture = 21;
+   gc_logmessagesid_alarmattacked = 22;
+   gc_logmessagesid_alarmcaptured = 23;
+
+   gc_chatmessage_mode_all = 0;
+   gc_chatmessage_mode_private = 1;
+   gc_chatmessage_mode_ally = 2;
+
+   // animations
+   gc_anim_idle = 'idle';
+   gc_anim_idle0 = 'idle0';
+   gc_anim_idle1 = 'idle1';
+   gc_anim_idle2 = 'idle2';
+   gc_anim_walk = 'walk';
+   gc_anim_walk0 = 'walk0';
+   gc_anim_walk1 = 'walk1';
+   gc_anim_walk2 = 'walk2';
+   gc_anim_attack0 = 'attack0';
+   gc_anim_attack1 = 'attack1';
+   gc_anim_attack2 = 'attack2';
+   gc_anim_prepare0 = 'prepare0';
+   gc_anim_prepare1 = 'prepare1';
+   gc_anim_prepare2 = 'prepare2';
+   gc_anim_unprepare0 = 'unprepare0';
+   gc_anim_unprepare1 = 'unprepare1';
+   gc_anim_unprepare2 = 'unprepare2';
+   gc_anim_death = 'death';
+   gc_anim_death0 = 'death0';
+   gc_anim_death1 = 'death1';
+   gc_anim_death2 = 'death2';
+   gc_anim_trans01 = 'trans01';
+   gc_anim_trans10 = 'trans10';
+   gc_anim_trans02 = 'trans02';
+   gc_anim_trans20 = 'trans20';
+   gc_anim_trans12 = 'trans12';
+   gc_anim_trans21 = 'trans21';
+   gc_anim_turn = 'turn';
+   gc_anim_turn0 = 'turn0';
+   gc_anim_turn1 = 'turn1';
+   gc_anim_turn2 = 'turn2';
+   gc_anim_turnleft = 'turnleft';
+   gc_anim_turnleft0 = 'turnleft0';
+   gc_anim_turnleft1 = 'turnleft1';
+   gc_anim_turnleft2 = 'turnleft2';
+   gc_anim_turnright = 'turnright';
+   gc_anim_turnright0 = 'turnright0';
+   gc_anim_turnright1 = 'turnright1';
+   gc_anim_turnright2 = 'turnright2';
+   gc_anim_walkprepare0 = 'walkprepare0';
+   gc_anim_walkprepare1 = 'walkprepare1';
+   gc_anim_walkprepare2 = 'walkprepare2';
+   gc_anim_walkunprepare0 = 'walkunprepare0';
+   gc_anim_walkunprepare1 = 'walkunprepare1';
+   gc_anim_walkunprepare2 = 'walkunprepare2';
+   gc_anim_collide = 'collide';
+   gc_anim_collide0 = 'collide0';
+   gc_anim_collide1 = 'collide1';
+   gc_anim_collide2 = 'collide2';
+   gc_anim_walkfood = 'walkfood';
+   gc_anim_walkwood = 'walkwood';
+   gc_anim_walkstone = 'walkstone';
+   gc_anim_workfood = 'workfood';
+   gc_anim_workwood = 'workwood';
+   gc_anim_workstone = 'workstone';
+   gc_anim_idlefood = 'idlefood';
+   gc_anim_idlewood = 'idlewood';
+   gc_anim_idlestone = 'idlestone';
+   gc_anim_construct = 'construct';
+
+   gc_actor_peasant_axe = 0;
+   gc_actor_peasant_bag = 1;
+   gc_actor_peasant_cart = 2;
+   gc_actor_peasant_hammer = 3;
+   gc_actor_peasant_hoe = 4;
+   gc_actor_peasant_lumber = 5;
+   gc_actor_peasant_pick = 6;
+
+   gc_plname_pool = '@pool';
+   gc_plname_misc = 'misc';
+   gc_plname_env = 'env';
+   gc_plname_pattern = 'pattern';
+
+   gc_racename_buildings = 'buildings';
+   gc_racename_units = 'units';
+   gc_racename_env = 'env';
+   gc_racename_misc = 'misc';
+   gc_racename_progress = 'progress';
+   gc_racetag_units = 10;
+   gc_racetag_buildings = 20;
+   gc_racetag_misc = 30;
+   gc_racetag_env = 40;
+   gc_racetag_progress = 50;
+   gc_basename_constructiondummy = 'constructiondummy';
+   gc_basename_field = 'field';
+   gc_basename_rallypoint = 'rallypoint';
+   gc_basename_movearrow = 'movearrow';
+   gc_basename_minegold = 'eurgol';
+   gc_basename_mineiron = 'euriro';
+   gc_basename_minecoal = 'eurcoa';
+   gc_basename_soundemitter = 'soundemitter';
+   gc_basename_bui = 'bui';
+   gc_basename_ptborder = 'ptborder';
+   gc_basename_ptborderwater = 'ptborderwater';
+   gc_basename_balloon = 'balloon';
+   gc_basename_collision2x2 = 'collision2x2';
+   gc_basename_gatecollision = 'gatecollision';
+   gc_basename_fogreveal = 'fogreveal';
+   gc_basename_point = 'point';
+   gc_decalname_border = 'borderd';
+
+   gc_collision_mass_default = 1;
+   gc_collision_mass_stand = 1.5;
+   gc_collision_mass_attack = 3;
+   gc_collision_radius_default = 0.16;
+   gc_collision_radius_stand = 0.1;
+   gc_collision_radius_attack = 0.1;
+
+   // function results
+   gc_result_ok = 0;
+   gc_result_outofrange = 1;
+   gc_result_targetnotvalid = 2;
+   gc_result_skipped = 3;
+   
+   gc_result_roomchecksum_nomod = 0;
+   gc_result_roomchecksum_modok = 1;
+   gc_result_roomchecksum_modneedsync = 2;
+   gc_result_roomchecksum_nomoddifchecksum = 3; // debug
+   gc_result_roomchecksum_uncompatible = 4; // debug
+
+   gc_result_tryattack_ok = 0;
+   gc_result_tryattack_outofrange = 1;
+   gc_result_tryattack_targetnotvalid = 2;
+   gc_result_tryattack_skipped = 3;
+   gc_result_tryextract_ok = 0;
+   gc_result_tryextract_outofrange = 1;
+   gc_result_tryextract_targetnotvalid = 2;
+   gc_result_tryextract_returntostore = 3;
+   gc_result_trystorehouse_notneeded = 0;
+   gc_result_trystorehouse_return = 1;
+   gc_result_trystorehouse_notavailable = 2;
+   gc_result_trybuild_ok = 0;
+   gc_result_trybuild_outofrange = 1;
+   gc_result_trybuild_targetnotvalid = 2;
+   gc_result_trybuild_buildwall = 3;
+   gc_result_unittype_inf = 0;
+   gc_result_unittype_cav = 1;
+   gc_result_unittype_art = 2;
+   gc_result_unittype_ship = 3;
+   
+   gc_result_checkaccesscontrolreq_ok = 0;
+   gc_result_checkaccesscontrolreq_lockcount = 1;
+   gc_result_checkaccesscontrolreq_artlimit = 2;
+   gc_result_checkaccesscontrolreq_noprerequisit = 3;
+   gc_result_checkaccesscontrolreq_notenabled = 4;
+   gc_result_checkaccesscontrolreq_hide = 5;
+
+   // debug
+   gc_debug_pointernil = True;
+   
+   // settings
+   gc_settings_highlights = True;
+   gc_settings_windowmode_none = 0;
+   gc_settings_windowmode_video = 1;
+   gc_settings_windowmode_sound = 2;
+   gc_settings_windowmode_control = 3;
+   gc_settings_windowmode_game = 4;
+   gc_settings_gamespeed_count = 3;
+   gc_settings_gamespeed_default = -1;
+   gc_settings_gamespeed_0 = 7;
+   gc_settings_gamespeed_1 = 10;
+   gc_settings_gamespeed_2 = 14;
+   //gc_settings_gamespeed_3 = 20;
+
+   gc_mapsettings_startingunits_default = 0;
+   gc_mapsettings_startingunits_armysmall = 1;
+   gc_mapsettings_startingunits_armymedium = 2;
+   gc_mapsettings_startingunits_armylarge = 3;
+   gc_mapsettings_startingunits_peasantslot = 4;
+   gc_mapsettings_startingunits_differentnations = 5;
+   gc_mapsettings_startingunits_towers = 6;
+   gc_mapsettings_startingunits_cannons = 7;
+   gc_mapsettings_startingunits_cannonsandhowitzers = 8;
+   gc_mapsettings_startingunits_barrack18 = 9;
+   gc_mapsettings_startingunits_barrack17 = 10;
+   gc_mapsettings_startingunits_village = 11;
+   gc_mapsettings_startingunits_logcabins = 12;
+   gc_mapsettings_startingunits_union = 13;
+
+   gc_mapsettings_balloon_default = 0;
+   gc_mapsettings_balloon_no = 1;
+   gc_mapsettings_balloon_with = 2;
+
+   gc_mapsettings_cannons_default = 0;
+   gc_mapsettings_cannons_nocannonstowerswalls = 1;
+   gc_mapsettings_cannons_expensivecannons = 2;
+
+   gc_mapsettings_peacetime_default = 0;
+   gc_mapsettings_peacetime_5 = 1;
+   gc_mapsettings_peacetime_10 = 2;
+   gc_mapsettings_peacetime_15 = 3;
+   gc_mapsettings_peacetime_20 = 4;
+   gc_mapsettings_peacetime_30 = 5;
+   gc_mapsettings_peacetime_45 = 6;
+   gc_mapsettings_peacetime_60 = 7;
+   gc_mapsettings_peacetime_90 = 8;
+   gc_mapsettings_peacetime_120 = 9;
+   gc_mapsettings_peacetime_180 = 10;
+   gc_mapsettings_peacetime_240 = 11;
+
+   gc_mapsettings_century18_default = 0;
+   gc_mapsettings_century18_no = 1;
+   gc_mapsettings_century18_with = 2;
+
+   gc_mapsettings_capture_default = 0;
+   gc_mapsettings_capture_nopeasants = 1;
+   gc_mapsettings_capture_nocenterspeasants = 2;
+   gc_mapsettings_capture_onlyartillery = 3;
+
+   gc_mapsettings_marketdip_default = 0;
+   gc_mapsettings_marketdip_nodip = 1;
+   gc_mapsettings_marketdip_nomarket = 2;
+   gc_mapsettings_marketdip_noboth = 3;
+   gc_mapsettings_marketdip_expensivemercs = 4;
+
+   gc_mapsettings_limitwarship_default = 0;
+   gc_mapsettings_limitwarship_nowarship = 1;
+   gc_mapsettings_limitwarship_transportonly = 2;
+
+   gc_mapsettings_adviserassistant_default = 0;
+   gc_mapsettings_adviserassistant_without = 1;
+
+   gc_mapsettings_teams_default = 0;
+   gc_mapsettings_teams_nearby = 1;
+
+   gc_mapsettings_limit_default = 'randommap.settings.limit';
+   gc_mapsettings_limit_1 = 500;
+   gc_mapsettings_limit_2 = 750;
+   gc_mapsettings_limit_3 = 1000;
+   gc_mapsettings_limit_4 = 1500;
+   gc_mapsettings_limit_5 = 2200;
+   gc_mapsettings_limit_6 = 3000;
+   gc_mapsettings_limit_7 = 5000;
+   gc_mapsettings_limit_8 = 8000;
+   gc_mapsettings_limit_count = 8;
+ 
+   // hud
+   gc_hud_icons_units = 'icons.unit.';
+   gc_hud_icons_bld = 'icons.bld.';
+   gc_hud_icons_res = 'icons.res.';
+   gc_hud_icons_upg = 'icons.upg.';
+   gc_hud_icons_control = 'icons.control.';
+   gc_hud_icons_keycolor = 'icons.keycolor.';
+   gc_hud_icons_weapon = 'icons.weapon.';
+   gc_hud_icons_defence = 'icons.defence.';
+
+   // locale
+   gc_loc_units = 'units';
+   gc_loc_gui = 'gui';
+   gc_loc_upgrades = 'upgrades';
+   gc_loc_tooltip = 'tooltip';
+   gc_loc_tools = 'tools';
+   gc_loc_missions = 'missions';
+
+   // misc
+   gc_gui_blinkmode_canbuild = 0;
+   gc_gui_blinkmode_cannotbuild = 1;
+
+   gc_gui_alarmevent_none = 0;
+   gc_gui_alarmevent_attack = 1;
+   gc_gui_alarmevent_capture = 2;
+   gc_gui_alarmevent_attacked = 3;
+   gc_gui_alarmevent_captured = 4;
+
+   gc_gui_statpage_population = 0;
+   gc_gui_statpage_scores = 1;
+   gc_gui_statpage_tables = 2;
+
+   gc_gui_objectivesshowtime = 15;
+
+   gc_gui_material_window_template_deep = 'combobox.list';
+   gc_gui_material_window_template_hint = 'tex02.tooltip';
+
+   gc_gui_material_blank = 'misc.blank';
+   gc_gui_material_todo = 'misc.todo';
+   
+   gc_gui_material_white = 'misc.color.white';
+   gc_gui_material_grey = 'misc.color.grey';
+   gc_gui_material_grey25 = 'misc.color.grey25';
+   gc_gui_material_grey37 = 'misc.color.grey37';
+   gc_gui_material_grey50 = 'misc.color.grey50';
+   gc_gui_material_black = 'misc.color.black';
+   gc_gui_material_red = 'misc.color.red';
+   gc_gui_material_reddark = 'misc.color.reddark';
+   gc_gui_material_orange = 'misc.color.orange';
+   gc_gui_material_orangelight = 'misc.color.orangelight';
+   gc_gui_material_yellow = 'misc.color.yellow';
+   gc_gui_material_green = 'misc.color.green';
+   gc_gui_material_greendark = 'misc.color.greendark';
+   gc_gui_material_blue = 'misc.color.blue';
+   gc_gui_material_bluelight = 'misc.color.bluelight';
+
+   gc_gui_element_hint = 'hint';
+   gc_gui_element_top = 'top';
+   gc_gui_element_camera = 'camera';
+   gc_gui_element_logmessage = 'logmessage';
+   gc_gui_element_chatmessage = 'chatmessage';
+   gc_gui_fade_time_100 = 0.1;
+   gc_gui_fade_time_200 = 0.2;
+   gc_gui_fade_time_400 = 0.4;
+   gc_gui_chat_linescount = 7;
+
+   gc_gui_delimiterchar = 124; // 124 == |
+   gc_gui_delimitercharstr = #124; // 124 == |
+   gc_gui_dotchar = 46; // 46 == .
+   gc_gui_dotcharstr = #46; // 46 == .
+   gc_gui_quotechar = 34; // 34 == "
+   gc_gui_apostrophechar = 39; // 39 == '
+   gc_gui_apostrophecharstr = #39; // 39 == '
+   gc_gui_tabchar = 9; // 9 == TAB
+   gc_gui_tabcharstr = #9; // 9 == TAB
+   gc_gui_breakline = #13+#10;
+   gc_gui_space = #32;
+
+   gc_gui_event_tagShow = 8001;
+   gc_gui_event_tagHide = 8002;
+   gc_gui_event_tagClose = 8003;
+   gc_gui_hotkey_btnEscape = 9001;
+   gc_gui_hotkey_btnEnter = 9002;
+   gc_gui_hotkey_btnSpace = 9003;
+   gc_gui_hotkey_btnBackSpace = 9004;
+   gc_gui_hotkey_btnF4 = 9010;
+   gc_gui_hotkey_btnF10 = 9011;
+
+   gc_gui_breakspace1 = '%style(spacer1)%'+#13+#10+'%style(normal)%';
+   gc_gui_breakspace2 = '%style(spacer1)%'+#13+#10+#13+#10+'%style(normal)%';
+   gc_gui_breakspace3 = '%style(spacer1)%'+#13+#10+#13+#10+#13+#10+'%style(normal)%';
+   gc_gui_breakspace4 = '%style(spacer4)%'+#13+#10+'%style(normal)%';
+   gc_gui_breakspace6 = '%style(spacer6)%'+#13+#10+'%style(normal)%';
+   gc_gui_breakspace8 = '%style(spacer4)%'+#13+#10+#13+#10+'%style(normal)%';
+   gc_gui_breakspace10 = '%style(spacer6)%'+#13+#10+'+%style(spacer4)%'+#13+#10+'%style(normal)%';
+   gc_gui_breakspace12 = '%style(spacer6)%'+#13+#10+#13+#10+'%style(normal)%';
+   gc_gui_breakspace14 = '%style(spacer6)%'+#13+#10+'+%style(spacer4)%'+#13+#10+#13+#10+'%style(normal)%';
+   gc_gui_breakspace16 = '%style(spacer6)%'+#13+#10+#13+#10+'+%style(spacer4)%'+#13+#10+'%style(normal)%';
+   gc_gui_breakspace18 = '%style(spacer6)%'+#13+#10+#13+#10+#13+#10+'%style(normal)%';
+
+   gc_font_hex_color_white = 'FFFFFF';
+   gc_font_hex_color_lightgrey = 'ACACAC';
+   gc_font_hex_color_darkgrey = '707070';
+   gc_font_hex_color_green = '9CF16E';
+   gc_font_hex_color_orange = 'FFAA00';
+   gc_font_hex_color_red = 'FF0000';
+   gc_font_hex_color_black = '000000';
+   gc_font_hex_color_winterblue = '00AAFF';
+
+   gc_font_color_default = '%color(default)%';
+   gc_font_color_restore = '%color(restore)%';
+   gc_font_color_ignore = '%color(ignore)%';
+   gc_font_color_white = '%color('+gc_font_hex_color_white+')%';
+   gc_font_color_lightgrey = '%color('+gc_font_hex_color_lightgrey+')%';
+   gc_font_color_darkgrey = '%color('+gc_font_hex_color_darkgrey+')%';
+   gc_font_color_green = '%color('+gc_font_hex_color_green+')%';
+   gc_font_color_orange = '%color('+gc_font_hex_color_orange+')%';
+   gc_font_color_red = '%color('+gc_font_hex_color_red+')%';
+   gc_font_color_black = '%color('+gc_font_hex_color_black+')%';
+   gc_gui_charfilter_numeric = '1234567890';
+   gc_gui_charfilter_mail = '+-.0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM_@';
+   gc_gui_charfilter_nick = '+-.0123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM_[]()';
+   gc_gui_charfilter_pass = #33+#35+#37+#38+#40+#41+#42+#43+#44+#45+#46+#47+#48+#49+#50+#51+#52+#53+#54+#55+#56+#57+#58+#59+#60+#61+#62+#63+#64+#65+#66+#67+#68+#69+#70+#71+#72+#73+#74+#75+#76+#77+#78+#79+#80+#81+#82+#83+#84+#85+#86+#87+#88+#89+#90+#91+#92+#93+#94+#95+#96+#97+#98+#99+#100+#101+#102+#103+#104+#105+#106+#107+#108+#109+#110+#111+#112+#113+#114+#115+#116+#117+#118+#119+#120+#121+#122+#123+#124+#125+#126;
+   gc_gui_charfilter_default = #9+#32+#33+#35+#36+#37+#38+#40+#41+#42+#43+#44+#45+#46+#47+#48+#49+#50+#51+#52+#53+#54+#55+#56+#57+#58+#59+#60+#61+#62+#63+#64+#65+#66+#67+#68+#69+#70+#71+#72+#73+#74+#75+#76+#77+#78+#79+#80+#81+#82+#83+#84+#85+#86+#87+#88+#89+#90+#91+#92+#93+#94+#95+#96+#97+#98+#99+#100+#101+#102+#103+#104+#105+#106+#107+#108+#109+#110+#111+#112+#113+#114+#115+#116+#117+#118+#119+#120+#121+#122+#123+#124+#125+#126+#127+#128+#129+#130+#131+#132+#133+#134+#135+#136+#137+#138+#139+#140+#141+#142+#143+#144+#145+#146+#147+#148+#149+#150+#151+#152+#153+#154+#155+#156+#157+#158+#159+#160+#161+#162+#163+#164+#165+#166+#167+#168+#169+#170+#171+#172+#173+#174+#175+#176+#177+#178+#179+#180+#181+#182+#183+#184+#185+#186+#187+#188+#189+#190+#191+#192+#193+#194+#195+#196+#197+#198+#199+#200+#201+#202+#203+#204+#205+#206+#207+#208+#209+#210+#211+#212+#213+#214+#215+#216+#217+#218+#219+#220+#221+#222+#223+#224+#225+#226+#227+#228+#229+#230+#231+#232+#233+#234+#235+#236+#237+#238+#239+#240+#241+#242+#243+#244+#245+#246+#247+#248+#249+#250+#251+#252+#253+#254+#255;
+   gc_gui_maxchatlog = 256;
+   gc_gui_maxinternetchatlog = 256;
+
+   gc_gui_underattackalarminterval = 135;
+   gc_gui_battlemusicinterval = 400;
+
+   gc_gui_camera_maxheight = 58;
+
+   // sound
+   gc_snd_fadetime = 0.3;
+   gc_snd_tag_loop1 = -1;
+   gc_snd_tag_loop2 = -2;
+   gc_snd_tag_loop3 = -3;
+   gc_snd_lib_interface = 'interface';
+   gc_snd_lib_units = 'units';
+   gc_snd_lib_ambient = 'ambient';
+
+   gc_soundlibrary_maxcount = 128;
+   gc_soundlibrary_sounds_maxcount = 32;
+   gc_soundlibrary_soundgroups_maxcount = 8;
+
+   gc_sndlib_ind_units = 0;
+   gc_sndlib_ind_interface = 1;
+   gc_sndlib_ind_ambient = 2;
+
+   // interface
+   gc_snd_ind_none = 0;
+   gc_snd_ind_bldmil = 1;
+   gc_snd_ind_bldsto = 2;
+   gc_snd_ind_bldmar = 3;
+   gc_snd_ind_bldpor = 4;
+   gc_snd_ind_bldswa = 5;
+   gc_snd_ind_bldsga = 6;
+   gc_snd_ind_bldwwa = 7;
+   gc_snd_ind_bldwga = 8;
+   gc_snd_ind_bldtow = 9;
+   gc_snd_ind_bldgol = 10;
+   gc_snd_ind_bldiro = 11;
+   gc_snd_ind_bldcoa = 12;
+   gc_snd_ind_bldcen = 13;
+   gc_snd_ind_bldhou = 14;
+   gc_snd_ind_bldbla = 15;
+   gc_snd_ind_bldbar = 16;
+   gc_snd_ind_bldba2 = 17;
+   gc_snd_ind_bldaca = 18;
+   gc_snd_ind_bldsta = 19;
+   gc_snd_ind_bldart = 20;
+   gc_snd_ind_blddip = 21;
+   gc_snd_ind_bldtem = 22;
+   gc_snd_ind_bldcentur = 23;
+   gc_snd_ind_bldtemtur = 24;
+   gc_snd_ind_bldblg = 25;
+   gc_snd_ind_selectpeasant = 26;
+   gc_snd_ind_selectship = 27;
+   gc_snd_ind_drummer = 28;
+   gc_snd_ind_bagpiper = 29;
+   gc_snd_ind_construct = 30;
+   gc_snd_ind_cancel = 31;
+   gc_snd_ind_btnclick = 32;
+   gc_snd_ind_upgcen = 33;
+   gc_snd_ind_upgaca = 34;
+   gc_snd_ind_upgbar = 35;
+   gc_snd_ind_upgba2 = 36;
+   gc_snd_ind_upgsta = 37;
+   gc_snd_ind_upgbla = 38;
+   gc_snd_ind_upgtow = 39;
+   gc_snd_ind_upgart = 40;
+   gc_snd_ind_upgmil = 41;
+   gc_snd_ind_upgpor = 42;
+   gc_snd_ind_upgmine = 43;
+   // units
+   gc_snd_ind_musket = 44;
+   gc_snd_ind_sabre = 45;
+   gc_snd_ind_pike = 46;
+   gc_snd_ind_bayonete = 47;
+   gc_snd_ind_cavsword = 48;
+   gc_snd_ind_arrow = 49;
+   gc_snd_ind_firearrow = 50;
+   gc_snd_ind_arrowimpact = 51;
+   gc_snd_ind_deathart = 52;
+   gc_snd_ind_deathbld = 53;
+   gc_snd_ind_deathinf = 54;
+   gc_snd_ind_deathcav = 55;
+   gc_snd_ind_burn = 56;
+   gc_snd_ind_explcannon = 57;
+   gc_snd_ind_explhowitzer = 58;
+   gc_snd_ind_shotcannon = 59;
+   gc_snd_ind_shotcannoncannister = 60;
+   gc_snd_ind_shothowitzer = 61;
+   gc_snd_ind_shotmulticannon = 62;
+   gc_snd_ind_shotmortar = 63;
+   gc_snd_ind_shotship = 64;
+   gc_snd_ind_walkpea = 65;
+   gc_snd_ind_walkpeastone = 66;
+   gc_snd_ind_walkinfcloth = 67;
+   gc_snd_ind_walkinfmetal = 68;
+   gc_snd_ind_walkcavfast = 69;
+   gc_snd_ind_walkcavslow = 70;
+   gc_snd_ind_walkartmortar = 71;
+   gc_snd_ind_walkartwheels = 72;
+   gc_snd_ind_walkboat = 73;
+   gc_snd_ind_walkship = 74;
+   gc_snd_ind_watersplash = 75;
+   gc_snd_ind_workstone = 76;
+   gc_snd_ind_workwood = 77;
+   gc_snd_ind_workconstruct = 78;
+   gc_snd_ind_mortarballhitground = 79;
+   gc_snd_ind_cannonballhitbuilding = 80;
+   gc_snd_ind_cannonballhitship = 81;
+   gc_snd_ind_mortarballhitground = 82;
+   gc_snd_ind_deathship = 83;
+   // groups
+   gc_snd_ind_group_sabre_small = 84;
+   gc_snd_ind_group_sabre_medium = 85;
+   gc_snd_ind_group_sabre_large = 86;
+   // new
+   gc_snd_ind_officer = 87;
+   gc_snd_ind_alarm = 88;
+   // count
+   gc_snd_ind_count = 89;
+
+   // unit
+   gc_snd_name_musket = 'musket';
+   gc_snd_name_group_musket_large = 'musketgrouplarge';
+   gc_snd_name_group_musket_medium = 'musketgroupmedium';
+   gc_snd_name_group_musket_small = 'musketgroupsmall';
+
+   // filepaths
+   gc_filepath_formations = '.\data\game\var\formations.cfg';
+   gc_filepath_hotkeys_relative = 'hotkeys\hotkeys.cfg';
+   gc_filepath_hotkeys_default = '.\data\game\var\hotkeys.cfg';
+   gc_filepath_objcustom = '.\data\game\var\objcustom.cfg';
+   gc_filepath_wallcustom = '.\data\game\var\wallcustom.cfg';
+   gc_filepath_generator = '.\data\game\var\generator.cfg';
+   gc_filepath_startingsettings = '.\data\game\var\startingsettings.cfg';
+   gc_filepath_campaigns = '.\data\game\var\campaigns.cfg';
+   gc_filepath_battles = '.\data\game\var\battles.cfg';
+
+   gc_parsername_empty = 'empty';
+   gc_parsername_tmp = 'tmp';
+   gc_parsername_generator = 'gen';
+   gc_parsername_modssync = 'mod';
+   gc_parsername_news = 'news';
+   gc_parsername_topusers = 'top';
+   gc_parsername_battles = 'battles';
+   gc_parsername_customsessionrehost = 'customsessionrehost';
+   gc_parsername_tournaments = 'tournaments';
+   gc_parsername_streams = 'streams';
+
+   // server
+   gc_ConnectIPListMax = 10;
+   gc_ConnectState_Hide = 0;
+   gc_ConnectState_WaitServer = 1;
+   gc_ConnectState_Error = 2;
+   gc_ConnectState_Login = 3;
+   gc_ConnectState_Auth = 4;
+   gc_ConnectState_Connecting = 5;
+   gc_ConnectState_Loading = 6;
+   gc_ConnectState_MissingEmail = 7;
+   gc_ConnectState_InvalidEmail = 8;
+   gc_ConnectState_MissingPass = 9;
+   gc_ConnectState_InvalidPass = 10;
+   gc_ConnectState_FillAllFields = 11;
+   gc_ConnectState_InvalidNickLength = 12;
+   gc_ConnectState_InvalidNickChar = 13;
+   gc_ConnectState_InvalidPassLength = 14;
+   gc_ConnectState_InvalidPassChar = 15;
+   gc_ConnectState_InvalidKey = 16;
+   gc_ConnectState_PassDoesntMatch = 17;
+   gc_ConnectState_PassWasSentToMail = 18;
+   gc_ConnectState_AccountBanned = 19;
+   gc_ConnectState_Disconnect = 20;
+   gc_ConnectState_DisconnectEnemy = 21;
+   gc_ConnectState_Terminated = 22;
+   gc_ConnectState_RegClientFailed = 23;
+   gc_ConnectState_RegDataFailed = 24;
+   gc_ConnectState_RegCDKeyFailed = 25;
+   gc_ConnectState_DataVersionFailed = 26;
+   gc_ConnectState_CoreVersionFailed = 27;
+   gc_ConnectState_RegCDKeyFailed = 28;
+   gc_ConnectState_SessionKick = 29;
+   gc_ConnectState_OutOfOrder = 30;
+
+   gc_ConnectModsState_RoomCheckSumIsDifferent = 31;
+   gc_ConnectModsState_SyncInProgress = 32;
+   gc_ConnectModsState_SyncFailed = 33;
+
+   gc_ConnectLoginState_Hide = 0;
+   gc_ConnectLoginState_YourEmail = 1;
+   gc_ConnectLoginState_InvalidEmail = 2;
+   gc_ConnectLoginState_ValidEmail = 3;
+   gc_ConnectLoginState_ChangeProfile = 4;
+
+   //
+   gc_project_mode_none = 0;
+   gc_project_mode_editor = 1;
+   gc_project_mode_game = 2;
+
+   // baseobj types
+   gc_baseid_nil = 0;
+   gc_baseid_obj = 1;
+   gc_baseid_res = 2;
+   gc_baseid_prj = 3;
+
+   // prop string tags (Integer)
+   gc_properties_stringtag_default = 0;
+   gc_properties_stringtag_ptborder = 100;
+   gc_properties_stringtag_mines = 101;
+   gc_properties_stringtag_gatecollision = 102;
+   gc_properties_stringtag_gatedoor = 103; 
+   gc_properties_stringtag_shipsail = 104; 
+   gc_properties_stringtag_shippaddle_r = 105; 
+   gc_properties_stringtag_shippaddle_l = 106; 
+   gc_properties_stringtag_shipladder = 107; 
+   gc_properties_stringtag_soundemitter = 108;
+   gc_properties_stringtag_fogreveal = 109;
+   gc_properties_stringtag_bui = 110;
+
+   // version id
+   gc_versionid_dev = 0;
+   gc_versionid_publisher = 1;
+   gc_versionid_betatest = 2;
+   gc_versionid_presspreview = 3;
+   gc_versionid_pressreview = 4;
+
+   // internet shell pages
+   gc_internetshell_currentpage_default = 0;
+   gc_internetshell_currentpage_room = 1;
+   gc_internetshell_currentpage_top = 2;
+   gc_internetshell_currentpage_profile = 3;
+   gc_internetshell_currentpage_sessions = 4;
+
+   // statemachine interval
+   gc_statemachine_interval_default = 100;
+   gc_statemachine_interval_units = 100;
+   gc_statemachine_interval_peasants = 135;
+   gc_statemachine_interval_buildings = 33;
+   gc_statemachine_interval_mines = 25;
+   gc_statemachine_interval_wheat = 110;
+   gc_statemachine_interval_oreplace = 120;
+   gc_statemachine_interval_artillery = 60;
+
+   gc_statemachine_interval_pfxpoint = 24;
+   gc_statemachine_interval_pfxmortar = 13;
+   gc_statemachine_interval_pfxcannonball = 21;
+   gc_statemachine_interval_pfxhowitzerball = 29;
+   gc_statemachine_interval_pfxhowitzerballfrag = 28;
+   gc_statemachine_interval_pfxdebrisstone = 27;
+   gc_statemachine_interval_pfxdebriswood = 26;
+   gc_statemachine_interval_pfxarrow = 22;
+   gc_statemachine_interval_pfxgrenade = 19;
+
+   gc_unit_TimeEpsilon = 0.025;
+   gc_unit_TimeIdleGrid = 0.1*31-gc_unit_TimeEpsilon;
+   gc_unit_TimeScanGrid = 0.1*17-gc_unit_TimeEpsilon;
+   gc_unit_TimeCheckCapture = 0.1*19-gc_unit_TimeEpsilon;
+   gc_unit_TimeCheckCaptureArt = 0.1*5-gc_unit_TimeEpsilon;
+   gc_unit_TimeTopology = 0.1*gc_top_UnitTick-gc_unit_TimeEpsilon;
+   gc_unit_TimeFindBestPosition = 0.1*31-gc_unit_TimeEpsilon;
+
+   gc_global_TimeCheckExists = 0.01*200;
+   gc_global_TimeCalcSquadsMoveCount = 0.03*10;
+   gc_global_TimeProgressAI = 0.03*16*5;
+   gc_global_TimeSeedWheat = 0.03*2000;
+
+   gc_progress_Interval = 0.02;
+   gc_progress_TimeMiscPlSecMax = 200*gc_progress_Interval;
+   gc_progress_TimePoolPlSecMax = 70*gc_progress_Interval;
+   gc_progress_TimeSearchEnemyCounter = 5*gc_progress_Interval;
+   gc_progress_TimeSearchEnemyCountSum = 10*gc_progress_Interval;
+   gc_progress_TimeSearchEnemyCountMid = 50*gc_progress_Interval;
+   gc_progress_TimeProgressStatistics = 10*gc_progress_Interval;
+   gc_progress_TimeProgressTopZones = gc_top_GlobalTick*gc_progress_Interval;
+   gc_progress_TimeSoundProgressFreq = gc_progress_Interval;
+   gc_progress_TimeSoundProgressCounterFreq = gc_progress_Interval;
+
+   // ach
+   gc_ach_status_none = 0;
+   gc_ach_status_set = 1;
+   gc_ach_status_onsteam = 2;
+
+   gc_ach_maxcount = 256;
+   gc_ach_skirmish_none = 0;
+   gc_ach_skirmish_win1 = 1;
+   gc_ach_skirmish_win10 = 2;
+   gc_ach_skirmish_win100 = 3;
+   gc_ach_multiplayer_win1 = 4;
+   gc_ach_multiplayer_win10 = 5;
+   gc_ach_multiplayer_win100 = 6;
+   gc_ach_campaign_finalaus = 7;
+   gc_ach_campaign_finaleng = 8;
+   gc_ach_campaign_finalfra = 9;
+   gc_ach_campaign_finalukr = 10;
+   gc_ach_campaign_finalrus = 11;
+   gc_ach_campaign_finalaus_impossible = 12;
+   gc_ach_campaign_finaleng_impossible = 13;
+   gc_ach_campaign_finalfra_impossible = 14;
+   gc_ach_campaign_finalukr_impossible = 15;
+   gc_ach_campaign_finalrus_impossible = 16;
+   gc_ach_skirmish_win1_1vs2_impossible = 17;
+   gc_ach_skirmish_win1_1vs4_impossible = 18;
+   gc_ach_skirmish_win1_1vs6_impossible = 19;
+   gc_ach_skirmish_win1_islands = 20;
+   gc_ach_skirmish_win10_islands = 21;
+   gc_ach_skirmish_win100_islands = 22;
+   gc_ach_upgrade_18century = 23;
+   gc_ach_economy_millionres_20min = 24;
+   gc_ach_upgrade_18century_20min = 25;
+   gc_ach_upgrade_all_acablamil = 26;
+   gc_ach_upgrade_mine95 = 27;
+   gc_ach_skirmish_ferryunload = 28;
+   gc_ach_randommap_teamai = 29;
+   gc_ach_multiplayer_lose10 = 30;
+   gc_ach_economy_millionres_sell = 31;
+   gc_ach_units_dragoon18dip_100 = 32;
+   gc_ach_upgrade_pikeman_3att3def = 33;
+   gc_ach_upgrade_serdiuk_att = 34;
+   gc_ach_upgrade_acashotdamage = 35;
+   gc_ach_upgrade_cavbuildattack = 36;
+   gc_ach_upgrade_mill1 = 37;
+   gc_ach_upgrade_building_def = 38;
+   gc_ach_units_cannons20 = 39;
+   gc_ach_units_mortar50 = 40;
+   gc_ach_units_battleship = 41;
+   gc_ach_upgrade_balloon = 42;
+   gc_ach_units_fishboat100 = 43;
+   gc_ach_upgrade_wingedhussar_6att6def = 44;
+   gc_ach_learn_createsquad = 45;
+   gc_ach_economy_population2000 = 46;
+   gc_ach_economy_population4000 = 47;
+   gc_ach_units_priest50 = 48;
+   gc_ach_units_tower10 = 49;
+   gc_ach_units_wall50 = 50;
+   gc_ach_upgrade_acawoodstoneeff = 51;
+   gc_ach_skirmish_win1hour = 52;
+   gc_ach_units_archerdip500 = 53;
+   gc_ach_units_lightinfantrydip500 = 54;
+   gc_ach_units_cossacksichdip50 = 55;
+   gc_ach_upgrade_towerattspeed = 56;
+   gc_ach_upgrade_roundshier_5att5def = 57;
+   gc_ach_units_kingmusketeer100 = 58;
+   gc_ach_units_highlander200 = 59;
+   gc_ach_units_vityaz200 = 60;
+   gc_ach_units_hetman3 = 61;
+   gc_ach_units_bldcen5 = 62;
+   gc_ach_units_bldhou100 = 63;
+   gc_ach_units_reiterswe200 = 64;
+   gc_ach_units_musketeerpru200 = 65;
+   gc_ach_units_janissary200 = 66;
+   gc_ach_units_archer1000 = 67;
+   gc_ach_units_croat200 = 68;
+   gc_ach_learn_fillsquadhalfdead10 = 69;
+   gc_ach_randommap_buildcen_capturednation = 70;
+   gc_ach_capture_cannons20 = 71;
+   gc_ach_destroy_buildings10 = 72;
+   gc_ach_destroy_buildings100 = 73;
+   gc_ach_units_bldba2_5 = 74;
+   gc_ach_units_bldpor10 = 75;
+   gc_ach_camp_tutmis1_fin = 76;
+   gc_ach_camp_tutmis2_fin = 77;
+   gc_ach_camp_secretplace10 = 78;
+   gc_ach_camp_good5 = 79;
+   gc_ach_camp_evil5 = 80;
+   gc_ach_camp_findchest = 81;
+   gc_ach_camp_hirerobbers = 82;
+   gc_ach_camp_engmis1_alltowns = 83;
+   gc_ach_camp_engmis2_peasantdialogwell = 84;
+   gc_ach_camp_ausmis1_capturepackhorses = 85;
+   gc_ach_camp_ausmis2_killallunitsblack = 86;
+   gc_ach_camp_ausmis3_mantuyunorebels = 87;
+   gc_ach_camp_framis1_trophyshipsuccess = 88;
+   gc_ach_camp_framis2_donotharmlocals = 89;
+   gc_ach_camp_framis2_freeslaves = 90;
+   gc_ach_camp_framis3_palermokillgarrison = 91;
+   gc_ach_camp_ukrmis1_free100slaves = 92;
+   gc_ach_camp_ukrmis1_destroy2turkforts = 93;
+   gc_ach_camp_ukrmis2_destroywhitestonebld = 94;
+   gc_ach_camp_ukrmis3_destroykafabld = 95;
+   gc_ach_camp_ukrmis4_killrusflankstealth = 96;
+   gc_ach_camp_ukrmis5_allkingguardssurvived = 97;
+   gc_ach_camp_rusmis1_saveorel = 98;
+   gc_ach_camp_rusmis2_caravanwontpass = 99;
+   gc_ach_camp_rusmis3_blitzkrieg = 100;
+   gc_ach_camp_rusmis4_beatallboforeswewar = 101;
+   gc_ach_camp_tutmis1_executeofficer = 102;
+   gc_ach_camp_tutmis1_mercyofficer = 103;
+   gc_ach_existscount = 104;
+
+   // campaign
+   gc_usercampaign_maxcampprogress = 256;
+   gc_usercampaign_missionmaxachcount = 8;
+   gc_usercampaign_maxachcount = 128;
+
+   // player squads actions for read/write states
+   gc_playersquad_action_none = 0;
+   gc_playersquad_action_stop = 1;
+   gc_playersquad_action_form = 2;
+   gc_playersquad_action_fill = 3;
+   gc_playersquad_action_disband = 4;
+   gc_playersquad_action_searchenemy = 5;
+   gc_playersquad_action_standground = 6;
+   gc_playersquad_action_attack = 7;
+
+   gc_dontshowannouncement_dep = 1 shl 0;
+   gc_dontshowannouncement_playstv = 1 shl 1;
+   gc_dontshowannouncement_videodriver = 1 shl 2;
+   gc_dontshowannouncement_intelvideoonly = 1 shl 3;
+
+   gc_unixtime_earlybirdend = 1475686511;
+   gc_app_cossacks3 = 333420;
+   gc_dlc_earlybird = 523010;
+   gc_dlc_deluxe = 523011;
+   gc_dlc_dlc1 = 565040;
+   gc_dlc_dlc2 = 586910;
+   gc_dlc_exp1 = 615380;
+   gc_dlc_dlc3 = 630890;
+   gc_dlc_dlc4 = 694190;
+   gc_lastknowndlc_earlybird = 1 shl 0;
+   gc_lastknowndlc_deluxe = 1 shl 1;
+   gc_lastknowndlc_dlc1 = 1 shl 2;
+   gc_lastknowndlc_dlc2 = 1 shl 3;
+   gc_lastknowndlc_dlc3 = 1 shl 4;
+   gc_lastknowndlc_dlc4 = 1 shl 5;
+   gc_lastknowndlc_exp1 = 1 shl 6;
+
+   gc_quickplay_countofplayers6 = 6;
+   gc_quickplay_countofplayers4 = 4;
+   gc_quickplay_countofplayers2 = 2;
+   gc_quickplay_roomname = 'qp';
+   gc_quickplay_roompass = '0000000000';
+   gc_quickplay_customroompass = '1111111111';
+
+   gc_perf_progresshistory = 8;
+
+   gc_campaign_exittomenu_status_none = 0;
+   gc_campaign_exittomenu_status_win = 1;
+   gc_campaign_exittomenu_status_lose = 2;
+
+   gc_pause_timelimit = 120;
+   gc_pause_countlimit = 4;
+
+   gc_spectator_countryid = -2;
+   gc_settings_maxhotkeycount = 64;
+
+   gc_halloween = -1;
+   gc_christmas = -1;
+section.end
+
+// registers
+section.begin
+   TBaseObj : struct.begin
+      baseid = Integer
+   struct.end
+
+   TOrderInfo : struct.begin
+      trg = Integer
+      x = Float
+      y = Float
+      dx = Float
+      dy = Float
+      dir = Float
+      z = Float
+      upgradeid = Integer
+      produceid = Integer
+      restype = Integer
+      amount = Integer
+      progress = Float
+   struct.end
+
+   TOrder : struct.begin
+      //uid = Integer
+      //next = Integer
+      itype = Integer
+      //priority = Integer
+      info = TOrderInfo
+      bexecute = Boolean
+      bremove = Boolean
+      static = Boolean
+   struct.end
+
+   TObjIndividualUpgrades : struct.begin
+      benabled = Boolean
+      upglevel = Integer
+      attackrate = Float
+      addpeasantabsorber = Integer
+      addtransport = Integer
+   struct.end
+
+   TObj : struct.begin
+      baseid = Integer
+      id = Integer
+      uid = Integer
+      pl = Integer
+      cid = Integer
+      //csid = String
+      hp = Integer
+      kill = Integer
+      resamount = Integer
+      restype = Integer
+      buildprogress = Float
+      bdead = Boolean
+      bbuilt = Boolean
+      bstandground = Boolean
+      bsearchenemy = Boolean
+      insideofuid = Integer
+      insidereserved = Integer
+      squad = Integer
+      brally = Boolean
+      rallyx = Float
+      rallyy = Float
+      rallytmpx = Float
+      rallytmpy = Float
+      standtime = Float
+      attackdelay = Float
+      attackmaxdelay = Float
+      exitdelay = Float
+      lastprogresstime = Float
+      progresstick = Integer
+      idlegridx = Integer
+      idlegridy = Integer
+      scangridx = Integer
+      scangridy = Integer
+      ctrlgroupmask = Integer
+      bpathrequested = Boolean
+      bleaverequested = Boolean
+      bhiderequested = Boolean
+      trghnd = Integer
+      topzone = Integer
+      scenariogroupid = Byte
+      smokecount = Byte
+      wallvariation = Byte
+      inbattle = Boolean
+      artx = Float
+      arty = Float
+      arthnd = Integer
+      artdistfactor = Float
+      uniqrnd = Float
+      individual = TObjIndividualUpgrades
+      // groupuid = link to group where unit is (to get add dmg and shield bonuses)
+      orders = TOrder[gc_obj_MaxOrderCount]
+      sndwalkproc = Boolean
+      sndwalkdst = Float
+      sndwalktype = Integer
+      prevstouid = Integer
+      lastsearchenemy = Float
+      lasttimecheckcapture = Float
+      lasttimeidlegrid = Float
+      lasttimescangrid = Float
+      lasttimetopology = Float
+      lasttimebestposition = Float
+      // peasant only - resamount, restype
+      // buildings only - buildprogress, bbuilt
+      // rare - rallyx, rallyy, individual
+   struct.end
+   
+   TRes : struct.begin
+      baseid = Integer
+      hp = Integer
+      itype = Integer
+      radius = Integer
+      worktransorm = Integer
+      timetransormlast = Float
+      resgrid = Integer
+      brised = Boolean
+   struct.end
+
+   TPlayerUpgradeState : struct.begin
+      sid = String
+      done = Boolean
+      enabled = Boolean
+      inprogress = Boolean
+      grey = Boolean
+      timestart = Float
+      timedone = Float
+      bscenariodisabled = Boolean
+   struct.end
+
+   TPlayerCounters : struct.begin
+      total = Integer
+      farmused = Integer
+      scores = Integer
+      idlepeasants = Integer
+      idlemines = Integer
+      resconsume = Integer[gc_ResCount]
+      resconsumeremains = Integer[gc_ResCount]
+      resincome = Integer[gc_ResCount]
+      resincomeremains = Integer[gc_ResCount]
+      workersonres = Integer[gc_ResCount]
+      all = Integer[gc_MaxCountryCount][gc_country_maxmembers]
+      built = Integer[gc_MaxCountryCount][gc_country_maxmembers]
+   struct.end
+
+   TCountryFixedProduceBuild : struct.begin
+      id = String
+      x = Integer
+      y = Integer
+      //hotkeyid = String
+   struct.end
+
+   TCountryFixedProduce : struct.begin
+      id = String
+      build = TCountryFixedProduceBuild[gc_country_fixedproduce_maxcount]
+   struct.end
+
+   TCountryUpgrade : struct.begin
+      id = String
+      enabled = Boolean
+      level = Integer
+      branch = Integer
+      itype = Integer
+      value = Float
+      iarrparam1 = Integer[gc_upgrade_maxarrparam1count]
+      sarrparam2 = String[gc_upgrade_maxarrparam2count]
+      price = Integer[gc_ResCount]
+      time = Float
+      x = Integer
+      y = Integer
+      tooltiptype = Integer
+      bindividual = Boolean
+      //bpermanentenabled = Boolean
+      //bmanualdisable = Boolean
+      //bstageup = Boolean
+      //stagescount = Integer
+      //curstage = Integer
+      //nautoperform = Integer
+      //nautoenable = Integer
+      //autoperform = Integer
+      //autoenable = Integer
+      //boptions = Boolean
+   struct.end
+   
+   TCountryUnitLock : struct.begin
+      id = String
+      lockid = String
+      count = Integer
+   struct.end
+
+   //TCountyGroupType : struct.begin
+   //   id = String
+   //   group =
+   //struct.end
+
+   TCountryAccessControl : struct.begin
+      id = String
+      req = String[gc_country_maxaccesscontrolreqs]
+   struct.end
+
+   TCountryOfficersFormations : struct.begin
+      stype = String
+      masks = String[gc_country_maxofficersformationmask]
+   struct.end
+
+   TCountryOfficers : struct.begin
+      officersid = String
+      drummersid = String
+      units = String[gc_country_maxformationunitcount]
+      formations = TCountryOfficersFormations[gc_country_maxformationcount]
+   struct.end
+
+   TCountryUpgradePlace : struct.begin
+      id = String
+      upgrade = String[gc_country_upgradeplace_maxcount]
+   struct.end
+
+   TCountryEditorPlace : struct.begin
+      sid = String
+      priority = Integer
+   struct.end
+
+   TCountry : struct.begin
+      id = Integer
+      sid = String
+      members = String[gc_country_maxmembers]
+      membersairole = Integer[gc_country_maxmembers]
+      fixedproduce = TCountryFixedProduce[gc_country_maxfixedproduce]
+      enabled = String[gc_country_maxmembers]
+      upgrade = TCountryUpgrade[gc_country_maxupgradecount]
+      upgradeplace = TCountryUpgradePlace[gc_country_maxupgradeplace]
+      upgradelinks = String[gc_country_maxupgradecount][gc_country_upgradelinks_maxcount]
+      accesscontrol = TCountryAccessControl[gc_country_maxaccesscontrol]
+      unitlock = TCountryUnitLock[gc_country_maxunitlock]
+      upgradeprivate = String[gc_country_maxprivatcount]
+      officers = TCountryOfficers[gc_country_maxofficers]
+      editorplace = TCountryEditorPlace[gc_country_editorplace_category_count][gc_country_maxmembers]
+      //specialupgrade - upgrades that can be turned off or already done in map options before start, such as option "no baloon", "no cannons, towers, walls", "no 18 century", or already in 18 century, already with balloon done
+      //specialunit - same as previous. used to disable units depending on map options.
+   struct.end
+   
+   TGroup : struct.begin
+      id = String
+      count = Integer
+      maxcount = Integer
+      adddamage = Integer
+      addshield = Integer
+      posx = Float
+      posy = Float
+      dir = Float
+   struct.end
+
+   TEconomy : struct.begin
+      buycostmin = Float
+      buycostdef = Float
+      buycostmax = Float
+      buyexp = Float
+      buytime = Float
+      sellcostmin = Float
+      sellcostdef = Float
+      sellcostmax = Float
+      sellexp = Float
+      selltime = Float
+      buycost = Float
+      sellcost = Float
+   struct.end
+
+   TSelection : struct.begin
+      id = Integer
+      count = Integer
+      hp = Integer
+      maxhp = Integer
+      bshiftsel = Boolean
+      bbuiltexists = Boolean
+   struct.end
+
+   TSelectionSquad : struct.begin
+      squad = Integer
+      count = Integer
+      hp = Integer
+      maxhp = Integer
+      bshiftsel = Boolean
+   struct.end
+
+   TFormation : struct.begin
+      id = Integer
+      sid = String
+      symmetry = Integer
+      bonusdamage = Integer
+      bonusshield = Integer
+      bonusdamagehold = Integer
+      bonusshieldhold = Integer
+      width = Integer
+      height = Integer
+      countunits = Integer
+      countofficers = Integer
+      mask = Boolean[gc_formation_maskmaxheight][gc_formation_maskmaxwidth]
+      maskofficers = Boolean[gc_formation_maskmaxheight][gc_formation_maskmaxwidth]
+   struct.end
+
+   TInterfaceButtons : struct.begin
+      bstandground = Boolean
+      bnostandground = Boolean
+      battack = Boolean
+      benableattack = Boolean
+      bdisableattack = Boolean
+      bguard = Boolean
+      bcancelguard = Boolean
+      bsquadfill = Boolean
+      bsquaddisband = Boolean
+      bsquadrank = Boolean
+      bsquadcolumn = Boolean
+      bsquadsquare = Boolean
+      brally = Boolean
+   struct.end
+
+   TInterfaceStates : struct.begin
+      bstandground = Boolean
+      bnostandground = Boolean
+      battack = Boolean
+      benableattack = Boolean
+      bdisableattack = Boolean
+      bguard = Boolean
+      bsquadrank = Boolean
+      bsquadcolumn = Boolean
+      bsquadsquare = Boolean
+      brally = Boolean
+   struct.end
+
+   TInterfaceControl : struct.begin
+      bshowunitslist = Boolean
+      bshowcontrol = Boolean
+      bshowproduce = Boolean
+      bshowupgrade = Boolean
+      bshowmarket = Boolean
+      bshowinside = Boolean
+      bshowuniticon = Boolean
+      bshowunitinfo = Boolean
+   struct.end
+
+   TInterface : struct.begin
+      buttons = TInterfaceButtons
+      control = TInterfaceControl
+      states = TInterfaceStates
+      gamemode = Integer
+      settings = Integer
+      statplayer = Integer
+      statpage = Integer
+      newspage = Integer
+      newspanellink = String
+      bhideobjectives = Boolean
+      showobjectivestimer = Float
+      bupdateobjectivestext = Boolean
+   struct.end
+
+   TMapTerrainDataTile : struct.begin
+      height = Float
+      tex = Integer
+      collision = Integer[gc_terraindata_collision]
+   struct.end
+
+   TMapTerrainData : struct.begin
+      lastsavetime = Float
+      objectcount = Integer[gc_terraindata_maxplayers]
+      tile = TMapTerrainDataTile[gc_terraindata_mapwidth][gc_terraindata_mapheight]
+   struct.end
+
+   TCanPlaceBuildingWalls : struct.begin
+      wallsprite = Integer
+      bwall = Boolean
+      bwallchecked = Boolean
+      bcollision = Boolean
+      bcollisionchecked = Boolean
+   struct.end
+
+   TLanRecreate : struct.begin
+      brecreate = Boolean
+      brecreatestarted = Boolean
+      brecreatefinished = Boolean
+      hostid = Integer
+      clientcount = Integer
+      joinedcount = Integer
+      createdtime = Float
+   struct.end
+
+   gInterface = TInterface
+
+   gEconomy = TEconomy[gc_ResCount]
+   //gObjBase = TObjBase[gc_MaxPlayerCount][gc_MaxObjBaseCount]
+   gCountry = TCountry[gc_MaxCountryCount]
+   gSelection = TSelection[gc_MaxCountryCount][gc_country_maxmembers]
+   gSelectionSquads = TSelectionSquad[gc_gameplay_maxplayersquadcount]
+
+   gFormation = TFormation[gc_formation_maxcount]
+
+   gCanPlaceBuildingWalls = TCanPlaceBuildingWalls[gc_MaxMapWidth][gc_MaxMapHeight]
+
+   gMapTerrainData = TMapTerrainData
+   gRecordGeneratorVersion = Integer
+
+   gbool_gui_mapgenerationfinished = Boolean
+   gbool_gui_newmapfinished = Boolean
+   gbool_gui_shifticonsselection = Boolean
+   gbool_gui_update_editorinfo = Boolean
+   gbool_gui_update_unitcontrol = Boolean
+   gbool_gui_update_rallypoints = Boolean
+   gbool_gui_update_cursor = Boolean
+   gbool_gui_updateprogress_unitcontrol = Boolean
+   gbool_gui_debug = Boolean
+   gbool_gui_maxcameradist = Boolean
+   gbool_gui_screenshotcamera = Boolean
+   gbool_gui_goinattackmode = Boolean
+   gbool_gui_guardmode = Boolean
+   gbool_gui_attackpointmode = Boolean
+   gbool_gui_patrolmode = Boolean
+   gbool_gui_setrallypointmode = Boolean
+   gbool_gui_firstonresize = Boolean
+   gbool_gui_showannouncementclosed = Boolean
+   gbool_gui_firstdocreate = Boolean
+   gbool_gui_isfileexists_checked_campaigns = Boolean
+   gbool_gui_isfileexists_campaigns = Boolean
+   gint_gui_chatmessagemode = Integer
+   gint_gui_sliderhnd = Integer
+   gint_gui_sliderdragx = Integer
+   gint_gui_sliderdragy = Integer
+   gint_gui_changeresolutionmode = Integer
+   gint_gui_changeresolutionstage = Integer
+   gint_gui_revertresolutiontimer = Float
+   gint_gui_prevelementundermouse = Integer
+   gint_gui_prevelementpressed = Integer
+   gint_gui_prevundercursoruid = Integer
+   gint_gui_unitcontroluid = Integer
+   gint_gui_unitcontrolsquadind = Integer
+   gint_gui_pickedbldhnd = Integer
+   gint_gui_pickedbldcid = Integer
+   gint_gui_market_sellrestype = Integer
+   gint_gui_market_buyrestype = Integer
+   gint_gui_market_resamount = Integer
+   gint_gui_prevshowunitcontrolunituid = Integer
+   gint_gui_officer_selectedformation = Integer
+   gint_gui_officer_formationsizedecrease = Integer
+   gint_gui_officer_formationsizedecreasemax = Integer
+   gint_campaign_selectedcampaign = Integer
+   gint_campaign_selectedmission = Integer
+   gstring_campaign_lastmissionname = String
+   gstring_campaign_selcampaignname = String
+   gstring_campaign_selmissionname = String
+   gbool_profiler_enabled = Boolean
+   gbool_editor_peacemode = Boolean
+   gbool_editor_fogofwar = Boolean
+   gbool_editor_placeunits = Boolean
+   gbool_editor_placeunitsmaximized = Boolean
+   gbool_net_forcesyncres = Boolean
+   gbool_net_forcesyncdata = Boolean
+   gint_net_myindex = Integer
+   gbool_internetshell_clearchat = Boolean
+   gint_internetshell_prevplholder = Integer
+   gint_internetshell_msgplid = Integer
+   gstring_internetshell_msgplnick = String
+   gbool_internetshell_friendschannel = Boolean
+   gbool_internetshell_firstappearance = Boolean
+   gstring_editor_selectedcountrysid = String
+   gstring_editor_selectedunitsid = String
+   gstring_editor_lastgenbitmapname = String
+   gstring_editor_lastgenmapname = String
+   gint_editor_selectedcountryid = Integer
+   gint_editor_selectedunitid = Integer
+   gint_gui_progresstick = Integer
+   gint_gui_progresstickeditor = Integer
+   gbool_gui_peasantselected = Boolean
+   gbool_gui_drummerselected = Boolean
+   gbool_gui_officerselected = Boolean
+   gbool_gui_bagpiperselected = Boolean
+   gbool_gui_waterselection = Boolean
+   gbool_gui_requestsoundonunitcontrol = Boolean
+   gfloat_gui_movearrowx = Float
+   gfloat_gui_movearrowz = Float
+   gfloat_gui_movecamerax = Float
+   gfloat_gui_movecameraz = Float
+   gbool_gui_doalarm = Boolean
+   gint_gui_alarmevent = Integer
+   gfloat_gui_musiclastbattletimestart = Float
+   gfloat_gui_musiclastbattletimeend = Float
+   gfloat_gui_musiclastnationaltimestart = Float
+   gfloat_gui_musiclastnationaltimeend = Float
+   gfloat_gui_alarmx = Float
+   gfloat_gui_alarmz = Float
+   gfloat_gui_lanlastgametimesync = Float
+   gfloat_gui_screenshotcamerafov = Float
+   gfloat_gui_screenshotcameraangle = Float
+   gfloat_gui_videoscreenshottimer = Float
+   gint_gui_videoscreenshotphase = Integer
+   gbool_gui_saving = Boolean
+   gstring_gui_saving = String
+   gbool_gui_pausestate = Boolean
+   gbool_gui_quicksave = Boolean
+   gbool_gui_gatefinished = Boolean
+   gbool_gui_querywindow = Boolean
+   gbool_gui_donewgamerestart = Boolean
+   gbool_scenario_startneeded = Boolean
+   gint_gui_saveload_ind = Integer
+   gint_gui_saveload_enum = Integer
+   gint_gui_saveload_mode = Integer
+   gstring_gui_saveload_name = String
+   gint_gui_lastprogressach = Integer
+   gbool_gui_achupdated = Boolean
+   gint_gui_achwinlose = Integer
+   gfloat_gui_lasttimemusiccrossfade = Float
+   gstring_gui_connectserver = String
+   gint_gui_connectserverstate = Integer
+   gbool_progress_usewritenewrequestlist = Boolean
+   gfloat_lan_lastsyncrestime = Float
+   gfloat_lan_lastsyncstatstime = Float
+   gfloat_lan_lastsyncdatatime = Float
+   gfloat_gui_interfacescale = Float
+   gbool_gui_saveresolution = Boolean
+   gbool_gui_updateadviser = Boolean
+   gbool_gui_updateadviseradvice = Boolean
+   gbool_gui_recheckadviseradvice = Boolean
+   gint_gui_adviserwidth = Integer
+   gbool_gui_keephint = Boolean
+   gint_gui_encyclopedia_cid = Integer
+
+   // shell optimizations
+   gint_gui_lansendreadytries = Integer
+   gint_gui_lansendstarttries = Integer
+   gint_gui_updateclientlist = Integer
+   gint_gui_updatesessionlist = Integer
+   gbool_gui_landoreadysent = Boolean
+   gbool_gui_setshellchatinputfocused = Boolean
+   gbool_gui_refreshcurrentsession = Boolean
+   gbool_gui_updatecurrentsessionname = Boolean
+   gbool_gui_showcustomgame = Boolean
+   gbool_gui_showhistoricalbattle = Boolean
+   gbool_gui_showinternetshell = Boolean
+   gbool_gui_shellupdatetoplist = Boolean
+   gbool_gui_senddatasyncparser = Boolean
+   gbool_gui_sendadviserchangeparser = Boolean
+
+   // sound
+   gstring_gui_lastguisoundname = String
+   gfloat_gui_lastguisoundtime = Float
+   gint_gui_soundtag = Integer
+   gint_dbg_logrequestsoundcount = Integer
+   gint_dbg_logsoundcount = Integer
+   gfloat_dbg_logsoundtime = Float
+
+   gInt_MinTopZoneChanged = Integer
+   gInt_MaxTopZoneChanged = Integer
+   gInt_UpdateAreasCount = Integer
+
+   gfloat_gui_prevmouseworldcoordx = Float
+   gfloat_gui_prevmouseworldcoordy = Float
+   gfloat_gui_prevmouseworldcoordz = Float
+   
+   gbool_gui_isselectionstarted = Boolean
+   gfloat_gui_prevselmousex = Float
+   gfloat_gui_prevselmousez = Float
+
+   gint_unit_tagstate = Integer
+   gint_unit_parentcid = Integer
+   gbool_unit_isshipdummy = Boolean
+
+   // experiment
+   gbool_gui_progressoneventflag = Boolean
+   gstring_gui_eventpressstate = String
+   
+   gFloat_test_minX = Float
+   gFloat_test_maxX = Float
+   gFloat_test_minY = Float
+   gFloat_test_maxY = Float
+   gRealTimeProcessed = Float
+   gPrevRealTime = Float
+
+   // version
+   gint_versionid = Integer
+
+   // server
+   gConnectIPList = String[gc_ConnectIPListMax]
+   gConnectIPIndex = Integer
+   gConnectIPCount = Integer
+   gConnectHost = String
+   gLanMyID = Integer
+   gLanGameMode = Integer
+   gLanHostID = Integer
+   gInetEventLock = Integer
+   gConnectState = Integer
+   gConnectModal = Integer
+   gConnectTimer = Float
+   gConnectLoginState = Integer
+   gLanRecreate = TLanRecreate
+
+   // debug
+   gDbgObj = TObj
+   dbgx = Integer
+   dbgy = Integer
+   dbgz = Integer
+   dbgprevx = Integer
+   dbgprevy = Integer
+   dbgprevz = Integer
+   dbgstatename = String
+
+   // search enemy optimization
+   gint_searchenemy_count = Integer
+   gfloat_searchenemy_mid = Float
+   gint_searchenemy_progress = Integer
+   gint_searchenemy_skiptickcount = Integer
+   gfloat_searchenemygridcachetime = Float
+
+   gstring_news_version = String
+   gfloat_news_lasttime = Float
+   gint_news_limiter = Integer
+   gint_news_gowithouttimer = Integer
+   gint_news_onceloadbarstep = Integer
+   gint_news_reverse = Integer
+   gint_news_manual = Integer
+   gfloat_news_delaypoint = Float
+   gfloat_news_lasttimeloadbar = Float
+   gfloat_news_loadbarpos = Integer
+   // chat log
+   gChatLog = String[gc_gui_maxchatlog]
+   gint_gui_chatind = Integer
+
+   // misc
+   gint_soundsteptick = Integer
+   gint_maxcountrycountvisible = Integer
+   gint_maxcountrycountplayable = Integer
+   gfloat_peacetime = Float
+   gbool_peacemode = Boolean
+   gPathTag = Byte
+
+   gfloat_progressspeedfactor_lasttimechange = Float
+   gfloat_progressspeedfactor_lastvalue = Float
+
+   garrfloat_perf_progress = Float[gc_perf_progresshistory]
+   gint_perf_progressind = Integer
+
+   gint_campaign_exittomenu_status = Integer
+   gstring_campaign_exittomenu_campname = String
+   gstring_campaign_exittomenu_missname = String
+
+   gbool_use_collision = Boolean
+   gbool_use_nomeleeminradius = Boolean
+
+   gbool_issteam = Boolean
+   gbool_isgog = Boolean
+
+   gstring_checksumlong = String
+   gstring_checksum = String
+   gbool_modsactive = Boolean
+   gbool_modsscript = Boolean
+   gbool_modsyncparserwait = Boolean
+   gbool_prevbtnnewsenabled = Boolean
+   gfloat_modsyncparserwaittime = Float
+   gstring_roomchecksum = String
+   gstring_validpagestoshow = String
+   gint_quickplay_countofplayers = Integer
+   gbool_lan_debug = Boolean
+   gint_gui_progressbar_picnum = Integer
+   gint_gui_announcementstate = Integer
+   gbool_gui_newspanelscroll = Boolean
+   gfloat_gui_newslastscrollposition = Float
+   gbool_gui_newsgoggalaxychecked = Boolean
+   gbool_gui_newsgoggalaxyexists = Boolean
+   gbool_gui_bhistoricalbattle = Boolean
+   gint_gui_newsnextpage = Integer
+   gint_gui_newsshowvisible = Integer
+   gint_gui_newsinternetconnection = Integer
+   gint_gui_newsunique = Integer
+   gint_gui_alliancevisible = Integer
+   gint_gui_alliancebtnclicked = Integer
+   gint_gui_reloadflag = Integer
+   gflt_res_dlt = Float
+   garr_res_dlt = Integer[gc_ResCount]
+   garr_res_trg = Integer[gc_ResCount]
+   gfloat_gui_lanlastgametimesyncreceived = Float
+   gfloat_gui_lanlastgamespeedsyncreceived = Float
+   gfloat_gui_onlinedoprogressstart = Float
+   gfloat_gui_lanlasteventreceived = Float
+   gfloat_gui_lanlastaliveevent = Float
+   gfloat_gui_lanlastaliveeventreceived = Float[gc_MaxPlayerCount]
+   gfloat_gui_outofmemorylastgametimecheck = Float
+   gbool_gui_outofmemoryrecordclean = Boolean
+   gbool_gui_onlinedoreadysent = Boolean
+   gbool_lan_isonlinecached = Boolean
+   gint_gui_selectedplayertrade = Integer
+   gint_count_pause = Integer
+   gfloat_time_pause = Float
+   gbool_lan_changeprofile = Boolean
+   gbool_gui_bspectator = Boolean
+   gbool_gui_hidenicks = Boolean
+   gbool_gui_ignoreonshortcut = Boolean
+   gfloat_lan_quickplayautosearch_addtime = Float
+   gint_gui_editormode = Integer
+   gint_gui_tournamentwinvisible = Integer
+   gint_internetshell_toppanelvisible = Integer
+   gint_internetshell_tournamentsorstreams = Integer
+   gbool_gui_requestshowranking = Boolean
+   gint_gui_encyclopediapage = Integer
+   garr_Temporary = String[gc_MaxUnitsArr]
+   garr_UnitsAll = String[gc_MaxUnitsArr]
+   garr_UnitsShooters = String[gc_MaxUnitsArr]
+   garr_UnitsShooters18 = String[gc_MaxUnitsArr]
+   garr_UnitsCavalry = String[gc_MaxUnitsArr]
+   garr_UnitsCavalryMelee = String[gc_MaxUnitsArr]
+   garr_UnitsArmored = String[gc_MaxUnitsArr]
+   garr_UnitsBayonet = String[gc_MaxUnitsArr]
+   garr_ShipsCannon = String[gc_MaxUnitsArr]
+   garr_BuildingsAll = String[gc_MaxUnitsArr]
+   garr_BuildingsTowerWall = String[gc_MaxUnitsArr]
+   garr_UnitsArtillery = String[gc_MaxUnitsArr]
+   gint_gui_hotkeytoedit = Integer
+   gbool_gui_tradecomboboxopen = Boolean
+   gint_settings_hotkeyspage = Integer
+
+   gbool_gui_update_unitcontrol_skip = Boolean
+   gfloat_gui_update_unitcontrol_lasttime = Float
+   gfloat_gui_update_progress_lasttime = Float
+   gint_gui_update_unitcontrol_progresstick = Integer
+   gint_gui_update_highlights_progresstick = Integer
+   gint_gui_lanrequestjoinsessionid = Integer
+   gfloat_lan_pingredrawwindowtime = Float
+   gbool_recordwascleared = Boolean
+
+   gpointer_register0 = Pointer
+section.end
+
+section.begin
+   framework = .\data\scripts\dmscript.source
+section.end

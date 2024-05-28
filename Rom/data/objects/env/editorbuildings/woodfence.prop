@@ -1,0 +1,87 @@
+{refurl=.\data\objects\ref\refenv.prop}
+
+mainproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=mainproperty}
+   CustomName = woodfence
+   BaseName = woodfence
+   RaceName = env
+section.end
+
+stringproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=stringproperty}
+   CategorieName = editorbuildings
+section.end
+
+actorproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=actorproperty}
+   LODActorName = woodfence
+   DefaultMeshName = woodfence.mesh
+section.end
+
+materialproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=materialproperty}
+   Mesh[0].DefaultMaterialName = woodfence
+   Mesh[0].UseableMaterials[0] = woodfence
+   Mesh[0].UseSeasonMaterial = True
+   Mesh[0].UseableSummerMaterials[0] = woodfence
+   Mesh[0].UseableWinterMaterials[0] = woodfencew
+   Mesh[1] : struct.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=materialproperty.Mesh[0]}
+      DefaultMaterialName = woodfence
+      UseableMaterials[0] = woodfence
+   struct.end
+   Mesh[2] : struct.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=materialproperty.Mesh[0]}
+      DefaultMaterialName = woodfence
+      UseableMaterials[0] = woodfence
+   struct.end
+section.end
+
+collisionmaskproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=collisionmaskproperty}
+   Priority = 95
+   Mask : struct.begin
+      [*] = 11
+      [*] = 11
+   struct.end
+section.end
+
+collisionmeshproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=collisionmeshproperty}
+   Static = False
+   CustomBoundingAABBMin.X = -0.6
+   CustomBoundingAABBMin.Y = 0.00
+   CustomBoundingAABBMin.Z = -0.6
+   CustomBoundingAABBMax.X = 0.6
+   CustomBoundingAABBMax.Y = 1.65
+   CustomBoundingAABBMax.Z = 0.6
+section.end
+
+scaleproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=scaleproperty}
+   DefaultScale.X = 0.33333
+   DefaultScale.Y = 0.33333
+   DefaultScale.Z = 0.33333
+section.end
+
+directionupproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=directionupproperty}
+   DefaultRollAngle = 90
+section.end
+
+collisionmeshproperty : section.begin {refurl=.\data\objects\ref\refbuilding.prop; refkey=collisionmeshproperty}
+   CustomBoundingAABBMin.Y = 0
+   CustomBoundingAABBMax.Y = 1.5
+   CIEnabled = True
+   CIMovable = False
+   CIMass = 10000
+   CIIntersectRadius = 0.499
+section.end
+
+section.begin
+   Enabled = True
+   Static = True
+   ClassName = OffsetProperty
+   Offset : struct.begin
+      X = 0
+      Y = 0
+      Z = 0
+   struct.end
+   AutoOffset = False
+   OffsetCollideOption = ocoTerrain
+   AutoExt = True
+   AutoPlateauTerrain = False
+   AutoPlateauTerrainRadius = 0
+   AutoNormalizeTerrain = False
+   AutoDirectToCenter = False
+section.end

@@ -1,0 +1,101 @@
+{refurl=.\data\objects\ref\refenv.prop}
+
+mainproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=mainproperty}
+   CustomName = burdock.3
+   BaseName = burdock.3
+section.end
+
+collisionmeshproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=collisionmeshproperty}
+   Enabled = False
+section.end
+
+actorproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=actorproperty}
+   LODActorName = burdock
+   DefaultMeshName = burdock3.mesh
+   RandomMeshName = False
+   UseableMeshes : struct.begin
+      [0] = True
+      [1] = True
+      [2] = True
+   struct.end
+section.end
+
+materialproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=materialproperty}
+   Mesh : struct.begin      
+      [0] : struct.begin
+         Enabled = False
+         Static = False
+         ClassName = MeshMaterialProperty
+         DefaultMaterialName = plantsatlas
+         RandomMaterialName = True
+         UseableMaterials : struct.begin
+            [0] = plantsatlas
+         struct.end
+         UseSeasonMaterial = True
+         UseableSummerMaterials : struct.begin
+            [0] = plantsatlas
+         struct.end
+         UseableWinterMaterials : struct.begin
+            [0] = plantsatlasw
+         struct.end
+         UseableAutumnMaterials : struct.begin
+            [0] = plantsyellowatlas
+         struct.end
+      struct.end
+      [1] : struct.begin {refkey=materialproperty.Mesh[0]}
+         DefaultMaterialName = plantsatlas
+         RandomMaterialName = True
+         UseableMaterials[0] = plantsatlas
+         UseSeasonMaterial = True
+         UseableSummerMaterials : struct.begin
+            [0] = plantsatlas
+         struct.end
+         UseableWinterMaterials : struct.begin
+            [0] = plantsatlasw
+         struct.end
+         UseableAutumnMaterials : struct.begin
+            [0] = plantsyellowatlas
+         struct.end
+      struct.end
+      [2] : struct.begin {refkey=materialproperty.Mesh[0]}
+         DefaultMaterialName = plantsatlas
+         RandomMaterialName = True
+         UseableMaterials[0] = plantsatlas
+         UseSeasonMaterial = True
+         UseableSummerMaterials : struct.begin
+            [0] = plantsatlas
+         struct.end
+         UseableWinterMaterials : struct.begin
+            [0] = plantsatlasw
+         struct.end
+         UseableAutumnMaterials : struct.begin
+            [0] = plantsyellowatlas
+         struct.end
+      struct.end
+   struct.end
+section.end
+
+statemachineproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=statemachineproperty}
+   ClassName = StateMachineProperty
+   DefaultInitStateName = InitialDecor
+section.end
+
+stringproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=stringproperty}
+   CategorieName = decor
+section.end
+
+scaleproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=scaleproperty}
+   DefaultScale : struct.begin
+      X = 0.25
+      Y = 0.25
+      Z = 0.25
+   struct.end
+   RandomScale = True
+   MinScaleFactor = 0.85
+   MaxScaleFactor = 1.05
+section.end
+
+directionupproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=directionupproperty}
+   RandomRollAngle = True
+   DeltaRollAngle = 1
+section.end

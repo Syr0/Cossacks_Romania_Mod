@@ -1,0 +1,134 @@
+{refurl=.\data\objects\ref\refenv.prop}
+
+mainproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=mainproperty}
+   CustomName = spruce1.1
+   BaseName = spruce1.1
+section.end
+
+actorproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=actorproperty}
+   LODActorName = spruce
+   DefaultMeshName = spruce1.mesh
+   RandomMeshName = False
+   UseableMeshes : struct.begin
+      [0] = True
+      [1] = True
+      [2] = True
+      [3] = True
+   struct.end
+section.end
+
+materialproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=materialproperty}
+   Mesh : struct.begin      
+      [0] : struct.begin
+         Enabled = False
+         Static = False
+         ClassName = MeshMaterialProperty
+         DefaultMaterialName = spruce1
+         RandomMaterialName = True
+         UseableMaterials : struct.begin
+            [0] = spruce1
+            [1] = spruce2
+            [2] = spruce3
+         struct.end
+         UseSeasonMaterial = True
+         UseableSummerMaterials : struct.begin
+            [0] = spruce1
+            [1] = spruce2
+            [2] = spruce3
+         struct.end
+         UseableWinterMaterials : struct.begin
+            [0] = spruce1w
+            [1] = spruce2w
+            [2] = spruce3w
+         struct.end
+      struct.end
+      [1] : struct.begin {refkey=materialproperty.Mesh[0]}
+         DefaultMaterialName = spruce1
+         RandomMaterialName = True
+         UseableMaterials[0] = spruce1
+         UseableMaterials[1] = spruce2
+         UseableMaterials[2] = spruce3
+         UseSeasonMaterial = True
+         UseableSummerMaterials : struct.begin
+            [0] = spruce1
+            [1] = spruce2
+            [2] = spruce3
+         struct.end
+         UseableWinterMaterials : struct.begin
+            [0] = spruce1w
+            [1] = spruce2w
+            [2] = spruce3w
+         struct.end
+      struct.end
+      [2] : struct.begin {refkey=materialproperty.Mesh[0]}
+         DefaultMaterialName = spruce1
+         RandomMaterialName = True
+         UseableMaterials[0] = spruce1
+         UseableMaterials[1] = spruce2
+         UseableMaterials[2] = spruce3
+         UseSeasonMaterial = True
+         UseableSummerMaterials : struct.begin
+            [0] = spruce1
+            [1] = spruce2
+            [2] = spruce3
+         struct.end
+         UseableWinterMaterials : struct.begin
+            [0] = spruce1w
+            [1] = spruce2w
+            [2] = spruce3w
+         struct.end
+      struct.end
+      [3] : struct.begin {refkey=materialproperty.Mesh[0]}
+         DefaultMaterialName = spruce1
+         RandomMaterialName = True
+         UseableMaterials[0] = spruce1
+         UseableMaterials[1] = spruce2
+         UseableMaterials[2] = spruce3
+         UseSeasonMaterial = True
+         UseableSummerMaterials : struct.begin
+            [0] = spruce1
+            [1] = spruce2
+            [2] = spruce3
+         struct.end
+         UseableWinterMaterials : struct.begin
+            [0] = spruce1w
+            [1] = spruce2w
+            [2] = spruce3w
+         struct.end
+      struct.end
+   struct.end
+section.end
+
+stringproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=stringproperty}
+   CategorieName = resources
+section.end
+
+scaleproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=scaleproperty}
+   DefaultScale : struct.begin
+      X = 0.5
+      Y = 0.5
+      Z = 0.5
+   struct.end
+   RandomScale = True
+   MinScaleFactor = 0.85
+   MaxScaleFactor = 1.15
+section.end
+
+directionupproperty : section.begin {refurl=.\data\objects\ref\refenv.prop; refkey=directionupproperty}
+   RandomRollAngle = True
+   DeltaRollAngle = 1
+section.end
+
+section.begin
+   Enabled = True
+   Static = True
+   ClassName = FrameAnimationProperty
+   DefaultFrameAnimationName = wind
+   DefaultFrameAnimationMode = aamLoop
+   FrameAnimationSynchronizeOption = fasoNone
+   FrameAnimationSwitchChildren = False
+   DefaultFrameAnimationCycles = 
+   FrameAnimationCyclesLibName = forest
+   RandomOffsetFrameAnimationCycles = acsaDefault
+   RandomOffsetFrameAnimation = acsaDefault
+section.end

@@ -1,0 +1,535 @@
+	@sunucu.hizmetdýþý
+Ýnternet sunucumuz kýsa bir süre içinde devreye girecektir.
+Þu anda bu sorunu çözmeye çalýþýyoruz.
+	@ duyuru.destek.baþlýk
+Önemli Duyuru
+	@ duyuru.destek.depplaystv
+Bilgisayarýnýzdaki oyun tutarlýlýðýný ve verimliliðini etkileyebilecek sistem ayarlarý ve üçüncü parti uygulamalar bulduk.
+Rastgele çökmeler veya normal dýþý düþük performans ile karþýlaþtýðýnýz takdirde aþaðýdaki adýmlarý taklip edin:
+	@ duyuru.buö
+Sisteminizin BUÖ (bilgi Uygulama Önleme) ayarlarý oyun ile çakýþýyor olabilir.
+Bunu düzeltmek için “cossacks.exe”’yi BUÖ istisnalar listesine ekleyin. Bu konu ile ilgili daha fazla bilgi edinmek için Steam’deki oyun "Topluluk Merkezi’ne göz atýn.
+	@ duyuru.playstv
+Oyun sürecine müdahale etmeye çalýþan üçüncü parti uygulamalar bulduk. Bu durum çoðunlukla “Plays. TV”, “Raptr”, “RazerIngameEngine” veya “XSplit” veya oyun video kayýt uygulamasýndan ibarettir.
+Lütfen buna benzer uygulamalarý kapatýn (sistem tepsisi / görev yöneticisi süreç listesi) aksi takdirde bu uygulamalar oyun syrasynda çökmelere neden olabilir.
+	@birdahagösterme
+Bu duyuruyu gösterme
+	@shell.sunucuseçimi
+Sunucu
+	@Host.terketme
+Host % isim % devreden çýkmýþtýr, oyun devam edemez.
+	@host.baðlantýkesildi
+Host % isim % sunucu ile baðlantýsýný kaybetmiþtir, oyun devam edemez.
+	@oyuncu.terketme
+Oyuncu % isim % oyundan çýkmýþtýr.
+	@oyuncu.baðlantýkesildi
+Oyuncu % isim % sunucu ile baðlantýsýný kaybetmiþtir.
+	@metin.enoyun.kazanma.mp
+ZAFER! Bu mesajý kapatmak için ESC tuþu
+veya oyundan çýkmak için BACKSPACE tuþuna basýn.
+	@metin.enoyun.kaybetme.mp
+YENÝLGÝ! Bu mesajý kapatmak için ESC tuþu
+veya oyundan çýkmak için BACKSPACE tuþuna basýn.
+	@host.leave.continue
+adý %name% ev sahipliði, oyun birimler ve binalar sipariþlerini kaybetmiþ olabilir, devam edecektir.
+	@host.disconnected.continue
+Sunucu %name% sunucuya onun baðlantýsý kesildi, devam edecek oyun, birimler ve binalar sipariþlerini kaybetmiþ olabilir.
+	@menu.btn.surrender
+Teslim
+	@menu.btn.surrender.approve
+Teslim olacak! Emin misiniz?
+	@menu.btn.statistics
+Istatistik
+	@map.size
+Harita Boyutu
+	@map.size.normal
+Normal
+	@map.size.large
+Büyük 2x
+	@map.size.huge
+Koskoca 4x
+	@mods.mods
+Modlar
+	@mods.hintroomneedsync
+Bu kullanýcýnýn yüklediði modlarýn sürümü sizinkinden farklý
+	@mods.hintroomreadytoplay
+Bu kullanýcýnýn sizinle ayný modlara sahip olmasý, senkronizasyon olmadan bu odaya katýlabilirsiniz
+	@mods.modslist
+Modlarýnýzýn listesi
+	@mods.playersmods
+Oyuncunun modlarý
+	@mods.synchronizedmods
+Senkronize edilmiþ modlar
+	@mods.roomchecksumdif
+Senin modlarýn bu odadaki seçimlerden farklý.Bu oyunu otomatik senkronize versiyonuyla oynamak ister misiniz?. Bir kaç dakika sürebilir.
+	@mods.playersmodslist
+Oyuncu modlarý listesi:
+	@mods.ok
+Tamam
+	@mods.cancel
+Ýptal
+	@mods.pleasewait
+Lütfen bekleyiniz
+	@mods.syncinprogress
+Oyun, gerekli modlarýn indirilmesine ve kurulumuna baþlandý.Bu iþlem birkaç dakika alabilir.
+	@mods.cancel.2
+Ýptal
+	@mods.syncerror
+Senkronizasyon hatasý
+	@mods.syncfailed
+Oyun versiyonunun, tüm modlarý senkronize edilmemiþ olsa bile farklý görünüyor.Bu, sizin veya ev sahibinin (host) eski mod sürümlerine sahip olmasý veya modlarýn bazýlarýnýn deðiþtirilmiþ olmasý halinde olabilir.
+	@mods.syncfailed2
+Oyun önbelleðini doðrulayabilir veya oyun sunucusundan mod sürümünü ve veri tutarlýlýðýný doðrulamasýný isteyebilirsiniz
+	@mods.wrongmodexists
+Oyun çalýþma þubesi aracýlýðýyla yüklenmemiþ veya bir hata ile yüklenmiþ bir modu tespit etti. Bu mod, oyunun çok oyunculu modda modlarý senkronize etmesini izin vermeyecektir.Diðer oyuncular bu modu manuel olarak yüklemelidir.
+	@mods.downloadlink
+Bu modu,baðlantýyý izleyerek indirebilirsiniz
+	@mods.pagelink
+Mod sayfa baðlantýsý
+	@mods.unknown
+Bilinmeyen
+	@announcement.videodriver
+Oyun, video kartý sürücüsünün yüklü olmadýðýný veya düzgün çalýþmadýðýný tespit etti. Lütfen üreticinin sitesindenen yeni ekran kartý sürücülerini kurun.
+	@announcement.intelvideoonly
+Oyun bir Intel grafik kartý tespit etti. Bilgisayarýnýzda baþka bir ekran kartý takýlýysa, onu etkinleþtirdiðinizden ve sürücülerini üreticilerin web sitesinden en yeni sürüme güncellemeyi unutmayýn.
+	@mods.pleaserestart
+Lütfen. Oyunu yeniden baþlatýn 
+	@internetshell.btn.ranking
+Sýralama
+	@internetshell.btn.profile
+Profil
+	@internetshell.btn.torooms
+Oturumlarýn Listesi
+	@internetshell.btn.switchtosimple
+Kolay Arama
+	@internetshell.btn.switchtoadvanced
+Lobi listesi
+	@internetshell.btn.autosearch
+Hýzlý Oyun
+	@internetshell.btn.stopautosearch
+Aramayý durdur
+	@internetshell.btn.autosearchsettings
+Hýzlý Oyun Ayarlarý
+	@internetshell.btn.autosearchfoundroom
+Oda bulundu, hazýr mýsýn?
+	@internetshell.btn.autosearchapprove
+Kabul et
+	@internetshell.btn.autosearchcancel
+Red et
+	@internetshell.text.autosearchroom
+Hýzlý Oyun
+	@internetshell.btn.joinautosearch
+Hýzlý Oyuna Katýl
+	@internetshell.text.approxtime
+Yaklaþýk bekleme süresi.
+	@internetshell.text.approxtimecalc
+Hesaplanýyor
+	@internetshell.text.approxtimeunknown
+Bilinmeyen
+	@internetshell.roomsettings.res1
+Baþlangýç Kaynaklarý 1000
+	@internetshell.roomsettings.res2
+Baþlangýç Kaynaklarý 5000
+	@internetshell.roomsettings.res3
+Baþlangýç Kaynaklarý 1.000.000
+	@internetshell.roomsettings.res1short
+1000
+	@internetshell.roomsettings.res2short
+5000
+	@internetshell.roomsettings.res3short
+1000000
+	@internetshell.roomsettings.0pt
+Barýþ Zamaný Yok
+	@internetshell.roomsettings.10pt
+10 dakika BZ
+	@internetshell.roomsettings.20pt
+20 dakika BZ
+	@internetshell.roomsettings.30pt
+30 dakika BZ
+	@internetshell.roomsettings.0ptshort
+0pt
+	@internetshell.roomsettings.10ptshort
+10pt
+	@internetshell.roomsettings.20ptshort
+20pt
+	@internetshell.roomsettings.30ptshort
+30pt
+	@internetshell.roomsettings.1vs1
+1vs1
+	@internetshell.roomsettings.2vs2
+2vs2
+	@internetshell.roomsettings.3vs3
+3vs3
+	@internetshell.roomsettings.4vs4
+4vs4
+	@internetshell.roomsettings.2vs2vs2vs2
+2vs2vs2vs2
+	@internetshell.roomsettings.2vs2vs2
+2vs2vs2
+	@internetshell.roomsettings.ffa4
+4pl FFA
+	@internetshell.roomsettings.ffa6
+6pl FFA
+	@internetshell.roomsettings.ffa8
+8pl FFA
+	@internetshell.roomsettings.ffa
+FFA
+	@internetshell.roomsettings.nation.random
+Rastgele ulus
+	@internetshell.roomsettings.nation.select
+Herhangi ulus
+	@internetshell.roomsettings.nation.eur
+Avrupalý
+	@internetshell.roomsettings.nation.rus
+Rusya
+	@internetshell.roomsettings.nation.ukr
+Ukrayna
+	@internetshell.roomsettings.nation.arab
+Arap
+	@internetshell.roomsettings.nodip
+Diplomasi yok
+	@internetshell.roomsettings.nomarket
+Pazar yok
+	@internetshell.roomsettings.nodipmarket
+Pazar ve Diplomat yok
+	@internetshell.roomsettings.level0
+Acemi
+	@internetshell.roomsettings.level1
+Orta düzey
+	@internetshell.roomsettings.level2
+Yüksek yetenek
+	@mods.workshop
+Mod Atölyesi
+	@internetshell.txt.nonrankedggame
+Rekabetçi olmayan oyun
+	@internetshell.txt.rankedgame
+Rekabetçi oyun
+	@internetshell.txt.exitrankedgame
+Teslim olmak üzeresiniz. Bu sýralamayý etkileyen bir oyun ve sýralamadaki yerinizi düþürecek. Teslim olmak istediðinizden emin misiniz?
+	@mods.workshop.approve
+Arama motorunuzda Atölye URL sini açýyorsunuz, emin misiniz?
+	@mods.workshop.help1
+Oturum açtýysanýz, yeni modlara abone olabilirsiniz. Atölyeyi Steam uygulamasýndan da açabilirsiniz.
+	@mods.workshop.help2
+Modlara "Abone Ol" tuþuna bastýðýnýz zaman otomatik olarak yüklenecektir. Ayný þekilde "Abonelikten Çýk" butonuna bastýðýnýzda mod silinecektir. Ayrýca modlarýnýza yüklenmiþ olan Mod Yöneticisiyle manuel olarak etkinleþtirip, devre dýþý býrakabilirsiniz.
+	@mods.workshop.help3
+Mod yöneticisi Steam uygulamasý aracýlýðýyla baþlatýlabilinir.
+	@mods.workshop.help4
+Tüm modlarýn doðru þekilde çalýþtýðýndan emin olun, oyun yeniden baþlatýlacak, emin misiniz?
+	@customgame.text.season
+Sezon
+	@randommap.season.0
+Yaz
+	@randommap.season.1
+Sonbahar
+	@minimap.info.teamnumber
+Takým
+	@minimap.info.teamffa
+Takým Yok
+	@adviser.switchonoff
+Yardýmcý
+	@adviser.economy
+Burgommastere (yani Belediye Baþkanýna) tam yetki vermek
+	@adviser.construct
+Ýnþaat Müsteþarýnýn öðütlerine kulak vermek
+	@adviser.upgrades
+Bilim Müsteþarýnýn öðütlerine kulak vermek
+	@adviser.upgrades.showunaffordable
+Ulaþýlmaz terfihleri (iyileþtirmeleri) göster
+	@adviser.quartermeister
+Levazým Subayýnýn yardýmý kullanmak
+	@adviser.quartermeister.advanced
+Yönetmek
+	@adviser.quartermeister.setupguards
+Binalarýn yanýnda nöbetçiler dikmek
+	@adviser.quartermeister.produceofficers
+Subaylar ve Trampetçiler tutmak
+	@adviser.quartermeister.proposesquads
+Müfrezeleri oluþturmayý önermek
+	@adviser.economy.advanced
+Geliþmiþ ayarlar
+	@adviser.apply
+Uygula
+	@adviser.close
+Kapat
+	@adviser.ok
+Tamam
+	@adviser.economy.controlpeasants
+Köylüleri levazým ve yiyecekleri getirmeyi emredin
+	@adviser.economy.producepeasants
+Köylüleri iþe almak
+	@adviser.economy.repairbuildings
+Binalarý tamir etmek
+	@adviser.economy.fillmines
+Köylüleri maden ocaklara göndermek
+	@adviser.economy.manualresourcedistribution
+Kaynaklarý satmak
+	@adviser.economy.marketadvises
+Ticarete ait öðütleri göster
+	@adviser.switchonoff.hint
+Yardýmcýlar aþaðýdaki sorularý çözmenize yardým etsinler: 
+%color%- kaynaklar üzerinde köylülerin görev yerlerini belirlemek
+%color%- müfrezelere yeterli sayýda trampetçileri ve subaylarý saðlamak 
+%color%- bozulmuþ binalarý tamir etmek 
+%color%- ele geçirilmiþ binalarýn yanýnda nöbetçileri yerleþmek
+%color%- ve sayrý.
+	@adviser.economy.hint
+Burgommastere, ülkenin ekonomisiyle uðraþýyorsa, kontrol altýnda tutuyorsa siz ise dikkatinizi ve çabalarýný tamamen savaþta toplayabilirsiniz. 
+%pos% Bu Müsteþar, köylülerin ellerine oraklar, baltalar ve kazmalar verip tembel köylüler için þiddetli bir yönetici olacaktýr. 
+%pos% Burgommastere muhteþem konuþmacýdýr. Ucuz ve sadik köylüleri kazanabilir ve böylece size iþ gücü saðlayabilir. 
+%pos% Zeki bir tüccar olarak size pazardaki karlý satýþ akdiler tavsiye edebilir.
+	@adviser.construct.hint
+Ýnþaat Müsteþarý size, þehriniz için hangi binalar yapmak gerektiðini anlamanýza yardým edebilir. 
+%pos% Onlarý yaptýrmak için sadece emir vereceksiniz.
+	@adviser.upgrades.hint
+Bilim Müsteþarýnýz size, iktisat ve savaþ açýlarýndan hangi önemli iyileþtirmeleri yapmanýz gerektiðinizi ve hangileri yapmak mümkün memnuniyetle gösterir.
+	@adviser.upgrades.showunaffordable.hint
+Bazý iyileþtirmeleri ve geliþtirmeleri istenilir ama onlarý incelemek için fazla kaynaklar lazým olacak. 
+%pos% Hangi amacýna doðru atýlmanýz gerek görebilirsiniz!
+	@adviser.quartermeister.hint
+Levazým Subayý askerlerinizle çok iyi davranacak.
+%pos% Askerlere sýkýlmak için zaman vermeyip onlarý nöbete gönderir. 
+%pos% müfrezelere yeterli sayýda trampetçiler ve subaylar saðlar.
+%pos% Levazým Subayý, mevcut askerlerden yeni müfrezeleri nasýl oluþturmanýz olur akýl verebilir.
+	@adviser.quartermeister.advanced.hint
+Savaþ Müsteþarý yönetmek
+	@adviser.quartermeister.setupguards.hint
+Binalarýn yanýnda nöbetçileri dikmek
+	@adviser.quartermeister.produceofficers.hint
+Subaylarý ve trampetçileri tutmak
+	@adviser.quartermeister.proposesquads.hint
+Müfrezeleri oluþturmayý önermek
+	@adviser.economy.advanced.hint
+Levazým Subayý, askerlerin sayýlara göre size müfrezeleri nasýl oluþturabileceðinizi tavsiye verebilir.
+	@adviser.economy.controlpeasants.hint
+Geliþmiþ ayarlar
+	@adviser.economy.producepeasants.hint
+Burgommaster, kaymaklar üzerinde köylülerin görev yerlerini belirleyecek.
+	@adviser.economy.repairbuildings.hint
+Hükümdarýn, bütün binalarýn saðlam olup olmadýðýný kontrol etmek vakti yoktur. 
+%pos% Burgommaster bu konuyla uðraþýr Siz ise daha
+evrensel ve stratejik konular hakkýnda düþününüz.
+	@adviser.economy.fillmines.hint
+Burgommaster, maden ocaklarý iþ gücü olmaksýzýn býrakmaz.
+	@adviser.economy.manualresourcedistribution.hint
+Köylülerin yiyecek, ahþap ve maden cevheri istihsale (elde etmeye) göndermek, köylülerin görev yerlerini belirlemek.
+	@adviser.economy.marketadvises.hint
+Burgommaster ticarete ait öðütleri versin.
+	@adviser.dlc
+Highlands Guardian
+	@map.size.tiny
+Küçük
+	@internetshell.btn.quickplay.hint
+Quick play allows you to search for 1x1 game with matchmaking on 5000 resources, 0 pt, random nation, without peasants capture.
+	@internetshell.btn.createroom.hint
+Create custom game room. Attention: these games won't affect your rating.
+	@internetshell.btn.joinroom.hint
+Join to custom game room. Attention: these games won't affect your rating.
+	@internetshell.btn.ranking.hint
+Top 100 ladder players. Best players of this season would receive special signs, and right to participate in official season tournament with prizes. To participate in rating you need to play quick play games with enabled "Rating games" checkbox.
+        @internet.random.animal.0
+Timsah
+        @internet.random.animal.1
+Karýncayiyen
+        @internet.random.animal.2
+Armadillo
+        @internet.random.animal.3
+Yaban Öküzü
+        @internet.random.animal.4
+Axolotl
+        @internet.random.animal.5
+Porsuk
+        @internet.random.animal.6
+yarasa
+        @internet.random.animal.7
+Ayý
+        @internet.random.animal.8
+Kunduz
+        @internet.random.animal.9
+Bizon
+        @internet.random.animal.10
+Deve
+        @internet.random.animal.11
+Capybara
+        @internet.random.animal.12
+Bukalemun
+        @internet.random.animal.13
+Çita
+        @internet.random.animal.14
+Çinçilla
+        @internet.random.animal.15
+Çizgili sincap
+        @internet.random.animal.16
+Chupacabra
+        @internet.random.animal.17
+Karabatak
+        @internet.random.animal.18
+Çakal
+        @internet.random.animal.19
+Karga
+        @internet.random.animal.20
+Dingo
+        @internet.random.animal.21
+Dinozor
+        @internet.random.animal.22
+Köpek
+        @internet.random.animal.23
+Yunus
+        @internet.random.animal.24
+ördek
+        @internet.random.animal.25
+Fil
+        @internet.random.animal.26
+Daðgelinciði
+        @internet.random.animal.27
+Tilki
+        @internet.random.animal.28
+Kurbaða
+        @internet.random.animal.29
+Zürafa
+        @internet.random.animal.30
+Sincap
+        @internet.random.animal.31
+Bozayý
+        @internet.random.animal.32
+Kirpi
+        @internet.random.animal.33
+Suaygýrý
+        @internet.random.animal.34
+Sýrtlan
+        @internet.random.animal.35
+Dað keçisi
+        @internet.random.animal.36
+Ýguana
+        @internet.random.animal.37
+Çakal
+        @internet.random.animal.38
+Kanguru
+        @internet.random.animal.39
+Koala
+        @internet.random.animal.40
+Deniz canavarý
+        @internet.random.animal.41
+Maki
+        @internet.random.animal.42
+Leopar
+        @internet.random.animal.43
+Liger
+        @internet.random.animal.44
+Aslan
+        @internet.random.animal.45
+Lama
+        @internet.random.animal.46
+Loris
+        @internet.random.animal.47
+Denizayýsý
+        @internet.random.animal.48
+Vizon
+        @internet.random.animal.49
+Maymun
+        @internet.random.animal.50
+Moose
+        @internet.random.animal.51
+Deniz gergedaný
+        @internet.random.animal.52
+Orangutan
+        @internet.random.animal.53
+Su samuru
+        @internet.random.animal.54
+Panda
+        @internet.random.animal.55
+Penguen
+        @internet.random.animal.56
+Ornitorenk
+        @internet.random.animal.57
+Piton
+        @internet.random.animal.58
+Quagga
+        @internet.random.animal.59
+Tavþan
+        @internet.random.animal.60
+Rakun
+        @internet.random.animal.61
+Gergedan
+        @internet.random.animal.62
+Koyun
+        @internet.random.animal.63
+Kýr faresi
+        @internet.random.animal.64
+Kokarca
+        @internet.random.animal.65
+Sincap
+        @internet.random.animal.66
+Kaplan
+        @internet.random.animal.67
+Kaplumbaða
+        @internet.random.animal.68
+Mors
+        @internet.random.animal.69
+Kurt
+        @internet.random.animal.70
+Wolverine
+        @internet.random.animal.71
+Vombat
+        @internet.random.color.0
+Kýrmýzý
+        @internet.random.color.1
+Mavi
+        @internet.random.color.2
+Turkuaz
+        @internet.random.color.3
+Mor
+        @internet.random.color.4
+Portakal
+        @internet.random.color.5
+Gri
+        @internet.random.color.6
+Masmavi
+        @internet.random.color.7
+Kahverengi
+        @internet.random.color.8
+Beyaz
+        @internet.random.color.9
+Yeþil
+        @internet.random.color.10
+Pembe
+        @internet.random.color.11
+Sarý
+        @internet.random.color.12
+Mavi
+        @internet.random.color.13
+Açýk yeþil
+        @internet.random.color.14
+Siyah
+        @internet.random.color.15
+Açýk kahverengi
+	@btn.tutorial
+Tutorial
+	@settings.hotkeys
+Hotkeys
+	@menu.encyclopedia
+Encyclopedia
+	@randommap.season.2
+Kýþ
+	@randommap.season.3
+Bahar
+	@map.size.big
+Orta 1.5x
+	@map.size.verylarge
+Cok büyük 3x
+	@randommap.terraintype.6
+Göller
+	@randommap.terraintype.7
+Sahil
+	@randommap.terraintype.8
+Nehirler
+	@randommap.settings.startingunits.barrack17
+17. Yüzyýl kýþlasý
+	@randommap.settings.startingunits.village
+Köy
+	@randommap.settings.startingunits.logcabins
+Kütük ev
+	@randommap.settings.startingunits.union
+Birlik
+	@randommap.settings.marketdip.expensivemercs
+Pahalý parali askerler

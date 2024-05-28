@@ -1,0 +1,1367 @@
+	@NATIONS
+********************************Ülkeler*********************************
+	@aus
+Avusturya
+	@fra
+Fransa
+	@eng
+Ýngiltere
+	@spa
+Ýspanya
+	@rus
+Rusya
+	@ukr
+Ukrayna
+	@pol
+Polonya
+	@swe
+Ýsveç
+	@pru
+Prusya
+	@ven
+Viyana
+	@tur
+Türkiye
+	@alg
+Cezayir
+	@por
+Portekiz
+	@pie
+Piemonte
+	@net
+Hollanda
+	@den
+Danimarka
+	@sax
+Saksonya
+	@bav
+Bavarya
+	@sco
+Ýskoçya
+	@mis
+Orjinaller
+	@hun
+Macaristan
+	@swi
+Ýsviçre
+	@*************Symbols************************
+
+	@def
+#151
+	@pos
+#151
+	@neg
+#151
+	@*************INCLUDES TEMPLATES*************
+
+	@descr.inf.sword
+%def%Kýlýçlý piyade
+	@descr.inf.saber
+%def%Süvari kýlýçlý piyade
+	@descr.inf.longpike
+%def%Uzun mýzraklý piyade
+	@descr.inf.musket
+%def%Tüfekli piyade
+	@descr.inf.musketbayonet
+%def%Süngülü ve tüfekli piyade
+	@descr.inf.bow
+%def%Ok ve yaylý piyade
+	@descr.any.musketbayonet
+%def%Süngülü, tüfek ve patlayýcýlý taþýyan piyade
+	@descr.any.musketonly
+%def%Tüfekli ama süngüsüz
+	@descr.any.musket
+%def%Tüfekli
+	@descr.any.bow
+%def%Ok ve yaylý
+	@descr.cav.light.saber
+%def%Kýlýçlý hafif süvari
+	@descr.cav.light.spear
+%def%Mýzraklý hafif süvari
+	@descr.cav.light.pike
+%def%Uzun mýzraklý hafif süvari
+	@descr.cav.light.longpike
+%def%Uzun mýzraklý hafif süvari
+	@descr.cav.heavy.sword
+%def%Kýlýçlý aðýr zýrhlý atlý.
+	@descr.cav.heavy.broadsword
+%def%Palalý aðýr zýrhlý atlý.
+	@descr.cav.heavy.mace
+%def%Gürz kullanan aðýr zýrhlý atlý.
+	@descr.cav.heavy.longpike
+%def%Uzun menzil tüfekle silahlý aðýr zýrhlý atlý.
+	@descr.cav.any.saber
+%def%Süvari kýlýçlý atlý.
+	@descr.cav.any.longpike
+%def%Uzun menzil tüfekle silahlý atlý.
+	@descr.cav.any.musket
+%def%Misket tüfeðiyle silahlý atlý.
+	@descr.cav.any.bow
+%def%tatar oku silahlý atlý.
+	@***********************
+
+	@descr.armored
+%pos%Kurþun ve þarapnel iþlemeyen zýrh giy.
+	@descr.effective.form
+%pos%Muharebe düzeninde etkili.
+	@descr.effective.formvscav
+%pos%Muharebe düzeninde süvariye karþý atakta etkili.
+	@descr.effective.infcav
+%pos%Piyade ve süvariye karþý etkili.
+	@descr.effective.formonly
+%pos%Muharebe düzeninde etkili.
+	@descr.effective.melee
+%pos%Meydan savaþýnda etkili.
+	@descr.effective.squareform
+%pos%Kare muharebe düzeninde etkili.
+	@descr.effective.onlywithinf
+%pos%Sadece piyade ile birlikte etkili.
+	@descr.effective.sabotage
+%pos%Þaþýrtma taktiðinde etkili.
+	@descr.effective.notforminfheavycav
+%neg%Piyade muharebe düzeninde veya aðýr süvarilerde etkisiz.
+	@descr.effective.notcuirassier
+%neg%Zýrhlý süvarilere karþý etkisiz.
+	@descr.effective.infcavsabotage
+%pos%Hem piyade hem de süvariye karþý þaþýrtma taktiðinde de etkili.
+	@descr.effective.inflightcav
+%pos%Piyadeye ve hafif süvariye karþý etkili.
+	@descr.effective.infcav2
+%pos%Piyade ve süvariye karþý etkili.
+	@descr.effective.inf
+%pos%Sadece piyadeye karþý etkili.
+	@descr.effective.mercgrenadier
+%pos%Paralý asker el bombasýna karþý etkili.
+	@descr.effective.ships
+%pos%Ateþe verilmiþ gemilerde etkili.
+	@descr.effective.merc
+%pos%Diðer paralý askerlerde etkili.
+	@descr.mosteffective.pikeman17
+%pos%XVII. yüzyýlýn en baþarýlý mýzraklý askeri.
+	@descr.mosteffective.shooter
+%pos%En etkili taburlardan.
+	@descr.mosteffective.shooter2
+%pos%Oyunun en iyi taburlarýndan.
+	@descr.mosteffective.speedcav
+%pos%En hýzlý atlýlardan.
+	@descr.combination.highbuildmovespeed
+%pos%Hýzlý bina yapma süresi, yüksek hýzda hareket.
+	@descr.combination.highcostlowbuildtime
+%neg%Yüksek maliyetli yavaþ bina yapýmý.
+	@descr.combination.longbuildtimehighcost
+%neg%Yüksek maliyetli çok yavaþ bina yapýmý.
+	@descr.combination.highbuildspeedhighcost
+%pos%Düþük maliyetli hýzlý bina yapým zamaný.
+	@descr.combination.lowrateoffirehighbuildtime
+%neg%Düþün ateþ hýzý, çok yavaþ üretim zamaný.
+	@descr.params.lowattack
+%neg%düþük saldýrý deðerleri.
+	@descr.params.midattack
+%def%Ortalama saldýrý deðerleri.
+	@descr.params.highattack
+%pos%Yüksek saldýrý deðerleri.
+	@descr.params.veryhighattack
+%pos%Çok yüksek saldýrý deðerleri.
+	@descr.params.lowattackprotection
+%neg%Düþük saldýrý ve savunma deðerleri.
+	@descr.params.highattackprotection
+%pos%Yüksek saldýrý ve savunma deðerleri.
+	@descr.params.veryhighattackprotection
+%pos%Çok yüksek saldýrý ve savunma deðerleri.
+	@descr.params.lowshootdamage
+%neg%Düþük ateþ gücü.
+	@descr.cost.low
+%pos%Düþük bina maliyeti.
+	@descr.cost.low2
+%pos%Düþük üretim maliyeti.
+	@descr.cost.lowafterupgrade
+%pos%Akademide bir yükseltmeden sonra düþük maliyet.
+	@descr.cost.nothigh
+%neg%Ortalama bina maliyeti.
+	@descr.cost.nothigh2
+%pos%Ortalama üretim maliyeti.
+	@descr.cost.high
+%neg%Yüksek üretim maliyeti.
+	@descr.cost.high2
+%neg%Yüksek bina maliyeti.
+	@descr.build.veryhighspeed
+%pos%Çok hýzlý bina yapýmý.
+	@descr.build.veryhighspeed2
+%pos%Çok hýzlý üretim hýzý.
+	@descr.build.highspeed
+%pos%Hýzlý bina yapýmý.
+	@descr.build.highspeed2
+%pos%Üretmesi çok hýzlý.
+	@descr.build.lowspeed
+%neg%Düþük üretim hýzý.
+	@descr.build.lowspeed2
+%neg%Yavaþ bina yapýmý.
+	@descr.build.lowspeed3
+%neg%Çok düþük üretim hýzý.
+	@descr.build.lowspeed4
+%neg%Çok yavaþ bina yapýmý.
+	@descr.canshoot
+%pos%Menzildeki hedefleri vurur.
+	@descr.canmeleeandshoot
+%pos%Menzildeki ve muharebe alanýndaki hedefleri vurur.
+	@descr.cantshotclose
+%neg%Düþman çok yakýn olunca ateþ etmez.
+	@descr.eliteinf
+%pos%Elit piyade.
+	@descr.elitecav
+%pos%Elit atlý.
+	@descr.ability.highshootingrange
+%pos%uzun ateþ menzili.
+	@descr.ability.highspeed
+%pos%Yüksek hýzda hareket kabiliyeti.
+	@descr.ability.highrateoffire
+%pos%Yüksek ateþ etme sayýsý.
+	@descr.highvisionradius
+%pos%Uzun menzilli görüþ.
+	@descr.ability.grenades
+%pos%Düþman binalarýný ve surlarýný yýkar.
+	@descr.ability.firearrows
+%pos%Binalara surlara ve gemilere yanan ok fýrlatýr.
+	@descr.ability.canfightwhenguarded
+%neg%Askeri birimlerin yanýnda savaþabilir.
+	@descr.ability.canbecaptured
+%neg%Savunmasýz köylüler düþman tarafýndan esir edilebilir.
+	@descr.ability.cannotbecaptured
+%pos%düþman tarafýndan esir alýnamaz.
+	@descr.ability.consumegold
+%neg%Bakým için altýn gerekiyor.
+	@descr.ability.cannottfight
+%neg%Ateþ edemez.
+	@descr.ability.canextractresources
+%def%kaynak hasat eder.
+	@descr.canbuildandrepair
+%def%Bina ve surlarý onarýr ve inþa eder.
+	@descr.canheal
+%pos%Yaralý askerleri iyileþtirir.
+	@descr.ability.highshootcost
+%neg%Spends a lot of coal and iron on firing.
+	@descr.ability.createformation
+%pos%Muharebe düzeninde piyadeleri komuta eder.
+	@descr.ability.createformation17
+%pos%XVII. Yüzyýl muharebe düzeninde piyadeleri komuta eder.
+	@descr.ability.createformation18
+%pos%XVIII muharebe düzeninde piyadeleri komuta eder.
+	@descr.ability.neededforformation
+%pos%Muharebe düzeninde piyade oluþturmak gerekir.
+	@descr.ability.neededforformation17
+%pos%XVII Yüzyýl muharebe düzeninde piyade oluþturmak gerekir.
+	@descr.ability.neededforformation18
+%pos%XVIII Yüzyýl muharebe düzeninde piyade oluþturmak gerekir.
+	@descr.ability.mercenary
+ (paralý asker)
+	@UNITS.INF.MELEE
+********************************Meydan savaþý***************************
+	@pikeman
+Mýzraklý asker, 17. yüzyýl
+	@pikeman.ext
+%include(units;descr.inf.uzun mýzrak) %
+%include(units;descr.zýrhlý)%
+%include(units;descr.etkili.form)%
+	@pikemanpol
+Mýzraklý asker, 17. yüzyýl
+	@pikemanpol.ext
+%include(units;descr.inf.uzun mýzrak)%
+%include(units;descr.effective.form)%
+	@pikemantur
+Ottoman Mýzraklý asker
+	@pikemantur.ext
+%include(units;descr.inf.uzun mýzrak)%
+%include(units;descr.etkili.form)%
+%include(units;descr.iþaa.yüksek hýz2)%
+	@pikemanrus
+Mýzraklý asker
+	@pikemanrus.ext
+%include(units;descr.inf.uzun mýzrak)%
+%include(units;descr.zýrhlý)%
+%include(units;descr.çok etkili.Mýzraklý asker17)%
+	@pikeman18
+Mýzraklý asker, 18. yüzyýl
+	@pikeman18.ext
+%include(units;descr.inf.uzun mýzrak)%
+%include(units;descr.etkili.infcav)%
+%include(units;descr.params.orta saldýrý)%
+%include(units;descr.inþaa.çokyüksek hýz2)%
+	@pikeman18swe
+Mýzraklý asker, 18. yüzyýl
+	@pikeman18swe.ext
+%include(units;descr.inf.uzun mýzrak)%
+%include(units;descr.etkili.infcav)%
+%include(units;descr.params.orta saldýrý)%
+%include(units;descr.inþaa.çokyüksek hýz2)%
+	@lightinfantry
+hafif piyade
+	@lightinfantry.ext
+%include(units;descr.inf.kýlýç)%
+%include(units;descr.params.düþük saldýrý)%
+%include(units;descr.inþaaçok.yüksek hýz)%
+%include(units;descr.etkili.formonly)%
+	@roundshier
+Nöbetçi
+	@roundshier.ext
+%include(units;descr.inf.kýlýç)%
+%include(units;descr.sialhlý)%
+%include(units;descr.inþaa.yüksekhýz)%
+%include(units;descr.params.düþük saldýrý)%
+	@UNITS.INF.SHOOTER
+********************************menzilli silah*********************************
+	@musketeer
+Silahþör, 17. yüzyýl
+	@musketeer.ext
+%include(units;descr.inf.tüfek)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr.yakýndan ateþ edemez)%
+%include(units;descr.inþaa.yavaþ hýz3)%
+	@musketeeraus
+Silahþör, 17. yüzyýl
+	@musketeeraus.ext
+%include(units;descr.inf.tüfek)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr.yakýndan ateþ edemez)%
+%include(units;descr.inþaa.yavaþ hýz3)%
+	@musketeernet
+Silahþör, 17. yüzyýl
+	@musketeernet.ext
+%include(units;descr.inf.tüfek)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr.yakýndan ateþ edemez)%
+%include(units;descr.inþaa.yavaþ hýz3)%
+	@musketeerpol
+Silahþör, 17. yüzyýl
+	@musketeerpol.ext
+%include(units;descr.inf.tüfek)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr. yakýndan ateþ edemez)%
+%include(units;descr.params.yüksek saldýrý)%
+%include(units;descr.inþaa.yavaþ hýz3)%
+	@musketeerspa
+Silahþör, 17. yüzyýl
+	@musketeerspa.ext
+%include(units;descr.inf.tüfek)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr.armored)%
+%include(units;descr. yakýndan ateþ edemez)%
+%include(units;descr.params.midattack)%
+%include(units;descr.inþaa.yavaþ hýz3)%
+	@musketeer18
+Silahþör, 18. yüzyýl
+	@musketeer18.ext
+%include(units;descr.inf.süngülü tüfek)%
+%include(units;descr.meydan savaþýna girerve ateþ eder)%
+%include(units;descr.maliyet.yükseltmeden sonra düþük)%
+%include(units;descr.etkili.meydan savaþýnda)%
+	@musketeer18pru
+Silahþör, 18. yüzyýl
+	@musketeer18pru.ext
+%include(units;descr.inf.süngülü tüfek)%
+%include(units;descr.meydan savaþýna girerve ateþ eder)%
+%include(units;descr.maliyet.yükseltmeden sonra düþük)%
+%include(units;descr.etkili.meydan savaþýnda)%
+	@musketeer18sax
+Silahþör, 18. yüzyýl
+	@musketeer18sax.ext
+%include(units;descr.inf.tüfek)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr.yakýndan ateþ edemez)%
+%include(units;descr.en etkili.niþancý)%
+	@grenadier
+El bombasý atan asker
+	@grenadier.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.süngülü tüfek)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr.etkili. kare þeklinde)%
+%include(units;descr.yetenek.el bobasý)%
+	@grenadiersax
+El bombasý atan asker
+	@grenadiersax.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.süngülü tüfek)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr. etkili. kare þeklinde)%
+%include(units;descr. yetenek.el bobasý)%
+%include(units;descr.params.yüksek saldýrýya karþý koruma)%
+%include(units;descr.maliet.yüksek 2)%
+	@chasseur
+Avcý
+	@chasseur.ext
+%include(units;descr.any.sadecetüfek)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr.yakýndan ateþ edemez)%
+%include(units;descr.maliyet.düþük)%
+	@highlander
+Daðda yaþayanlar
+	@highlander.ext
+%include(units;descr.any.sadecetüfek)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr.yakýndan ateþ edemez)%
+%include(units;descr.maliyet.düþük)%
+	@strelet
+Streltsi
+	@strelet.ext
+%include(units;descr.any.tüfek)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr.etkili.onlywithinf)%
+%include(units;descr.yakýndan ateþ edemez)%
+%include(units;descr.params.yüksek saldýrý)%
+%include(units;descr.inþaa.yavaþ hýz3)%
+	@pandur
+Zýrhlý
+	@pandur.ext
+%include(units;descr.inf.tüfek)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr.yakýndan ateþ edemez)%
+%include(units;descr.en etkili.niþancý)%
+	@serdiuk
+Serdiuk
+	@serdiuk.ext
+%include(units;descr.any.tüfek)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr.etkili.onlywithinf)%
+%include(units;descr.yakýndan ateþ edemez)%
+%include(units;descr.mosteffective.shooter2)%
+%include(units;descr.yapabilir.uzakmenzilden ateþ)%
+	@jannisary
+Yeniçeri
+	@jannisary.ext
+%include(units;descr.any.tüfek)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr.etkili.onlywithinf)%
+%include(units;descr.yakýndan ateþ edemez)%
+%include(units;descr.params.yüksek saldýrý)%
+%include(units;descr.inþaa.yavaþ hýz)%
+	@archer
+Okçu
+	@archer.ext
+%include(units;descr.any.tatar oku)%
+%include(units;descr.etkili.sadece yakýndan)%
+%include(units;descr.yakýndan ateþ edemez)%
+%include(units;descr.yapabilir.ateþli ok)%)%
+	@UNITS.INF.SUPPORT
+********************************support*********************************
+	@peaaus
+Köylü
+	@peaaus.ext
+%include(units;descr.yapabilir.kaynak temin edebilir)%
+%include(units;descr.inþa ve tamir edebilir)%
+%include(units;descr.yapabilir.korunduðunda savaþabilir)%
+%include(units;descr.yapabilir.yakalanabilir)%
+	@peaukr
+Köylü
+	@peaukr.ext
+%include(units;descr.yapabilir.kaynak temin edebilir)%
+%include(units;descr.inþa ve tamir edebilir)%
+%include(units;descr.beceri.yakalanamaz)%
+	@peatur
+Köylü
+	@peatur.ext
+%include(units;peaaus.ext)%
+	@pearus
+Köle
+	@pearus.ext
+%include(units;peaaus.ext)%
+	@peapol
+Köylü
+	@peapol.ext
+%include(units;peaaus.ext)%
+	@peaspa
+Köylü
+	@peaspa.ext
+%include(units;peaaus.ext)%
+	@peaeng
+Köylü
+	@peaeng.ext
+%include(units;peaaus.ext)%
+	@officer
+17. Yüzyýl subayý
+	@officer.ext
+%include(units;descr.yapabilir.formasyon oluþturabilir17)%
+%include(units;descr.params.çok yüksek koruma saðlar)%
+%include(units;descr.yapabilir.altýn tüketebilir)%
+	@officertur
+Subay
+	@officertur.ext
+%include(units;descr.yapabilir.formasyon oluþturabilir)%
+%include(units;descr.params.çok yüksek koruma saðlar)%
+%include(units;descr.yapabilir.altýn tüketebilir)%
+	@officerrus
+Komutan
+	@officerrus.ext
+%include(units;descr.yapabilir.formasyon oluþturabilir17)%
+%include(units;descr.params.çok yüksek koruma saðlar)%
+%include(units;descr.yapabilir.altýn tüketebilir)%
+	@officer18
+18. Yüzyýl memur
+	@officer18.ext
+%include(units;descr.yapabilir.formasyon oluþturabilir18)%
+%include(units;descr.params.çok yüksek koruma saðlar)%
+%include(units;descr.yapabilir.altýn tüketebilir)%
+	@drummer
+17. yüzyýl trampetçi
+	@drummer.ext
+%include(units;descr.beceri.neededforformation17)%
+%include(units;descr.yapabilir.savaþamaz)%
+%include(units;descr.geniþ görüþ mesafesi)%
+	@drummerrus
+17. Yüzyýl trampetçi
+	@drummerrus.ext
+%include(units;descr.beceri.neededforformation17)%
+%include(units;descr.yapabilir.savaþamaz)%
+%include(units;descr.geniþ görüþ mesafesi)%
+	@drummertur
+17. yüzyýl trampetçi
+	@drummertur.ext
+%include(units;descr.beceri.neededforformation)%
+%include(units;descr.yapabilir.savaþamaz)%
+%include(units;descr.geniþ görüþ mesafesi)%
+	@drummer18
+18. yüzyýl trampetçi
+	@drummer18.ext
+%include(units;descr.beceri.neededforformation18)%
+%include(units;descr.yapabilir.savaþamaz)%
+%include(units;descr.geniþ görüþ mesafesi)%
+	@bagpiper
+Gaydacý
+	@bagpiper.ext
+%include(units;descr.beceri.neededforformation18)%
+%include(units;descr.yapabilir.savaþamaz)%
+%include(units;descr.geniþ görüþ mesafesi)%
+	@priest
+Rahip
+	@priest.ext
+%include(units;descr.iyileþtrebilir)%
+	@padre
+Papaz
+	@padre.ext
+%include(units;descr.iyileþtrebilir)%
+	@pope
+Papa
+	@pope.ext
+%include(units;descr.iyileþtrebilir)%
+	@mullah
+Molla
+	@mullah.ext
+%include(units;descr.iyileþtrebilir)%
+	@UNITS.CAV.FAST
+********************************Hýzlý Süvari*********************************
+	@croat
+Hýrvat
+	@croat.ext
+%include(units;descr.cav.hafif.kýlýç)%
+%include(units;descr.etkili. sabotaj)%
+%include(units;descr.bir arada. hýzlý inþaa hýzlý hareket)%
+%include(units;descr.etkili.notforminfheavycav)%
+	@hussar
+Hafif süvari eri
+	@hussar.ext
+%include(units;descr.cav.hafif.kýlýç)%
+%include(units;descr.etkili. sabotaj)%
+%include(units;descr.bir arada. hýzlý inþaa hýzlý hareket)%
+%include(units;descr.etkili.zýrhlý süvari deðil)%
+	@hussarpru
+Hafif süvari eri
+	@hussarpru.ext
+%include(units;descr.cav.hafif.kýlýç)%
+%include(units;descr.etkili. sabotaj)%
+%include(units;descr.bir arada. hýzlý inþaa hýzlý hareket)%
+%include(units;descr.etkili.zýrhlý süvari deðil)%
+	@wingedhussar
+Kanatlardaki hafif süvari eri
+	@wingedhussar.ext
+%include(units;descr.cav.aðýr. uzun mýzrak)%
+%include(units;descr.etkili.infcavsabotage)%
+%include(units;descr.silahlý)%
+%include(units;descr.beceri.yüksek hýz)%
+%include(units;descr.params.yüksek saldýrý koruma)%
+%include(units;descr.inþaa.yavaþ hýz3)%
+	@cossacksich
+Siç Kazak
+	@cossacksich.ext
+%include(units;descr.cav.hafif.kýlýç)%
+%include(units;descr.etkili. sabotaj)%
+%include(units;descr.en etkili.hýzlýsüvari)%
+	@UNITS.CAV.SLOW
+********************************Yavaþ süvari*********************************
+	@reiter
+Zýrhlý süvari
+	@reiter.ext
+%include(units;descr.cav.aðýr.kýlýç)%
+%include(units;descr.silahlý)%
+%include(units;descr.etkili.inflightcav)%
+	@cuirassier
+Zýrhlý süvari
+	@cuirassier.ext
+%include(units;descr.cav.aðýr.geniþ kýlýç)%
+%include(units;descr.silahlý)%
+%include(units;descr.etkili.infcav2)%
+%include(units;descr.params.yüksek saldýrý koruma)%
+%include(units;descr.inþaa.yavaþ hýz2)%
+%include(units;descr.maliyet. yüksek)%
+	@cavalryguard
+Süvari Muhafýzý
+	@cavalryguard.ext
+%include(units;descr.cav.aðýr.kýlýç)%
+%include(units;descr.silahlý)%
+%include(units;descr.etkili.inflightcav)%
+	@reiterswe
+Ýsveçli zýrhlý süvari
+	@reiterswe.ext
+%include(units;descr.cav.aðýr.kýlýç)%
+%include(units;descr.silahlý)%
+%include(units;descr.etkili.inflightcav)%
+	@reiterpol
+Hafif zýrhlý süvari
+	@reiterpol.ext
+%include(units;descr.cav.hafif.kýlýç)%
+%include(units;descr.etkili.inf)%
+%include(units;descr.inþaa.yüksek hýz)%
+%include(units;descr.params.lowattack)%
+	@hetman
+Hetman
+	@hetman.ext
+%include(units;descr.cav.any.saber)%
+%include(units;descr.etkili.infcav)%
+%include(units;descr.params.çok yüksek koruma saðlar)%
+%include(units;descr.birleþim.yüksek maliyet kýsa inþaa zamaný)%
+	@cossackdon
+Don Kazak
+	@cossackdon.ext
+%include(units;descr.cav.hafif.mýzrak)%
+%include(units;descr.etkili.inf)%
+%include(units;descr.birleþimi.yüksek inþa süresi yüksek maliyet)%
+	@vityaz
+Kahraman
+	@vityaz.ext
+%include(units;descr.cav.heavy.mace)%
+%include(units;descr.silahlý)%
+%include(units;descr.etkili.inflightcav)%
+%include(units;descr.params.yüksek saldýrý koruma)%
+%include(units;descr.birleþim.yüksek inþaa zamaný yüksek maliyet)%
+	@cossackregister
+Kayýtlý Kazak
+	@cossackregister.ext
+%include(units;descr.cav.hafif.mýzrak)%
+%include(units;descr.etkili.inf)%
+%include(units;descr.inþaa.yüksek hýz)%
+%include(units;descr.maliet.düþük2)%
+	@spakh
+Hafif Sipahi
+	@spakh.ext
+%include(units;descr.cav.hafif.uzun mýzrak)%
+%include(units;descr.etkili.inf)%
+%include(units;descr.inþaa.yüksek hýz)%
+%include(units;descr.params.düþüksaldýrý koruma)%
+	@mameluke
+Memlük
+	@mameluke.ext
+%include(units;descr.cav.any.longpike)%
+%include(units;descr.etkili.inf)%
+%include(units;descr.birleþimi.yüksek inþa süresi yüksek maliyet)%
+	@UNITS.CAV.SHOOTERS
+********************************Atlý Tetikçi*********************************
+	@dragoon
+17. yüzyýl iþkencecisi
+	@dragoon.ext
+%include(units;descr.cav.any.tüfek)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr.yakýndan ateþ edemez)%
+%include(units;descr.yapabilir.uzakmenzilden ateþ)%
+%include(units;descr.birleþimi.düþük ateþ gücü yüksek inþaa süresi)%
+	@dragoon18fra
+18. yüzyýl iþkencecisi
+	@dragoon18fra.ext
+%include(units;descr.cav.any.tüfek)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr.yakýndan ateþ edemez)%
+%include(units;descr.params.yüksek saldýrý)%
+%include(units;descr.inþaa.yüksek hýz2)%
+	@dragoon18
+18. yüzyýl iþkencecisi
+	@dragoon18.ext
+%include(units;descr.cav.any.tüfek)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr.yakýndan ateþ edemez)%
+%include(units;descr.params.yüksek saldýrý)%
+%include(units;descr.birleþimi.düþük ateþ gücü yüksek inþaa süresi)%
+	@kingmusketeer
+Kralýn silahþörü
+	@kingmusketeer.ext
+%include(units;descr.elitecav)%
+%include(units;descr.any.tüfek)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr.yakýndan ateþ edemez)%
+%include(units;descr.params.veryyüksek saldýrý)%
+%include(units;descr.inþaa.yavaþ hýz4)%
+	@tatar
+Tatar
+	@tatar.ext
+%include(units;descr.cav.any.bow)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr.yakýndan ateþ edemez)%
+%include(units;descr.yapabilir.ateþli ok)%)%
+	@UNITS.DIP.MERCENARIES
+********************************Tüccarlar*********************************
+	@roundshierdip
+%include(units;roundshier)%%include(units;descr.ability.mercenary)%
+	@roundshierdip.ext
+%include(units;descr.maliyet.hiç yok)%
+%include(units;descr.params.düþük saldýrý koruma)%
+%include(units;descr.etkili.el bombasý atan asker)%
+	@grenadierdip
+%include(units;grenadier)%%include(units;descr.ability.mercenary)%
+	@grenadierdip.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.süngülü tüfek)%
+%include(units;descr.maliyet.düþük)%
+%include(units;descr.params.ateþ edip zarar verme düþük)%
+%include(units;descr.beceri.el bombasý)%
+	@lightinfantrydip
+%include(units;lightinfantry)%%include(units;descr.ability.mercenary)%
+	@lightinfantrydip.ext
+%include(units;descr.cost.nothigh2)%
+%include(units;descr.params.düþüksaldýrý koruma)%
+	@archerdip
+%include(units;archer)%%include(units;descr.ability.mercenary)%
+	@archerdip.ext
+%include(units;descr.inf.Tatar oku)%
+%include(units;descr.yakýndan ateþ edemez)%
+%include(units;descr.yapabilir.ateþli ok)%)%
+%include(units;descr.etkili.gemiler)%
+	@dragoon18dip
+%include(units;dragoon18)%%include(units;descr.ability.mercenary)%
+	@dragoon18dip.ext
+%include(units;descr.cav.any.tüfek)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr.yakýndan ateþ edemez)%
+%include(units;descr.beceri.yüksek ateþ )%
+%include(units;descr.yapabilir.altýn tüketebilir)%
+%include(units;descr.beceri.yüksek atýþ maliyeti)%
+%include(units;descr.etkili.merc)%
+	@cossacksichdip
+%include(units;cossacksich)%%include(units;descr.ability.mercenary)%
+	@cossacksichdip.ext
+%include(units;descr.cav.hafif.kýlýç)%
+%include(units;descr.etkili. sabotaj)%
+%include(units;descr.en etkili.hýzlýsüvari)%
+	@SHIPS
+********************************Donanma*********************************
+	@fishboat
+Tekne
+	@fishboat.ext
+%def%Sadece balýkçýlýk için kullanýlýr. Savaþta yer alamaz.
+	@yacht
+Yat
+	@yacht.ext
+%def%Düþük düzeyde savaþýr.
+%pos%Yüksek manevra kabiliyeti.
+%pos%süratli hareket kabiliyeti. neg%Düþük ateþ gücü.
+%neg%Ateþ ederse çok fazla kömür ve demir tüketir.
+	@yachttur
+Yat
+	@yachttur.ext
+%def%Türk donanmasýnda çok sayýda ve çeþitli tek serenli ve çok serenli Akdeniz tipi gemi var.
+%def%Bunlar donanma tarafýndan devriye ve haber taþýma amacýyla kullanýlýyor. Hýristiyan korsanlarýn akýn etmesini engelliyor.
+	@galley
+Kalyon
+	@galley.ext
+%def%orta boyda savaþ gemisi.
+%pos%iki tip silah taþýr, savaþ topu ve gülle.
+%pos%Savaþ toplarý kýsa mesafede etkilidir. Ama gülleler daha uzak mesafelerde etkilidir.
+%pos%Gülleler kýyý þeridindeki binalarý yýkmakta ve kýyýdaki kaleleri yýkmakta çok etkilidir. 
+%neg%bakýmý için altýn gerekir.
+%neg%Altýn bittiði zaman kalyon ateþ edemez.
+%neg%Ateþ ederken çok fazla kömür ve demir tüketir.
+	@frigate
+Fýrkateyn
+	@frigate.ext
+%def%Orta boyda savaþ gemisi.
+%neg%Finansman gerektirir.
+%neg%Ateþ ederken çok fazla kömür ve demir tüketir.
+	@battleship
+Savaþ Gemisi
+	@battleship.ext
+%def%Büyük savaþ gemisidir.
+%pos%Ateþ açma konusunda çok etkilidir.
+%neg%bakýmý için çok fazla altýn gerekir. 
+%neg%Kömür ve demir tüketimi azdýr.
+%neg%Yavaþ hareket eder.
+	@ferry
+Vapur
+	@ferry.ext
+%def%birlikleri nehirde ve denizde taþýr.
+%def%Bir seferde 120 kiþi taþýr.
+	@xebec
+Üç direkli yelkenli
+	@xebec.ext
+%def%Orta boyda savaþ gemisi.
+%neg%Bakýmý için altýn gerekmez.
+%neg%Ateþ ederken çok fazla kömür ve demir tüketir.
+	@ARTILLERY
+********************************Aðýr silahlar*********************************
+	@cannon
+Savaþ topu
+	@cannon.ext
+%def%Arazi topu.
+%pos%Düþman binalarýna, kalelerine ve gemilerine karþý etkili. 
+%pos%Orta ve uzak mesafeye top atabilir.
+%pos%Kýsa mesafece piyade ve süvariye þarapnel atar.
+%neg%Bakýmý için altýn gerekir.
+%neg%Altýn bittiðinde, toplar ateþ almaz. 
+%neg%Savunmasýz toplar düþmanýn eline geçebilir.
+%neg%Ateþ ederken çok fazla kömür ve demir tüketir.
+	@howitzer
+Havan topu
+	@howitzer.ext
+%def%Kuþatma topu.
+%pos%Yay þeklinde menzili var.
+%pos%Kalelerine alana yayýlmýþ piyadelere karþý etkili. neg%kýsa mesafede çok hassas atýþlar yapar.
+%neg%Bakýmý için altýn gerekir.
+%neg%Altýn bittiðinde, toplar ateþ edemez.
+%neg%Savunmasýz toplar düþmanýn eline geçebilir. neg%Ateþ ederken çok fazla kömür ve demir tüketir.
+	@mortar
+Gülle topu
+	@mortar.ext
+%def%Uzun menzilli top.
+%pos%Yay þeklinde uzun bir menzili var.
+%pos%Binalara ve kulelere karþý etkili.
+%neg%sadece bianlara ve gemilere ateþ edebilir.
+%pos%Uzun mesafede çok hassas atýþlar yapar.
+%.
+%neg%Bakýmý için altýn gerekir.
+%neg%Altýn bittiðinde, gülle atamaz.
+%neg%Savunmasýz toplar düþmanýn eline geçebilir.
+%neg%Ateþ ederken çok fazla kömür ve demir tüketir.
+	@multicannon
+Çok namlulu top
+	@multicannon.ext
+%def%Kýsa mesafeden þarapnel atar.
+%pos%Silahsýz piyadelere karþý etkilidir. 
+%pos%Yüksek ateþ gücüne sahiptir.
+%neg%Bakýmý için altýn gerekir.
+%neg%Altýn bittiðinde, atýþ yapamaz.
+%neg%Savunmasýz toplar düþmanýn eline geçebilir.
+%neg%Ateþ ederken çok fazla kömür ve demir tüketir.
+	@BUILDINGS.NATIONAL
+********************************ulusal binalar*********************************
+	@%nat%aca
+Akademi
+	@%nat%aca.ext
+%def%Þehrin araþtýrma merkezidir.
+%def%Araþtýrmalar çok önemlidir teknoloji ve yükseltmeler gerçekleþtirilebilir. neg%Düþmanýn eline geçebilir.
+	@%nat%art
+Mühimmat deposu
+	@%nat%art.ext
+%def%Mühimmat üretilir.
+%neg%Düþmanýn eline geçebilir.
+	@%nat%bar
+ 17. Yüzyýl kýþlalarý
+	@%nat%bar.ext
+%def%XVII. Yüzyýldan kalma piyade birimleri, subaylar ve trompetçiler.
+%pos%150 ek bina gerekir.
+	@%nat%ba2
+ 18. Yüzyýl kýþlalarý
+	@%nat%ba2.ext
+%def%XVIII. Yüzyýldan kalma piyade birimleri, subaylar ve trompetçiler.
+%pos%250 ek bina gerekir.
+%neg%Sadece XVIII. Yüzyýlda kullanýlabilir.
+	@%nat%bla
+Nalbant
+	@%nat%bla.ext
+%def%Metal bazlý yükseltmeleri yapar.
+%neg%Düþmanýn eline geçebilir.
+	@%nat%cen
+belediye sarayý
+	@%nat%cen.ext
+%def%Köylüleri bir araya getirir.
+%def%Köylüler Belediye sarayýna taþ odun ve yiyecek getirir.
+%pos%100 ek bina gerekir.
+%neg%Düþmanýn eline geçebilir.
+%def%Bütün binalar yapýldýktan sonra, bir sonraki teknolojik çaða belediye sarayýnda geçebilirsiniz.
+	@%nat%dip
+diplomatik merkez
+	@%nat%dip.ext
+%def%Yabancý paralý asker bulmanýzý saðlar.
+%neg%sadece bir tane diplomatik merkez yapabilirsiniz.
+	@%nat%hou
+konut
+	@%nat%hou.ext
+%pos%15 ek bina gerekir..
+%neg%Düþmanýn eline geçebilir.
+	@%nat%sta
+Ahýr
+	@%nat%sta.ext
+%def%XVII. yüzyýl süvari binasý.
+%pos%XVIII. Yüzyýlda girince, XVIII. yüzyýl süvarilerini ahýrdan temin edebilirsiniz.
+	@%nat%tem
+Katedral
+	@%nat%tem.ext
+%def%Rahipler bulunur.
+	@BUILDINGS.COMMON
+********************************Genel binalar*********************************
+	@%com%coa
+Mine
+	@%com%coa.ext
+%def%Kömür üretir.
+%neg%Düþmanýn eline geçebilir.
+%def%Madende çalýþan köylü sayýsý yükseltmelerle birlikte arttýrýlabilir..
+%def%Yükseltmeler her maden için ayrý ayrý yapýlmalýdýr..
+%def%Bütün yükseltmelerden sonra bir madende çalýþabilecek maksimum köylü sayýsý 95’tir.
+	@%com%gol
+Mine
+	@%com%gol.ext
+%def%Altýn üretir.
+%neg%Düþmanýn eline geçebilir.
+%def%Madende çalýþan köylü sayýsý yükseltmelerle birlikte arttýrýlabilir..
+%def%Yükseltmeler her maden için ayrý ayrý yapýlmalýdýr.
+%def%Bütün yükseltmelerden sonra bir madende çalýþabilecek maksimum köylü sayýsý 95’tir.
+	@%com%iro
+Mine
+	@%com%iro.ext
+%def%Altýn üretir.
+%neg%Düþmanýn eline geçebilir.
+%def%Madende çalýþan köylü sayýsý yükseltmelerle birlikte arttýrýlabilir..
+%def%Yükseltmeler her maden için ayrý ayrý yapýlmalýdýr..
+%def%Bütün yükseltmelerden sonra bir madende çalýþabilecek maksimum köylü sayýsý 95’tir.
+	@%com%mar
+Pazar yeri
+	@%com%mar.ext
+%def%Farklý kaynaklarýn alýnýp satýlmasýný saðlar.
+%neg%Düþmanýn eline geçebilir.
+	@%com%mil
+Deðirmen
+	@%com%mil.ext
+%def%Tahýllarýn üretilmesini iþlenmesini saðlar.
+%def%köylüler hasat ettikleri ürünleri deðirmene getirebilir. neg%Düþmanýn eline geçebilir.
+%def%Yükseltmeler yapýldýðýmda deðirmenin gýda iþleme hýzý artar.
+	@%com%sto
+Depo
+	@%com%sto.ext
+%def%Köylülerin getirdiði odunlar ve taþlar buluur.
+%neg%Düþmanýn eline geçebilir.
+	@%com%por
+Tersane
+	@%com%por.ext
+%def%Gemi inþa edilir.
+%def%Tekneler limana balýk getirir.
+	@%com%sga
+Kapý
+	@%com%sga.ext
+%def%Kalenin en önemli savunmasýdýr.
+%pos%Sadece savaþ toplar, gemiler, el bombalarý ve okçular tarafýndan yýkýlabilir..
+%def%Menzilli silahlar surlarýn arkasýný vuramaz.
+%def%Kapýlar taþ duvarlarýn içine inþa edilirler.
+%neg%Yapýldýktan sonra da taþa ihtiyaç duyar.
+	@%com%swa
+Sur
+	@%com%swa.ext
+%def%Kalenin en önemli savunmasýdýr.
+%pos%Sadece savaþ toplar, gemiler, el bombalarý ve okçular tarafýndan yýkýlabilir.
+%def%Menzilli silahlar surlarýn arkasýný vuramaz.
+%def%Kapýlar taþ duvarlarýn içine inþa edilirler.
+%neg%Yapýldýktan sonra da taþa ihtiyaç duyar.
+	@%com%tow
+Kule
+	@%com%tow.ext
+%def%Kalenin kendisidir.
+%pos%Sadece savaþ toplar, gemiler, el bombalarý ve okçular tarafýndan yýkýlabilir.
+%def%kulenin atýþ gücü yükseltmelerle ve top koyarak arttýrýlabilir.
+%def%Her bir kule için yükseltme ayrý ayrý yapýlmalýdýr.
+%neg%Kuledeki toplar ateþlendiðinde çok fazla kömür ve demir tüketir.
+	@%com%wga
+Kapý
+	@%com%wga.ext
+%def%kaleyi korumanýn en hýzlý ve en ucuz yolu.
+%def%Menzildeki birimler parmaklýklarýn arasýndan ateþ edebilir.
+%def%kapýlar parmaklýklarýn içine de inþa edilebilir.
+	@%com%wwa
+Parmaklýk
+	@%com%wwa.ext
+%def%kaleyi korumanýn en hýzlý ve en ucuz yolu.
+%def%Menzildeki birimler parmaklýklarýn arasýndan ateþ edebilir.
+
+def%kapýlar parmaklýklarýn içine de inþa edilebilir.
+	@field
+Tahýl öðütmek
+	@_del_polaca
+%include(units;ausaca)%
+	@_del_polaca.ext
+%include(units;ausaca.ext)%
+	@_del_polart
+%include(units;ausart)%
+	@_del_polart.ext
+%include(units;ausart.ext)%
+	@_del_polbar
+%include(units;ausbar)%
+	@_del_polbar.ext
+%include(units;ausbar.ext)%
+	@_del_polba2
+%include(units;ausba2)%
+	@_del_polba2.ext
+%include(units;ausba2.ext)%
+	@_del_polbla
+%include(units;ausbla)%
+	@_del_polbla.ext
+%include(units;ausbla.ext)%
+	@_del_polcen
+%include(units;auscen)%
+	@_del_polcen.ext
+%include(units;auscen.ext)%
+	@_del_poldip
+%include(units;ausdip)%
+	@_del_poldip.ext
+%include(units;ausdip.ext)%
+	@_del_polhou
+%include(units;aushou)%
+	@_del_polhou.ext
+%include(units;aushou.ext)%
+	@_del_polsta
+%include(units;aussta)%
+	@_del_polsta.ext
+%include(units;aussta.ext)%
+	@_del_poltem
+%include(units;austem)%
+	@_del_poltem.ext
+%include(units;austem.ext)%
+	@UNIQUE
+*********************Eþsiz yapýlar ve ip uçlarý********************
+	@turbar
+Kýþla
+	@turbar.ext
+%def%Piyadeler subaylar ve trompetçilerden oluþur.
+%pos%150 ek bina gerekir.
+	@turtem
+Mosque
+	@algtem
+Camii
+	@rustem
+Camii
+	@ukrtem
+Ortadoks Katedrali
+	@algbar
+Ortadoks Katedrali
+	@algbar.ext
+%include(units;turbar.ext)%
+	@turcen.ext
+%def%Köylüler yapar.
+%def%Köylüler Belediye binasýna taþ, odun ve yiyecek taþýr.
+%pos%Provides 100 dwellings.
+%neg%Düþman tarafýndan esr edilebilir.
+	@algcen.ext
+
+	@ruscen.ext
+
+	@ukrbar.ext
+%def%Menzildeki binalar.
+%pos%75 ek bina gerekir.
+	@tursta.ext
+%def%Süvariler yapar.
+	@algsta.ext
+%include(units;tursta.ext)%
+	@ukrsta.ext
+%include(units;tursta.ext)%
+	@rushou
+Ahþap kulübe
+	@ukrhou
+Kulübe
+	@rusbar
+Streltsýy Kýþlasý
+	@ukrbar
+Kazak evi
+	@turmar
+Pazar yeri
+	@algmar
+Pazar yeri
+	@turaca
+Minare
+	@algaca
+Minare
+	@misdonkey
+Beygir
+	@misflagman
+Sancaktar
+	@misgeneral
+General
+	@mistrader
+Tüccar
+	@misbridge
+Köprü
+	@misblg
+Kütük ev
+	@misblg2
+Kütük ev
+	@miscommandcenter
+Kumanda merkezi
+	@mistent
+Çadýr
+	@misyurt
+Yurt
+	@archertur
+Türk okçu
+	@archertur.ext
+%include(units;descr.any.bow)%
+%include(units;descr.effective.onlywithinf)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+	@archerturdip
+%include(units;archertur)%%include(units;descr.ability.mercenary)%
+	@archerturdip.ext
+%include(units;descr.inf.bow)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+%include(units;descr.effective.ships)%
+	@lightcavalry
+Hafif süvari
+	@lightcavalry.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.combination.lowrateoffirehighbuildtime)%
+	@lightcavalrydip
+%include(units;lightcavalry)%%include(units;descr.ability.mercenary)%
+	@lightcavalrydip.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.highrateoffire)%
+%include(units;descr.ability.consumegold)%
+%include(units;descr.ability.highshootcost)%
+%include(units;descr.effective.merc)%
+	@dragoonpol
+Kitle ayaklanmasý
+	@dragoonpol.ext
+%include(units;descr.cav.any.tüfek)%
+%include(units;descr.ateþ edebilir)%
+%include(units;descr.yakýndan ateþ edemez)%
+%include(units;descr.yapabilir.uzakmenzilden ateþ)%
+	@dragoon18net
+%include(units;dragoon18)%
+	@dragoon18net.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.combination.lowrateoffirehighbuildtime)%
+	@musketeer18den
+%include(units;musketeer18)%
+	@musketeer18den.ext
+%include(units;descr.inf.musketbayonet)%
+%include(units;descr.canmeleeandshoot)%
+%include(units;descr.cost.lowafterupgrade)%
+%include(units;descr.effective.melee)%
+	@grenadierden
+%include(units;grenadier)%
+	@grenadierden.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+	@hackapell
+Hakkapeliitta
+	@hackapell.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.combination.highbuildmovespeed)%
+%include(units;descr.effective.notforminfheavycav)%
+	@grenadierpru
+%include(units;grenadier)%
+	@grenadierpru.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+	@musketeer18bav
+%include(units;musketeer18)%
+	@musketeer18bav.ext
+%include(units;descr.inf.musketbayonet)%
+%include(units;descr.canmeleeandshoot)%
+%include(units;descr.cost.lowafterupgrade)%
+%include(units;descr.effective.melee)%
+	@grenadierbav
+%include(units;grenadier)%
+	@grenadierbav.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+%include(units;descr.params.highattackprotection)%
+%include(units;descr.cost.high2)%
+	@guardcavalrysax
+%include(units;cavalryguard)%
+	@guardcavalrysax.ext
+%include(units;descr.cav.heavy.sword)%
+%include(units;descr.armored)%
+%include(units;descr.effective.inflightcav)%
+	@peasco
+Köylü
+	@peasco.ext
+%include(units;descr.ability.canextractresources)%
+%include(units;descr.canbuildandrepair)%
+%include(units;descr.ability.cannotbecaptured)%
+	@pikemansco
+Mýzraklý asker Covenant
+	@pikemansco.ext
+%include(units;descr.inf.longpike)%
+	@musketeersco
+Silahþör Covenant
+	@musketeersco.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.build.lowspeed3)%
+	@swordsmansco
+Kýlýç ustasý klan
+	@swordsmansco.ext
+%include(units;descr.inf.sword)%
+%include(units;descr.params.highattack)%
+	@archersco
+Okçu klan
+	@archersco.ext
+%include(units;descr.any.bow)%
+%include(units;descr.effective.onlywithinf)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.ability.firearrows)%
+	@officersco
+Subay
+	@officersco.ext
+%include(units;descr.ability.createformation)%
+%include(units;descr.ability.consumegold)%
+	@lancersco
+Lancer
+	@lancersco.ext
+%include(units;descr.cav.light.pike)%
+%include(units;descr.effective.inf)%
+%include(units;descr.build.highspeed)%
+%include(units;descr.cost.low2)%
+	@raidersco
+Raider
+	@raidersco.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.combination.highbuildmovespeed)%
+%include(units;descr.effective.notforminfheavycav)%
+	@framegun
+Ribaudequin
+	@framegun.ext
+%pos%Silahsýz piyadelere karþý etkilidir. 
+%neg%Bakýmý için altýn gerekir.
+%neg%Savunmasýz toplar düþmanýn eline geçebilir.
+%neg%Ateþ ederken çok fazla kömür ve demir tüketir.
+	@scoba2
+Kale
+	@scoba2.ext
+%def%Daðcýlar bir araya getirir.
+%pos%250 ek bina gerekir.
+	@ukrcen.ext
+%def%Köylüleri bir araya getirir.
+%def%Köylüler Belediye sarayýna taþ odun ve yiyecek getirir.
+%pos%100 ek bina gerekir.
+%neg%Düþmanýn eline geçebilir.
+	@turcen.ext
+%def%Köylüleri bir araya getirir.
+%def%Köylüler Belediye sarayýna taþ odun ve yiyecek getirir.
+%pos%100 ek bina gerekir.
+%neg%Düþmanýn eline geçebilir.
+	@algcen.ext
+%def%Köylüleri bir araya getirir.
+%def%Köylüler Belediye sarayýna taþ odun ve yiyecek getirir.
+%pos%100 ek bina gerekir.
+%neg%Düþmanýn eline geçebilir.
+	@scocen.ext
+%def%Köylüleri bir araya getirir.
+%def%Köylüler Belediye sarayýna taþ odun ve yiyecek getirir.
+%pos%100 ek bina gerekir.
+%neg%Düþmanýn eline geçebilir.
+	@sipahi
+Aðýr Sipahi
+	@sipahi.ext
+%include(units;descr.cav.heavy.broadsword)%
+%include(units;descr.armored)%
+%include(units;descr.effective.infcav2)%
+%include(units;descr.params.highattackprotection)%
+%include(units;descr.build.lowspeed2)%
+%include(units;descr.cost.high)%
+	@gauduk
+Haydut
+	@gauduk.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+	@pikemanspa
+Coselete
+	@pikemanspa.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.armored)%
+%include(units;descr.effective.form)%
+	@hussarhun
+%include(units;hussar)%
+	@hussarhun.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.build.lowspeed2)%
+%include(units;descr.effective.notcuirassier)%
+	@jagerpor
+Gönüllü
+	@jagerpor.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+	@grenadierhun
+%include(units;grenadier)%
+	@grenadierhun.ext
+%include(units;descr.eliteinf)%
+%include(units;descr.any.musketbayonet)%
+%include(units;descr.canshoot)%
+%include(units;descr.effective.squareform)%
+%include(units;descr.ability.grenades)%
+	@pandurhun
+Sekeller
+	@pandurhun.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.mosteffective.shooter)%
+	@pikemanpor
+%include(units;pikeman)%
+	@pikemanpor.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.armored)%
+%include(units;descr.effective.form)%
+	@pikemanswi
+%include(units;pikeman)%
+	@pikemanswi.ext
+%include(units;descr.inf.longpike)%
+%include(units;descr.armored)%
+%include(units;descr.effective.form)%
+	@jagerswi		
+Avcý
+	@jagerswi.ext
+%include(units;descr.inf.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+	@hussarswi
+Atlý avcý
+	@hussarswi.ext
+%include(units;descr.cav.light.saber)%
+%include(units;descr.effective.sabotage)%
+%include(units;descr.build.lowspeed2)%
+%include(units;descr.effective.notcuirassier)%
+	@padre
+Padre
+	@padre.ext
+%include(units;descr.canheal)%
+	@dragoon18pie
+%include(units;dragoon18)%
+	@dragoon18pie.ext
+%include(units;descr.cav.any.musket)%
+%include(units;descr.canshoot)%
+%include(units;descr.cantshotclose)%
+%include(units;descr.params.highattack)%
+%include(units;descr.combination.lowrateoffirehighbuildtime)%

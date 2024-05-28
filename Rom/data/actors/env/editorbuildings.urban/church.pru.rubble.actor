@@ -1,0 +1,5 @@
+//************************************* ChurchPruRubble  *******
+section.begin {refurl=.\data\actors\ref\reftree.actor}
+   ActorList.Items[0].Name = church.pru.rubble.mesh
+   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings.urban\church.pru.rubble.osm
+section.end
