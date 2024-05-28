@@ -1,5 +1,0 @@
-//************************************* CastleBavRubble  *******
-section.begin {refurl=.\data\actors\ref\reftree.actor}
-   ActorList.Items[0].Name = castle.bav.rubble.mesh
-   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\castle.bav.rubble.osm
-section.end

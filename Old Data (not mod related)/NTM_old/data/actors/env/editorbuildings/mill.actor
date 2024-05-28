@@ -1,5 +1,0 @@
-//************************************* MapMill  *******
-section.begin {refurl=.\data\actors\ref\reftree.actor}
-   ActorList.Items[0].Name = mill.mesh
-   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\mill.osm
-section.end

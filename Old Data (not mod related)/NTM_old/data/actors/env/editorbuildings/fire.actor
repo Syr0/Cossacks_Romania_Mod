@@ -1,5 +1,0 @@
-//************************************* fire  *******
-section.begin {refurl=.\data\actors\ref\reftree.actor}
-   ActorList.Items[0].Name = fire.mesh
-   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\fire.osm
-section.end

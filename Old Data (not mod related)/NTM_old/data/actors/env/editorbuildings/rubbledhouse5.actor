@@ -1,5 +1,0 @@
-//*************************************rubbledhouse *******
-section.begin {refurl=.\data\actors\ref\reftree.actor}
-   ActorList.Items[0].Name = rubbledhouse5.mesh
-   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\rubbledhouse5.osm
-section.end

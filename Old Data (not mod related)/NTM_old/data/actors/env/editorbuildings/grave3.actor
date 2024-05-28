@@ -1,5 +1,0 @@
-//************************************* grave  *******
-section.begin {refurl=.\data\actors\ref\reftree.actor}
-   ActorList.Items[0].Name = grave3.mesh
-   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\grave3.osm
-section.end
