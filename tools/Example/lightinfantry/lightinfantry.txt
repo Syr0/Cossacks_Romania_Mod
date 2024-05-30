@@ -1,0 +1,10 @@
+0- rig
+1.run 1-24
+2.idle 28-77
+3.death 80-127
+4.walk 143-166
+5.attack 168-184
+6.attack0 184-197
+7"prepare0",28,29,morph
+8"unprepare0",28,29,morph
+18 костей
