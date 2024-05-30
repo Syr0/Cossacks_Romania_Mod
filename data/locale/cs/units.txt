@@ -44,7 +44,9 @@ Pùvodní
 Maïarsko
 	@swi
 Švýcarsko
-	@*************Symbols************************
+	@rom
+Rumunsko
+	@*************Symbols************************	
 	@def
 #151
 	@pos

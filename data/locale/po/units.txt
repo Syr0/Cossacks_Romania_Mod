@@ -44,8 +44,9 @@ Originais
 Hungria
 	@swi
 Suíça
+	@rom
+Romênia
 	@*************Symbols************************
-
 	@def
 #151
 	@pos

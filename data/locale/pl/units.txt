@@ -44,6 +44,8 @@ Szkocja
 Wêgry
 	@swi
 Szwajcaria
+	@rom
+Rumunia
 	@*************Symbols************************
 
 	@def

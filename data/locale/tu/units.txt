@@ -44,8 +44,9 @@ Orjinaller
 Macaristan
 	@swi
 Ýsviçre
+	@rom
+Romanya
 	@*************Symbols************************
-
 	@def
 #151
 	@pos
