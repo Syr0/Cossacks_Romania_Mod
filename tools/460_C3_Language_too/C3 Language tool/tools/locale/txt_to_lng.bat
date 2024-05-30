@@ -1,144 +1,19 @@
-..\..\tools\locale\editorlang.exe .\es\gui.txt .\es\gui.lng c
-..\..\tools\locale\editorlang.exe .\es\misc.txt .\es\misc.lng c
-..\..\tools\locale\editorlang.exe .\es\style.txt .\es\style.lng c
-..\..\tools\locale\editorlang.exe .\es\tools.txt .\es\tools.lng c
-..\..\tools\locale\editorlang.exe .\es\tooltip.txt .\es\tooltip.lng c
-..\..\tools\locale\editorlang.exe .\es\units.txt .\es\units.lng c
-..\..\tools\locale\editorlang.exe .\es\upgrades.txt .\es\upgrades.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\ausmis1.txt .\es\missions\ausmis1.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\ausmis2.txt .\es\missions\ausmis2.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\ausmis3.txt .\es\missions\ausmis3.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\ausmis4.txt .\es\missions\ausmis4.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\ausmis5.txt .\es\missions\ausmis5.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\engmis1.txt .\es\missions\engmis1.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\engmis2.txt .\es\missions\engmis2.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\engmis3.txt .\es\missions\engmis3.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\engmis4.txt .\es\missions\engmis4.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\engmis5.txt .\es\missions\engmis5.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\framis1.txt .\es\missions\framis1.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\framis2.txt .\es\missions\framis2.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\framis3.txt .\es\missions\framis3.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\framis4.txt .\es\missions\framis4.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\framis5.txt .\es\missions\framis5.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\missionplayers.txt .\es\missions\missionplayers.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\missions.txt .\es\missions\missions.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\rusmis1.txt .\es\missions\rusmis1.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\rusmis2.txt .\es\missions\rusmis2.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\rusmis3.txt .\es\missions\rusmis3.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\rusmis4.txt .\es\missions\rusmis4.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\rusmis5.txt .\es\missions\rusmis5.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\tutmis1.txt .\es\missions\tutmis1.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\tutmis2.txt .\es\missions\tutmis2.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\ukrmis1.txt .\es\missions\ukrmis1.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\ukrmis2.txt .\es\missions\ukrmis2.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\ukrmis3.txt .\es\missions\ukrmis3.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\ukrmis4.txt .\es\missions\ukrmis4.lng c
-..\..\tools\locale\editorlang.exe .\es\missions\ukrmis5.txt .\es\missions\ukrmis5.lng c
-..\..\tools\locale\editorlang.exe .\it\gui.txt .\it\gui.lng c
-..\..\tools\locale\editorlang.exe .\it\misc.txt .\it\misc.lng c
-..\..\tools\locale\editorlang.exe .\it\style.txt .\it\style.lng c
-..\..\tools\locale\editorlang.exe .\it\tools.txt .\it\tools.lng c
-..\..\tools\locale\editorlang.exe .\it\tooltip.txt .\it\tooltip.lng c
-..\..\tools\locale\editorlang.exe .\it\units.txt .\it\units.lng c
-..\..\tools\locale\editorlang.exe .\it\upgrades.txt .\it\upgrades.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\ausmis1.txt .\it\missions\ausmis1.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\ausmis2.txt .\it\missions\ausmis2.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\ausmis3.txt .\it\missions\ausmis3.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\ausmis4.txt .\it\missions\ausmis4.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\ausmis5.txt .\it\missions\ausmis5.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\engmis1.txt .\it\missions\engmis1.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\engmis2.txt .\it\missions\engmis2.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\engmis3.txt .\it\missions\engmis3.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\engmis4.txt .\it\missions\engmis4.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\engmis5.txt .\it\missions\engmis5.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\framis1.txt .\it\missions\framis1.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\framis2.txt .\it\missions\framis2.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\framis3.txt .\it\missions\framis3.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\framis4.txt .\it\missions\framis4.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\framis5.txt .\it\missions\framis5.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\missionplayers.txt .\it\missions\missionplayers.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\missions.txt .\it\missions\missions.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\rusmis1.txt .\it\missions\rusmis1.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\rusmis2.txt .\it\missions\rusmis2.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\rusmis3.txt .\it\missions\rusmis3.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\rusmis4.txt .\it\missions\rusmis4.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\rusmis5.txt .\it\missions\rusmis5.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\tutmis1.txt .\it\missions\tutmis1.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\tutmis2.txt .\it\missions\tutmis2.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\ukrmis1.txt .\it\missions\ukrmis1.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\ukrmis2.txt .\it\missions\ukrmis2.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\ukrmis3.txt .\it\missions\ukrmis3.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\ukrmis4.txt .\it\missions\ukrmis4.lng c
-..\..\tools\locale\editorlang.exe .\it\missions\ukrmis5.txt .\it\missions\ukrmis5.lng c
-..\..\tools\locale\editorlang.exe .\po\gui.txt .\po\gui.lng c
-..\..\tools\locale\editorlang.exe .\po\misc.txt .\po\misc.lng c
-..\..\tools\locale\editorlang.exe .\po\style.txt .\po\style.lng c
-..\..\tools\locale\editorlang.exe .\po\tools.txt .\po\tools.lng c
-..\..\tools\locale\editorlang.exe .\po\tooltip.txt .\po\tooltip.lng c
-..\..\tools\locale\editorlang.exe .\po\units.txt .\po\units.lng c
-..\..\tools\locale\editorlang.exe .\po\upgrades.txt .\po\upgrades.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\ausmis1.txt .\po\missions\ausmis1.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\ausmis2.txt .\po\missions\ausmis2.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\ausmis3.txt .\po\missions\ausmis3.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\ausmis4.txt .\po\missions\ausmis4.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\ausmis5.txt .\po\missions\ausmis5.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\engmis1.txt .\po\missions\engmis1.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\engmis2.txt .\po\missions\engmis2.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\engmis3.txt .\po\missions\engmis3.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\engmis4.txt .\po\missions\engmis4.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\engmis5.txt .\po\missions\engmis5.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\framis1.txt .\po\missions\framis1.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\framis2.txt .\po\missions\framis2.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\framis3.txt .\po\missions\framis3.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\framis4.txt .\po\missions\framis4.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\framis5.txt .\po\missions\framis5.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\missionplayers.txt .\po\missions\missionplayers.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\missions.txt .\po\missions\missions.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\rusmis1.txt .\po\missions\rusmis1.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\rusmis2.txt .\po\missions\rusmis2.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\rusmis3.txt .\po\missions\rusmis3.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\rusmis4.txt .\po\missions\rusmis4.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\rusmis5.txt .\po\missions\rusmis5.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\tutmis1.txt .\po\missions\tutmis1.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\tutmis2.txt .\po\missions\tutmis2.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\ukrmis1.txt .\po\missions\ukrmis1.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\ukrmis2.txt .\po\missions\ukrmis2.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\ukrmis3.txt .\po\missions\ukrmis3.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\ukrmis4.txt .\po\missions\ukrmis4.lng c
-..\..\tools\locale\editorlang.exe .\po\missions\ukrmis5.txt .\po\missions\ukrmis5.lng c
-..\..\tools\locale\editorlang.exe .\tu\gui.txt .\tu\gui.lng c
-..\..\tools\locale\editorlang.exe .\tu\misc.txt .\tu\misc.lng c
-..\..\tools\locale\editorlang.exe .\tu\style.txt .\tu\style.lng c
-..\..\tools\locale\editorlang.exe .\tu\tools.txt .\tu\tools.lng c
-..\..\tools\locale\editorlang.exe .\tu\tooltip.txt .\tu\tooltip.lng c
-..\..\tools\locale\editorlang.exe .\tu\units.txt .\tu\units.lng c
-..\..\tools\locale\editorlang.exe .\tu\upgrades.txt .\tu\upgrades.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\ausmis1.txt .\tu\missions\ausmis1.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\ausmis2.txt .\tu\missions\ausmis2.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\ausmis3.txt .\tu\missions\ausmis3.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\ausmis4.txt .\tu\missions\ausmis4.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\ausmis5.txt .\tu\missions\ausmis5.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\engmis1.txt .\tu\missions\engmis1.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\engmis2.txt .\tu\missions\engmis2.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\engmis3.txt .\tu\missions\engmis3.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\engmis4.txt .\tu\missions\engmis4.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\engmis5.txt .\tu\missions\engmis5.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\framis1.txt .\tu\missions\framis1.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\framis2.txt .\tu\missions\framis2.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\framis3.txt .\tu\missions\framis3.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\framis4.txt .\tu\missions\framis4.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\framis5.txt .\tu\missions\framis5.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\missionplayers.txt .\tu\missions\missionplayers.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\missions.txt .\tu\missions\missions.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\rusmis1.txt .\tu\missions\rusmis1.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\rusmis2.txt .\tu\missions\rusmis2.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\rusmis3.txt .\tu\missions\rusmis3.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\rusmis4.txt .\tu\missions\rusmis4.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\rusmis5.txt .\tu\missions\rusmis5.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\tutmis1.txt .\tu\missions\tutmis1.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\tutmis2.txt .\tu\missions\tutmis2.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\ukrmis1.txt .\tu\missions\ukrmis1.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\ukrmis2.txt .\tu\missions\ukrmis2.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\ukrmis3.txt .\tu\missions\ukrmis3.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\ukrmis4.txt .\tu\missions\ukrmis4.lng c
-..\..\tools\locale\editorlang.exe .\tu\missions\ukrmis5.txt .\tu\missions\ukrmis5.lng c
+@echo off
+setlocal enabledelayedexpansion
+
+REM Define the base path for the locale directories
+set "basePath=F:\SteamLibrary\steamapps\common\Cossacks 3\mods\Romania\data\locale"
+
+REM Define the path to the editorlang.exe tool
+set "editorTool=F:\SteamLibrary\steamapps\common\Cossacks 3\mods\Romania\tools\460_C3_Language_too\C3 Language tool\tools\locale\editorlang.exe"
+
+REM Enumerate over all subdirectories and process units.txt and units.lng files
+for /r "%basePath%" %%d in (.) do (
+    if exist "%%d\units.txt" (
+        if exist "%%d\units.lng" (
+            call "%editorTool%" "%%d\units.txt" "%%d\units.lng" c
+        )
+    )
+)
+
+endlocal
