@@ -1,0 +1,2311 @@
+section.begin
+   [*] : struct.begin
+      Name = walk0
+      From = walk0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      global : struct.begin
+         Action = actTrackPoint
+         TrackPointMoveStep = 0.03
+         TrackPointTurnStep = 11.125
+         TrackPointIdleName = idle0
+         TrackPointMode = mmDoTrackOnce
+         TrackPointPreset = 
+      struct.end
+      items[*] : struct.begin
+         Action = actAnimation
+         AnimationName = walk0
+         NumberCycle = 1
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle
+      From = walk0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = unprepare0
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0.03
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmDoTrackOnce
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = walk
+      From = walk0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = unprepare0
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0.03
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmDoTrackOnce
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle1
+      From = walk0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans01
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack1
+      From = walk0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans01
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle2
+      From = walk0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle2
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans02
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle2
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack2
+      From = walk0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle2
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans02
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle2
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = walk0
+      From = idle
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = prepare0
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0.03
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmDoTrackOnce
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle
+      From = idle
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      global : struct.begin
+         Action = actTrackPoint
+         TrackPointMoveStep = 0
+         TrackPointTurnStep = 11.125
+         TrackPointIdleName = 
+         TrackPointMode = mmNone
+         TrackPointPreset = 
+      struct.end
+      items[*] : struct.begin
+         Action = actAnimation
+         AnimationName = idle
+         NumberCycle = 1
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle1
+      From = idle
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = prepare1
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack1
+      From = idle
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = prepare1
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle0
+      From = idle
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = prepare0
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle2
+      From = idle
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle2
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = prepare2
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle2
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack0
+      From = idle
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = prepare0
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack2
+      From = idle
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = prepare2
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle2
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = walk0
+      From = walk
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = prepare0
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0.03
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmDoTrackOnce
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = walk
+      From = walk
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      global : struct.begin
+         Action = actTrackPoint
+         TrackPointMoveStep = 0.03
+         TrackPointTurnStep = 11.125
+         TrackPointIdleName = idle
+         TrackPointMode = mmDoTrackOnce
+         TrackPointPreset = 
+      struct.end
+      items[*] : struct.begin
+         Action = actAnimation
+         AnimationName = walk
+         NumberCycle = 1
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack1
+      From = walk
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 1
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = prepare1
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle0
+      From = walk
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = prepare0
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack0
+      From = walk
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 1
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = prepare0
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack2
+      From = walk
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 1
+            TrackPointIdleName = idle2
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = prepare2
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle2
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = walk0
+      From = idle1
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans10
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle
+      From = idle1
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = unprepare1
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = walk
+      From = idle1
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = unprepare1
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0.03
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmDoTrackOnce
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle1
+      From = idle1
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      global : struct.begin
+         Action = actTrackPoint
+         TrackPointMoveStep = 0
+         TrackPointTurnStep = 11.125
+         TrackPointIdleName = 
+         TrackPointMode = mmNone
+         TrackPointPreset = 
+      struct.end
+      items[*] : struct.begin
+         Action = actAnimation
+         AnimationName = idle1
+         NumberCycle = 1
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle0
+      From = idle1
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans10
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle2
+      From = idle1
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle2
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans12
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle2
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack0
+      From = idle1
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans10
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack2
+      From = idle1
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle2
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans12
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle2
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = walk0
+      From = attack1
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans10
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle
+      From = attack1
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = unprepare1
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = walk
+      From = attack1
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = unprepare1
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0.03
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmDoTrackOnce
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack1
+      From = attack1
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      global : struct.begin
+         Action = actTrackPoint
+         TrackPointMoveStep = 0
+         TrackPointTurnStep = 11.125
+         TrackPointIdleName = 
+         TrackPointMode = mmNone
+         TrackPointPreset = 
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actExecuteState
+            ExecuteStateName = OnAclAnimationReachedAttack
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = attack1
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actExecuteState
+            ExecuteStateName = OnAclAnimationReachedAttackEnd
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle0
+      From = attack1
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans10
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack0
+      From = attack1
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans10
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack2
+      From = attack1
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle2
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans12
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle2
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle
+      From = idle0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = unprepare0
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = walk
+      From = idle0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = unprepare0
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0.03
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmDoTrackOnce
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle1
+      From = idle0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans01
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack1
+      From = idle0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans01
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle0
+      From = idle0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      global : struct.begin
+         Action = actTrackPoint
+         TrackPointMoveStep = 0
+         TrackPointTurnStep = 11.125
+         TrackPointIdleName = 
+         TrackPointMode = mmNone
+         TrackPointPreset = 
+      struct.end
+      items[*] : struct.begin
+         Action = actAnimation
+         AnimationName = idle0
+         NumberCycle = 1
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle2
+      From = idle0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle2
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans02
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle2
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack2
+      From = idle0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans02
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle2
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = walk0
+      From = idle2
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans20
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle
+      From = idle2
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = unprepare2
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = walk
+      From = idle2
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = unprepare2
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0.03
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmDoTrackOnce
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle1
+      From = idle2
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans21
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack1
+      From = idle2
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans21
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle0
+      From = idle2
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans20
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle2
+      From = idle2
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      global : struct.begin
+         Action = actTrackPoint
+         TrackPointMoveStep = 0
+         TrackPointTurnStep = 11.125
+         TrackPointIdleName = 
+         TrackPointMode = mmNone
+         TrackPointPreset = 
+      struct.end
+      items[*] : struct.begin
+         Action = actAnimation
+         AnimationName = idle2
+         NumberCycle = 1
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack0
+      From = idle2
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans20
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle
+      From = attack0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = unprepare0
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = walk
+      From = attack0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = unprepare0
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0.03
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmDoTrackOnce
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle1
+      From = attack0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans01
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack1
+      From = attack0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans01
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack0
+      From = attack0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      global : struct.begin
+         Action = actTrackPoint
+         TrackPointMoveStep = 0
+         TrackPointTurnStep = 11.125
+         TrackPointIdleName = 
+         TrackPointMode = mmNone
+         TrackPointPreset = 
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actExecuteState
+            ExecuteStateName = OnAclAnimationReachedAttack
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = attack0
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actExecuteState
+            ExecuteStateName = OnAclAnimationReachedAttackEnd
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = walk1
+      From = attack0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans01
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack2
+      From = attack0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle2
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans02
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle2
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle0
+      From = walk1
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans10
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack0
+      From = walk1
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans10
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = walk1
+      From = walk1
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      global : struct.begin
+         Action = actTrackPoint
+         TrackPointMoveStep = 0.03
+         TrackPointTurnStep = 11.125
+         TrackPointIdleName = idle1
+         TrackPointMode = mmDoTrackOnce
+         TrackPointPreset = 
+      struct.end
+      items[*] : struct.begin
+         Action = actAnimation
+         AnimationName = walk1
+         NumberCycle = 1
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = walk0
+      From = attack2
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans20
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle
+      From = attack2
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = unprepare2
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = walk
+      From = attack2
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = unprepare2
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0.03
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle
+            TrackPointMode = mmDoTrackOnce
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle1
+      From = attack2
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans21
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack1
+      From = attack2
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans21
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle1
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = idle0
+      From = attack2
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans20
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack0
+      From = attack2
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = trans20
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actTrackPoint
+            TrackPointMoveStep = 0
+            TrackPointTurnStep = 11.125
+            TrackPointIdleName = idle0
+            TrackPointMode = mmNone
+            TrackPointPreset = 
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = attack2
+      From = attack2
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = False
+      struct.end
+      global : struct.begin
+         Action = actTrackPoint
+         TrackPointMoveStep = 0
+         TrackPointTurnStep = 11.125
+         TrackPointIdleName = 
+         TrackPointMode = mmNone
+         TrackPointPreset = 
+      struct.end
+      items : struct.begin
+         [*] : struct.begin
+            Action = actExecuteState
+            ExecuteStateName = OnAclAnimationReachedAttack
+         struct.end
+         [*] : struct.begin
+            Action = actAnimation
+            AnimationName = attack2
+            NumberCycle = 1
+         struct.end
+         [*] : struct.begin
+            Action = actExecuteState
+            ExecuteStateName = OnAclAnimationReachedAttackEnd
+         struct.end
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = walk2
+      From = walk2
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      global : struct.begin
+         Action = actTrackPoint
+         TrackPointMoveStep = 0.03
+         TrackPointTurnStep = 11.125
+         TrackPointIdleName = idle2
+         TrackPointMode = mmDoTrackOnce
+         TrackPointPreset = 
+      struct.end
+      items[*] : struct.begin
+         Action = actAnimation
+         AnimationName = walk2
+         NumberCycle = 1
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = death
+      From = death
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      global : struct.begin
+         Action = actTrackPoint
+         TrackPointMoveStep = 0
+         TrackPointTurnStep = 10
+         TrackPointIdleName = 
+         TrackPointMode = mmNone
+         TrackPointPreset = 
+      struct.end
+      items[*] : struct.begin
+         Action = actAnimation
+         AnimationName = death
+         NumberCycle = 1
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = death0
+      From = death0
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      global : struct.begin
+         Action = actTrackPoint
+         TrackPointMoveStep = 0
+         TrackPointTurnStep = 10
+         TrackPointIdleName = 
+         TrackPointMode = mmNone
+         TrackPointPreset = 
+      struct.end
+      items[*] : struct.begin
+         Action = actAnimation
+         AnimationName = death0
+         NumberCycle = 1
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = death1
+      From = death1
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      global : struct.begin
+         Action = actTrackPoint
+         TrackPointMoveStep = 0
+         TrackPointTurnStep = 10
+         TrackPointIdleName = 
+         TrackPointMode = mmNone
+         TrackPointPreset = 
+      struct.end
+      items[*] : struct.begin
+         Action = actAnimation
+         AnimationName = death1
+         NumberCycle = 1
+      struct.end
+   struct.end
+   [*] : struct.begin
+      Name = death2
+      From = death2
+      CyclesList = False
+      Options : struct.begin
+         acoSmoothAnimation = True
+         acoRandomFrame = False
+         acoRandomCycle = False
+         acoSkipActions = True
+      struct.end
+      global : struct.begin
+         Action = actTrackPoint
+         TrackPointMoveStep = 0
+         TrackPointTurnStep = 10
+         TrackPointIdleName = 
+         TrackPointMode = mmNone
+         TrackPointPreset = 
+      struct.end
+      items[*] : struct.begin
+         Action = actAnimation
+         AnimationName = death2
+         NumberCycle = 1
+      struct.end
+   struct.end
+section.end
+

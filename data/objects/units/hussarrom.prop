@@ -1,0 +1,35 @@
+{refurl=.\data\objects\ref\refunithorse.prop}
+
+mainproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=mainproperty}
+   CustomName = hussarrom
+   BaseName = hussarrom
+section.end
+
+actorproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=actorproperty}
+   LODActorName = hussarrom
+   DefaultMeshName = hussarrom.mesh
+section.end
+
+materialproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=materialproperty}
+   Mesh[0].DefaultMaterialName = hussarrom
+   Mesh[0].UseableMaterials[0] = hussarrom
+section.end
+
+autochildrenproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=autochildrenproperty}
+   Enabled = True
+   Mesh[0] : struct.begin
+      Children : struct.begin
+         [0] : struct.begin
+            BaseName = hussarrom_horse
+            DefaultMeshName = hussarrom_horse.mesh
+            Mesh[*] = hussarrom_horse.mesh
+            DefaultMaterialName = horseblack
+            Materials[*] = horseblack
+         struct.end
+      struct.end
+   struct.end
+section.end
+
+frameanimationproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=frameanimationproperty}
+   FrameAnimationCyclesLibName = hussarrom
+section.end

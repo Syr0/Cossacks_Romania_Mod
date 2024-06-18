@@ -1,0 +1,20 @@
+{refurl=.\data\objects\ref\refunit.prop}
+
+mainproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=mainproperty}
+   CustomName = pandurrom
+   BaseName = pandurrom
+section.end
+
+actorproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=actorproperty}
+   LODActorName = pandurrom
+   DefaultMeshName = pandurrom.mesh
+section.end
+
+materialproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=materialproperty}
+   Mesh[0].DefaultMaterialName = pandurrom
+   Mesh[0].UseableMaterials[0] = pandurrom
+section.end
+
+frameanimationproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=frameanimationproperty}
+   FrameAnimationCyclesLibName = pandurrom
+section.end

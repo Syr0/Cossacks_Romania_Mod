@@ -1,0 +1,9 @@
+AAF
+7
+"idle",505,589,morph
+"idle_rest",335,402,morph
+"walk",1,16,morph
+"death",49,119,morph
+"attack0",592,605,morph
+"prepare0",335,336,morph
+"unprepare0",335,336,morph

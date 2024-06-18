@@ -1,0 +1,30 @@
+{refurl=.\data\objects\ref\refunitattach.prop}
+
+mainproperty : section.begin {refurl=.\data\objects\ref\refunitattach.prop; refkey=mainproperty}
+   CustomName = lancerrom_horse
+   BaseName = lancerrom_horse
+section.end
+
+actorproperty : section.begin {refurl=.\data\objects\ref\refunitattach.prop; refkey=actorproperty}
+   LODActorName = lancerrom_horse
+   DefaultMeshName = lancerrom_horse.mesh
+section.end
+
+materialproperty : section.begin {refurl=.\data\objects\ref\refunitattach.prop; refkey=materialproperty}
+   Mesh[1].DefaultMaterialName = horsebrown
+   Mesh[1].UseableMaterials[0] = horsebrown
+section.end
+
+frameanimationproperty : section.begin {refurl=.\data\objects\ref\refunitattach.prop; refkey=frameanimationproperty}
+   Enabled = True
+   Static = True
+   ClassName = FrameAnimationProperty
+   DefaultFrameAnimationName = 
+   DefaultFrameAnimationMode = aamNone
+   FrameAnimationSynchronizeOption = fasoInherited
+   FrameAnimationSwitchChildren = False
+   DefaultFrameAnimationCycles = 
+   FrameAnimationCyclesLibName = 
+   RandomOffsetFrameAnimationCycles = False
+   RandomOffsetFrameAnimation = False
+section.end

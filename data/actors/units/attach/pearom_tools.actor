@@ -1,0 +1,35 @@
+section.begin {refurl=.\data\actors\ref\refunit.actor}
+   ShaderLODList.List[0].ShaderID = 26
+   ShaderLODList.List[0].ShaderIDIM = 23
+   Animations.LoadFromFile = .\data\animations\aaf\peatur.aaf
+   ActorList.Items : struct.begin
+      [0] : struct.begin
+         Name = peatur_axe.mesh
+         LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\units\attach\peatur_axe.oss
+      struct.end
+      [1] : struct.begin {refkey=.ActorList.Items[0]}
+         Name = peatur_bag.mesh
+         LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\units\attach\peatur_bag.oss
+      struct.end
+      [2] : struct.begin {refkey=.ActorList.Items[0]}
+         Name = peatur_cart.mesh
+         LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\units\attach\peatur_cart.oss
+      struct.end
+      [3] : struct.begin {refkey=.ActorList.Items[0]}
+         Name = peatur_hammer.mesh
+         LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\units\attach\peatur_hammer.oss
+      struct.end
+      [4] : struct.begin {refkey=.ActorList.Items[0]}
+         Name = peatur_hoe.mesh
+         LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\units\attach\peatur_hoe.oss
+      struct.end
+      [5] : struct.begin {refkey=.ActorList.Items[0]}
+         Name = peatur_lumber.mesh
+         LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\units\attach\peatur_lumber.oss
+      struct.end
+      [6] : struct.begin {refkey=.ActorList.Items[0]}
+         Name = peatur_pick.mesh
+         LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\units\attach\peatur_pick.oss
+      struct.end
+   struct.end
+section.end

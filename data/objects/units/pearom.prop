@@ -1,0 +1,55 @@
+{refurl=.\data\objects\ref\refunit.prop}
+
+mainproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=mainproperty}
+   CustomName = pearom
+   BaseName = pearom
+section.end
+
+actorproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=actorproperty}
+   LODActorName = pearom
+   DefaultMeshName = pearom.mesh
+section.end
+
+materialproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=materialproperty}
+   Mesh[0].DefaultMaterialName = pearom
+   Mesh[0].UseableMaterials[0] = pearom
+section.end
+
+statemachineproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=statemachineproperty}
+   StateMachineInterval = 135
+section.end
+
+autochildrenproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=autochildrenproperty}
+   Enabled = True
+   Mesh[0] : struct.begin
+      Children : struct.begin
+         [0] : struct.begin
+            BaseName = peatur_tools
+            DefaultMeshName = peatur_axe.mesh
+            Mesh : struct.begin
+               [0] = peatur_axe.mesh
+               [1] = peatur_bag.mesh
+               [2] = peatur_cart.mesh
+               [3] = peatur_hammer.mesh
+               [4] = peatur_hoe.mesh
+               [5] = peatur_lumber.mesh
+               [6] = peatur_pick.mesh
+            struct.end
+            DefaultMaterialName = peaaustools
+            Materials : struct.begin
+               [0] = peaaustools
+               [1] = peaaustools
+               [2] = peaaustools
+               [3] = peaaustools
+               [4] = peaaustools
+               [5] = peaaustools
+               [6] = peaaustools
+            struct.end
+         struct.end
+      struct.end
+   struct.end
+section.end
+
+frameanimationproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=frameanimationproperty}
+   FrameAnimationCyclesLibName = pearom
+section.end

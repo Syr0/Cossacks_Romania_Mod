@@ -1,0 +1,677 @@
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = pikeman
+   Material.Texture.image = .\data\materials\units\pikeman.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = unitbox
+   Material.Texture.image = .\data\materials\units\unitbox.dds
+   Material.Texture.textureformat = tfDefault
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = peaaus
+   Material.Texture.image = .\data\materials\units\peaaus.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = peaaustools
+   Material.Texture.image = .\data\materials\units\peaaustools.dds
+   Material.Texture.textureformat = tfDefault
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = musketeeraus
+   Material.Texture.image = .\data\materials\units\musketeeraus.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = roundshier
+   Material.Texture.image = .\data\materials\units\roundshier.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = archer
+   Material.Texture.image = .\data\materials\units\archer.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = archertur
+   Material.Texture.image = .\data\materials\units\archertur.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = cannon
+   Material.Texture.image = .\data\materials\units\cannon.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = cossacksich
+   Material.Texture.image = .\data\materials\units\cossacksich.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = croat
+   Material.Texture.image = .\data\materials\units\croat.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = cuirassier
+   Material.Texture.image = .\data\materials\units\cuirassier.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = dragoon
+   Material.Texture.image = .\data\materials\units\dragoon.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = dragoon18
+   Material.Texture.image = .\data\materials\units\dragoon18.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = drummer
+   Material.Texture.image = .\data\materials\units\drummer.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = drummer18
+   Material.Texture.image = .\data\materials\units\drummer18.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = lightcavalry
+   Material.Texture.image = .\data\materials\units\lightcavalry.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = grenadier
+   Material.Texture.image = .\data\materials\units\grenadier.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = howitzer
+   Material.Texture.image = .\data\materials\units\howitzer.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = hussar
+   Material.Texture.image = .\data\materials\units\hussar.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = lightinfantry
+   Material.Texture.image = .\data\materials\units\lightinfantry.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = mortar
+   Material.Texture.image = .\data\materials\units\mortar.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = multicannon
+   Material.Texture.image = .\data\materials\units\multicannon.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = musketeer18
+   Material.Texture.image = .\data\materials\units\musketeer18.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = officer
+   Material.Texture.image = .\data\materials\units\officer.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = officer18
+   Material.Texture.image = .\data\materials\units\officer18.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = pandur
+   Material.Texture.image = .\data\materials\units\pandur.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = pikeman18
+   Material.Texture.image = .\data\materials\units\pikeman18.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = priest
+   Material.Texture.image = .\data\materials\units\priest.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = reiter
+   Material.Texture.image = .\data\materials\units\reiter.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = pikemanpol
+   Material.Texture.image = .\data\materials\units\pikemanpol.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = pikemantur
+   Material.Texture.image = .\data\materials\units\pikemantur.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = pikemanrus
+   Material.Texture.image = .\data\materials\units\pikemanrus.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = pikeman18swe
+   Material.Texture.image = .\data\materials\units\pikeman18swe.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = musketeer
+   Material.Texture.image = .\data\materials\units\musketeer.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = musketeerpol
+   Material.Texture.image = .\data\materials\units\musketeerpol.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = chasseur
+   Material.Texture.image = .\data\materials\units\chasseur.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = highlander
+   Material.Texture.image = .\data\materials\units\highlander.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = serdiuk
+   Material.Texture.image = .\data\materials\units\serdiuk.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = jannisary
+   Material.Texture.image = .\data\materials\units\jannisary.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = musketeerspa
+   Material.Texture.image = .\data\materials\units\musketeerspa.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = strelet
+   Material.Texture.image = .\data\materials\units\strelet.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = musketeer18pru
+   Material.Texture.image = .\data\materials\units\musketeer18pru.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = officerrus
+   Material.Texture.image = .\data\materials\units\officerrus.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = officertur
+   Material.Texture.image = .\data\materials\units\officertur.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = drummerrus
+   Material.Texture.image = .\data\materials\units\drummerrus.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = drummertur
+   Material.Texture.image = .\data\materials\units\drummertur.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = bagpiper
+   Material.Texture.image = .\data\materials\units\bagpiper.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = pope
+   Material.Texture.image = .\data\materials\units\pope.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = mullah
+   Material.Texture.image = .\data\materials\units\mullah.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = hussarpru
+   Material.Texture.image = .\data\materials\units\hussarpru.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = wingedhussar
+   Material.Texture.image = .\data\materials\units\wingedhussar.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = reiterswe
+   Material.Texture.image = .\data\materials\units\reiterswe.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = reiterpol
+   Material.Texture.image = .\data\materials\units\reiterpol.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = hetman
+   Material.Texture.image = .\data\materials\units\hetman.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = cossackdon
+   Material.Texture.image = .\data\materials\units\cossackdon.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = vityaz
+   Material.Texture.image = .\data\materials\units\vityaz.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = cossackregister
+   Material.Texture.image = .\data\materials\units\cossackregister.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = spakh
+   Material.Texture.image = .\data\materials\units\spakh.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = mameluke
+   Material.Texture.image = .\data\materials\units\mameluke.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = kingmusketeer
+   Material.Texture.image = .\data\materials\units\kingmusketeer.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = dragoon18fra
+   Material.Texture.image = .\data\materials\units\dragoon18fra.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = dragoonpol
+   Material.Texture.image = .\data\materials\units\dragoonpol.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = tatar
+   Material.Texture.image = .\data\materials\units\tatar.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = peatur
+   Material.Texture.image = .\data\materials\units\peatur.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = pearus
+   Material.Texture.image = .\data\materials\units\pearus.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = peapol
+   Material.Texture.image = .\data\materials\units\peapol.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = peaspa
+   Material.Texture.image = .\data\materials\units\peaspa.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = peaeng
+   Material.Texture.image = .\data\materials\units\peaeng.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = peaukr
+   Material.Texture.image = .\data\materials\units\peaukr.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = pearom
+   Material.Texture.image = .\data\materials\units\pearom.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = musketeerrom
+   Material.Texture.image = .\data\materials\units\musketeerrom.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = hussarrom
+   Material.Texture.image = .\data\materials\units\hussarrom.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = lancerrom
+   Material.Texture.image = .\data\materials\units\lancerrom.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = pandurrom
+   Material.Texture.image = .\data\materials\units\pandurrom.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = horsebrown
+   Material.Texture.image = .\data\materials\units\horsebrown.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = horseblack
+   Material.Texture.image = .\data\materials\units\horseblack.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = horsewhite
+   Material.Texture.image = .\data\materials\units\horsewhite.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = battleship
+   Material.FaceCulling = fcNoCull
+   Material.Texture.image = .\data\materials\units\battleship.dds
+   Material.BackProperties.Specular.Red = 0
+   Material.BackProperties.Specular.Green = 0
+   Material.BackProperties.Specular.Blue = 0
+   Material.FrontProperties.Specular.Red = 0
+   Material.FrontProperties.Specular.Green = 0
+   Material.FrontProperties.Specular.Blue = 0
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = ferry
+   Material.FaceCulling = fcNoCull
+   Material.Texture.image = .\data\materials\units\ferry.dds
+   Material.BackProperties.Specular.Red = 0
+   Material.BackProperties.Specular.Green = 0
+   Material.BackProperties.Specular.Blue = 0
+   Material.FrontProperties.Specular.Red = 0
+   Material.FrontProperties.Specular.Green = 0
+   Material.FrontProperties.Specular.Blue = 0
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = fishboat
+   Material.FaceCulling = fcNoCull
+   Material.Texture.image = .\data\materials\units\fishboat.dds
+   Material.BackProperties.Specular.Red = 0
+   Material.BackProperties.Specular.Green = 0
+   Material.BackProperties.Specular.Blue = 0
+   Material.FrontProperties.Specular.Red = 0
+   Material.FrontProperties.Specular.Green = 0
+   Material.FrontProperties.Specular.Blue = 0
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = frigate
+   Material.FaceCulling = fcNoCull
+   Material.Texture.image = .\data\materials\units\frigate.dds
+   Material.BackProperties.Specular.Red = 0
+   Material.BackProperties.Specular.Green = 0
+   Material.BackProperties.Specular.Blue = 0
+   Material.FrontProperties.Specular.Red = 0
+   Material.FrontProperties.Specular.Green = 0
+   Material.FrontProperties.Specular.Blue = 0
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = galley
+   Material.FaceCulling = fcNoCull
+   Material.Texture.image = .\data\materials\units\galley.dds
+   Material.BackProperties.Specular.Red = 0
+   Material.BackProperties.Specular.Green = 0
+   Material.BackProperties.Specular.Blue = 0
+   Material.FrontProperties.Specular.Red = 0
+   Material.FrontProperties.Specular.Green = 0
+   Material.FrontProperties.Specular.Blue = 0
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = xebec
+   Material.FaceCulling = fcNoCull
+   Material.Texture.image = .\data\materials\units\xebec.dds
+   Material.BackProperties.Specular.Red = 0
+   Material.BackProperties.Specular.Green = 0
+   Material.BackProperties.Specular.Blue = 0
+   Material.FrontProperties.Specular.Red = 0
+   Material.FrontProperties.Specular.Green = 0
+   Material.FrontProperties.Specular.Blue = 0
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = xebeca
+   Material.FaceCulling = fcNoCull
+   Material.Texture.image = .\data\materials\units\xebeca.dds
+   Material.Texture.textureformat = tfDefault
+   Material.BackProperties.Specular.Red = 0
+   Material.BackProperties.Specular.Green = 0
+   Material.BackProperties.Specular.Blue = 0
+   Material.FrontProperties.Specular.Red = 0
+   Material.FrontProperties.Specular.Green = 0
+   Material.FrontProperties.Specular.Blue = 0
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = yacht
+   Material.FaceCulling = fcNoCull
+   Material.Texture.image = .\data\materials\units\yacht.dds
+   Material.BackProperties.Specular.Red = 0
+   Material.BackProperties.Specular.Green = 0
+   Material.BackProperties.Specular.Blue = 0
+   Material.FrontProperties.Specular.Red = 0
+   Material.FrontProperties.Specular.Green = 0
+   Material.FrontProperties.Specular.Blue = 0
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = yachttur
+   Material.FaceCulling = fcNoCull
+   Material.Texture.image = .\data\materials\units\yachttur.dds
+   Material.BackProperties.Specular.Red = 0
+   Material.BackProperties.Specular.Green = 0
+   Material.BackProperties.Specular.Blue = 0
+   Material.FrontProperties.Specular.Red = 0
+   Material.FrontProperties.Specular.Green = 0
+   Material.FrontProperties.Specular.Blue = 0
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = chaika
+   Material.FaceCulling = fcNoCull
+   Material.Texture.image = .\data\materials\units\chaika.dds
+   Material.BackProperties.Specular.Red = 0
+   Material.BackProperties.Specular.Green = 0
+   Material.BackProperties.Specular.Blue = 0
+   Material.FrontProperties.Specular.Red = 0
+   Material.FrontProperties.Specular.Green = 0
+   Material.FrontProperties.Specular.Blue = 0
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = mistrader
+   Material.Texture.image = .\data\materials\units\mistrader.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = misdonkey
+   Material.Texture.image = .\data\materials\units\misdonkey.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = misgeneral
+   Material.Texture.image = .\data\materials\units\misgeneral.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = misflagman
+   Material.Texture.image = .\data\materials\units\misflagman.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = frigate_noalpha
+   Material.FaceCulling = fcNoCull
+   Material.Texture.image = .\data\materials\units\frigate.dds
+   Material.Texture.textureformat = tfDefault
+   Material.BackProperties.Specular.Red = 0
+   Material.BackProperties.Specular.Green = 0
+   Material.BackProperties.Specular.Blue = 0
+   Material.FrontProperties.Specular.Red = 0
+   Material.FrontProperties.Specular.Green = 0
+   Material.FrontProperties.Specular.Blue = 0
+section.end
+
+// ******************************** ADDON START **********************************
+//dlc1
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = dragoon18net
+   Material.Texture.image = .\data\materials\units\dragoon18net.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = grenadierden
+   Material.Texture.image = .\data\materials\units\grenadierden.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = musketeer18den
+   Material.Texture.image = .\data\materials\units\musketeer18den.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = musketeernet
+   Material.Texture.image = .\data\materials\units\musketeernet.dds
+section.end
+//dlc2
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = grenadierbav
+   Material.Texture.image = .\data\materials\units\grenadierbav.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = grenadierpru
+   Material.Texture.image = .\data\materials\units\grenadierpru.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = grenadiersax
+   Material.Texture.image = .\data\materials\units\grenadiersax.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = guardcavalrysax
+   Material.Texture.image = .\data\materials\units\guardcavalrysax.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = hackapell
+   Material.Texture.image = .\data\materials\units\hackapell.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = musketeer18bav
+   Material.Texture.image = .\data\materials\units\musketeer18bav.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = musketeer18sax
+   Material.Texture.image = .\data\materials\units\musketeer18sax.dds
+section.end
+//exp1
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = archersco
+   Material.Texture.image = .\data\materials\units\archersco.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = framegun
+   Material.Texture.image = .\data\materials\units\framegun.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = lancersco
+   Material.Texture.image = .\data\materials\units\lancersco.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = musketeersco
+   Material.Texture.image = .\data\materials\units\musketeersco.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = officersco
+   Material.Texture.image = .\data\materials\units\officersco.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = peasco
+   Material.Texture.image = .\data\materials\units\peasco.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = pikemansco
+   Material.Texture.image = .\data\materials\units\pikemansco.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = raidersco
+   Material.Texture.image = .\data\materials\units\raidersco.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = swordsmansco
+   Material.Texture.image = .\data\materials\units\swordsmansco.dds
+section.end
+//dlc3
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = pikemanpor
+   Material.Texture.image = .\data\materials\units\pikemanpor.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = pikemanspa
+   Material.Texture.image = .\data\materials\units\pikemanspa.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = jagerpor
+   Material.Texture.image = .\data\materials\units\jagerpor.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = gauduk
+   Material.Texture.image = .\data\materials\units\gauduk.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = pandurhun
+   Material.Texture.image = .\data\materials\units\pandurhun.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = grenadierhun
+   Material.Texture.image = .\data\materials\units\grenadierhun.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = hussarhun
+   Material.Texture.image = .\data\materials\units\hussarhun.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = sipahi
+   Material.Texture.image = .\data\materials\units\sipahi.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = sipahihorse
+   Material.Texture.image = .\data\materials\units\sipahihorse.dds
+section.end
+//dlc4
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = hussarswi
+   Material.Texture.image = .\data\materials\units\hussarswi.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = jagerswi
+   Material.Texture.image = .\data\materials\units\jagerswi.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = pikemanswi
+   Material.Texture.image = .\data\materials\units\pikemanswi.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = padre
+   Material.Texture.image = .\data\materials\units\padre.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = dragoon18pie
+   Material.Texture.image = .\data\materials\units\dragoon18pie.dds
+section.end
+// ******************************** ADDON FINISH *********************************

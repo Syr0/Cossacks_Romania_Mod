@@ -1,0 +1,35 @@
+{refurl=.\data\objects\ref\refunithorse.prop}
+
+mainproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=mainproperty}
+   CustomName = lancerrom
+   BaseName = lancerrom
+section.end
+
+actorproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=actorproperty}
+   LODActorName = lancerrom
+   DefaultMeshName = lancerrom.mesh
+section.end
+
+materialproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=materialproperty}
+   Mesh[0].DefaultMaterialName = lancerrom
+   Mesh[0].UseableMaterials[0] = lancerrom
+section.end
+
+autochildrenproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=autochildrenproperty}
+   Enabled = True
+   Mesh[0] : struct.begin
+      Children : struct.begin
+         [0] : struct.begin
+            BaseName = lancerrom_horse
+            DefaultMeshName = lancerrom_horse.mesh
+            Mesh[*] = lancerrom_horse.mesh
+            DefaultMaterialName = horsebrown
+            Materials[*] = horsebrown
+         struct.end
+      struct.end
+   struct.end
+section.end
+
+frameanimationproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=frameanimationproperty}
+   FrameAnimationCyclesLibName = lancerrom
+section.end

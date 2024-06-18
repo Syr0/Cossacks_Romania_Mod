@@ -1,0 +1,7 @@
+section.begin {refurl=.\data\actors\ref\refunit.actor}
+   ShaderLODList.List[0].ShaderID = 18
+   ShaderLODList.List[0].ShaderIDIM = 11
+   Animations.LoadFromFile = .\data\animations\aaf\pearom.aaf
+   ActorList.Items[0].Name = pearom.mesh
+   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\units\pearom.oss
+section.end
