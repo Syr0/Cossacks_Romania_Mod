@@ -925,6 +925,26 @@ section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
    LODActorFileName = .\data\actors\units\peaukr.actor
 section.end
 section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = pearom
+   LODActorFileName = .\data\actors\units\pearom.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = musketeerrom
+   LODActorFileName = .\data\actors\units\musketeerrom.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = hussarrom
+   LODActorFileName = .\data\actors\units\hussarrom.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = lancerrom
+   LODActorFileName = .\data\actors\units\lancerrom.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = pandurrom
+   LODActorFileName = .\data\actors\units\pandurrom.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
    LODActorName = pikeman
    LODActorFileName = .\data\actors\units\pikeman.actor
 section.end
@@ -1633,6 +1653,14 @@ section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
    LODActorFileName = .\data\actors\units\attach\hussar_horse.actor
 section.end
 section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = hussarrom_horse
+   LODActorFileName = .\data\actors\units\attach\hussarrom_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = lancerrom_horse
+   LODActorFileName = .\data\actors\units\attach\lancerrom_horse.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
    LODActorName = hussarpru_horse
    LODActorFileName = .\data\actors\units\attach\hussarpru_horse.actor
 section.end
@@ -1671,6 +1699,10 @@ section.end
 section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
    LODActorName = peaukr_tools
    LODActorFileName = .\data\actors\units\attach\peaukr_tools.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = pearom_tools
+   LODActorFileName = .\data\actors\units\attach\pearom_tools.actor
 section.end
 section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
    LODActorName = reiter_horse

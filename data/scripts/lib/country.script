@@ -2522,6 +2522,7 @@ begin
 
    AddOfficersFormationInfExt(country, ind, 'officer', 'drummer', pikeman, 'pikemanpol', 'roundshier', 'musketeer', 'musketeeraus', 'musketeerpol', 'musketeerspa', 'grenadierdip', 'roundshierdip', 'musketeernet', 'gauduk', 'pikemanpor', 'pikemanspa', 'pikemanswi', '', '', '', '', '');
    AddOfficersFormationInfExt(country, ind, 'officerrus', 'drummerrus', 'pikemanrus', 'strelet', 'grenadierdip', 'roundshierdip', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
+   AddOfficersFormationInfExt(country, ind, 'officerrom', 'drummerrom', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '');
    AddOfficersFormationInfExt(country, ind, 'officertur', 'drummertur', 'pikemantur', 'lightinfantry', 'archer', 'archertur', 'jannisary', 'grenadierdip', 'roundshierdip', '', '', '', '', '', '', '', '', '', '', '', '');
    AddOfficersFormationInfExt(country, ind, 'officer18', 'drummer18', 'pikeman18', 'pikeman18swe', 'pandur', 'chasseur', 'highlander', 'musketeer18', 'musketeer18pru', 'grenadier', 'musketeer18den', 'grenadierden', 'grenadierpru', 'musketeer18bav', 'grenadierbav', 'musketeer18sax', 'grenadiersax', 'grenadierhun', 'pandurhun', 'jagerpor', 'jagerswi');
    AddOfficersFormationInfExt(country, ind, 'officer18', 'bagpiper', 'pikeman18', 'pikeman18swe', 'pandur', 'chasseur', 'highlander', 'musketeer18', 'musketeer18pru', 'grenadier', 'musketeer18den', 'grenadierden', 'grenadierpru', 'musketeer18bav', 'grenadierbav', 'musketeer18sax', 'grenadiersax', '', '', '', '');
@@ -2553,7 +2554,8 @@ begin
    AddOfficersFormationCavExt(country, ind, 'dragoon18pie', 1);
    AddOfficersFormationCavExt(country, ind, 'lancersco', 1);
    AddOfficersFormationCavExt(country, ind, 'sipahi', 0);
-   AddOfficersFormationCavExt(country, ind, 'lightcavalry', 1);
+   AddOfficersFormationCavExt(country, ind, 'hussarrom', 0);
+   AddOfficersFormationCavExt(country, ind, 'lancerrom', 0);
 
    AddOfficersFormationCavExt(country, ind, 'dragoon18dip', 1);
    AddOfficersFormationCavExt(country, ind, 'lightcavalrydip', 1);
@@ -2660,6 +2662,7 @@ begin
       if (tur) or (alg) then _country_AddMember(country, 'peatur', ind, True, gc_country_editorplace_category_infantry, 32, gc_ai_unit_peasant);
       if (fra) or (eng) or (swe) or (den) or (net) then _country_AddMember(country, 'peaeng', ind, True, gc_country_editorplace_category_infantry, 32, gc_ai_unit_peasant);
       if (sco) then _country_AddMember(country, 'peasco', ind, True, gc_country_editorplace_category_infantry, 32, gc_ai_unit_peasant);
+	  if (rom) then _country_AddMember(country, 'pearom', ind, True, gc_country_editorplace_category_infantry, 32, gc_ai_unit_peasant);
 
       // infantry
       // melee
@@ -2690,6 +2693,8 @@ begin
       if (aus) or (fra) or (eng) or (spa) or (rus) or (pol) or (pru) or (ven) or (den) or (net) or (bav) or (sax) or (por) or (hun) or (pie) or (swi) then _country_AddMember(country, 'pikeman18', ind, True, gc_country_editorplace_category_infantry, 24, gc_ai_unit_pikeman18);
       // shooters
       if (pol) then _country_AddMember(country, 'musketeerpol', ind, True, gc_country_editorplace_category_infantry, 28, gc_ai_unit_musk17);
+	  if (rom) then _country_AddMember(country, 'musketeerrom', ind, True, gc_country_editorplace_category_infantry, 28, gc_ai_unit_musk17);
+	  if (rom) then _country_AddMember(country, 'pandurrom', ind, True, gc_country_editorplace_category_infantry, 27, gc_ai_unit_infantry17);
       if (rus) then _country_AddMember(country, 'strelet', ind, True, gc_country_editorplace_category_infantry, 28, gc_ai_unit_musk17);
       if (aus) then _country_AddMember(country, 'musketeeraus', ind, True, gc_country_editorplace_category_infantry, 28, gc_ai_unit_musk17);
       if (spa) then _country_AddMember(country, 'musketeerspa', ind, True, gc_country_editorplace_category_infantry, 28, gc_ai_unit_musk17);
@@ -2751,6 +2756,8 @@ begin
       if (hun) then _country_AddMember(country, 'hussarhun', ind, True, gc_country_editorplace_category_cavalry, 30, gc_ai_unit_uniq_cav17); // 17 century
       if (pru) then _country_AddMember(country, 'hussarpru', ind, True, gc_country_editorplace_category_cavalry, 19, gc_ai_unit_hussar);
       if (swi) then _country_AddMember(country, 'hussarswi', ind, True, gc_country_editorplace_category_cavalry, 19, gc_ai_unit_hussar);
+	  if (rom) then _country_AddMember(country, 'hussarrom', ind, True, gc_country_editorplace_category_cavalry, 19, gc_ai_unit_hussar);
+	  if (rom) then _country_AddMember(country, 'lancerrom', ind, True, gc_country_editorplace_category_cavalry, 19, gc_ai_unit_uniq_cav17);
       if (aus) or (fra) or (eng) or (spa) or (rus) or (pol) or (swe) or (ven) or (den) or (net) or (bav) or (sax) or (por) or (pie) then _country_AddMember(country, 'hussar', ind, True, gc_country_editorplace_category_cavalry, 19, gc_ai_unit_hussar);
 
       // heavy
@@ -2896,7 +2903,6 @@ begin
       // early-bird
       if (tur) then
       _country_AddMember(country, 'archertur', ind, True, gc_country_editorplace_category_infantry, 26, gc_ai_unit_archer);
-      _country_AddMember(country, 'lightcavalry', ind, (hun), gc_country_editorplace_category_cavalry, 25, gc_ai_unit_uniq_cav17);
       _country_AddMember(country, 'archerturdip', ind, True, gc_country_editorplace_category_diplomatic, 26, gc_ai_unit_none);
       _country_AddMember(country, 'lightcavalrydip', ind, True, gc_country_editorplace_category_diplomatic, 25, gc_ai_unit_none);
       // new units for already released nations goes here, at the end_ of AddMember order
@@ -2920,6 +2926,7 @@ begin
       if (tur) or (alg) then member := 'peatur';
       if (fra) or (eng) or (swe) or (den) or (net) then member := 'peaeng';
       if (sco) then member := 'peasco';
+	  if (rom) then member := 'pearom';
       var fixedproduceind : Integer = _country_GetFixedProduceIndexBySID(cid, member, bAddIfNotExist);
       if (fixedproduceind<>-1) then
       begin
@@ -2961,6 +2968,7 @@ begin
       _country_AddFixedProduceWithAccessControl(country, fixedproduceind, member, 'peaukr', 0, 0, ind, '', '', '');
       _country_AddFixedProduceWithAccessControl(country, fixedproduceind, member, 'peatur', 0, 0, ind, '', '', '');
       _country_AddFixedProduceWithAccessControl(country, fixedproduceind, member, 'peasco', 0, 0, ind, '', '', '');
+	  _country_AddFixedProduceWithAccessControl(country, fixedproduceind, member, 'pearom', 0, 0, ind, '', '', '');
 
       ind := 0;
       member := csid+'sta';
@@ -2993,6 +3001,8 @@ begin
       _country_AddFixedProduceWithAccessControl(country, fixedproduceind, member, 'raidersco', 0, 0, ind, csid+'bla', '', '');
       _country_AddFixedProduceWithAccessControl(country, fixedproduceind, member, 'lancersco', 2, 0, ind, csid+'bla', '', '');
       _country_AddFixedProduceWithAccessControl(country, fixedproduceind, member, 'hussarhun', 1, 0, ind, csid+'bla', '', '');
+	  _country_AddFixedProduceWithAccessControl(country, fixedproduceind, member, 'hussarrom', 0, 0, ind, csid+'bla', '', '');
+	  _country_AddFixedProduceWithAccessControl(country, fixedproduceind, member, 'lancerrom', 1, 0, ind, csid+'bla', '', '');
       _country_AddFixedProduceWithAccessControl(country, fixedproduceind, member, 'hussarswi', 4, 0, ind, csid+'bla', century18, '');
       _country_AddFixedProduceWithAccessControl(country, fixedproduceind, member, 'sipahi', 4, 0, ind, csid+'bla', '', '');
       if (hun) then
@@ -3039,6 +3049,8 @@ begin
       _country_AddFixedProduceWithAccessControl(country, fixedproduceind, member, 'musketeerpol', 2, 0, ind, csid+'bla', '', '');
       _country_AddFixedProduceWithAccessControl(country, fixedproduceind, member, 'musketeerspa', 2, 0, ind, csid+'bla', '', '');
       _country_AddFixedProduceWithAccessControl(country, fixedproduceind, member, 'musketeersco', 2, 0, ind, csid+'bla', '', '');
+	  _country_AddFixedProduceWithAccessControl(country, fixedproduceind, member, 'musketeerrom', 0, 0, ind, csid+'bla', '', '');
+	  _country_AddFixedProduceWithAccessControl(country, fixedproduceind, member, 'pandurrom', 1, 0, ind, csid+'bla', '', '');
       _country_AddFixedProduceWithAccessControl(country, fixedproduceind, member, 'strelet', 2, 0, ind, csid+'bla', '', '');
       _country_AddFixedProduceWithAccessControl(country, fixedproduceind, member, 'serdiuk', 0, 0, ind, '', '', '');
       _country_AddFixedProduceWithAccessControl(country, fixedproduceind, member, 'jannisary', 2, 0, ind, csid+'bla', '', '');
@@ -3157,6 +3169,7 @@ begin
       k := k+1; garr_UnitsAll[k] := 'peatur';
       k := k+1; garr_UnitsAll[k] := 'peaeng';
       k := k+1; garr_UnitsAll[k] := 'peasco';
+	  k := k+1; garr_UnitsAll[k] := 'pearom';
       k := k+1; garr_UnitsAll[k] := 'priest';
       k := k+1; garr_UnitsAll[k] := 'pope';
       k := k+1; garr_UnitsAll[k] := 'mullah';
@@ -3178,6 +3191,8 @@ begin
       k := k+1; garr_UnitsAll[k] := 'musketeerspa';
       k := k+1; garr_UnitsAll[k] := 'musketeernet';
       k := k+1; garr_UnitsAll[k] := 'musketeersco';
+	  k := k+1; garr_UnitsAll[k] := 'musketeerrom';
+	  k := k+1; garr_UnitsAll[k] := 'pandurrom';
       k := k+1; garr_UnitsAll[k] := 'strelet';
       k := k+1; garr_UnitsAll[k] := 'serdiuk';
       k := k+1; garr_UnitsAll[k] := 'jannisary';
@@ -3233,6 +3248,8 @@ begin
       k := k+1; garr_UnitsAll[k] := 'cossackdon';
       k := k+1; garr_UnitsAll[k] := 'cuirassier';
       k := k+1; garr_UnitsAll[k] := 'hussar';
+	  k := k+1; garr_UnitsAll[k] := 'hussarrom';
+	  k := k+1; garr_UnitsAll[k] := 'lancerrom';
       k := k+1; garr_UnitsAll[k] := 'hussarpru';
       k := k+1; garr_UnitsAll[k] := 'hussarhun';
       k := k+1; garr_UnitsAll[k] := 'hussarswi';
@@ -3266,6 +3283,8 @@ begin
       k := k+1; garr_UnitsShooters[k] := 'musketeerspa';
       k := k+1; garr_UnitsShooters[k] := 'musketeernet';
       k := k+1; garr_UnitsShooters[k] := 'musketeersco';
+	  k := k+1; garr_UnitsShooters[k] := 'musketeerrom';
+	  k := k+1; garr_UnitsShooters[k] := 'pandurrom';
       k := k+1; garr_UnitsShooters[k] := 'strelet';
       k := k+1; garr_UnitsShooters[k] := 'serdiuk';
       k := k+1; garr_UnitsShooters[k] := 'jannisary';
@@ -3338,6 +3357,8 @@ begin
       k := k+1; garr_UnitsCavalry[k] := 'cossackdon';
       k := k+1; garr_UnitsCavalry[k] := 'cuirassier';
       k := k+1; garr_UnitsCavalry[k] := 'hussar';
+	  k := k+1; garr_UnitsCavalry[k] := 'hussarrom';
+	  k := k+1; garr_UnitsCavalry[k] := 'lancerrom';
       k := k+1; garr_UnitsCavalry[k] := 'hussarpru';
       k := k+1; garr_UnitsCavalry[k] := 'hussarhun';
       k := k+1; garr_UnitsCavalry[k] := 'hussarswi';
@@ -3366,6 +3387,8 @@ begin
       k := k+1; garr_UnitsCavalryMelee[k] := 'cossackdon';
       k := k+1; garr_UnitsCavalryMelee[k] := 'cuirassier';
       k := k+1; garr_UnitsCavalryMelee[k] := 'hussar';
+	  k := k+1; garr_UnitsCavalryMelee[k] := 'hussarrom';
+	  k := k+1; garr_UnitsCavalryMelee[k] := 'lancerrom';
       k := k+1; garr_UnitsCavalryMelee[k] := 'hussarpru';
       k := k+1; garr_UnitsCavalryMelee[k] := 'hussarhun';
       k := k+1; garr_UnitsCavalryMelee[k] := 'hussarswi';
@@ -3385,6 +3408,7 @@ begin
       k := k+1; garr_UnitsBayonet[k] := 'grenadierbav';
       k := k+1; garr_UnitsBayonet[k] := 'grenadiersax';
       k := k+1; garr_UnitsBayonet[k] := 'grenadierhun';
+	  k := k+1; garr_UnitsBayonet[k] := 'musketeerrom';
 
       k := 0;   garr_ShipsCannon[k] := 'yacht';
       k := k+1; garr_ShipsCannon[k] := 'yachttur';
