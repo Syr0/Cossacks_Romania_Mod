@@ -1,0 +1,58 @@
+{refurl=.\data\objects\ref\refbuildingattach.prop}
+
+mainproperty : section.begin {refurl=.\data\objects\ref\refbuildingattach.prop; refkey=mainproperty}
+   CustomName = romtema
+   BaseName = romtema
+section.end
+
+actorproperty : section.begin {refurl=.\data\objects\ref\refbuildingattach.prop; refkey=actorproperty}
+   LODActorName = romtema
+   DefaultMeshName = romtema.mesh
+   UseableMeshes : struct.begin
+      [0] = True
+      [1] = True
+      [2] = True
+      [3] = True
+      [4] = True
+      [5] = True
+      [6] = True
+   struct.end
+section.end
+
+materialproperty : section.begin {refurl=.\data\objects\ref\refbuildingattach.prop; refkey=materialproperty}
+   Mesh[0].DefaultMaterialName = scaffold
+   Mesh[0].UseableMaterials[0] = scaffold
+   Mesh[0].UseSeasonMaterial = True
+   Mesh[0].UseableSummerMaterials[0] = scaffold
+   Mesh[0].UseableWinterMaterials[0] = scaffoldw
+   Mesh[1].DefaultMaterialName = scaffold
+   Mesh[1].UseableMaterials[0] = scaffold
+   Mesh[1].UseSeasonMaterial = True
+   Mesh[1].UseableSummerMaterials[0] = scaffold
+   Mesh[1].UseableWinterMaterials[0] = scaffoldw
+   Mesh[2].DefaultMaterialName = scaffold
+   Mesh[2].UseableMaterials[0] = scaffold
+   Mesh[2].UseSeasonMaterial = True
+   Mesh[2].UseableSummerMaterials[0] = scaffold
+   Mesh[2].UseableWinterMaterials[0] = scaffoldw
+   Mesh[3].DefaultMaterialName = scaffold
+   Mesh[3].UseableMaterials[0] = scaffold
+   Mesh[3].UseSeasonMaterial = True
+   Mesh[3].UseableSummerMaterials[0] = scaffold
+   Mesh[3].UseableWinterMaterials[0] = scaffoldw
+   Mesh[4].DefaultMaterialName = scaffold
+   Mesh[4].UseableMaterials[0] = scaffold
+   Mesh[4].UseSeasonMaterial = True
+   Mesh[4].UseableSummerMaterials[0] = scaffold
+   Mesh[4].UseableWinterMaterials[0] = scaffoldw
+   Mesh[5].DefaultMaterialName = scaffold
+   Mesh[5].UseableMaterials[0] = scaffold
+   Mesh[5].UseSeasonMaterial = True
+   Mesh[5].UseableSummerMaterials[0] = scaffold
+   Mesh[5].UseableWinterMaterials[0] = scaffoldw
+   Mesh[6].DefaultMaterialName = scaffold
+   Mesh[6].UseableMaterials[0] = scaffold
+   Mesh[6].UseSeasonMaterial = True
+   Mesh[6].UseableSummerMaterials[0] = scaffold
+   Mesh[6].UseableWinterMaterials[0] = scaffoldw
+section.end

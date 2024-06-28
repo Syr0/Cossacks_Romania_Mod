@@ -768,7 +768,7 @@ begin
             else
             objprop.aiforce := 5;
          end;
-         'musketeer', 'musketeerpol', 'musketeernet', 'pandur', 'chasseur', 'highlander', 'serdiuk', 'jannisary', 'musketeersco', 'gauduk', 'pandurhun', 'jagerpor', 'jagerswi' : begin
+         'musketeer', 'musketeerpol', 'musketeernet', 'pandur', 'chasseur', 'highlander', 'serdiuk', 'jannisary', 'musketeersco', 'gauduk', 'pandurhun', 'jagerpor', 'jagerswi', 'pandurrom' : begin
             objbase.maxhp := 70;
             var weapInd : Integer = 1;
             SetObjBaseWeapon(objprop, objbase, weapInd, 12, 150, 400, 800, 0, 100000, gc_obj_weapon_kind_bullet, True);
@@ -893,9 +893,18 @@ begin
                   SetObjBaseSearchBuildVisionScore(objprop, objbase, 1200, 8.5*gc_time_to_frames, 4, 25);
                   objprop.aiforce := 25;
                end;
+               'pandurrom' : begin
+                  objbase.maxhp := 100;
+                  SetObjBaseWeapon(objprop, objbase, weapInd, 20, 220, 500, 1200, 0, 100000, gc_obj_weapon_kind_bullet, True);
+                  objprop.weapon[weapInd].cost[gc_resource_type_iron] := 4;
+                  objprop.weapon[weapInd].cost[gc_resource_type_coal] := 9;
+                  SetObjBasePrice(objbase, 40, 0, 0, 70, 20, 0);
+                  SetObjBaseSearchBuildVisionScore(objprop, objbase, 1200, 8.5*gc_time_to_frames, 4, 25);
+                  objprop.aiforce := 25;
+               end;
             end;
          end;
-         'musketeerspa', 'musketeeraus', 'strelet', 'musketeerrom', 'pandurrom' : begin
+         'musketeerspa', 'musketeeraus', 'strelet', 'pandurrom' : begin
             objbase.maxhp := 50;
             SetObjBaseWeapon(objprop, objbase, 0, 9, 90, 400, 800, 0, 100000, gc_obj_weapon_kind_bullet, True);
             objprop.weapon[0].weaponsid := 'SHOTMUSKET';
@@ -938,7 +947,7 @@ begin
                end;
             end;
          end;
-         'musketeer18', 'musketeer18pru', 'musketeer18bav', 'musketeer18den', 'musketeer18sax' : begin
+         'musketeer18', 'musketeer18pru', 'musketeer18bav', 'musketeer18den', 'musketeer18sax', 'musketeerrom' : begin
             objbase.maxhp := 100;
             SetObjBaseWeapon(objprop, objbase, 0, 10{18}, 0, 35, 65, 0, 400, gc_obj_weapon_kind_pike, True);
             objprop.weapon[0].attmask := objprop.weapon[0].attmask or (1 shl gc_obj_material_body);

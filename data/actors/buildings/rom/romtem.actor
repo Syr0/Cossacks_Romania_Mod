@@ -1,0 +1,28 @@
+section.begin {refurl=.\data\actors\ref\refbuilding.actor}
+   ActorList.Items[0].Name = romtem.mesh
+   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\buildings\rom\romtem.osm
+   ActorList.Items[*] : struct.begin {refurl=.\data\actors\ref\refbuilding.actor; refkey=.ActorList.Items[0]}
+      Name = romtem1.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\buildings\rom\romtem1.osm
+   struct.end
+   ActorList.Items[*] : struct.begin {refurl=.\data\actors\ref\refbuilding.actor; refkey=.ActorList.Items[0]}
+      Name = romtem2.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\buildings\rom\romtem2.osm
+   struct.end
+   ActorList.Items[*] : struct.begin {refurl=.\data\actors\ref\refbuilding.actor; refkey=.ActorList.Items[0]}
+      Name = romtem3.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\buildings\rom\romtem3.osm
+   struct.end
+   ActorList.Items[*] : struct.begin {refurl=.\data\actors\ref\refbuilding.actor; refkey=.ActorList.Items[0]}
+      Name = romtem4.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\buildings\rom\romtem4.osm
+   struct.end
+   ActorList.Items[*] : struct.begin {refurl=.\data\actors\ref\refbuilding.actor; refkey=.ActorList.Items[0]}
+      Name = romtem_death1.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\buildings\rom\romtem_death1.osm
+   struct.end
+   ActorList.Items[*] : struct.begin {refurl=.\data\actors\ref\refbuilding.actor; refkey=.ActorList.Items[0]}
+      Name = romtem_death2.mesh
+      LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\buildings\rom\romtem_death2.osm
+   struct.end
+section.end

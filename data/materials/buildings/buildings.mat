@@ -1,0 +1,1980 @@
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = algcen
+   Material.Texture.image = .\data\materials\buildings\alg\algcen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = alghou
+   Material.Texture.image = .\data\materials\buildings\alg\alghou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ausaca
+   Material.Texture.image = .\data\materials\buildings\aus\ausaca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ausart
+   Material.Texture.image = .\data\materials\buildings\aus\ausart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ausba2
+   Material.Texture.image = .\data\materials\buildings\aus\ausba2.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ausbar
+   Material.Texture.image = .\data\materials\buildings\aus\ausbar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ausbla
+   Material.Texture.image = .\data\materials\buildings\aus\ausbla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = auscen
+   Material.Texture.image = .\data\materials\buildings\aus\auscen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ausdip
+   Material.Texture.image = .\data\materials\buildings\aus\ausdip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = aushou
+   Material.Texture.image = .\data\materials\buildings\aus\aushou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = aussta
+   Material.Texture.image = .\data\materials\buildings\aus\aussta.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = austem
+   Material.Texture.image = .\data\materials\buildings\aus\austem.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = eurcoa
+   Material.Texture.image = .\data\materials\buildings\commoneur\eurcoa.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = eurgol
+   Material.Texture.image = .\data\materials\buildings\commoneur\eurgol.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = euriro
+   Material.Texture.image = .\data\materials\buildings\commoneur\euriro.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = eurmar
+   Material.Texture.image = .\data\materials\buildings\commoneur\eurmar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = eurmil
+   Material.Texture.image = .\data\materials\buildings\commoneur\eurmil.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = eurpor
+   Material.Texture.image = .\data\materials\buildings\commoneur\eurpor.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = eursto
+   Material.Texture.image = .\data\materials\buildings\commoneur\eursto.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = eurtow
+   Material.Texture.image = .\data\materials\buildings\commoneur\eurtow.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rusmar
+   Material.Texture.image = .\data\materials\buildings\commonrus\rusmar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rusmil
+   Material.Texture.image = .\data\materials\buildings\commonrus\rusmil.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ruspor
+   Material.Texture.image = .\data\materials\buildings\commonrus\ruspor.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = russto
+   Material.Texture.image = .\data\materials\buildings\commonrus\russto.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rustow
+   Material.Texture.image = .\data\materials\buildings\commonrus\rustow.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turmar
+   Material.Texture.image = .\data\materials\buildings\commontur\turmar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turmil
+   Material.Texture.image = .\data\materials\buildings\commontur\turmil.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turpor
+   Material.Texture.image = .\data\materials\buildings\commontur\turpor.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = tursto
+   Material.Texture.image = .\data\materials\buildings\commontur\tursto.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turtow
+   Material.Texture.image = .\data\materials\buildings\commontur\turtow.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = engaca
+   Material.Texture.image = .\data\materials\buildings\eng\engaca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = engart
+   Material.Texture.image = .\data\materials\buildings\eng\engart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = engba2
+   Material.Texture.image = .\data\materials\buildings\eng\engba2.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = engbar
+   Material.Texture.image = .\data\materials\buildings\eng\engbar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = engbla
+   Material.Texture.image = .\data\materials\buildings\eng\engbla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = engcen
+   Material.Texture.image = .\data\materials\buildings\eng\engcen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = engdip
+   Material.Texture.image = .\data\materials\buildings\eng\engdip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = enghou
+   Material.Texture.image = .\data\materials\buildings\eng\enghou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = engsta
+   Material.Texture.image = .\data\materials\buildings\eng\engsta.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = engtem
+   Material.Texture.image = .\data\materials\buildings\eng\engtem.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = fraaca
+   Material.Texture.image = .\data\materials\buildings\fra\fraaca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = fraart
+   Material.Texture.image = .\data\materials\buildings\fra\fraart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = fraba2
+   Material.Texture.image = .\data\materials\buildings\fra\fraba2.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = frabar
+   Material.Texture.image = .\data\materials\buildings\fra\frabar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = frabla
+   Material.Texture.image = .\data\materials\buildings\fra\frabla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = fracen
+   Material.Texture.image = .\data\materials\buildings\fra\fracen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = fradip
+   Material.Texture.image = .\data\materials\buildings\fra\fradip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = frahou
+   Material.Texture.image = .\data\materials\buildings\fra\frahou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = frasta
+   Material.Texture.image = .\data\materials\buildings\fra\frasta.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = fratem
+   Material.Texture.image = .\data\materials\buildings\fra\fratem.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = polaca
+   Material.Texture.image = .\data\materials\buildings\pol\polaca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = polart
+   Material.Texture.image = .\data\materials\buildings\pol\polart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = polba2
+   Material.Texture.image = .\data\materials\buildings\pol\polba2.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = polbar
+   Material.Texture.image = .\data\materials\buildings\pol\polbar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = polbla
+   Material.Texture.image = .\data\materials\buildings\pol\polbla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = polcen
+   Material.Texture.image = .\data\materials\buildings\pol\polcen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = poldip
+   Material.Texture.image = .\data\materials\buildings\pol\poldip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = polhou
+   Material.Texture.image = .\data\materials\buildings\pol\polhou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = polsta
+   Material.Texture.image = .\data\materials\buildings\pol\polsta.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = poltem
+   Material.Texture.image = .\data\materials\buildings\pol\poltem.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = pruaca
+   Material.Texture.image = .\data\materials\buildings\pru\pruaca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = pruart
+   Material.Texture.image = .\data\materials\buildings\pru\pruart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = pruba2
+   Material.Texture.image = .\data\materials\buildings\pru\pruba2.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = prubar
+   Material.Texture.image = .\data\materials\buildings\pru\prubar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = prubla
+   Material.Texture.image = .\data\materials\buildings\pru\prubla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = prucen
+   Material.Texture.image = .\data\materials\buildings\pru\prucen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = prudip
+   Material.Texture.image = .\data\materials\buildings\pru\prudip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = pruhou
+   Material.Texture.image = .\data\materials\buildings\pru\pruhou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = prusta
+   Material.Texture.image = .\data\materials\buildings\pru\prusta.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = prutem
+   Material.Texture.image = .\data\materials\buildings\pru\prutem.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rusaca
+   Material.Texture.image = .\data\materials\buildings\rus\rusaca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rusart
+   Material.Texture.image = .\data\materials\buildings\rus\rusart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rusba2
+   Material.Texture.image = .\data\materials\buildings\rus\rusba2.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rusbar
+   Material.Texture.image = .\data\materials\buildings\rus\rusbar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rusbla
+   Material.Texture.image = .\data\materials\buildings\rus\rusbla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ruscen
+   Material.Texture.image = .\data\materials\buildings\rus\ruscen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rusdip
+   Material.Texture.image = .\data\materials\buildings\rus\rusdip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rushou
+   Material.Texture.image = .\data\materials\buildings\rus\rushou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = russta
+   Material.Texture.image = .\data\materials\buildings\rus\russta.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rustem
+   Material.Texture.image = .\data\materials\buildings\rus\rustem.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spaaca
+   Material.Texture.image = .\data\materials\buildings\spa\spaaca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spaart
+   Material.Texture.image = .\data\materials\buildings\spa\spaart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spaba2
+   Material.Texture.image = .\data\materials\buildings\spa\spaba2.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spabar
+   Material.Texture.image = .\data\materials\buildings\spa\spabar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spabla
+   Material.Texture.image = .\data\materials\buildings\spa\spabla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spacen
+   Material.Texture.image = .\data\materials\buildings\spa\spacen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spadip
+   Material.Texture.image = .\data\materials\buildings\spa\spadip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spahou
+   Material.Texture.image = .\data\materials\buildings\spa\spahou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spasta
+   Material.Texture.image = .\data\materials\buildings\spa\spasta.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spatem
+   Material.Texture.image = .\data\materials\buildings\spa\spatem.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = sweaca
+   Material.Texture.image = .\data\materials\buildings\swe\sweaca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = sweart
+   Material.Texture.image = .\data\materials\buildings\swe\sweart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = sweba2
+   Material.Texture.image = .\data\materials\buildings\swe\sweba2.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swebar
+   Material.Texture.image = .\data\materials\buildings\swe\swebar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swebla
+   Material.Texture.image = .\data\materials\buildings\swe\swebla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swecen
+   Material.Texture.image = .\data\materials\buildings\swe\swecen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swedip
+   Material.Texture.image = .\data\materials\buildings\swe\swedip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swehou
+   Material.Texture.image = .\data\materials\buildings\swe\swehou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swesta
+   Material.Texture.image = .\data\materials\buildings\swe\swesta.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swetem
+   Material.Texture.image = .\data\materials\buildings\swe\swetem.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turaca
+   Material.Texture.image = .\data\materials\buildings\tur\turaca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turart
+   Material.Texture.image = .\data\materials\buildings\tur\turart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turbar
+   Material.Texture.image = .\data\materials\buildings\tur\turbar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turbla
+   Material.Texture.image = .\data\materials\buildings\tur\turbla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turcen
+   Material.Texture.image = .\data\materials\buildings\tur\turcen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turdip
+   Material.Texture.image = .\data\materials\buildings\tur\turdip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turhou
+   Material.Texture.image = .\data\materials\buildings\tur\turhou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = tursta
+   Material.Texture.image = .\data\materials\buildings\tur\tursta.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turtem
+   Material.Texture.image = .\data\materials\buildings\tur\turtem.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukraca
+   Material.Texture.image = .\data\materials\buildings\ukr\ukraca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukrart
+   Material.Texture.image = .\data\materials\buildings\ukr\ukrart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukrbar
+   Material.Texture.image = .\data\materials\buildings\ukr\ukrbar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukrbla
+   Material.Texture.image = .\data\materials\buildings\ukr\ukrbla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukrcen
+   Material.Texture.image = .\data\materials\buildings\ukr\ukrcen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukrdip
+   Material.Texture.image = .\data\materials\buildings\ukr\ukrdip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukrhou
+   Material.Texture.image = .\data\materials\buildings\ukr\ukrhou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukrsta
+   Material.Texture.image = .\data\materials\buildings\ukr\ukrsta.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukrtem
+   Material.Texture.image = .\data\materials\buildings\ukr\ukrtem.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = venaca
+   Material.Texture.image = .\data\materials\buildings\ven\venaca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = venart
+   Material.Texture.image = .\data\materials\buildings\ven\venart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = venba2
+   Material.Texture.image = .\data\materials\buildings\ven\venba2.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = venbar
+   Material.Texture.image = .\data\materials\buildings\ven\venbar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = venbla
+   Material.Texture.image = .\data\materials\buildings\ven\venbla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = vencen
+   Material.Texture.image = .\data\materials\buildings\ven\vencen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = vendip
+   Material.Texture.image = .\data\materials\buildings\ven\vendip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = venhou
+   Material.Texture.image = .\data\materials\buildings\ven\venhou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = vensta
+   Material.Texture.image = .\data\materials\buildings\ven\vensta.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ventem
+   Material.Texture.image = .\data\materials\buildings\ven\ventem.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = romtem
+   Material.Texture.image = .\data\materials\buildings\rom\romtem.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = romcen
+   Material.Texture.image = .\data\materials\buildings\rom\romcen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukrpor
+   Material.Texture.image = .\data\materials\buildings\ukr\ukrpor.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spasto
+   Material.Texture.image = .\data\materials\buildings\spa\spasto.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spamar
+   Material.Texture.image = .\data\materials\buildings\spa\spamar.dds
+section.end
+
+// shared material
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scaffold
+   Material.Texture.image = .\data\materials\buildings\constructor\scaffold.dds
+   Material.Texture.textureformat = tfDefault
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = debris
+   Material.Texture.image = .\data\materials\buildings\constructor\debris.dds
+   Material.Texture.textureformat = tfDefault
+section.end
+section.begin {refurl=.\data\materials\ref\refbase.mat}
+   Material.Name = detail
+   Material.Texture.image = .\data\materials\buildings\constructor\detail.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = fishnet
+   Material.BlendingMode = bmAlphaTest50
+   Material.Texture.image = .\data\materials\buildings\commoneur\fishnet.dds
+   Material.Texture.textureformat = tfDefault
+section.end
+
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = eurswa
+   Material.Texture.image = .\data\materials\buildings\commonrus\eurswa.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turswa
+   Material.Texture.image = .\data\materials\buildings\commonrus\turswa.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = russwa
+   Material.Texture.image = .\data\materials\buildings\commonrus\russwa.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukrwwa
+   Material.Texture.image = .\data\materials\buildings\commonrus\ukrwwa.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = misblg
+   Material.Texture.image = .\data\materials\buildings\mis\misblg.dds
+   Material.Texture.textureformat = tfDefault
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = misbridge
+   Material.Texture.image = .\data\materials\buildings\mis\misbridge.dds
+   Material.Texture.textureformat = tfDefault
+   Material.BackProperties.Ambient.Red = 0.375
+   Material.BackProperties.Ambient.Green = 0.375
+   Material.BackProperties.Ambient.Blue = 0.375
+   Material.BackProperties.Diffuse.Red = 0.1484375
+   Material.BackProperties.Diffuse.Green = 0.1484375
+   Material.BackProperties.Diffuse.Blue = 0.1484375
+   Material.FrontProperties.Ambient.Red = 0.375
+   Material.FrontProperties.Ambient.Green = 0.375
+   Material.FrontProperties.Ambient.Blue = 0.375
+   Material.FrontProperties.Diffuse.Red = 0.1484375
+   Material.FrontProperties.Diffuse.Green = 0.1484375
+   Material.FrontProperties.Diffuse.Blue = 0.1484375
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = miscommandcenter
+   Material.Texture.image = .\data\materials\buildings\mis\miscommandcenter.dds
+   Material.Texture.textureformat = tfDefault
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = mistent
+   Material.Texture.image = .\data\materials\buildings\mis\mistent.dds
+   Material.Texture.textureformat = tfDefault
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = miswell
+   Material.Texture.image = .\data\materials\buildings\mis\miswell.dds
+   Material.Texture.textureformat = tfDefault
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = misyurt
+   Material.Texture.image = .\data\materials\buildings\mis\misyurt.dds
+   Material.Texture.textureformat = tfDefault
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = misdecor
+   Material.Texture.image = .\data\materials\buildings\mis\misdecor.dds
+   Material.Texture.textureformat = tfDefault
+section.end
+
+// ******************************** ADDON START **********************************
+//dlc1
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = denaca
+   Material.Texture.image = .\data\materials\buildings\den\denaca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = denart
+   Material.Texture.image = .\data\materials\buildings\den\denart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = denba2
+   Material.Texture.image = .\data\materials\buildings\den\denba2.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = denbar
+   Material.Texture.image = .\data\materials\buildings\den\denbar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = denbla
+   Material.Texture.image = .\data\materials\buildings\den\denbla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = dencen
+   Material.Texture.image = .\data\materials\buildings\den\dencen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = dendip
+   Material.Texture.image = .\data\materials\buildings\den\dendip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = denhou
+   Material.Texture.image = .\data\materials\buildings\den\denhou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = densta
+   Material.Texture.image = .\data\materials\buildings\den\densta.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = dentem
+   Material.Texture.image = .\data\materials\buildings\den\dentem.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = netaca
+   Material.Texture.image = .\data\materials\buildings\net\netaca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = netart
+   Material.Texture.image = .\data\materials\buildings\net\netart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = netba2
+   Material.Texture.image = .\data\materials\buildings\net\netba2.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = netbar
+   Material.Texture.image = .\data\materials\buildings\net\netbar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = netbla
+   Material.Texture.image = .\data\materials\buildings\net\netbla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = netcen
+   Material.Texture.image = .\data\materials\buildings\net\netcen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = netdip
+   Material.Texture.image = .\data\materials\buildings\net\netdip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = nethou
+   Material.Texture.image = .\data\materials\buildings\net\nethou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = netsta
+   Material.Texture.image = .\data\materials\buildings\net\netsta.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = nettem
+   Material.Texture.image = .\data\materials\buildings\net\nettem.dds
+section.end
+//dlc2
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = bavaca
+   Material.Texture.image = .\data\materials\buildings\bav\bavaca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = bavart
+   Material.Texture.image = .\data\materials\buildings\bav\bavart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = bavba2
+   Material.Texture.image = .\data\materials\buildings\bav\bavba2.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = bavbar
+   Material.Texture.image = .\data\materials\buildings\bav\bavbar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = bavbla
+   Material.Texture.image = .\data\materials\buildings\bav\bavbla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = bavcen
+   Material.Texture.image = .\data\materials\buildings\bav\bavcen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = bavdip
+   Material.Texture.image = .\data\materials\buildings\bav\bavdip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = bavhou
+   Material.Texture.image = .\data\materials\buildings\bav\bavhou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = bavsta
+   Material.Texture.image = .\data\materials\buildings\bav\bavsta.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = bavtem
+   Material.Texture.image = .\data\materials\buildings\bav\bavtem.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = saxaca
+   Material.Texture.image = .\data\materials\buildings\sax\saxaca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = saxart
+   Material.Texture.image = .\data\materials\buildings\sax\saxart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = saxba2
+   Material.Texture.image = .\data\materials\buildings\sax\saxba2.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = saxbar
+   Material.Texture.image = .\data\materials\buildings\sax\saxbar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = saxbla
+   Material.Texture.image = .\data\materials\buildings\sax\saxbla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = saxcen
+   Material.Texture.image = .\data\materials\buildings\sax\saxcen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = saxdip
+   Material.Texture.image = .\data\materials\buildings\sax\saxdip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = saxhou
+   Material.Texture.image = .\data\materials\buildings\sax\saxhou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = saxsta
+   Material.Texture.image = .\data\materials\buildings\sax\saxsta.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = saxtem
+   Material.Texture.image = .\data\materials\buildings\sax\saxtem.dds
+section.end
+//exp1
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scoaca
+   Material.Texture.image = .\data\materials\buildings\sco\scoaca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scoart
+   Material.Texture.image = .\data\materials\buildings\sco\scoart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scoba2
+   Material.Texture.image = .\data\materials\buildings\sco\scoba2.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scobar
+   Material.Texture.image = .\data\materials\buildings\sco\scobar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scobla
+   Material.Texture.image = .\data\materials\buildings\sco\scobla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scocen
+   Material.Texture.image = .\data\materials\buildings\sco\scocen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scodip
+   Material.Texture.image = .\data\materials\buildings\sco\scodip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scohou
+   Material.Texture.image = .\data\materials\buildings\sco\scohou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scosta
+   Material.Texture.image = .\data\materials\buildings\sco\scosta.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scotem
+   Material.Texture.image = .\data\materials\buildings\sco\scotem.dds
+section.end
+
+// winter
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scoacaw
+   Material.Texture.image = .\data\materials\buildings\sco\scoacaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scoartw
+   Material.Texture.image = .\data\materials\buildings\sco\scoartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scoba2w
+   Material.Texture.image = .\data\materials\buildings\sco\scoba2w.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scobarw
+   Material.Texture.image = .\data\materials\buildings\sco\scobarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scoblaw
+   Material.Texture.image = .\data\materials\buildings\sco\scoblaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scocenw
+   Material.Texture.image = .\data\materials\buildings\sco\scocenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scodipw
+   Material.Texture.image = .\data\materials\buildings\sco\scodipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scohouw
+   Material.Texture.image = .\data\materials\buildings\sco\scohouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scostaw
+   Material.Texture.image = .\data\materials\buildings\sco\scostaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scotemw
+   Material.Texture.image = .\data\materials\buildings\sco\scotemw.dds
+section.end
+//winterbuildings
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = algcenw
+   Material.Texture.image = .\data\materials\buildings\alg\algcenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = alghouw
+   Material.Texture.image = .\data\materials\buildings\alg\alghouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ausacaw
+   Material.Texture.image = .\data\materials\buildings\aus\ausacaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ausartw
+   Material.Texture.image = .\data\materials\buildings\aus\ausartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ausba2w
+   Material.Texture.image = .\data\materials\buildings\aus\ausba2w.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ausbarw
+   Material.Texture.image = .\data\materials\buildings\aus\ausbarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ausblaw
+   Material.Texture.image = .\data\materials\buildings\aus\ausblaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = auscenw
+   Material.Texture.image = .\data\materials\buildings\aus\auscenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ausdipw
+   Material.Texture.image = .\data\materials\buildings\aus\ausdipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = aushouw
+   Material.Texture.image = .\data\materials\buildings\aus\aushouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ausstaw
+   Material.Texture.image = .\data\materials\buildings\aus\ausstaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = austemw
+   Material.Texture.image = .\data\materials\buildings\aus\austemw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = eurcoaw
+   Material.Texture.image = .\data\materials\buildings\commoneur\eurcoaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = eurgolw
+   Material.Texture.image = .\data\materials\buildings\commoneur\eurgolw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = eurirow
+   Material.Texture.image = .\data\materials\buildings\commoneur\eurirow.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = eurmarw
+   Material.Texture.image = .\data\materials\buildings\commoneur\eurmarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = eurmilw
+   Material.Texture.image = .\data\materials\buildings\commoneur\eurmilw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = eurporw
+   Material.Texture.image = .\data\materials\buildings\commoneur\eurporw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = eurstow
+   Material.Texture.image = .\data\materials\buildings\commoneur\eurstow.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = eurtoww
+   Material.Texture.image = .\data\materials\buildings\commoneur\eurtoww.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rusmarw
+   Material.Texture.image = .\data\materials\buildings\commonrus\rusmarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rusmilw
+   Material.Texture.image = .\data\materials\buildings\commonrus\rusmilw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rusporw
+   Material.Texture.image = .\data\materials\buildings\commonrus\rusporw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = russtow
+   Material.Texture.image = .\data\materials\buildings\commonrus\russtow.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rustoww
+   Material.Texture.image = .\data\materials\buildings\commonrus\rustoww.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turmarw
+   Material.Texture.image = .\data\materials\buildings\commontur\turmarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turmilw
+   Material.Texture.image = .\data\materials\buildings\commontur\turmilw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turporw
+   Material.Texture.image = .\data\materials\buildings\commontur\turporw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turstow
+   Material.Texture.image = .\data\materials\buildings\commontur\turstow.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turtoww
+   Material.Texture.image = .\data\materials\buildings\commontur\turtoww.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = engacaw
+   Material.Texture.image = .\data\materials\buildings\eng\engacaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = engartw
+   Material.Texture.image = .\data\materials\buildings\eng\engartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = engba2w
+   Material.Texture.image = .\data\materials\buildings\eng\engba2w.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = engbarw
+   Material.Texture.image = .\data\materials\buildings\eng\engbarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = engblaw
+   Material.Texture.image = .\data\materials\buildings\eng\engblaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = engcenw
+   Material.Texture.image = .\data\materials\buildings\eng\engcenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = engdipw
+   Material.Texture.image = .\data\materials\buildings\eng\engdipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = enghouw
+   Material.Texture.image = .\data\materials\buildings\eng\enghouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = engstaw
+   Material.Texture.image = .\data\materials\buildings\eng\engstaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = engtemw
+   Material.Texture.image = .\data\materials\buildings\eng\engtemw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = fraacaw
+   Material.Texture.image = .\data\materials\buildings\fra\fraacaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = fraartw
+   Material.Texture.image = .\data\materials\buildings\fra\fraartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = fraba2w
+   Material.Texture.image = .\data\materials\buildings\fra\fraba2w.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = frabarw
+   Material.Texture.image = .\data\materials\buildings\fra\frabarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = frablaw
+   Material.Texture.image = .\data\materials\buildings\fra\frablaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = fracenw
+   Material.Texture.image = .\data\materials\buildings\fra\fracenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = fradipw
+   Material.Texture.image = .\data\materials\buildings\fra\fradipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = frahouw
+   Material.Texture.image = .\data\materials\buildings\fra\frahouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = frastaw
+   Material.Texture.image = .\data\materials\buildings\fra\frastaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = fratemw
+   Material.Texture.image = .\data\materials\buildings\fra\fratemw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = polacaw
+   Material.Texture.image = .\data\materials\buildings\pol\polacaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = polartw
+   Material.Texture.image = .\data\materials\buildings\pol\polartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = polba2w
+   Material.Texture.image = .\data\materials\buildings\pol\polba2w.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = polbarw
+   Material.Texture.image = .\data\materials\buildings\pol\polbarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = polblaw
+   Material.Texture.image = .\data\materials\buildings\pol\polblaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = polcenw
+   Material.Texture.image = .\data\materials\buildings\pol\polcenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = poldipw
+   Material.Texture.image = .\data\materials\buildings\pol\poldipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = polhouw
+   Material.Texture.image = .\data\materials\buildings\pol\polhouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = polstaw
+   Material.Texture.image = .\data\materials\buildings\pol\polstaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = poltemw
+   Material.Texture.image = .\data\materials\buildings\pol\poltemw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = pruacaw
+   Material.Texture.image = .\data\materials\buildings\pru\pruacaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = pruartw
+   Material.Texture.image = .\data\materials\buildings\pru\pruartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = pruba2w
+   Material.Texture.image = .\data\materials\buildings\pru\pruba2w.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = prubarw
+   Material.Texture.image = .\data\materials\buildings\pru\prubarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = prublaw
+   Material.Texture.image = .\data\materials\buildings\pru\prublaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = prucenw
+   Material.Texture.image = .\data\materials\buildings\pru\prucenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = prudipw
+   Material.Texture.image = .\data\materials\buildings\pru\prudipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = pruhouw
+   Material.Texture.image = .\data\materials\buildings\pru\pruhouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = prustaw
+   Material.Texture.image = .\data\materials\buildings\pru\prustaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = prutemw
+   Material.Texture.image = .\data\materials\buildings\pru\prutemw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rusacaw
+   Material.Texture.image = .\data\materials\buildings\rus\rusacaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rusartw
+   Material.Texture.image = .\data\materials\buildings\rus\rusartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rusba2w
+   Material.Texture.image = .\data\materials\buildings\rus\rusba2w.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rusbarw
+   Material.Texture.image = .\data\materials\buildings\rus\rusbarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rusblaw
+   Material.Texture.image = .\data\materials\buildings\rus\rusblaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ruscenw
+   Material.Texture.image = .\data\materials\buildings\rus\ruscenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rusdipw
+   Material.Texture.image = .\data\materials\buildings\rus\rusdipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rushouw
+   Material.Texture.image = .\data\materials\buildings\rus\rushouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = russtaw
+   Material.Texture.image = .\data\materials\buildings\rus\russtaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rustemw
+   Material.Texture.image = .\data\materials\buildings\rus\rustemw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spaacaw
+   Material.Texture.image = .\data\materials\buildings\spa\spaacaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spaartw
+   Material.Texture.image = .\data\materials\buildings\spa\spaartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spaba2w
+   Material.Texture.image = .\data\materials\buildings\spa\spaba2w.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spabarw
+   Material.Texture.image = .\data\materials\buildings\spa\spabarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spablaw
+   Material.Texture.image = .\data\materials\buildings\spa\spablaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spacenw
+   Material.Texture.image = .\data\materials\buildings\spa\spacenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spadipw
+   Material.Texture.image = .\data\materials\buildings\spa\spadipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spahouw
+   Material.Texture.image = .\data\materials\buildings\spa\spahouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spastaw
+   Material.Texture.image = .\data\materials\buildings\spa\spastaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spatemw
+   Material.Texture.image = .\data\materials\buildings\spa\spatemw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = sweacaw
+   Material.Texture.image = .\data\materials\buildings\swe\sweacaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = sweartw
+   Material.Texture.image = .\data\materials\buildings\swe\sweartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = sweba2w
+   Material.Texture.image = .\data\materials\buildings\swe\sweba2w.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swebarw
+   Material.Texture.image = .\data\materials\buildings\swe\swebarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = sweblaw
+   Material.Texture.image = .\data\materials\buildings\swe\sweblaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swecenw
+   Material.Texture.image = .\data\materials\buildings\swe\swecenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swedipw
+   Material.Texture.image = .\data\materials\buildings\swe\swedipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swehouw
+   Material.Texture.image = .\data\materials\buildings\swe\swehouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swestaw
+   Material.Texture.image = .\data\materials\buildings\swe\swestaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swetemw
+   Material.Texture.image = .\data\materials\buildings\swe\swetemw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turacaw
+   Material.Texture.image = .\data\materials\buildings\tur\turacaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turartw
+   Material.Texture.image = .\data\materials\buildings\tur\turartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turbarw
+   Material.Texture.image = .\data\materials\buildings\tur\turbarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turblaw
+   Material.Texture.image = .\data\materials\buildings\tur\turblaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turcenw
+   Material.Texture.image = .\data\materials\buildings\tur\turcenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turdipw
+   Material.Texture.image = .\data\materials\buildings\tur\turdipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turhouw
+   Material.Texture.image = .\data\materials\buildings\tur\turhouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turstaw
+   Material.Texture.image = .\data\materials\buildings\tur\turstaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turtemw
+   Material.Texture.image = .\data\materials\buildings\tur\turtemw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukracaw
+   Material.Texture.image = .\data\materials\buildings\ukr\ukracaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukrartw
+   Material.Texture.image = .\data\materials\buildings\ukr\ukrartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukrbarw
+   Material.Texture.image = .\data\materials\buildings\ukr\ukrbarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukrblaw
+   Material.Texture.image = .\data\materials\buildings\ukr\ukrblaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukrcenw
+   Material.Texture.image = .\data\materials\buildings\ukr\ukrcenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukrdipw
+   Material.Texture.image = .\data\materials\buildings\ukr\ukrdipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukrhouw
+   Material.Texture.image = .\data\materials\buildings\ukr\ukrhouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukrstaw
+   Material.Texture.image = .\data\materials\buildings\ukr\ukrstaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukrtemw
+   Material.Texture.image = .\data\materials\buildings\ukr\ukrtemw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = venacaw
+   Material.Texture.image = .\data\materials\buildings\ven\venacaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = venartw
+   Material.Texture.image = .\data\materials\buildings\ven\venartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = venba2w
+   Material.Texture.image = .\data\materials\buildings\ven\venba2w.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = venbarw
+   Material.Texture.image = .\data\materials\buildings\ven\venbarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = venblaw
+   Material.Texture.image = .\data\materials\buildings\ven\venblaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = vencenw
+   Material.Texture.image = .\data\materials\buildings\ven\vencenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = vendipw
+   Material.Texture.image = .\data\materials\buildings\ven\vendipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = venhouw
+   Material.Texture.image = .\data\materials\buildings\ven\venhouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = venstaw
+   Material.Texture.image = .\data\materials\buildings\ven\venstaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ventemw
+   Material.Texture.image = .\data\materials\buildings\ven\ventemw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = romtemw
+   Material.Texture.image = .\data\materials\buildings\rom\romtemw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = romcenw
+   Material.Texture.image = .\data\materials\buildings\rom\romcenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukrporw
+   Material.Texture.image = .\data\materials\buildings\ukr\ukrporw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spastow
+   Material.Texture.image = .\data\materials\buildings\spa\spastow.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = spamarw
+   Material.Texture.image = .\data\materials\buildings\spa\spamarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = denacaw
+   Material.Texture.image = .\data\materials\buildings\den\denacaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = denartw
+   Material.Texture.image = .\data\materials\buildings\den\denartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = denba2w
+   Material.Texture.image = .\data\materials\buildings\den\denba2w.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = denbarw
+   Material.Texture.image = .\data\materials\buildings\den\denbarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = denblaw
+   Material.Texture.image = .\data\materials\buildings\den\denblaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = dencenw
+   Material.Texture.image = .\data\materials\buildings\den\dencenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = dendipw
+   Material.Texture.image = .\data\materials\buildings\den\dendipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = denhouw
+   Material.Texture.image = .\data\materials\buildings\den\denhouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = denstaw
+   Material.Texture.image = .\data\materials\buildings\den\denstaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = dentemw
+   Material.Texture.image = .\data\materials\buildings\den\dentemw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = netacaw
+   Material.Texture.image = .\data\materials\buildings\net\netacaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = netartw
+   Material.Texture.image = .\data\materials\buildings\net\netartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = netba2w
+   Material.Texture.image = .\data\materials\buildings\net\netba2w.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = netbarw
+   Material.Texture.image = .\data\materials\buildings\net\netbarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = netblaw
+   Material.Texture.image = .\data\materials\buildings\net\netblaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = netcenw
+   Material.Texture.image = .\data\materials\buildings\net\netcenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = netdipw
+   Material.Texture.image = .\data\materials\buildings\net\netdipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = nethouw
+   Material.Texture.image = .\data\materials\buildings\net\nethouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = netstaw
+   Material.Texture.image = .\data\materials\buildings\net\netstaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = nettemw
+   Material.Texture.image = .\data\materials\buildings\net\nettemw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = bavacaw
+   Material.Texture.image = .\data\materials\buildings\bav\bavacaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = bavartw
+   Material.Texture.image = .\data\materials\buildings\bav\bavartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = bavba2w
+   Material.Texture.image = .\data\materials\buildings\bav\bavba2w.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = bavbarw
+   Material.Texture.image = .\data\materials\buildings\bav\bavbarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = bavblaw
+   Material.Texture.image = .\data\materials\buildings\bav\bavblaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = bavcenw
+   Material.Texture.image = .\data\materials\buildings\bav\bavcenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = bavdipw
+   Material.Texture.image = .\data\materials\buildings\bav\bavdipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = bavhouw
+   Material.Texture.image = .\data\materials\buildings\bav\bavhouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = bavstaw
+   Material.Texture.image = .\data\materials\buildings\bav\bavstaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = bavtemw
+   Material.Texture.image = .\data\materials\buildings\bav\bavtemw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = saxacaw
+   Material.Texture.image = .\data\materials\buildings\sax\saxacaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = saxartw
+   Material.Texture.image = .\data\materials\buildings\sax\saxartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = saxba2w
+   Material.Texture.image = .\data\materials\buildings\sax\saxba2w.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = saxbarw
+   Material.Texture.image = .\data\materials\buildings\sax\saxbarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = saxblaw
+   Material.Texture.image = .\data\materials\buildings\sax\saxblaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = saxcenw
+   Material.Texture.image = .\data\materials\buildings\sax\saxcenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = saxdipw
+   Material.Texture.image = .\data\materials\buildings\sax\saxdipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = saxhouw
+   Material.Texture.image = .\data\materials\buildings\sax\saxhouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = saxstaw
+   Material.Texture.image = .\data\materials\buildings\sax\saxstaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = saxtemw
+   Material.Texture.image = .\data\materials\buildings\sax\saxtemw.dds
+section.end
+
+// shared material
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = scaffoldw
+   Material.Texture.image = .\data\materials\buildings\constructor\scaffoldw.dds
+   Material.Texture.textureformat = tfDefault
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = debrisw
+   Material.Texture.image = .\data\materials\buildings\constructor\debrisw.dds
+   Material.Texture.textureformat = tfDefault
+section.end
+section.begin {refurl=.\data\materials\ref\refbase.mat}
+   Material.Name = detailw
+   Material.Texture.image = .\data\materials\buildings\constructor\detailw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = fishnetw
+   Material.BlendingMode =w bmAlphaTest50
+   Material.Texture.image = .\data\materials\buildings\commoneur\fishnet.dds
+   Material.Texture.textureformat = tfDefault
+section.end
+
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = eurswaw
+   Material.Texture.image = .\data\materials\buildings\commonrus\eurswaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = turswaw
+   Material.Texture.image = .\data\materials\buildings\commonrus\turswaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = russwaw
+   Material.Texture.image = .\data\materials\buildings\commonrus\russwaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = ukrwwaw
+   Material.Texture.image = .\data\materials\buildings\commonrus\ukrwwaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = misblgw
+   Material.Texture.image = .\data\materials\buildings\mis\misblgw.dds
+   Material.Texture.textureformat = tfDefault
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = misbridgew
+   Material.Texture.image = .\data\materials\buildings\mis\misbridgew.dds
+   Material.Texture.textureformat = tfDefault
+   Material.BackProperties.Ambient.Red = 0.375
+   Material.BackProperties.Ambient.Green = 0.375
+   Material.BackProperties.Ambient.Blue = 0.375
+   Material.BackProperties.Diffuse.Red = 0.1484375
+   Material.BackProperties.Diffuse.Green = 0.1484375
+   Material.BackProperties.Diffuse.Blue = 0.1484375
+   Material.FrontProperties.Ambient.Red = 0.375
+   Material.FrontProperties.Ambient.Green = 0.375
+   Material.FrontProperties.Ambient.Blue = 0.375
+   Material.FrontProperties.Diffuse.Red = 0.1484375
+   Material.FrontProperties.Diffuse.Green = 0.1484375
+   Material.FrontProperties.Diffuse.Blue = 0.1484375
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = miscommandcenterw
+   Material.Texture.image = .\data\materials\buildings\mis\miscommandcenterw.dds
+   Material.Texture.textureformat = tfDefault
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = mistentw
+   Material.Texture.image = .\data\materials\buildings\mis\mistentw.dds
+   Material.Texture.textureformat = tfDefault
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = miswellw
+   Material.Texture.image = .\data\materials\buildings\mis\miswellw.dds
+   Material.Texture.textureformat = tfDefault
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = misyurtw
+   Material.Texture.image = .\data\materials\buildings\mis\misyurtw.dds
+   Material.Texture.textureformat = tfDefault
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = misdecorw
+   Material.Texture.image = .\data\materials\buildings\mis\misdecorw.dds
+   Material.Texture.textureformat = tfDefault
+section.end
+//dlc3
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = poraca
+   Material.Texture.image = .\data\materials\buildings\por\poraca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = porart
+   Material.Texture.image = .\data\materials\buildings\por\porart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = porba2
+   Material.Texture.image = .\data\materials\buildings\por\porba2.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = porbar
+   Material.Texture.image = .\data\materials\buildings\por\porbar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = porbla
+   Material.Texture.image = .\data\materials\buildings\por\porbla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = porcen
+   Material.Texture.image = .\data\materials\buildings\por\porcen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = pordip
+   Material.Texture.image = .\data\materials\buildings\por\pordip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = porhou
+   Material.Texture.image = .\data\materials\buildings\por\porhou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = porsta
+   Material.Texture.image = .\data\materials\buildings\por\porsta.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = portem
+   Material.Texture.image = .\data\materials\buildings\por\portem.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = porpor
+   Material.Texture.image = .\data\materials\buildings\por\porpor.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = hunaca
+   Material.Texture.image = .\data\materials\buildings\hun\hunaca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = hunart
+   Material.Texture.image = .\data\materials\buildings\hun\hunart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = hunba2
+   Material.Texture.image = .\data\materials\buildings\hun\hunba2.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = hunbar
+   Material.Texture.image = .\data\materials\buildings\hun\hunbar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = hunbla
+   Material.Texture.image = .\data\materials\buildings\hun\hunbla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = huncen
+   Material.Texture.image = .\data\materials\buildings\hun\huncen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = hundip
+   Material.Texture.image = .\data\materials\buildings\hun\hundip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = hunhou
+   Material.Texture.image = .\data\materials\buildings\hun\hunhou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = hunsta
+   Material.Texture.image = .\data\materials\buildings\hun\hunsta.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = huntem
+   Material.Texture.image = .\data\materials\buildings\hun\huntem.dds
+section.end
+
+// winter
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = poracaw
+   Material.Texture.image = .\data\materials\buildings\por\poracaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = porartw
+   Material.Texture.image = .\data\materials\buildings\por\porartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = porba2w
+   Material.Texture.image = .\data\materials\buildings\por\porba2w.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = porbarw
+   Material.Texture.image = .\data\materials\buildings\por\porbarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = porblaw
+   Material.Texture.image = .\data\materials\buildings\por\porblaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = porcenw
+   Material.Texture.image = .\data\materials\buildings\por\porcenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = pordipw
+   Material.Texture.image = .\data\materials\buildings\por\pordipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = porhouw
+   Material.Texture.image = .\data\materials\buildings\por\porhouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = porstaw
+   Material.Texture.image = .\data\materials\buildings\por\porstaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = portemw
+   Material.Texture.image = .\data\materials\buildings\por\portemw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = porporw
+   Material.Texture.image = .\data\materials\buildings\por\porporw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = hunacaw
+   Material.Texture.image = .\data\materials\buildings\hun\hunacaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = hunartw
+   Material.Texture.image = .\data\materials\buildings\hun\hunartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = hunba2w
+   Material.Texture.image = .\data\materials\buildings\hun\hunba2w.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = hunbarw
+   Material.Texture.image = .\data\materials\buildings\hun\hunbarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = hunblaw
+   Material.Texture.image = .\data\materials\buildings\hun\hunblaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = huncenw
+   Material.Texture.image = .\data\materials\buildings\hun\huncenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = hundipw
+   Material.Texture.image = .\data\materials\buildings\hun\hundipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = hunhouw
+   Material.Texture.image = .\data\materials\buildings\hun\hunhouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = hunstaw
+   Material.Texture.image = .\data\materials\buildings\hun\hunstaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = huntemw
+   Material.Texture.image = .\data\materials\buildings\hun\huntemw.dds
+section.end
+//dlc4
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swiaca
+   Material.Texture.image = .\data\materials\buildings\swi\swiaca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swiart
+   Material.Texture.image = .\data\materials\buildings\swi\swiart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swiba2
+   Material.Texture.image = .\data\materials\buildings\swi\swiba2.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swibar
+   Material.Texture.image = .\data\materials\buildings\swi\swibar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swibla
+   Material.Texture.image = .\data\materials\buildings\swi\swibla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swicen
+   Material.Texture.image = .\data\materials\buildings\swi\swicen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swidip
+   Material.Texture.image = .\data\materials\buildings\swi\swidip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swihou
+   Material.Texture.image = .\data\materials\buildings\swi\swihou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swista
+   Material.Texture.image = .\data\materials\buildings\swi\swista.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = switem
+   Material.Texture.image = .\data\materials\buildings\swi\switem.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = pieaca
+   Material.Texture.image = .\data\materials\buildings\pie\pieaca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = pieart
+   Material.Texture.image = .\data\materials\buildings\pie\pieart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = pieba2
+   Material.Texture.image = .\data\materials\buildings\pie\pieba2.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = piebar
+   Material.Texture.image = .\data\materials\buildings\pie\piebar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = piebla
+   Material.Texture.image = .\data\materials\buildings\pie\piebla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = piecen
+   Material.Texture.image = .\data\materials\buildings\pie\piecen.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = piedip
+   Material.Texture.image = .\data\materials\buildings\pie\piedip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = piehou
+   Material.Texture.image = .\data\materials\buildings\pie\piehou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = piesta
+   Material.Texture.image = .\data\materials\buildings\pie\piesta.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = pietem
+   Material.Texture.image = .\data\materials\buildings\pie\pietem.dds
+section.end
+
+// winter
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swiacaw
+   Material.Texture.image = .\data\materials\buildings\swi\swiacaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swiartw
+   Material.Texture.image = .\data\materials\buildings\swi\swiartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swiba2w
+   Material.Texture.image = .\data\materials\buildings\swi\swiba2w.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swibarw
+   Material.Texture.image = .\data\materials\buildings\swi\swibarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swiblaw
+   Material.Texture.image = .\data\materials\buildings\swi\swiblaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swicenw
+   Material.Texture.image = .\data\materials\buildings\swi\swicenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swidipw
+   Material.Texture.image = .\data\materials\buildings\swi\swidipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swihouw
+   Material.Texture.image = .\data\materials\buildings\swi\swihouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = swistaw
+   Material.Texture.image = .\data\materials\buildings\swi\swistaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = switemw
+   Material.Texture.image = .\data\materials\buildings\swi\switemw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = pieacaw
+   Material.Texture.image = .\data\materials\buildings\pie\pieacaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = pieartw
+   Material.Texture.image = .\data\materials\buildings\pie\pieartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = pieba2w
+   Material.Texture.image = .\data\materials\buildings\pie\pieba2w.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = piebarw
+   Material.Texture.image = .\data\materials\buildings\pie\piebarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = pieblaw
+   Material.Texture.image = .\data\materials\buildings\pie\pieblaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = piecenw
+   Material.Texture.image = .\data\materials\buildings\pie\piecenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = piedipw
+   Material.Texture.image = .\data\materials\buildings\pie\piedipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = piehouw
+   Material.Texture.image = .\data\materials\buildings\pie\piehouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = piestaw
+   Material.Texture.image = .\data\materials\buildings\pie\piestaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = pietemw
+   Material.Texture.image = .\data\materials\buildings\pie\pietemw.dds
+section.end
+
+// ******************************** ADDON FINISH *********************************

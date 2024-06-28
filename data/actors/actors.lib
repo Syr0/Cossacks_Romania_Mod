@@ -528,6 +528,14 @@ section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
    LODActorFileName = .\data\actors\buildings\ven\ventem.actor
 section.end
 section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = romtem
+   LODActorFileName = .\data\actors\buildings\rom\romtem.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = romcen
+   LODActorFileName = .\data\actors\buildings\rom\romcen.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
    LODActorName = ukrpor
    LODActorFileName = .\data\actors\buildings\ukr\ukrpor.actor
 section.end
@@ -2270,6 +2278,14 @@ section.end
 section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
    LODActorName = ventema
    LODActorFileName = .\data\actors\buildings\ven\attach\ventema.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = romtema
+   LODActorFileName = .\data\actors\buildings\rom\attach\romtema.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = romcena
+   LODActorFileName = .\data\actors\buildings\rom\attach\romcena.actor
 section.end
 section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
    LODActorName = ukrpora
