@@ -44,8 +44,6 @@ Uniques
 Hongrie
 	@swi
 Suisse
-	@rom
-Roumanie
 	@*************Symbols************************
 	@def
 #151
