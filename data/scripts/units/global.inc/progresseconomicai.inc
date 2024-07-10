@@ -370,7 +370,7 @@ section.begin
       [*] = ;   Result :=  gc_ai_unit_reitar;
       [*] = ;   if (_ai_NationIsEurope(cid) and (gPlayer[plind].aidata.bFlags[gc_ai_flag_drag_cav17])) then
       [*] = ;   Result := gc_ai_unit_dragoon17;
-      [*] = ;   if ((cid=cid_ukr) or (cid=cid_aus) or (cid=cid_pol) or (cid=cid_rus) or (cid=cid_tur)) and (gPlayer[plind].aidata.bFlags[gc_ai_flag_uniq_cav17]) then
+      [*] = ;   if ((cid=cid_ukr) or (cid=cid_aus) or (cid=cid_pol) or (cid=cid_rus) or (cid=cid_rom) or (cid=cid_tur)) and (gPlayer[plind].aidata.bFlags[gc_ai_flag_uniq_cav17]) then
       [*] = ;   Result := gc_ai_unit_uniq_cav17;
       [*] = ;end;
       [*] = ;

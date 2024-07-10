@@ -55,6 +55,8 @@ section.begin
    ObjectItems[*].PropertiesFileName=.\data\objects\units\hussarrom.prop
    ObjectItems[*].PropertiesFileName=.\data\objects\units\lancerrom.prop
    ObjectItems[*].PropertiesFileName=.\data\objects\units\pandurrom.prop
+   ObjectItems[*].PropertiesFileName=.\data\objects\units\officer17rom.prop
+   ObjectItems[*].PropertiesFileName=.\data\objects\units\officer18rom.prop
    ObjectItems[*].PropertiesFileName=.\data\objects\units\attach\peaaus_tools.prop
    ObjectItems[*].PropertiesFileName=.\data\objects\units\attach\peaeng_tools.prop
    ObjectItems[*].PropertiesFileName=.\data\objects\units\attach\peapol_tools.prop

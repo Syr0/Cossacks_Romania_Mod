@@ -623,6 +623,38 @@ section.begin {refkey=default}
    Material.Texture.image = .\data\terrain\decals\buildings\romcend.dds
 section.end
 section.begin {refkey=default}
+   Material.Name = rombard
+   Material.Texture.image = .\data\terrain\decals\buildings\rombard.dds
+section.end
+section.begin {refkey=default}
+   Material.Name = romba2d
+   Material.Texture.image = .\data\terrain\decals\buildings\romba2d.dds
+section.end
+section.begin {refkey=default}
+   Material.Name = romblad
+   Material.Texture.image = .\data\terrain\decals\buildings\romblad.dds
+section.end
+section.begin {refkey=default}
+   Material.Name = romartd
+   Material.Texture.image = .\data\terrain\decals\buildings\romartd.dds
+section.end
+section.begin {refkey=default}
+   Material.Name = romacad
+   Material.Texture.image = .\data\terrain\decals\buildings\romacad.dds
+section.end
+section.begin {refkey=default}
+   Material.Name = romdipd
+   Material.Texture.image = .\data\terrain\decals\buildings\romdipd.dds
+section.end
+section.begin {refkey=default}
+   Material.Name = romhoud
+   Material.Texture.image = .\data\terrain\decals\buildings\romhoud.dds
+section.end
+section.begin {refkey=default}
+   Material.Name = romstad
+   Material.Texture.image = .\data\terrain\decals\buildings\romstad.dds
+section.end
+section.begin {refkey=default}
    Material.Name = helper1
    Material.Texture.image = .\data\terrain\decals\buildings\helper1.dds
 section.end
@@ -1212,6 +1244,38 @@ section.end
 section.begin {refkey=default}
    Material.Name = romcendw
    Material.Texture.image = .\data\terrain\decals\buildings\romcendw.dds
+section.end
+section.begin {refkey=default}
+   Material.Name = rombardw
+   Material.Texture.image = .\data\terrain\decals\buildings\rombardw.dds
+section.end
+section.begin {refkey=default}
+   Material.Name = romba2dw
+   Material.Texture.image = .\data\terrain\decals\buildings\romba2dw.dds
+section.end
+section.begin {refkey=default}
+   Material.Name = rombladw
+   Material.Texture.image = .\data\terrain\decals\buildings\rombladw.dds
+section.end
+section.begin {refkey=default}
+   Material.Name = romartdw
+   Material.Texture.image = .\data\terrain\decals\buildings\romartdw.dds
+section.end
+section.begin {refkey=default}
+   Material.Name = romacadw
+   Material.Texture.image = .\data\terrain\decals\buildings\romacadw.dds
+section.end
+section.begin {refkey=default}
+   Material.Name = romdipdw
+   Material.Texture.image = .\data\terrain\decals\buildings\romdipdw.dds
+section.end
+section.begin {refkey=default}
+   Material.Name = romhoudw
+   Material.Texture.image = .\data\terrain\decals\buildings\romhoudw.dds
+section.end
+section.begin {refkey=default}
+   Material.Name = romstadw
+   Material.Texture.image = .\data\terrain\decals\buildings\romstadw.dds
 section.end
 section.begin {refkey=default}
    Material.Name = turtemdw

@@ -43,14 +43,6 @@ section.begin {refkey=default}
    Decal.height = 2
 section.end
 section.begin {refkey=default}
-   name = christmastreed
-   Decal.material.libmaterialname = christmastreed
-   Decal.SummerLibMaterialName = christmastreed
-   Decal.WinterLibMaterialName = christmastreed
-   Decal.width = 4
-   Decal.height = 4
-section.end
-section.begin {refkey=default}
    name = polacad
    Decal.material.libmaterialname = polacad
    Decal.SummerLibMaterialName = polacad
@@ -404,14 +396,6 @@ section.begin {refkey=default}
    Decal.height = 8
 section.end
 section.begin {refkey=default}
-   name = enghoud
-   Decal.material.libmaterialname = enghoud
-   Decal.SummerLibMaterialName = enghoud
-   Decal.WinterLibMaterialName = enghoudw
-   Decal.width = 8
-   Decal.height = 8
-section.end
-section.begin {refkey=default}
    name = engstad
    Decal.material.libmaterialname = engstad
    Decal.SummerLibMaterialName = engstad
@@ -448,14 +432,6 @@ section.begin {refkey=default}
    Decal.material.libmaterialname = eurswad
    Decal.SummerLibMaterialName = eurswad
    Decal.WinterLibMaterialName = eurswadw
-   Decal.width = 8
-   Decal.height = 8
-section.end
-section.begin {refkey=default}
-   name = eurtowd
-   Decal.material.libmaterialname = eurtowd
-   Decal.SummerLibMaterialName = eurtowd
-   Decal.WinterLibMaterialName = eurtowdw
    Decal.width = 8
    Decal.height = 8
 section.end
@@ -748,14 +724,6 @@ section.begin {refkey=default}
    Decal.height = 8
 section.end
 section.begin {refkey=default}
-   name = rustowd
-   Decal.material.libmaterialname = rustowd
-   Decal.SummerLibMaterialName = rustowd
-   Decal.WinterLibMaterialName = rustowdw
-   Decal.width = 8
-   Decal.height = 8
-section.end
-section.begin {refkey=default}
    name = spaacad
    Decal.material.libmaterialname = spaacad
    Decal.SummerLibMaterialName = spaacad
@@ -996,14 +964,6 @@ section.begin {refkey=default}
    Decal.height = 8
 section.end
 section.begin {refkey=default}
-   name = turtowd
-   Decal.material.libmaterialname = turtowd
-   Decal.SummerLibMaterialName = turtowd
-   Decal.WinterLibMaterialName = turtowdw
-   Decal.width = 8
-   Decal.height = 8
-section.end
-section.begin {refkey=default}
    name = ukracad
    Decal.material.libmaterialname = ukracad
    Decal.SummerLibMaterialName = ukracad
@@ -1148,6 +1108,86 @@ section.begin {refkey=default}
    Decal.height = 8
 section.end
 section.begin {refkey=default}
+   name = romacad
+   Decal.material.libmaterialname = romacad
+   Decal.SummerLibMaterialName = romacad
+   Decal.WinterLibMaterialName = romacadw
+   Decal.width = 8
+   Decal.height = 8
+section.end
+section.begin {refkey=default}
+   name = romartd
+   Decal.material.libmaterialname = romartd
+   Decal.SummerLibMaterialName = romartd
+   Decal.WinterLibMaterialName = romartdw
+   Decal.width = 7
+   Decal.height = 7
+section.end
+section.begin {refkey=default}
+   name = rombard
+   Decal.material.libmaterialname = rombard
+   Decal.SummerLibMaterialName = rombard
+   Decal.WinterLibMaterialName = rombardw
+   Decal.width = 7
+   Decal.height = 7
+section.end
+section.begin {refkey=default}
+   name = romba2d
+   Decal.material.libmaterialname = romba2d
+   Decal.SummerLibMaterialName = romba2d
+   Decal.WinterLibMaterialName = romba2dw
+   Decal.width = 8
+   Decal.height = 8
+section.end
+section.begin {refkey=default}
+   name = romblad
+   Decal.material.libmaterialname = romblad
+   Decal.SummerLibMaterialName = romblad
+   Decal.WinterLibMaterialName = rombladw
+   Decal.width = 7
+   Decal.height = 7
+section.end
+section.begin {refkey=default}
+   name = romcend
+   Decal.material.libmaterialname = romcend
+   Decal.SummerLibMaterialName = romcend
+   Decal.WinterLibMaterialName = romcendw
+   Decal.width = 8
+   Decal.height = 8
+section.end
+section.begin {refkey=default}
+   name = romtemd
+   Decal.material.libmaterialname = romtemd
+   Decal.SummerLibMaterialName = romtemd
+   Decal.WinterLibMaterialName = romtemdw
+   Decal.width = 8
+   Decal.height = 8
+section.end
+section.begin {refkey=default}
+   name = romdipd
+   Decal.material.libmaterialname = romdipd
+   Decal.SummerLibMaterialName = romdipd
+   Decal.WinterLibMaterialName = romdipdw
+   Decal.width = 8
+   Decal.height = 8
+section.end
+section.begin {refkey=default}
+   name = romhoud
+   Decal.material.libmaterialname = romhoud
+   Decal.SummerLibMaterialName = romhoud
+   Decal.WinterLibMaterialName = romhoudw
+   Decal.width = 8
+   Decal.height = 8
+section.end
+section.begin {refkey=default}
+   name = romstad
+   Decal.material.libmaterialname = romstad
+   Decal.SummerLibMaterialName = romstad
+   Decal.WinterLibMaterialName = romstadw
+   Decal.width = 8
+   Decal.height = 8
+section.end
+section.begin {refkey=default}
    name = turpord
    Decal.material.libmaterialname = turpord
    Decal.SummerLibMaterialName = turpord
@@ -1184,22 +1224,6 @@ section.begin {refkey=default}
    Decal.material.libmaterialname = spastod
    Decal.SummerLibMaterialName = spastod
    Decal.WinterLibMaterialName = spastodw
-   Decal.width = 8
-   Decal.height = 8
-section.end
-section.begin {refkey=default}
-   name = romtemd
-   Decal.material.libmaterialname = romtemd
-   Decal.SummerLibMaterialName = romtemd
-   Decal.WinterLibMaterialName = romtemdw
-   Decal.width = 8
-   Decal.height = 8
-section.end
-section.begin {refkey=default}
-   name = romcend
-   Decal.material.libmaterialname = romcend
-   Decal.SummerLibMaterialName = romcend
-   Decal.WinterLibMaterialName = romcendw
    Decal.width = 8
    Decal.height = 8
 section.end

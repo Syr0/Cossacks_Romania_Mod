@@ -1187,14 +1187,7 @@ section.begin {refkey=default}
    Decal.width = 8
    Decal.height = 8
 section.end
-section.begin {refkey=default}
-   name = romtemd
-   Decal.material.libmaterialname = romtemd
-   Decal.SummerLibMaterialName = romtemd
-   Decal.WinterLibMaterialName = romtemdw
-   Decal.width = 8
-   Decal.height = 8
-section.end
+
 
 // misc
 section.begin {refkey=default}
@@ -1302,42 +1295,6 @@ section.end
 
 // ******************************** ADDON START **********************************
 //dlc1
-section.begin
-   name = polartd
-   Decal : struct.begin
-      material.libmaterialname = polartd
-      SummerLibMaterialName = polartd
-      AutumnLibMaterialName = 
-      WinterLibMaterialName = polartdw
-      SpringLibMaterialName = 
-      width = 4
-      height = 4
-      selected = False
-      position : struct.begin
-         X = 0
-         Y = 0
-      struct.end
-      texoffset : struct.begin
-         X = 0
-         Y = 0
-      struct.end
-      scalefactor : struct.begin
-         X = 1
-         Y = 1
-      struct.end
-      texscale : struct.begin
-         X = 1
-         Y = 1
-      struct.end
-      texrollangle = 0
-      epsilon = 0.01
-      texrotateenable = True
-      texscaleenable = True
-      texoffsetenable = True
-      texoffsetbyrotate = True
-      texflipvertical = True
-   struct.end
-section.end
 section.begin {refkey=default}
    name = denacad
    Decal.material.libmaterialname = denacad
@@ -1499,42 +1456,6 @@ section.begin {refkey=default}
    Decal.height = 7
 section.end
 //dlc 2
-section.begin
-   name = polartd
-   Decal : struct.begin
-      material.libmaterialname = polartd
-      SummerLibMaterialName = polartd
-      AutumnLibMaterialName = 
-      WinterLibMaterialName = polartdw
-      SpringLibMaterialName = 
-      width = 4
-      height = 4
-      selected = False
-      position : struct.begin
-         X = 0
-         Y = 0
-      struct.end
-      texoffset : struct.begin
-         X = 0
-         Y = 0
-      struct.end
-      scalefactor : struct.begin
-         X = 1
-         Y = 1
-      struct.end
-      texscale : struct.begin
-         X = 1
-         Y = 1
-      struct.end
-      texrollangle = 0
-      epsilon = 0.01
-      texrotateenable = True
-      texscaleenable = True
-      texoffsetenable = True
-      texoffsetbyrotate = True
-      texflipvertical = True
-   struct.end
-section.end
 section.begin {refkey=default}
    name = bavacad
    Decal.material.libmaterialname = bavacad
@@ -1696,42 +1617,6 @@ section.begin {refkey=default}
    Decal.height = 7
 section.end
 //exp 1
-section.begin
-   name = polartd
-   Decal : struct.begin
-      material.libmaterialname = polartd
-      SummerLibMaterialName = polartd
-      AutumnLibMaterialName = 
-      WinterLibMaterialName = polartdw
-      SpringLibMaterialName = 
-      width = 4
-      height = 4
-      selected = False
-      position : struct.begin
-         X = 0
-         Y = 0
-      struct.end
-      texoffset : struct.begin
-         X = 0
-         Y = 0
-      struct.end
-      scalefactor : struct.begin
-         X = 1
-         Y = 1
-      struct.end
-      texscale : struct.begin
-         X = 1
-         Y = 1
-      struct.end
-      texrollangle = 0
-      epsilon = 0.01
-      texrotateenable = True
-      texscaleenable = True
-      texoffsetenable = True
-      texoffsetbyrotate = True
-      texflipvertical = True
-   struct.end
-section.end
 section.begin {refkey=default}
    name = scoacad
    Decal.material.libmaterialname = scoacad
@@ -1813,42 +1698,6 @@ section.begin {refkey=default}
    Decal.height = 7
 section.end
 //dlc 3
-section.begin
-   name = polartd
-   Decal : struct.begin
-      material.libmaterialname = polartd
-      SummerLibMaterialName = polartd
-      AutumnLibMaterialName = 
-      WinterLibMaterialName = polartdw
-      SpringLibMaterialName = 
-      width = 4
-      height = 4
-      selected = False
-      position : struct.begin
-         X = 0
-         Y = 0
-      struct.end
-      texoffset : struct.begin
-         X = 0
-         Y = 0
-      struct.end
-      scalefactor : struct.begin
-         X = 1
-         Y = 1
-      struct.end
-      texscale : struct.begin
-         X = 1
-         Y = 1
-      struct.end
-      texrollangle = 0
-      epsilon = 0.01
-      texrotateenable = True
-      texscaleenable = True
-      texoffsetenable = True
-      texoffsetbyrotate = True
-      texflipvertical = True
-   struct.end
-section.end
 section.begin {refkey=default}
    name = poracad
    Decal.material.libmaterialname = poracad
@@ -2018,42 +1867,6 @@ section.begin {refkey=default}
    Decal.height = 7
 section.end
 //dlc 4
-section.begin
-   name = polartd
-   Decal : struct.begin
-      material.libmaterialname = polartd
-      SummerLibMaterialName = polartd
-      AutumnLibMaterialName = 
-      WinterLibMaterialName = polartdw
-      SpringLibMaterialName = 
-      width = 4
-      height = 4
-      selected = False
-      position : struct.begin
-         X = 0
-         Y = 0
-      struct.end
-      texoffset : struct.begin
-         X = 0
-         Y = 0
-      struct.end
-      scalefactor : struct.begin
-         X = 1
-         Y = 1
-      struct.end
-      texscale : struct.begin
-         X = 1
-         Y = 1
-      struct.end
-      texrollangle = 0
-      epsilon = 0.01
-      texrotateenable = True
-      texscaleenable = True
-      texoffsetenable = True
-      texoffsetbyrotate = True
-      texflipvertical = True
-   struct.end
-section.end
 section.begin {refkey=default}
    name = pieacad
    Decal.material.libmaterialname = pieacad
@@ -2221,5 +2034,97 @@ section.begin {refkey=default}
    Decal.WinterLibMaterialName = switemdw
    Decal.width = 7
    Decal.height = 7
+section.end
+//mod
+section.begin
+   name = polartd
+   Decal : struct.begin
+      material.libmaterialname = polartd
+      SummerLibMaterialName = polartd
+      AutumnLibMaterialName = 
+      WinterLibMaterialName = polartdw
+      SpringLibMaterialName = 
+      width = 4
+      height = 4
+      selected = False
+      position : struct.begin
+         X = 0
+         Y = 0
+      struct.end
+      texoffset : struct.begin
+         X = 0
+         Y = 0
+      struct.end
+      scalefactor : struct.begin
+         X = 1
+         Y = 1
+      struct.end
+      texscale : struct.begin
+         X = 1
+         Y = 1
+      struct.end
+      texrollangle = 0
+      epsilon = 0.01
+      texrotateenable = True
+      texscaleenable = True
+      texoffsetenable = True
+      texoffsetbyrotate = True
+      texflipvertical = True
+   struct.end
+section.begin {refkey=default}
+   name = romtemd
+   Decal.material.libmaterialname = romtemd
+   Decal.SummerLibMaterialName = romtemd
+   Decal.WinterLibMaterialName = romtemdw
+   Decal.width = 8
+   Decal.height = 8
+section.end
+section.begin {refkey=default}
+   name = romcend
+   Decal.material.libmaterialname = romcend
+   Decal.SummerLibMaterialName = romcend
+   Decal.WinterLibMaterialName = romcendw
+   Decal.width = 8
+   Decal.height = 8
+section.end
+section.begin {refkey=default}
+   name = rombard
+   Decal.material.libmaterialname = rombard
+   Decal.SummerLibMaterialName = rombard
+   Decal.WinterLibMaterialName = rombardw
+   Decal.width = 7
+   Decal.height = 7
+section.end
+section.begin {refkey=default}
+   name = romba2d
+   Decal.material.libmaterialname = romba2d
+   Decal.SummerLibMaterialName = romba2d
+   Decal.WinterLibMaterialName = romba2dw
+   Decal.width = 8
+   Decal.height = 8
+section.end
+section.begin {refkey=default}
+   name = romblad
+   Decal.material.libmaterialname = romblad
+   Decal.SummerLibMaterialName = romblad
+   Decal.WinterLibMaterialName = rombladw
+   Decal.width = 7
+   Decal.height = 7
+section.end
+section.begin {refkey=default}
+   name = romartd
+   Decal.material.libmaterialname = romartd
+   Decal.SummerLibMaterialName = romartd
+   Decal.WinterLibMaterialName = romartdw
+   Decal.width = 7
+   Decal.height = 7
+section.end
+section.begin {refkey=default}
+   name = romacad
+   Decal.material.libmaterialname = romacad
+   Decal.SummerLibMaterialName = romacad
+   Decal.WinterLibMaterialName = romacadw
+   Decal.width = 8
+   Decal.height = 8
 section.end
 // ******************************** ADDON FINISH *********************************

@@ -1,0 +1,9 @@
+section.begin {refurl=.\data\actors\ref\refunit.actor}
+   Animations.LoadFromFile = .\data\animations\aaf\romdipanim.aaf
+   ActorList.Items : struct.begin
+      [0] : struct.begin
+         Name = rusdipanim.mesh
+         LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\buildings\rom\attach\romdipanim.oss
+      struct.end
+   struct.end
+section.end

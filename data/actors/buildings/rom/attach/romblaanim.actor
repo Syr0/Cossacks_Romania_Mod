@@ -1,0 +1,8 @@
+section.begin {refurl=.\data\actors\ref\refbuilding.actor}
+   FrameInterpolation = afpLinear
+   Reference = aarMorph
+   Animations.LoadFromFile = .\data\animations\aaf\romblaanim.aaf
+   ActorList.Items[0].Name = romblaanim.mesh
+   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\buildings\rom\attach\romblaanim.osm
+   ActorList.Items[0].LODList.Items[0].FrameInterpolation = afpLinear
+section.end

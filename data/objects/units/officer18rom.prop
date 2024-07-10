@@ -1,0 +1,20 @@
+{refurl=.\data\objects\ref\refunit.prop}
+
+mainproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=mainproperty}
+   CustomName = officer18rom
+   BaseName = officer18rom
+section.end
+
+actorproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=actorproperty}
+   LODActorName = officer18rom
+   DefaultMeshName = officer18rom.mesh
+section.end
+
+materialproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=materialproperty}
+   Mesh[0].DefaultMaterialName = officer18rom
+   Mesh[0].UseableMaterials[0] = officer18rom
+section.end
+
+frameanimationproperty : section.begin {refurl=.\data\objects\ref\refunit.prop; refkey=frameanimationproperty}
+   FrameAnimationCyclesLibName = officer18rom
+section.end

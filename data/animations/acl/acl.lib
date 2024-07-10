@@ -259,6 +259,14 @@ section.begin
    FileName = .\data\animations\acl\infantry.acl
 section.end
 section.begin
+   Name = officer17rom
+   FileName = .\data\animations\acl\infantryofficer.acl
+section.end
+section.begin
+   Name = officer18rom
+   FileName = .\data\animations\acl\infantryofficer.acl
+section.end
+section.begin
    Name = pikeman
    FileName = .\data\animations\acl\infantry.acl
 section.end

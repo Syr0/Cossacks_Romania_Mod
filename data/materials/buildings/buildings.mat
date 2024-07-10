@@ -519,6 +519,38 @@ section.begin {refurl=.\data\materials\ref\refbuilding.mat}
    Material.Texture.image = .\data\materials\buildings\rom\romcen.dds
 section.end
 section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rombar
+   Material.Texture.image = .\data\materials\buildings\rom\rombar.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = romba2
+   Material.Texture.image = .\data\materials\buildings\rom\romba2.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rombla
+   Material.Texture.image = .\data\materials\buildings\rom\rombla.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = romart
+   Material.Texture.image = .\data\materials\buildings\rom\romart.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = romaca
+   Material.Texture.image = .\data\materials\buildings\rom\romaca.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = romdip
+   Material.Texture.image = .\data\materials\buildings\rom\romdip.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = romhou
+   Material.Texture.image = .\data\materials\buildings\rom\romhou.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = romsta
+   Material.Texture.image = .\data\materials\buildings\rom\romsta.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
    Material.Name = ukrpor
    Material.Texture.image = .\data\materials\buildings\ukr\ukrpor.dds
 section.end
@@ -1383,6 +1415,38 @@ section.end
 section.begin {refurl=.\data\materials\ref\refbuilding.mat}
    Material.Name = romcenw
    Material.Texture.image = .\data\materials\buildings\rom\romcenw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = rombarw
+   Material.Texture.image = .\data\materials\buildings\rom\rombarw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = romba2w
+   Material.Texture.image = .\data\materials\buildings\rom\romba2w.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = romblaw
+   Material.Texture.image = .\data\materials\buildings\rom\romblaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = romartw
+   Material.Texture.image = .\data\materials\buildings\rom\romartw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = romacaw
+   Material.Texture.image = .\data\materials\buildings\rom\romacaw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = romdipw
+   Material.Texture.image = .\data\materials\buildings\rom\romdipw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = romhouw
+   Material.Texture.image = .\data\materials\buildings\rom\romhouw.dds
+section.end
+section.begin {refurl=.\data\materials\ref\refbuilding.mat}
+   Material.Name = romstaw
+   Material.Texture.image = .\data\materials\buildings\rom\romstaw.dds
 section.end
 section.begin {refurl=.\data\materials\ref\refbuilding.mat}
    Material.Name = ukrporw

@@ -376,6 +376,16 @@ section.begin {refurl=.\data\materials\ref\refunit.mat}
 section.end
 
 section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = officer17rom
+   Material.Texture.image = .\data\materials\units\officer17rom.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
+   Material.Name = officer18rom
+   Material.Texture.image = .\data\materials\units\officer18rom.dds
+section.end
+
+section.begin {refurl=.\data\materials\ref\refunit.mat}
    Material.Name = horsebrown
    Material.Texture.image = .\data\materials\units\horsebrown.dds
 section.end

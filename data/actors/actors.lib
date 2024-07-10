@@ -536,6 +536,38 @@ section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
    LODActorFileName = .\data\actors\buildings\rom\romcen.actor
 section.end
 section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rombar
+   LODActorFileName = .\data\actors\buildings\rom\rombar.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = romba2
+   LODActorFileName = .\data\actors\buildings\rom\romba2.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rombla
+   LODActorFileName = .\data\actors\buildings\rom\rombla.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = romart
+   LODActorFileName = .\data\actors\buildings\rom\romart.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = romaca
+   LODActorFileName = .\data\actors\buildings\rom\romaca.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = romdip
+   LODActorFileName = .\data\actors\buildings\rom\romdip.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = romhou
+   LODActorFileName = .\data\actors\buildings\rom\romhou.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = romsta
+   LODActorFileName = .\data\actors\buildings\rom\romsta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
    LODActorName = ukrpor
    LODActorFileName = .\data\actors\buildings\ukr\ukrpor.actor
 section.end
@@ -951,6 +983,14 @@ section.end
 section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
    LODActorName = pandurrom
    LODActorFileName = .\data\actors\units\pandurrom.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = officer17rom
+   LODActorFileName = .\data\actors\units\officer17rom.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
+   LODActorName = officer18rom
+   LODActorFileName = .\data\actors\units\officer18rom.actor
 section.end
 section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=units}
    LODActorName = pikeman
@@ -2288,6 +2328,38 @@ section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
    LODActorFileName = .\data\actors\buildings\rom\attach\romcena.actor
 section.end
 section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = rombara
+   LODActorFileName = .\data\actors\buildings\rom\attach\rombara.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = romba2a
+   LODActorFileName = .\data\actors\buildings\rom\attach\romba2a.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = romblaa
+   LODActorFileName = .\data\actors\buildings\rom\attach\romblaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = romarta
+   LODActorFileName = .\data\actors\buildings\rom\attach\romarta.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = romacaa
+   LODActorFileName = .\data\actors\buildings\rom\attach\romacaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = romdipa
+   LODActorFileName = .\data\actors\buildings\rom\attach\romdipa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = romhoua
+   LODActorFileName = .\data\actors\buildings\rom\attach\romhoua.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = romstaa
+   LODActorFileName = .\data\actors\buildings\rom\attach\romstaa.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
    LODActorName = ukrpora
    LODActorFileName = .\data\actors\buildings\ukr\attach\ukrpora.actor
 section.end
@@ -2321,6 +2393,14 @@ section.end
 section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
    LODActorName = engblaanim
    LODActorFileName = .\data\actors\buildings\eng\attach\engblaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = romblaanim
+   LODActorFileName = .\data\actors\buildings\rom\attach\romblaanim.actor
+section.end
+section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
+   LODActorName = romdipanim
+   LODActorFileName = .\data\actors\buildings\rom\attach\romdipanim.actor
 section.end
 section.begin {refurl=.\data\actors\ref\refactors.lib; refkey=buildings}
    LODActorName = eurcoaanim

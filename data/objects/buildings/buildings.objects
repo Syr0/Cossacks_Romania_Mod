@@ -135,6 +135,14 @@ section.begin
    ObjectItems[*].PropertiesFileName=.\data\objects\buildings\spamar.prop
    ObjectItems[*].PropertiesFileName=.\data\objects\buildings\romtem.prop
    ObjectItems[*].PropertiesFileName=.\data\objects\buildings\romcen.prop
+   ObjectItems[*].PropertiesFileName=.\data\objects\buildings\rombar.prop
+   ObjectItems[*].PropertiesFileName=.\data\objects\buildings\romba2.prop
+   ObjectItems[*].PropertiesFileName=.\data\objects\buildings\rombla.prop
+   ObjectItems[*].PropertiesFileName=.\data\objects\buildings\romart.prop
+   ObjectItems[*].PropertiesFileName=.\data\objects\buildings\romaca.prop
+   ObjectItems[*].PropertiesFileName=.\data\objects\buildings\romdip.prop
+   ObjectItems[*].PropertiesFileName=.\data\objects\buildings\romhou.prop
+   ObjectItems[*].PropertiesFileName=.\data\objects\buildings\romsta.prop
 
    // algerian dublicates of turkey, to make country script work properly
    ObjectItems[*].PropertiesFileName=.\data\objects\buildings\algaca.prop
@@ -283,6 +291,14 @@ section.begin
    ObjectItems[*].PropertiesFileName=.\data\objects\buildings\attach\eurporb.prop
    ObjectItems[*].PropertiesFileName=.\data\objects\buildings\attach\romtema.prop
    ObjectItems[*].PropertiesFileName=.\data\objects\buildings\attach\romcena.prop
+   ObjectItems[*].PropertiesFileName=.\data\objects\buildings\attach\rombara.prop
+   ObjectItems[*].PropertiesFileName=.\data\objects\buildings\attach\romba2a.prop
+   ObjectItems[*].PropertiesFileName=.\data\objects\buildings\attach\romblaa.prop
+   ObjectItems[*].PropertiesFileName=.\data\objects\buildings\attach\romarta.prop
+   ObjectItems[*].PropertiesFileName=.\data\objects\buildings\attach\romacaa.prop
+   ObjectItems[*].PropertiesFileName=.\data\objects\buildings\attach\romdipa.prop
+   ObjectItems[*].PropertiesFileName=.\data\objects\buildings\attach\romhoua.prop
+   ObjectItems[*].PropertiesFileName=.\data\objects\buildings\attach\romstaa.prop
 
    ObjectItems[*].PropertiesFileName=.\data\objects\buildings\g_45left.prop
    ObjectItems[*].PropertiesFileName=.\data\objects\buildings\g_45right.prop
@@ -300,6 +316,8 @@ section.begin
    ObjectItems[*].PropertiesFileName=.\data\objects\buildings\attach\ausdipanim.prop
    ObjectItems[*].PropertiesFileName=.\data\objects\buildings\attach\ausbaranim.prop
    ObjectItems[*].PropertiesFileName=.\data\objects\buildings\attach\engblaanim.prop
+   ObjectItems[*].PropertiesFileName=.\data\objects\buildings\attach\romblaanim.prop
+   ObjectItems[*].PropertiesFileName=.\data\objects\buildings\attach\romdipanim.prop
    ObjectItems[*].PropertiesFileName=.\data\objects\buildings\attach\eurcoaanim.prop
    ObjectItems[*].PropertiesFileName=.\data\objects\buildings\attach\eurcoaanim2.prop
    ObjectItems[*].PropertiesFileName=.\data\objects\buildings\attach\eurgolanim.prop
