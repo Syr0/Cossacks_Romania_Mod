@@ -1,0 +1,40 @@
+{refurl=.\data\objects\ref\refbuildingattach.prop}
+
+mainproperty : section.begin {refurl=.\data\objects\ref\refbuildingattach.prop; refkey=mainproperty}
+   CustomName = romblaanim
+   BaseName = romblaanim
+section.end
+
+actorproperty : section.begin {refurl=.\data\objects\ref\refbuildingattach.prop; refkey=actorproperty}
+   LODActorName = romblaanim
+   DefaultMeshName = romblaanim.mesh
+   UseableMeshes : struct.begin
+      [0] = True
+   struct.end
+section.end
+
+materialproperty : section.begin {refurl=.\data\objects\ref\refbuildingattach.prop; refkey=materialproperty}
+   Mesh[0].DefaultMaterialName = rombla
+   Mesh[0].UseableMaterials[0] = rombla
+section.end
+
+frameanimationproperty : section.begin {refurl=.\data\objects\ref\refbuildingattach.prop; refkey=frameanimationproperty}
+   Enabled = True
+   Static = True
+   ClassName = FrameAnimationProperty
+   DefaultFrameAnimationName = idle
+   DefaultFrameAnimationMode = aamLoop
+   FrameAnimationSynchronizeOption = fasoNone
+   FrameAnimationSwitchChildren = False
+   DefaultFrameAnimationCycles = 
+   FrameAnimationCyclesLibName = 
+   RandomOffsetFrameAnimationCycles = acsaDefault
+   RandomOffsetFrameAnimation = acsaDefault
+section.end
+
+designproperty : section.begin {refurl=.\data\objects\ref\refbuildingattach.prop; refkey=designproperty}
+   Enabled = True
+   Static = True
+   ClassName = DesignProperty
+   VisibleAtDesignTime = True
+section.end

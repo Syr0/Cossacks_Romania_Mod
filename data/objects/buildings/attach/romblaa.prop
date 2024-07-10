@@ -1,0 +1,37 @@
+{refurl=.\data\objects\ref\refbuildingattach.prop}
+
+mainproperty : section.begin {refurl=.\data\objects\ref\refbuildingattach.prop; refkey=mainproperty}
+   CustomName = romblaa
+   BaseName = romblaa
+section.end
+
+actorproperty : section.begin {refurl=.\data\objects\ref\refbuildingattach.prop; refkey=actorproperty}
+   LODActorName = romblaa
+   DefaultMeshName = romblaa.mesh
+   UseableMeshes : struct.begin
+      [0] = True
+      [1] = True
+      [2] = True
+      [3] = True
+      [4] = True
+      [5] = True
+      [6] = True
+   struct.end
+section.end
+
+materialproperty : section.begin {refurl=.\data\objects\ref\refbuildingattach.prop; refkey=materialproperty}
+   Mesh[0].DefaultMaterialName = scaffold
+   Mesh[0].UseableMaterials[0] = scaffold
+   Mesh[1].DefaultMaterialName = scaffold
+   Mesh[1].UseableMaterials[0] = scaffold
+   Mesh[2].DefaultMaterialName = scaffold
+   Mesh[2].UseableMaterials[0] = scaffold
+   Mesh[3].DefaultMaterialName = scaffold
+   Mesh[3].UseableMaterials[0] = scaffold
+   Mesh[4].DefaultMaterialName = scaffold
+   Mesh[4].UseableMaterials[0] = scaffold
+   Mesh[5].DefaultMaterialName = scaffold
+   Mesh[5].UseableMaterials[0] = scaffold
+   Mesh[6].DefaultMaterialName = scaffold
+   Mesh[6].UseableMaterials[0] = scaffold
+section.end

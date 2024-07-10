@@ -44,9 +44,8 @@ Originali
 Ungheria
 	@swi
 Svizzera
-	@rom
-Romania
 	@*************Symbols************************
+
 	@def
 #151
 	@pos

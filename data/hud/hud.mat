@@ -4180,6 +4180,26 @@ section.begin {refurl=.\data\hud\ref\reflibmat.mat}
    Material.TextureCoord.CoordW = 46
    Material.TextureCoord.CoordH = 46
 section.end
+section.begin {refurl=.\data\hud\ref\reflibmat.mat}
+   Material.Name = icons.unit.officer17rom
+   Material.LibTextureName = iconsunits
+   Material.TextureCoord.ImageW = 1024
+   Material.TextureCoord.ImageH = 512
+   Material.TextureCoord.CoordX = 598
+   Material.TextureCoord.CoordY = 0
+   Material.TextureCoord.CoordW = 46
+   Material.TextureCoord.CoordH = 46
+section.end
+section.begin {refurl=.\data\hud\ref\reflibmat.mat}
+   Material.Name = icons.unit.officer18rom
+   Material.LibTextureName = iconsunits
+   Material.TextureCoord.ImageW = 1024
+   Material.TextureCoord.ImageH = 512
+   Material.TextureCoord.CoordX = 644
+   Material.TextureCoord.CoordY = 0
+   Material.TextureCoord.CoordW = 46
+   Material.TextureCoord.CoordH = 46
+section.end
 
 section.begin {refurl=.\data\hud\ref\reflibmat.mat}
    Material.Name = icons.unit.empty
