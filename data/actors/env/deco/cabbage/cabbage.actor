@@ -1,5 +1,0 @@
-//************************************* Cabbage  *******
-section.begin {refurl=.\data\actors\ref\refstone.actor}
-   ActorList.Items[0].Name = cabbage.mesh
-   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\deco\cabbage\cabbage.md2
-section.end

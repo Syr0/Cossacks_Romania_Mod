@@ -1,5 +1,0 @@
-//************************************* Scaffold1  *******
-section.begin {refurl=.\data\actors\ref\reftree.actor}
-   ActorList.Items[0].Name = scaffold.1.mesh
-   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\scaffold.1.osm
-section.end

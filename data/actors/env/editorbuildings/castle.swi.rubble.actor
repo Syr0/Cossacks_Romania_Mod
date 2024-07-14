@@ -1,5 +1,0 @@
-//************************************* CastleSwiRubble  *******
-section.begin {refurl=.\data\actors\ref\reftree.actor}
-   ActorList.Items[0].Name = castle.swi.rubble.mesh
-   ActorList.Items[0].LODList.Items[0].MeshObjects.LoadFromFile = .\data\actors\env\editorbuildings\castle.swi.rubble.osm
-section.end
